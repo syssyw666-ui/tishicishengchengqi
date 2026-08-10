@@ -1,0 +1,4 @@
+interface:
+  display_name: "PHOTO_PLTB"
+  short_description: "Batch reference image sheets, crop into parameter assets"
+  default_prompt: "Use PHOTO_PLTB to generate batch reference-card assets as contact sheets, crop them into individual parameter images, and verify the files."
