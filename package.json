@@ -4,6 +4,7 @@
   "private": true,
   "packageManager": "pnpm@11.16.0",
   "author": "syssyw666-ui",
+  "homepage": "https://tishicishengchengqi.syssyw666.workers.dev/",
   "description": "Desktop image prompt generator with visual parameter cards and weighted prompt assembly.",
   "main": "electron/main.cjs",
   "scripts": {
