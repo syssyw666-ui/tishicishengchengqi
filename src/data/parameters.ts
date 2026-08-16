@@ -4,6 +4,7 @@ import { colorGradingParameters } from "./colorGradingParameters";
 import { clothingParameters } from "./clothingParameters";
 import { expandedParameters } from "./expandedParameters";
 import { exhaustiveParameters } from "./exhaustiveParameters";
+import { demographicParameters } from "./demographicParameters";
 import { poseParameters } from "./poseParameters";
 import { supplementParameters } from "./supplementParameters";
 
@@ -11,6 +12,7 @@ export const categories: Category[] = [
   { id: "style", zhName: "画面风格", enName: "Style", mode: "multi", description: "决定整体视觉语言，可混选。" },
   { id: "artist-style", zhName: "艺术家风格", enName: "Artist Style", mode: "multi", description: "选择艺术史中的笔触、构图、色彩和画派语言，可混选。" },
   { id: "character", zhName: "角色设定", enName: "Character", mode: "multi", description: "控制年龄阶段、体态、职业身份、社会角色、幻想或科幻身份，可混选。" },
+  { id: "ethnicity", zhName: "人物族裔 / 外貌参考", enName: "Ethnicity & Appearance", mode: "multi", description: "控制人物的地域族裔参考、肤色、面部特征和发质，只用于中性外貌描述，避免刻板化。" },
   { id: "clothing", zhName: "人物衣着", enName: "Clothing", mode: "multi", description: "控制人物服装款式、袖长、下装、外套、制服、传统服饰与配饰，可混选。" },
   { id: "hair-makeup", zhName: "发型妆容", enName: "Hair & Makeup", mode: "multi", description: "控制发长、发型、发丝动态以及自然或风格化妆容，可混选。" },
   { id: "pose", zhName: "人物姿势", enName: "Pose", mode: "multi", description: "控制人物站姿、坐姿、躺卧、动作、舞蹈、互动和镜头前姿态，可混选。" },
@@ -64,6 +66,14 @@ export const categoryGroups: Partial<Record<Category["id"], Array<{ id: string; 
     { id: "social-role", zhName: "社会角色" },
     { id: "fantasy", zhName: "幻想身份" },
     { id: "sci-fi", zhName: "科幻身份" }
+  ],
+  ethnicity: [
+    { id: "all", zhName: "全部族裔外貌" },
+    { id: "region", zhName: "地域族裔参考" },
+    { id: "skin-tone", zhName: "肤色与皮肤细节" },
+    { id: "facial-feature", zhName: "面部骨相特征" },
+    { id: "hair-texture", zhName: "自然发质" },
+    { id: "mixed", zhName: "混合族裔 / 多人组合" }
   ],
   clothing: [
     { id: "all", zhName: "全部衣着" },
@@ -267,7 +277,7 @@ export const categoryGroups: Partial<Record<Category["id"], Array<{ id: string; 
   ]
 };
 
-const img = (id: string) => `/assets/parameters/${id}.jpg`;
+const img = (id: string) => `${import.meta.env.BASE_URL}assets/parameters/${id}.jpg`;
 
 export const parameters: PromptParameter[] = [
   { id: "style-photorealistic", category: "style", zhName: "写实摄影", enName: "Photorealistic", defaultWeight: 1, image: img("style-photorealistic"), zhPrompt: "写实摄影风格，真实光影和自然细节", enPrompt: "photorealistic photography with natural light, real texture, believable everyday detail", negative: ["cartoon", "plastic skin"] },
@@ -396,4 +406,13 @@ export const parameters: PromptParameter[] = [
   { id: "material-leather", category: "color-material", styleGroup: "fabric", zhName: "皮革", enName: "Leather", defaultWeight: 1, image: img("material-leather"), zhPrompt: "皮革材质，纹理、缝线和柔韧质感", enPrompt: "premium leather material, natural grain, stitching, supple tactile finish" }
 ];
 
-parameters.push(...artistParameters, ...clothingParameters, ...poseParameters, ...expandedParameters, ...exhaustiveParameters, ...colorGradingParameters, ...supplementParameters);
+parameters.push(
+  ...artistParameters,
+  ...clothingParameters,
+  ...poseParameters,
+  ...expandedParameters,
+  ...exhaustiveParameters,
+  ...colorGradingParameters,
+  ...supplementParameters,
+  ...demographicParameters
+);

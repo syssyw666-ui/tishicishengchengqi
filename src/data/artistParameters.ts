@@ -1,6 +1,6 @@
 ﻿import type { PromptParameter } from "../types";
 
-const img = (id: string) => `/assets/parameters/${id}.png`;
+const img = (id: string) => `${import.meta.env.BASE_URL}assets/parameters/${id}.png`;
 
 const noReplica = ["artist signature", "exact copy of existing artwork", "readable text"];
 

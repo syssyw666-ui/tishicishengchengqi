@@ -2,17 +2,20 @@
   "name": "image-prompt-generator",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@11.16.0",
+  "author": "syssyw666-ui",
   "description": "Desktop image prompt generator with visual parameter cards and weighted prompt assembly.",
   "main": "electron/main.cjs",
   "scripts": {
     "dev": "concurrently \"vite --host 127.0.0.1\" \"wait-on tcp:5173 && electron .\"",
     "build": "tsc && vite build",
-    "start": "electron ."
+    "start": "electron .",
+    "package:win": "pnpm run build && electron-builder --win nsis",
+    "package:win:dir": "pnpm run build && electron-builder --win dir"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^4.3.4",
     "concurrently": "^9.1.2",
-    "electron": "^34.0.0",
     "lucide-react": "^0.468.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -22,6 +25,42 @@
   },
   "devDependencies": {
     "@types/react": "^19.0.1",
-    "@types/react-dom": "^19.0.2"
+    "@types/react-dom": "^19.0.2",
+    "electron": "^34.0.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.syssyw.promptgenerator",
+    "productName": "PromptGenerator",
+    "executableName": "TishiCiShengChengQi",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "package.json"
+    ],
+    "asar": true,
+    "win": {
+      "signAndEditExecutable": false,
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "artifactName": "TishiCiShengChengQi-${version}-Setup.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "图片提示词生成器"
+    }
   }
 }

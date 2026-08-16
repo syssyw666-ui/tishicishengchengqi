@@ -1,10 +1,11 @@
-import type { ModelFormat, PromptInputs, PromptParameter, SelectedParameter } from "../types";
+import type { CategoryId, ModelFormat, PromptInputs, PromptParameter, SelectedParameter } from "../types";
 
-const categoryOrder = [
+const categoryOrder: CategoryId[] = [
   "purpose",
   "style",
   "artist-style",
   "character",
+  "ethnicity",
   "clothing",
   "hair-makeup",
   "pose",
@@ -27,16 +28,44 @@ const categoryOrder = [
   "color-material"
 ];
 
+const categoryLabels: Record<CategoryId, { zh: string; en: string }> = {
+  purpose: { zh: "图片用途", en: "Purpose" },
+  style: { zh: "画面风格", en: "Style" },
+  "artist-style": { zh: "艺术家风格", en: "Artist Style" },
+  character: { zh: "人物设定", en: "Character" },
+  ethnicity: { zh: "人物族裔 / 外貌参考", en: "Ethnicity And Appearance Reference" },
+  clothing: { zh: "人物衣着", en: "Clothing" },
+  "hair-makeup": { zh: "发型妆造", en: "Hair And Makeup" },
+  pose: { zh: "人物姿势", en: "Pose" },
+  expression: { zh: "表情神态", en: "Expression" },
+  "ethnic-style": { zh: "中国民族风格", en: "Chinese Ethnic Style" },
+  scene: { zh: "场景环境", en: "Scene" },
+  era: { zh: "时代世界观", en: "Era And Worldbuilding" },
+  "story-action": { zh: "动作叙事", en: "Story Action" },
+  mood: { zh: "情绪氛围", en: "Mood" },
+  props: { zh: "道具元素", en: "Props" },
+  layout: { zh: "排版留白", en: "Layout And Whitespace" },
+  background: { zh: "背景质感", en: "Background Texture" },
+  "layout-style": { zh: "排版风格", en: "Layout Style" },
+  framing: { zh: "景别画幅", en: "Framing" },
+  camera: { zh: "构图 / 镜头", en: "Composition And Camera" },
+  lighting: { zh: "光线氛围", en: "Lighting" },
+  render: { zh: "渲染质感", en: "Rendering" },
+  "visual-effect": { zh: "视觉特效", en: "Visual Effects" },
+  "color-grading": { zh: "后期调色", en: "Color Grading" },
+  "color-material": { zh: "色彩与材质", en: "Color And Material" }
+};
+
 const aspectRatioOptions: Record<string, { zh: string; en: string; mj?: string }> = {
-  auto: { zh: "图片比例：自动", en: "automatic aspect ratio" },
-  "1:1": { zh: "图片比例：1:1 方图", en: "1:1 square aspect ratio", mj: "1:1" },
-  "16:9": { zh: "图片比例：16:9 横版宽屏", en: "16:9 landscape widescreen aspect ratio", mj: "16:9" },
-  "9:16": { zh: "图片比例：9:16 竖版全屏", en: "9:16 vertical full-screen aspect ratio", mj: "9:16" },
-  "4:3": { zh: "图片比例：4:3 横版", en: "4:3 classic landscape aspect ratio", mj: "4:3" },
-  "3:4": { zh: "图片比例：3:4 竖版", en: "3:4 classic portrait aspect ratio", mj: "3:4" },
-  "3:2": { zh: "图片比例：3:2 摄影横版", en: "3:2 photographic landscape aspect ratio", mj: "3:2" },
-  "2:3": { zh: "图片比例：2:3 摄影竖版", en: "2:3 photographic portrait aspect ratio", mj: "2:3" },
-  "21:9": { zh: "图片比例：21:9 超宽电影画幅", en: "21:9 ultrawide cinematic aspect ratio", mj: "21:9" }
+  auto: { zh: "自动比例", en: "automatic aspect ratio" },
+  "1:1": { zh: "1:1 方图", en: "1:1 square aspect ratio", mj: "1:1" },
+  "16:9": { zh: "16:9 横版宽屏", en: "16:9 landscape widescreen aspect ratio", mj: "16:9" },
+  "9:16": { zh: "9:16 竖版全屏", en: "9:16 vertical full-screen aspect ratio", mj: "9:16" },
+  "4:3": { zh: "4:3 传统横版", en: "4:3 classic landscape aspect ratio", mj: "4:3" },
+  "3:4": { zh: "3:4 传统竖版", en: "3:4 classic portrait aspect ratio", mj: "3:4" },
+  "3:2": { zh: "3:2 摄影横版", en: "3:2 photographic landscape aspect ratio", mj: "3:2" },
+  "2:3": { zh: "2:3 摄影竖版", en: "2:3 photographic portrait aspect ratio", mj: "2:3" },
+  "21:9": { zh: "21:9 超宽电影画幅", en: "21:9 ultrawide cinematic aspect ratio", mj: "21:9" }
 };
 
 const clarityOptions: Record<string, { zh: string; en: string }> = {
@@ -46,8 +75,8 @@ const clarityOptions: Record<string, { zh: string; en: string }> = {
   "4k": { zh: "4K 级清晰度，高分辨率细节，适合放大查看", en: "4K-level clarity, high-resolution detail, suitable for close inspection" }
 };
 
-const qualityZh = "画面完整，主体明确，无水印";
-const qualityEn = "complete composition, readable subject, no watermark";
+const qualityZh = "画面完整，主体明确，结构合理，细节干净，无水印";
+const qualityEn = "complete composition, readable subject, coherent structure, clean details, no watermark";
 
 function cleanParts(parts: Array<string | undefined>) {
   return parts.map((part) => part?.trim()).filter(Boolean) as string[];
@@ -87,24 +116,58 @@ function sortSelected(parameters: PromptParameter[], selected: SelectedParameter
     .map((parameter) => ({ parameter, weight: selectedById.get(parameter.id) ?? parameter.defaultWeight }));
 }
 
-function weightedEnglish(enPrompt: string, weight: number, model: ModelFormat) {
-  if (model === "midjourney") {
-    return `${enPrompt}::${formatWeight(weight)}`;
-  }
-
-  if (model === "stable-diffusion") {
-    return `(${enPrompt}:${formatWeight(weight)})`;
-  }
-
-  if (weight >= 1.4) return `strong emphasis on ${enPrompt}`;
-  if (weight <= 0.7) return `subtle hint of ${enPrompt}`;
-  return enPrompt;
+function groupSelected(selectedItems: ReturnType<typeof sortSelected>) {
+  return categoryOrder
+    .map((category) => ({
+      category,
+      items: selectedItems.filter(({ parameter }) => parameter.category === category)
+    }))
+    .filter((group) => group.items.length > 0);
 }
 
-function weightedChinese(zhPrompt: string, weight: number) {
-  if (weight >= 1.4) return `强烈强调${zhPrompt}`;
-  if (weight <= 0.7) return `轻微体现${zhPrompt}`;
-  return zhPrompt;
+function weightNoteZh(weight: number) {
+  if (weight >= 1.4) return `权重 ${formatWeight(weight)}，优先表现`;
+  if (weight <= 0.7) return `权重 ${formatWeight(weight)}，弱化为辅助`;
+  return `权重 ${formatWeight(weight)}`;
+}
+
+function weightNoteEn(weight: number) {
+  if (weight >= 1.4) return `weight ${formatWeight(weight)}, high priority`;
+  if (weight <= 0.7) return `weight ${formatWeight(weight)}, subtle support`;
+  return `weight ${formatWeight(weight)}`;
+}
+
+function midjourneyWeightedPhrase(enPrompt: string, weight: number) {
+  const phrase = enPrompt.replace(/\s+/g, " ").trim();
+  if (Math.abs(weight - 1) < 0.05) return phrase;
+  return `${phrase}::${formatWeight(weight)}`;
+}
+
+function stableDiffusionWeightedPhrase(enPrompt: string, weight: number) {
+  const phrase = enPrompt.replace(/\s+/g, " ").trim();
+  if (Math.abs(weight - 1) < 0.05) return phrase;
+  return `(${phrase}:${formatWeight(weight)})`;
+}
+
+function buildZhCategoryBlock(group: ReturnType<typeof groupSelected>[number]) {
+  const label = categoryLabels[group.category].zh;
+  const items = group.items.map(({ parameter, weight }) => `${parameter.zhName}（${weightNoteZh(weight)}）：${parameter.zhPrompt}`);
+  return `${label}：\n${items.join("\n")}`;
+}
+
+function buildEnCategoryBlock(group: ReturnType<typeof groupSelected>[number], model: ModelFormat) {
+  const label = categoryLabels[group.category].en;
+  const items = group.items.map(({ parameter, weight }) => {
+    if (model === "midjourney") return midjourneyWeightedPhrase(parameter.enPrompt, weight);
+    if (model === "stable-diffusion") return `${parameter.enName} [${weightNoteEn(weight)}]: ${stableDiffusionWeightedPhrase(parameter.enPrompt, weight)}`;
+    return `${parameter.enName} [${weightNoteEn(weight)}]: ${parameter.enPrompt}`;
+  });
+  return `${label}:\n${items.join("\n")}`;
+}
+
+function buildNegativeBlock(negativePrompt: string, language: "zh" | "en") {
+  if (!negativePrompt) return undefined;
+  return language === "zh" ? `负向提示词：\n${negativePrompt}` : `Negative prompt:\n${negativePrompt}`;
 }
 
 export function buildPrompt(
@@ -114,53 +177,50 @@ export function buildPrompt(
   model: ModelFormat
 ) {
   const selectedItems = sortSelected(parameters, selected);
-  const zhParameterParts = selectedItems.map(({ parameter, weight }) => `${parameter.zhPrompt}（权重 ${formatWeight(weight)}）`);
-  const enParameterParts = selectedItems.map(({ parameter, weight }) => weightedEnglish(parameter.enPrompt, weight, model));
-  const zhModelParts = selectedItems.map(({ parameter, weight }) => weightedChinese(parameter.zhPrompt, weight));
+  const groupedItems = groupSelected(selectedItems);
+  const subject = inputs.subjectZh.trim();
   const parameterNegatives = selectedItems.flatMap(({ parameter }) => parameter.negative ?? []);
   const negativeTokens = uniqueTokens([...normalizeTokens(inputs.avoid), ...parameterNegatives]);
+  const negativePrompt = negativeTokens.join(", ");
   const aspectRatio = aspectRatioOptions[inputs.aspectRatio] ?? aspectRatioOptions.auto;
   const clarity = clarityOptions[inputs.clarity] ?? clarityOptions.high;
   const aspectZh = inputs.aspectRatio === "auto" ? undefined : aspectRatio.zh;
   const aspectEn = inputs.aspectRatio === "auto" ? undefined : aspectRatio.en;
 
   const zhPrompt = cleanParts([
-    inputs.subjectZh ? `绘画主体：${inputs.subjectZh}` : "绘画主体：请填写主体",
-    ...zhParameterParts,
-    aspectZh,
-    clarity.zh,
-    qualityZh
-  ]).join("，");
+    subject ? `主体：\n${subject}` : undefined,
+    ...groupedItems.map(buildZhCategoryBlock),
+    aspectZh ? `图片比例：\n${aspectZh}` : undefined,
+    `清晰度：\n${clarity.zh}`,
+    `质量要求：\n${qualityZh}`
+  ]).join("\n\n");
 
-  const enPrompt = cleanParts([
-    inputs.subjectZh || "the main subject described by the user",
-    ...enParameterParts,
-    aspectEn,
-    clarity.en,
-    qualityEn
-  ]).join(", ");
+  const enCoreBlocks = cleanParts([
+    subject ? `Subject:\n${subject}` : undefined,
+    ...groupedItems.map((group) => buildEnCategoryBlock(group, model)),
+    aspectEn ? `Aspect ratio:\n${aspectEn}` : undefined,
+    `Clarity:\n${clarity.en}`,
+    `Quality:\n${qualityEn}`
+  ]);
 
-  const chineseModelPrompt = cleanParts([
-    inputs.subjectZh || "请填写绘画主体",
-    ...zhModelParts,
-    aspectZh,
-    clarity.zh,
-    qualityZh
-  ]).join("，");
-
-  const modelPrompt =
+  const enPrompt =
     model === "midjourney"
-      ? `${enPrompt} --style raw --v 6${aspectRatio.mj ? ` --ar ${aspectRatio.mj}` : ""}`
-      : model === "stable-diffusion"
-        ? enPrompt
-        : model === "doubao-qwen"
-          ? `${chineseModelPrompt}。适合豆包/通义千问图像生成，语言直接清晰，避免版权角色和品牌词。`
-          : enPrompt;
+      ? `${enCoreBlocks.join("\n\n")}\n\n--style raw --v 6${aspectRatio.mj ? ` --ar ${aspectRatio.mj}` : ""}`
+      : enCoreBlocks.join("\n\n");
+
+  const finalPromptZh = cleanParts([zhPrompt, buildNegativeBlock(negativePrompt, "zh")]).join("\n\n");
+  const finalPromptEn =
+    model === "midjourney" && negativePrompt
+      ? `${enPrompt}\n\n--no ${negativePrompt}`
+      : cleanParts([enPrompt, buildNegativeBlock(negativePrompt, "en")]).join("\n\n");
 
   return {
     zhPrompt,
-    enPrompt: modelPrompt,
-    negativePrompt: negativeTokens.join(", "),
+    enPrompt,
+    finalPrompt: finalPromptEn,
+    finalPromptZh,
+    finalPromptEn,
+    negativePrompt,
     selectedItems
   };
 }

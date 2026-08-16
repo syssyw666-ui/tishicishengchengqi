@@ -1,6 +1,6 @@
 import type { PromptParameter } from "../types";
 
-const img = (id: string) => `/assets/parameters/${id}.jpg`;
+const img = (id: string) => `${import.meta.env.BASE_URL}assets/parameters/${id}.jpg`;
 const poseNegative = ["awkward pose", "broken anatomy", "extra limbs", "twisted hands"];
 
 function pose(id: string, styleGroup: string, zhName: string, enName: string, zhPrompt: string, enPrompt: string): PromptParameter {

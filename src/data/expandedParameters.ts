@@ -1,6 +1,6 @@
 import type { PromptParameter } from "../types";
 
-const img = (id: string) => `/assets/parameters/${id}.jpg`;
+const img = (id: string) => `${import.meta.env.BASE_URL}assets/parameters/${id}.jpg`;
 
 export const expandedParameters: PromptParameter[] = [
   { id: "ethnic-miao", category: "ethnic-style", styleGroup: "major", zhName: "苗族蜡染", enName: "Miao Batik", defaultWeight: 1, image: img("ethnic-miao"), zhPrompt: "苗族蜡染灵感，蓝白蜡染纹样、银饰质感和山地村寨氛围", enPrompt: "Miao batik inspired visual style, blue-and-white wax-resist textile motifs, silver ornament detail, mountain village atmosphere" },

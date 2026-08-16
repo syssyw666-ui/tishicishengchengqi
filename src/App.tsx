@@ -1,38 +1,203 @@
-import { Check, Clipboard, Copy, EyeOff, ImageIcon, LogIn, MessageSquare, Plus, RotateCcw, Save, Search, Send, Shield, SlidersHorizontal, Sparkles, Trash2, X } from "lucide-react";
+import { Check, Copy, EyeOff, ImageIcon, Languages, LogIn, MessageSquare, Plus, RotateCcw, Save, Search, Send, Shield, SlidersHorizontal, Sparkles, Trash2, X } from "lucide-react";
 import { useMemo, useState, type ChangeEvent } from "react";
 import { categories, categoryGroups, parameters } from "./data/parameters";
 import { buildPrompt } from "./lib/prompt";
 import type { CategoryId, ModelFormat, PromptInputs, PromptParameter, SelectedParameter } from "./types";
 
-const modelOptions: Array<{ id: ModelFormat; zhName: string; note: string }> = [
-  { id: "openai", zhName: "OpenAI / 通用", note: "自然语言强化" },
-  { id: "midjourney", zhName: "Midjourney", note: ":: 权重" },
-  { id: "stable-diffusion", zhName: "Stable Diffusion", note: "(词:权重)" },
-  { id: "doubao-qwen", zhName: "豆包 / 千问", note: "中文结构化" }
+type UiLanguage = "zh" | "en";
+
+const modelOptions: Array<{ id: ModelFormat; zhName: string; enName: string; zhNote: string; enNote: string }> = [
+  { id: "openai", zhName: "OpenAI / 通用", enName: "OpenAI / General", zhNote: "自然语言 + 优先级", enNote: "natural language + priority" },
+  { id: "midjourney", zhName: "Midjourney", enName: "Midjourney", zhNote: "关键词::权重 + --ar", enNote: "keyword::weight + --ar" },
+  { id: "stable-diffusion", zhName: "Stable Diffusion", enName: "Stable Diffusion", zhNote: "(整段提示词:权重)", enNote: "(full phrase:weight)" },
+  { id: "doubao-qwen", zhName: "豆包 / 千问", enName: "Doubao / Qwen", zhNote: "中文整句 + 优先级", enNote: "Chinese structure + priority" }
 ];
 
 const aspectRatioOptions = [
-  { id: "auto", zhName: "自动比例", note: "交给模型判断" },
-  { id: "1:1", zhName: "1:1 方图", note: "头像 / 图标" },
-  { id: "16:9", zhName: "16:9 横版", note: "封面 / 视频" },
-  { id: "9:16", zhName: "9:16 竖版", note: "手机 / Story" },
-  { id: "4:3", zhName: "4:3 横版", note: "传统屏幕" },
-  { id: "3:4", zhName: "3:4 竖版", note: "海报 / 人像" },
-  { id: "3:2", zhName: "3:2 摄影横版", note: "照片横幅" },
-  { id: "2:3", zhName: "2:3 摄影竖版", note: "写真 / 封面" },
-  { id: "21:9", zhName: "21:9 超宽", note: "电影宽银幕" }
+  { id: "auto", zhName: "自动比例", enName: "Auto", zhNote: "交给模型判断", enNote: "let the model decide" },
+  { id: "1:1", zhName: "1:1 方图", enName: "1:1 Square", zhNote: "头像 / 图标", enNote: "avatar / icon" },
+  { id: "16:9", zhName: "16:9 横版", enName: "16:9 Landscape", zhNote: "封面 / 视频", enNote: "cover / video" },
+  { id: "9:16", zhName: "9:16 竖版", enName: "9:16 Portrait", zhNote: "手机 / Story", enNote: "mobile / story" },
+  { id: "4:3", zhName: "4:3 横版", enName: "4:3 Landscape", zhNote: "传统屏幕", enNote: "classic screen" },
+  { id: "3:4", zhName: "3:4 竖版", enName: "3:4 Portrait", zhNote: "海报 / 人像", enNote: "poster / portrait" },
+  { id: "3:2", zhName: "3:2 摄影横版", enName: "3:2 Photo Landscape", zhNote: "照片横幅", enNote: "photo banner" },
+  { id: "2:3", zhName: "2:3 摄影竖版", enName: "2:3 Photo Portrait", zhNote: "写真 / 封面", enNote: "portrait / cover" },
+  { id: "21:9", zhName: "21:9 超宽", enName: "21:9 Ultrawide", zhNote: "电影宽银幕", enNote: "cinematic widescreen" }
 ];
 
 const clarityOptions = [
-  { id: "standard", zhName: "标准", note: "轻量快速" },
-  { id: "high", zhName: "高清", note: "默认推荐" },
-  { id: "ultra", zhName: "超清", note: "细节更多" },
-  { id: "4k", zhName: "4K 级", note: "放大查看" }
+  { id: "standard", zhName: "标准", enName: "Standard", zhNote: "轻量快速", enNote: "light and fast" },
+  { id: "high", zhName: "高清", enName: "High", zhNote: "默认推荐", enNote: "recommended default" },
+  { id: "ultra", zhName: "超清", enName: "Ultra", zhNote: "细节更多", enNote: "more detail" },
+  { id: "4k", zhName: "4K 级", enName: "4K Level", zhNote: "放大查看", enNote: "close inspection" }
 ];
+
+const uiText = {
+  zh: {
+    language: "界面语言",
+    brandTitle: "图片提示词生成器",
+    brandSubtitle: "用参考图点选参数，生成中英双语生图提示词。",
+    subject: "绘画主体",
+    subjectPlaceholder: "例如：一位穿着红色披风的未来考古学家，站在巨型遗迹前",
+    focusHint: "小提示：可以在主体描述里写清焦点位置，例如“焦点在人物眼睛”“画面重点在左侧产品”，用来控制视觉重点。",
+    avoid: "不要出现的内容",
+    avoidPlaceholder: "例如：低清晰度，畸形手，文字，水印，过曝",
+    aspectRatio: "图片比例",
+    clarity: "清晰度",
+    outputModel: "输出模型",
+    modelHint: "权重会按模型转换：MJ/SD 使用专用语法，通用与豆包/千问会变成“优先表现 / 弱化辅助”的整句说明。",
+    admin: "管理后台",
+    adminHint: "管理员可新增、隐藏、调整参数与提示词",
+    reset: "重置",
+    single: "单选",
+    multi: "多选",
+    selected: "已选",
+    searchPlaceholder: "搜索参数、风格、材质...",
+    selectedEmpty: "从中间图库选择风格、镜头、光线或用途。",
+    collapse: "收起",
+    expand: "展开",
+    weight: "权重",
+    weightTitle: "拖动调整提示词权重，未选中时会自动选中",
+    promptPreview: "提示词预览",
+    zh: "中文",
+    en: "English",
+    finalZh: "最终版 · 中文",
+    finalEn: "Final Prompt · English",
+    quickCopy: "快捷复制",
+    quickCopyHint: "辅助提示词不展开显示，只点击复制。",
+    copied: "已复制",
+    copy: "复制",
+    copyPsd: "复制 PSD 分层提示词",
+    copiedPsd: "已复制 PSD 分层提示词",
+    reversePrompt: "提示词反推",
+    feedback: "意见建议",
+    feedbackHint: "提交后会保存到管理员后台，管理员登录后可查看文字和图片。",
+    feedbackPlaceholder: "写下你希望增加的风格、参数、使用问题或优化建议...",
+    uploadImage: "插入图片",
+    submit: "提交",
+    removeImage: "移除图片",
+    delete: "删除"
+  },
+  en: {
+    language: "UI Language",
+    brandTitle: "Image Prompt Generator",
+    brandSubtitle: "Select visual reference cards to generate bilingual AI image prompts.",
+    subject: "Subject",
+    subjectPlaceholder: "Example: a future archaeologist in a red cloak standing before a giant ruin",
+    focusHint: "Tip: describe the focus position in the subject, such as “focus on the eyes” or “main focus on the left product”.",
+    avoid: "Negative Prompt",
+    avoidPlaceholder: "Example: low resolution, bad hands, text, watermark, overexposure",
+    aspectRatio: "Aspect Ratio",
+    clarity: "Clarity",
+    outputModel: "Output Model",
+    modelHint: "Weights are converted by model: MJ/SD use model syntax; General and Doubao/Qwen use priority notes.",
+    admin: "Admin Panel",
+    adminHint: "Admins can add, hide, and adjust parameters and prompt fragments.",
+    reset: "Reset",
+    single: "Single",
+    multi: "Multi",
+    selected: "Selected",
+    searchPlaceholder: "Search parameters, styles, materials...",
+    selectedEmpty: "Select styles, camera, lighting, or purpose from the gallery.",
+    collapse: "Collapse",
+    expand: "Expand",
+    weight: "Weight",
+    weightTitle: "Drag to adjust prompt weight. Dragging an unselected card will select it.",
+    promptPreview: "Prompt Preview",
+    zh: "中文",
+    en: "English",
+    finalZh: "最终版 · 中文",
+    finalEn: "Final Prompt · English",
+    quickCopy: "Quick Copy",
+    quickCopyHint: "Auxiliary prompts are hidden here; click to copy directly.",
+    copied: "Copied",
+    copy: "Copy",
+    copyPsd: "Copy PSD Layer Prompt",
+    copiedPsd: "Copied PSD Layer Prompt",
+    reversePrompt: "Reverse Prompt",
+    feedback: "Feedback",
+    feedbackHint: "Submitted feedback is saved in the admin panel for review.",
+    feedbackPlaceholder: "Suggest styles, parameters, issues, or improvements...",
+    uploadImage: "Attach Image",
+    submit: "Submit",
+    removeImage: "Remove Image",
+    delete: "Delete"
+  }
+} satisfies Record<UiLanguage, Record<string, string>>;
+
+const categoryDescriptionEn: Partial<Record<CategoryId, string>> = {
+  style: "Controls the overall visual language. Multiple choices can be mixed.",
+  "artist-style": "References art-history brushwork, composition, color, and school language.",
+  character: "Controls age stage, body type, profession, social role, fantasy, or sci-fi identity.",
+  ethnicity: "Neutral appearance references for region, skin tone, facial features, and hair texture.",
+  clothing: "Controls clothing type, sleeves, bottoms, outerwear, uniforms, traditional garments, and accessories.",
+  "hair-makeup": "Controls hair length, hairstyle, hair movement, and natural or stylized makeup.",
+  pose: "Controls standing, sitting, lying, movement, dance, action, interaction, and camera-ready poses.",
+  expression: "Controls facial expression, eye expression, and character temperament.",
+  "ethnic-style": "References Chinese ethnic patterns, crafts, architecture, and color inspiration.",
+  scene: "Defines the environment, space, and background type.",
+  era: "Defines time period, worldbuilding, and cultural context.",
+  "story-action": "Controls the event, interaction, and narrative action happening in the image.",
+  mood: "Defines emotional atmosphere and narrative feeling.",
+  props: "Controls handheld objects, scene supports, packaging, and narrative props.",
+  layout: "Controls subject position, whitespace direction, and title safe areas.",
+  background: "Controls background color, paper, fabric, metal, natural, or studio texture.",
+  "layout-style": "Controls layout aesthetics and design language.",
+  framing: "Controls the subject scale in the frame. Single choice only.",
+  camera: "Controls composition rules, visual guidance, angle, focal length, and camera movement.",
+  lighting: "Controls light, weather, and atmosphere.",
+  render: "Controls final texture, detail, rendering algorithm, and material feel.",
+  "visual-effect": "Controls particles, smoke, fire, glitches, light trails, and surreal effects.",
+  purpose: "Tells the model the intended usage of the image.",
+  "color-grading": "Controls post-processing, film tone, camera look, and color grading.",
+  "color-material": "Enhances color palette, surface material, and tactile feel."
+};
+
+const groupNameEn: Record<string, string> = {
+  all: "All",
+  base: "Basic",
+  anime: "Animation / Anime",
+  eastern: "Eastern / Folk",
+  "photo-film-3d": "Photo / Film / 3D",
+  "design-retro": "Design / Retro",
+  "craft-print": "Craft / Print",
+  region: "Regional Reference",
+  "skin-tone": "Skin Tone",
+  "facial-feature": "Facial Features",
+  "hair-texture": "Natural Hair Texture",
+  mixed: "Mixed / Group",
+  "age-stage": "Age Stage",
+  "body-type": "Body Type",
+  profession: "Profession",
+  "social-role": "Social Role",
+  fantasy: "Fantasy",
+  "sci-fi": "Sci-Fi",
+  "negative-space": "Whitespace",
+  "subject-position": "Subject Position",
+  material: "Material",
+  color: "Color",
+  fabric: "Fabric",
+  "camera-angle": "Camera Angle",
+  motion: "Motion",
+  natural: "Natural",
+  interior: "Interior",
+  dramatic: "Dramatic",
+  realism: "Realism",
+  stylized: "Stylized",
+  elemental: "Elemental",
+  atmosphere: "Atmosphere",
+  social: "Social",
+  design: "Design",
+  cover: "Cover",
+  commercial: "Commercial",
+  palette: "Palette",
+  industrial: "Industrial",
+  translucent: "Translucent"
+};
 
 const defaultInputs: PromptInputs = {
   subjectZh: "",
-  avoid: "水印，无关 logo，未要求的额外文字",
+  avoid: "低清晰度，模糊，噪点，过曝，欠曝，畸形身体，畸形手，坏手，多手指，少手指，融合手指，断指，扭曲手指，畸形脸，五官错位，斜视，坏眼睛，多余肢体，缺失肢体，比例错误，透视错误，重复人物，文字，乱码，水印，logo，边框，裁切主体，画面脏污，压缩痕迹，马赛克，低质量",
   aspectRatio: "auto",
   clarity: "high"
 };
@@ -76,6 +241,16 @@ const reversePromptTemplates = [
     text: "反推这个IP角色的形象设定、风格类型、五官表情、体型比例、服饰、配色、材质、光影、细节特征，生成同款IP角色提示词。详细描述：风格（Q版/潮玩/治愈/国风/黏土/卡通）、头身比、发型、服饰装饰、神态、动作姿态、材质（哑光/树脂/PVC/陶瓷）、质感。提取关键词：IP角色、盲盒风格、潮玩、C4D、3D 渲染、柔光、纯色背景、细腻质感、高细节、可爱、治愈、极简、全身造型。"
   }
 ];
+
+const reversePromptLabelEn: Record<string, string> = {
+  "reverse-general": "General Reverse",
+  "reverse-font-logo": "Font / Logo",
+  "reverse-landscape": "Landscape Scene",
+  "reverse-photo": "Photo / Portrait / Product",
+  "reverse-illustration": "Illustration / Anime",
+  "reverse-3d": "3D Render",
+  "reverse-ip-character": "IP Character / Toy"
+};
 
 type ParameterOverride = Partial<Omit<PromptParameter, "id">>;
 type ParameterOverrides = Record<string, ParameterOverride>;
@@ -209,6 +384,8 @@ export function App() {
   const [activeGroupByCategory, setActiveGroupByCategory] = useState<Record<string, string>>({});
   const [checkedPanelOpen, setCheckedPanelOpen] = useState(true);
   const [model, setModel] = useState<ModelFormat>("openai");
+  const [promptLanguage, setPromptLanguage] = useState<"zh" | "en">("zh");
+  const [uiLanguage, setUiLanguage] = useState<UiLanguage>("zh");
   const [selected, setSelected] = useState<SelectedParameter[]>([]);
   const [copied, setCopied] = useState<string | null>(null);
   const [customParameters, setCustomParameters] = useState<PromptParameter[]>(() => loadLocal(customParametersKey, []));
@@ -243,6 +420,7 @@ export function App() {
   }, [customParameters, parameterOverrides]);
 
   const selectedById = useMemo(() => new Map(selected.map((item) => [item.id, item])), [selected]);
+  const t = uiText[uiLanguage];
   const activeCategoryInfo = categories.find((category) => category.id === activeCategory)!;
   const activeGroups = categoryGroups[activeCategory] ?? [];
   const activeGroup = activeGroupByCategory[activeCategory] ?? "all";
@@ -271,6 +449,35 @@ export function App() {
   }, [activeCategory, search, selectedById, selectedOnly, activeGroups.length, activeGroup, allParameters]);
 
   const prompt = useMemo(() => buildPrompt(inputs, selected, allParameters, model), [allParameters, inputs, model, selected]);
+  const finalPromptValue = promptLanguage === "zh" ? prompt.finalPromptZh : prompt.finalPromptEn;
+
+  function categoryName(category: { zhName: string; enName: string }) {
+    return uiLanguage === "zh" ? category.zhName : category.enName;
+  }
+
+  function categoryDescription(category: CategoryId, fallback: string) {
+    return uiLanguage === "zh" ? fallback : (categoryDescriptionEn[category] ?? fallback);
+  }
+
+  function groupName(group: { id: string; zhName: string }) {
+    return uiLanguage === "zh" ? group.zhName : (groupNameEn[group.id] ?? group.id.replace(/-/g, " ").replace(/\b\w/g, (letter) => letter.toUpperCase()));
+  }
+
+  function parameterPrimary(parameter: PromptParameter) {
+    return uiLanguage === "zh" ? parameter.zhName : parameter.enName;
+  }
+
+  function parameterSecondary(parameter: PromptParameter) {
+    return uiLanguage === "zh" ? parameter.enName : parameter.zhName;
+  }
+
+  function modelLabel(option: (typeof modelOptions)[number]) {
+    return uiLanguage === "zh" ? option.zhName : option.enName;
+  }
+
+  function modelNote(option: (typeof modelOptions)[number]) {
+    return uiLanguage === "zh" ? option.zhNote : option.enNote;
+  }
 
   function updateInput<K extends keyof PromptInputs>(key: K, value: PromptInputs[K]) {
     setInputs((current) => ({ ...current, [key]: value }));
@@ -307,6 +514,10 @@ export function App() {
 
   function updateWeight(parameter: PromptParameter, weight: number) {
     selectParameter(parameter, weight);
+  }
+
+  function removeSelectedParameter(id: string) {
+    setSelected((current) => current.filter((item) => item.id !== id));
   }
 
   async function copyText(label: string, value: string) {
@@ -388,6 +599,7 @@ export function App() {
     setSelectedOnly(false);
     setActiveGroupByCategory({});
     setModel("openai");
+    setPromptLanguage("zh");
     setActiveCategory("style");
   }
 
@@ -508,71 +720,58 @@ export function App() {
             <Sparkles size={20} />
           </div>
           <div>
-            <h1>图片提示词生成器</h1>
-            <p>用参考图点选参数，生成中英双语生图提示词。</p>
+            <h1>{t.brandTitle}</h1>
+            <p>{t.brandSubtitle}</p>
           </div>
         </div>
 
         <label className="field">
-          <span>绘画主体</span>
+          <span>{t.subject}</span>
           <textarea
             value={inputs.subjectZh}
             onChange={(event) => updateInput("subjectZh", event.target.value)}
-            placeholder="例如：一位穿着红色披风的未来考古学家，站在巨型遗迹前"
+            placeholder={t.subjectPlaceholder}
           />
-          <small className="field-hint">小提示：可以在主体描述里写清焦点位置，例如“焦点在人物眼睛”“画面重点在左侧产品”，用来控制视觉重点。</small>
+          <small className="field-hint">{t.focusHint}</small>
         </label>
 
         <label className="field">
-          <span>不要出现的内容</span>
+          <span>{t.avoid}</span>
           <textarea
             value={inputs.avoid}
             onChange={(event) => updateInput("avoid", event.target.value)}
-            placeholder="例如：低清晰度，畸形手，文字，水印，过曝"
+            placeholder={t.avoidPlaceholder}
           />
         </label>
 
         <div className="generation-settings">
           <label className="field">
-            <span>图片比例</span>
+            <span>{t.aspectRatio}</span>
             <select value={inputs.aspectRatio} onChange={(event) => updateInput("aspectRatio", event.target.value)}>
               {aspectRatioOptions.map((option) => (
                 <option key={option.id} value={option.id}>
-                  {option.zhName} · {option.note}
+                  {uiLanguage === "zh" ? option.zhName : option.enName} · {uiLanguage === "zh" ? option.zhNote : option.enNote}
                 </option>
               ))}
             </select>
           </label>
 
           <label className="field">
-            <span>清晰度</span>
+            <span>{t.clarity}</span>
             <select value={inputs.clarity} onChange={(event) => updateInput("clarity", event.target.value)}>
               {clarityOptions.map((option) => (
                 <option key={option.id} value={option.id}>
-                  {option.zhName} · {option.note}
+                  {uiLanguage === "zh" ? option.zhName : option.enName} · {uiLanguage === "zh" ? option.zhNote : option.enNote}
                 </option>
               ))}
             </select>
           </label>
         </div>
 
-        <label className="field keyword-search-field">
-          <span>关键词搜索</span>
-          <div className="search-box inline-search">
-            <Search size={16} />
-            <input
-              value={search}
-              onChange={(event) => setSearch(event.target.value)}
-              placeholder="搜索风格、镜头、背景、民族、版式..."
-            />
-          </div>
-          <small className="field-hint">输入关键词后会在全部分类里查找匹配项。</small>
-        </label>
-
         <div className="model-block">
           <div className="section-title">
             <SlidersHorizontal size={17} />
-            <span>输出模型</span>
+            <span>{t.outputModel}</span>
           </div>
           <div className="model-options">
             {modelOptions.map((option) => (
@@ -582,24 +781,25 @@ export function App() {
                 onClick={() => setModel(option.id)}
                 type="button"
               >
-                <strong>{option.zhName}</strong>
-                <small>{option.note}</small>
+                <strong>{modelLabel(option)}</strong>
+                <small>{modelNote(option)}</small>
               </button>
             ))}
           </div>
+          <small className="field-hint">{t.modelHint}</small>
         </div>
 
         <div className="admin-entry">
           <button className="admin-button" onClick={openAdmin} type="button">
             <Shield size={16} />
-            管理后台
+            {t.admin}
           </button>
-          <small>管理员可新增、隐藏、调整参数与提示词</small>
+          <small>{t.adminHint}</small>
         </div>
 
         <button className="reset-button" onClick={resetAll} type="button">
           <RotateCcw size={16} />
-          重置
+          {t.reset}
         </button>
       </section>
 
@@ -616,8 +816,8 @@ export function App() {
                 }}
                 type="button"
               >
-                {category.zhName}
-                <small>{category.mode === "single" ? "单选" : "多选"}</small>
+                {categoryName(category)}
+                <small>{category.mode === "single" ? t.single : t.multi}</small>
               </button>
             ))}
           </div>
@@ -625,16 +825,16 @@ export function App() {
           <div className="search-row">
             <label className="search-box">
               <Search size={16} />
-              <input value={search} onChange={(event) => setSearch(event.target.value)} placeholder="搜索参数、风格、材质..." />
+              <input value={search} onChange={(event) => setSearch(event.target.value)} placeholder={t.searchPlaceholder} />
             </label>
             <button className={selectedOnly ? "pill active" : "pill"} onClick={() => setSelectedOnly((value) => !value)} type="button">
-              已选 {selected.length}
+              {t.selected} {selected.length}
             </button>
           </div>
 
           {!selectedOnly && (
             <p className="category-note">
-              {activeCategoryInfo.zhName} / {activeCategoryInfo.enName}：{activeCategoryInfo.description}
+              {categoryName(activeCategoryInfo)} / {uiLanguage === "zh" ? activeCategoryInfo.enName : activeCategoryInfo.zhName}: {categoryDescription(activeCategoryInfo.id, activeCategoryInfo.description)}
             </p>
           )}
 
@@ -647,7 +847,7 @@ export function App() {
                   onClick={() => setActiveGroupByCategory((current) => ({ ...current, [activeCategory]: group.id }))}
                   type="button"
                 >
-                  {group.zhName}
+                  {groupName(group)}
                 </button>
               ))}
             </div>
@@ -662,6 +862,7 @@ export function App() {
               <article
                 key={parameter.id}
                 className={selectedItem ? "parameter-card selected" : "parameter-card"}
+                data-tooltip={`${parameter.zhPrompt}\n${parameter.enPrompt}`}
               >
                 <div className="image-frame">
                   <button className="image-button" onClick={() => toggleParameter(parameter)} type="button">
@@ -672,11 +873,11 @@ export function App() {
                       </span>
                     )}
                   </button>
-                  <div className={selectedItem ? "weight-rail active" : "weight-rail"} title="拖动调整提示词权重，未选中时会自动选中">
+                  <div className={selectedItem ? "weight-rail active" : "weight-rail"} title={t.weightTitle}>
                     <span>{visibleWeight.toFixed(1)}</span>
                     <div className="vertical-slider-wrap">
                       <input
-                        aria-label={`${parameter.zhName} 权重`}
+                        aria-label={`${parameterPrimary(parameter)} ${t.weight}`}
                         className="vertical-slider"
                         type="range"
                         min="0.2"
@@ -687,13 +888,13 @@ export function App() {
                         onChange={(event) => updateWeight(parameter, Number(event.target.value))}
                       />
                     </div>
-                    <small>权重</small>
+                    <small>{t.weight}</small>
                   </div>
                 </div>
                 <div className="card-meta">
                   <div>
-                    <strong>{parameter.zhName}</strong>
-                    <span>{parameter.enName}</span>
+                    <strong>{parameterPrimary(parameter)}</strong>
+                    <span>{parameterSecondary(parameter)}</span>
                   </div>
                 </div>
               </article>
@@ -705,57 +906,50 @@ export function App() {
       <section className="right-panel">
         <div className="output-header">
           <div>
-            <h2>提示词预览</h2>
-            <p>{modelOptions.find((option) => option.id === model)?.zhName}</p>
+            <h2>{t.promptPreview}</h2>
+            <p>{modelOptions.find((option) => option.id === model)?.[uiLanguage === "zh" ? "zhName" : "enName"]}</p>
           </div>
-          <button className="copy-all" onClick={() => copyText("all", `${prompt.zhPrompt}\n\n${prompt.enPrompt}\n\nNegative: ${prompt.negativePrompt}\n\nPSD: ${psdLayerPrompt}`)} type="button">
-            <Clipboard size={16} />
-            全部复制
+          <button className="language-toggle" onClick={() => setUiLanguage((language) => (language === "zh" ? "en" : "zh"))} type="button">
+            <Languages size={15} />
+            {uiLanguage === "zh" ? "中文" : "English"}
           </button>
         </div>
 
-        <PromptBox label="中文解释版" copied={copied === "zh"} value={prompt.zhPrompt} onCopy={() => copyText("zh", prompt.zhPrompt)} />
-        <PromptBox label="模型生图版" copied={copied === "en"} value={prompt.enPrompt} onCopy={() => copyText("en", prompt.enPrompt)} />
-        <PromptBox label="负面提示词" copied={copied === "negative"} value={prompt.negativePrompt} onCopy={() => copyText("negative", prompt.negativePrompt)} />
-
-        <section className="quick-prompt-box">
-          <div className="quick-prompt-header">
-            <div>
-              <h3>快捷复制</h3>
-              <p>辅助提示词不展开显示，只点击复制。</p>
-            </div>
-          </div>
-
-          <button className="quick-copy-button wide" onClick={() => copyText("psd", psdLayerPrompt)} type="button">
-            {copied === "psd" ? <Check size={15} /> : <Copy size={15} />}
-            {copied === "psd" ? "已复制 PSD 分层提示词" : "复制 PSD 分层提示词"}
+        <div className="prompt-language-tabs">
+          <button className={promptLanguage === "zh" ? "active" : ""} onClick={() => setPromptLanguage("zh")} type="button">
+            {t.zh}
           </button>
+          <button className={promptLanguage === "en" ? "active" : ""} onClick={() => setPromptLanguage("en")} type="button">
+            {t.en}
+          </button>
+        </div>
 
-          <div className="reverse-prompt-title">提示词反推</div>
-          <div className="reverse-prompt-grid">
-            {reversePromptTemplates.map((template) => (
-              <button className="quick-copy-button" key={template.id} onClick={() => copyText(template.id, template.text)} type="button">
-                {copied === template.id ? <Check size={15} /> : <Copy size={15} />}
-                {copied === template.id ? "已复制" : template.label}
-              </button>
-            ))}
-          </div>
-        </section>
+        <PromptBox
+          label={promptLanguage === "zh" ? t.finalZh : t.finalEn}
+          copied={copied === `final-${promptLanguage}`}
+          value={finalPromptValue}
+          onCopy={() => copyText(`final-${promptLanguage}`, finalPromptValue)}
+          variant="final"
+          language={uiLanguage}
+        />
 
         <div className={checkedPanelOpen ? "selected-list open" : "selected-list"}>
           <button className="selected-toggle" onClick={() => setCheckedPanelOpen((value) => !value)} type="button">
-            <span>已勾选 {prompt.selectedItems.length}</span>
-            <strong>{checkedPanelOpen ? "收起" : "展开"}</strong>
+            <span>{t.selected} {prompt.selectedItems.length}</span>
+            <strong>{checkedPanelOpen ? t.collapse : t.expand}</strong>
           </button>
           {checkedPanelOpen && (
             prompt.selectedItems.length === 0 ? (
-              <p className="empty">从中间图库选择风格、镜头、光线或用途。</p>
+              <p className="empty">{t.selectedEmpty}</p>
             ) : (
               <div className="selected-rows">
                 {prompt.selectedItems.map(({ parameter, weight }) => (
                   <div className="selected-row" key={parameter.id}>
-                    <span>{parameter.zhName}</span>
+                    <span>{parameterPrimary(parameter)}</span>
                     <strong>{weight.toFixed(1)}</strong>
+                    <button aria-label={`${t.delete} ${parameterPrimary(parameter)}`} className="selected-remove" onClick={() => removeSelectedParameter(parameter.id)} type="button">
+                      <X size={14} />
+                    </button>
                   </div>
                 ))}
               </div>
@@ -763,11 +957,35 @@ export function App() {
           )}
         </div>
 
+        <section className="quick-prompt-box">
+          <div className="quick-prompt-header">
+            <div>
+              <h3>{t.quickCopy}</h3>
+              <p>{t.quickCopyHint}</p>
+            </div>
+          </div>
+
+          <button className="quick-copy-button wide" onClick={() => copyText("psd", psdLayerPrompt)} type="button">
+            {copied === "psd" ? <Check size={15} /> : <Copy size={15} />}
+            {copied === "psd" ? t.copiedPsd : t.copyPsd}
+          </button>
+
+          <div className="reverse-prompt-title">{t.reversePrompt}</div>
+          <div className="reverse-prompt-grid">
+            {reversePromptTemplates.map((template) => (
+              <button className="quick-copy-button" key={template.id} onClick={() => copyText(template.id, template.text)} type="button">
+                {copied === template.id ? <Check size={15} /> : <Copy size={15} />}
+                {copied === template.id ? t.copied : (uiLanguage === "zh" ? template.label : reversePromptLabelEn[template.id])}
+              </button>
+            ))}
+          </div>
+        </section>
+
         <section className="feedback-box">
           <div className="feedback-header">
             <div>
-              <h3>意见建议</h3>
-              <p>提交后会保存到管理员后台，管理员登录后可查看文字和图片。</p>
+              <h3>{t.feedback}</h3>
+              <p>{t.feedbackHint}</p>
             </div>
             <MessageSquare size={18} />
           </div>
@@ -776,18 +994,18 @@ export function App() {
             className="feedback-textarea"
             value={feedbackText}
             onChange={(event) => setFeedbackText(event.target.value)}
-            placeholder="写下你希望增加的风格、参数、使用问题或优化建议..."
+            placeholder={t.feedbackPlaceholder}
           />
 
           <div className="feedback-actions">
             <label className="upload-button">
               <ImageIcon size={15} />
-              插入图片
+              {t.uploadImage}
               <input accept="image/*" onChange={handleFeedbackImage} type="file" />
             </label>
             <button className="primary-action" onClick={submitFeedback} type="button">
               <Send size={15} />
-              提交
+              {t.submit}
             </button>
           </div>
 
@@ -797,7 +1015,7 @@ export function App() {
               <div>
                 <strong>{feedbackImage.name}</strong>
                 <span>{formatFileSize(feedbackImage.size)}</span>
-                <button onClick={removeFeedbackImage} type="button">移除图片</button>
+                <button onClick={removeFeedbackImage} type="button">{t.removeImage}</button>
               </div>
             </div>
           )}
@@ -1179,16 +1397,19 @@ interface PromptBoxProps {
   copied: boolean;
   value: string;
   onCopy: () => void;
+  variant?: "default" | "final";
+  language: UiLanguage;
 }
 
-function PromptBox({ label, copied, value, onCopy }: PromptBoxProps) {
+function PromptBox({ label, copied, value, onCopy, variant = "default", language }: PromptBoxProps) {
+  const labelText = uiText[language];
   return (
-    <section className="prompt-box">
+    <section className={variant === "final" ? "prompt-box final-prompt-box" : "prompt-box"}>
       <div className="prompt-box-header">
         <h3>{label}</h3>
         <button onClick={onCopy} type="button">
           {copied ? <Check size={15} /> : <Copy size={15} />}
-          {copied ? "已复制" : "复制"}
+          {copied ? labelText.copied : labelText.copy}
         </button>
       </div>
       <textarea readOnly value={value} />

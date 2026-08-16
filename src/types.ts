@@ -4,6 +4,7 @@ export type CategoryId =
   | "style"
   | "artist-style"
   | "character"
+  | "ethnicity"
   | "clothing"
   | "hair-makeup"
   | "pose"

@@ -1,6 +1,6 @@
 import type { PromptParameter } from "../types";
 
-const img = (id: string) => `/assets/parameters/${id}.jpg`;
+const img = (id: string) => `${import.meta.env.BASE_URL}assets/parameters/${id}.jpg`;
 const gradingNegative = ["color banding", "muddy colors", "overexposed highlights", "crushed blacks"];
 
 function grade(id: string, styleGroup: string, zhName: string, enName: string, zhPrompt: string, enPrompt: string): PromptParameter {

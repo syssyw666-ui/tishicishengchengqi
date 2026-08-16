@@ -17,6 +17,19 @@ pnpm run build
 
 构建产物会输出到 `dist`。
 
+## Windows 安装包测试
+
+```bash
+pnpm install
+pnpm run package:win
+```
+
+安装包会输出到 `release` 目录。若只想先测试免安装目录版：
+
+```bash
+pnpm run package:win:dir
+```
+
 ## Cloudflare Pages 部署配置
 
 在 Cloudflare Pages 连接 GitHub 仓库后，使用以下设置：

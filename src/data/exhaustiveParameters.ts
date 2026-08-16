@@ -1,6 +1,6 @@
 import type { PromptParameter } from "../types";
 
-const img = (id: string) => `/assets/parameters/${id}.jpg`;
+const img = (id: string) => `${import.meta.env.BASE_URL}assets/parameters/${id}.jpg`;
 
 export const exhaustiveParameters: PromptParameter[] = [
   { id: "layout-centered-hero", category: "layout", styleGroup: "subject-position", zhName: "中心主视觉", enName: "Centered Hero", defaultWeight: 1, image: img("layout-centered-hero"), zhPrompt: "中心主视觉排版，主体居中，四周保留均衡呼吸空间", enPrompt: "centered hero composition, subject placed in the middle with balanced breathing room" },
