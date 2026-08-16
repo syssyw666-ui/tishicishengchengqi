@@ -20,6 +20,7 @@ Build command: pnpm run build
 Build output directory: dist
 Root directory: /
 Node.js version: 22
+Deploy command: 留空
 ```
 
 如果页面里没有 Node.js 版本选择项，就在环境变量里添加：
@@ -32,9 +33,14 @@ NODE_VERSION=22
 
 ```toml
 name = "tishicishengchengqi"
-pages_build_output_dir = "./dist"
 compatibility_date = "2026-08-16"
+pages_build_output_dir = "./dist"
+
+[assets]
+directory = "./dist"
 ```
+
+如果 Cloudflare 当前项目里已经填写了 `Deploy command: npx wrangler deploy`，也可以保留；上面的 `[assets]` 配置会告诉 Wrangler 上传 `./dist` 静态目录。但普通 Pages 项目更推荐把 Deploy command 留空，让 Pages 使用默认发布流程。
 
 ## 3. 创建 Pages 项目
 
