@@ -41,7 +41,7 @@ Build output directory: dist
 Node.js version: 22
 ```
 
-仓库中已包含 `public/_redirects`，用于让 Cloudflare Pages 在刷新页面或直接访问子路径时回退到 `index.html`。
+当前应用是单页工具，没有额外前端路由；仓库不包含 `_redirects`，避免 `wrangler deploy` 判断为重定向循环。
 
 ## 说明
 
