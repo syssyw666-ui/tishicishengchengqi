@@ -978,6 +978,216 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     enDescription: "Premium Qinian Hall poster blending architecture, type, and annotations.",
     image: "/assets/featured/text-qinian-hall-type-poster.jpg",
     prompt: "以[祈年殿】作为核心视觉元素，创作一张极致简约的高端艺术海报。画面中央放置建筑的插画图形，背景以超大加粗的英文字体呈现，字体造型与建筑轮廓形成呼应，突出主建筑，字体淡化处理。环绕主体布置小号文字，阐释[祈年殿】的设计理念与哲思，并配以中文注解。整体调性典雅克制，色彩选择与建筑气质相契合一一部分文字或图形可巧妙延展为建筑的构件或外轮廓的延伸，营造浑然一体的构图。最终呈现一张高级感十足、极简且富有张力的艺术海报。"
+  },
+  {
+    id: "text-wild-eastern-man-sketch",
+    category: "text-to-image",
+    zhTitle: "潦草东方男主插画",
+    enTitle: "Wild Eastern Man Sketch",
+    zhDescription: "夸张、童趣、重彩水彩的街头人物插画。",
+    enDescription: "Loose expressive watercolor street portrait with playful energy.",
+    image: "/assets/featured/text-wild-eastern-man-sketch.jpg",
+    prompt: "创意夸张，极简有趣，潦草插画，水彩重彩，大风，街头，夸张毕加索风格的不羁东方男帅哥，不修边幅，头发凌乱，胡子拉碴，飘逸洒脱，互动，故事感，富有创造力，童趣幼稚。"
+  },
+  {
+    id: "text-lhasa-barkhor-line-sketch",
+    category: "text-to-image",
+    zhTitle: "拉萨八角街线画",
+    enTitle: "Lhasa Barkhor Line Sketch",
+    zhDescription: "极简速写彩色线画与人文街头叙事。",
+    enDescription: "Minimal colorful line sketch of Lhasa Barkhor street life.",
+    image: "/assets/featured/text-lhasa-barkhor-line-sketch.jpg",
+    prompt: "极简速写彩色线画，随性潦草的笔触，凝练线条勾勒抽象轮廓，近景视角描绘西藏拉萨八角街的街头场景，不同视角、层叠构图，光影层次丰富，画面大面积艺术留白，于看似杂乱的线条中构建完整叙事，人文写实风格，意境悠远，高级艺术质感，展现市井自然百态。底部有一行极细小的草体书法：HHS。2026。"
+  },
+  {
+    id: "text-folk-tile-cat-rubbing",
+    category: "text-to-image",
+    zhTitle: "民间瓦猫拓印",
+    enTitle: "Folk Tile Cat Rubbing",
+    zhDescription: "白底平面瓦猫拓印与民间纹样装饰。",
+    enDescription: "Flat folk tile-cat rubbing print on a clean white background.",
+    image: "/assets/featured/text-folk-tile-cat-rubbing.jpg",
+    prompt: "一幅拓印作品，主体是平面的民间艺术瓦猫的拓印作品，有独特美观的花纹装饰，极具拓印特色，以简洁的白色背景衬托。"
+  },
+  {
+    id: "text-monet-window-flowers",
+    category: "text-to-image",
+    zhTitle: "莫奈窗边花影",
+    enTitle: "Monet Window Flowers",
+    zhDescription: "淡蓝油画、窗帘花影和夏秋交替氛围。",
+    enDescription: "Blue-toned impressionist window scene with flowers and curtains.",
+    image: "/assets/featured/text-monet-window-flowers.jpg",
+    prompt: "此图为莫奈油画风格，淡蓝色的色调，精致的细节，细腻的笔触，呈现出一种模糊的氛围感。窗外的枝蔓上，花朵与窗帘在风中轻轻地晃动着。室外阳光明媚，天空湛蓝，室内则是光影朦胧，体现出夏季向秋季过渡的氛围感，室内外光线亮暗分明，色调明暗对比强烈，有着淡淡的凄凉之感，拥有令人窒息的美感。在画面的合适位置，有着花体字的“Flowers fade. The fruits of summer fade. They have their seasons so do we.”。"
+  },
+  {
+    id: "text-guardian-deity-pen-engraving",
+    category: "text-to-image",
+    zhTitle: "韦陀钢笔版画",
+    enTitle: "Guardian Pen Engraving",
+    zhDescription: "极繁黑白钢笔版画与敦煌色彩背景。",
+    enDescription: "Maximalist pen engraving of a guardian deity with Dunhuang color.",
+    image: "/assets/featured/text-guardian-deity-pen-engraving.jpg",
+    prompt: "世界钢笔版画大师杰作，黑白版画，极繁主义，硬朗矢量钢笔线条画，Millard Sheets的风格，工笔硬朗矢量线条勾线，韦陀菩萨，极繁背景，杏黄色卡纸背景。复杂的构图富有层次感，详尽的笔墨充满细节，细腻描绘。精湛密集的线条，完美的木刻质感，硬朗中透着细腻的线条，广角镜的视角，画风唯美梦幻。高清渲染，高品质细节，超高清分辨率，最佳品质，8K壁纸。敦煌风格色彩绚丽栩栩如生。身材高大魁梧。"
+  },
+  {
+    id: "text-betta-klein-blue-poster",
+    category: "text-to-image",
+    zhTitle: "克莱因蓝斗鱼海报",
+    enTitle: "Klein Blue Betta Poster",
+    zhDescription: "蓝粉点绘斗鱼群与白色镂空中心的前卫海报。",
+    enDescription: "Avant-garde Klein-blue betta spiral poster with dotted gradients.",
+    image: "/assets/featured/text-betta-klein-blue-poster.jpg",
+    prompt: "世界平面设计大师杰作，先锋前卫艺术设计，极简抽象海报，扁平插画，阿普里尔·格雷曼（April Greiman）的风格，克莱因蓝色调背景中，抽象斗鱼鱼群由蓝粉渐变色点绘组成，鱼群呈螺旋状环绕画面的白色镂空中心游动，环绕的鱼群铺满整个画面，细节生动完美，整体和谐大气，视觉冲击力强，荧光光影，充满艺术氛围，获奖大师作品，白色镂空中心 极小浅灰色艺术字“LAILAOYE”，简洁背景。高清渲染，高品质细节，超高清分辨率，最佳品质，8K壁纸。画面上方有极小极细无衬线字体 \"Art\"、\"Design \"、\"Idea\"，极小左下角标注 “来佬野-AIGC” 右下角标注 “更多前沿玩法等你探索”。"
+  },
+  {
+    id: "text-citypop-double-exposure",
+    category: "text-to-image",
+    zhTitle: "Citypop二曝情绪海报",
+    enTitle: "Citypop Double Exposure",
+    zhDescription: "斑驳滤镜、二次曝光和前卫情绪叙事。",
+    enDescription: "Horizontal citypop double-exposure poster with emotional collage.",
+    image: "/assets/featured/text-citypop-double-exposure.jpg",
+    prompt: "水平构图，斑驳滤镜，citypop艺术风格，凯特·科洛维茨的风格，前卫艺术，拼贴艺术，内涵渐变，联想，创意，创意构图，思维跳跃，二次曝光，情愫，动态模糊，意境，唯美，极简美学，身影，宣泄式前卫，否定写实造型，情绪大于画面美感。"
+  },
+  {
+    id: "text-snow-ink-village",
+    category: "text-to-image",
+    zhTitle: "蓝白雪境水墨",
+    enTitle: "Snow Ink Village",
+    zhDescription: "水墨晕染、冰雪村落与大面积留白。",
+    enDescription: "Blue-white ink wash snow village with poetic whitespace.",
+    image: "/assets/featured/text-snow-ink-village.jpg",
+    prompt: "吴昌硕，陈家泠，三维古风，意境水墨。冰雪世界，人家，山坳，雪茫茫，超高清，意境构图，模拟毛笔笔触，模拟水墨晕染，蓝白色，大面积留白。"
+  },
+  {
+    id: "text-yunnan-mushroom-vector",
+    category: "text-to-image",
+    zhTitle: "云南菌子极繁矢量",
+    enTitle: "Yunnan Mushroom Vector",
+    zhDescription: "菌子、蜗牛与自然元素构成的现代极繁矢量图。",
+    enDescription: "Modern maximalist vector art of Yunnan mushrooms and snails.",
+    image: "/assets/featured/text-yunnan-mushroom-vector.jpg",
+    prompt: "这些极繁主义的矢量图展现出独特的艺术魅力，它们以简单的设计风格传达出丰富的情感。通过复杂的线条、形状和色彩，勾勒出云南菌子，蜗牛等各种元素，体现出一种现代、时尚的美感。"
+  },
+  {
+    id: "text-shu-brocade-process",
+    category: "text-to-image",
+    zhTitle: "蜀锦工艺流程插画",
+    enTitle: "Shu Brocade Process",
+    zhDescription: "黑白版画剪纸风的传统制蜀锦流程长卷。",
+    enDescription: "Traditional Shu brocade making process in engraving paper-cut style.",
+    image: "/assets/featured/text-shu-brocade-process.jpg",
+    prompt: "中国传统制蜀锦工艺流程插画，纯深碳灰色背景，精细的黑白版画，版畫和剪纸风相融合，宋代院画，画面分别体现 9 道流程：设计纹样、設計紋本、挑花结本、原料准备、制备经纬线、上机织造、整理与检验、整理與校驗、原麻線繩捆。在一个画面里错落表现手工制作蜀锦的工艺流程，不分格，每道工序都有人物出现操作，中国传统文化。64K極致細節細膩的超高清畫質分辨率。"
+  },
+  {
+    id: "text-future-bicycle-blueprint",
+    category: "text-to-image",
+    zhTitle: "未来机械自行车蓝图",
+    enTitle: "Future Bicycle Blueprint",
+    zhDescription: "离子防护设计的高精机械自行车结构图。",
+    enDescription: "High-precision futuristic bicycle mechanical blueprint.",
+    image: "/assets/featured/text-future-bicycle-blueprint.jpg",
+    prompt: "精细且极具创意的高精机械，离子超速反应防护设计自行车图，展现出独特的机械构造与巧妙的设计理念，线条流畅精准，各部件比例协调，充满科技感与未来感的机械设计蓝图。"
+  },
+  {
+    id: "img2img-architecture-infographic-vector",
+    category: "image-to-image",
+    zhTitle: "建筑二维信息图",
+    enTitle: "Architecture Infographic Vector",
+    zhDescription: "把建筑照片转成测绘感二维矢量百科海报。",
+    enDescription: "Convert a building photo into a clean vector infographic poster.",
+    originalImage: "/assets/featured/text-architecture-infographic-vector.jpg",
+    resultImage: "/assets/featured/text-architecture-infographic-vector.jpg",
+    prompt: "实验提示词：参考上传的建筑照片，将建筑主体转化为建筑信息图风格的二维矢量插画。保留建筑的主体轮廓、结构比例、屋顶形态、立面层级、门窗分布、装饰细节、材质特征和代表性色彩，去除天空、人群、街景、车辆、树木遮挡和复杂背景。画面为白色或浅色背景，建筑正面居中展示，构图对称，类似建筑立面图、建筑测绘图、建筑百科海报或城市地标信息图。使用清晰深色描边、平面色块、简洁阴影和少量高光，呈现干净、现代、专业的建筑插画效果。左上角添加英文标题，标题根据建筑类型生成，例如Tower、Temple、Museum、Cathedral、Palace、Bridge、House、Pavilion、Skyscraper。建筑背后加入超大浅灰色文字作为背景装饰，文字为建筑名称、地点或建筑类别，透明度较低，不遮挡主体。根据建筑的真实尺寸和建筑类型添加测量标注，禁止编造数据。整体风格参考建筑科普信息图、城市地标档案海报、现代建筑测绘插画，高清、规整、线条清晰、色彩统一、留白充足、具有专业设计感。"
+  },
+  {
+    id: "text-nostalgic-countryside-screenprint",
+    category: "text-to-image",
+    zhTitle: "怀旧乡村丝网叙事",
+    enTitle: "Nostalgic Countryside Screenprint",
+    zhDescription: "高饱和平涂、重复叠印与乡村故事身影。",
+    enDescription: "Nostalgic countryside screen-print poster with narrative silhouette.",
+    image: "/assets/featured/text-nostalgic-countryside-screenprint.jpg",
+    prompt: "创意构图，怀旧元素，情绪叙事，丝网印刷重复叠印、高饱和平涂色块，去掉笔触质感、艺术化，高级感，大幅留白，意境唯美，乡村故事，身影。"
+  },
+  {
+    id: "text-ajrak-new-year-horse",
+    category: "text-to-image",
+    zhTitle: "Ajrak马年新年海报",
+    enTitle: "Ajrak New Year Horse",
+    zhDescription: "Block Print纸质肌理与萌趣马年形象。",
+    enDescription: "Ajrak block-print New Year horse poster on paper texture.",
+    image: "/assets/featured/text-ajrak-new-year-horse.jpg",
+    prompt: "海报设计，采用印度古吉拉特邦 AJRAK 村自古以來流传下來的传统技术“BLOCK PRINT”，将中国新年元素和萌趣可爱的马年形象印在纸质肌理上，采用手工雕刻工艺，感受到手压印花的溫暖，使用两种颜色的轮廓，形态憨态可掬，标题HAPPY NEW YEAR，白色背景，温柔铺满的漏光。"
+  },
+  {
+    id: "text-pet-magazine-screenprint",
+    category: "text-to-image",
+    zhTitle: "宠物丝网杂志封面",
+    enTitle: "Pet Screenprint Magazine",
+    zhDescription: "黑狗幼犬、半调颗粒与手写风封面排版。",
+    enDescription: "Cute black puppy magazine cover with screen-print texture.",
+    image: "/assets/featured/text-pet-magazine-screenprint.jpg",
+    prompt: "参考图1，丝网印海报风格的宠物杂志封面，保留丝网印质感和特点，半调图案，噪点颗粒，线条简洁灵动，画面有故事感，大师级排版，极繁主义，色彩鲜明饱满。手绘风宠物杂志封面，主体是可爱的黑狗幼犬。背景布满手写风格文字：标题\"CUTE\"（字体粗犷有艺术感）、栏目\"Special offer\"\"BAOZI'S PETS 2025 DESIGN TRENDS\"\"AUTHENTIC FARMHOUSE RECIPES\"\"GOOD!!\"等，还有趣味短语\"PASSEDDOWN THROUGH GENERATIONS\"。整体风格活泼随性，手绘字体与真实宠物摄影结合，营造出充满生活气息与宠物趣味的杂志氛围。左上角小字\"BAOZI DESIGN\"，右下角极小字\"BAOZI DESIGN\"。"
+  },
+  {
+    id: "text-particle-cat-dreamscape",
+    category: "text-to-image",
+    zhTitle: "颗粒光点猫梦境",
+    enTitle: "Particle Cat Dreamscape",
+    zhDescription: "冷暖粒子猫影、花窗树影与梦幻微光。",
+    enDescription: "Warm particle cat silhouette against cool window shadows.",
+    image: "/assets/featured/text-particle-cat-dreamscape.jpg",
+    prompt: "深冷色纯色背景，画面中以暖黄色颗粒拼贴出猫的轮廓，同时用冷蓝色颗粒勾勒出花窗与树影的形态，形成冷暖对比的星空般颗粒肌理。猫的轮廓清晰，花窗与树影隐约可见，整体画面梦幻温暖，微光点缀，艺术氛围浓厚。画面底部右侧有一行小字“Artistic Dreamscape”，字体简洁优雅，颜色为浅灰色。"
+  },
+  {
+    id: "utility-dujiangyan-heritage-prompt-set",
+    category: "utility",
+    zhTitle: "都江堰建筑海报8方案",
+    enTitle: "Dujiangyan Poster Prompt Set",
+    zhDescription: "把广西风雨桥提示词改写为都江堰8个建筑方案。",
+    enDescription: "Rewrite an ethnic poster prompt into 8 Dujiangyan architecture variants.",
+    prompt: "请基于以下视觉规则生成 8 种完整提示词方案，分别对应都江堰知名建筑元素：“南桥”“安澜索桥”“二王庙”“秦堰楼”“宣化门”“奎光塔”“伏龙观”“魁星阁”。保留原始风格方向：结合极简主义、版画艺术、Kenji Hashimoto、原研哉风格，主体建筑用版画线条勾勒，旁边加入与都江堰山水环境相符的植物、水系、桥影、古建檐角或青城山氛围元素，画面上方加入与对应建筑相关的简化几何纹样，整体极简且具有地方文化辨识度。文字细节根据每个建筑分别调整：顶部中央写对应英文建筑名 + “- DESIGN”，下方小字写对应中文建筑名和一句东方美学短句，字迹纤细并融入画面。画面比例3:4。请输出 8 条完整可复制提示词，每条都包含主体建筑、环境元素、纹样设计、文字内容、配色、构图、材质和负面约束。"
+  },
+  {
+    id: "text-light-dot-tiger",
+    category: "text-to-image",
+    zhTitle: "彩色光点抽象老虎",
+    enTitle: "Light Dot Tiger",
+    zhDescription: "黑底彩色光点老虎与包豪斯几何构图。",
+    enDescription: "Abstract tiger made of colorful light dots on black background.",
+    image: "/assets/featured/text-light-dot-tiger.jpg",
+    prompt: "由无数彩色光点组成的抽象老虎，在极简的黑色背景中，光点随轮廓律动形成流动轨迹，通过动态的光影变化讲述神秘的生命韵律故事，包豪斯风格的几何构图，充满活力的色彩调色板，高对比度，康定斯基风格的抽象形式，8K分辨率，数码超现实主义。文字细节：顶部中央简洁地写着“ 2026你好”，下方是小字“我爱你❤️中国”，字迹纤细，融入画面。"
+  },
+  {
+    id: "text-grain-ragdoll-cat",
+    category: "text-to-image",
+    zhTitle: "五谷布偶猫",
+    enTitle: "Grain Ragdoll Cat",
+    zhDescription: "五谷杂粮天然色彩拼成的立体布偶猫。",
+    enDescription: "Ragdoll cat composed from colorful grains on millet background.",
+    image: "/assets/featured/text-grain-ragdoll-cat.jpg",
+    prompt: "世界粮食画大师大师杰作，极繁主义，周志江的风格，五谷杂粮摆成一只布偶猫，黄色小米背景。利用五谷杂粮的天然色彩，五谷杂粮堆出的立体感，使画作更加生机勃勃。高清渲染，高品质细节，超高清分辨率，最佳品质，8K壁纸。"
+  },
+  {
+    id: "text-zhuang-cultural-merch",
+    category: "text-to-image",
+    zhTitle: "壮族图腾文创周边",
+    enTitle: "Zhuang Cultural Merch",
+    zhDescription: "壮锦纹样品牌周边包装与潮流文创套装。",
+    enDescription: "Zhuang totem cultural merchandise packaging set.",
+    image: "/assets/featured/text-zhuang-cultural-merch.jpg",
+    prompt: "国风壮族图腾风格品牌文创周边包装设计，潮流文创风格。以壮族图腾风格壮锦元素国风精美花纹为主色调及图案。涵盖手机壳、手提袋、抱枕、眼罩、贴纸、杯子、桌布、雨伞等多样物品，突出“Nangning Guangxi”等简洁时尚字体文字。营造传统、充满潮流感的氛围，契合传统与潮流文化品牌文创的定位。"
+  },
+  {
+    id: "text-christmas-paper-cut-floral",
+    category: "text-to-image",
+    zhTitle: "圣诞花蝶浮雕剪纸",
+    enTitle: "Christmas Paper-Cut Floral",
+    zhDescription: "极繁花卉蝴蝶、半调纹理与浮雕剪纸绘本海报。",
+    enDescription: "Maximalist embossed paper-cut floral Christmas picture-book poster.",
+    image: "/assets/featured/text-christmas-paper-cut-floral.jpg",
+    prompt: "大师级排版，极繁主义，半调图案，杂色，点线面层次分布。创作一张绘本风格插画海报，大量花卉与蝴蝶：花朵造型饱满，花瓣纹理细腻，中央有“Merry Christmas”品牌标识，搭配法语“and”与“Happy New Year ”字样。充满幻想力和感染力，娓娓道来的故事。用浮雕剪纸的形式表达。"
   }
 ];
 
