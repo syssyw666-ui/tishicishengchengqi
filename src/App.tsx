@@ -1352,7 +1352,8 @@ function FeaturedPromptPage({ activeCategory, activeGroup, copied, items, langua
                   </div>
                 ) : item.image ? (
                   <div className="featured-image">
-                    <img src={item.image} alt={title(item)} />
+                    <img className="featured-blur-bg" src={item.image} alt="" aria-hidden="true" />
+                    <img className="featured-main-img" src={item.image} alt={title(item)} />
                   </div>
                 ) : null}
                 <div className="featured-card-body">

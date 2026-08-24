@@ -2,6 +2,7 @@ import type { Category, PromptParameter } from "../types";
 import { artistParameters } from "./artistParameters";
 import { colorGradingParameters } from "./colorGradingParameters";
 import { clothingParameters } from "./clothingParameters";
+import { culturalPatternParameters } from "./culturalPatternParameters";
 import { expandedParameters } from "./expandedParameters";
 import { exhaustiveParameters } from "./exhaustiveParameters";
 import { demographicParameters } from "./demographicParameters";
@@ -55,6 +56,12 @@ export const categoryGroups: Partial<Record<Category["id"], Array<{ id: string; 
     { id: "modern-avantgarde", zhName: "现代主义 / 抽象" },
     { id: "surreal-symbolic", zhName: "超现实 / 象征" },
     { id: "decorative-illustration", zhName: "装饰 / 插画" },
+    { id: "international-illustration", zhName: "国外经典插图" },
+    { id: "editorial-graphic", zhName: "社论 / 平面插画" },
+    { id: "childrens-picturebook", zhName: "童书 / 绘本" },
+    { id: "folk-global", zhName: "世界民艺 / 民俗" },
+    { id: "poster-print", zhName: "海报 / 印刷" },
+    { id: "comic-sequential", zhName: "漫画 / 分镜" },
     { id: "east-asian", zhName: "东方绘画" },
     { id: "american-pop", zhName: "波普 / 当代经典" }
   ],
@@ -122,7 +129,9 @@ export const categoryGroups: Partial<Record<Category["id"], Array<{ id: string; 
     { id: "southwest", zhName: "西南 / 高原" },
     { id: "south", zhName: "华南 / 岭南" },
     { id: "northeast", zhName: "东北 / 边境" },
-    { id: "island", zhName: "海岛 / 山地" }
+    { id: "island", zhName: "海岛 / 山地" },
+    { id: "pattern-craft", zhName: "民族纹样 / 工艺" },
+    { id: "traditional-craft", zhName: "非遗手作 / 工艺" }
   ],
   scene: [
     { id: "all", zhName: "全部场景" },
@@ -411,6 +420,7 @@ parameters.push(
   ...clothingParameters,
   ...poseParameters,
   ...expandedParameters,
+  ...culturalPatternParameters,
   ...exhaustiveParameters,
   ...colorGradingParameters,
   ...supplementParameters,
