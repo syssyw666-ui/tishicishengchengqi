@@ -1,17 +1,12 @@
-import { Check, Copy, EyeOff, ImageIcon, Languages, LogIn, MessageSquare, Plus, RotateCcw, Save, Search, Send, Shield, SlidersHorizontal, Sparkles, Trash2, X } from "lucide-react";
+import { Check, ChevronDown, Copy, EyeOff, ImageIcon, Languages, LogIn, MessageSquare, Plus, RotateCcw, Save, Search, Send, Shield, Sparkles, Star, Trash2, X } from "lucide-react";
 import { useMemo, useState, type ChangeEvent } from "react";
+import { featuredPromptCategories, featuredPromptGroups, featuredPrompts } from "./data/featuredPrompts";
 import { categories, categoryGroups, parameters } from "./data/parameters";
 import { buildPrompt } from "./lib/prompt";
-import type { CategoryId, ModelFormat, PromptInputs, PromptParameter, SelectedParameter } from "./types";
+import type { FeaturedPromptCategory, FeaturedPromptItem } from "./data/featuredPrompts";
+import type { CategoryId, PromptInputs, PromptParameter, SelectedParameter } from "./types";
 
 type UiLanguage = "zh" | "en";
-
-const modelOptions: Array<{ id: ModelFormat; zhName: string; enName: string; zhNote: string; enNote: string }> = [
-  { id: "openai", zhName: "OpenAI / 通用", enName: "OpenAI / General", zhNote: "自然语言 + 优先级", enNote: "natural language + priority" },
-  { id: "midjourney", zhName: "Midjourney", enName: "Midjourney", zhNote: "关键词::权重 + --ar", enNote: "keyword::weight + --ar" },
-  { id: "stable-diffusion", zhName: "Stable Diffusion", enName: "Stable Diffusion", zhNote: "(整段提示词:权重)", enNote: "(full phrase:weight)" },
-  { id: "doubao-qwen", zhName: "豆包 / 千问", enName: "Doubao / Qwen", zhNote: "中文整句 + 优先级", enNote: "Chinese structure + priority" }
-];
 
 const aspectRatioOptions = [
   { id: "auto", zhName: "自动比例", enName: "Auto", zhNote: "交给模型判断", enNote: "let the model decide" },
@@ -37,6 +32,8 @@ const uiText = {
     language: "界面语言",
     brandTitle: "图片提示词生成器",
     brandSubtitle: "用参考图点选参数，生成中英双语生图提示词。",
+    generator: "提示词生成器",
+    more: "更多",
     subject: "绘画主体",
     subjectPlaceholder: "例如：一位穿着红色披风的未来考古学家，站在巨型遗迹前",
     focusHint: "小提示：可以在主体描述里写清焦点位置，例如“焦点在人物眼睛”“画面重点在左侧产品”，用来控制视觉重点。",
@@ -44,8 +41,14 @@ const uiText = {
     avoidPlaceholder: "例如：低清晰度，畸形手，文字，水印，过曝",
     aspectRatio: "图片比例",
     clarity: "清晰度",
-    outputModel: "输出模型",
-    modelHint: "权重会按模型转换：MJ/SD 使用专用语法，通用与豆包/千问会变成“优先表现 / 弱化辅助”的整句说明。",
+    featuredPrompts: "精选提示词",
+    featuredHint: "常用修图、图生图、文生图和图片处理指令。",
+    imagePath: "图片路径",
+    noImage: "无图片",
+    close: "关闭",
+    before: "原图",
+    after: "效果图",
+    promptAdmin: "精选提示词管理",
     admin: "管理后台",
     adminHint: "管理员可新增、隐藏、调整参数与提示词",
     reset: "重置",
@@ -56,20 +59,14 @@ const uiText = {
     selectedEmpty: "从中间图库选择风格、镜头、光线或用途。",
     collapse: "收起",
     expand: "展开",
-    weight: "权重",
-    weightTitle: "拖动调整提示词权重，未选中时会自动选中",
     promptPreview: "提示词预览",
     zh: "中文",
     en: "English",
     finalZh: "最终版 · 中文",
     finalEn: "Final Prompt · English",
-    quickCopy: "快捷复制",
-    quickCopyHint: "辅助提示词不展开显示，只点击复制。",
     copied: "已复制",
     copy: "复制",
-    copyPsd: "复制 PSD 分层提示词",
-    copiedPsd: "已复制 PSD 分层提示词",
-    reversePrompt: "提示词反推",
+    copyPrompt: "复制提示词",
     feedback: "意见建议",
     feedbackHint: "提交后会保存到管理员后台，管理员登录后可查看文字和图片。",
     feedbackPlaceholder: "写下你希望增加的风格、参数、使用问题或优化建议...",
@@ -82,6 +79,8 @@ const uiText = {
     language: "UI Language",
     brandTitle: "Image Prompt Generator",
     brandSubtitle: "Select visual reference cards to generate bilingual AI image prompts.",
+    generator: "Prompt Generator",
+    more: "More",
     subject: "Subject",
     subjectPlaceholder: "Example: a future archaeologist in a red cloak standing before a giant ruin",
     focusHint: "Tip: describe the focus position in the subject, such as “focus on the eyes” or “main focus on the left product”.",
@@ -89,8 +88,14 @@ const uiText = {
     avoidPlaceholder: "Example: low resolution, bad hands, text, watermark, overexposure",
     aspectRatio: "Aspect Ratio",
     clarity: "Clarity",
-    outputModel: "Output Model",
-    modelHint: "Weights are converted by model: MJ/SD use model syntax; General and Doubao/Qwen use priority notes.",
+    featuredPrompts: "Featured Prompts",
+    featuredHint: "Common retouching, image-to-image, text-to-image, and utility prompts.",
+    imagePath: "Image Path",
+    noImage: "No Image",
+    close: "Close",
+    before: "Before",
+    after: "After",
+    promptAdmin: "Featured Prompt Manager",
     admin: "Admin Panel",
     adminHint: "Admins can add, hide, and adjust parameters and prompt fragments.",
     reset: "Reset",
@@ -101,20 +106,14 @@ const uiText = {
     selectedEmpty: "Select styles, camera, lighting, or purpose from the gallery.",
     collapse: "Collapse",
     expand: "Expand",
-    weight: "Weight",
-    weightTitle: "Drag to adjust prompt weight. Dragging an unselected card will select it.",
     promptPreview: "Prompt Preview",
     zh: "中文",
     en: "English",
     finalZh: "最终版 · 中文",
     finalEn: "Final Prompt · English",
-    quickCopy: "Quick Copy",
-    quickCopyHint: "Auxiliary prompts are hidden here; click to copy directly.",
     copied: "Copied",
     copy: "Copy",
-    copyPsd: "Copy PSD Layer Prompt",
-    copiedPsd: "Copied PSD Layer Prompt",
-    reversePrompt: "Reverse Prompt",
+    copyPrompt: "Copy Prompt",
     feedback: "Feedback",
     feedbackHint: "Submitted feedback is saved in the admin panel for review.",
     feedbackPlaceholder: "Suggest styles, parameters, issues, or improvements...",
@@ -202,58 +201,10 @@ const defaultInputs: PromptInputs = {
   clarity: "high"
 };
 
-const psdLayerPrompt = "帮我生成PS可以打开的分成PSD文件，然后把生成的图片拆分为若干个元素，每个元素不要改变位置，在PS里生成对应的图层。";
-
-const reversePromptTemplates = [
-  {
-    id: "reverse-general",
-    label: "通用反推",
-    text: "详细反推这张图片的完整提示词，包含主体，风格，色彩，光影，构图，质感，分辨率，细节描述。分析这张图片的视觉元素，色调，氛围，技法关键词，生成可直接用于AI绘图的精准prompt，请用中英双语详细描述图片内容，拆解风格，光线，材质，镜头，配色。"
-  },
-  {
-    id: "reverse-font-logo",
-    label: "字体 / Logo",
-    text: "反推这款字体的风格、字形特征、笔画质感、配色、排版、特效，生成字体设计提示词。详细描述字体：字体风格（现代/复古/赛博/手写）、粗细、衬线/无衬线、倒角、立体效果、光泽、金属/磨砂/玻璃质感。分析logo的配色方案、构图比例、光影、材质、特效（描边、发光、渐变、浮雕），输出可复制提示词。"
-  },
-  {
-    id: "reverse-landscape",
-    label: "风景场景",
-    text: "反推这张风景图的环境、天气、时间、光线、色调、氛围、构图、景深，生成风景提示词。详细描述：场景主体、季节、时段（清晨/黄昏/夜晚）、天空、云层、植被、水体、色调、氛围感、镜头感。提取关键词：风格、色彩、光影、画质、分辨率、氛围、透视、细节质感。"
-  },
-  {
-    id: "reverse-photo",
-    label: "摄影人像产品",
-    text: "反推这张摄影图的相机参数、镜头、光影、色调、画质、构图、氛围，生成摄影风格prompt。详细描述：光线（自然光/硬光/柔光/逆光）、景深、焦距、画质（8K/高清/胶片）、色调（冷色/暖色/复古/胶片感）、构图。提取：摄影师风格、光影、质感、分辨率、对焦、噪点、锐度、情绪氛围。"
-  },
-  {
-    id: "reverse-illustration",
-    label: "插画动漫",
-    text: "反推这张插画的绘画风格、笔触、肌理、色彩、线条、构图、氛围、画师风格。详细描述：手绘/板绘、平涂/厚涂、赛璐璐、二次元/治愈系/国风、线条粗细、色彩搭配、质感、细节。生成可直接用于 AI 绘画的插画关键词，包含技法、色彩、主题、氛围。"
-  },
-  {
-    id: "reverse-3d",
-    label: "3D 渲染",
-    text: "反推这张 3D 图的渲染风格、材质、灯光、建模风格、精度、配色、质感、C4D/Blender 特征。详细描述：3D卡通/写实/黏土/磨砂/金属/玻璃/亚克力、光影（三点布光）、反射、粗糙度、OC渲染、软边缘、体积光。提取关键词：3D render、C4D、Blender、Octane、PBR 材质、柔光、高细节、8K、卡通质感、极简。"
-  },
-  {
-    id: "reverse-ip-character",
-    label: "IP 角色潮玩",
-    text: "反推这个IP角色的形象设定、风格类型、五官表情、体型比例、服饰、配色、材质、光影、细节特征，生成同款IP角色提示词。详细描述：风格（Q版/潮玩/治愈/国风/黏土/卡通）、头身比、发型、服饰装饰、神态、动作姿态、材质（哑光/树脂/PVC/陶瓷）、质感。提取关键词：IP角色、盲盒风格、潮玩、C4D、3D 渲染、柔光、纯色背景、细腻质感、高细节、可爱、治愈、极简、全身造型。"
-  }
-];
-
-const reversePromptLabelEn: Record<string, string> = {
-  "reverse-general": "General Reverse",
-  "reverse-font-logo": "Font / Logo",
-  "reverse-landscape": "Landscape Scene",
-  "reverse-photo": "Photo / Portrait / Product",
-  "reverse-illustration": "Illustration / Anime",
-  "reverse-3d": "3D Render",
-  "reverse-ip-character": "IP Character / Toy"
-};
-
 type ParameterOverride = Partial<Omit<PromptParameter, "id">>;
 type ParameterOverrides = Record<string, ParameterOverride>;
+type FeaturedPromptOverride = Partial<Omit<FeaturedPromptItem, "id">>;
+type FeaturedPromptOverrides = Record<string, FeaturedPromptOverride>;
 
 interface AdminDraft {
   id: string;
@@ -261,11 +212,24 @@ interface AdminDraft {
   styleGroup: string;
   zhName: string;
   enName: string;
-  defaultWeight: number;
   image: string;
   zhPrompt: string;
   enPrompt: string;
   negative: string;
+}
+
+interface FeaturedDraft {
+  id: string;
+  category: FeaturedPromptCategory;
+  group: string;
+  zhTitle: string;
+  enTitle: string;
+  zhDescription: string;
+  enDescription: string;
+  prompt: string;
+  originalImage: string;
+  resultImage: string;
+  image: string;
 }
 
 interface FeedbackImage {
@@ -288,6 +252,9 @@ const customParametersKey = "prompt-generator-custom-parameters-v1";
 const parameterOverridesKey = "prompt-generator-parameter-overrides-v1";
 const hiddenParametersKey = "prompt-generator-hidden-parameters-v1";
 const feedbackEntriesKey = "prompt-generator-feedback-entries-v1";
+const customFeaturedPromptsKey = "prompt-generator-custom-featured-prompts-v1";
+const featuredPromptOverridesKey = "prompt-generator-featured-prompt-overrides-v1";
+const hiddenFeaturedPromptsKey = "prompt-generator-hidden-featured-prompts-v1";
 
 function loadLocal<T>(key: string, fallback: T): T {
   try {
@@ -316,7 +283,6 @@ function toAdminDraft(parameter?: PromptParameter): AdminDraft {
     styleGroup: parameter?.styleGroup ?? "",
     zhName: parameter?.zhName ?? "",
     enName: parameter?.enName ?? "",
-    defaultWeight: parameter?.defaultWeight ?? 1,
     image: parameter?.image ?? "/assets/parameters/style-photorealistic.jpg",
     zhPrompt: parameter?.zhPrompt ?? "",
     enPrompt: parameter?.enPrompt ?? "",
@@ -331,11 +297,42 @@ function draftToParameter(draft: AdminDraft): PromptParameter {
     styleGroup: draft.styleGroup.trim() || undefined,
     zhName: draft.zhName.trim(),
     enName: draft.enName.trim(),
-    defaultWeight: Number(draft.defaultWeight) || 1,
     image: draft.image.trim() || "/assets/parameters/style-photorealistic.jpg",
     zhPrompt: draft.zhPrompt.trim(),
     enPrompt: draft.enPrompt.trim(),
     negative: parseNegative(draft.negative)
+  };
+}
+
+function toFeaturedDraft(item?: FeaturedPromptItem): FeaturedDraft {
+  return {
+    id: item?.id ?? `featured-${Date.now()}`,
+    category: item?.category ?? "text-to-image",
+    group: item?.group ?? "",
+    zhTitle: item?.zhTitle ?? "",
+    enTitle: item?.enTitle ?? "",
+    zhDescription: item?.zhDescription ?? "",
+    enDescription: item?.enDescription ?? "",
+    prompt: item?.prompt ?? "",
+    originalImage: item?.originalImage ?? "",
+    resultImage: item?.resultImage ?? "",
+    image: item?.image ?? "/assets/parameters/style-cinematic.jpg"
+  };
+}
+
+function draftToFeaturedPrompt(draft: FeaturedDraft): FeaturedPromptItem {
+  return {
+    id: draft.id.trim(),
+    category: draft.category,
+    group: draft.group.trim() || undefined,
+    zhTitle: draft.zhTitle.trim(),
+    enTitle: draft.enTitle.trim(),
+    zhDescription: draft.zhDescription.trim(),
+    enDescription: draft.enDescription.trim(),
+    prompt: draft.prompt.trim(),
+    originalImage: draft.originalImage.trim() || undefined,
+    resultImage: draft.resultImage.trim() || undefined,
+    image: draft.image.trim() || undefined
   };
 }
 
@@ -383,14 +380,20 @@ export function App() {
   const [selectedOnly, setSelectedOnly] = useState(false);
   const [activeGroupByCategory, setActiveGroupByCategory] = useState<Record<string, string>>({});
   const [checkedPanelOpen, setCheckedPanelOpen] = useState(true);
-  const [model, setModel] = useState<ModelFormat>("openai");
   const [promptLanguage, setPromptLanguage] = useState<"zh" | "en">("zh");
   const [uiLanguage, setUiLanguage] = useState<UiLanguage>("zh");
   const [selected, setSelected] = useState<SelectedParameter[]>([]);
   const [copied, setCopied] = useState<string | null>(null);
+  const [brandMenuOpen, setBrandMenuOpen] = useState(false);
+  const [viewMode, setViewMode] = useState<"generator" | "featured">("generator");
+  const [activeFeaturedCategory, setActiveFeaturedCategory] = useState<FeaturedPromptCategory>("color-edit");
+  const [activeFeaturedGroup, setActiveFeaturedGroup] = useState("all");
   const [customParameters, setCustomParameters] = useState<PromptParameter[]>(() => loadLocal(customParametersKey, []));
   const [parameterOverrides, setParameterOverrides] = useState<ParameterOverrides>(() => loadLocal(parameterOverridesKey, {}));
   const [hiddenParameters, setHiddenParameters] = useState<string[]>(() => loadLocal(hiddenParametersKey, []));
+  const [customFeaturedPrompts, setCustomFeaturedPrompts] = useState<FeaturedPromptItem[]>(() => loadLocal(customFeaturedPromptsKey, []));
+  const [featuredPromptOverrides, setFeaturedPromptOverrides] = useState<FeaturedPromptOverrides>(() => loadLocal(featuredPromptOverridesKey, {}));
+  const [hiddenFeaturedPrompts, setHiddenFeaturedPrompts] = useState<string[]>(() => loadLocal(hiddenFeaturedPromptsKey, []));
   const [adminAuthed, setAdminAuthed] = useState(false);
   const [adminLoginOpen, setAdminLoginOpen] = useState(false);
   const [adminOpen, setAdminOpen] = useState(false);
@@ -398,6 +401,9 @@ export function App() {
   const [loginError, setLoginError] = useState("");
   const [adminDraft, setAdminDraft] = useState<AdminDraft>(() => toAdminDraft());
   const [adminEditingId, setAdminEditingId] = useState<string | null>(null);
+  const [adminSection, setAdminSection] = useState<"parameters" | "featured">("parameters");
+  const [featuredDraft, setFeaturedDraft] = useState<FeaturedDraft>(() => toFeaturedDraft());
+  const [featuredEditingId, setFeaturedEditingId] = useState<string | null>(null);
   const [adminSearch, setAdminSearch] = useState("");
   const [adminNotice, setAdminNotice] = useState("");
   const [feedbackText, setFeedbackText] = useState("");
@@ -419,8 +425,24 @@ export function App() {
     return [...builtInParameters, ...customParameters];
   }, [customParameters, parameterOverrides]);
 
+  const allFeaturedPrompts = useMemo(() => {
+    const hidden = new Set(hiddenFeaturedPrompts);
+    const builtIn = featuredPrompts
+      .filter((item) => !hidden.has(item.id))
+      .map((item) => ({ ...item, ...featuredPromptOverrides[item.id], id: item.id }));
+    const custom = customFeaturedPrompts.filter((item) => !hidden.has(item.id));
+    return [...builtIn, ...custom];
+  }, [customFeaturedPrompts, featuredPromptOverrides, hiddenFeaturedPrompts]);
+
+  const adminFeaturedPrompts = useMemo(() => {
+    const builtIn = featuredPrompts.map((item) => ({ ...item, ...featuredPromptOverrides[item.id], id: item.id }));
+    return [...builtIn, ...customFeaturedPrompts];
+  }, [customFeaturedPrompts, featuredPromptOverrides]);
+
   const selectedById = useMemo(() => new Map(selected.map((item) => [item.id, item])), [selected]);
   const t = uiText[uiLanguage];
+  const switchTitle = viewMode === "featured" ? t.featuredPrompts : t.brandTitle;
+  const switchSubtitle = viewMode === "featured" ? t.featuredHint : t.brandSubtitle;
   const activeCategoryInfo = categories.find((category) => category.id === activeCategory)!;
   const activeGroups = categoryGroups[activeCategory] ?? [];
   const activeGroup = activeGroupByCategory[activeCategory] ?? "all";
@@ -448,7 +470,7 @@ export function App() {
     });
   }, [activeCategory, search, selectedById, selectedOnly, activeGroups.length, activeGroup, allParameters]);
 
-  const prompt = useMemo(() => buildPrompt(inputs, selected, allParameters, model), [allParameters, inputs, model, selected]);
+  const prompt = useMemo(() => buildPrompt(inputs, selected, allParameters), [allParameters, inputs, selected]);
   const finalPromptValue = promptLanguage === "zh" ? prompt.finalPromptZh : prompt.finalPromptEn;
 
   function categoryName(category: { zhName: string; enName: string }) {
@@ -471,14 +493,6 @@ export function App() {
     return uiLanguage === "zh" ? parameter.enName : parameter.zhName;
   }
 
-  function modelLabel(option: (typeof modelOptions)[number]) {
-    return uiLanguage === "zh" ? option.zhName : option.enName;
-  }
-
-  function modelNote(option: (typeof modelOptions)[number]) {
-    return uiLanguage === "zh" ? option.zhNote : option.enNote;
-  }
-
   function updateInput<K extends keyof PromptInputs>(key: K, value: PromptInputs[K]) {
     setInputs((current) => ({ ...current, [key]: value }));
   }
@@ -491,16 +505,16 @@ export function App() {
       return;
     }
 
-    selectParameter(parameter, parameter.defaultWeight);
+    selectParameter(parameter);
   }
 
-  function selectParameter(parameter: PromptParameter, weight: number) {
+  function selectParameter(parameter: PromptParameter) {
     const category = categories.find((item) => item.id === parameter.category)!;
 
     setSelected((current) => {
       const existing = current.find((item) => item.id === parameter.id);
       if (existing) {
-        return current.map((item) => (item.id === parameter.id ? { ...item, weight } : item));
+        return current;
       }
 
       const next = category.mode === "single" ? current.filter((item) => {
@@ -508,12 +522,8 @@ export function App() {
         return currentParameter?.category !== parameter.category;
       }) : current;
 
-      return [...next, { id: parameter.id, weight }];
+      return [...next, { id: parameter.id }];
     });
-  }
-
-  function updateWeight(parameter: PromptParameter, weight: number) {
-    selectParameter(parameter, weight);
   }
 
   function removeSelectedParameter(id: string) {
@@ -598,7 +608,6 @@ export function App() {
     setSearch("");
     setSelectedOnly(false);
     setActiveGroupByCategory({});
-    setModel("openai");
     setPromptLanguage("zh");
     setActiveCategory("style");
   }
@@ -699,110 +708,261 @@ export function App() {
     setAdminNotice("已恢复");
   }
 
+  function editFeaturedPrompt(item: FeaturedPromptItem) {
+    setFeaturedDraft(toFeaturedDraft(item));
+    setFeaturedEditingId(item.id);
+    setAdminSection("featured");
+    setAdminNotice("");
+  }
+
+  function createFeaturedPrompt() {
+    setFeaturedDraft(toFeaturedDraft());
+    setFeaturedEditingId(null);
+    setAdminSection("featured");
+    setAdminNotice("");
+  }
+
+  function saveFeaturedDraft() {
+    const item = draftToFeaturedPrompt(featuredDraft);
+    if (!item.id || !item.zhTitle || !item.enTitle || !item.prompt) {
+      setAdminNotice("请至少填写 ID、中英文标题和提示词");
+      return;
+    }
+
+    const builtIn = featuredPrompts.some((candidate) => candidate.id === item.id);
+    const customIndex = customFeaturedPrompts.findIndex((candidate) => candidate.id === item.id);
+    const idTakenByOther = !featuredEditingId && (builtIn || customIndex >= 0);
+
+    if (idTakenByOther) {
+      setAdminNotice("这个精选提示词 ID 已存在，请换一个 ID");
+      return;
+    }
+
+    if (builtIn) {
+      const nextOverrides = { ...featuredPromptOverrides, [item.id]: { ...item, id: undefined } as FeaturedPromptOverride };
+      setFeaturedPromptOverrides(nextOverrides);
+      saveLocal(featuredPromptOverridesKey, nextOverrides);
+    } else {
+      const nextCustomItems =
+        customIndex >= 0
+          ? customFeaturedPrompts.map((candidate) => (candidate.id === item.id ? item : candidate))
+          : [...customFeaturedPrompts, item];
+      setCustomFeaturedPrompts(nextCustomItems);
+      saveLocal(customFeaturedPromptsKey, nextCustomItems);
+    }
+
+    if (hiddenFeaturedPrompts.includes(item.id)) {
+      const nextHidden = hiddenFeaturedPrompts.filter((id) => id !== item.id);
+      setHiddenFeaturedPrompts(nextHidden);
+      saveLocal(hiddenFeaturedPromptsKey, nextHidden);
+    }
+
+    setFeaturedEditingId(item.id);
+    setAdminNotice("已保存，精选提示词面板会立即更新");
+  }
+
+  function removeFeaturedPrompt(item: FeaturedPromptItem) {
+    const builtIn = featuredPrompts.some((candidate) => candidate.id === item.id);
+    if (builtIn) {
+      const nextHidden = Array.from(new Set([...hiddenFeaturedPrompts, item.id]));
+      setHiddenFeaturedPrompts(nextHidden);
+      saveLocal(hiddenFeaturedPromptsKey, nextHidden);
+    } else {
+      const nextCustomItems = customFeaturedPrompts.filter((candidate) => candidate.id !== item.id);
+      setCustomFeaturedPrompts(nextCustomItems);
+      saveLocal(customFeaturedPromptsKey, nextCustomItems);
+    }
+
+    setAdminNotice(builtIn ? "已隐藏内置精选提示词，可在隐藏列表恢复" : "已删除自定义精选提示词");
+  }
+
+  function restoreFeaturedPrompt(id: string) {
+    const nextHidden = hiddenFeaturedPrompts.filter((item) => item !== id);
+    setHiddenFeaturedPrompts(nextHidden);
+    saveLocal(hiddenFeaturedPromptsKey, nextHidden);
+    setAdminNotice("已恢复精选提示词");
+  }
+
   function resetAdminChanges() {
     setCustomParameters([]);
     setParameterOverrides({});
     setHiddenParameters([]);
+    setCustomFeaturedPrompts([]);
+    setFeaturedPromptOverrides({});
+    setHiddenFeaturedPrompts([]);
     saveLocal(customParametersKey, []);
     saveLocal(parameterOverridesKey, {});
     saveLocal(hiddenParametersKey, []);
+    saveLocal(customFeaturedPromptsKey, []);
+    saveLocal(featuredPromptOverridesKey, {});
+    saveLocal(hiddenFeaturedPromptsKey, []);
     setAdminDraft(toAdminDraft());
     setAdminEditingId(null);
+    setFeaturedDraft(toFeaturedDraft());
+    setFeaturedEditingId(null);
     setAdminNotice("已清空后台本地改动");
   }
 
   return (
     <>
-    <main className="app-shell">
+    <main className={viewMode === "featured" ? "app-shell featured-mode" : "app-shell"}>
       <section className="left-panel">
-        <div className="brand">
-          <div className="brand-mark">
-            <Sparkles size={20} />
-          </div>
-          <div>
-            <h1>{t.brandTitle}</h1>
-            <p>{t.brandSubtitle}</p>
-          </div>
-        </div>
-
-        <label className="field">
-          <span>{t.subject}</span>
-          <textarea
-            value={inputs.subjectZh}
-            onChange={(event) => updateInput("subjectZh", event.target.value)}
-            placeholder={t.subjectPlaceholder}
-          />
-          <small className="field-hint">{t.focusHint}</small>
-        </label>
-
-        <label className="field">
-          <span>{t.avoid}</span>
-          <textarea
-            value={inputs.avoid}
-            onChange={(event) => updateInput("avoid", event.target.value)}
-            placeholder={t.avoidPlaceholder}
-          />
-        </label>
-
-        <div className="generation-settings">
-          <label className="field">
-            <span>{t.aspectRatio}</span>
-            <select value={inputs.aspectRatio} onChange={(event) => updateInput("aspectRatio", event.target.value)}>
-              {aspectRatioOptions.map((option) => (
-                <option key={option.id} value={option.id}>
-                  {uiLanguage === "zh" ? option.zhName : option.enName} · {uiLanguage === "zh" ? option.zhNote : option.enNote}
-                </option>
-              ))}
-            </select>
-          </label>
-
-          <label className="field">
-            <span>{t.clarity}</span>
-            <select value={inputs.clarity} onChange={(event) => updateInput("clarity", event.target.value)}>
-              {clarityOptions.map((option) => (
-                <option key={option.id} value={option.id}>
-                  {uiLanguage === "zh" ? option.zhName : option.enName} · {uiLanguage === "zh" ? option.zhNote : option.enNote}
-                </option>
-              ))}
-            </select>
-          </label>
-        </div>
-
-        <div className="model-block">
-          <div className="section-title">
-            <SlidersHorizontal size={17} />
-            <span>{t.outputModel}</span>
-          </div>
-          <div className="model-options">
-            {modelOptions.map((option) => (
+        <div className="brand-menu-wrap">
+          <button className="brand-switch-button" onClick={() => setBrandMenuOpen((value) => !value)} type="button" aria-label={t.more}>
+            <span className="brand-switch-copy">
+              <strong>{switchTitle}</strong>
+              <small>{switchSubtitle}</small>
+            </span>
+            <span className="brand-switch-more">
+              {t.more}
+              <ChevronDown size={13} />
+            </span>
+          </button>
+          {brandMenuOpen && (
+            <div className="brand-menu">
               <button
-                key={option.id}
-                className={option.id === model ? "model-option active" : "model-option"}
-                onClick={() => setModel(option.id)}
+                className={viewMode === "generator" ? "active" : ""}
+                onClick={() => {
+                  setViewMode("generator");
+                  setBrandMenuOpen(false);
+                }}
                 type="button"
               >
-                <strong>{modelLabel(option)}</strong>
-                <small>{modelNote(option)}</small>
+                <Sparkles size={15} />
+                <span>{t.generator}</span>
               </button>
-            ))}
+              <button
+                className={viewMode === "featured" ? "active" : ""}
+                onClick={() => {
+                  setViewMode("featured");
+                  setBrandMenuOpen(false);
+                }}
+                type="button"
+              >
+                <Star size={15} />
+                <span>{t.featuredPrompts}</span>
+              </button>
+            </div>
+          )}
+        </div>
+
+        {viewMode === "generator" && (
+          <>
+            <label className="field">
+              <span>{t.subject}</span>
+              <textarea
+                value={inputs.subjectZh}
+                onChange={(event) => updateInput("subjectZh", event.target.value)}
+                placeholder={t.subjectPlaceholder}
+              />
+              <small className="field-hint">{t.focusHint}</small>
+            </label>
+
+            <label className="field">
+              <span>{t.avoid}</span>
+              <textarea
+                value={inputs.avoid}
+                onChange={(event) => updateInput("avoid", event.target.value)}
+                placeholder={t.avoidPlaceholder}
+              />
+            </label>
+
+            <div className="generation-settings">
+              <label className="field">
+                <span>{t.aspectRatio}</span>
+                <select value={inputs.aspectRatio} onChange={(event) => updateInput("aspectRatio", event.target.value)}>
+                  {aspectRatioOptions.map((option) => (
+                    <option key={option.id} value={option.id}>
+                      {uiLanguage === "zh" ? option.zhName : option.enName} · {uiLanguage === "zh" ? option.zhNote : option.enNote}
+                    </option>
+                  ))}
+                </select>
+              </label>
+
+              <label className="field">
+                <span>{t.clarity}</span>
+                <select value={inputs.clarity} onChange={(event) => updateInput("clarity", event.target.value)}>
+                  {clarityOptions.map((option) => (
+                    <option key={option.id} value={option.id}>
+                      {uiLanguage === "zh" ? option.zhName : option.enName} · {uiLanguage === "zh" ? option.zhNote : option.enNote}
+                    </option>
+                  ))}
+                </select>
+              </label>
+            </div>
+          </>
+        )}
+
+        <section className="feedback-box">
+          <div className="feedback-header">
+            <div>
+              <h3>{t.feedback}</h3>
+              <p>{t.feedbackHint}</p>
+            </div>
+            <MessageSquare size={18} />
           </div>
-          <small className="field-hint">{t.modelHint}</small>
-        </div>
 
-        <div className="admin-entry">
-          <button className="admin-button" onClick={openAdmin} type="button">
-            <Shield size={16} />
-            {t.admin}
-          </button>
-          <small>{t.adminHint}</small>
-        </div>
+          <textarea
+            className="feedback-textarea"
+            value={feedbackText}
+            onChange={(event) => setFeedbackText(event.target.value)}
+            placeholder={t.feedbackPlaceholder}
+          />
 
-        <button className="reset-button" onClick={resetAll} type="button">
-          <RotateCcw size={16} />
-          {t.reset}
-        </button>
+          <div className="feedback-actions">
+            <label className="upload-button">
+              <ImageIcon size={15} />
+              {t.uploadImage}
+              <input accept="image/*" onChange={handleFeedbackImage} type="file" />
+            </label>
+            <button className="primary-action" onClick={submitFeedback} type="button">
+              <Send size={15} />
+              {t.submit}
+            </button>
+          </div>
+
+          {feedbackImage && (
+            <div className="feedback-preview">
+              <img src={feedbackImage.preview} alt={feedbackImage.name} />
+              <div>
+                <strong>{feedbackImage.name}</strong>
+                <span>{formatFileSize(feedbackImage.size)}</span>
+                <button onClick={removeFeedbackImage} type="button">{t.removeImage}</button>
+              </div>
+            </div>
+          )}
+
+          {feedbackStatus && <p className="feedback-status">{feedbackStatus}</p>}
+        </section>
+
+        {viewMode === "generator" && (
+          <div className="admin-entry">
+            <button className="admin-button" onClick={openAdmin} type="button">
+              <Shield size={16} />
+              {t.admin}
+            </button>
+            <small>{t.adminHint}</small>
+          </div>
+        )}
       </section>
 
+      {viewMode === "featured" ? (
+      <FeaturedPromptPage
+        activeCategory={activeFeaturedCategory}
+        activeGroup={activeFeaturedGroup}
+        copied={copied}
+        items={allFeaturedPrompts}
+        language={uiLanguage}
+        onCategoryChange={(category) => {
+          setActiveFeaturedCategory(category);
+          setActiveFeaturedGroup("all");
+        }}
+        onCopy={copyText}
+        onGroupChange={setActiveFeaturedGroup}
+        onLanguageToggle={() => setUiLanguage((language) => (language === "zh" ? "en" : "zh"))}
+      />
+      ) : (
+      <>
       <section className="gallery-panel">
         <div className="gallery-toolbar">
           <div className="tabs">
@@ -857,7 +1017,6 @@ export function App() {
         <div className="parameter-grid">
           {filteredParameters.map((parameter) => {
             const selectedItem = selectedById.get(parameter.id);
-            const visibleWeight = selectedItem?.weight ?? parameter.defaultWeight;
             return (
               <article
                 key={parameter.id}
@@ -873,23 +1032,6 @@ export function App() {
                       </span>
                     )}
                   </button>
-                  <div className={selectedItem ? "weight-rail active" : "weight-rail"} title={t.weightTitle}>
-                    <span>{visibleWeight.toFixed(1)}</span>
-                    <div className="vertical-slider-wrap">
-                      <input
-                        aria-label={`${parameterPrimary(parameter)} ${t.weight}`}
-                        className="vertical-slider"
-                        type="range"
-                        min="0.2"
-                        max="2"
-                        step="0.1"
-                        value={visibleWeight}
-                        onPointerDown={() => selectParameter(parameter, visibleWeight)}
-                        onChange={(event) => updateWeight(parameter, Number(event.target.value))}
-                      />
-                    </div>
-                    <small>{t.weight}</small>
-                  </div>
                 </div>
                 <div className="card-meta">
                   <div>
@@ -907,7 +1049,7 @@ export function App() {
         <div className="output-header">
           <div>
             <h2>{t.promptPreview}</h2>
-            <p>{modelOptions.find((option) => option.id === model)?.[uiLanguage === "zh" ? "zhName" : "enName"]}</p>
+            <p>{t.selected} {prompt.selectedItems.length}</p>
           </div>
           <button className="language-toggle" onClick={() => setUiLanguage((language) => (language === "zh" ? "en" : "zh"))} type="button">
             <Languages size={15} />
@@ -943,10 +1085,9 @@ export function App() {
               <p className="empty">{t.selectedEmpty}</p>
             ) : (
               <div className="selected-rows">
-                {prompt.selectedItems.map(({ parameter, weight }) => (
+                {prompt.selectedItems.map(({ parameter }) => (
                   <div className="selected-row" key={parameter.id}>
                     <span>{parameterPrimary(parameter)}</span>
-                    <strong>{weight.toFixed(1)}</strong>
                     <button aria-label={`${t.delete} ${parameterPrimary(parameter)}`} className="selected-remove" onClick={() => removeSelectedParameter(parameter.id)} type="button">
                       <X size={14} />
                     </button>
@@ -957,72 +1098,13 @@ export function App() {
           )}
         </div>
 
-        <section className="quick-prompt-box">
-          <div className="quick-prompt-header">
-            <div>
-              <h3>{t.quickCopy}</h3>
-              <p>{t.quickCopyHint}</p>
-            </div>
-          </div>
-
-          <button className="quick-copy-button wide" onClick={() => copyText("psd", psdLayerPrompt)} type="button">
-            {copied === "psd" ? <Check size={15} /> : <Copy size={15} />}
-            {copied === "psd" ? t.copiedPsd : t.copyPsd}
-          </button>
-
-          <div className="reverse-prompt-title">{t.reversePrompt}</div>
-          <div className="reverse-prompt-grid">
-            {reversePromptTemplates.map((template) => (
-              <button className="quick-copy-button" key={template.id} onClick={() => copyText(template.id, template.text)} type="button">
-                {copied === template.id ? <Check size={15} /> : <Copy size={15} />}
-                {copied === template.id ? t.copied : (uiLanguage === "zh" ? template.label : reversePromptLabelEn[template.id])}
-              </button>
-            ))}
-          </div>
-        </section>
-
-        <section className="feedback-box">
-          <div className="feedback-header">
-            <div>
-              <h3>{t.feedback}</h3>
-              <p>{t.feedbackHint}</p>
-            </div>
-            <MessageSquare size={18} />
-          </div>
-
-          <textarea
-            className="feedback-textarea"
-            value={feedbackText}
-            onChange={(event) => setFeedbackText(event.target.value)}
-            placeholder={t.feedbackPlaceholder}
-          />
-
-          <div className="feedback-actions">
-            <label className="upload-button">
-              <ImageIcon size={15} />
-              {t.uploadImage}
-              <input accept="image/*" onChange={handleFeedbackImage} type="file" />
-            </label>
-            <button className="primary-action" onClick={submitFeedback} type="button">
-              <Send size={15} />
-              {t.submit}
-            </button>
-          </div>
-
-          {feedbackImage && (
-            <div className="feedback-preview">
-              <img src={feedbackImage.preview} alt={feedbackImage.name} />
-              <div>
-                <strong>{feedbackImage.name}</strong>
-                <span>{formatFileSize(feedbackImage.size)}</span>
-                <button onClick={removeFeedbackImage} type="button">{t.removeImage}</button>
-              </div>
-            </div>
-          )}
-
-          {feedbackStatus && <p className="feedback-status">{feedbackStatus}</p>}
-        </section>
+        <button className="reset-button right-reset-button" onClick={resetAll} type="button">
+          <RotateCcw size={16} />
+          {t.reset}
+        </button>
       </section>
+      </>
+      )}
     </main>
 
     {adminLoginOpen && (
@@ -1043,19 +1125,32 @@ export function App() {
         adminSearch={adminSearch}
         customParameters={customParameters}
         feedbackEntries={feedbackEntries}
+        featuredDraft={featuredDraft}
+        featuredEditingId={featuredEditingId}
+        featuredPrompts={adminFeaturedPrompts}
         hiddenParameters={hiddenParameters}
+        hiddenFeaturedPrompts={hiddenFeaturedPrompts}
+        customFeaturedPrompts={customFeaturedPrompts}
         parameters={adminParameters}
+        section={adminSection}
         onClose={() => setAdminOpen(false)}
         onCreate={createParameter}
+        onCreateFeatured={createFeaturedPrompt}
         onDraftChange={setAdminDraft}
+        onFeaturedDraftChange={setFeaturedDraft}
+        onEditFeatured={editFeaturedPrompt}
         onEdit={editParameter}
         onClearFeedback={clearFeedbackEntries}
         onRemoveFeedback={removeFeedbackEntry}
         onRemove={removeParameter}
+        onRemoveFeatured={removeFeaturedPrompt}
         onReset={resetAdminChanges}
         onRestore={restoreParameter}
+        onRestoreFeatured={restoreFeaturedPrompt}
         onSave={saveAdminDraft}
+        onSaveFeatured={saveFeaturedDraft}
         onSearchChange={setAdminSearch}
+        onSectionChange={setAdminSection}
       />
     )}
     </>
@@ -1126,20 +1221,156 @@ interface AdminPanelProps {
   adminNotice: string;
   adminSearch: string;
   customParameters: PromptParameter[];
+  customFeaturedPrompts: FeaturedPromptItem[];
   feedbackEntries: FeedbackEntry[];
+  featuredDraft: FeaturedDraft;
+  featuredEditingId: string | null;
+  featuredPrompts: FeaturedPromptItem[];
   hiddenParameters: string[];
+  hiddenFeaturedPrompts: string[];
   parameters: PromptParameter[];
+  section: "parameters" | "featured";
   onClose: () => void;
   onCreate: () => void;
+  onCreateFeatured: () => void;
   onDraftChange: (draft: AdminDraft) => void;
+  onFeaturedDraftChange: (draft: FeaturedDraft) => void;
   onEdit: (parameter: PromptParameter) => void;
+  onEditFeatured: (item: FeaturedPromptItem) => void;
   onClearFeedback: () => void;
   onRemoveFeedback: (id: string) => void;
   onRemove: (parameter: PromptParameter) => void;
+  onRemoveFeatured: (item: FeaturedPromptItem) => void;
   onReset: () => void;
   onRestore: (id: string) => void;
+  onRestoreFeatured: (id: string) => void;
   onSave: () => void;
+  onSaveFeatured: () => void;
   onSearchChange: (value: string) => void;
+  onSectionChange: (section: "parameters" | "featured") => void;
+}
+
+interface FeaturedPromptPageProps {
+  activeCategory: FeaturedPromptCategory;
+  activeGroup: string;
+  copied: string | null;
+  items: FeaturedPromptItem[];
+  language: UiLanguage;
+  onCategoryChange: (category: FeaturedPromptCategory) => void;
+  onCopy: (label: string, value: string) => void;
+  onGroupChange: (group: string) => void;
+  onLanguageToggle: () => void;
+}
+
+function FeaturedPromptPage({ activeCategory, activeGroup, copied, items, language, onCategoryChange, onCopy, onGroupChange, onLanguageToggle }: FeaturedPromptPageProps) {
+  const text = uiText[language];
+  const groups = featuredPromptGroups[activeCategory] ?? [];
+  const visibleItems = items.filter((item) => {
+    if (item.category !== activeCategory) return false;
+    return activeGroup === "all" || !groups.length || item.group === activeGroup;
+  });
+
+  function title(item: FeaturedPromptItem) {
+    return language === "zh" ? item.zhTitle : item.enTitle;
+  }
+
+  function description(item: FeaturedPromptItem) {
+    return language === "zh" ? item.zhDescription : item.enDescription;
+  }
+
+  return (
+      <section className="featured-page">
+        <div className="featured-header">
+          <div>
+            <h2>{text.featuredPrompts}</h2>
+            <p>{text.featuredHint}</p>
+          </div>
+          <button className="language-toggle" onClick={onLanguageToggle} type="button">
+            <Languages size={15} />
+            {language === "zh" ? "中文" : "English"}
+          </button>
+        </div>
+
+        <div className="featured-tabs">
+          {featuredPromptCategories.map((category) => (
+            <button
+              className={category.id === activeCategory ? "active" : ""}
+              key={category.id}
+              onClick={() => onCategoryChange(category.id)}
+              type="button"
+            >
+              {language === "zh" ? category.zhName : category.enName}
+            </button>
+          ))}
+        </div>
+
+        {groups.length ? (
+          <div className="featured-subtabs">
+            {groups.map((group) => (
+              <button
+                className={group.id === activeGroup ? "active" : ""}
+                key={group.id}
+                onClick={() => onGroupChange(group.id)}
+                type="button"
+              >
+                {language === "zh" ? group.zhName : group.enName}
+              </button>
+            ))}
+          </div>
+        ) : null}
+
+        <div className="featured-grid">
+          {visibleItems.map((item) => {
+            const isPair = item.category === "color-edit" || item.category === "image-to-image";
+            const isUtility = item.category === "utility";
+            return (
+              <article className={isPair ? "featured-card featured-pair-card" : isUtility ? "featured-card featured-utility-card" : "featured-card"} key={item.id}>
+                {isPair ? (
+                  <div className="featured-pair">
+                    <figure>
+                      {item.originalImage || item.image ? (
+                        <>
+                          <img className="featured-blur-bg" src={item.originalImage || item.image} alt="" aria-hidden="true" />
+                          <img className="featured-main-img" src={item.originalImage || item.image} alt={`${title(item)} ${text.before}`} />
+                        </>
+                      ) : (
+                        <div className="featured-image-empty">{text.before}</div>
+                      )}
+                      <figcaption>{text.before}</figcaption>
+                    </figure>
+                    <figure>
+                      {item.resultImage || item.image ? (
+                        <>
+                          <img className="featured-blur-bg" src={item.resultImage || item.image} alt="" aria-hidden="true" />
+                          <img className="featured-main-img" src={item.resultImage || item.image} alt={`${title(item)} ${text.after}`} />
+                        </>
+                      ) : (
+                        <div className="featured-image-empty">{text.after}</div>
+                      )}
+                      <figcaption>{text.after}</figcaption>
+                    </figure>
+                  </div>
+                ) : item.image ? (
+                  <div className="featured-image">
+                    <img src={item.image} alt={title(item)} />
+                  </div>
+                ) : null}
+                <div className="featured-card-body">
+                  <div>
+                    <strong>{title(item)}</strong>
+                    <p>{description(item)}</p>
+                  </div>
+                  <button className="quick-copy-button wide" onClick={() => onCopy(item.id, item.prompt)} type="button">
+                    {copied === item.id ? <Check size={15} /> : <Copy size={15} />}
+                    {copied === item.id ? text.copied : text.copyPrompt}
+                  </button>
+                </div>
+              </article>
+            );
+          })}
+        </div>
+      </section>
+  );
 }
 
 function AdminPanel({
@@ -1148,23 +1379,38 @@ function AdminPanel({
   adminNotice,
   adminSearch,
   customParameters,
+  customFeaturedPrompts,
   feedbackEntries,
+  featuredDraft,
+  featuredEditingId,
+  featuredPrompts: managedFeaturedPrompts,
   hiddenParameters,
+  hiddenFeaturedPrompts,
   parameters: managedParameters,
+  section,
   onClose,
   onCreate,
+  onCreateFeatured,
   onDraftChange,
+  onFeaturedDraftChange,
   onEdit,
+  onEditFeatured,
   onClearFeedback,
   onRemoveFeedback,
   onRemove,
+  onRemoveFeatured,
   onReset,
   onRestore,
+  onRestoreFeatured,
   onSave,
-  onSearchChange
+  onSaveFeatured,
+  onSearchChange,
+  onSectionChange
 }: AdminPanelProps) {
   const customIds = new Set(customParameters.map((parameter) => parameter.id));
   const hiddenIds = new Set(hiddenParameters);
+  const customFeaturedIds = new Set(customFeaturedPrompts.map((item) => item.id));
+  const hiddenFeaturedIds = new Set(hiddenFeaturedPrompts);
   const groupHints = Array.from(
     new Map(
       Object.values(categoryGroups)
@@ -1187,6 +1433,15 @@ function AdminPanel({
       parameter.enPrompt.toLowerCase().includes(query)
     );
   });
+  const filteredFeaturedPrompts = managedFeaturedPrompts.filter((item) => {
+    if (!query) return true;
+    return (
+      item.id.toLowerCase().includes(query) ||
+      item.zhTitle.toLowerCase().includes(query) ||
+      item.enTitle.toLowerCase().includes(query) ||
+      item.prompt.toLowerCase().includes(query)
+    );
+  });
 
   return (
     <div className="admin-backdrop">
@@ -1201,12 +1456,21 @@ function AdminPanel({
           </button>
         </div>
 
+        <div className="admin-section-tabs">
+          <button className={section === "parameters" ? "active" : ""} onClick={() => onSectionChange("parameters")} type="button">
+            参数图库
+          </button>
+          <button className={section === "featured" ? "active" : ""} onClick={() => onSectionChange("featured")} type="button">
+            精选提示词
+          </button>
+        </div>
+
         <div className="admin-layout">
           <section className="admin-list-panel">
             <div className="admin-actions">
-              <button className="primary-action" onClick={onCreate} type="button">
+              <button className="primary-action" onClick={section === "parameters" ? onCreate : onCreateFeatured} type="button">
                 <Plus size={16} />
-                新增参数
+                {section === "parameters" ? "新增参数" : "新增精选"}
               </button>
               <button className="ghost-action" onClick={onReset} type="button">
                 <RotateCcw size={16} />
@@ -1220,11 +1484,22 @@ function AdminPanel({
             </label>
 
             <div className="admin-counts">
-              <span>总计 {managedParameters.length}</span>
-              <span>自定义 {customParameters.length}</span>
-              <span>隐藏 {hiddenParameters.length}</span>
+              {section === "parameters" ? (
+                <>
+                  <span>总计 {managedParameters.length}</span>
+                  <span>自定义 {customParameters.length}</span>
+                  <span>隐藏 {hiddenParameters.length}</span>
+                </>
+              ) : (
+                <>
+                  <span>总计 {managedFeaturedPrompts.length}</span>
+                  <span>自定义 {customFeaturedPrompts.length}</span>
+                  <span>隐藏 {hiddenFeaturedPrompts.length}</span>
+                </>
+              )}
             </div>
 
+            {section === "parameters" && (
             <section className="admin-feedback-section">
               <div className="admin-feedback-title">
                 <div>
@@ -1258,9 +1533,10 @@ function AdminPanel({
                 </div>
               )}
             </section>
+            )}
 
             <div className="admin-parameter-list">
-              {filteredParameters.map((parameter) => {
+              {section === "parameters" ? filteredParameters.map((parameter) => {
                 const isCustom = customIds.has(parameter.id);
                 const isHidden = hiddenIds.has(parameter.id);
 
@@ -1284,6 +1560,31 @@ function AdminPanel({
                     </div>
                   </article>
                 );
+              }) : filteredFeaturedPrompts.map((item) => {
+                const isCustom = customFeaturedIds.has(item.id);
+                const isHidden = hiddenFeaturedIds.has(item.id);
+                const previewImage = item.image || item.resultImage || item.originalImage || "/assets/parameters/style-cinematic.jpg";
+
+                return (
+                  <article className={isHidden ? "admin-row hidden" : "admin-row"} key={item.id}>
+                    <img src={previewImage} alt={item.zhTitle} />
+                    <div>
+                      <strong>{item.zhTitle}</strong>
+                      <span>{item.id}</span>
+                      <small>{featuredPromptCategories.find((category) => category.id === item.category)?.zhName} · {isCustom ? "自定义" : "内置"}</small>
+                    </div>
+                    <div className="admin-row-actions">
+                      <button onClick={() => onEditFeatured(item)} type="button">编辑</button>
+                      {isHidden ? (
+                        <button onClick={() => onRestoreFeatured(item.id)} type="button">恢复</button>
+                      ) : (
+                        <button onClick={() => onRemoveFeatured(item)} type="button">
+                          {isCustom ? <Trash2 size={14} /> : <EyeOff size={14} />}
+                        </button>
+                      )}
+                    </div>
+                  </article>
+                );
               })}
             </div>
           </section>
@@ -1291,104 +1592,245 @@ function AdminPanel({
           <section className="admin-editor-panel">
             <div className="admin-editor-title">
               <div>
-                <h3>{adminEditingId ? "编辑参数" : "新增参数"}</h3>
-                <p>{adminEditingId ? "内置参数会保存为本地覆盖，自定义参数会直接更新。" : "新增参数会进入自定义库。"}</p>
+                <h3>{section === "parameters" ? (adminEditingId ? "编辑参数" : "新增参数") : (featuredEditingId ? "编辑精选提示词" : "新增精选提示词")}</h3>
+                <p>{section === "parameters" ? (adminEditingId ? "内置参数会保存为本地覆盖，自定义参数会直接更新。" : "新增参数会进入自定义库。") : "可管理精选提示词的分类、展示图和复制内容。"}</p>
               </div>
               {adminNotice && <span>{adminNotice}</span>}
             </div>
 
-            <div className="admin-form-grid">
-              <label className="field">
-                <span>ID</span>
-                <input
-                  disabled={Boolean(adminEditingId)}
-                  value={adminDraft.id}
-                  onChange={(event) => onDraftChange({ ...adminDraft, id: event.target.value })}
-                />
-              </label>
+            {section === "parameters" ? (
+              <>
+                <div className="admin-form-grid">
+                  <label className="field">
+                    <span>ID</span>
+                    <input
+                      disabled={Boolean(adminEditingId)}
+                      value={adminDraft.id}
+                      onChange={(event) => onDraftChange({ ...adminDraft, id: event.target.value })}
+                    />
+                  </label>
 
-              <label className="field">
-                <span>分类</span>
-                <select
-                  value={adminDraft.category}
-                  onChange={(event) => onDraftChange({ ...adminDraft, category: event.target.value as CategoryId })}
-                >
-                  {categories.map((category) => (
-                    <option key={category.id} value={category.id}>
-                      {category.zhName}
-                    </option>
+                  <label className="field">
+                    <span>分类</span>
+                    <select
+                      value={adminDraft.category}
+                      onChange={(event) => onDraftChange({ ...adminDraft, category: event.target.value as CategoryId })}
+                    >
+                      {categories.map((category) => (
+                        <option key={category.id} value={category.id}>
+                          {category.zhName}
+                        </option>
+                      ))}
+                    </select>
+                  </label>
+
+                  <label className="field">
+                    <span>子标签</span>
+                    <input
+                      list="admin-group-hints"
+                      value={adminDraft.styleGroup}
+                      onChange={(event) => onDraftChange({ ...adminDraft, styleGroup: event.target.value })}
+                      placeholder="例如 nature / future / anime"
+                    />
+                  </label>
+                </div>
+
+                <datalist id="admin-group-hints">
+                  {groupHints.map(([id, name]) => (
+                    <option key={id} value={id}>{name}</option>
                   ))}
-                </select>
-              </label>
+                </datalist>
 
-              <label className="field">
-                <span>子标签</span>
-                <input
-                  list="admin-group-hints"
-                  value={adminDraft.styleGroup}
-                  onChange={(event) => onDraftChange({ ...adminDraft, styleGroup: event.target.value })}
-                  placeholder="例如 nature / future / anime"
+                <div className="admin-form-grid">
+                  <label className="field">
+                    <span>中文名</span>
+                    <input value={adminDraft.zhName} onChange={(event) => onDraftChange({ ...adminDraft, zhName: event.target.value })} />
+                  </label>
+                  <label className="field">
+                    <span>英文名</span>
+                    <input value={adminDraft.enName} onChange={(event) => onDraftChange({ ...adminDraft, enName: event.target.value })} />
+                  </label>
+                </div>
+
+                <ImagePathPicker
+                  label="上传展示图"
+                  value={adminDraft.image}
+                  onChange={(value) => onDraftChange({ ...adminDraft, image: value })}
                 />
-              </label>
 
-              <label className="field">
-                <span>默认权重</span>
-                <input
-                  type="number"
-                  min="0.2"
-                  max="2"
-                  step="0.1"
-                  value={adminDraft.defaultWeight}
-                  onChange={(event) => onDraftChange({ ...adminDraft, defaultWeight: Number(event.target.value) })}
-                />
-              </label>
-            </div>
+                <label className="field">
+                  <span>中文提示词片段</span>
+                  <textarea value={adminDraft.zhPrompt} onChange={(event) => onDraftChange({ ...adminDraft, zhPrompt: event.target.value })} />
+                </label>
 
-            <datalist id="admin-group-hints">
-              {groupHints.map(([id, name]) => (
-                <option key={id} value={id}>{name}</option>
-              ))}
-            </datalist>
+                <label className="field">
+                  <span>英文提示词片段</span>
+                  <textarea value={adminDraft.enPrompt} onChange={(event) => onDraftChange({ ...adminDraft, enPrompt: event.target.value })} />
+                </label>
 
-            <div className="admin-form-grid">
-              <label className="field">
-                <span>中文名</span>
-                <input value={adminDraft.zhName} onChange={(event) => onDraftChange({ ...adminDraft, zhName: event.target.value })} />
-              </label>
-              <label className="field">
-                <span>英文名</span>
-                <input value={adminDraft.enName} onChange={(event) => onDraftChange({ ...adminDraft, enName: event.target.value })} />
-              </label>
-            </div>
+                <label className="field">
+                  <span>负面词（逗号或换行分隔）</span>
+                  <textarea value={adminDraft.negative} onChange={(event) => onDraftChange({ ...adminDraft, negative: event.target.value })} />
+                </label>
 
-            <label className="field">
-              <span>展示图路径</span>
-              <input value={adminDraft.image} onChange={(event) => onDraftChange({ ...adminDraft, image: event.target.value })} />
-            </label>
+                <button className="primary-action save-admin" onClick={onSave} type="button">
+                  <Save size={16} />
+                  保存参数
+                </button>
+              </>
+            ) : (
+              <>
+                <div className="admin-form-grid">
+                  <label className="field">
+                    <span>ID</span>
+                    <input
+                      disabled={Boolean(featuredEditingId)}
+                      value={featuredDraft.id}
+                      onChange={(event) => onFeaturedDraftChange({ ...featuredDraft, id: event.target.value })}
+                    />
+                  </label>
 
-            <label className="field">
-              <span>中文提示词片段</span>
-              <textarea value={adminDraft.zhPrompt} onChange={(event) => onDraftChange({ ...adminDraft, zhPrompt: event.target.value })} />
-            </label>
+                  <label className="field">
+                    <span>精选分类</span>
+                    <select
+                      value={featuredDraft.category}
+                      onChange={(event) => onFeaturedDraftChange({ ...featuredDraft, category: event.target.value as FeaturedPromptCategory, group: "" })}
+                    >
+                      {featuredPromptCategories.map((category) => (
+                        <option key={category.id} value={category.id}>
+                          {category.zhName}
+                        </option>
+                      ))}
+                    </select>
+                  </label>
+                </div>
 
-            <label className="field">
-              <span>英文提示词片段</span>
-              <textarea value={adminDraft.enPrompt} onChange={(event) => onDraftChange({ ...adminDraft, enPrompt: event.target.value })} />
-            </label>
+                {featuredPromptGroups[featuredDraft.category]?.length ? (
+                  <label className="field">
+                    <span>子分组</span>
+                    <select
+                      value={featuredDraft.group}
+                      onChange={(event) => onFeaturedDraftChange({ ...featuredDraft, group: event.target.value })}
+                    >
+                      <option value="">不指定</option>
+                      {featuredPromptGroups[featuredDraft.category]
+                        ?.filter((group) => group.id !== "all")
+                        .map((group) => (
+                          <option key={group.id} value={group.id}>
+                            {group.zhName}
+                          </option>
+                        ))}
+                    </select>
+                  </label>
+                ) : null}
 
-            <label className="field">
-              <span>负面词（逗号或换行分隔）</span>
-              <textarea value={adminDraft.negative} onChange={(event) => onDraftChange({ ...adminDraft, negative: event.target.value })} />
-            </label>
+                <div className="admin-form-grid">
+                  <label className="field">
+                    <span>中文标题</span>
+                    <input value={featuredDraft.zhTitle} onChange={(event) => onFeaturedDraftChange({ ...featuredDraft, zhTitle: event.target.value })} />
+                  </label>
+                  <label className="field">
+                    <span>英文标题</span>
+                    <input value={featuredDraft.enTitle} onChange={(event) => onFeaturedDraftChange({ ...featuredDraft, enTitle: event.target.value })} />
+                  </label>
+                </div>
 
-            <button className="primary-action save-admin" onClick={onSave} type="button">
-              <Save size={16} />
-              保存参数
-            </button>
+                <div className="admin-form-grid">
+                  <label className="field">
+                    <span>中文说明</span>
+                    <input value={featuredDraft.zhDescription} onChange={(event) => onFeaturedDraftChange({ ...featuredDraft, zhDescription: event.target.value })} />
+                  </label>
+                  <label className="field">
+                    <span>英文说明</span>
+                    <input value={featuredDraft.enDescription} onChange={(event) => onFeaturedDraftChange({ ...featuredDraft, enDescription: event.target.value })} />
+                  </label>
+                </div>
+
+                <label className="field">
+                  <span>复制提示词内容</span>
+                  <textarea value={featuredDraft.prompt} onChange={(event) => onFeaturedDraftChange({ ...featuredDraft, prompt: event.target.value })} />
+                </label>
+
+                {(featuredDraft.category === "color-edit" || featuredDraft.category === "image-to-image") ? (
+                  <div className="admin-form-grid">
+                    <ImagePathPicker
+                      label="上传原图"
+                      value={featuredDraft.originalImage}
+                      onChange={(value) => onFeaturedDraftChange({ ...featuredDraft, originalImage: value })}
+                    />
+                    <ImagePathPicker
+                      label="上传效果图"
+                      value={featuredDraft.resultImage}
+                      onChange={(value) => onFeaturedDraftChange({ ...featuredDraft, resultImage: value })}
+                    />
+                  </div>
+                ) : featuredDraft.category === "text-to-image" ? (
+                  <ImagePathPicker
+                    label="上传效果图"
+                    value={featuredDraft.image}
+                    onChange={(value) => onFeaturedDraftChange({ ...featuredDraft, image: value })}
+                  />
+                ) : null}
+
+                <button className="primary-action save-admin" onClick={onSaveFeatured} type="button">
+                  <Save size={16} />
+                  保存精选提示词
+                </button>
+              </>
+            )}
           </section>
         </div>
       </aside>
     </div>
+  );
+}
+
+interface ImagePathPickerProps {
+  label: string;
+  value: string;
+  onChange: (value: string) => void;
+}
+
+function ImagePathPicker({ label, value, onChange }: ImagePathPickerProps) {
+  async function handleUpload(event: ChangeEvent<HTMLInputElement>) {
+    const file = event.target.files?.[0];
+    if (!file) return;
+    if (!file.type.startsWith("image/")) {
+      event.target.value = "";
+      return;
+    }
+
+    const dataUrl = await compressFeedbackImage(file);
+    onChange(dataUrl);
+    event.target.value = "";
+  }
+
+  return (
+    <label className="field image-path-picker">
+      <span>{label}</span>
+      <div className="image-path-control">
+        <div className="path-preview">
+          {value ? <img src={value} alt={label} /> : <small>无图片</small>}
+          {value && (
+            <div className="path-preview-large">
+              <img src={value} alt={`${label} 预览`} />
+            </div>
+          )}
+        </div>
+        <div className="image-upload-actions">
+          <label className="upload-button image-upload-button">
+            <ImageIcon size={15} />
+            选择图片
+            <input accept="image/*" onChange={handleUpload} type="file" />
+          </label>
+          {value && (
+            <button className="ghost-action clear-image-button" onClick={() => onChange("")} type="button">
+              清除
+            </button>
+          )}
+        </div>
+      </div>
+    </label>
   );
 }
 

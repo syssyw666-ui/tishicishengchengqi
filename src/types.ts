@@ -1,5 +1,3 @@
-export type ModelFormat = "openai" | "midjourney" | "stable-diffusion" | "doubao-qwen";
-
 export type CategoryId =
   | "style"
   | "artist-style"
@@ -43,7 +41,7 @@ export interface PromptParameter {
   styleGroup?: string;
   zhName: string;
   enName: string;
-  defaultWeight: number;
+  defaultWeight?: number;
   image: string;
   zhPrompt: string;
   enPrompt: string;
@@ -52,7 +50,6 @@ export interface PromptParameter {
 
 export interface SelectedParameter {
   id: string;
-  weight: number;
 }
 
 export interface PromptInputs {

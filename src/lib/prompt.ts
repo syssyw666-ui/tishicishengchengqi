@@ -1,4 +1,4 @@
-import type { CategoryId, ModelFormat, PromptInputs, PromptParameter, SelectedParameter } from "../types";
+import type { CategoryId, PromptInputs, PromptParameter, SelectedParameter } from "../types";
 
 const categoryOrder: CategoryId[] = [
   "purpose",
@@ -56,16 +56,16 @@ const categoryLabels: Record<CategoryId, { zh: string; en: string }> = {
   "color-material": { zh: "色彩与材质", en: "Color And Material" }
 };
 
-const aspectRatioOptions: Record<string, { zh: string; en: string; mj?: string }> = {
+const aspectRatioOptions: Record<string, { zh: string; en: string }> = {
   auto: { zh: "自动比例", en: "automatic aspect ratio" },
-  "1:1": { zh: "1:1 方图", en: "1:1 square aspect ratio", mj: "1:1" },
-  "16:9": { zh: "16:9 横版宽屏", en: "16:9 landscape widescreen aspect ratio", mj: "16:9" },
-  "9:16": { zh: "9:16 竖版全屏", en: "9:16 vertical full-screen aspect ratio", mj: "9:16" },
-  "4:3": { zh: "4:3 传统横版", en: "4:3 classic landscape aspect ratio", mj: "4:3" },
-  "3:4": { zh: "3:4 传统竖版", en: "3:4 classic portrait aspect ratio", mj: "3:4" },
-  "3:2": { zh: "3:2 摄影横版", en: "3:2 photographic landscape aspect ratio", mj: "3:2" },
-  "2:3": { zh: "2:3 摄影竖版", en: "2:3 photographic portrait aspect ratio", mj: "2:3" },
-  "21:9": { zh: "21:9 超宽电影画幅", en: "21:9 ultrawide cinematic aspect ratio", mj: "21:9" }
+  "1:1": { zh: "1:1 方图", en: "1:1 square aspect ratio" },
+  "16:9": { zh: "16:9 横版宽屏", en: "16:9 landscape widescreen aspect ratio" },
+  "9:16": { zh: "9:16 竖版全屏", en: "9:16 vertical full-screen aspect ratio" },
+  "4:3": { zh: "4:3 传统横版", en: "4:3 classic landscape aspect ratio" },
+  "3:4": { zh: "3:4 传统竖版", en: "3:4 classic portrait aspect ratio" },
+  "3:2": { zh: "3:2 摄影横版", en: "3:2 photographic landscape aspect ratio" },
+  "2:3": { zh: "2:3 摄影竖版", en: "2:3 photographic portrait aspect ratio" },
+  "21:9": { zh: "21:9 超宽电影画幅", en: "21:9 ultrawide cinematic aspect ratio" }
 };
 
 const clarityOptions: Record<string, { zh: string; en: string }> = {
@@ -80,10 +80,6 @@ const qualityEn = "complete composition, readable subject, coherent structure, c
 
 function cleanParts(parts: Array<string | undefined>) {
   return parts.map((part) => part?.trim()).filter(Boolean) as string[];
-}
-
-function formatWeight(weight: number) {
-  return Number(weight.toFixed(1)).toString();
 }
 
 function normalizeTokens(value: string) {
@@ -104,16 +100,16 @@ function uniqueTokens(tokens: string[]) {
 }
 
 function sortSelected(parameters: PromptParameter[], selected: SelectedParameter[]) {
-  const selectedById = new Map(selected.map((item) => [item.id, item.weight]));
+  const selectedIds = new Set(selected.map((item) => item.id));
 
   return parameters
-    .filter((parameter) => selectedById.has(parameter.id))
+    .filter((parameter) => selectedIds.has(parameter.id))
     .sort((a, b) => {
       const categoryDelta = categoryOrder.indexOf(a.category) - categoryOrder.indexOf(b.category);
       if (categoryDelta !== 0) return categoryDelta;
       return parameters.indexOf(a) - parameters.indexOf(b);
     })
-    .map((parameter) => ({ parameter, weight: selectedById.get(parameter.id) ?? parameter.defaultWeight }));
+    .map((parameter) => ({ parameter }));
 }
 
 function groupSelected(selectedItems: ReturnType<typeof sortSelected>) {
@@ -125,43 +121,15 @@ function groupSelected(selectedItems: ReturnType<typeof sortSelected>) {
     .filter((group) => group.items.length > 0);
 }
 
-function weightNoteZh(weight: number) {
-  if (weight >= 1.4) return `权重 ${formatWeight(weight)}，优先表现`;
-  if (weight <= 0.7) return `权重 ${formatWeight(weight)}，弱化为辅助`;
-  return `权重 ${formatWeight(weight)}`;
-}
-
-function weightNoteEn(weight: number) {
-  if (weight >= 1.4) return `weight ${formatWeight(weight)}, high priority`;
-  if (weight <= 0.7) return `weight ${formatWeight(weight)}, subtle support`;
-  return `weight ${formatWeight(weight)}`;
-}
-
-function midjourneyWeightedPhrase(enPrompt: string, weight: number) {
-  const phrase = enPrompt.replace(/\s+/g, " ").trim();
-  if (Math.abs(weight - 1) < 0.05) return phrase;
-  return `${phrase}::${formatWeight(weight)}`;
-}
-
-function stableDiffusionWeightedPhrase(enPrompt: string, weight: number) {
-  const phrase = enPrompt.replace(/\s+/g, " ").trim();
-  if (Math.abs(weight - 1) < 0.05) return phrase;
-  return `(${phrase}:${formatWeight(weight)})`;
-}
-
 function buildZhCategoryBlock(group: ReturnType<typeof groupSelected>[number]) {
   const label = categoryLabels[group.category].zh;
-  const items = group.items.map(({ parameter, weight }) => `${parameter.zhName}（${weightNoteZh(weight)}）：${parameter.zhPrompt}`);
+  const items = group.items.map(({ parameter }) => `${parameter.zhName}：${parameter.zhPrompt}`);
   return `${label}：\n${items.join("\n")}`;
 }
 
-function buildEnCategoryBlock(group: ReturnType<typeof groupSelected>[number], model: ModelFormat) {
+function buildEnCategoryBlock(group: ReturnType<typeof groupSelected>[number]) {
   const label = categoryLabels[group.category].en;
-  const items = group.items.map(({ parameter, weight }) => {
-    if (model === "midjourney") return midjourneyWeightedPhrase(parameter.enPrompt, weight);
-    if (model === "stable-diffusion") return `${parameter.enName} [${weightNoteEn(weight)}]: ${stableDiffusionWeightedPhrase(parameter.enPrompt, weight)}`;
-    return `${parameter.enName} [${weightNoteEn(weight)}]: ${parameter.enPrompt}`;
-  });
+  const items = group.items.map(({ parameter }) => `${parameter.enName}: ${parameter.enPrompt}`);
   return `${label}:\n${items.join("\n")}`;
 }
 
@@ -170,12 +138,7 @@ function buildNegativeBlock(negativePrompt: string, language: "zh" | "en") {
   return language === "zh" ? `负向提示词：\n${negativePrompt}` : `Negative prompt:\n${negativePrompt}`;
 }
 
-export function buildPrompt(
-  inputs: PromptInputs,
-  selected: SelectedParameter[],
-  parameters: PromptParameter[],
-  model: ModelFormat
-) {
+export function buildPrompt(inputs: PromptInputs, selected: SelectedParameter[], parameters: PromptParameter[]) {
   const selectedItems = sortSelected(parameters, selected);
   const groupedItems = groupSelected(selectedItems);
   const subject = inputs.subjectZh.trim();
@@ -197,22 +160,16 @@ export function buildPrompt(
 
   const enCoreBlocks = cleanParts([
     subject ? `Subject:\n${subject}` : undefined,
-    ...groupedItems.map((group) => buildEnCategoryBlock(group, model)),
+    ...groupedItems.map(buildEnCategoryBlock),
     aspectEn ? `Aspect ratio:\n${aspectEn}` : undefined,
     `Clarity:\n${clarity.en}`,
     `Quality:\n${qualityEn}`
   ]);
 
-  const enPrompt =
-    model === "midjourney"
-      ? `${enCoreBlocks.join("\n\n")}\n\n--style raw --v 6${aspectRatio.mj ? ` --ar ${aspectRatio.mj}` : ""}`
-      : enCoreBlocks.join("\n\n");
+  const enPrompt = enCoreBlocks.join("\n\n");
 
   const finalPromptZh = cleanParts([zhPrompt, buildNegativeBlock(negativePrompt, "zh")]).join("\n\n");
-  const finalPromptEn =
-    model === "midjourney" && negativePrompt
-      ? `${enPrompt}\n\n--no ${negativePrompt}`
-      : cleanParts([enPrompt, buildNegativeBlock(negativePrompt, "en")]).join("\n\n");
+  const finalPromptEn = cleanParts([enPrompt, buildNegativeBlock(negativePrompt, "en")]).join("\n\n");
 
   return {
     zhPrompt,
