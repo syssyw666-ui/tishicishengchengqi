@@ -748,6 +748,236 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     enDescription: "For festival, cultural, and packaging visuals.",
     image: "/assets/featured/text-chinese-folk-illustration.jpg",
     prompt: "实验提示词：生成“目标主题”的中国民艺风原创插画，融合“目标民艺技法”，使用“目标配色”，用于“目标用途”。参考剪纸、刺绣、木刻版画的装饰语言，平面化构图，传统纹样与现代设计结合，画面喜庆、精致、有手工肌理。可替换项示例：“醒狮 / 花鸟 / 节日礼盒 / 生肖主题”，“剪纸 / 刺绣 / 木刻版画 / 年画”，“朱红金色 / 青绿金色 / 黑金红色”，“文创包装 / 节日海报 / 社媒封面”。不要使用版权形象，不要出现乱码文字、水印、logo。"
+  },
+  {
+    id: "text-lingnan-maximalist-vector",
+    category: "text-to-image",
+    zhTitle: "岭南极繁矢量海报",
+    enTitle: "Lingnan Maximalist Vector",
+    zhDescription: "岭南镬耳墙古建与现代风融合的极繁主义插画。",
+    enDescription: "Maximalist Lingnan architecture vector poster with modern styling.",
+    image: "/assets/featured/text-lingnan-maximalist-vector.jpg",
+    prompt: "这些极繁主义的矢量图展现出独特的艺术魅力，它们以复杂的设计风格传达出丰富的情感。通过复杂的线条、形状和复古色彩，勾勒出历史故事场景岭南文化镬耳墙，镬耳屋与现代风相融合，体现出一种现代、时尚的美感，岭南古建筑群，整体画面构图居下方，上部分留白，不需要任何文字。"
+  },
+  {
+    id: "text-shanghai-palimpsest-poster",
+    category: "text-to-image",
+    zhTitle: "上海极简字母招贴",
+    enTitle: "Shanghai Letter Poster",
+    zhDescription: "高密度色块、天际线与英文字母构成的平面海报。",
+    enDescription: "Minimal letter poster with Shanghai skyline and dense color blocks.",
+    image: "/assets/featured/text-shanghai-palimpsest-poster.jpg",
+    prompt: "极简平面插画，居中构图，由深邃的Coral Navy Palimpsest高密度色块随机拼贴和层叠而构成的只有9个构件的英文字母招贴，正负形空间，融合上海天际线，紫色暗调，复古印刷肌理、颗粒感。画布底部居中有文字“SHANG HAI”，文字细窄圆润几何线条搭配大开口结构，科技感里带一点流动感，数字艺术。大师排版，完美构图。"
+  },
+  {
+    id: "text-watercolor-floral-card",
+    category: "text-to-image",
+    zhTitle: "水彩花卉贺卡框",
+    enTitle: "Watercolor Floral Card",
+    zhDescription: "清新春季水彩花卉边框与贺卡构图。",
+    enDescription: "Fresh spring watercolor floral border for greeting cards.",
+    image: "/assets/featured/text-watercolor-floral-card.jpg",
+    prompt: "水彩花卉插画，粉色木槿花，大型龟背竹叶，黄色小花簇，蓝色小花，紫色小花，粉色波斯菊，叶片水珠装饰，白色背景，花卉边框框架构图，手绘植物插画风格，柔和水彩晕染，细腻笔触，贺卡艺术风格，明亮自然光，柔和粉彩色调，透明水彩效果，清新春季色彩，框架式构图，画面正中有极小的手签字体“Artwork by AI・Designed by DuoShi”装饰元素。大师级的排版。俯视视角，不对称平衡，高分辨率插画，专业品质，水彩纸质感，清晰叶脉，颜料渗透效果，精致花瓣。"
+  },
+  {
+    id: "text-chinese-bronze-badge-logo",
+    category: "text-to-image",
+    zhTitle: "青铜中式徽章Logo",
+    enTitle: "Bronze Chinese Badge Logo",
+    zhDescription: "中国与 CHINA 字体形成的中式复古徽章。",
+    enDescription: "Chinese retro bronze-patina badge logo with ornate linework.",
+    image: "/assets/featured/text-chinese-bronze-badge-logo.jpg",
+    prompt: "字体logo图形设计 中文“中国”与小英文“CHINA”两组设计艺术文字为主体形成一整个中式复古徽章的logo造型，采用复杂且精致的青铜器线条勾勒，深绿铜锈感，展现出极高的工艺水准。细腻的曲线，刚硬的直线，相互交织，构建出富有层次感的图案。精美的卷草纹，主图案与底纹有明显区分，增加立体感。其蜿蜒曲折的线条不仅增添了视觉上的丰富性，还蕴含着生生不息、繁荣昌盛的美好寓意。徽章占整体版面合理构图。优雅与庄重的氛围。（世界顶级大师级水准，要有灵魂，不呆板，有意境，有情感） 红色印章 “puti Design”。"
+  },
+  {
+    id: "text-mythic-cloud-wukong-lines",
+    category: "text-to-image",
+    zhTitle: "悟空云线国潮海报",
+    enTitle: "Wukong Cloud Line Poster",
+    zhDescription: "彩色流线云海与极小悟空的宗师级排版。",
+    enDescription: "Colorful flowing cloud-line poster with a tiny mythic monkey hero.",
+    image: "/assets/featured/text-mythic-cloud-wukong-lines.jpg",
+    prompt: "用横向流畅且色彩斑斓的曲线勾勒出云的写真（花果山，浪花与海洋生物，海底龙宫）主体居中，尾线条自由落体状垂落到悟空头上，下面坐着一个极小紧箍咒的悟空，悟空旁印章“悟”点缀，宗师级排版，大师级排版。"
+  },
+  {
+    id: "text-isometric-street-vendors",
+    category: "text-to-image",
+    zhTitle: "中国街头行人集合",
+    enTitle: "Chinese Street Vendor Set",
+    zhDescription: "等轴测手绘街头摊贩与民间职业角色合集。",
+    enDescription: "Isometric hand-drawn Chinese street vendor character collection.",
+    image: "/assets/featured/text-isometric-street-vendors.jpg",
+    prompt: "绘制等轴测视角的中国各式街头行人，手绘风格，30度视角展现，例如面摊，街头艺人，打铁匠，修皮鞋，煎饼果子，臭豆腐小贩，手抓饼摊主，烤红薯师傅，糖葫芦小贩，爆米花师傅，磨刀师傅等 20 种，手绘工笔风格，柔和色调，平行投影无透视，线条干净，艺术化插图，白色背景，无光影，背景干净，可分割，传统中式设计，细节精致，高清4K分辨率。请帮我把上面的图片生成视频。"
+  },
+  {
+    id: "text-3d-song-merchant-board",
+    category: "text-to-image",
+    zhTitle: "宋代商贾3D设定板",
+    enTitle: "Song Merchant 3D Board",
+    zhDescription: "三段式3D卡通写实国风角色设定展板。",
+    enDescription: "Three-part stylized 3D Chinese merchant character design board.",
+    image: "/assets/featured/text-3d-song-merchant-board.jpg",
+    prompt: "皮克斯3D卡通写实国风角色设定展板，分三段式标准角色设定排版，整体高级灰纯色背景。第一部分：顶部超大半身人物特写，柔和棚拍光影，极简灰渐变背景。第二部分：中间全身标准三视图，正面全身、侧面全身、背面全身，统一浅灰色干净背景。第三部分：底部4张人物面部表情特写横向排列，从左到右依次标注文字：喜、怒、恐惧、惊讶。人物形象：中年宋代商贾，胖乎乎眯眯眼，细腻写实3D卡通黏土建模，柔和皮肤质感，电影级细腻材质。服饰配饰：宋代商贾形象。光影：柔和均匀影棚柔光，无强烈硬阴影，8K超高清，电影质感，次世代3D渲染，细节细腻，角色统一五官造型，整套人物形象完全统一。"
+  },
+  {
+    id: "text-dog-doodle-pattern",
+    category: "text-to-image",
+    zhTitle: "小狗涂鸦满版图案",
+    enTitle: "Dog Doodle Pattern",
+    zhDescription: "蓝白高密度小狗涂鸦满版纹样。",
+    enDescription: "Dense blue-white dog doodle pattern filling the canvas.",
+    image: "/assets/featured/text-dog-doodle-pattern.jpg",
+    prompt: "运用Mr Doodle风格创作的这幅黑白涂鸦，满是不同种类小狗的涂鸦图案，密密麻麻地重叠在一起，铺满了整个画面，毫无留白之处。画面中抽象的小狗形象，以大胆前卫的线条绘制，蓝白的色彩搭配鲜明和谐，呈现出独特的大师艺术风格。"
+  },
+  {
+    id: "text-tibetan-winter-village",
+    category: "text-to-image",
+    zhTitle: "冬季藏地村庄",
+    enTitle: "Winter Tibetan Village",
+    zhDescription: "白顶红墙、雪景僧人与信仰烟火感的极繁插画。",
+    enDescription: "Maximalist snowy Tibetan village with red walls and monks.",
+    image: "/assets/featured/text-tibetan-winter-village.jpg",
+    prompt: "冬季的西藏村庄，密密麻麻，从画面上方错落着铺陈下来，整体是白顶红墙，点缀杂色，极繁主义，右侧是村庄边缘的雪景，雪色上窄下宽。画面底部是近景落雪高地，右下方有一位高僧人手牵着一个小僧人站立在雪上，远景白雪映衬近景红袍。山顶的经幡依稀可见，整体的对称营造出和谐的美，色调以白红对照，红是主色调。人间烟火与信仰的虔诚不分伯仲。有西藏色达的印象之美。加入青灰色滤镜效果高清画质。"
+  },
+  {
+    id: "text-citywalk-collage",
+    category: "text-to-image",
+    zhTitle: "中国City Walk拼贴",
+    enTitle: "China City Walk Collage",
+    zhDescription: "透明纸、小票、剪报、邮票与人像的混合媒体拼贴。",
+    enDescription: "Mixed-media Chinese city walk collage with paper textures.",
+    image: "/assets/featured/text-citywalk-collage.jpg",
+    prompt: "手绘加拼贴，以当代中国city walk 意境为灵感的拼贴风格艺术品。透明纸，收银小票，中华民国时期剪报撕纸，回形针，邮票，明信片，贴纸，涂鸦线稿，手写笔记，分层构图，lofi颗粒质感人像，多种纹理的纸张，艺术编排、手工美学，拼贴，创意组合，混合媒体达达主义。"
+  },
+  {
+    id: "text-anime-courier-turnaround",
+    category: "text-to-image",
+    zhTitle: "外卖员动漫三视图",
+    enTitle: "Courier Anime Turnaround",
+    zhDescription: "日系治愈风现代外卖员角色设定板。",
+    enDescription: "Healing anime courier character turnaround board.",
+    image: "/assets/featured/text-anime-courier-turnaround.jpg",
+    prompt: "人物形象提示词：（三视图）1.主视觉区 (上方)以 “正面 + 侧面 + 背面” 三个核心视角为主体，直观呈现角色的整体身形、服饰搭配和标志性特征，是制作人员对人物 “整体造型” 的参考基础。2.补充信息区 (左侧)拆分出 “面部特写” 和 “配色板”(明确毛发、服饰的色值)，补充主视角没覆盖的细节与色彩标准。3.局部细节区 (底部)用小模块单独展示关键部件的设计 (配饰、点缀、关键身份识别元素)，把主视角里的 “模糊细节” 拆分为精准的制作参考，方便导演确认。4.全身照比例照 (右侧)使用黄金比例参考物和人物身高形成对比。5.背景为白色，最高品质细节丰富。6【日系治愈动漫风格】现代风格，写实风格，质感光照，自然光线，8K高清纹理，布料褶皱自然，艺术写实风格，营造出震撼的视觉效果。人物外观设定: 23岁青年男性，纯黑利落寸头，新人外卖员，眼神胆怯但坚定，刚出社会的小青年，身穿外卖员工服。"
+  },
+  {
+    id: "text-realistic-ancient-male-turnaround",
+    category: "text-to-image",
+    zhTitle: "古风白发男三视图",
+    enTitle: "Ancient White-Haired Turnaround",
+    zhDescription: "真人写实国风角色设定板与华服拆解。",
+    enDescription: "Realistic ancient Chinese character design board with ornate costume.",
+    image: "/assets/featured/text-realistic-ancient-male-turnaround.jpg",
+    prompt: "人物形象提示词：（三视图）1.主视觉区 (上方)以 “正面 + 侧面 + 背面” 三个核心视角为主体，直观呈现角色的整体身形、服饰搭配和标志性特征，是制作人员对人物 “整体造型” 的参考基础。2.补充信息区 (左侧)拆分出 “面部特写” 和 “配色板”(明确毛发、服饰的色值)，补充主视角没覆盖的细节与色彩标准。3.局部细节区 (底部)用小模块单独展示关键部件的设计 (配饰、点缀、关键身份识别元素)，把主视角里的 “模糊细节” 拆分为精准的制作参考。4.全身照比例照 (右侧)使用黄金比例（9头身）参考物和人物身高形成对比。5.背景为白色，最高品质细节丰富。6【真人写实】超写实国风，现代风格，写实风格，质感光照，自然光线，质感十足，8K高清纹理，布料褶皱自然，艺术写实风格，营造出震撼惊艳的视觉效果。人物外观设定:古风帅哥，三庭五眼，氛围感白发，发丝细腻柔顺，狭长双眼，眼尾细长，睫毛浓密纤长。服饰首饰：锦衣华服貂裘，丰富的花纹，金丝描边，金质华丽的发冠，五官容貌：极致妖孽魅惑的容貌，高级构图，细节丰富，清晰精致，高清画质，长发凌乱发丝拂面，面部聚焦，清透瓷白的肌肤，保留皮肤纹理，超高清、最高画质、高质量，丰富细节、细腻肌理，忧郁清冷，写实逼真，潇洒。"
+  },
+  {
+    id: "text-china-route-map",
+    category: "text-to-image",
+    zhTitle: "中国旅行路线手绘地图",
+    enTitle: "China Travel Route Map",
+    zhDescription: "南昌出发的半写实手绘线条旅行路线图。",
+    enDescription: "Semi-realistic hand-drawn travel route map starting from Nanchang.",
+    image: "/assets/featured/text-china-route-map.jpg",
+    prompt: "绘制一幅半写实风格的手绘线条地图，生动呈现以南昌为起点，依次途经南京、日照、青岛、滁州乌衣镇、合肥，最后回归南昌的旅行路线。沿途安排可爱的卡通角色，它们或在城市地标处驻足，或在道路上前行，为整个路线增添活泼氛围，清晰展现这条独特的旅行路线图。"
+  },
+  {
+    id: "text-paris-watercolor-sketch",
+    category: "text-to-image",
+    zhTitle: "城市水彩速写海报",
+    enTitle: "City Watercolor Sketch Poster",
+    zhDescription: "输入城市名后生成3:4高级水彩旅行海报。",
+    enDescription: "Generate a premium 3:4 watercolor travel poster from a city name.",
+    image: "/assets/featured/text-paris-watercolor-sketch.jpg",
+    prompt: "请根据我输入的【城市】，生成 1 张 3:4 竖版高级水彩城市速写海报。用户只提供城市名称即可，你需要自动判断并生成最适合该城市的：代表性户外地点、标志性景观、街道/广场/河岸/小径空间、城市氛围、色彩气质、英文城市名称，以及一句高级简短的英文短句。整体采用高级水彩城市速写风、旅行手账水彩插画风、建筑速写海报风、留白感透明水彩风。画面应具有细腻自由的蓝黑色钢笔线条、克制透明的水彩铺色、大面积暖白色冷压纸留白、自然城市透视和轻盈松弛的旅行感。画幅固定为 3:4 竖版。视角与行人视线齐平，将城市代表性景观放在中景位置。街道、步道、广场、河岸或石板路自然向远处延伸，形成柔和消失点。前景保持开阔、明亮、轻盈，不要放置过大的裁切人物、树木、车辆或特写物体。水彩质感要求透明、克制、轻盈，呈现冷压纸纹理、暖白纸张底色、透明水彩叠色、轻微晕染、水痕边缘、干涸水彩边和局部留白。整体色彩低饱和、高级、透明，可使用暖赭石、浅陶土、蓝灰、薰衣草灰、暖米色、少量植物绿。在画面右上角或干净留白区域加入英文城市名，使用大写字母，柔和蓝灰色，字距舒展。下方加入一句简短高级的英文短句，例如：A quiet walk through light. / Soft streets, lasting memories. / A memory drawn in watercolor. 禁止摄影写实、3D、厚重数码水彩、地标拼贴、前景巨大物体、画面拥挤、粗黑轮廓、高饱和商业色、文字拼写错误、文字被遮挡。【城市】：巴黎"
+  },
+  {
+    id: "text-fortune-talisman-typography",
+    category: "text-to-image",
+    zhTitle: "玄学符箓字体海报",
+    enTitle: "Mystic Talisman Typography",
+    zhDescription: "黑金东方符箓字体与招财主题排版。",
+    enDescription: "Black-gold eastern talisman typography poster for fortune themes.",
+    image: "/assets/featured/text-fortune-talisman-typography.jpg",
+    prompt: "黑色背景上，最上方有中文‘好运连连’，中间是东方符箓字体的‘日進斗金’，文字灵感源于道家神秘灵符笔画，有玄术封印、夸张笔触、咒语结构线条，排布对称神秘，用金墨渲染，配有红色和蓝色，四周有装饰性英文‘Fortune Favors the Bold’、‘Money Magnet’、‘Compound Your Success’，古东方玄学风，全景镜头，神秘、庄重氛围，设计感强修饰。"
+  },
+  {
+    id: "text-qinian-hall-minimal-poster",
+    category: "text-to-image",
+    zhTitle: "祈年殿极简艺术海报",
+    enTitle: "Qinian Hall Minimal Poster",
+    zhDescription: "极简建筑插画与大字背景融合的高端海报。",
+    enDescription: "Minimal high-end architecture poster centered on Qinian Hall.",
+    image: "/assets/featured/text-qinian-hall-minimal-poster.jpg",
+    prompt: "以[祈年殿】作为核心视觉元素，创作一张极致简约的高端艺术海报。画面中央放置建筑的插画图形，背景以超大加粗的英文字体呈现，字体造型与建筑轮廓形成呼应，突出主建筑，字体淡化处理。环绕主体布置小号文字，阐释[祈年殿】的设计理念与哲思，并配以中文注解。整体调性典雅克制，色彩选择与建筑气质相契合一一部分文字或图形可巧妙延展为建筑的构件或外轮廓的延伸，营造浑然一体的构图。最终呈现一张高级感十足、极简且富有张力的艺术海报。"
+  },
+  {
+    id: "text-joker-paper-sculpture-card",
+    category: "text-to-image",
+    zhTitle: "小丑纸雕艺术卡牌",
+    enTitle: "Joker Paper Sculpture Card",
+    zhDescription: "孟菲斯配色、丝网点绘与纸雕卡牌设计。",
+    enDescription: "Avant-garde Memphis paper-sculpture card with Joker theme.",
+    image: "/assets/featured/text-joker-paper-sculpture-card.jpg",
+    prompt: "先锋前卫艺术设计，纸雕艺术卡牌设计。画面核心是抽象的简约形态，极简抽象，由几个关键元素构成强烈视觉焦点。由色彩孟菲斯色系配色，简约氛围。丝网印刷的点绘效果突出极简质感，立体感明显。描绘对象：暗黑版小丑。画布底部居中有文字“J O K E R”，文字细窄圆润几何线条搭配哥特风格，科技感里带一点流动感，数字艺术。大师排版，完美构图。"
+  },
+  {
+    id: "text-tang-lingyan-officials",
+    category: "text-to-image",
+    zhTitle: "凌烟阁功臣合影",
+    enTitle: "Lingyan Pavilion Officials",
+    zhDescription: "唐朝二十四功臣纵版群像与姓名爵位标注。",
+    enDescription: "Vertical Tang dynasty official group portrait with orderly spacing.",
+    image: "/assets/featured/text-tang-lingyan-officials.jpg",
+    prompt: "帮我生成图片：《唐朝二十四凌烟阁合影》高清，矢量，排列整齐，线条清晰，服装不一，无颗粒感，无杂色，无污点，每个功臣四周留3mm空白位，油画写实风格，每人爵位姓名位于左上角。9：16。"
+  },
+  {
+    id: "text-ink-street-whitespace",
+    category: "text-to-image",
+    zhTitle: "留白街市工笔水墨",
+    enTitle: "Whitespace Ink Street",
+    zhDescription: "象牙白大留白与细毫笔街市线描。",
+    enDescription: "Minimal ivory ink street scene with strong whitespace.",
+    image: "/assets/featured/text-ink-street-whitespace.jpg",
+    prompt: "大面积留白，象牙白背景，极简风格。一条曲折的街道作为画面唯一主体、两侧大面积留白。两侧留白占比至少70%，形成强烈的视觉压迫感。工笔水墨画，用极细的毫笔认真勾勒细节。呈现街市面貌，人群，车马，趣味十足。"
+  },
+  {
+    id: "text-four-seasons-bookmarks",
+    category: "text-to-image",
+    zhTitle: "四季街景书签",
+    enTitle: "Four Seasons Bookmarks",
+    zhDescription: "春夏秋冬四张竖向极繁街景书签。",
+    enDescription: "Four vertical maximalist seasonal street-scene bookmarks.",
+    image: "/assets/featured/text-four-seasons-bookmarks.jpg",
+    prompt: "春夏秋冬四季的极繁主义插画，以四季街景变化为内容，精美的矢量图片，四张竖向书签形式排列。"
+  },
+  {
+    id: "text-fantasy-owl-lineart",
+    category: "text-to-image",
+    zhTitle: "荧蓝金线猫头鹰",
+    enTitle: "Blue Gold Owl Line Art",
+    zhDescription: "黑底奇幻猫头鹰线稿与神秘纹饰。",
+    enDescription: "Fantasy owl line art in fluorescent blue and fine gold lines.",
+    image: "/assets/featured/text-fantasy-owl-lineart.jpg",
+    prompt: "纯黑背景的奇幻线稿插画，极繁主义，猫头鹰，鹰喙纯亚金，细节，复杂，线条肌理，神秘纹饰，由荧光蓝色线条与极细金色线条勾边共同描绘，线条柔美灵动，外部轮廓极简流畅，静谧神秘，画面高对比、干净、克制，高清渲染，超高清细节，图片居中底部有极细衬线字体英文主标题，副标题极小字英文金句+极小JS。"
+  },
+  {
+    id: "text-campus-male-character-board",
+    category: "text-to-image",
+    zhTitle: "校园男主设定板",
+    enTitle: "Campus Male Character Board",
+    zhDescription: "现代校园男主的影视级角色设定图。",
+    enDescription: "Modern Chinese campus male lead character design board.",
+    image: "/assets/featured/text-campus-male-character-board.jpg",
+    prompt: "人物图提示词：生成中国现代校园男主角色设定图，作品集级角色设计板，超写实真人摄影风格，干净高级的视觉排版，白色微纹理背景，细灰色分割线，专业影视剧/游戏角色概念设定板风格。画面必须包含清晰正确的中文标题和标签，中文汉字不要错乱，不要乱码，不要错字。主题角色：校园男子男主。整体构图：作品集角色设计板。左侧为角色主标题、头像、人物信息和角色小传；中间为角色三视图；右侧为服饰拆解和饰品拆解；底部为发型展示和表情排列。整体排版整洁、网格化、专业、高级，像影视人物设定集页面。左侧区域：顶部大标题使用粗体中文大字：“角色设定”，标题下方写：“角色设定图”。左侧中部放置一张男主半身头像特写，电影感光影，浅景深背景，男主穿校园服饰，表情自然，侧脸或三分之二角度。头像下方添加角色信息表，文字清晰：性别：男，年龄：17岁，身高：178cm，体重：65kg，职业：高中生，性格：阳光开朗、热血仗义，角色定位：现代校园男主，风格关键词：校园感 / 青春感 / 活力 / 爽朗。左下方添加“角色小传：”文字内容为短段落，排版整齐：一名热爱篮球的高中生，常穿着校服在球场挥洒汗水。性格阳光开朗，是班级里的活跃分子，对待朋友仗义热情，面对困难从不退缩，用积极的态度感染着身边的人，是同学眼中值得信赖的伙伴。中间区域：标题写：“三视图”，展示同一名男主的全身三视图，分别为正视图、侧视图、后视图。三个人物必须是同一个角色，同样发型、同样服装、同样体型。服装：蓝白配色的高中校服（长袖运动外套内搭白色T恤，下装为同系列运动长裤），白色运动鞋，背着黑色双肩运动书包，书包侧面可插着篮球。姿态：正面站立，双手自然下垂或一手插兜；侧面站立，身体微侧，书包自然垂于身侧；背面站立，展示校服背部细节和书包背面样式。三视图背景有浅灰色水平辅助线，并标注人体比例标签：头顶、下巴、肩线、胸线、腰线、臀线、脚底。"
+  },
+  {
+    id: "text-qinian-hall-type-poster",
+    category: "text-to-image",
+    zhTitle: "祈年殿字体建筑海报",
+    enTitle: "Qinian Hall Type Poster",
+    zhDescription: "建筑插画、巨大字体和中文注解融合的高端版式。",
+    enDescription: "Premium Qinian Hall poster blending architecture, type, and annotations.",
+    image: "/assets/featured/text-qinian-hall-type-poster.jpg",
+    prompt: "以[祈年殿】作为核心视觉元素，创作一张极致简约的高端艺术海报。画面中央放置建筑的插画图形，背景以超大加粗的英文字体呈现，字体造型与建筑轮廓形成呼应，突出主建筑，字体淡化处理。环绕主体布置小号文字，阐释[祈年殿】的设计理念与哲思，并配以中文注解。整体调性典雅克制，色彩选择与建筑气质相契合一一部分文字或图形可巧妙延展为建筑的构件或外轮廓的延伸，营造浑然一体的构图。最终呈现一张高级感十足、极简且富有张力的艺术海报。"
   }
 ];
 
