@@ -43,6 +43,7 @@ const uiText = {
     clarity: "清晰度",
     featuredPrompts: "精选提示词",
     featuredHint: "常用修图、图生图、文生图和图片处理指令。",
+    featuredSearchPlaceholder: "搜索精选提示词、用途或关键词...",
     imagePath: "图片路径",
     noImage: "无图片",
     close: "关闭",
@@ -90,6 +91,7 @@ const uiText = {
     clarity: "Clarity",
     featuredPrompts: "Featured Prompts",
     featuredHint: "Common retouching, image-to-image, text-to-image, and utility prompts.",
+    featuredSearchPlaceholder: "Search featured prompts, use cases, or keywords...",
     imagePath: "Image Path",
     noImage: "No Image",
     close: "Close",
@@ -265,6 +267,23 @@ function loadLocal<T>(key: string, fallback: T): T {
   }
 }
 
+function normalizeSearch(value: string) {
+  return value.trim().toLowerCase().replace(/\s+/g, " ");
+}
+
+function fuzzyMatch(value: string, needle: string) {
+  const haystack = normalizeSearch(value);
+  if (!needle) return true;
+  if (haystack.includes(needle)) return true;
+
+  let needleIndex = 0;
+  for (const char of haystack) {
+    if (char === needle[needleIndex]) needleIndex += 1;
+    if (needleIndex >= needle.length) return true;
+  }
+  return false;
+}
+
 function saveLocal<T>(key: string, value: T) {
   window.localStorage.setItem(key, JSON.stringify(value));
 }
@@ -388,6 +407,7 @@ export function App() {
   const [viewMode, setViewMode] = useState<"generator" | "featured">("generator");
   const [activeFeaturedCategory, setActiveFeaturedCategory] = useState<FeaturedPromptCategory>("color-edit");
   const [activeFeaturedGroup, setActiveFeaturedGroup] = useState("all");
+  const [featuredSearch, setFeaturedSearch] = useState("");
   const [customParameters, setCustomParameters] = useState<PromptParameter[]>(() => loadLocal(customParametersKey, []));
   const [parameterOverrides, setParameterOverrides] = useState<ParameterOverrides>(() => loadLocal(parameterOverridesKey, {}));
   const [hiddenParameters, setHiddenParameters] = useState<string[]>(() => loadLocal(hiddenParametersKey, []));
@@ -953,12 +973,14 @@ export function App() {
         copied={copied}
         items={allFeaturedPrompts}
         language={uiLanguage}
+        search={featuredSearch}
         onCategoryChange={(category) => {
           setActiveFeaturedCategory(category);
           setActiveFeaturedGroup("all");
         }}
         onCopy={copyText}
         onGroupChange={setActiveFeaturedGroup}
+        onSearchChange={setFeaturedSearch}
         onLanguageToggle={() => setUiLanguage((language) => (language === "zh" ? "en" : "zh"))}
       />
       ) : (
@@ -1256,18 +1278,33 @@ interface FeaturedPromptPageProps {
   copied: string | null;
   items: FeaturedPromptItem[];
   language: UiLanguage;
+  search: string;
   onCategoryChange: (category: FeaturedPromptCategory) => void;
   onCopy: (label: string, value: string) => void;
   onGroupChange: (group: string) => void;
+  onSearchChange: (value: string) => void;
   onLanguageToggle: () => void;
 }
 
-function FeaturedPromptPage({ activeCategory, activeGroup, copied, items, language, onCategoryChange, onCopy, onGroupChange, onLanguageToggle }: FeaturedPromptPageProps) {
+function FeaturedPromptPage({ activeCategory, activeGroup, copied, items, language, search, onCategoryChange, onCopy, onGroupChange, onSearchChange, onLanguageToggle }: FeaturedPromptPageProps) {
   const text = uiText[language];
   const groups = featuredPromptGroups[activeCategory] ?? [];
+  const searchNeedle = normalizeSearch(search);
   const visibleItems = items.filter((item) => {
     if (item.category !== activeCategory) return false;
-    return activeGroup === "all" || !groups.length || item.group === activeGroup;
+    if (activeGroup !== "all" && groups.length && item.group !== activeGroup) return false;
+    if (!searchNeedle) return true;
+    return fuzzyMatch(
+      [
+        item.zhTitle,
+        item.enTitle,
+        item.zhDescription,
+        item.enDescription,
+        item.prompt,
+        item.group ?? ""
+      ].join(" "),
+      searchNeedle
+    );
   });
 
   function title(item: FeaturedPromptItem) {
@@ -1301,10 +1338,24 @@ function FeaturedPromptPage({ activeCategory, activeGroup, copied, items, langua
             >
               {language === "zh" ? category.zhName : category.enName}
             </button>
-          ))}
-        </div>
+        ))}
+      </div>
 
-        {groups.length ? (
+      <label className="featured-search">
+        <Search size={15} />
+        <input
+          value={search}
+          onChange={(event) => onSearchChange(event.target.value)}
+          placeholder={text.featuredSearchPlaceholder}
+        />
+        {search ? (
+          <button type="button" onClick={() => onSearchChange("")} aria-label={text.close}>
+            <X size={15} />
+          </button>
+        ) : null}
+      </label>
+
+      {groups.length ? (
           <div className="featured-subtabs">
             {groups.map((group) => (
               <button

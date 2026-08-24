@@ -24,8 +24,11 @@ export const featuredPromptCategories: Array<{ id: FeaturedPromptCategory; zhNam
 export const featuredPromptGroups: Partial<Record<FeaturedPromptCategory, Array<{ id: string; zhName: string; enName: string }>>> = {
   "color-edit": [
     { id: "all", zhName: "全部调色修图", enName: "All" },
-    { id: "color-tone", zhName: "调色", enName: "Color Grading" },
-    { id: "portrait-retouch", zhName: "人物修图", enName: "Portrait Retouch" }
+    { id: "color-style", zhName: "调色风格", enName: "Color Style" },
+    { id: "portrait-retouch", zhName: "人像精修", enName: "Portrait Retouch" },
+    { id: "product-commercial", zhName: "商品商业", enName: "Product & Commercial" },
+    { id: "scene-space", zhName: "场景空间", enName: "Scene & Space" },
+    { id: "photo-repair", zhName: "照片修复", enName: "Photo Repair" }
   ]
 };
 
@@ -42,7 +45,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
   {
     id: "color-japanese-airy",
     category: "color-edit",
-    group: "color-tone",
+    group: "color-style",
     zhTitle: "日系通透糖水片",
     enTitle: "Japanese Airy Retouch",
     zhDescription: "适合人像、旅行、生活方式照片。",
@@ -54,7 +57,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
   {
     id: "color-leica-documentary",
     category: "color-edit",
-    group: "color-tone",
+    group: "color-style",
     zhTitle: "莱卡纪实色彩",
     enTitle: "Leica Documentary Color",
     zhDescription: "适合街拍、纪实、人文照片。",
@@ -66,7 +69,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
   {
     id: "color-cinematic-teal-orange",
     category: "color-edit",
-    group: "color-tone",
+    group: "color-style",
     zhTitle: "青橙电影调色",
     enTitle: "Teal Orange Cinema",
     zhDescription: "适合海报、剧照、人物场景。",
@@ -78,7 +81,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
   {
     id: "color-blockbuster-contrast",
     category: "color-edit",
-    group: "color-tone",
+    group: "color-style",
     zhTitle: "商业大片高反差",
     enTitle: "Blockbuster Contrast",
     zhDescription: "适合动作、汽车、运动、海报级照片。",
@@ -90,7 +93,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
   {
     id: "color-moody-cinema",
     category: "color-edit",
-    group: "color-tone",
+    group: "color-style",
     zhTitle: "暗调情绪电影感",
     enTitle: "Moody Cinema",
     zhDescription: "适合夜景、人像、悬疑氛围照片。",
@@ -102,7 +105,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
   {
     id: "color-kodak-gold",
     category: "color-edit",
-    group: "color-tone",
+    group: "color-style",
     zhTitle: "柯达金胶片",
     enTitle: "Kodak Gold Film",
     zhDescription: "适合日常、旅行、家庭、阳光照片。",
@@ -114,7 +117,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
   {
     id: "color-fuji-green",
     category: "color-edit",
-    group: "color-tone",
+    group: "color-style",
     zhTitle: "富士清透绿调",
     enTitle: "Fuji Clean Green",
     zhDescription: "适合旅行、人像、街景、自然光照片。",
@@ -126,7 +129,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
   {
     id: "color-hong-kong-neon",
     category: "color-edit",
-    group: "color-tone",
+    group: "color-style",
     zhTitle: "港风霓虹胶片",
     enTitle: "Hong Kong Neon Film",
     zhDescription: "适合夜景街拍、城市人像。",
@@ -402,7 +405,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
   {
     id: "color-product-premium",
     category: "color-edit",
-    group: "color-tone",
+    group: "product-commercial",
     zhTitle: "高级产品精修",
     enTitle: "Premium Product Retouch",
     zhDescription: "适合电商、广告、详情页主图。",
@@ -414,7 +417,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
   {
     id: "color-food-appetizing",
     category: "color-edit",
-    group: "color-tone",
+    group: "product-commercial",
     zhTitle: "美食诱人调色",
     enTitle: "Appetizing Food Color",
     zhDescription: "适合餐饮、美食探店、菜单图。",
@@ -426,7 +429,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
   {
     id: "color-interior-clean",
     category: "color-edit",
-    group: "color-tone",
+    group: "scene-space",
     zhTitle: "室内空间明净",
     enTitle: "Clean Interior Retouch",
     zhDescription: "适合民宿、酒店、家装、空间摄影。",
@@ -438,7 +441,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
   {
     id: "color-ins-clean-bright",
     category: "color-edit",
-    group: "color-tone",
+    group: "color-style",
     zhTitle: "INS干净明亮",
     enTitle: "Clean Bright Social",
     zhDescription: "适合社媒、小红书、生活方式照片。",
@@ -450,7 +453,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
   {
     id: "color-dopamine-bright",
     category: "color-edit",
-    group: "color-tone",
+    group: "color-style",
     zhTitle: "多巴胺亮彩",
     enTitle: "Dopamine Bright Color",
     zhDescription: "适合穿搭、活动、潮流生活照片。",
@@ -462,7 +465,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
   {
     id: "color-landscape-golden-hour",
     category: "color-edit",
-    group: "color-tone",
+    group: "scene-space",
     zhTitle: "黄金时刻风景",
     enTitle: "Golden Hour Landscape",
     zhDescription: "适合旅行、山川、海边、城市风景。",
@@ -474,7 +477,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
   {
     id: "color-landscape-moody-blue",
     category: "color-edit",
-    group: "color-tone",
+    group: "scene-space",
     zhTitle: "冷蓝静谧风景",
     enTitle: "Moody Blue Landscape",
     zhDescription: "适合雪景、湖泊、雨天、城市清晨。",
@@ -486,7 +489,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
   {
     id: "color-basic-exposure-fix",
     category: "color-edit",
-    group: "color-tone",
+    group: "photo-repair",
     zhTitle: "曝光白平衡修复",
     enTitle: "Exposure WB Fix",
     zhDescription: "适合偏色、过暗、过亮的原图。",
@@ -498,7 +501,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
   {
     id: "color-basic-noise-sharpness",
     category: "color-edit",
-    group: "color-tone",
+    group: "photo-repair",
     zhTitle: "降噪清晰增强",
     enTitle: "Noise Reduction & Clarity",
     zhDescription: "适合夜景、手机拍摄、低清照片。",
@@ -506,6 +509,438 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     originalImage: "/assets/featured/color-basic-noise-sharpness-original.jpg",
     resultImage: "/assets/featured/color-basic-noise-sharpness-result.jpg",
     prompt: "请严格以原图为基础进行清晰度修复，不改变主体和构图。目标效果：降低噪点和压缩痕迹，提升主体边缘清晰度、局部纹理和画面干净度，保留自然质感，避免假锐化。不要改变脸部结构，不要新增纹理，不要让背景出现涂抹感。"
+  },
+  {
+    id: "color-feature-morandi-muted",
+    category: "color-edit",
+    group: "color-style",
+    zhTitle: "莫兰迪高级灰调",
+    enTitle: "Morandi Muted Grade",
+    zhDescription: "适合人像、杂志、文艺写真。",
+    enDescription: "For portraits, editorials, and soft artistic photos.",
+    originalImage: "/assets/featured/color-feature-morandi-muted-original.jpg",
+    resultImage: "/assets/featured/color-feature-morandi-muted-result.jpg",
+    prompt: "请严格以原图为基础进行调色修图，只改变色彩、曝光、对比和整体质感，不改变主体身份、构图、姿态和背景内容。目标效果：莫兰迪高级灰调，降低高饱和颜色，将画面统一为灰粉、灰绿、灰蓝、暖灰等低饱和色系，保留肤色自然和画面层次，整体克制、柔和、高级。不要发脏，不要过度灰蒙，不要改变五官和物体位置。"
+  },
+  {
+    id: "color-feature-cafe-latte",
+    category: "color-edit",
+    group: "color-style",
+    zhTitle: "咖啡馆拿铁暖调",
+    enTitle: "Cafe Latte Warm Grade",
+    zhDescription: "适合咖啡馆、生活方式、室内人像。",
+    enDescription: "For cafe, lifestyle, and indoor portraits.",
+    originalImage: "/assets/featured/color-feature-cafe-latte-original.jpg",
+    resultImage: "/assets/featured/color-feature-cafe-latte-result.jpg",
+    prompt: "请严格以原图为基础进行调色修图，不改变人物、构图、空间结构和物体位置。目标效果：咖啡馆拿铁暖调，整体偏棕咖色和奶油色，高光柔和温暖，木质背景更有质感，肤色健康自然，暗部保留舒适层次，画面松弛、温馨、适合社媒分享。不要过黄，不要磨皮过度，不要新增杯子或装饰。"
+  },
+  {
+    id: "color-feature-wedding-soft",
+    category: "color-edit",
+    group: "color-style",
+    zhTitle: "婚礼柔光精修",
+    enTitle: "Soft Wedding Retouch",
+    zhDescription: "适合婚纱照、婚礼现场、情侣写真。",
+    enDescription: "For wedding portraits, ceremonies, and couple shoots.",
+    originalImage: "/assets/featured/color-feature-wedding-soft-original.jpg",
+    resultImage: "/assets/featured/color-feature-wedding-soft-result.jpg",
+    prompt: "请严格以原图为基础进行婚礼照片调色修图，不改变人物身份、服装结构、姿态、构图和场景内容。目标效果：婚礼柔光精修，白纱和花束高光保留细节，肤色柔和干净，背景明亮通透，整体浪漫、自然、轻盈，适度提升幸福氛围。不要让婚纱过曝成纯白，不要改变脸型，不要新增花朵或道具。"
+  },
+  {
+    id: "color-feature-pet-clean",
+    category: "color-edit",
+    group: "product-commercial",
+    zhTitle: "宠物毛发精修",
+    enTitle: "Clean Pet Fur Retouch",
+    zhDescription: "适合猫狗写真、宠物封面、电商宠物图。",
+    enDescription: "For pet portraits, covers, and pet product photos.",
+    originalImage: "/assets/featured/color-feature-pet-clean-original.jpg",
+    resultImage: "/assets/featured/color-feature-pet-clean-result.jpg",
+    prompt: "请严格以原图为基础进行宠物照片修图，不改变宠物品种、姿态、表情、背景和构图。目标效果：宠物毛发精修，提升毛发层次和自然光泽，眼睛更清澈有神，鼻子和嘴部细节清晰，背景干净柔和，整体温暖可爱。不要过度锐化毛发，不要改变宠物五官，不要新增项圈或道具。"
+  },
+  {
+    id: "color-feature-jewelry-sparkle",
+    category: "color-edit",
+    group: "product-commercial",
+    zhTitle: "珠宝闪耀商业修图",
+    enTitle: "Jewelry Sparkle Retouch",
+    zhDescription: "适合戒指、项链、耳饰、珠宝广告。",
+    enDescription: "For rings, necklaces, earrings, and jewelry ads.",
+    originalImage: "/assets/featured/color-feature-jewelry-sparkle-original.jpg",
+    resultImage: "/assets/featured/color-feature-jewelry-sparkle-result.jpg",
+    prompt: "请严格以原图为基础进行珠宝商业修图，不改变珠宝形状、镶嵌结构、宝石数量、构图和位置。目标效果：珠宝闪耀商业质感，清理灰尘和杂反光，增强金属边缘、高光、钻石切面和黑白层次，让反射干净高级。不要改变戒托结构，不要新增宝石，不要让高光糊成一片。"
+  },
+  {
+    id: "color-feature-cosmetics-glossy",
+    category: "color-edit",
+    group: "product-commercial",
+    zhTitle: "美妆产品光泽精修",
+    enTitle: "Glossy Cosmetics Retouch",
+    zhDescription: "适合粉底、口红、香水、护肤品广告。",
+    enDescription: "For foundation, lipstick, perfume, and skincare ads.",
+    originalImage: "/assets/featured/color-feature-cosmetics-glossy-original.jpg",
+    resultImage: "/assets/featured/color-feature-cosmetics-glossy-result.jpg",
+    prompt: "请严格以原图为基础进行美妆产品修图，不改变产品瓶身形状、标签位置、颜色和构图。目标效果：美妆产品光泽精修，瓶身反光干净，边缘清晰，膏体或液体颜色准确，背景呈高级奶油光影，整体商业广告质感。不要生成新文字，不要改变包装结构，不要过曝。"
+  },
+  {
+    id: "color-feature-snow-blue",
+    category: "color-edit",
+    group: "scene-space",
+    zhTitle: "雪景清蓝风光",
+    enTitle: "Clean Snow Blue",
+    zhDescription: "适合雪山、冰川、冬季旅行风景。",
+    enDescription: "For snowy mountains, glaciers, and winter travel photos.",
+    originalImage: "/assets/featured/color-feature-snow-blue-original.jpg",
+    resultImage: "/assets/featured/color-feature-snow-blue-result.jpg",
+    prompt: "请严格以原图为基础进行雪景风光调色，不改变山体、天空、地形和构图。目标效果：雪景清蓝风光，保护雪地高光细节，阴影加入轻微蓝色冷空气感，天空清透但不过饱和，远景层次清楚，整体干净、寒冷、开阔。不要过度 HDR，不要让雪变灰，不要新增云层或太阳。"
+  },
+  {
+    id: "color-feature-rainy-street",
+    category: "color-edit",
+    group: "scene-space",
+    zhTitle: "雨夜街头胶片",
+    enTitle: "Rainy Street Film",
+    zhDescription: "适合雨天街拍、霓虹夜景、城市人像。",
+    enDescription: "For rainy street photos, neon nights, and city portraits.",
+    originalImage: "/assets/featured/color-feature-rainy-street-original.jpg",
+    resultImage: "/assets/featured/color-feature-rainy-street-result.jpg",
+    prompt: "请严格以原图为基础进行雨夜街头调色，不改变人物、车辆、建筑、招牌位置和构图。目标效果：雨夜街头胶片感，增强地面湿润反光和霓虹层次，暗部带细腻颗粒，整体低饱和但红蓝光有情绪，画面有电影街拍氛围。不要新增文字招牌，不要让黑位死黑，不要过度锐化雨滴。"
+  },
+  {
+    id: "color-feature-furniture-natural",
+    category: "color-edit",
+    group: "scene-space",
+    zhTitle: "家居自然质感",
+    enTitle: "Natural Furniture Retouch",
+    zhDescription: "适合家居产品、民宿、室内空间照片。",
+    enDescription: "For furniture products, homestays, and interior spaces.",
+    originalImage: "/assets/featured/color-feature-furniture-natural-original.jpg",
+    resultImage: "/assets/featured/color-feature-furniture-natural-result.jpg",
+    prompt: "请严格以原图为基础进行家居空间修图，不改变家具结构、空间透视、摆放位置和室内布局。目标效果：家居自然质感，修正白平衡和曝光，让木纹、布料、墙面、地毯质感真实清晰，窗光柔和自然，整体干净舒适。不要改变家具颜色，不要新增软装，不要拉歪透视。"
+  },
+  {
+    id: "color-feature-redness-reduction",
+    category: "color-edit",
+    group: "portrait-retouch",
+    zhTitle: "面部泛红修复",
+    enTitle: "Facial Redness Reduction",
+    zhDescription: "适合红血丝、鼻翼泛红、敏感肌照片。",
+    enDescription: "For redness, red nose areas, and sensitive-skin photos.",
+    originalImage: "/assets/featured/color-feature-redness-reduction-original.jpg",
+    resultImage: "/assets/featured/color-feature-redness-reduction-result.jpg",
+    prompt: "请严格以原图为基础进行人像肤色修复，不改变人物身份、五官比例、表情、发型和构图。目标效果：面部泛红修复，减轻鼻翼、脸颊、额头等局部红区，让肤色更均匀自然，同时保留毛孔、皮肤纹理和真实光泽。不要磨皮过度，不要把肤色修成假白，不要改变脸型。"
+  },
+  {
+    id: "color-feature-neck-lines",
+    category: "color-edit",
+    group: "portrait-retouch",
+    zhTitle: "颈纹自然柔化",
+    enTitle: "Natural Neck Line Softening",
+    zhDescription: "适合近景人像、写真、证件照修图。",
+    enDescription: "For close portraits, beauty photos, and ID-style edits.",
+    originalImage: "/assets/featured/color-feature-neck-lines-original.jpg",
+    resultImage: "/assets/featured/color-feature-neck-lines-result.jpg",
+    prompt: "请严格以原图为基础进行颈部细节修图，不改变人物身份、姿态、脖颈结构、服装和构图。目标效果：颈纹自然柔化，降低明显横向纹路和暗沉，让颈部肤色更均匀，保留真实皮肤纹理和自然阴影。不要把脖子修成塑料感，不要改变颈部长度，不要影响下颌线。"
+  },
+  {
+    id: "color-feature-scar-softening",
+    category: "color-edit",
+    group: "portrait-retouch",
+    zhTitle: "疤痕印记淡化",
+    enTitle: "Scar Mark Softening",
+    zhDescription: "适合局部皮肤瑕疵、旧疤、临时印记。",
+    enDescription: "For local skin marks, old scars, and temporary marks.",
+    originalImage: "/assets/featured/color-feature-scar-softening-original.jpg",
+    resultImage: "/assets/featured/color-feature-scar-softening-result.jpg",
+    prompt: "请严格以原图为基础进行局部皮肤修图，不改变人物身份、脸型、五官、表情和构图。目标效果：疤痕印记淡化，降低明显疤痕、红印或临时印记的存在感，让周围肤色自然衔接，同时保留真实皮肤光泽、毛孔和面部立体感。不要完全抹平成假皮肤，不要改变五官结构。"
+  },
+  {
+    id: "color-feature-old-photo-restore",
+    category: "color-edit",
+    group: "photo-repair",
+    zhTitle: "老照片修复增强",
+    enTitle: "Old Photo Restoration",
+    zhDescription: "适合褪色、划痕、泛黄的旧照片。",
+    enDescription: "For faded, scratched, yellowed old photos.",
+    originalImage: "/assets/featured/color-feature-old-photo-restore-original.jpg",
+    resultImage: "/assets/featured/color-feature-old-photo-restore-result.jpg",
+    prompt: "请严格以原图为基础进行老照片修复，不改变人物身份、五官、服装、姿态、构图和历史感。目标效果：清理明显划痕、折痕、污点和霉斑，恢复适度对比和清晰度，保留自然旧照片颗粒与年代感，可轻微修正泛黄或褪色。不要现代化人物造型，不要改变脸部结构，不要新增不存在的背景或人物。"
+  },
+  {
+    id: "color-feature-id-photo-polish",
+    category: "color-edit",
+    group: "portrait-retouch",
+    zhTitle: "证件照专业修整",
+    enTitle: "Professional ID Photo Polish",
+    zhDescription: "适合证件照、头像、简历照。",
+    enDescription: "For ID photos, profile photos, and resume portraits.",
+    originalImage: "/assets/featured/color-feature-id-photo-polish-original.jpg",
+    resultImage: "/assets/featured/color-feature-id-photo-polish-result.jpg",
+    prompt: "请严格以原图为基础进行证件照修整，不改变人物身份、五官比例、发型、服装结构和正面姿态。目标效果：背景干净统一，光线均匀，肤色自然，轻微清理瑕疵和油光，眼神清晰，衣领和肩线整洁，整体正式、清爽、真实。不要过度美颜，不要改变脸型，不要添加妆容或饰品。"
+  },
+  {
+    id: "color-feature-glasses-glare",
+    category: "color-edit",
+    group: "portrait-retouch",
+    zhTitle: "眼镜反光清理",
+    enTitle: "Glasses Glare Cleanup",
+    zhDescription: "适合戴眼镜人像、证件照、室内自拍。",
+    enDescription: "For portraits with glasses, ID photos, and indoor selfies.",
+    originalImage: "/assets/featured/color-feature-glasses-glare-original.jpg",
+    resultImage: "/assets/featured/color-feature-glasses-glare-result.jpg",
+    prompt: "请严格以原图为基础进行眼镜反光清理，不改变人物身份、眼睛形状、眼镜款式、镜框位置和构图。目标效果：减弱镜片上的明显白色反光和眩光，让眼睛清晰可见，同时保留合理的玻璃透明感和轻微自然反射。不要移除眼镜，不要改变瞳孔和眼神，不要让镜片变成塑料。"
+  },
+  {
+    id: "color-feature-group-balance",
+    category: "color-edit",
+    group: "portrait-retouch",
+    zhTitle: "多人合影统一修图",
+    enTitle: "Group Photo Balance",
+    zhDescription: "适合合影、活动照、团队照片。",
+    enDescription: "For group portraits, events, and team photos.",
+    originalImage: "/assets/featured/color-feature-group-balance-original.jpg",
+    resultImage: "/assets/featured/color-feature-group-balance-result.jpg",
+    prompt: "请严格以原图为基础进行多人合影修图，不改变任何人的身份、位置、姿态、表情和服装。目标效果：统一整体曝光和白平衡，让不同人物肤色自然协调，提亮过暗面部，压住过曝区域，清理轻微杂色和噪点，保持真实合影氛围。不要换脸，不要移动人物，不要把所有肤色修成同一种颜色。"
+  },
+  {
+    id: "color-feature-food-restaurant",
+    category: "color-edit",
+    group: "product-commercial",
+    zhTitle: "餐厅美食食欲修图",
+    enTitle: "Restaurant Food Retouch",
+    zhDescription: "适合菜品、餐厅菜单、外卖封面。",
+    enDescription: "For dishes, menus, and delivery covers.",
+    originalImage: "/assets/featured/color-feature-food-restaurant-original.jpg",
+    resultImage: "/assets/featured/color-feature-food-restaurant-result.jpg",
+    prompt: "请严格以原图为基础进行美食修图，不改变菜品种类、摆盘结构、食材位置和餐具形状。目标效果：提升食物食欲感，增强暖光、油润光泽、酱汁和食材纹理，修正白平衡，让颜色自然诱人，背景稍微柔和但保留餐厅氛围。不要过度饱和，不要新增食材，不要让食物看起来塑料。"
+  },
+  {
+    id: "color-feature-real-estate-exterior",
+    category: "color-edit",
+    group: "scene-space",
+    zhTitle: "房产外立面明亮修图",
+    enTitle: "Real Estate Exterior Polish",
+    zhDescription: "适合房产照片、民宿外观、建筑展示。",
+    enDescription: "For real estate, homestays, and exterior architecture photos.",
+    originalImage: "/assets/featured/color-feature-real-estate-exterior-original.jpg",
+    resultImage: "/assets/featured/color-feature-real-estate-exterior-result.jpg",
+    prompt: "请严格以原图为基础进行房产外立面修图，不改变建筑结构、门窗位置、屋顶形状、草坪边界和构图透视。目标效果：修正阴天灰暗感，提高建筑清晰度和自然亮度，草坪更干净，天空更清透但真实，整体适合房产展示。不要改变建筑颜色，不要新增装饰，不要过度拉伸透视。"
+  },
+  {
+    id: "color-feature-underwater-correction",
+    category: "color-edit",
+    group: "scene-space",
+    zhTitle: "水下偏色校正",
+    enTitle: "Underwater Color Correction",
+    zhDescription: "适合潜水、海底、泳池水下照片。",
+    enDescription: "For diving, ocean, and underwater pool photos.",
+    originalImage: "/assets/featured/color-feature-underwater-correction-original.jpg",
+    resultImage: "/assets/featured/color-feature-underwater-correction-result.jpg",
+    prompt: "请严格以原图为基础进行水下照片校正，不改变人物、珊瑚、鱼群、气泡和构图。目标效果：修正水下蓝绿偏色，恢复自然肤色和珊瑚颜色，提高水体通透度和局部对比，降低浑浊感和雾感，让画面清晰真实。不要把水修成假蓝，不要新增海洋生物，不要改变潜水装备。"
+  },
+  {
+    id: "color-feature-fashion-color-restore",
+    category: "color-edit",
+    group: "product-commercial",
+    zhTitle: "服装颜色还原",
+    enTitle: "Fashion Color Restoration",
+    zhDescription: "适合服装电商、穿搭图、面料展示。",
+    enDescription: "For fashion ecommerce, outfit photos, and fabric display.",
+    originalImage: "/assets/featured/color-feature-fashion-color-restore-original.jpg",
+    resultImage: "/assets/featured/color-feature-fashion-color-restore-result.jpg",
+    prompt: "请严格以原图为基础进行服装颜色还原，不改变模特身份、姿态、服装版型、面料结构和背景构图。目标效果：准确还原服装真实颜色，修正灰暗和偏色，提升布料纹理、褶皱层次和边缘清晰度，背景保持干净自然。不要改变衣服款式，不要换色成其他颜色，不要过度磨皮。"
+  },
+  {
+    id: "color-feature-product-white-bg",
+    category: "color-edit",
+    group: "product-commercial",
+    zhTitle: "产品纯白底清理",
+    enTitle: "Pure White Product Cleanup",
+    zhDescription: "适合电商白底图、小商品、器物照片。",
+    enDescription: "For ecommerce white-background products and small objects.",
+    originalImage: "/assets/featured/color-feature-product-white-bg-original.jpg",
+    resultImage: "/assets/featured/color-feature-product-white-bg-result.jpg",
+    prompt: "请严格以原图为基础进行产品图清理，不改变产品形状、比例、材质、颜色和关键细节。目标效果：将背景清理为干净纯白或接近纯白，保留自然柔和投影，产品边缘清晰，表面瑕疵和噪点适度清理，适合电商主图。不要改变产品结构，不要新增文字，不要让产品悬空失真。"
+  },
+  {
+    id: "color-feature-backlight-recovery",
+    category: "color-edit",
+    group: "portrait-retouch",
+    zhTitle: "逆光人像救回",
+    enTitle: "Backlit Portrait Recovery",
+    zhDescription: "适合逆光、脸部过暗、夕阳人像。",
+    enDescription: "For backlit portraits, dark faces, and sunset shots.",
+    originalImage: "/assets/featured/color-feature-backlight-recovery-original.jpg",
+    resultImage: "/assets/featured/color-feature-backlight-recovery-result.jpg",
+    prompt: "请严格以原图为基础进行逆光人像修复，不改变人物身份、姿态、背景太阳位置和构图。目标效果：提亮脸部和主体细节，保留天空和高光不过曝，增强自然轮廓光和发丝光，肤色恢复自然，整体仍保持真实逆光氛围。不要把背景修成白片，不要改变五官，不要新增补光灯效果。"
+  },
+  {
+    id: "color-feature-night-denoise",
+    category: "color-edit",
+    group: "photo-repair",
+    zhTitle: "夜景降噪清晰",
+    enTitle: "Night Denoise Clarity",
+    zhDescription: "适合手机夜景、城市夜拍、低光照片。",
+    enDescription: "For phone night shots, city nights, and low-light photos.",
+    originalImage: "/assets/featured/color-feature-night-denoise-original.jpg",
+    resultImage: "/assets/featured/color-feature-night-denoise-result.jpg",
+    prompt: "请严格以原图为基础进行夜景降噪修复，不改变建筑、灯光、天空、道路和构图。目标效果：降低高 ISO 噪点和彩色杂点，恢复夜景黑位层次和灯光边缘，提升主体清晰度，保留真实夜晚氛围。不要涂抹成油画感，不要让灯光过曝，不要新增建筑或灯牌。"
+  },
+  {
+    id: "color-feature-haze-removal",
+    category: "color-edit",
+    group: "scene-space",
+    zhTitle: "雾霾通透修复",
+    enTitle: "Haze Removal Clarity",
+    zhDescription: "适合城市天际线、风景远山、灰蒙天气。",
+    enDescription: "For city skylines, distant landscapes, and hazy weather.",
+    originalImage: "/assets/featured/color-feature-haze-removal-original.jpg",
+    resultImage: "/assets/featured/color-feature-haze-removal-result.jpg",
+    prompt: "请严格以原图为基础进行雾霾通透修复，不改变城市建筑、山体、天空结构和构图。目标效果：减少灰雾和低对比，增强远景层次、天空清透度和建筑轮廓，色彩自然干净，保持真实天气感。不要生成假天空，不要过度 HDR，不要让远景边缘出现脏线。"
+  },
+  {
+    id: "color-feature-travel-shadow",
+    category: "color-edit",
+    group: "scene-space",
+    zhTitle: "旅行人像硬光修复",
+    enTitle: "Travel Harsh Shadow Fix",
+    zhDescription: "适合正午旅行照、脸部阴影重的人像。",
+    enDescription: "For midday travel portraits with harsh facial shadows.",
+    originalImage: "/assets/featured/color-feature-travel-shadow-original.jpg",
+    resultImage: "/assets/featured/color-feature-travel-shadow-result.jpg",
+    prompt: "请严格以原图为基础进行旅行人像修图，不改变人物身份、姿态、服装、背景景点和构图。目标效果：修复正午硬光造成的脸部阴影和高光反差，提亮面部细节，保留自然阳光和旅行氛围，让天空、建筑和肤色都清爽真实。不要改变景点结构，不要磨皮过度，不要把阳光修成阴天。"
+  },
+  {
+    id: "color-feature-stage-light",
+    category: "color-edit",
+    group: "scene-space",
+    zhTitle: "舞台演出灯光平衡",
+    enTitle: "Stage Lighting Balance",
+    zhDescription: "适合演唱会、舞台剧、现场活动照片。",
+    enDescription: "For concerts, theater, and live event photos.",
+    originalImage: "/assets/featured/color-feature-stage-light-original.jpg",
+    resultImage: "/assets/featured/color-feature-stage-light-result.jpg",
+    prompt: "请严格以原图为基础进行舞台照片修图，不改变表演者身份、动作、舞台结构、灯位和构图。目标效果：平衡过强的红光、蓝光或舞台色偏，保留现场灯光氛围，提亮表演者面部和服装细节，压住过曝灯点，增强演出质感。不要新增灯光，不要改变乐器和舞台设备。"
+  },
+  {
+    id: "color-feature-product-dust",
+    category: "color-edit",
+    group: "product-commercial",
+    zhTitle: "产品灰尘指纹清理",
+    enTitle: "Product Dust Cleanup",
+    zhDescription: "适合手表、杯子、数码、小商品近拍。",
+    enDescription: "For watches, cups, devices, and close product shots.",
+    originalImage: "/assets/featured/color-feature-product-dust-original.jpg",
+    resultImage: "/assets/featured/color-feature-product-dust-result.jpg",
+    prompt: "请严格以原图为基础进行产品表面清理，不改变产品形状、材质、颜色、结构和摆放位置。目标效果：清理灰尘、指纹、轻微划痕和污点，增强边缘清晰度和材质反光，让产品更干净高级，同时保留真实使用质感。不要改变品牌文字，不要新增配件，不要让表面失去真实纹理。"
+  },
+  {
+    id: "color-feature-luxury-material",
+    category: "color-edit",
+    group: "product-commercial",
+    zhTitle: "皮革金属高级质感",
+    enTitle: "Luxury Leather Metal Retouch",
+    zhDescription: "适合包、鞋、皮具、五金细节。",
+    enDescription: "For bags, shoes, leather goods, and metal hardware.",
+    originalImage: "/assets/featured/color-feature-luxury-material-original.jpg",
+    resultImage: "/assets/featured/color-feature-luxury-material-result.jpg",
+    prompt: "请严格以原图为基础进行材质商业修图，不改变产品结构、缝线、五金位置、颜色和构图。目标效果：提升皮革纹理、缝线细节、金属高光和黑位层次，清理杂反光和污点，让整体具有奢侈品广告质感。不要改变皮革纹路方向，不要新增装饰，不要过度锐化。"
+  },
+  {
+    id: "color-feature-document-clean",
+    category: "color-edit",
+    group: "photo-repair",
+    zhTitle: "文件拍照清理",
+    enTitle: "Document Photo Cleanup",
+    zhDescription: "适合合同、证书、表格、纸质资料照片。",
+    enDescription: "For contracts, certificates, forms, and paper documents.",
+    originalImage: "/assets/featured/color-feature-document-clean-original.jpg",
+    resultImage: "/assets/featured/color-feature-document-clean-result.jpg",
+    prompt: "请严格以原图为基础进行文件照片清理，不改变文档内容、版式、印章、签名和文字位置。目标效果：修正拍照角度和纸张透视，去除黄色灯光偏色，提升纸张白度和文字清晰度，压平阴影，让文件像扫描件一样干净。不要改写文字，不要删除任何印章或签名，不要生成乱码。"
+  },
+  {
+    id: "color-feature-screen-moire",
+    category: "color-edit",
+    group: "photo-repair",
+    zhTitle: "屏幕摩尔纹清理",
+    enTitle: "Screen Moire Cleanup",
+    zhDescription: "适合手机、电脑屏幕、展示屏拍摄图。",
+    enDescription: "For phone, computer, and display-screen photos.",
+    originalImage: "/assets/featured/color-feature-screen-moire-original.jpg",
+    resultImage: "/assets/featured/color-feature-screen-moire-result.jpg",
+    prompt: "请严格以原图为基础进行屏幕照片修复，不改变屏幕内容布局、设备形状、角度和背景。目标效果：减少摩尔纹、彩虹纹、屏幕眩光和反射，恢复屏幕画面清晰度和颜色准确度，同时保留设备边缘和真实拍摄质感。不要改写屏幕内容，不要新增界面元素。"
+  },
+  {
+    id: "color-feature-sunset-recovery",
+    category: "color-edit",
+    group: "scene-space",
+    zhTitle: "落日高光救回",
+    enTitle: "Sunset Highlight Recovery",
+    zhDescription: "适合夕阳、海边、逆光风景照片。",
+    enDescription: "For sunsets, seaside scenes, and backlit landscapes.",
+    originalImage: "/assets/featured/color-feature-sunset-recovery-original.jpg",
+    resultImage: "/assets/featured/color-feature-sunset-recovery-result.jpg",
+    prompt: "请严格以原图为基础进行落日风景修复，不改变太阳位置、海岸线、山体、建筑和构图。目标效果：救回过曝高光，恢复天空云层、海面和前景暗部细节，保留金橙色落日氛围，让画面通透、有层次。不要新增云彩，不要把太阳修成假圆，不要过度 HDR。"
+  },
+  {
+    id: "color-feature-plant-green",
+    category: "color-edit",
+    group: "scene-space",
+    zhTitle: "绿植颜色校正",
+    enTitle: "Plant Green Correction",
+    zhDescription: "适合绿植、园艺、植物产品照片。",
+    enDescription: "For plants, gardening, and botanical product photos.",
+    originalImage: "/assets/featured/color-feature-plant-green-original.jpg",
+    resultImage: "/assets/featured/color-feature-plant-green-result.jpg",
+    prompt: "请严格以原图为基础进行绿植照片调色，不改变植物种类、叶片形状、盆器和构图。目标效果：修正黄绿、荧光绿或灰暗偏色，让叶片呈自然健康的绿色，提升叶脉和叶面光泽，背景干净柔和。不要改变叶片数量，不要新增花朵，不要让绿色过饱和。"
+  },
+  {
+    id: "color-feature-sports-clarity",
+    category: "color-edit",
+    group: "scene-space",
+    zhTitle: "运动抓拍清晰增强",
+    enTitle: "Sports Action Clarity",
+    zhDescription: "适合球赛、跑步、舞蹈、运动抓拍。",
+    enDescription: "For games, running, dance, and sports action shots.",
+    originalImage: "/assets/featured/color-feature-sports-clarity-original.jpg",
+    resultImage: "/assets/featured/color-feature-sports-clarity-result.jpg",
+    prompt: "请严格以原图为基础进行运动照片修图，不改变运动员身份、动作、球场、队友和构图。目标效果：降低轻微运动模糊和噪点，增强主体清晰度、肌肉线条、服装纹理和场地色彩，让动作更有速度感和冲击力。不要改变动作姿态，不要替换球衣或号码，不要生成多余肢体。"
+  },
+  {
+    id: "color-feature-child-candid",
+    category: "color-edit",
+    group: "portrait-retouch",
+    zhTitle: "儿童抓拍柔和修图",
+    enTitle: "Child Candid Soft Retouch",
+    zhDescription: "适合儿童生活照、家庭照片、室内抓拍。",
+    enDescription: "For child candids, family photos, and indoor snapshots.",
+    originalImage: "/assets/featured/color-feature-child-candid-original.jpg",
+    resultImage: "/assets/featured/color-feature-child-candid-result.jpg",
+    prompt: "请严格以原图为基础进行儿童照片修图，不改变孩子身份、表情、动作、服装和场景。目标效果：提亮室内暗部，修正暖黄偏色，保留儿童自然肤色和可爱表情，适度清理噪点，让画面柔和、明亮、真实。不要磨皮过度，不要改变五官，不要新增玩具或背景。"
+  },
+  {
+    id: "color-feature-black-gold-product",
+    category: "color-edit",
+    group: "product-commercial",
+    zhTitle: "黑金产品高级调",
+    enTitle: "Black Gold Product Grade",
+    zhDescription: "适合香水、酒瓶、奢品包装、黑色产品。",
+    enDescription: "For perfume, bottles, luxury packaging, and black products.",
+    originalImage: "/assets/featured/color-feature-black-gold-product-original.jpg",
+    resultImage: "/assets/featured/color-feature-black-gold-product-result.jpg",
+    prompt: "请严格以原图为基础进行黑金产品修图，不改变产品结构、比例、包装形状、Logo位置和构图。目标效果：深黑背景干净纯粹，金色高光清晰克制，产品边缘有高级轮廓光，反射层次丰富，整体有奢侈品广告质感。不要新增文字，不要让黑色糊成一片，不要过度锐化。"
+  },
+  {
+    id: "color-feature-interior-architecture",
+    category: "color-edit",
+    group: "scene-space",
+    zhTitle: "建筑室内高级修图",
+    enTitle: "Interior Architecture Polish",
+    zhDescription: "适合样板间、酒店、展厅、室内设计图。",
+    enDescription: "For showrooms, hotels, galleries, and interior design photos.",
+    originalImage: "/assets/featured/color-feature-interior-architecture-original.jpg",
+    resultImage: "/assets/featured/color-feature-interior-architecture-result.jpg",
+    prompt: "请严格以原图为基础进行建筑室内修图，不改变空间布局、家具位置、墙体结构、灯具和构图。目标效果：修正轻微透视倾斜，平衡室内混合光源，提升石材、木材、布艺和金属细节，让空间明亮、干净、高级。不要改变装修风格，不要新增家具，不要拉伸空间比例。"
   },
   {
     id: "img2img-style-transfer",
@@ -1190,4 +1625,5 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     prompt: "大师级排版，极繁主义，半调图案，杂色，点线面层次分布。创作一张绘本风格插画海报，大量花卉与蝴蝶：花朵造型饱满，花瓣纹理细腻，中央有“Merry Christmas”品牌标识，搭配法语“and”与“Happy New Year ”字样。充满幻想力和感染力，娓娓道来的故事。用浮雕剪纸的形式表达。"
   }
 ];
+
 

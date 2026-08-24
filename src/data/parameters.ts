@@ -273,7 +273,9 @@ export const categoryGroups: Partial<Record<Category["id"], Array<{ id: string; 
     { id: "drone-aerial", zhName: "航拍 / 风光" },
     { id: "cinematic", zhName: "电影调色" },
     { id: "mood", zhName: "情绪色调" },
-    { id: "commercial", zhName: "商业 / 社媒" }
+    { id: "commercial", zhName: "商业 / 社媒" },
+    { id: "portrait-retouch", zhName: "人像修图" },
+    { id: "skin-detail", zhName: "肤质细节" }
   ],
   "color-material": [
     { id: "all", zhName: "全部色材" },

@@ -1048,6 +1048,52 @@ input[type="range"] {
   background: #f6c453;
 }
 
+.featured-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 0 0 auto;
+  min-height: 40px;
+  margin: 2px 0 12px;
+  padding: 0 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.055);
+  color: #aeb5b4;
+}
+
+.featured-search:focus-within {
+  border-color: rgba(80, 196, 176, 0.9);
+  box-shadow: 0 0 0 3px rgba(80, 196, 176, 0.16);
+}
+
+.featured-search input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #f4f4f0;
+  font: inherit;
+  font-size: 13px;
+}
+
+.featured-search input::placeholder {
+  color: #737c7b;
+}
+
+.featured-search button {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #cfd6d5;
+  cursor: pointer;
+}
+
 .featured-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
