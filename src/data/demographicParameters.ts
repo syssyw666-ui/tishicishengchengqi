@@ -124,16 +124,13 @@ export const demographicParameters: PromptParameter[] = [
   param("camera", "camera-profile-view", "camera-angle", "侧面视角", "Profile View", "侧面视角，突出人物轮廓、鼻梁和姿态线条", "profile view, emphasizing silhouette, nose bridge, and body line", cameraImage),
   param("camera", "camera-dolly-zoom", "motion", "滑动变焦感", "Dolly Zoom", "滑动变焦感，主体尺度稳定，背景透视产生压缩或拉伸", "dolly-zoom feeling, stable subject scale with background perspective compression or expansion", cameraImage),
 
-  param("lighting", "lighting-moonlight", "natural", "月光", "Moonlight", "月光照明，冷蓝银色边缘光和安静夜间氛围", "moonlight illumination, cool blue-silver rim light, quiet night mood", lightingImage),
   param("lighting", "lighting-lantern", "interior", "灯笼光", "Lantern Light", "灯笼光照明，暖红或暖黄漫射光，带传统夜景氛围", "lantern lighting, warm red or yellow diffused glow, traditional night atmosphere", lightingImage),
   param("lighting", "lighting-fluorescent", "interior", "荧光灯", "Fluorescent Light", "荧光灯照明，冷白偏绿，室内公共空间真实感", "fluorescent lighting, cool white with slight green tint, realistic public interior mood", lightingImage),
   param("lighting", "lighting-projector", "dramatic", "投影光", "Projector Light", "投影光照明，画面带投影图案、切割光斑和戏剧层次", "projector lighting, projected patterns, cut light patches, dramatic layers", lightingImage),
   param("lighting", "lighting-stage-spotlight", "dramatic", "舞台追光", "Stage Spotlight", "舞台追光，主体被强光圈定，背景进入暗部", "stage spotlight, subject isolated by strong cone of light, background falling into darkness", lightingImage),
 
   param("render", "render-ray-traced", "realism", "光线追踪", "Ray Traced", "光线追踪渲染，反射、折射和阴影物理准确", "ray-traced rendering, physically accurate reflections refractions and shadows", renderImage),
-  param("render", "render-path-traced", "realism", "路径追踪", "Path Traced", "路径追踪渲染，真实全局光照、柔和反弹光和高质量噪点控制", "path-traced rendering, realistic global illumination, soft bounce light, clean noise control", renderImage),
   param("render", "render-toon-shading", "stylized", "卡通渲染", "Toon Shading", "卡通渲染，明暗分区清晰，轮廓干净，造型简洁", "toon shading, clear light-shadow bands, clean outlines, simplified forms", renderImage),
-  param("render", "render-cel-shading", "stylized", "赛璐璐渲染", "Cel Shading", "赛璐璐渲染，硬边阴影、平涂色块和动画质感", "cel shading, hard-edged shadows, flat color areas, animation-like finish", renderImage),
   param("render", "render-resin-toy", "stylized", "树脂潮玩质感", "Resin Toy Texture", "树脂潮玩质感，半哑光表面、圆润高光和精致模型感", "resin designer-toy texture, semi-matte surface, rounded highlights, polished model feel", renderImage),
 
   param("visual-effect", "visual-dust-motes", "atmosphere", "空气尘埃", "Dust Motes", "空气中漂浮细小尘埃，逆光下形成真实空间颗粒", "small dust motes floating in air, visible in backlight, realistic spatial particles"),

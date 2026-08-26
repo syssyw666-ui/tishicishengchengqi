@@ -1,6 +1,6 @@
 import type { CategoryId, PromptParameter } from "../types";
 
-const img = (id: string) => `${import.meta.env.BASE_URL}assets/parameters/${id}.jpg`;
+const img = (id: string) => `${import.meta.env.BASE_URL}assets/parameters/${id}.jpg?v=20260826-character-crop-2`;
 
 function param(
   category: CategoryId,

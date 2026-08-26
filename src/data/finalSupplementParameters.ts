@@ -69,7 +69,6 @@ export const finalSupplementParameters: PromptParameter[] = [
   param("camera", "camera-surveillance-high", "camera-angle", "监控俯视角", "Surveillance High Angle", "高处监控式俯视角，人物变小，空间关系清楚，有冷静观察感", "high surveillance-like angle, small figures, clear spatial relationship, detached observation mood", cameraNegative),
   param("camera", "camera-foreground-obstruction", "depth", "前景遮挡构图", "Foreground Obstruction", "使用虚化前景遮挡一部分画面，增强偷看感、纵深和真实镜头感", "blurred foreground obstruction partially covering the scene, adding depth and candid lens realism", cameraNegative),
 
-  param("lighting", "light-projector-beam", "dramatic", "投影光束", "Projector Beam", "投影光束穿过空气，形成可见锥形光路和电影放映氛围", "projector beam cutting through air, visible cone of light, cinematic screening atmosphere", lightingNegative),
   param("lighting", "light-fluorescent-office", "interior", "办公室荧光灯", "Fluorescent Office Light", "办公室荧光灯，冷白顶光、真实办公环境和轻微平面感", "cool white fluorescent office light, overhead practical illumination, realistic workplace mood", lightingNegative),
   param("lighting", "light-practical-lamp", "interior", "实景台灯光", "Practical Lamp Light", "画面内可见台灯或壁灯作为主光，暖光聚焦局部区域", "visible practical lamp or wall light as main source, warm light focusing a local area", lightingNegative),
   param("lighting", "light-red-blue-strobe", "dramatic", "红蓝警示光", "Red Blue Strobe Light", "红蓝交替警示光，强烈冷暖对比和紧张电影氛围", "red and blue strobe warning light, strong color contrast and tense cinematic atmosphere", lightingNegative),
