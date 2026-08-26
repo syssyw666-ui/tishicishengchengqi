@@ -53,6 +53,11 @@ const uiText = {
     admin: "管理后台",
     adminHint: "管理员可新增、隐藏、调整参数与提示词",
     reset: "重置",
+    core: "核心",
+    important: "重要",
+    optional: "可选",
+    sceneGeneration: "场景生成",
+    designGeneration: "设计生成",
     single: "单选",
     multi: "多选",
     selected: "已选",
@@ -101,6 +106,11 @@ const uiText = {
     admin: "Admin Panel",
     adminHint: "Admins can add, hide, and adjust parameters and prompt fragments.",
     reset: "Reset",
+    core: "Core",
+    important: "Important",
+    optional: "Optional",
+    sceneGeneration: "Scene Generation",
+    designGeneration: "Design Generation",
     single: "Single",
     multi: "Multi",
     selected: "Selected",
@@ -140,7 +150,6 @@ const categoryDescriptionEn: Partial<Record<CategoryId, string>> = {
   era: "Defines time period, worldbuilding, and cultural context.",
   "story-action": "Controls the event, interaction, and narrative action happening in the image.",
   mood: "Defines emotional atmosphere and narrative feeling.",
-  props: "Controls handheld objects, scene supports, packaging, and narrative props.",
   layout: "Controls subject position, whitespace direction, and title safe areas.",
   background: "Controls background color, paper, fabric, metal, natural, or studio texture.",
   "layout-style": "Controls layout aesthetics and design language.",
@@ -150,16 +159,116 @@ const categoryDescriptionEn: Partial<Record<CategoryId, string>> = {
   render: "Controls final texture, detail, rendering algorithm, and material feel.",
   "visual-effect": "Controls particles, smoke, fire, glitches, light trails, and surreal effects.",
   purpose: "Tells the model the intended usage of the image.",
+  palette: "Defines a named, coordinated color palette without changing the image's material or post-processing look.",
   "color-grading": "Controls post-processing, film tone, camera look, and color grading.",
   "color-material": "Enhances color palette, surface material, and tactile feel."
 };
 
+interface GallerySection {
+  id: string;
+  category: CategoryId;
+  importance: "core" | "important" | "optional";
+  zhName: string;
+  enName: string;
+  zhDescription: string;
+  enDescription: string;
+  groups?: string[];
+  useCases?: Array<"scene" | "design">;
+}
+
+interface GalleryWorkflow {
+  id: string;
+  zhName: string;
+  enName: string;
+  zhGuide: string;
+  enGuide: string;
+  sections: GallerySection[];
+}
+
+const galleryWorkflows: GalleryWorkflow[] = [
+  {
+    id: "core-setup",
+    zhName: "2 核心定向",
+    enName: "2 Core Setup",
+    zhGuide: "先确定图片用途、风格、场景和配色，再补充整体情绪。",
+    enGuide: "Set purpose, visual style, scene, and palette first, then add the overall mood.",
+    sections: [
+      { id: "purpose", category: "purpose", importance: "core", zhName: "图片用途", enName: "Purpose", zhDescription: "先确定最终是写真、产品图、设定图、封面还是展示图；排版风格也在这里选择。", enDescription: "Decide whether the image is a portrait, product shot, design sheet, cover, or display image. Layout styles are here too.", useCases: ["scene", "design"] },
+      { id: "style", category: "style", importance: "core", zhName: "画面风格", enName: "Style", zhDescription: "决定整体视觉方向；艺术家画派、民族非遗、渲染、特效和调色都在这里选择。", enDescription: "Choose the main visual direction, including artists, ethnic craft, render, effects, and grading.", useCases: ["scene", "design"] },
+      { id: "scene", category: "scene", importance: "core", zhName: "场景环境", enName: "Scene", zhDescription: "决定主体所在空间和背景环境；可在三级菜单中进一步选择时代与世界观。", enDescription: "Choose the space and environment around the subject; use the third-level menu for era and world context.", useCases: ["scene"] },
+      { id: "palette", category: "palette", importance: "core", zhName: "配色方案", enName: "Color Palette", zhDescription: "通过色卡和对应示意画面选择主色、辅助色与整体配色关系。", enDescription: "Choose the primary, supporting, and overall color relationship from swatches with matching visual examples.", useCases: ["design"] },
+      { id: "mood", category: "mood", importance: "optional", zhName: "情绪氛围", enName: "Mood", zhDescription: "给画面补充明亮、安静、悬疑、浪漫或精致等整体感受。", enDescription: "Add a clear overall feeling, such as bright, quiet, suspenseful, romantic, or refined.", useCases: ["scene", "design"] }
+    ]
+  },
+  {
+    id: "character-human",
+    zhName: "3 人物角色",
+    enName: "3 Character",
+    zhGuide: "画面有人时优先使用：角色身份、姿势、衣着和人物关系会明显改变结果。",
+    enGuide: "Use this when people appear: role, pose, outfit, and placement strongly change the result.",
+    sections: [
+      { id: "character", category: "character", importance: "core", zhName: "角色身份", enName: "Character Role", zhDescription: "年龄、体态、职业和角色类型。", enDescription: "Age, body type, profession, and role type." },
+      { id: "pose", category: "pose", importance: "important", zhName: "人物姿势", enName: "Pose", zhDescription: "站坐躺、动作、舞蹈、互动和镜头前姿态。", enDescription: "Standing, sitting, lying, movement, dance, interaction, and camera-ready poses." },
+      { id: "story-action", category: "story-action", importance: "optional", zhName: "画面事件", enName: "Scene Action", zhDescription: "当画面需要明确事件时，选择日常、创作、工作、探索或戏剧动作。", enDescription: "Use this when an image needs a clear event: daily life, creation, work, exploration, or dramatic action." },
+      { id: "clothing", category: "clothing", importance: "important", zhName: "衣着服饰", enName: "Clothing", zhDescription: "上衣、裤裙、外套、制服、传统服饰和配饰。", enDescription: "Tops, bottoms, outerwear, uniforms, traditional garments, and accessories." },
+      { id: "camera-human-placement", category: "camera", importance: "important", zhName: "人物位置关系", enName: "Human Placement", zhDescription: "控制人物远近、画面位置和多人关系。", enDescription: "Control distance, frame position, and multi-person relationships.", groups: ["person-position", "group-relationship"] },
+      { id: "expression", category: "expression", importance: "important", zhName: "表情神态", enName: "Expression", zhDescription: "脸部情绪、眼神和性格气质。", enDescription: "Facial emotion, gaze, and personality." },
+      { id: "hair-makeup", category: "hair-makeup", importance: "optional", zhName: "发型妆容", enName: "Hair & Makeup", zhDescription: "发长、发型、发丝动态和妆面。", enDescription: "Hair length, shape, motion, and makeup." },
+      { id: "portrait-retouch", category: "color-grading", importance: "optional", zhName: "人像修图", enName: "Portrait Retouch", zhDescription: "瘦脸、双下巴、肤质、五官和衣物背景清理等人像后期。", enDescription: "Portrait retouching for face shape, skin detail, features, clothing, and cleanup.", groups: ["portrait-retouch", "skin-detail"] },
+      { id: "ethnicity", category: "ethnicity", importance: "optional", zhName: "外貌参考", enName: "Appearance Reference", zhDescription: "中性描述肤色、发质和面部骨相。", enDescription: "Neutral references for skin tone, hair texture, and facial structure." }
+    ]
+  },
+  {
+    id: "camera-light",
+    zhName: "4 构图光线",
+    enName: "4 Camera & Light",
+    zhGuide: "再像摄影师一样控制画面：构图、镜头、光线和留白。",
+    enGuide: "Then control the image like a photographer: composition, camera, lighting, and whitespace.",
+    sections: [
+      { id: "camera-shot", category: "camera", importance: "core", zhName: "构图/镜头", enName: "Composition & Camera", zhDescription: "画面范围、焦距、角度、构图法则、运动和镜头效果。", enDescription: "Shot scale, focal length, angles, composition rules, motion, and lens effects.", groups: ["shot-size", "composition-rule", "visual-guide", "depth", "focal-length", "camera-angle", "angle", "motion", "lens-effect", "composition"], useCases: ["scene", "design"] },
+      { id: "lighting", category: "lighting", importance: "core", zhName: "光线氛围", enName: "Lighting", zhDescription: "自然光、室内光、戏剧光和科幻光效。", enDescription: "Natural, interior, dramatic, and sci-fi lighting.", useCases: ["scene", "design"] },
+      { id: "layout", category: "layout", importance: "important", zhName: "排版留白", enName: "Layout", zhDescription: "主体位置、留白方向、安全区和信息展示。", enDescription: "Subject placement, negative space, safe areas, and information layout.", useCases: ["design"] },
+      { id: "background", category: "background", importance: "optional", zhName: "背景质感", enName: "Background", zhDescription: "纯色、纸张、织物、影棚、材质和自然底板。", enDescription: "Solid color, paper, fabric, studio, material, and natural backdrops.", useCases: ["scene", "design"] }
+    ]
+  },
+];
+
+const workflowById = new Map(galleryWorkflows.map((workflow) => [workflow.id, workflow]));
+const sectionById = new Map(galleryWorkflows.flatMap((workflow) => workflow.sections.map((section) => [section.id, section])));
+const virtualGroupCategory: Partial<Record<CategoryId, Partial<Record<string, CategoryId>>>> = {
+  style: {
+    "artist-style": "artist-style",
+    "ethnic-style": "ethnic-style",
+    render: "render",
+    "visual-effect": "visual-effect",
+    "color-grading": "color-grading",
+    "color-material": "color-material"
+  },
+  purpose: {
+    "layout-style": "layout-style"
+  },
+  scene: {
+    "era-world": "era"
+  },
+  camera: {
+    "shot-size": "framing"
+  }
+};
+
 const groupNameEn: Record<string, string> = {
   all: "All",
+  "shot-size": "Shot Scale",
   base: "Basic",
   anime: "Animation / Anime",
   eastern: "Eastern / Folk",
   "photo-film-3d": "Photo / Film / 3D",
+  "artist-style": "Artist / School",
+  "ethnic-style": "Ethnic / Craft",
+  render: "Render Texture",
+  "visual-effect": "Visual Effects",
+  "color-grading": "Color Grading",
+  "color-material": "Color & Material",
+  "layout-style": "Layout Style",
   "design-retro": "Design / Retro",
   "craft-print": "Craft / Print",
   region: "Regional Reference",
@@ -394,10 +503,11 @@ async function compressFeedbackImage(file: File) {
 
 export function App() {
   const [inputs, setInputs] = useState<PromptInputs>(defaultInputs);
-  const [activeCategory, setActiveCategory] = useState<CategoryId>("style");
+  const [activeWorkflowId, setActiveWorkflowId] = useState("core-setup");
+  const [activeSectionId, setActiveSectionId] = useState("purpose");
   const [search, setSearch] = useState("");
   const [selectedOnly, setSelectedOnly] = useState(false);
-  const [activeGroupByCategory, setActiveGroupByCategory] = useState<Record<string, string>>({});
+  const [activeGroupBySection, setActiveGroupBySection] = useState<Record<string, string>>({});
   const [checkedPanelOpen, setCheckedPanelOpen] = useState(true);
   const [promptLanguage, setPromptLanguage] = useState<"zh" | "en">("zh");
   const [uiLanguage, setUiLanguage] = useState<UiLanguage>("zh");
@@ -463,21 +573,36 @@ export function App() {
   const t = uiText[uiLanguage];
   const switchTitle = viewMode === "featured" ? t.featuredPrompts : t.brandTitle;
   const switchSubtitle = viewMode === "featured" ? t.featuredHint : t.brandSubtitle;
+  const activeWorkflow = workflowById.get(activeWorkflowId) ?? galleryWorkflows[0];
+  const activeSection = sectionById.get(activeSectionId) ?? activeWorkflow.sections[0];
+  const activeBaseCategory = activeSection.category;
+  const activeGroups = categoryGroups[activeBaseCategory] ?? [];
+  const activeGroup = activeGroupBySection[activeSection.id] ?? "all";
+  const activeCategory = virtualGroupCategory[activeBaseCategory]?.[activeGroup] ?? activeBaseCategory;
+  const excludedGroups =
+    activeBaseCategory === "style" && activeGroup === "color-grading"
+      ? ["portrait-retouch", "skin-detail"]
+      : [];
   const activeCategoryInfo = categories.find((category) => category.id === activeCategory)!;
-  const activeGroups = categoryGroups[activeCategory] ?? [];
-  const activeGroup = activeGroupByCategory[activeCategory] ?? "all";
+  const visibleGroups = activeGroups.filter((group) => group.id === "all" || !activeSection.groups || activeSection.groups.includes(group.id));
 
   const filteredParameters = useMemo(() => {
     const query = search.trim().toLowerCase();
     const hasQuery = Boolean(query);
     return allParameters.filter((parameter) => {
+      const parameterGroup = parameter.styleGroup ?? "base";
       const matchesCategory = selectedOnly || hasQuery || parameter.category === activeCategory;
       const matchesSelected = !selectedOnly || selectedById.has(parameter.id);
+      const matchesSectionGroups =
+        selectedOnly ||
+        hasQuery ||
+        (!excludedGroups.includes(parameterGroup) && (!activeSection.groups || activeSection.groups.includes(parameterGroup)));
       const matchesActiveGroup =
         selectedOnly ||
         hasQuery ||
-        activeGroups.length === 0 ||
+        visibleGroups.length === 0 ||
         activeGroup === "all" ||
+        Boolean(virtualGroupCategory[activeBaseCategory]?.[activeGroup]) ||
         (activeGroup === "base" ? !parameter.styleGroup || parameter.styleGroup === "base" : parameter.styleGroup === activeGroup);
       const matchesQuery =
         !query ||
@@ -486,9 +611,9 @@ export function App() {
         parameter.zhPrompt.toLowerCase().includes(query) ||
         parameter.enPrompt.toLowerCase().includes(query);
 
-      return matchesCategory && matchesSelected && matchesActiveGroup && matchesQuery;
+      return matchesCategory && matchesSelected && matchesSectionGroups && matchesActiveGroup && matchesQuery;
     });
-  }, [activeCategory, search, selectedById, selectedOnly, activeGroups.length, activeGroup, allParameters]);
+  }, [activeBaseCategory, activeCategory, activeSection.groups, search, selectedById, selectedOnly, visibleGroups.length, activeGroup, allParameters]);
 
   const prompt = useMemo(() => buildPrompt(inputs, selected, allParameters), [allParameters, inputs, selected]);
   const finalPromptValue = promptLanguage === "zh" ? prompt.finalPromptZh : prompt.finalPromptEn;
@@ -627,9 +752,10 @@ export function App() {
     setSelected([]);
     setSearch("");
     setSelectedOnly(false);
-    setActiveGroupByCategory({});
+    setActiveGroupBySection({});
     setPromptLanguage("zh");
-    setActiveCategory("style");
+    setActiveWorkflowId("core-setup");
+    setActiveSectionId("purpose");
   }
 
   function openAdmin() {
@@ -868,6 +994,9 @@ export function App() {
 
         {viewMode === "generator" && (
           <>
+            <section className="input-step-card" aria-label={uiLanguage === "zh" ? "第 1 步：画面基础信息" : "Step 1: Image Brief"}>
+            <p className="input-step-label">1 {uiLanguage === "zh" ? "画面基础信息" : "Image Brief"}</p>
+
             <label className="field">
               <span>{t.subject}</span>
               <textarea
@@ -910,6 +1039,7 @@ export function App() {
                 </select>
               </label>
             </div>
+            </section>
           </>
         )}
 
@@ -987,21 +1117,52 @@ export function App() {
       <>
       <section className="gallery-panel">
         <div className="gallery-toolbar">
-          <div className="tabs">
-            {categories.map((category) => (
+          <div className="workflow-tabs">
+            {galleryWorkflows.map((workflow) => (
               <button
-                key={category.id}
-                className={category.id === activeCategory && !selectedOnly ? "tab active" : "tab"}
+                key={workflow.id}
+                className={workflow.id === activeWorkflow.id && !selectedOnly ? "workflow-tab active" : "workflow-tab"}
                 onClick={() => {
-                  setActiveCategory(category.id);
+                  setActiveWorkflowId(workflow.id);
+                  setActiveSectionId(workflow.sections[0].id);
                   setSelectedOnly(false);
                 }}
                 type="button"
               >
-                {categoryName(category)}
-                <small>{category.mode === "single" ? t.single : t.multi}</small>
+                <span>{categoryName(workflow)}</span>
+                <small>{uiLanguage === "zh" ? workflow.zhGuide : workflow.enGuide}</small>
               </button>
             ))}
+          </div>
+
+          <div className="section-tabs">
+            {activeWorkflow.sections.map((section) => {
+              const sectionCategory = categories.find((category) => category.id === section.category)!;
+              return (
+                <button
+                  key={section.id}
+                  className={`${section.id === activeSection.id && !selectedOnly ? "section-tab active" : "section-tab"} importance-${section.importance}${section.useCases?.length ? " has-use-cases" : ""}`}
+                  onClick={() => {
+                    setActiveSectionId(section.id);
+                    setSelectedOnly(false);
+                  }}
+                  type="button"
+                >
+                  <span className="section-tab-title">{categoryName(section)}</span>
+                  <small>
+                    <b>{t[section.importance]}</b>
+                    {sectionCategory.mode === "single" ? t.single : t.multi}
+                  </small>
+                  {section.useCases?.length ? (
+                    <span className="section-use-cases">
+                      {section.useCases.map((useCase) => (
+                        <em key={useCase}>{useCase === "scene" ? t.sceneGeneration : t.designGeneration}</em>
+                      ))}
+                    </span>
+                  ) : null}
+                </button>
+              );
+            })}
           </div>
 
           <div className="search-row">
@@ -1016,17 +1177,22 @@ export function App() {
 
           {!selectedOnly && (
             <p className="category-note">
-              {categoryName(activeCategoryInfo)} / {uiLanguage === "zh" ? activeCategoryInfo.enName : activeCategoryInfo.zhName}: {categoryDescription(activeCategoryInfo.id, activeCategoryInfo.description)}
+              <strong>{categoryName(activeWorkflow)}</strong>
+              <span>{uiLanguage === "zh" ? activeWorkflow.zhGuide : activeWorkflow.enGuide}</span>
+              <em>
+                <b>{t[activeSection.importance]}</b>
+                {categoryName(activeSection)} / {uiLanguage === "zh" ? activeCategoryInfo.enName : activeCategoryInfo.zhName}: {uiLanguage === "zh" ? activeSection.zhDescription : activeSection.enDescription}
+              </em>
             </p>
           )}
 
-          {!selectedOnly && activeGroups.length > 0 && (
+          {!selectedOnly && visibleGroups.length > 0 && (
             <div className="style-group-row">
-              {activeGroups.map((group) => (
+              {visibleGroups.map((group) => (
                 <button
                   key={group.id}
                   className={group.id === activeGroup ? "style-chip active" : "style-chip"}
-                  onClick={() => setActiveGroupByCategory((current) => ({ ...current, [activeCategory]: group.id }))}
+                  onClick={() => setActiveGroupBySection((current) => ({ ...current, [activeSection.id]: group.id }))}
                   type="button"
                 >
                   {groupName(group)}
@@ -1047,7 +1213,8 @@ export function App() {
               >
                 <div className="image-frame">
                   <button className="image-button" onClick={() => toggleParameter(parameter)} type="button">
-                    <img src={parameter.image} alt={`${parameter.zhName} ${parameter.enName}`} />
+                    <img aria-hidden="true" className="image-backdrop" src={parameter.image} alt="" />
+                    <img className="image-main" src={parameter.image} alt={`${parameter.zhName} ${parameter.enName}`} />
                     {selectedItem && (
                       <span className="check-mark">
                         <Check size={16} />

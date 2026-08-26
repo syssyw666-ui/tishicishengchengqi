@@ -3,6 +3,7 @@ import type { CategoryId, PromptInputs, PromptParameter, SelectedParameter } fro
 const categoryOrder: CategoryId[] = [
   "purpose",
   "style",
+  "palette",
   "artist-style",
   "character",
   "ethnicity",
@@ -31,6 +32,7 @@ const categoryOrder: CategoryId[] = [
 const categoryLabels: Record<CategoryId, { zh: string; en: string }> = {
   purpose: { zh: "图片用途", en: "Purpose" },
   style: { zh: "画面风格", en: "Style" },
+  palette: { zh: "配色方案", en: "Color Palette" },
   "artist-style": { zh: "艺术家风格", en: "Artist Style" },
   character: { zh: "人物设定", en: "Character" },
   ethnicity: { zh: "人物族裔 / 外貌参考", en: "Ethnicity And Appearance Reference" },

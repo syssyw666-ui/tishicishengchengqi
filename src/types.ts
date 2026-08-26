@@ -22,6 +22,7 @@ export type CategoryId =
   | "render"
   | "visual-effect"
   | "purpose"
+  | "palette"
   | "color-grading"
   | "color-material";
 

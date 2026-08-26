@@ -1,0 +1,94 @@
+import type { CategoryId, PromptParameter } from "../types";
+
+const img = (id: string) => `${import.meta.env.BASE_URL}assets/parameters/${id}.jpg`;
+const png = (id: string) => `${import.meta.env.BASE_URL}assets/parameters/${id}.png`;
+
+function param(
+  category: CategoryId,
+  id: string,
+  styleGroup: string,
+  zhName: string,
+  enName: string,
+  zhPrompt: string,
+  enPrompt: string,
+  negative: string[] = []
+): PromptParameter {
+  return { id, category, styleGroup, zhName, enName, defaultWeight: 1, image: img(id), zhPrompt, enPrompt, negative };
+}
+
+const backgroundNegative = ["busy background", "readable text", "watermark"];
+const cameraNegative = ["unclear framing", "distorted perspective", "accidental crop"];
+const lightingNegative = ["muddy lighting", "overexposed highlights", "uncontrolled shadows"];
+const sceneNegative = ["crowded distracting scene", "unrecognizable environment"];
+const propNegative = ["unrecognizable prop", "floating object", "brand logo"];
+const renderNegative = ["low detail texture", "messy material", "visual noise"];
+
+export const finalSupplementParameters: PromptParameter[] = [
+  { id: "bg-warm-ivory-plaster", category: "background", styleGroup: "material", zhName: "暖象牙白石膏墙", enName: "Warm Ivory Plaster", defaultWeight: 1, image: png("bg-warm-ivory-plaster"), zhPrompt: "暖象牙白石膏墙背景，细腻手工抹灰纹理、柔和中心亮度和安静高级留白", enPrompt: "warm ivory plaster wall background, subtle hand-troweled texture, soft centered brightness, calm premium negative space", negative: backgroundNegative },
+  { id: "bg-charcoal-studio-sweep", category: "background", styleGroup: "studio", zhName: "炭黑无缝影棚", enName: "Charcoal Studio Sweep", defaultWeight: 1, image: png("bg-charcoal-studio-sweep"), zhPrompt: "炭黑无缝影棚背景，墙地自然弧形衔接、低反光和沉稳商业质感", enPrompt: "charcoal seamless studio sweep, natural wall-to-floor curve, low reflection, refined commercial mood", negative: backgroundNegative },
+  { id: "bg-misty-blue-studio-sweep", category: "background", styleGroup: "studio", zhName: "雾蓝无缝影棚", enName: "Misty Blue Studio Sweep", defaultWeight: 1, image: png("bg-misty-blue-studio-sweep"), zhPrompt: "雾蓝无缝影棚背景，冷静柔和的蓝灰色过渡、干净空间和柔光", enPrompt: "misty blue seamless studio sweep, calm soft blue-gray transition, clean space, diffused light", negative: backgroundNegative },
+  { id: "bg-frosted-glass", category: "background", styleGroup: "special", zhName: "磨砂玻璃背景", enName: "Frosted Glass", defaultWeight: 1, image: png("bg-frosted-glass"), zhPrompt: "磨砂玻璃背景，半透明柔焦、克制漫反射和现代科技感", enPrompt: "frosted glass background, translucent soft diffusion, restrained reflections, modern technology mood", negative: backgroundNegative },
+  { id: "bg-natural-linen", category: "background", styleGroup: "fabric", zhName: "天然亚麻背景", enName: "Natural Linen", defaultWeight: 1, image: png("bg-natural-linen"), zhPrompt: "天然亚麻布背景，清晰织纹、柔和褶皱和温暖手作质感", enPrompt: "natural linen fabric background, visible weave, gentle folds, warm handmade texture", negative: backgroundNegative },
+  { id: "bg-deep-navy-velvet", category: "background", styleGroup: "fabric", zhName: "深海军蓝天鹅绒", enName: "Deep Navy Velvet", defaultWeight: 1, image: png("bg-deep-navy-velvet"), zhPrompt: "深海军蓝天鹅绒背景，细腻绒面、深色褶皱和低调奢华高光", enPrompt: "deep navy velvet background, delicate pile, dark folds, quiet luxurious highlights", negative: backgroundNegative },
+  { id: "bg-recycled-kraft-paper", category: "background", styleGroup: "paper", zhName: "再生牛皮纸背景", enName: "Recycled Kraft Paper", defaultWeight: 1, image: png("bg-recycled-kraft-paper"), zhPrompt: "再生牛皮纸背景，自然纤维、浅棕纸色和朴素印刷质感", enPrompt: "recycled kraft paper background, natural fibers, light brown paper tone, understated print texture", negative: backgroundNegative },
+  { id: "bg-antique-parchment", category: "background", styleGroup: "paper", zhName: "古典羊皮纸背景", enName: "Antique Parchment", defaultWeight: 1, image: png("bg-antique-parchment"), zhPrompt: "古典羊皮纸背景，温润泛黄、轻微岁月斑驳和中心自然亮度", enPrompt: "antique parchment background, warm aged tone, subtle patina, natural centered brightness", negative: backgroundNegative },
+  { id: "bg-cotton-watercolor-paper", category: "background", styleGroup: "paper", zhName: "水彩棉纸背景", enName: "Cotton Watercolor Paper", defaultWeight: 1, image: png("bg-cotton-watercolor-paper"), zhPrompt: "水彩棉纸背景，白色细颗粒、吸水纸纤维和干净艺术留白", enPrompt: "cotton watercolor paper background, white fine grain, absorbent paper fibers, clean artistic negative space", negative: backgroundNegative },
+  { id: "bg-travertine-stone", category: "background", styleGroup: "material", zhName: "浅色洞石背景", enName: "Light Travertine", defaultWeight: 1, image: png("bg-travertine-stone"), zhPrompt: "浅色洞石背景，天然孔隙、米灰石材层次和轻奢建筑质感", enPrompt: "light travertine stone background, natural pores, beige-gray stone layers, refined architectural texture", negative: backgroundNegative },
+  { id: "bg-brushed-stainless-steel", category: "background", styleGroup: "material", zhName: "拉丝不锈钢背景", enName: "Brushed Stainless Steel", defaultWeight: 1, image: png("bg-brushed-stainless-steel"), zhPrompt: "拉丝不锈钢背景，水平拉丝纹、高级银灰反射和精密工业感", enPrompt: "brushed stainless steel background, horizontal brushed grain, refined silver-gray reflections, precision industrial mood", negative: backgroundNegative },
+  { id: "bg-rain-window-glass", category: "background", styleGroup: "special", zhName: "雨滴玻璃背景", enName: "Rainy Window Glass", defaultWeight: 1, image: png("bg-rain-window-glass"), zhPrompt: "雨滴玻璃背景，前景水珠清晰、远处城市灯光柔化成散景，安静雨夜气氛", enPrompt: "rain-speckled window glass background, sharp foreground droplets, distant city lights softened into bokeh, quiet rainy-night atmosphere", negative: backgroundNegative },
+  { id: "bg-matte-warm-white", category: "background", styleGroup: "color", zhName: "哑光暖白背景", enName: "Matte Warm White", defaultWeight: 1, image: png("bg-matte-warm-white"), zhPrompt: "哑光暖白无缝背景，干净柔和、低反光、适合产品和人像主体", enPrompt: "matte warm white seamless background, clean soft low-reflection surface for product and portrait subjects", negative: backgroundNegative },
+  { id: "bg-warm-gray-studio", category: "background", styleGroup: "studio", zhName: "暖灰人像影棚", enName: "Warm Gray Portrait Studio", defaultWeight: 1, image: png("bg-warm-gray-studio"), zhPrompt: "暖灰色无缝人像影棚背景，柔和墙地过渡、中性高级且不抢主体", enPrompt: "warm gray seamless portrait studio background, soft wall-to-floor transition, neutral and refined without distracting from the subject", negative: backgroundNegative },
+  { id: "bg-sage-color-backdrop", category: "background", styleGroup: "color", zhName: "鼠尾草绿底板", enName: "Sage Green Backdrop", defaultWeight: 1, image: png("bg-sage-color-backdrop"), zhPrompt: "低饱和鼠尾草绿无缝底板，柔和自然、现代编辑感和克制色彩", enPrompt: "low-saturation sage green seamless backdrop, soft natural modern editorial feeling and restrained color", negative: backgroundNegative },
+  { id: "bg-cobalt-color-backdrop", category: "background", styleGroup: "color", zhName: "钴蓝色底板", enName: "Cobalt Blue Backdrop", defaultWeight: 1, image: png("bg-cobalt-color-backdrop"), zhPrompt: "饱和钴蓝色无缝底板，清晰干净、现代平面感和强视觉对比", enPrompt: "saturated cobalt blue seamless backdrop, crisp clean modern graphic feeling with strong visual contrast", negative: backgroundNegative },
+  { id: "bg-blush-handmade-paper", category: "background", styleGroup: "paper", zhName: "浅粉手工纸背景", enName: "Blush Handmade Paper", defaultWeight: 1, image: png("bg-blush-handmade-paper"), zhPrompt: "浅粉色手工纸背景，细腻纸纤维、温柔低饱和和贺卡艺术感", enPrompt: "blush handmade paper background, delicate paper fibers, gentle low saturation, refined greeting-card art feeling", negative: backgroundNegative },
+  { id: "bg-black-marble", category: "background", styleGroup: "material", zhName: "黑色大理石背景", enName: "Black Marble", defaultWeight: 1, image: png("bg-black-marble"), zhPrompt: "黑色大理石背景，克制白色矿物纹路、深邃石面和高端质感", enPrompt: "black marble background, restrained white mineral veining, deep stone surface, premium material feel", negative: backgroundNegative },
+  { id: "bg-white-marble", category: "background", styleGroup: "material", zhName: "白色大理石背景", enName: "White Marble", defaultWeight: 1, image: png("bg-white-marble"), zhPrompt: "白色大理石背景，浅灰天然纹理、明亮洁净和轻奢空间感", enPrompt: "white marble background, delicate gray natural veining, bright clean refined-space feeling", negative: backgroundNegative },
+  { id: "bg-natural-corkboard", category: "background", styleGroup: "material", zhName: "天然软木板背景", enName: "Natural Corkboard", defaultWeight: 1, image: png("bg-natural-corkboard"), zhPrompt: "天然软木板背景，细小颗粒、温暖棕色和手作资料板质感", enPrompt: "natural corkboard background, fine granules, warm brown tone, handmade reference-board texture", negative: backgroundNegative },
+  { id: "bg-glazed-ceramic-tile", category: "background", styleGroup: "material", zhName: "釉面陶瓷砖背景", enName: "Glazed Ceramic Tile", defaultWeight: 1, image: png("bg-glazed-ceramic-tile"), zhPrompt: "浅色釉面陶瓷砖背景，规则砖缝、轻微光泽和干净生活方式质感", enPrompt: "pale glazed ceramic tile background, regular grout lines, subtle sheen, clean lifestyle texture", negative: backgroundNegative },
+  { id: "bg-holographic-foil", category: "background", styleGroup: "special", zhName: "镭射虹彩膜背景", enName: "Holographic Foil", defaultWeight: 1, image: png("bg-holographic-foil"), zhPrompt: "镭射虹彩膜背景，半透明彩虹反射、褶皱光线和潮流未来质感", enPrompt: "holographic foil background, translucent rainbow reflections, folded light, fashion-forward futuristic texture", negative: backgroundNegative },
+  { id: "bg-sheer-curtain-daylight", category: "background", styleGroup: "fabric", zhName: "日光纱帘背景", enName: "Sheer Curtain Daylight", defaultWeight: 1, image: png("bg-sheer-curtain-daylight"), zhPrompt: "日光纱帘背景，半透明白色薄纱、柔和窗光和轻盈室内氛围", enPrompt: "daylight sheer curtain background, translucent white fabric, soft window light, airy interior atmosphere", negative: backgroundNegative },
+  { id: "bg-leafy-shadow-plaster", category: "background", styleGroup: "nature", zhName: "树影石膏墙背景", enName: "Leafy Shadow Plaster", defaultWeight: 1, image: png("bg-leafy-shadow-plaster"), zhPrompt: "暖色石膏墙背景，窗外树叶投下柔和光影，安静自然的午后氛围", enPrompt: "warm plaster wall background with soft leafy window shadows, quiet natural afternoon atmosphere", negative: backgroundNegative },
+  { id: "bg-deckle-cotton-paper", category: "background", styleGroup: "paper", zhName: "毛边棉纸背景", enName: "Deckle-Edge Cotton Paper", defaultWeight: 1, image: png("bg-deckle-cotton-paper"), zhPrompt: "手工毛边棉纸背景，暖白纸纤维、自然撕边和克制的艺术留白", enPrompt: "handmade deckle-edge cotton paper background, warm white fibers, natural torn edge, restrained artistic negative space", negative: backgroundNegative },
+  { id: "bg-sunlit-shoji-paper", category: "background", styleGroup: "paper", zhName: "日光障子纸背景", enName: "Sunlit Shoji Paper", defaultWeight: 1, image: png("bg-sunlit-shoji-paper"), zhPrompt: "日光障子纸背景，细木格、暖光投影和安静的日式室内氛围", enPrompt: "sunlit shoji paper background, fine wooden lattice, warm light shadow, quiet Japanese interior atmosphere", negative: backgroundNegative },
+  { id: "bg-aged-mineral-plaster", category: "background", styleGroup: "material", zhName: "矿物斑驳旧墙", enName: "Aged Mineral Plaster", defaultWeight: 1, image: png("bg-aged-mineral-plaster"), zhPrompt: "矿物色斑驳旧墙背景，褪色石膏层、蓝灰与土黄残留、时间感纹理", enPrompt: "aged mineral plaster wall background, faded paint layers, blue-gray and ochre traces, timeworn texture", negative: backgroundNegative },
+  { id: "bg-pale-oak-grain", category: "background", styleGroup: "material", zhName: "浅橡木纹背景", enName: "Pale Oak Grain", defaultWeight: 1, image: png("bg-pale-oak-grain"), zhPrompt: "浅色橡木纹背景，自然年轮、温暖浅木色和干净北欧感", enPrompt: "pale oak grain background, natural rings, warm light wood tone, clean Nordic feeling", negative: backgroundNegative },
+  { id: "bg-raw-artist-canvas", category: "background", styleGroup: "fabric", zhName: "原生画布背景", enName: "Raw Artist Canvas", defaultWeight: 1, image: png("bg-raw-artist-canvas"), zhPrompt: "原生艺术画布背景，细密经纬织纹、未上色米白底和手作媒介感", enPrompt: "raw artist canvas background, fine warp-and-weft texture, unpainted ivory base, handmade art-medium feel", negative: backgroundNegative },
+  { id: "bg-corrugated-galvanized-metal", category: "background", styleGroup: "material", zhName: "镀锌波纹板背景", enName: "Corrugated Galvanized Metal", defaultWeight: 1, image: png("bg-corrugated-galvanized-metal"), zhPrompt: "镀锌波纹金属板背景，规则纵向起伏、冷灰反光和粗粝工业感", enPrompt: "corrugated galvanized metal background, regular vertical ridges, cool gray reflections, rugged industrial feel", negative: backgroundNegative },
+  { id: "bg-smoked-acrylic", category: "background", styleGroup: "special", zhName: "烟熏亚克力背景", enName: "Smoked Acrylic", defaultWeight: 1, image: png("bg-smoked-acrylic"), zhPrompt: "烟熏半透明亚克力背景，深灰渐变、柔和折射和极简科技感", enPrompt: "smoked translucent acrylic background, deep gray gradient, soft refraction, minimalist technology feel", negative: backgroundNegative },
+  { id: "bg-amber-stained-glass", category: "background", styleGroup: "special", zhName: "琥珀彩窗背景", enName: "Amber Stained Glass", defaultWeight: 1, image: png("bg-amber-stained-glass"), zhPrompt: "琥珀色彩色玻璃背景，几何铅条分格、温暖透光和复古工艺质感", enPrompt: "amber stained-glass background, geometric leaded divisions, warm transmitted light, vintage craft texture", negative: backgroundNegative },
+  param("background", "bg-raw-concrete", "material", "清水混凝土墙", "Raw Concrete Wall", "背景为清水混凝土墙面，细微孔洞和灰色肌理，工业极简质感", "raw concrete wall background, subtle pores and gray texture, industrial minimalist mood", backgroundNegative),
+  param("background", "bg-translucent-acrylic", "material", "半透明亚克力背景", "Translucent Acrylic Background", "背景为半透明亚克力板，柔和反光、干净边缘和现代产品摄影感", "translucent acrylic panel background, soft reflections, clean edges, modern product-photo feeling", backgroundNegative),
+  param("background", "bg-wrinkled-rice-paper", "paper", "皱褶宣纸背景", "Wrinkled Rice Paper", "背景为皱褶宣纸，纤维纹理、米白色和手工纸张质感", "wrinkled rice paper background, visible fibers, warm ivory tone, handmade paper texture", backgroundNegative),
+  param("background", "bg-dark-walnut", "material", "深胡桃木背景", "Dark Walnut Background", "背景为深胡桃木板，清晰木纹、温润暗色和沉稳质感", "dark walnut wood background with clear grain, warm deep tone, calm premium material", backgroundNegative),
+  param("background", "bg-soft-gradient-paper", "paper", "柔和渐变纸背景", "Soft Gradient Paper", "背景为柔和渐变纸张，浅色过渡、干净留白和社媒封面感", "soft gradient paper background, gentle color transition, clean negative space, social-cover feeling", backgroundNegative),
+  param("background", "bg-pearl-satin", "fabric", "珍珠缎面背景", "Pearl Satin Background", "背景为珍珠白缎面，柔滑褶皱、高光流动和优雅商业质感", "pearl satin fabric background, silky folds, flowing highlights, elegant commercial texture", backgroundNegative),
+  param("background", "bg-red-lacquer", "material", "朱红大漆背景", "Red Lacquer Background", "背景为朱红色大漆质感，高光温润、东方工艺气质和深红层次", "vermilion red lacquer background, glossy warm highlights, East Asian craft mood, rich red depth", backgroundNegative),
+  param("background", "bg-museum-gray-wall", "studio", "博物馆灰墙", "Museum Gray Wall", "背景为博物馆灰色墙面，克制中性、柔和聚光和展陈高级感", "museum gray wall background, restrained neutral tone, soft spotlight, gallery display mood", backgroundNegative),
+
+  param("camera", "camera-silhouette-doorway", "visual-guide", "门框剪影构图", "Doorway Silhouette Framing", "通过门框或暗部剪影框住主体，形成强入口感和叙事感", "subject framed by doorway or dark silhouette, strong entrance and narrative framing", cameraNegative),
+  param("camera", "camera-surveillance-high", "camera-angle", "监控俯视角", "Surveillance High Angle", "高处监控式俯视角，人物变小，空间关系清楚，有冷静观察感", "high surveillance-like angle, small figures, clear spatial relationship, detached observation mood", cameraNegative),
+  param("camera", "camera-foreground-obstruction", "depth", "前景遮挡构图", "Foreground Obstruction", "使用虚化前景遮挡一部分画面，增强偷看感、纵深和真实镜头感", "blurred foreground obstruction partially covering the scene, adding depth and candid lens realism", cameraNegative),
+
+  param("lighting", "light-projector-beam", "dramatic", "投影光束", "Projector Beam", "投影光束穿过空气，形成可见锥形光路和电影放映氛围", "projector beam cutting through air, visible cone of light, cinematic screening atmosphere", lightingNegative),
+  param("lighting", "light-fluorescent-office", "interior", "办公室荧光灯", "Fluorescent Office Light", "办公室荧光灯，冷白顶光、真实办公环境和轻微平面感", "cool white fluorescent office light, overhead practical illumination, realistic workplace mood", lightingNegative),
+  param("lighting", "light-practical-lamp", "interior", "实景台灯光", "Practical Lamp Light", "画面内可见台灯或壁灯作为主光，暖光聚焦局部区域", "visible practical lamp or wall light as main source, warm light focusing a local area", lightingNegative),
+  param("lighting", "light-red-blue-strobe", "dramatic", "红蓝警示光", "Red Blue Strobe Light", "红蓝交替警示光，强烈冷暖对比和紧张电影氛围", "red and blue strobe warning light, strong color contrast and tense cinematic atmosphere", lightingNegative),
+  param("lighting", "light-laser-scan", "sci-fi", "激光扫描光", "Laser Scan Light", "激光扫描光线，细窄绿色或蓝色光束穿过主体，未来科技感", "laser scan light, thin green or blue beams crossing the subject, futuristic tech mood", lightingNegative),
+  param("lighting", "light-stained-glass", "interior", "彩窗投影光", "Stained Glass Light", "彩色玻璃投影光，墙面和主体上有多色斑驳光影", "stained-glass projected light, multicolor patterned shadows across walls and subject", lightingNegative),
+  param("lighting", "light-rim-only-silhouette", "dramatic", "纯轮廓逆光", "Rim-Light Silhouette", "主体几乎成剪影，只保留边缘轮廓光，神秘且强视觉识别", "near-silhouette subject with only rim light outlining edges, mysterious and graphic", lightingNegative),
+
+  param("purpose", "purpose-educational-infographic", "design", "教学信息图", "Educational Infographic", "图片用途为教学信息图，用简洁图形解释流程、结构或知识点", "educational infographic, simple visual system explaining process, structure, or knowledge point"),
+  param("purpose", "purpose-exhibition-display", "design", "展览陈列图", "Exhibition Display", "图片用途为展览陈列，展示墙面、展品、灯光和空间动线关系", "exhibition display image showing walls, works, lighting, and spatial flow"),
+
+  param("scene", "scene-rooftop-terrace", "city", "屋顶露台", "Rooftop Terrace", "场景为屋顶露台，城市天际线、户外家具和高处开阔感", "rooftop terrace scene with city skyline, outdoor furniture, and open elevated feeling", sceneNegative),
+  param("scene", "scene-craft-workshop", "interior", "手作工坊", "Craft Workshop", "场景为手作工坊，工作台、工具、材料和手工创作氛围明确", "craft workshop interior with workbench, tools, materials, and handmade creative atmosphere", sceneNegative),
+  param("scene", "scene-modern-classroom", "interior", "现代教室", "Modern Classroom", "场景为现代教室，课桌、白板、投影屏和学习环境清晰", "modern classroom scene with desks, board, projection screen, and learning environment", sceneNegative),
+
+
+  param("render", "render-blueprint-technical", "technical", "蓝图技术渲染", "Blueprint Technical Render", "蓝图技术渲染，白色线框、测量线和工程图纸质感", "blueprint technical render, white wireframe lines, measurement marks, engineering drawing texture", renderNegative),
+  param("render", "render-clay-material", "stylized", "陶土材质渲染", "Clay Material Render", "陶土材质渲染，哑光颗粒、手捏质感和柔和实体体积", "clay material render, matte grain, handmade tactile surface, soft solid volume", renderNegative)
+];
+
+
+
+

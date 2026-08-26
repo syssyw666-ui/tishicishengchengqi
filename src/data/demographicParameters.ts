@@ -121,13 +121,6 @@ export const demographicParameters: PromptParameter[] = [
   param("layout", "layout-diagonal-empty-space", "negative-space", "斜向留白", "Diagonal Empty Space", "主体沿对角线一侧排布，另一侧形成斜向留白", "subject arranged along one diagonal side, opposite side forms diagonal negative space", layoutImage),
   param("layout", "layout-circular-focus", "subject-position", "环形焦点", "Circular Focus", "画面元素围绕中心形成环形视觉焦点，主体位于中心或环内", "circular focal layout, elements orbit around center, subject inside the ring", layoutImage),
 
-  param("background", "background-matte-black", "color", "哑光黑背景", "Matte Black Background", "哑光黑色背景，低反光，高级安静，突出主体轮廓", "matte black background, low reflection, premium quiet mood, clear subject silhouette", materialImage),
-  param("background", "background-warm-gray", "color", "暖灰背景", "Warm Gray Background", "暖灰色背景，中性柔和，适合人像和产品图", "warm gray background, neutral and soft, suitable for portraits and product shots", materialImage),
-  param("background", "background-velvet", "fabric", "天鹅绒背景", "Velvet Background", "天鹅绒背景，柔软暗部和细腻织物绒感", "velvet background, soft dark shadows and delicate textile nap", materialImage),
-  param("background", "background-brushed-metal", "material", "拉丝金属背景", "Brushed Metal Background", "拉丝金属背景，细横纹、高光过渡和工业质感", "brushed metal background, fine horizontal grain, highlight transitions, industrial texture", materialImage),
-  param("background", "background-cork-board", "material", "软木板背景", "Cork Board Background", "软木板背景，颗粒纹理和手作资料板氛围", "cork board background, granular texture, handmade pinboard atmosphere", materialImage),
-  param("background", "background-concrete-wall", "material", "清水混凝土背景", "Concrete Wall Background", "清水混凝土背景，细腻灰色孔洞和现代建筑质感", "fair-faced concrete wall background, fine gray pores, modern architectural texture", materialImage),
-
   param("camera", "camera-profile-view", "camera-angle", "侧面视角", "Profile View", "侧面视角，突出人物轮廓、鼻梁和姿态线条", "profile view, emphasizing silhouette, nose bridge, and body line", cameraImage),
   param("camera", "camera-dolly-zoom", "motion", "滑动变焦感", "Dolly Zoom", "滑动变焦感，主体尺度稳定，背景透视产生压缩或拉伸", "dolly-zoom feeling, stable subject scale with background perspective compression or expansion", cameraImage),
 

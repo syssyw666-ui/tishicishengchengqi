@@ -5,8 +5,11 @@ import { clothingParameters } from "./clothingParameters";
 import { culturalPatternParameters } from "./culturalPatternParameters";
 import { expandedParameters } from "./expandedParameters";
 import { exhaustiveParameters } from "./exhaustiveParameters";
+import { finalSupplementParameters } from "./finalSupplementParameters";
+import { gapSupplementParameters } from "./gapSupplementParameters";
 import { demographicParameters } from "./demographicParameters";
 import { poseParameters } from "./poseParameters";
+import { colorPaletteParameters } from "./colorPaletteParameters";
 import { supplementParameters } from "./supplementParameters";
 
 export const categories: Category[] = [
@@ -23,26 +26,31 @@ export const categories: Category[] = [
   { id: "era", zhName: "时代世界观", enName: "Era", mode: "multi", description: "决定画面时间背景、世界观和文化语境。" },
   { id: "story-action", zhName: "叙事事件", enName: "Story Action", mode: "multi", description: "控制画面正在发生的事件、人物互动和故事动作，可混选。" },
   { id: "mood", zhName: "情绪氛围", enName: "Mood", mode: "multi", description: "决定情绪、叙事气质和心理感受。" },
-  { id: "props", zhName: "道具物件", enName: "Props", mode: "multi", description: "控制角色手持物、场景辅助物、商品包装和叙事道具，可混选。" },
   { id: "layout", zhName: "排版留白", enName: "Layout", mode: "single", description: "决定主体位置、留白方向和标题安全区，只能单选。" },
   { id: "background", zhName: "背景质感", enName: "Background", mode: "multi", description: "决定背景颜色、纸张、织物、金属、自然天空等底板质感，可与排版留白组合。" },
   { id: "layout-style", zhName: "排版风格", enName: "Layout Style", mode: "multi", description: "决定版式审美和设计语言，可与排版留白组合。" },
-  { id: "framing", zhName: "景别", enName: "Framing", mode: "single", description: "决定主体在画面中的比例，只能单选。" },
+  { id: "framing", zhName: "画面范围", enName: "Shot Scale", mode: "single", description: "决定主体在画面中占多少比例，只能单选；在构图/镜头中选择。" },
   { id: "camera", zhName: "构图/镜头", enName: "Composition & Camera", mode: "multi", description: "控制构图法则、视觉引导、镜头角度、焦段和拍摄手法。" },
   { id: "lighting", zhName: "光线氛围", enName: "Lighting", mode: "multi", description: "控制光线、天气和画面情绪。" },
   { id: "render", zhName: "渲染质感", enName: "Render", mode: "multi", description: "控制成片质感、细节和材质表现。" },
   { id: "visual-effect", zhName: "视觉特效", enName: "Visual Effect", mode: "multi", description: "控制粒子、烟雾、火焰、数字故障、光轨和超现实画面效果，可混选。" },
   { id: "purpose", zhName: "图片用途", enName: "Purpose", mode: "multi", description: "告诉模型图片最终用于什么场景。" },
+  { id: "palette", zhName: "配色方案", enName: "Color Palette", mode: "multi", description: "用成组色卡确定主色、辅助色与画面色彩关系；与后期调色、材质表现分开。" },
   { id: "color-grading", zhName: "后期调色", enName: "Color Grading", mode: "multi", description: "控制摄影后期、电影调色、设备质感和社媒滤镜倾向，可混选。" },
   { id: "color-material", zhName: "色彩与材质", enName: "Color & Material", mode: "multi", description: "强化色调、表面材质和触感。" }
 ];
 
 export const styleGroups = [
   { id: "all", zhName: "全部风格" },
-  { id: "base", zhName: "基础常用" },
+  { id: "photo-film-3d", zhName: "摄影 / 电影 / 3D" },
+  { id: "artist-style", zhName: "艺术家 / 画派" },
+  { id: "ethnic-style", zhName: "民族 / 非遗" },
+  { id: "render", zhName: "渲染质感" },
+  { id: "color-grading", zhName: "后期调色" },
+  { id: "visual-effect", zhName: "视觉特效" },
+  { id: "color-material", zhName: "色彩材质" },
   { id: "anime", zhName: "动画 / 二次元" },
   { id: "eastern", zhName: "东方 / 民俗" },
-  { id: "photo-film-3d", zhName: "摄影 / 电影 / 3D" },
   { id: "design-retro", zhName: "设计 / 复古 / 实验" },
   { id: "craft-print", zhName: "版画 / 工艺 / 织物" }
 ];
@@ -51,26 +59,26 @@ export const categoryGroups: Partial<Record<Category["id"], Array<{ id: string; 
   style: styleGroups,
   "artist-style": [
     { id: "all", zhName: "全部艺术家" },
-    { id: "renaissance-baroque", zhName: "文艺复兴 / 巴洛克" },
     { id: "impression-post", zhName: "印象派 / 后印象派" },
-    { id: "modern-avantgarde", zhName: "现代主义 / 抽象" },
-    { id: "surreal-symbolic", zhName: "超现实 / 象征" },
+    { id: "east-asian", zhName: "东方绘画" },
     { id: "decorative-illustration", zhName: "装饰 / 插画" },
     { id: "international-illustration", zhName: "国外经典插图" },
     { id: "editorial-graphic", zhName: "社论 / 平面插画" },
     { id: "childrens-picturebook", zhName: "童书 / 绘本" },
-    { id: "folk-global", zhName: "世界民艺 / 民俗" },
     { id: "poster-print", zhName: "海报 / 印刷" },
+    { id: "modern-avantgarde", zhName: "现代主义 / 抽象" },
+    { id: "surreal-symbolic", zhName: "超现实 / 象征" },
+    { id: "renaissance-baroque", zhName: "文艺复兴 / 巴洛克" },
+    { id: "folk-global", zhName: "世界民艺 / 民俗" },
     { id: "comic-sequential", zhName: "漫画 / 分镜" },
-    { id: "east-asian", zhName: "东方绘画" },
     { id: "american-pop", zhName: "波普 / 当代经典" }
   ],
   character: [
     { id: "all", zhName: "全部角色" },
     { id: "age-stage", zhName: "年龄阶段" },
-    { id: "body-type", zhName: "体态比例" },
     { id: "profession", zhName: "职业身份" },
     { id: "social-role", zhName: "社会角色" },
+    { id: "body-type", zhName: "体态比例" },
     { id: "fantasy", zhName: "幻想身份" },
     { id: "sci-fi", zhName: "科幻身份" }
   ],
@@ -106,10 +114,10 @@ export const categoryGroups: Partial<Record<Category["id"], Array<{ id: string; 
     { id: "all", zhName: "全部姿势" },
     { id: "standing", zhName: "站姿" },
     { id: "sitting", zhName: "坐姿" },
-    { id: "lying", zhName: "躺卧 / 趴卧" },
     { id: "motion", zhName: "行走 / 动态" },
-    { id: "dance", zhName: "舞蹈" },
     { id: "action", zhName: "运动 / 战斗" },
+    { id: "dance", zhName: "舞蹈" },
+    { id: "lying", zhName: "躺卧 / 趴卧" },
     { id: "interaction", zhName: "多人互动" },
     { id: "emotion", zhName: "情绪动作" },
     { id: "camera-ready", zhName: "镜头前姿态" }
@@ -135,11 +143,12 @@ export const categoryGroups: Partial<Record<Category["id"], Array<{ id: string; 
   ],
   scene: [
     { id: "all", zhName: "全部场景" },
-    { id: "nature", zhName: "自然地貌" },
-    { id: "weather", zhName: "天气季节" },
     { id: "city", zhName: "城市建筑" },
     { id: "interior", zhName: "室内空间" },
+    { id: "nature", zhName: "自然地貌" },
+    { id: "weather", zhName: "天气季节" },
     { id: "culture", zhName: "文化历史" },
+    { id: "era-world", zhName: "时代与世界观" },
     { id: "ruins", zhName: "遗迹废墟" },
     { id: "sci-fi", zhName: "科幻设施" },
     { id: "fantasy", zhName: "幻想异域" }
@@ -174,15 +183,6 @@ export const categoryGroups: Partial<Record<Category["id"], Array<{ id: string; 
     { id: "lonely", zhName: "孤独感伤" },
     { id: "surreal", zhName: "梦境超现实" },
     { id: "luxury", zhName: "精致奢华" }
-  ],
-  props: [
-    { id: "all", zhName: "全部道具" },
-    { id: "daily", zhName: "日常物件" },
-    { id: "work-tech", zhName: "工作科技" },
-    { id: "travel", zhName: "旅行探索" },
-    { id: "art-culture", zhName: "艺术文化" },
-    { id: "fantasy", zhName: "幻想道具" },
-    { id: "commercial", zhName: "商业包装" }
   ],
   layout: [
     { id: "all", zhName: "全部版式" },
@@ -220,22 +220,21 @@ export const categoryGroups: Partial<Record<Category["id"], Array<{ id: string; 
   ],
   camera: [
     { id: "all", zhName: "全部构图/镜头" },
-    { id: "base", zhName: "基础常用" },
+    { id: "shot-size", zhName: "画面范围" },
+    { id: "focal-length", zhName: "焦距焦段" },
+    { id: "camera-angle", zhName: "摄像机角度" },
+    { id: "angle", zhName: "机位高度" },
     { id: "composition-rule", zhName: "构图法则" },
     { id: "visual-guide", zhName: "视觉引导" },
     { id: "depth", zhName: "空间层次" },
     { id: "person-position", zhName: "人物位置" },
     { id: "group-relationship", zhName: "多人位置关系" },
-    { id: "focal-length", zhName: "焦距焦段" },
-    { id: "camera-angle", zhName: "摄像机角度" },
-    { id: "angle", zhName: "机位高度" },
-    { id: "motion", zhName: "运动质感" },
     { id: "lens-effect", zhName: "镜头效果" },
+    { id: "motion", zhName: "运动质感" },
     { id: "composition", zhName: "构图取景" }
   ],
   lighting: [
     { id: "all", zhName: "全部光线" },
-    { id: "base", zhName: "基础光线" },
     { id: "natural", zhName: "自然光" },
     { id: "interior", zhName: "室内灯光" },
     { id: "dramatic", zhName: "戏剧光效" },
@@ -243,7 +242,6 @@ export const categoryGroups: Partial<Record<Category["id"], Array<{ id: string; 
   ],
   render: [
     { id: "all", zhName: "全部渲染" },
-    { id: "base", zhName: "基础质感" },
     { id: "realism", zhName: "写实算法" },
     { id: "stylized", zhName: "风格化渲染" },
     { id: "technical", zhName: "技术视效" }
@@ -259,28 +257,37 @@ export const categoryGroups: Partial<Record<Category["id"], Array<{ id: string; 
   ],
   purpose: [
     { id: "all", zhName: "全部用途" },
-    { id: "base", zhName: "基础用途" },
     { id: "cover", zhName: "封面海报" },
     { id: "commercial", zhName: "商业电商" },
-    { id: "social", zhName: "社媒头像" },
-    { id: "design", zhName: "设计可视化" }
+    { id: "layout-style", zhName: "排版风格" },
+    { id: "design", zhName: "设计可视化" },
+    { id: "social", zhName: "社媒头像" }
+  ],
+  palette: [
+    { id: "all", zhName: "全部配色" },
+    { id: "chinese", zhName: "中式东方" },
+    { id: "morandi", zhName: "莫兰迪" },
+    { id: "cinema", zhName: "电影叙事" },
+    { id: "nature", zhName: "自然风景" },
+    { id: "global", zhName: "世界风格" },
+    { id: "commercial", zhName: "商业设计" }
   ],
   "color-grading": [
     { id: "all", zhName: "全部调色" },
     { id: "clean-bright", zhName: "清透 / 明亮" },
+    { id: "cinematic", zhName: "电影调色" },
     { id: "film-vintage", zhName: "胶片 / 复古" },
     { id: "camera-look", zhName: "相机质感" },
-    { id: "drone-aerial", zhName: "航拍 / 风光" },
-    { id: "cinematic", zhName: "电影调色" },
-    { id: "mood", zhName: "情绪色调" },
     { id: "commercial", zhName: "商业 / 社媒" },
     { id: "portrait-retouch", zhName: "人像修图" },
-    { id: "skin-detail", zhName: "肤质细节" }
+    { id: "skin-detail", zhName: "肤质细节" },
+    { id: "drone-aerial", zhName: "航拍 / 风光" },
+    { id: "mood", zhName: "情绪色调" }
   ],
   "color-material": [
     { id: "all", zhName: "全部色材" },
     { id: "base", zhName: "基础色材" },
-    { id: "palette", zhName: "色彩方案" },
+    { id: "palette", zhName: "基础色彩控制" },
     { id: "fabric", zhName: "织物柔材" },
     { id: "stone", zhName: "石材矿物" },
     { id: "industrial", zhName: "工业材质" },
@@ -363,9 +370,7 @@ export const parameters: PromptParameter[] = [
   { id: "framing-extreme-close-up", category: "framing", zhName: "特写", enName: "Extreme Close-Up", defaultWeight: 1, image: img("framing-extreme-close-up"), zhPrompt: "极近特写，聚焦关键局部", enPrompt: "extreme close-up, focused on one important detail with intense texture" },
   { id: "framing-panoramic", category: "framing", zhName: "极远景", enName: "Panoramic", defaultWeight: 1, image: img("framing-panoramic"), zhPrompt: "横向极远景，强调史诗环境和空间层次", enPrompt: "panoramic establishing shot, epic environment, layered depth and scale" },
 
-  { id: "camera-wide-angle", category: "camera", styleGroup: "lens-effect", zhName: "广角镜头", enName: "Wide Angle", defaultWeight: 1, image: img("camera-wide-angle"), zhPrompt: "广角镜头，强透视和空间纵深", enPrompt: "wide-angle lens, strong perspective, deep spatial depth" },
-  { id: "camera-telephoto", category: "camera", styleGroup: "lens-effect", zhName: "长焦镜头", enName: "Telephoto", defaultWeight: 1, image: img("camera-telephoto"), zhPrompt: "长焦镜头，压缩空间并突出主体", enPrompt: "telephoto lens compression, isolated subject, compressed background layers" },
-  { id: "camera-macro", category: "camera", styleGroup: "lens-effect", zhName: "微距", enName: "Macro", defaultWeight: 1, image: img("camera-macro"), zhPrompt: "微距镜头，呈现细微纹理", enPrompt: "macro lens detail, tactile close surface texture, shallow focus" },
+  { id: "camera-macro", category: "camera", styleGroup: "focal-length", zhName: "微距镜头", enName: "Macro Lens", defaultWeight: 1, image: img("camera-macro"), zhPrompt: "微距镜头，呈现细微纹理和极浅焦点范围", enPrompt: "macro lens detail, tactile close surface texture, extremely shallow focus range" },
   { id: "camera-fisheye", category: "camera", styleGroup: "lens-effect", zhName: "鱼眼镜头", enName: "Fisheye", defaultWeight: 1, image: img("camera-fisheye"), zhPrompt: "鱼眼镜头，夸张弧形透视", enPrompt: "fisheye lens distortion, curved horizon, exaggerated perspective" },
   { id: "camera-top-down", category: "camera", styleGroup: "angle", zhName: "俯拍", enName: "Top Down", defaultWeight: 1, image: img("camera-top-down"), zhPrompt: "垂直俯拍，从上方观察画面", enPrompt: "top-down overhead view, graphic layout, clear object placement" },
   { id: "camera-low-angle", category: "camera", styleGroup: "angle", zhName: "低机位", enName: "Low Angle", defaultWeight: 1, image: img("camera-low-angle"), zhPrompt: "低机位仰视，增强气势", enPrompt: "low-angle heroic view, powerful subject presence, upward perspective" },
@@ -385,13 +390,13 @@ export const parameters: PromptParameter[] = [
   { id: "lighting-fog", category: "lighting", styleGroup: "dramatic", zhName: "体积雾", enName: "Atmospheric Fog", defaultWeight: 1, image: img("lighting-fog"), zhPrompt: "浓厚体积雾，空间层次朦胧", enPrompt: "dense atmospheric fog, softened distance, layered depth" },
   { id: "lighting-rainy-night", category: "lighting", styleGroup: "natural", zhName: "雨夜", enName: "Rainy Night", defaultWeight: 1, image: img("lighting-rainy-night"), zhPrompt: "雨夜湿润反光，冷色夜景氛围", enPrompt: "rainy night, wet reflective ground, cool moody atmosphere" },
 
-  { id: "render-cinematic-texture", category: "render", styleGroup: "base", zhName: "电影级质感", enName: "Cinematic Texture", defaultWeight: 1, image: img("render-cinematic-texture"), zhPrompt: "电影级质感，精致光影和高级色彩", enPrompt: "premium cinematic texture, refined lighting, polished color grading" },
+  { id: "render-cinematic-texture", category: "render", styleGroup: "realism", zhName: "电影级质感", enName: "Cinematic Texture", defaultWeight: 1, image: img("render-cinematic-texture"), zhPrompt: "电影级质感，精致光影和高级色彩", enPrompt: "premium cinematic texture, refined lighting, polished color grading" },
   { id: "render-game-engine", category: "render", styleGroup: "realism", zhName: "虚幻引擎渲染", enName: "Game Engine Render", defaultWeight: 1, image: img("render-game-engine"), zhPrompt: "实时游戏引擎渲染质感，高质量 PBR 材质", enPrompt: "high-end real-time game engine render look, PBR materials, crisp realtime lighting" },
   { id: "render-octane", category: "render", styleGroup: "realism", zhName: "Octane 渲染", enName: "Octane Render", defaultWeight: 1, image: img("render-octane"), zhPrompt: "高端无偏 3D 渲染，干净反射和真实材质", enPrompt: "high-end unbiased 3D render look, clean reflections, physically plausible materials" },
   { id: "render-realistic-texture", category: "render", styleGroup: "realism", zhName: "写实纹理", enName: "Realistic Texture", defaultWeight: 1, image: img("render-realistic-texture"), zhPrompt: "写实皮肤、布料和表面微纹理", enPrompt: "realistic skin, fabric, and surface micro-texture with natural imperfections" },
-  { id: "render-shallow-depth", category: "render", styleGroup: "base", zhName: "浅景深", enName: "Shallow DOF", defaultWeight: 1, image: img("render-shallow-depth"), zhPrompt: "浅景深，主体清晰、背景柔和虚化", enPrompt: "shallow depth of field, sharp subject, soft creamy background bokeh" },
-  { id: "render-film-grain", category: "render", styleGroup: "base", zhName: "胶片颗粒", enName: "Film Grain", defaultWeight: 1, image: img("render-film-grain"), zhPrompt: "胶片颗粒，模拟胶片质感和自然噪点", enPrompt: "subtle analog film grain, organic texture, cinematic tonal response" },
-  { id: "render-hdr", category: "render", styleGroup: "base", zhName: "HDR", enName: "HDR", defaultWeight: 1, image: img("render-hdr"), zhPrompt: "HDR 高动态范围，亮部和暗部细节丰富", enPrompt: "high dynamic range detail, rich highlights and shadows, vivid tonal depth" },
+  { id: "render-shallow-depth", category: "render", styleGroup: "realism", zhName: "浅景深", enName: "Shallow DOF", defaultWeight: 1, image: img("render-shallow-depth"), zhPrompt: "浅景深，主体清晰、背景柔和虚化", enPrompt: "shallow depth of field, sharp subject, soft creamy background bokeh" },
+  { id: "render-film-grain", category: "render", styleGroup: "technical", zhName: "胶片颗粒", enName: "Film Grain", defaultWeight: 1, image: img("render-film-grain"), zhPrompt: "胶片颗粒，模拟胶片质感和自然噪点", enPrompt: "subtle analog film grain, organic texture, cinematic tonal response" },
+  { id: "render-hdr", category: "render", styleGroup: "technical", zhName: "HDR", enName: "HDR", defaultWeight: 1, image: img("render-hdr"), zhPrompt: "HDR 高动态范围，亮部和暗部细节丰富", enPrompt: "high dynamic range detail, rich highlights and shadows, vivid tonal depth" },
   { id: "render-ultra-detailed-material", category: "render", styleGroup: "realism", zhName: "高细节材质", enName: "Material Detail", defaultWeight: 1, image: img("render-ultra-detailed-material"), zhPrompt: "极高材质细节，表面纹理清晰可见", enPrompt: "ultra-detailed material close-up, tactile surface detail, crisp micro scratches" },
 
   { id: "purpose-turnaround", category: "purpose", styleGroup: "design", zhName: "三视图", enName: "Turnaround Sheet", defaultWeight: 1, image: img("purpose-turnaround"), zhPrompt: "角色三视图，正面、侧面、背面清晰展示", enPrompt: "character turnaround sheet, front side and back views, plain background, consistent proportions" },
@@ -425,6 +430,9 @@ parameters.push(
   ...culturalPatternParameters,
   ...exhaustiveParameters,
   ...colorGradingParameters,
+  ...finalSupplementParameters,
+  ...gapSupplementParameters,
+  ...colorPaletteParameters,
   ...supplementParameters,
   ...demographicParameters
 );
