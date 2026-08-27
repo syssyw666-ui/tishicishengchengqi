@@ -84,7 +84,6 @@ export const supplementParameters: PromptParameter[] = [
   param("hair-makeup", "hair-wet-look", "hair-styling", "湿发", "Wet Look Hair", "湿发造型，发丝贴合，高光明显，时尚感强", "wet-look hairstyle, sleek strands, glossy highlights, fashion mood", hairNegative),
   param("hair-makeup", "hair-windblown", "hair-styling", "风吹发丝", "Windblown Hair", "风吹发丝，头发有方向性动态", "windblown hair with directional motion and flowing strands", hairNegative),
   param("hair-makeup", "makeup-natural", "makeup-natural", "裸妆", "Natural Makeup", "自然裸妆，肤色干净，妆感轻薄", "natural makeup, clean skin tone, light barely-there finish", hairNegative),
-  param("hair-makeup", "makeup-smoky", "makeup-stylized", "烟熏妆", "Smoky Makeup", "烟熏妆，眼部阴影深，氛围强", "smoky makeup, deep eye shadow, strong atmosphere", hairNegative),
   param("hair-makeup", "makeup-red-lip", "makeup-stylized", "红唇妆", "Red Lip Makeup", "红唇妆，唇色鲜明，复古或高级感", "red lip makeup, vivid lips, retro or premium fashion feeling", hairNegative),
   param("hair-makeup", "makeup-fantasy", "makeup-stylized", "幻想妆容", "Fantasy Makeup", "幻想妆容，面部纹样或闪粉装饰清晰", "fantasy makeup with clear facial motifs or shimmer accents", hairNegative),
   param("hair-makeup", "makeup-cyber", "makeup-stylized", "赛博妆容", "Cyber Makeup", "赛博妆容，金属线条、冷色高光和未来感", "cyber makeup with metallic lines, cool highlights, futuristic detail", hairNegative),
@@ -109,7 +108,6 @@ export const supplementParameters: PromptParameter[] = [
 
   param("visual-effect", "effect-sparkles", "light-particle", "闪粉星点", "Sparkles", "画面加入闪粉星点效果，轻盈梦幻", "sparkle effects, light dreamy glitter points", effectNegative),
   param("visual-effect", "effect-particle-trails", "light-particle", "粒子轨迹", "Particle Trails", "画面加入粒子轨迹，强化运动方向和能量感", "particle trails emphasizing motion direction and energy", effectNegative),
-  param("visual-effect", "effect-dust", "atmosphere", "尘埃漂浮", "Floating Dust", "画面有尘埃漂浮，空气感和空间层次清楚", "floating dust in the air, clear atmosphere and spatial depth", effectNegative),
   param("visual-effect", "effect-smoke", "atmosphere", "烟雾", "Smoke", "画面加入烟雾效果，边缘柔散，氛围神秘", "smoke effect with soft edges and mysterious atmosphere", effectNegative),
   param("visual-effect", "effect-fire", "elemental", "火焰", "Fire", "画面加入火焰效果，暖色高光和热量感明显", "fire effect with warm highlights and visible heat feeling", effectNegative),
   param("visual-effect", "effect-electric-arc", "elemental", "电弧", "Electric Arc", "画面加入电弧效果，蓝白光线和瞬间能量", "electric arc effect, blue-white light and instant energy", effectNegative),

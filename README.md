@@ -19,6 +19,10 @@ pnpm run build
 
 构建产物会输出到 `dist`。
 
+## 图片资源规范
+
+任何批量生图、裁切或图片替换开始前，必须先阅读 [图片生产与裁切固定规范](PROJECT_IMAGE_GENERATION_STANDARD.md)。项目根目录的 `AGENTS.md` 会把这项要求作为后续任务的固定前置步骤。
+
 ## Windows 安装包测试
 
 ```bash

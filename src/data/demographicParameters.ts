@@ -1,7 +1,7 @@
 import type { CategoryId, PromptParameter } from "../types";
 
 const asset = (name: string) => `${import.meta.env.BASE_URL}assets/parameters/${name}`;
-const parameterImage = (id: string) => asset(`${id}.png`);
+const parameterImage = (id: string) => asset(`${id}.png?v=20260827-character-crop-fix`);
 const portraitImage = asset("purpose-portrait.jpg");
 const sceneImage = asset("style-photorealistic.jpg");
 const cameraImage = asset("camera-50mm-normal.jpg");
@@ -125,15 +125,12 @@ export const demographicParameters: PromptParameter[] = [
   param("camera", "camera-dolly-zoom", "motion", "滑动变焦感", "Dolly Zoom", "滑动变焦感，主体尺度稳定，背景透视产生压缩或拉伸", "dolly-zoom feeling, stable subject scale with background perspective compression or expansion", cameraImage),
 
   param("lighting", "lighting-lantern", "interior", "灯笼光", "Lantern Light", "灯笼光照明，暖红或暖黄漫射光，带传统夜景氛围", "lantern lighting, warm red or yellow diffused glow, traditional night atmosphere", lightingImage),
-  param("lighting", "lighting-fluorescent", "interior", "荧光灯", "Fluorescent Light", "荧光灯照明，冷白偏绿，室内公共空间真实感", "fluorescent lighting, cool white with slight green tint, realistic public interior mood", lightingImage),
   param("lighting", "lighting-projector", "dramatic", "投影光", "Projector Light", "投影光照明，画面带投影图案、切割光斑和戏剧层次", "projector lighting, projected patterns, cut light patches, dramatic layers", lightingImage),
   param("lighting", "lighting-stage-spotlight", "dramatic", "舞台追光", "Stage Spotlight", "舞台追光，主体被强光圈定，背景进入暗部", "stage spotlight, subject isolated by strong cone of light, background falling into darkness", lightingImage),
 
   param("render", "render-ray-traced", "realism", "光线追踪", "Ray Traced", "光线追踪渲染，反射、折射和阴影物理准确", "ray-traced rendering, physically accurate reflections refractions and shadows", renderImage),
-  param("render", "render-toon-shading", "stylized", "卡通渲染", "Toon Shading", "卡通渲染，明暗分区清晰，轮廓干净，造型简洁", "toon shading, clear light-shadow bands, clean outlines, simplified forms", renderImage),
   param("render", "render-resin-toy", "stylized", "树脂潮玩质感", "Resin Toy Texture", "树脂潮玩质感，半哑光表面、圆润高光和精致模型感", "resin designer-toy texture, semi-matte surface, rounded highlights, polished model feel", renderImage),
 
-  param("visual-effect", "visual-dust-motes", "atmosphere", "空气尘埃", "Dust Motes", "空气中漂浮细小尘埃，逆光下形成真实空间颗粒", "small dust motes floating in air, visible in backlight, realistic spatial particles"),
   param("visual-effect", "visual-embers", "elemental", "火星余烬", "Embers", "火星余烬漂浮，橙红粒子和热空气氛围", "floating embers, orange-red particles and warm heated atmosphere"),
   param("visual-effect", "visual-snowfall", "elemental", "飘雪", "Snowfall", "飘雪效果，前中后景雪粒层次和冷空气感", "falling snow effect, layered snow particles across foreground midground and background"),
   param("visual-effect", "visual-rain-streaks", "elemental", "雨丝", "Rain Streaks", "雨丝效果，斜向雨线、湿润反光和动态天气感", "rain streak effect, diagonal rain lines, wet reflections and dynamic weather mood"),

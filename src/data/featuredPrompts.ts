@@ -954,6 +954,17 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     prompt: "实验提示词：参考原图的主体、姿态、构图、空间关系和主要色块，不改变主体身份、主体数量和画面位置，将画面转换为“目标风格”，例如“水彩插画风格 / 电影写实风格 / 3D动画电影感 / 国风工笔风格”。保留核心轮廓和透视关系，重绘光影、材质、氛围与细节。不要新增无关元素，不要扭曲脸部、手部和文字。"
   },
   {
+    id: "img2img-ink-reconstruction",
+    category: "image-to-image",
+    zhTitle: "水墨重构",
+    enTitle: "Ink Reconstruction",
+    zhDescription: "保留原图结构与色彩调性，转成留白水墨纸艺插画。",
+    enDescription: "Rebuild a source image as a quiet ink illustration on matte specialty paper.",
+    originalImage: "/assets/featured/img2img-ink-reconstruction-original.png",
+    resultImage: "/assets/featured/img2img-ink-reconstruction-result.png",
+    prompt: "实验提示词：参考原图，根据原图画面比例，生成“米白哑光特种纸质感的水墨扁平重构插画”。保留原图整体色彩调性、主体结构、主体数量、空间关系与主要构图位置。景物简化为松弛柔和的块面造型，使用分层平涂搭配随性淡墨晕染笔触，轮廓自然松散，摒弃生硬轮廓线。剔除细碎纹理、杂物与厚重光影，只留存景物原生结构神韵。画面大面积留白，主体放置居中偏上位置。底部居中排布文字：首行“优雅衬线手写英文标题”，第二行“小号无衬线英文短句”。依托米白哑光纸张底色，形成兼具随性水墨气韵与干净克制学术质感的画面。不要添加多余装饰元素，不要改变主体结构，不要新增人物或景物，不要使用硬边描线。"
+  },
+  {
     id: "img2img-product-cleanup",
     category: "image-to-image",
     zhTitle: "产品图精修",

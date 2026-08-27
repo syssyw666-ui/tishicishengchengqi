@@ -1,7 +1,15 @@
 import type { CategoryId, PromptParameter } from "../types";
 
 const img = (id: string) => `${import.meta.env.BASE_URL}assets/parameters/${id}.jpg`;
-const png = (id: string) => `${import.meta.env.BASE_URL}assets/parameters/${id}.png`;
+const png = (id: string) => `${import.meta.env.BASE_URL}assets/parameters/${id}.png?v=20260827-bg-path-fix`;
+const pngParameterIds = new Set([
+  "bg-embossed-recycled-paper",
+  "bg-ribbed-glass",
+  "bg-oxidized-copper",
+  "bg-crumpled-aluminum-foil",
+  "bg-black-ripstop-nylon",
+  "bg-misty-cloud-studio"
+]);
 
 function param(
   category: CategoryId,
@@ -13,7 +21,8 @@ function param(
   enPrompt: string,
   negative: string[] = []
 ): PromptParameter {
-  return { id, category, styleGroup, zhName, enName, defaultWeight: 1, image: img(id), zhPrompt, enPrompt, negative };
+  const image = pngParameterIds.has(id) ? png(id) : img(id);
+  return { id, category, styleGroup, zhName, enName, defaultWeight: 1, image, zhPrompt, enPrompt, negative };
 }
 
 const backgroundNegative = ["busy background", "readable text", "watermark"];
@@ -64,13 +73,18 @@ export const finalSupplementParameters: PromptParameter[] = [
   param("background", "bg-pearl-satin", "fabric", "珍珠缎面背景", "Pearl Satin Background", "背景为珍珠白缎面，柔滑褶皱、高光流动和优雅商业质感", "pearl satin fabric background, silky folds, flowing highlights, elegant commercial texture", backgroundNegative),
   param("background", "bg-red-lacquer", "material", "朱红大漆背景", "Red Lacquer Background", "背景为朱红色大漆质感，高光温润、东方工艺气质和深红层次", "vermilion red lacquer background, glossy warm highlights, East Asian craft mood, rich red depth", backgroundNegative),
   param("background", "bg-museum-gray-wall", "studio", "博物馆灰墙", "Museum Gray Wall", "背景为博物馆灰色墙面，克制中性、柔和聚光和展陈高级感", "museum gray wall background, restrained neutral tone, soft spotlight, gallery display mood", backgroundNegative),
+  param("background", "bg-embossed-recycled-paper", "paper", "压纹再生纸背景", "Embossed Recycled Paper", "背景为暖象牙色压纹再生纸，细小纤维、轻微起伏压纹和温和的环保纸材质感", "warm ivory embossed recycled paper background with fine fibers, subtle relief, and a gentle sustainable paper texture", backgroundNegative),
+  param("background", "bg-ribbed-glass", "special", "波纹玻璃背景", "Ribbed Glass Background", "背景为半透明波纹玻璃，纵向压花纹理柔化后方色彩与光线，明亮干净且有现代空间感", "translucent ribbed glass background with vertical fluted texture that diffuses color and light, bright clean and modern", backgroundNegative),
+  param("background", "bg-oxidized-copper", "material", "氧化铜绿背景", "Oxidized Copper Patina", "背景为氧化铜绿表面，青绿矿物层与深褐金属底色自然交错，具有时间感和工艺质感", "oxidized copper patina background with teal mineral layers and deep brown metal naturally interwoven, timeworn and crafted", backgroundNegative),
+  param("background", "bg-crumpled-aluminum-foil", "special", "皱褶银箔背景", "Crumpled Aluminum Foil", "背景为哑光皱褶银箔，银灰色折面和受控反射形成冷静的实验感，不呈现彩虹镭射", "matte crumpled aluminum foil background with silver-gray facets and controlled reflections for a cool experimental feel, without holographic rainbow color", backgroundNegative),
+  param("background", "bg-black-ripstop-nylon", "fabric", "黑色防撕裂尼龙背景", "Black Ripstop Nylon", "背景为黑色防撕裂尼龙织物，细密方格织纹、轻微折痕和低调功能性质感清楚", "black ripstop nylon fabric background with a fine grid weave, subtle folds, and a restrained functional texture", backgroundNegative),
+  param("background", "bg-misty-cloud-studio", "studio", "云雾渐变影棚", "Misty Cloud Studio", "背景为淡紫灰与冷雾蓝的无缝云雾渐变影棚，墙地柔和衔接，适合留白人像和产品展示", "seamless misty studio sweep in pale lavender gray and cool mist blue with a soft wall-to-floor transition, suitable for spacious portraits and product display", backgroundNegative),
 
   param("camera", "camera-silhouette-doorway", "visual-guide", "门框剪影构图", "Doorway Silhouette Framing", "通过门框或暗部剪影框住主体，形成强入口感和叙事感", "subject framed by doorway or dark silhouette, strong entrance and narrative framing", cameraNegative),
   param("camera", "camera-surveillance-high", "camera-angle", "监控俯视角", "Surveillance High Angle", "高处监控式俯视角，人物变小，空间关系清楚，有冷静观察感", "high surveillance-like angle, small figures, clear spatial relationship, detached observation mood", cameraNegative),
   param("camera", "camera-foreground-obstruction", "depth", "前景遮挡构图", "Foreground Obstruction", "使用虚化前景遮挡一部分画面，增强偷看感、纵深和真实镜头感", "blurred foreground obstruction partially covering the scene, adding depth and candid lens realism", cameraNegative),
 
   param("lighting", "light-fluorescent-office", "interior", "办公室荧光灯", "Fluorescent Office Light", "办公室荧光灯，冷白顶光、真实办公环境和轻微平面感", "cool white fluorescent office light, overhead practical illumination, realistic workplace mood", lightingNegative),
-  param("lighting", "light-practical-lamp", "interior", "实景台灯光", "Practical Lamp Light", "画面内可见台灯或壁灯作为主光，暖光聚焦局部区域", "visible practical lamp or wall light as main source, warm light focusing a local area", lightingNegative),
   param("lighting", "light-red-blue-strobe", "dramatic", "红蓝警示光", "Red Blue Strobe Light", "红蓝交替警示光，强烈冷暖对比和紧张电影氛围", "red and blue strobe warning light, strong color contrast and tense cinematic atmosphere", lightingNegative),
   param("lighting", "light-laser-scan", "sci-fi", "激光扫描光", "Laser Scan Light", "激光扫描光线，细窄绿色或蓝色光束穿过主体，未来科技感", "laser scan light, thin green or blue beams crossing the subject, futuristic tech mood", lightingNegative),
   param("lighting", "light-stained-glass", "interior", "彩窗投影光", "Stained Glass Light", "彩色玻璃投影光，墙面和主体上有多色斑驳光影", "stained-glass projected light, multicolor patterned shadows across walls and subject", lightingNegative),

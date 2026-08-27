@@ -501,7 +501,7 @@ textarea:focus,
   align-items: center;
   gap: 7px;
   flex: 1 1 132px;
-  min-height: 34px;
+  min-height: 44px;
   border-radius: 8px;
   padding: 7px 11px;
   font-size: 12px;
@@ -513,7 +513,9 @@ textarea:focus,
 .section-tab-title {
   grid-area: title;
   min-width: 0;
-  white-space: nowrap;
+  overflow-wrap: anywhere;
+  line-height: 1.25;
+  white-space: normal;
 }
 
 .section-tab.has-use-cases {
@@ -679,15 +681,19 @@ textarea:focus,
 }
 
 .style-chip {
-  min-height: 30px;
+  min-height: 32px;
+  max-width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.11);
   border-radius: 999px;
-  padding: 0 11px;
+  padding: 6px 11px;
   color: #d8d7d0;
   background: rgba(255, 255, 255, 0.055);
   cursor: pointer;
   font-size: 12px;
   font-weight: 800;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+  white-space: normal;
 }
 
 .style-chip:hover {

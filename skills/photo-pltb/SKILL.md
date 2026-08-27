@@ -27,12 +27,16 @@ Use this skill to generate many reference-card images with fewer imagegen calls 
 4. Crop the sheet into asset files.
    - Use `scripts/crop_contact_sheet.py` from this skill.
    - If imagegen ignores the requested grid, inspect the actual grid and crop using the actual `cols` and `rows`.
+   - Always crop inside the visible divider with a positive safety inset. The project tool defaults to 12 px and rejects zero inset.
+   - Never rely on CSS `object-fit: cover` to hide grid contamination; final files must contain no pixels from neighboring panels.
    - Save output names exactly as parameter IDs, for example `clothing-long-sleeve.png`.
 
 5. Validate.
    - Check every expected ID has an image at the referenced path.
    - Check duplicate IDs and duplicate display names before finalizing.
    - Run the project type/build checks when assets are connected to app data.
+   - Build a labeled audit montage and inspect all four edges of every crop before connecting it to data.
+   - Preview cards with `object-fit: contain`; this exposes contamination that `cover` can conceal.
 
 ## Commands
 

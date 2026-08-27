@@ -62,6 +62,9 @@ Before final response:
 - Every `image` path referenced by data exists.
 - Type check passes if app data changed.
 - Production build passes when feasible.
+- Every crop is inspected with its full frame visible (`contain`), not only in a center-cropped preview.
+- No top, bottom, left, or right strip may contain another panel, divider, label, or unrelated subject.
+- Use the repository-wide rules in `PROJECT_IMAGE_GENERATION_STANDARD.md` before every image batch.
 
 ## Example: Clothing Batch
 

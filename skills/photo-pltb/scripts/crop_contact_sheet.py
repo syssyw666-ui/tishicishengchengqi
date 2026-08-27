@@ -18,7 +18,12 @@ def main() -> None:
     parser.add_argument("--rows", required=True, type=int, help="Actual number of rows in the sheet.")
     parser.add_argument("--ids", required=True, help="Comma-separated output IDs without extension.")
     parser.add_argument("--ext", default=".png", help="Output extension, default .png.")
-    parser.add_argument("--inset", default=0, type=int, help="Pixels to trim from each crop edge to remove grid lines.")
+    parser.add_argument(
+        "--inset",
+        default=12,
+        type=int,
+        help="Safety pixels trimmed from every cell edge. Defaults to 12 to prevent neighboring-panel bleed.",
+    )
     args = parser.parse_args()
 
     source = Path(args.source)
@@ -43,6 +48,8 @@ def main() -> None:
         bottom = height if row == args.rows - 1 else (row + 1) * cell_height
 
         inset = max(args.inset, 0)
+        if inset == 0:
+            raise ValueError("Zero inset is unsafe for generated contact sheets. Use a positive --inset value.")
         if right - left > inset * 2 and bottom - top > inset * 2:
             left += inset
             top += inset

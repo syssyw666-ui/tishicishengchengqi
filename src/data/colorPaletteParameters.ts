@@ -1,6 +1,6 @@
 import type { PromptParameter } from "../types";
 
-const img = (id: string) => `${import.meta.env.BASE_URL}assets/parameters/${id}.png`;
+const img = (id: string) => `${import.meta.env.BASE_URL}assets/parameters/${id}.png?v=20260827-palette-expansion`;
 const negative = ["random unrelated colors", "color banding", "oversaturated noise", "readable text"];
 
 function palette(
@@ -44,5 +44,29 @@ export const colorPaletteParameters: PromptParameter[] = [
   palette("palette-black-gold-luxury", "commercial", "黑金轻奢配色", "Black Gold Luxury", "哑光黑、古金、深翡翠、炭灰与暖象牙白组成低调贵气的轻奢商业配色，金色仅作点缀", "matte black, antique gold, deep emerald, charcoal, and warm ivory in a restrained luxury palette with gold used only as accents"),
   palette("palette-citrus-summer", "commercial", "柑橘夏日配色", "Citrus Summer", "橘子橙、柠檬黄、珊瑚色、叶绿与天空蓝组成明亮清新的夏日商业配色", "tangerine, lemon yellow, coral, leaf green, and sky blue in a bright fresh summer commercial palette"),
   palette("palette-pastel-macaron", "commercial", "马卡龙甜品配色", "Pastel Macaron", "浅粉、奶油黄、薄荷绿、淡紫与奶油白组成甜美但干净的马卡龙商业配色，适合礼盒与生活方式视觉", "blush pink, butter yellow, mint, pale lilac, and cream in a sweet but clean macaron palette for gift and lifestyle visuals"),
-  palette("palette-y2k-chrome", "commercial", "Y2K 铬彩配色", "Y2K Chrome", "铬银、电光蓝、半透明淡紫、热粉与亮黑组成高反光的千禧未来配色，适合数码潮流设计", "chrome silver, electric blue, translucent lilac, hot pink, and glossy black in a reflective millennium-future palette for digital trend design")
+  palette("palette-y2k-chrome", "commercial", "Y2K 铬彩配色", "Y2K Chrome", "铬银、电光蓝、半透明淡紫、热粉与亮黑组成高反光的千禧未来配色，适合数码潮流设计", "chrome silver, electric blue, translucent lilac, hot pink, and glossy black in a reflective millennium-future palette for digital trend design"),
+  palette("palette-song-porcelain", "chinese", "宋瓷月白配色", "Song Porcelain Moon White", "月白、淡青瓷绿、藕粉、暖灰与墨色组成温润含蓄的宋瓷配色，适合东方静物、建筑和雅致设计", "moon white, pale celadon, lotus-root pink, warm gray, and ink in a subtle Song porcelain palette for East Asian still life, architecture, and refined design"),
+  palette("palette-forbidden-city-winter", "chinese", "故宫冬雪配色", "Forbidden City Winter", "宫墙红、雪白、琉璃金、石灰与松柏绿组成庄重清冷的宫廷冬日配色，红色作为稳定视觉核心", "palace red, snow white, glazed-tile gold, stone gray, and pine green in a stately cool imperial-winter palette with red as the visual anchor"),
+  palette("palette-chinese-opera", "chinese", "戏曲华彩配色", "Chinese Opera Brilliance", "胭脂红、孔雀蓝、明黄、墨黑与玉白组成高辨识度戏曲配色，色彩鲜明且主次清楚", "rouge red, peacock blue, bright yellow, ink black, and jade white in a highly recognizable Chinese-opera palette with clear color hierarchy"),
+  palette("palette-bamboo-scholar", "chinese", "竹林文人配色", "Bamboo Scholar", "竹青、墨灰、宣纸白、胡桃褐与浅赭组成清静文人空间配色，强调自然材质和留白", "bamboo green, ink gray, rice-paper ivory, walnut brown, and pale ochre in a quiet scholarly palette emphasizing natural materials and negative space"),
+  palette("palette-morandi-apricot", "morandi", "莫兰迪杏桃配色", "Morandi Apricot", "灰杏、藕紫米、鼠尾草灰、奶油白与烟蓝组成柔暖而不甜腻的低饱和配色", "dusty apricot, mauve beige, sage gray, cream, and smoke blue in a warm restrained low-saturation palette"),
+  palette("palette-morandi-charcoal-rose", "morandi", "莫兰迪炭粉配色", "Morandi Charcoal Rose", "炭灰、灰玫瑰、灰褐、骨白与褪莓红组成成熟低对比配色，适合时装和品牌视觉", "charcoal, dusty rose, taupe, bone white, and faded berry in a mature low-contrast palette for fashion and brand visuals"),
+  palette("palette-morandi-sea-salt", "morandi", "莫兰迪海盐配色", "Morandi Sea Salt", "灰水绿、贝壳灰、沙米色、雾白与褪珊瑚组成清凉轻盈的海岸低饱和配色", "muted aqua, shell gray, sandy beige, fog white, and faded coral in a cool airy coastal low-saturation palette"),
+  palette("palette-morandi-mustard", "morandi", "莫兰迪芥末配色", "Morandi Mustard", "灰芥末黄、陶土、灰绿、燕麦与炭灰组成复古现代兼具的空间配色，暖色克制", "muted mustard, clay, gray-green, oatmeal, and charcoal in a restrained warm palette balancing vintage and modern interiors"),
+  palette("palette-day-for-night", "cinema", "日拍夜蓝调配色", "Day for Night Blue", "深钴蓝、月光灰、低饱和青、窗灯琥珀与黑色组成日拍夜电影配色，保持夜色层次而不死黑", "deep cobalt, moon gray, desaturated cyan, warm window amber, and black in a day-for-night cinematic palette with readable nocturnal depth"),
+  palette("palette-sci-fi-amber-cyan", "cinema", "琥珀青科幻配色", "Amber Cyan Sci-Fi", "电光青、琥珀橙、石墨灰、冷白与少量警示红组成清晰理性的科幻设备配色", "electric cyan, amber, graphite, cool white, and sparse warning red in a crisp technical science-fiction palette"),
+  palette("palette-pastoral-film", "cinema", "田园胶片配色", "Pastoral Film", "褪草绿、奶油色、桃肤色、灰天蓝与暖棕组成柔和乡野胶片配色，保留轻微褪色感", "faded meadow green, cream, muted peach, gray-blue sky, and warm brown in a gentle pastoral film palette with subtle fading"),
+  palette("palette-crime-thriller-green", "cinema", "犯罪惊悚绿调", "Crime Thriller Green", "病态灰绿、钠灯琥珀、水泥灰、暗酒红与黑色组成压迫感犯罪惊悚配色，局部暖光用于线索强调", "sickly gray-green, sodium amber, concrete gray, dark burgundy, and black in a tense crime-thriller palette with warm clues as accents"),
+  palette("palette-alpine-lake", "nature", "高山湖泊配色", "Alpine Lake", "冰川松石、深湖蓝、花岗岩灰、雪白与高山林绿组成清澈高海拔自然配色", "glacier turquoise, deep lake blue, granite gray, snow white, and alpine green in a clear high-altitude natural palette"),
+  palette("palette-autumn-maple", "nature", "秋枫山林配色", "Autumn Maple Forest", "枫叶红、焦橙、赭黄、树皮棕与雾灰组成层次丰富的秋季山林配色，避免单一橙红", "maple red, burnt orange, ochre, bark brown, and mist gray in a layered autumn-forest palette avoiding a single orange cast"),
+  palette("palette-volcanic-earth", "nature", "火山大地配色", "Volcanic Earth", "熔岩红、玄武岩黑、火山灰、硫磺黄与铁锈棕组成强烈地质配色，强调高温与冷岩反差", "lava red, basalt black, ash gray, sulfur yellow, and rust brown in a dramatic geological palette contrasting heat and cold rock"),
+  palette("palette-spring-rain", "nature", "春雨新绿配色", "Spring Rain Green", "新叶绿、雨水蓝、云灰、花粉与湿土棕组成清新湿润的春雨配色，明度柔和", "fresh leaf green, rain blue, cloud gray, blossom pink, and wet-earth brown in a fresh humid spring-rain palette with soft values"),
+  palette("palette-indian-spice", "global", "印度香料配色", "Indian Spice", "姜黄、辣椒红、靛蓝、豆蔻绿与砂岩色组成浓郁手作感配色，适合民俗、餐饮和织物视觉", "turmeric yellow, chili red, indigo, cardamom green, and sandstone in a rich handcrafted palette for folk, food, and textile visuals"),
+  palette("palette-moroccan-tile", "global", "摩洛哥花砖配色", "Moroccan Tile", "钴蓝、松石绿、陶土、象牙白与黄铜组成几何装饰感强的摩洛哥花砖配色", "cobalt, turquoise, terracotta, ivory, and brass in a geometric ornamental Moroccan-tile palette"),
+  palette("palette-african-earth", "global", "非洲大地配色", "African Earth", "赤陶棕、赭黄、乌木黑、草原绿与日光米组成温暖有重量的非洲大地配色，适合自然和织物设计", "burnt sienna, ochre, ebony, savanna green, and sun cream in a warm grounded African-earth palette for nature and textile design"),
+  palette("palette-baltic-winter", "global", "波罗的海冬日配色", "Baltic Winter", "冰蓝、松林灰绿、羊毛灰、浆果红与浅木色组成清冷舒适的北方冬日配色", "icy blue, pine gray-green, wool gray, berry red, and pale wood in a cool yet comfortable northern-winter palette"),
+  palette("palette-tech-cyan-lime", "commercial", "科技青柠配色", "Tech Cyan Lime", "电光青、酸性青柠、石墨、洁白与信号紫组成高辨识度科技商业配色，适合数码产品和运动品牌", "electric cyan, acid lime, graphite, clean white, and signal purple in a high-recognition technology palette for digital products and sports brands"),
+  palette("palette-beauty-nude-rose", "commercial", "裸粉美妆配色", "Nude Rose Beauty", "裸米、灰玫瑰、可可棕、香槟金与柔白组成高级肤感美妆配色，避免过度粉甜", "nude beige, dusty rose, cocoa, champagne, and soft white in a premium skin-flattering beauty palette without excessive sweetness"),
+  palette("palette-food-appetite", "commercial", "食欲暖调配色", "Appetite Warm", "番茄红、藏红花黄、香草绿、奶油色与烘烤棕组成自然诱人的餐饮配色，强调食材真实感", "tomato red, saffron, herb green, cream, and roasted brown in a naturally appetizing food palette emphasizing ingredient realism"),
+  palette("palette-eco-kraft", "commercial", "环保牛皮纸配色", "Eco Kraft", "牛皮纸棕、再生纸米、叶绿、炭灰与低饱和橙组成可信赖的环保包装配色，保留材料本色", "kraft brown, recycled cream, leaf green, charcoal, and muted orange in a trustworthy sustainable-packaging palette preserving natural material color")
 ];
