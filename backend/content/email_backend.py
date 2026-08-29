@@ -151,6 +151,11 @@ class DatabaseConfiguredEmailBackend(BaseEmailBackend):
             try:
                 body = exc.read().decode("utf-8", errors="replace").strip()
                 if body:
+                    if "1010" in body:
+                        return (
+                            "EmailJS 未允许服务端访问（错误 1010）。请在 EmailJS 的 Account → Security 中开启 "
+                            "Allow EmailJS API for non-browser applications。"
+                        )
                     return body
             except OSError:
                 pass

@@ -301,3 +301,33 @@
 .field-result_image_file[hidden] {
   display: none !important;
 }
+.provider-setup-guide {
+  margin: 10px 0 2px;
+  padding: 12px 14px;
+  border-left: 4px solid #409eff;
+  border-radius: 4px;
+  background: #f4f8ff;
+  color: #303133;
+  line-height: 1.75;
+}
+
+.provider-setup-guide strong {
+  color: #1f2d3d;
+}
+
+.provider-setup-guide ol {
+  margin: 7px 0 0 20px;
+  padding: 0;
+}
+
+.provider-setup-guide a {
+  color: #1677c8;
+  text-decoration: underline;
+}
+
+.provider-setup-guide code {
+  padding: 1px 4px;
+  border-radius: 3px;
+  background: #e8eef7;
+  color: #b42318;
+}

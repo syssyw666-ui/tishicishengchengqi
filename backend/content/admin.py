@@ -11,11 +11,51 @@ from django.db import transaction
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 from django.utils.html import format_html
+from django.utils.safestring import mark_safe
 
 from .catalog_labels import (
     catalog_labels, catalog_ordering, category_choices, category_label, group_choices, group_label,
 )
 from .models import DeploymentSettings, Feedback, FeaturedPrompt, ParameterOption, PromptTemplate, SiteSettings
+
+
+EMAILJS_SETUP_GUIDE = mark_safe("""
+<div class="provider-setup-guide">
+  <strong>个人创作者配置流程</strong>
+  <ol>
+    <li><a href="https://dashboard.emailjs.com/sign-up" target="_blank" rel="noopener">注册 EmailJS 个人账号</a>，不需要公司或自有域名。</li>
+    <li>进入 <a href="https://dashboard.emailjs.com/admin" target="_blank" rel="noopener">Email Services</a>，连接 Gmail、Outlook 等个人邮箱，并先通过服务测试。</li>
+    <li>进入 Email Templates 新建模板：To Email=<code>{{to_email}}</code>，Subject=<code>{{subject}}</code>，Content=<code>{{message}}</code>，From Name=<code>{{from_name}}</code>，Reply To=<code>{{reply_to}}</code>。</li>
+    <li>进入 Account 获取 Public Key；打开 <strong>Account → Security</strong>，必须启用 <strong>Allow EmailJS API for non-browser applications</strong>，否则会报错 1010。</li>
+    <li>若启用了 Use Private Key，请把同页 Private Key 填到下方；Service ID 与 Template ID 分别从服务页和模板 Settings 页复制。</li>
+    <li>保存本页，再点击“保存并发送测试邮件”。测试邮件发送到当前管理员账号的邮箱。</li>
+  </ol>
+</div>
+""")
+
+BREVO_SETUP_GUIDE = mark_safe("""
+<div class="provider-setup-guide">
+  <strong>Brevo 配置流程</strong>
+  <ol>
+    <li><a href="https://onboarding.brevo.com/" target="_blank" rel="noopener">注册 Brevo</a>。</li>
+    <li>在 Settings → Senders, Domains, IPs → Senders 添加发件邮箱，并完成验证码验证。</li>
+    <li>在 Settings → SMTP & API → API Keys & MCP 创建 API Key，只会完整显示一次。</li>
+    <li>把 API Key 填到下方，默认发件邮箱必须与已验证发件人一致，然后保存并发送测试邮件。</li>
+  </ol>
+</div>
+""")
+
+SMTP_SETUP_GUIDE = mark_safe("""
+<div class="provider-setup-guide">
+  <strong>SMTP 配置流程</strong>
+  <ol>
+    <li>仅适用于 Railway Pro 及以上套餐，免费、试用和 Hobby 套餐会直接拦截 SMTP。</li>
+    <li>在邮箱后台开启 SMTP 服务并生成独立授权码，不要填写邮箱登录密码。</li>
+    <li>163 邮箱通常填写 smtp.163.com、端口 465、启用 SSL、关闭 TLS。</li>
+    <li>填写发件邮箱与授权码，保存后发送测试邮件；升级 Railway 套餐后需要重新部署服务。</li>
+  </ol>
+</div>
+""")
 
 
 def _effective_path(obj, uploaded_field, bundled_field):
@@ -481,12 +521,12 @@ class DeploymentSettingsAdmin(admin.ModelAdmin):
                 "emailjs_private_key", "emailjs_private_key_status",
             ),
             "classes": ("email-provider-panel", "email-provider-emailjs"),
-            "description": "无需公司或自有域名。模板需设置 To Email={{to_email}}、Subject={{subject}}、Content={{message}}。",
+            "description": EMAILJS_SETUP_GUIDE,
         }),
         ("Brevo 邮件 API", {
             "fields": ("brevo_api_key", "brevo_api_key_status"),
             "classes": ("email-provider-panel", "email-provider-brevo"),
-            "description": "适合已有 Brevo 账号的用户。",
+            "description": BREVO_SETUP_GUIDE,
         }),
         ("SMTP 兼容设置", {
             "fields": (
@@ -494,7 +534,7 @@ class DeploymentSettingsAdmin(admin.ModelAdmin):
                 "smtp_password_status", "smtp_use_ssl", "smtp_use_tls",
             ),
             "classes": ("email-provider-panel", "email-provider-smtp"),
-            "description": "仅在 Railway Pro 及以上套餐或其他允许 SMTP 的服务器上使用。",
+            "description": SMTP_SETUP_GUIDE,
         }),
         ("数据库连接", {
             "fields": ("database_status",),
@@ -510,6 +550,9 @@ class DeploymentSettingsAdmin(admin.ModelAdmin):
         "emailjs_private_key_status", "brevo_api_key_status", "smtp_password_status",
         "database_status", "storage_status", "updated_at",
     )
+
+    class Media:
+        css = {"all": ("content/admin.css",)}
 
     def has_add_permission(self, request):
         return not DeploymentSettings.objects.exists()
