@@ -19,6 +19,9 @@ def get_deployment_email_settings():
                 "provider": row.email_provider,
                 "brevo_api_key": row.get_brevo_api_key(),
                 "brevo_sender_name": row.brevo_sender_name,
+                "emailjs_service_id": row.emailjs_service_id,
+                "emailjs_template_id": row.emailjs_template_id,
+                "emailjs_public_key": row.emailjs_public_key,
                 "host": row.smtp_host,
                 "port": row.smtp_port,
                 "username": row.smtp_username,
@@ -44,6 +47,8 @@ class DatabaseConfiguredEmailBackend(BaseEmailBackend):
                     message.from_email = runtime["from_email"]
         if runtime and runtime["provider"] == "brevo":
             return self._send_with_brevo(email_messages, runtime)
+        if runtime and runtime["provider"] == "emailjs":
+            return self._send_with_emailjs(email_messages, runtime)
         return self._send_with_smtp(email_messages, runtime)
 
     def _send_with_smtp(self, email_messages, runtime):
@@ -86,6 +91,55 @@ class DatabaseConfiguredEmailBackend(BaseEmailBackend):
                 if not self.fail_silently:
                     detail = getattr(exc, "reason", None) or str(exc)
                     raise RuntimeError(f"Brevo 邮件发送失败：{detail}") from exc
+        return sent
+
+    def _send_with_emailjs(self, email_messages, runtime):
+        required = (
+            runtime.get("emailjs_service_id"), runtime.get("emailjs_template_id"),
+            runtime.get("emailjs_public_key"),
+        )
+        if not all(required):
+            if self.fail_silently:
+                return 0
+            raise RuntimeError("尚未完整填写 EmailJS Service ID、Template ID 和 Public Key。")
+
+        sent = 0
+        for message in email_messages:
+            html_content = ""
+            for alternative in getattr(message, "alternatives", ()):
+                content = getattr(alternative, "content", alternative[0])
+                mimetype = getattr(alternative, "mimetype", alternative[1])
+                if mimetype == "text/html":
+                    html_content = content
+                    break
+            payload = {
+                "service_id": runtime["emailjs_service_id"],
+                "template_id": runtime["emailjs_template_id"],
+                "user_id": runtime["emailjs_public_key"],
+                "template_params": {
+                    "to_email": ", ".join(message.to),
+                    "subject": message.subject,
+                    "message": message.body,
+                    "html_content": html_content,
+                    "from_name": runtime.get("brevo_sender_name") or "图灵词造",
+                    "reply_to": message.reply_to[0] if message.reply_to else runtime.get("from_email", ""),
+                },
+            }
+            try:
+                request = Request(
+                    "https://api.emailjs.com/api/v1.0/email/send",
+                    data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
+                    headers={"content-type": "application/json"},
+                    method="POST",
+                )
+                with urlopen(request, timeout=settings.EMAIL_TIMEOUT) as response:
+                    if response.status != 200:
+                        raise RuntimeError(f"EmailJS 邮件 API 返回状态 {response.status}。")
+                sent += 1
+            except (HTTPError, URLError, OSError, RuntimeError) as exc:
+                if not self.fail_silently:
+                    detail = getattr(exc, "reason", None) or str(exc)
+                    raise RuntimeError(f"EmailJS 邮件发送失败：{detail}") from exc
         return sent
 
     @staticmethod

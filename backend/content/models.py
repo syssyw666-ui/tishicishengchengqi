@@ -121,6 +121,7 @@ class SiteSettings(models.Model):
 
 class DeploymentSettings(models.Model):
     EMAIL_PROVIDER_CHOICES = (
+        ("emailjs", "EmailJS 个人邮件 API（推荐）"),
         ("brevo", "Brevo 邮件 API（Railway 免费/试用推荐）"),
         ("smtp", "SMTP（Railway Pro 及以上可用）"),
     )
@@ -131,6 +132,9 @@ class DeploymentSettings(models.Model):
     )
     brevo_api_key_encrypted = models.TextField("Brevo API Key 密文", blank=True, editable=False)
     brevo_sender_name = models.CharField("发件人名称", max_length=120, default="图灵词造")
+    emailjs_service_id = models.CharField("EmailJS Service ID", max_length=120, blank=True)
+    emailjs_template_id = models.CharField("EmailJS Template ID", max_length=120, blank=True)
+    emailjs_public_key = models.CharField("EmailJS Public Key", max_length=255, blank=True)
     smtp_host = models.CharField("SMTP 服务器", max_length=255, default="smtp.163.com")
     smtp_port = models.PositiveIntegerField("SMTP 端口", default=465)
     smtp_username = models.EmailField("发件邮箱", blank=True)

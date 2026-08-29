@@ -204,6 +204,10 @@ class DeploymentSettingsAdminForm(forms.ModelForm):
             if provider == "brevo":
                 if not cleaned.get("brevo_api_key") and not self.instance.has_brevo_api_key:
                     raise forms.ValidationError("首次使用 Brevo 邮件 API 时必须填写 API Key。")
+            elif provider == "emailjs":
+                required = ("emailjs_service_id", "emailjs_template_id", "emailjs_public_key")
+                if any(not cleaned.get(field) for field in required):
+                    raise forms.ValidationError("使用 EmailJS 前，请完整填写 Service ID、Template ID 和 Public Key。")
             else:
                 required = ("smtp_host", "smtp_port", "smtp_username")
                 if any(not cleaned.get(field) for field in required):
@@ -458,9 +462,18 @@ class DeploymentSettingsAdmin(admin.ModelAdmin):
         ("邮件发送", {
             "fields": (
                 "smtp_enabled", "email_provider", "default_from_email", "brevo_sender_name",
-                "brevo_api_key", "brevo_api_key_status", "feedback_notification_email",
+                "feedback_notification_email",
             ),
-            "description": "Railway 免费、试用和 Hobby 套餐会拦截 SMTP，请选择 Brevo 邮件 API。用于注册激活、忘记密码和意见建议提醒。",
+            "description": "个人创作者推荐 EmailJS；Railway 免费、试用和 Hobby 套餐会拦截 SMTP。用于注册激活、忘记密码和意见建议提醒。",
+        }),
+        ("EmailJS 个人邮件 API", {
+            "fields": ("emailjs_service_id", "emailjs_template_id", "emailjs_public_key"),
+            "description": "无需公司或自有域名。模板需设置 To Email={{to_email}}、Subject={{subject}}、Content={{message}}。",
+        }),
+        ("Brevo 邮件 API", {
+            "fields": ("brevo_api_key", "brevo_api_key_status"),
+            "classes": ("collapse",),
+            "description": "适合已有 Brevo 账号的用户。",
         }),
         ("SMTP 兼容设置", {
             "fields": (

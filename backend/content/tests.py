@@ -316,3 +316,27 @@ class BrevoEmailBackendTests(TestCase):
         self.assertEqual(request.headers["Api-key"], "brevo-secret-key")
         self.assertEqual(payload["sender"], {"name": "图灵词造", "email": "sender@example.com"})
         self.assertEqual(payload["to"], [{"email": "reader@example.com"}])
+
+    def test_emailjs_backend_sends_personal_https_api_request(self):
+        settings_row = DeploymentSettings.objects.first() or DeploymentSettings.objects.create()
+        settings_row.smtp_enabled = True
+        settings_row.email_provider = "emailjs"
+        settings_row.default_from_email = "sender@example.com"
+        settings_row.emailjs_service_id = "service_personal"
+        settings_row.emailjs_template_id = "template_activation"
+        settings_row.emailjs_public_key = "public-key"
+        settings_row.save()
+        response = MagicMock()
+        response.status = 200
+        response.__enter__.return_value = response
+
+        with patch("content.email_backend.urlopen", return_value=response) as mocked_urlopen:
+            sent = send_mail("激活账号", "请点击激活链接", None, ["reader@example.com"])
+
+        self.assertEqual(sent, 1)
+        request = mocked_urlopen.call_args.args[0]
+        payload = json.loads(request.data.decode("utf-8"))
+        self.assertEqual(request.full_url, "https://api.emailjs.com/api/v1.0/email/send")
+        self.assertEqual(payload["service_id"], "service_personal")
+        self.assertEqual(payload["template_id"], "template_activation")
+        self.assertEqual(payload["template_params"]["to_email"], "reader@example.com")
