@@ -10,6 +10,12 @@ pnpm install
 
 ## 生成安装包
 
+如需让安装后的登录、意见建议和云端模板功能连接正式 Django 后端，先在 `frontend/.env` 中配置：
+
+```text
+VITE_API_BASE_URL=https://api.example.com/api
+```
+
 ```bash
 pnpm run package:win
 ```
@@ -36,7 +42,7 @@ pnpm run package:win:dir
 
 ## 说明
 
-- 这个安装包只是把现有前端版本包进本地桌面壳中，不影响 Cloudflare Pages 网页部署。
+- 这个安装包把 Vue 前端包进本地桌面壳中，不影响 Cloudflare Pages 网页部署；提示词生成可离线使用，账号与模板功能需要能访问配置好的 Django 后端。
 - 为了兼容 Windows 打包工具链，安装包内部英文名为 `PromptGenerator`，软件窗口标题和快捷方式仍使用中文。
 - 当前测试封装关闭了 Windows exe 资源编辑步骤，用于绕过本机 `rcedit` 提交失败问题。
 - 当前没有接入代码签名证书，所以 Windows 可能会提示未知发布者，这是正常现象。

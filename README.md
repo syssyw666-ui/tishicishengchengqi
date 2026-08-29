@@ -1,54 +1,97 @@
 # 图片提示词生成器
 
-线上地址：https://tishicishengchengqi.syssyw666.workers.dev/
+线上前端：https://tishicishengchengqi.syssyw666.workers.dev/
 
-一个面向 AI 生图的可视化提示词生成器。用户填写绘画主体和不想出现的内容，通过图片卡片选择风格、角色、衣着、姿势、表情、场景、构图、光线、渲染、调色、用途等参数，并生成可复制的提示词。
+项目已拆分为 Vue 前端与 Django REST 后端。未登录用户仍可完整使用提示词生成器；登录后可为当前配置命名、上传展示图片并保存为个人模板。
 
-## 本地运行
+## 技术架构
+
+- 前端：Vue 3 + TypeScript + Vite，代码位于 `frontend/`
+- 后端：Django 5.2 LTS + Django REST Framework，代码位于 `backend/`
+- 数据库：MySQL 8，使用 Django ORM 与 `mysqlclient`
+- 账号：Djoser + JWT，注册后必须通过邮件激活
+- 后台：Django Simple UI，地址为 `/admin/`
+- 数据库可视化：可使用 Navicat 连接同一个 MySQL 实例
+
+## 第一次本地启动
+
+1. 安装 Node.js 22、Python 3.12 和 MySQL 8。
+2. 复制 `backend/.env.example` 为 `backend/.env`，填写 MySQL 和邮箱 SMTP 信息。
+3. 在 MySQL 或 Navicat 中创建 `prompt_generator` 数据库及对应用户。
+4. 安装依赖并初始化数据库：
 
 ```bash
 pnpm install
-pnpm run dev
+python -m pip install -r backend/requirements.txt
+python backend/manage.py migrate
+python backend/manage.py seed_catalog
+python backend/manage.py createsuperuser
 ```
 
-## 构建
+5. 分别启动后端与前端：
+
+```bash
+python backend/manage.py runserver 127.0.0.1:8000
+pnpm run dev:frontend
+```
+
+前端地址为 `http://127.0.0.1:5174/`，管理后台为 `http://127.0.0.1:8000/admin/`。
+
+## 现有图库同步到后台
+
+前端仍内置完整离线图库，后端不可用时生成器也能浏览和生成提示词。修改 `frontend/src/data/` 后执行：
+
+```bash
+pnpm run catalog:export
+python backend/manage.py seed_catalog
+```
+
+这会把 1,334 个参数和 144 个精选提示词同步到数据库。管理员在 Simple UI 中上传替换图片或修改提示词后，前端会优先使用 API 返回的同 ID 内容。
+
+## 邮件激活
+
+正式环境必须在 `backend/.env` 中配置真实 SMTP，并把以下值改为线上地址：
+
+```text
+FRONTEND_URL=https://你的前端域名
+DJOSER_DOMAIN=你的前端域名
+CORS_ALLOWED_ORIGINS=https://你的前端域名
+CSRF_TRUSTED_ORIGINS=https://你的前端域名
+DEFAULT_FROM_EMAIL=你的发件邮箱
+```
+
+163 邮箱建议使用以下 SMTP 加密组合：
+
+```text
+EMAIL_HOST=smtp.163.com
+EMAIL_PORT=465
+EMAIL_USE_SSL=1
+EMAIL_USE_TLS=0
+EMAIL_TIMEOUT=20
+```
+
+`EMAIL_HOST_PASSWORD` 应填写邮箱客户端授权码，不是网页登录密码。授权码只保存在被 Git 忽略的 `backend/.env` 中。
+
+注册成功后前端显示“等待激活”；邮件链接格式为 `https://你的前端域名/#/activate/{uid}/{token}`，点击后 Vue 会调用后端激活接口并显示登录入口。
+
+## REST API
+
+- `GET /api/catalog/parameters/`：可用参数图库
+- `GET /api/catalog/featured-prompts/`：精选提示词
+- `POST /api/auth/users/`：注册
+- `POST /api/auth/users/activation/`：激活账号
+- `POST /api/auth/jwt/create/`：登录并获取 JWT
+- `GET|POST /api/templates/`：读取或保存当前用户模板
+- `GET|PUT|PATCH|DELETE /api/templates/{id}/`：管理单个个人模板
+- `POST /api/feedback/`：提交意见建议
+
+模板接口必须登录，并且后端强制限定为当前用户自己的数据。
+
+## 构建与测试
 
 ```bash
 pnpm run build
+python backend/manage.py test accounts content
 ```
 
-构建产物会输出到 `dist`。
-
-## 图片资源规范
-
-任何批量生图、裁切或图片替换开始前，必须先阅读 [图片生产与裁切固定规范](PROJECT_IMAGE_GENERATION_STANDARD.md)。项目根目录的 `AGENTS.md` 会把这项要求作为后续任务的固定前置步骤。
-
-## Windows 安装包测试
-
-```bash
-pnpm install
-pnpm run package:win
-```
-
-安装包会输出到 `release` 目录。若只想先测试免安装目录版：
-
-```bash
-pnpm run package:win:dir
-```
-
-## Cloudflare Pages 部署配置
-
-在 Cloudflare Pages 连接 GitHub 仓库后，使用以下设置：
-
-```text
-Framework preset: Vite
-Build command: pnpm run build
-Build output directory: dist
-Node.js version: 22
-```
-
-当前应用是单页工具，没有额外前端路由；仓库不包含 `_redirects`，避免 `wrangler deploy` 判断为重定向循环。
-
-## 说明
-
-当前版本是纯前端工具，不直接调用生图 API。管理员后台适合演示和本地维护，公开上线后如需真实账号权限、云端保存和多人管理，建议后续接入后端数据库与正式鉴权。
+图片生成、裁切或替换前，必须先阅读 `PROJECT_IMAGE_GENERATION_STANDARD.md` 和项目内 `photo-pltb` 规范。

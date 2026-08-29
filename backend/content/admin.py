@@ -1,0 +1,484 @@
+import json
+from types import MethodType
+from urllib.parse import quote
+
+from django import forms
+from django.conf import settings
+from django.contrib import admin
+from django.db import transaction
+from django.http import HttpResponseRedirect
+from django.urls import reverse
+from django.utils.html import format_html
+
+from .catalog_labels import (
+    catalog_labels, catalog_ordering, category_choices, category_label, group_choices, group_label,
+)
+from .models import Feedback, FeaturedPrompt, ParameterOption, PromptTemplate, SiteSettings
+
+
+def _effective_path(obj, uploaded_field, bundled_field):
+    uploaded = getattr(obj, uploaded_field)
+    return uploaded.name if uploaded else getattr(obj, bundled_field)
+
+
+def _effective_url(obj, uploaded_field, bundled_field):
+    uploaded = getattr(obj, uploaded_field)
+    if uploaded:
+        return uploaded.url
+    path = getattr(obj, bundled_field)
+    if not path:
+        return ""
+    if path.startswith(("http://", "https://", "data:")):
+        return path
+    return f"{settings.FRONTEND_URL.rstrip('/')}/{path.lstrip('/')}"
+
+
+def _preview(url, label, compact=False):
+    if not url:
+        return "暂无图片"
+    size_class = " compact" if compact else ""
+    return format_html(
+        '<span class="catalog-preview{}"><img src="{}" alt="{}">'
+        '<span class="catalog-preview-zoom"><img src="{}" alt="{}"></span></span>',
+        size_class, url, label, url, label,
+    )
+
+
+class CatalogImageUploadWidget(forms.ClearableFileInput):
+    current_url = ""
+    current_path = ""
+    preview_label = "图片"
+
+    def __init__(self, attrs=None, *, crop_ratio="16:9", crop_context="图片展示框"):
+        super().__init__(attrs)
+        self.crop_ratio = crop_ratio
+        self.crop_context = crop_context
+
+    def render(self, name, value, attrs=None, renderer=None):
+        upload_input = super().render(name, value, attrs, renderer)
+        preview = _preview(self.current_url, self.preview_label) if self.current_url else "暂无图片"
+        path = self.current_path or "保存后生成上传路径"
+        crop_source = self.current_url
+        if self.current_path.startswith("/assets/"):
+            crop_source = f"/admin/content/catalog-image-source/?path={quote(self.current_path, safe='')}"
+        return format_html(
+            '<div class="catalog-image-field"><div class="catalog-image-current">{}'
+            '<div><strong>当前图片</strong><code>{}</code></div></div>'
+            '<div class="catalog-image-upload"><strong>上传替换图片</strong>{}'
+            '<div class="catalog-crop-controls" data-crop-ratio="{}" data-crop-context="{}" data-current-url="{}">'
+            '<strong class="catalog-crop-title">自动裁剪（必选）</strong>'
+            '<span class="catalog-crop-hint">适配{} · {}</span>'
+            '<button type="button" class="button catalog-crop-open" disabled>调整裁剪</button>'
+            '</div></div></div>',
+            preview, path, upload_input, self.crop_ratio, self.crop_context, crop_source,
+            self.crop_context, self.crop_ratio,
+        )
+
+
+class ParameterOptionAdminForm(forms.ModelForm):
+    category = forms.ChoiceField(label="分类", choices=category_choices())
+    style_group = forms.ChoiceField(label="子分类", required=True)
+    image_file = forms.ImageField(
+        label="图片路径",
+        required=False,
+        widget=CatalogImageUploadWidget(crop_context="参数卡片"),
+        help_text="当前图片会保留；选择新文件并保存后即完成替换。",
+    )
+
+    class Meta:
+        model = ParameterOption
+        exclude = ("image", "uploaded_image")
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        category = self.data.get("category") or getattr(self.instance, "category", "")
+        current_group = self.data.get("style_group") or getattr(self.instance, "style_group", "")
+        self.fields["style_group"].choices = group_choices(category, current=current_group)
+        self.fields["style_group"].widget.attrs["data-group-options"] = json.dumps(
+            catalog_labels()[1], ensure_ascii=False
+        )
+        widget = self.fields["image_file"].widget
+        widget.current_path = _effective_path(self.instance, "uploaded_image", "image") if self.instance.pk else ""
+        widget.current_url = _effective_url(self.instance, "uploaded_image", "image") if self.instance.pk else ""
+        widget.preview_label = getattr(self.instance, "zh_name", "参数图片") or "参数图片"
+
+    def save(self, commit=True):
+        instance = super().save(commit=False)
+        if self.cleaned_data.get("image_file"):
+            instance.uploaded_image = self.cleaned_data["image_file"]
+        if commit:
+            instance.save()
+            self.save_m2m()
+        return instance
+
+
+class FeaturedPromptAdminForm(forms.ModelForm):
+    category = forms.ChoiceField(label="分类", choices=category_choices(featured=True))
+    group = forms.ChoiceField(label="子分类", required=True)
+    image_file = forms.ImageField(
+        label="展示图片路径", required=False,
+        widget=CatalogImageUploadWidget(crop_context="文生图展示卡片"),
+        help_text="用于文生图卡片。",
+    )
+    original_image_file = forms.ImageField(
+        label="原图路径", required=False,
+        widget=CatalogImageUploadWidget(crop_context="原图对比卡片"),
+        help_text="用于调色修图和图生图的原图。",
+    )
+    result_image_file = forms.ImageField(
+        label="效果图路径", required=False,
+        widget=CatalogImageUploadWidget(crop_context="效果图对比卡片"),
+        help_text="用于调色修图和图生图的处理结果。",
+    )
+
+    class Meta:
+        model = FeaturedPrompt
+        exclude = (
+            "image", "uploaded_image", "original_image", "uploaded_original_image",
+            "result_image", "uploaded_result_image",
+        )
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        category = self.data.get("category") or getattr(self.instance, "category", "")
+        current_group = self.data.get("group") or getattr(self.instance, "group", "")
+        self.fields["group"].choices = group_choices(category, featured=True, current=current_group)
+        self.fields["group"].widget.attrs["data-group-options"] = json.dumps(
+            catalog_labels()[3], ensure_ascii=False
+        )
+        path_fields = (
+            ("image_file", "uploaded_image", "image", "展示图"),
+            ("original_image_file", "uploaded_original_image", "original_image", "原图"),
+            ("result_image_file", "uploaded_result_image", "result_image", "效果图"),
+        )
+        for form_field, uploaded_field, bundled_field, label in path_fields:
+            widget = self.fields[form_field].widget
+            widget.current_path = _effective_path(self.instance, uploaded_field, bundled_field) if self.instance.pk else ""
+            widget.current_url = _effective_url(self.instance, uploaded_field, bundled_field) if self.instance.pk else ""
+            widget.preview_label = label
+
+    def save(self, commit=True):
+        instance = super().save(commit=False)
+        replacements = (
+            ("image_file", "uploaded_image"),
+            ("original_image_file", "uploaded_original_image"),
+            ("result_image_file", "uploaded_result_image"),
+        )
+        for form_field, model_field in replacements:
+            if self.cleaned_data.get(form_field):
+                setattr(instance, model_field, self.cleaned_data[form_field])
+        if commit:
+            instance.save()
+            self.save_m2m()
+        return instance
+
+
+class ParameterCategoryFilter(admin.SimpleListFilter):
+    title = "分类"
+    parameter_name = "category_cn"
+
+    def lookups(self, request, model_admin):
+        values = model_admin.model.objects.order_by().values_list("category", flat=True).distinct()
+        return [(value, category_label(value)) for value in values]
+
+    def queryset(self, request, queryset):
+        return queryset.filter(category=self.value()) if self.value() else queryset
+
+
+class ParameterGroupFilter(admin.SimpleListFilter):
+    title = "子分类"
+    parameter_name = "group_cn"
+
+    def lookups(self, request, model_admin):
+        pairs = model_admin.model.objects.order_by().values_list("category", "style_group").distinct()
+        return [
+            (f"{category}|{group}", f"{category_label(category)} / {group_label(category, group)}")
+            for category, group in pairs if group
+        ]
+
+    def queryset(self, request, queryset):
+        if not self.value():
+            return queryset
+        category, group = self.value().split("|", 1)
+        return queryset.filter(category=category, style_group=group)
+
+
+class FeaturedCategoryFilter(ParameterCategoryFilter):
+    parameter_name = "featured_category_cn"
+
+    def lookups(self, request, model_admin):
+        values = model_admin.model.objects.order_by().values_list("category", flat=True).distinct()
+        return [(value, category_label(value, featured=True)) for value in values]
+
+
+class FeaturedGroupFilter(admin.SimpleListFilter):
+    title = "子分类"
+    parameter_name = "featured_group_cn"
+
+    def lookups(self, request, model_admin):
+        pairs = model_admin.model.objects.order_by().values_list("category", "group").distinct()
+        return [
+            (
+                f"{category}|{group}",
+                f"{category_label(category, featured=True)} / {group_label(category, group, featured=True)}",
+            )
+            for category, group in pairs if group
+        ]
+
+    def queryset(self, request, queryset):
+        if not self.value():
+            return queryset
+        category, group = self.value().split("|", 1)
+        return queryset.filter(category=category, group=group)
+
+
+class CatalogAdminMixin:
+    scope_group_field = ""
+    featured_catalog = False
+
+    class Media:
+        css = {"all": ("content/admin.css",)}
+        js = ("content/catalog_admin.js",)
+
+    def get_ordering(self, request):
+        return catalog_ordering(featured=self.featured_catalog)
+
+    def _scope(self, obj):
+        return {"category": obj.category, self.scope_group_field: getattr(obj, self.scope_group_field)}
+
+    def _normalize_scope(self, scope, target_id=None, desired_order=0):
+        queryset = self.model.objects.filter(**scope)
+        siblings = list(queryset.exclude(pk=target_id).order_by("order", "id"))
+        if target_id:
+            target = self.model.objects.get(pk=target_id)
+            position = len(siblings) if desired_order <= 0 else min(desired_order - 1, len(siblings))
+            siblings.insert(position, target)
+        updates = []
+        for index, item in enumerate(siblings, start=1):
+            if item.order != index:
+                item.order = index
+                updates.append(item)
+        if updates:
+            self.model.objects.bulk_update(updates, ("order",))
+
+    @transaction.atomic
+    def save_model(self, request, obj, form, change):
+        old_scope = None
+        if change:
+            previous = self.model.objects.get(pk=obj.pk)
+            old_scope = self._scope(previous)
+        desired_order = obj.order
+        super().save_model(request, obj, form, change)
+        new_scope = self._scope(obj)
+        self._normalize_scope(new_scope, obj.pk, desired_order)
+        if old_scope and old_scope != new_scope:
+            self._normalize_scope(old_scope)
+        obj.refresh_from_db(fields=("order",))
+
+    @transaction.atomic
+    def delete_model(self, request, obj):
+        scope = self._scope(obj)
+        super().delete_model(request, obj)
+        self._normalize_scope(scope)
+
+    @transaction.atomic
+    def delete_queryset(self, request, queryset):
+        scopes = {tuple(self._scope(obj).items()) for obj in queryset}
+        super().delete_queryset(request, queryset)
+        for scope in scopes:
+            self._normalize_scope(dict(scope))
+
+
+@admin.register(ParameterOption)
+class ParameterOptionAdmin(CatalogAdminMixin, admin.ModelAdmin):
+    scope_group_field = "style_group"
+    form = ParameterOptionAdminForm
+    list_display = ("zh_name", "en_name", "category_cn", "group_cn", "thumbnail", "enabled", "order", "updated_at")
+    list_filter = ("enabled", ParameterCategoryFilter, ParameterGroupFilter)
+    search_fields = ("source_id", "zh_name", "en_name", "zh_prompt", "en_prompt")
+    list_editable = ("enabled", "order")
+    readonly_fields = ("source_id_display", "updated_at")
+    fields = (
+        "source_id_display", "category", "style_group", "zh_name", "en_name", "image_file",
+        "zh_prompt", "en_prompt", "negative", "enabled", "order", "updated_at",
+    )
+
+    @admin.display(description="项目 ID")
+    def source_id_display(self, obj):
+        return obj.source_id if obj and obj.source_id else "保存后自动生成"
+
+    @admin.display(description="分类", ordering="category")
+    def category_cn(self, obj):
+        return category_label(obj.category)
+
+    @admin.display(description="子分类", ordering="style_group")
+    def group_cn(self, obj):
+        return group_label(obj.category, obj.style_group)
+
+    @admin.display(description="预览")
+    def thumbnail(self, obj):
+        return _preview(_effective_url(obj, "uploaded_image", "image"), obj.zh_name, compact=True)
+
+@admin.register(FeaturedPrompt)
+class FeaturedPromptAdmin(CatalogAdminMixin, admin.ModelAdmin):
+    scope_group_field = "group"
+    featured_catalog = True
+    form = FeaturedPromptAdminForm
+    list_display = ("zh_title", "category_cn", "group_cn", "thumbnail", "enabled", "order", "updated_at")
+    list_filter = ("enabled", FeaturedCategoryFilter, FeaturedGroupFilter)
+    search_fields = ("source_id", "zh_title", "en_title", "prompt")
+    list_editable = ("enabled", "order")
+    readonly_fields = ("source_id_display", "updated_at")
+    fields = (
+        "source_id_display", "category", "group", "zh_title", "en_title", "zh_description", "en_description", "prompt",
+        "image_file", "original_image_file", "result_image_file", "enabled", "order", "updated_at",
+    )
+
+    class Media:
+        css = {"all": ("content/admin.css",)}
+        js = ("content/catalog_admin.js",)
+
+    @admin.display(description="项目 ID")
+    def source_id_display(self, obj):
+        return obj.source_id if obj and obj.source_id else "保存后自动生成"
+
+    @admin.display(description="分类", ordering="category")
+    def category_cn(self, obj):
+        return category_label(obj.category, featured=True)
+
+    @admin.display(description="子分类", ordering="group")
+    def group_cn(self, obj):
+        return group_label(obj.category, obj.group, featured=True)
+
+    @admin.display(description="预览")
+    def thumbnail(self, obj):
+        url = (
+            _effective_url(obj, "uploaded_result_image", "result_image")
+            or _effective_url(obj, "uploaded_image", "image")
+            or _effective_url(obj, "uploaded_original_image", "original_image")
+        )
+        return _preview(url, obj.zh_title, compact=True)
+
+@admin.register(PromptTemplate)
+class PromptTemplateAdmin(admin.ModelAdmin):
+    list_display = ("name", "owner", "updated_at", "created_at")
+    search_fields = ("name", "owner__username", "owner__email")
+    readonly_fields = ("created_at", "updated_at")
+
+
+@admin.register(SiteSettings)
+class SiteSettingsAdmin(admin.ModelAdmin):
+    fieldsets = (
+        ("品牌信息", {"fields": ("site_name", "slogan", "logo", "logo_preview")}),
+        ("微信群帮助", {
+            "fields": ("help_text", "wechat_qr", "wechat_qr_preview"),
+            "description": "上传微信群二维码后，前端左侧“需要帮助”卡片会自动展示新二维码。",
+        }),
+        ("系统信息", {"fields": ("updated_at",), "classes": ("collapse",)}),
+    )
+    readonly_fields = ("logo_preview", "wechat_qr_preview", "updated_at")
+
+    def has_add_permission(self, request):
+        return not SiteSettings.objects.exists()
+
+    def changelist_view(self, request, extra_context=None):
+        settings_row = SiteSettings.objects.order_by("pk").first()
+        if settings_row:
+            return HttpResponseRedirect(reverse("admin:content_sitesettings_change", args=(settings_row.pk,)))
+        return super().changelist_view(request, extra_context)
+
+    @admin.display(description="Logo 预览")
+    def logo_preview(self, obj):
+        return _preview(obj.logo.url if obj and obj.logo else "", "网站 Logo")
+
+    @admin.display(description="微信群二维码预览")
+    def wechat_qr_preview(self, obj):
+        return _preview(obj.wechat_qr.url if obj and obj.wechat_qr else "", "微信群二维码")
+
+
+@admin.register(Feedback)
+class FeedbackAdmin(admin.ModelAdmin):
+    list_display = ("content_display", "user", "handled", "attachment_preview", "created_at")
+    list_display_links = ("content_display",)
+    list_filter = ("handled", "created_at")
+    search_fields = ("content", "user__username", "user__email")
+    list_editable = ("handled",)
+    readonly_fields = ("created_at", "full_attachment_preview")
+    fields = ("user", "content", "image", "full_attachment_preview", "handled", "created_at")
+    list_per_page = 50
+
+    class Media:
+        css = {"all": ("content/admin.css",)}
+
+    @admin.display(description="内容")
+    def content_display(self, obj):
+        return format_html(
+            '<div class="feedback-content-cell">{}</div>',
+            obj.content or "仅提交了图片附件",
+        )
+
+    @admin.display(description="附件预览")
+    def attachment_preview(self, obj):
+        return _preview(obj.image.url if obj.image else "", "意见建议附件", compact=True)
+
+    @admin.display(description="附件图片")
+    def full_attachment_preview(self, obj):
+        return _preview(obj.image.url if obj.image else "", "意见建议附件")
+
+
+def _install_admin_menu_organization():
+    if getattr(admin.site, "_prompt_generator_menu_installed", False):
+        return
+    original_get_app_list = admin.site.get_app_list
+
+    def organized_get_app_list(self, request, app_label=None):
+        app_list = original_get_app_list(request, None)
+        accounts_app = next((item for item in app_list if item["app_label"] == "accounts"), None)
+        content_app = next((item for item in app_list if item["app_label"] == "content"), None)
+        feedback_model = None
+        site_settings_model = None
+
+        if content_app:
+            retained_models = []
+            for model in content_app.get("models", []):
+                if model["object_name"] == "PromptTemplate" and accounts_app:
+                    accounts_app.setdefault("models", []).append(model)
+                elif model["object_name"] == "Feedback":
+                    feedback_model = model
+                elif model["object_name"] == "SiteSettings":
+                    site_settings_model = model
+                else:
+                    retained_models.append(model)
+            content_app["models"] = retained_models
+
+        quick_menus = []
+        if feedback_model:
+            quick_menus.append({
+                "name": "意见建议",
+                "icon": "fas fa-bell",
+                "url": feedback_model.get("admin_url", ""),
+                "badge": Feedback.objects.filter(handled=False).count(),
+            })
+        if site_settings_model:
+            settings_row = SiteSettings.objects.order_by("pk").first()
+            quick_menus.append({
+                "name": "网站设置",
+                "icon": "fas fa-sliders-h",
+                "url": reverse("admin:content_sitesettings_change", args=(settings_row.pk,)) if settings_row else site_settings_model.get("add_url", ""),
+            })
+        if quick_menus:
+            settings.SIMPLEUI_CONFIG["system_keep"] = True
+            settings.SIMPLEUI_CONFIG.pop("menu_display", None)
+            settings.SIMPLEUI_CONFIG["menus"] = quick_menus
+
+        order = {"accounts": 0, "content": 1}
+        app_list.sort(key=lambda item: order.get(item["app_label"], 99))
+        if app_label:
+            return [item for item in app_list if item["app_label"] == app_label]
+        return app_list
+
+    admin.site.get_app_list = MethodType(organized_get_app_list, admin.site)
+    admin.site._prompt_generator_menu_installed = True
+
+
+_install_admin_menu_organization()

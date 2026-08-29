@@ -1,0 +1,17 @@
+services:
+  mysql:
+    image: mysql:8.4
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: prompt_generator
+      MYSQL_USER: prompt_user
+      MYSQL_PASSWORD: change-me
+      MYSQL_ROOT_PASSWORD: change-root-me
+    ports:
+      - "3306:3306"
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    volumes:
+      - prompt_mysql_data:/var/lib/mysql
+
+volumes:
+  prompt_mysql_data:

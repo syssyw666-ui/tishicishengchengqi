@@ -5,30 +5,35 @@
   "packageManager": "pnpm@11.16.0",
   "author": "syssyw666-ui",
   "homepage": "https://tishicishengchengqi.syssyw666.workers.dev/",
-  "description": "Desktop image prompt generator with visual parameter cards and weighted prompt assembly.",
+  "description": "Vue and Django visual image prompt generator with personal cloud templates.",
   "main": "electron/main.cjs",
   "scripts": {
-    "dev": "concurrently \"vite --host 127.0.0.1\" \"wait-on tcp:5173 && electron .\"",
-    "build": "tsc && vite build",
+    "dev": "pnpm run dev:frontend",
+    "dev:frontend": "vite --config frontend/vite.config.ts --host 127.0.0.1 --port 5174",
+    "dev:backend": "python backend/manage.py runserver 127.0.0.1:8000",
+    "dev:full": "concurrently \"pnpm run dev:frontend\" \"pnpm run dev:backend\"",
+    "dev:desktop": "concurrently \"pnpm run dev:frontend\" \"wait-on tcp:5174 && electron .\"",
+    "catalog:export": "node scripts/export-catalog.mjs",
+    "build": "vue-tsc --noEmit -p frontend/tsconfig.json && vite build --config frontend/vite.config.ts",
     "start": "electron .",
     "package:win": "pnpm run build && electron-builder --win nsis",
     "package:win:dir": "pnpm run build && electron-builder --win dir"
   },
   "dependencies": {
-    "@vitejs/plugin-react": "^4.3.4",
     "concurrently": "^9.1.2",
-    "lucide-react": "^0.468.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "lucide-vue-next": "^0.468.0",
     "typescript": "^5.7.2",
     "vite": "^6.0.5",
+    "vue": "^3.5.0",
+    "vue-router": "^4.5.0",
     "wait-on": "^8.0.1"
   },
   "devDependencies": {
-    "@types/react": "^19.0.1",
-    "@types/react-dom": "^19.0.2",
+    "@vitejs/plugin-vue": "^5.2.0",
     "electron": "^34.0.0",
-    "electron-builder": "^25.1.8"
+    "electron-builder": "^25.1.8",
+    "esbuild": "^0.25.0",
+    "vue-tsc": "^2.2.0"
   },
   "build": {
     "appId": "com.syssyw.promptgenerator",

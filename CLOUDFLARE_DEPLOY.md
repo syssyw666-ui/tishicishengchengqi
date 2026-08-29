@@ -1,78 +1,76 @@
-# Cloudflare Pages 发布步骤
+# 前后端部署说明
 
-本项目是 Vite + React 静态前端，适合直接部署到 Cloudflare Pages。
+Cloudflare Pages/Workers 继续托管 Vue 静态前端。Django 与 MySQL 需要部署到支持常驻 Python 服务和 MySQL 的服务器，例如云主机、Railway 或 Render；不能只把 Django 放进当前静态 Pages 项目。
 
-## 1. GitHub 仓库
+## 1. 先部署后端
 
-仓库地址：
+后端服务器设置 `backend/.env`，至少填写：
 
 ```text
-https://github.com/syssyw666-ui/tishicishengchengqi
+DJANGO_SECRET_KEY=随机长密钥
+DJANGO_DEBUG=0
+DJANGO_ALLOWED_HOSTS=api.example.com
+FRONTEND_URL=https://tishicishengchengqi.syssyw666.workers.dev
+CORS_ALLOWED_ORIGINS=https://tishicishengchengqi.syssyw666.workers.dev
+CSRF_TRUSTED_ORIGINS=https://tishicishengchengqi.syssyw666.workers.dev
+MYSQL_DATABASE=prompt_generator
+MYSQL_USER=prompt_user
+MYSQL_PASSWORD=数据库密码
+MYSQL_HOST=数据库地址
+MYSQL_PORT=3306
+EMAIL_BACKEND=django.core.mail.backends.smtp.EmailBackend
+EMAIL_HOST=SMTP地址
+EMAIL_PORT=587
+EMAIL_HOST_USER=发件邮箱
+EMAIL_HOST_PASSWORD=SMTP密码或授权码
+EMAIL_USE_TLS=0
+EMAIL_USE_SSL=1
+EMAIL_TIMEOUT=20
+DEFAULT_FROM_EMAIL=发件邮箱
+DJOSER_DOMAIN=tishicishengchengqi.syssyw666.workers.dev
 ```
 
-## 2. Cloudflare Pages 构建配置
+发布阶段执行：
 
-在 Cloudflare Pages 连接 GitHub 仓库后，使用以下配置：
+```bash
+python -m pip install -r backend/requirements.txt
+python backend/manage.py migrate
+python backend/manage.py seed_catalog
+python backend/manage.py collectstatic --noinput
+gunicorn --chdir backend config.wsgi:application --bind 0.0.0.0:8000
+```
+
+## 2. 配置 Cloudflare 前端
+
+在 Cloudflare 项目的环境变量中添加：
+
+```text
+VITE_API_BASE_URL=https://api.example.com/api
+NODE_VERSION=22
+```
+
+构建配置：
 
 ```text
 Framework preset: Vite
 Build command: pnpm run build
 Build output directory: dist
 Root directory: /
-Node.js version: 22
-Deploy command: 留空
 ```
 
-如果页面里没有 Node.js 版本选择项，就在环境变量里添加：
+保存后重新部署。现有 `wrangler.toml` 仍负责发布 `dist` 静态目录。
 
-```text
-NODE_VERSION=22
-```
+## 3. 管理与 Navicat
 
-仓库中也包含 `wrangler.toml`：
+- Simple UI 管理后台：`https://api.example.com/admin/`
+- Navicat：使用后端 `.env` 中相同的 MySQL 主机、端口、数据库、用户和密码连接
+- Navicat 只用于查看和维护数据库，不需要写进网页代码，也不应开放数据库端口给所有公网地址
 
-```toml
-name = "tishicishengchengqi"
-compatibility_date = "2026-08-16"
-pages_build_output_dir = "./dist"
+## 4. 上线检查
 
-[assets]
-directory = "./dist"
-```
-
-如果 Cloudflare 当前项目里已经填写了 `Deploy command: npx wrangler deploy`，也可以保留；上面的 `[assets]` 配置会告诉 Wrangler 上传 `./dist` 静态目录。但普通 Pages 项目更推荐把 Deploy command 留空，让 Pages 使用默认发布流程。
-
-## 3. 创建 Pages 项目
-
-1. 打开 Cloudflare Dashboard。
-2. 进入 `Workers & Pages`。
-3. 点击 `Create` 或 `Create application`。
-4. 选择 `Pages`。
-5. 选择 `Connect to Git`。
-6. 授权 GitHub 并选择仓库 `syssyw666-ui/tishicishengchengqi`。
-7. 填入上面的构建配置。
-8. 点击 `Save and Deploy`。
-
-部署完成后，Cloudflare 会生成一个 `*.pages.dev` 地址。
-
-## 4. 绑定域名
-
-进入 Pages 项目：
-
-```text
-Custom domains -> Set up a custom domain
-```
-
-输入你的域名或子域名，例如：
-
-```text
-prompt.example.com
-```
-
-如果域名 DNS 已经托管在 Cloudflare，通常会自动配置记录；否则按 Cloudflare 提示添加 DNS 记录。
-
-## 5. 注意事项
-
-- 当前版本是纯前端工具，不需要服务器。
-- 管理后台数据和用户建议目前保存在浏览器本地存储中，不会跨设备同步。
-- 当前应用是单页工具，没有额外前端路由；仓库不再包含 `_redirects`，避免 `wrangler deploy` 判断为重定向循环。
+1. 前端无需登录即可正常生成提示词。
+2. 注册后账号为未激活状态，并收到激活邮件。
+3. 点击邮件链接会返回 Vue 页面，出现“激活成功，去登录”。
+4. 两个不同用户看不到彼此的模板。
+5. 上传模板展示图后，刷新页面仍可查看。
+6. `/admin/` 使用 Simple UI，参数图库、精选提示词、用户模板和意见建议均可管理。

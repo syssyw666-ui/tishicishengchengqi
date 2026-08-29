@@ -1,0 +1,17 @@
+{% block subject %}激活你的图片提示词生成器账号{% endblock subject %}
+
+{% block text_body %}
+你好，{{ user.username }}：
+
+你刚刚注册了“图片提示词生成器”。请打开下面的链接完成邮箱激活：
+{{ protocol }}://{{ domain }}/{{ url|safe }}
+
+激活成功后，页面会自动引导你登录。若这不是你的操作，可以忽略此邮件。
+{% endblock text_body %}
+
+{% block html_body %}
+<p>你好，{{ user.username }}：</p>
+<p>你刚刚注册了“图片提示词生成器”。请点击下面的链接完成邮箱激活：</p>
+<p><a href="{{ protocol }}://{{ domain }}/{{ url|safe }}">激活我的账号</a></p>
+<p>激活成功后，页面会自动引导你登录。若这不是你的操作，可以忽略此邮件。</p>
+{% endblock html_body %}

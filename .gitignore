@@ -3,3 +3,11 @@ dist/
 release/
 .pnpm-store/
 *.log
+backend/.env
+backend/db.sqlite3
+backend/media/
+backend/staticfiles/
+backend/.venv/
+frontend/.env
+*.pyc
+__pycache__/

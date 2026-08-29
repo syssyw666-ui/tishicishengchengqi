@@ -1,0 +1,10 @@
+Django>=5.2.12,<5.3
+djangorestframework>=3.16,<3.17
+djangorestframework-simplejwt>=5.5,<6
+djoser>=2.3,<3
+django-cors-headers>=4.7,<5
+django-simpleui>=2025.1,<2027
+mysqlclient>=2.2,<3
+Pillow>=11,<13
+python-dotenv>=1.1,<2
+gunicorn>=23,<24

@@ -29,6 +29,27 @@ export const featuredPromptGroups: Partial<Record<FeaturedPromptCategory, Array<
     { id: "product-commercial", zhName: "商品商业", enName: "Product & Commercial" },
     { id: "scene-space", zhName: "场景空间", enName: "Scene & Space" },
     { id: "photo-repair", zhName: "照片修复", enName: "Photo Repair" }
+  ],
+  "image-to-image": [
+    { id: "all", zhName: "全部图生图", enName: "All" },
+    { id: "style-transfer", zhName: "风格转绘", enName: "Style Transfer" },
+    { id: "poster-layout", zhName: "海报与版式重构", enName: "Poster & Layout" },
+    { id: "product-structure", zhName: "产品与结构优化", enName: "Product & Structure" }
+  ],
+  "utility": [
+    { id: "all", zhName: "全部常用处理", enName: "All" },
+    { id: "generation-tools", zhName: "生成与分层工具", enName: "Generation Tools" },
+    { id: "reverse-prompt", zhName: "提示词反推", enName: "Prompt Reverse Engineering" },
+    { id: "batch-planning", zhName: "批量方案规划", enName: "Batch Planning" }
+  ],
+  "text-to-image": [
+    { id: "all", zhName: "全部文生图", enName: "All" },
+    { id: "poster-design", zhName: "海报与平面设计", enName: "Poster & Graphic Design" },
+    { id: "character-design", zhName: "人物与角色设定", enName: "Character Design" },
+    { id: "illustration-art", zhName: "插画与艺术创作", enName: "Illustration & Art" },
+    { id: "culture-craft", zhName: "传统文化与工艺", enName: "Culture & Craft" },
+    { id: "scene-map", zhName: "场景地图与信息图", enName: "Scene, Map & Infographic" },
+    { id: "product-commercial", zhName: "产品与商业视觉", enName: "Product & Commercial" }
   ]
 };
 
