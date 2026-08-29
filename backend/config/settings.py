@@ -111,6 +111,7 @@ if R2_BUCKET_NAME and R2_ENDPOINT_URL and os.getenv("R2_ACCESS_KEY_ID") and os.g
         "default_acl": None,
         "file_overwrite": False,
         "querystring_auth": not bool(R2_PUBLIC_BASE_URL),
+        "object_parameters": {"CacheControl": "public, max-age=31536000, immutable"},
     }
     if R2_PUBLIC_BASE_URL:
         storage_options["custom_domain"] = R2_PUBLIC_BASE_URL.replace("https://", "").replace("http://", "")
