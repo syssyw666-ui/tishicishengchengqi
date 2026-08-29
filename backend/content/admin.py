@@ -40,8 +40,8 @@ def _preview(url, label, compact=False):
         return "暂无图片"
     size_class = " compact" if compact else ""
     return format_html(
-        '<span class="catalog-preview{}"><img src="{}" alt="{}">'
-        '<span class="catalog-preview-zoom"><img src="{}" alt="{}"></span></span>',
+        '<span class="catalog-preview{}"><img src="{}" alt="{}" loading="lazy" decoding="async">'
+        '<span class="catalog-preview-zoom"><img src="{}" alt="{}" loading="lazy" decoding="async"></span></span>',
         size_class, url, label, url, label,
     )
 
@@ -176,6 +176,12 @@ class FeaturedPromptAdminForm(forms.ModelForm):
 
 
 class DeploymentSettingsAdminForm(forms.ModelForm):
+    brevo_api_key = forms.CharField(
+        label="Brevo API Key",
+        required=False,
+        widget=forms.PasswordInput(render_value=False, attrs={"autocomplete": "new-password"}),
+        help_text="留空表示保留当前 Key。Key 会加密保存，不会在页面中回显。",
+    )
     smtp_password = forms.CharField(
         label="SMTP 授权码",
         required=False,
@@ -185,22 +191,30 @@ class DeploymentSettingsAdminForm(forms.ModelForm):
 
     class Meta:
         model = DeploymentSettings
-        exclude = ("smtp_password_encrypted",)
+        exclude = ("smtp_password_encrypted", "brevo_api_key_encrypted")
 
     def clean(self):
         cleaned = super().clean()
-        if cleaned.get("smtp_use_ssl") and cleaned.get("smtp_use_tls"):
+        provider = cleaned.get("email_provider")
+        if provider == "smtp" and cleaned.get("smtp_use_ssl") and cleaned.get("smtp_use_tls"):
             raise forms.ValidationError("SSL 与 TLS 不能同时启用。163 邮箱使用 465 端口时请选择 SSL。")
         if cleaned.get("smtp_enabled"):
-            required = ("smtp_host", "smtp_port", "smtp_username")
-            if any(not cleaned.get(field) for field in required):
-                raise forms.ValidationError("启用后台 SMTP 前，请完整填写服务器、端口和发件邮箱。")
-            if not cleaned.get("smtp_password") and not self.instance.has_smtp_password:
-                raise forms.ValidationError("首次启用后台 SMTP 时必须填写授权码。")
+            if not cleaned.get("default_from_email"):
+                raise forms.ValidationError("启用邮件发送前，请填写默认发件邮箱。")
+            if provider == "brevo":
+                if not cleaned.get("brevo_api_key") and not self.instance.has_brevo_api_key:
+                    raise forms.ValidationError("首次使用 Brevo 邮件 API 时必须填写 API Key。")
+            else:
+                required = ("smtp_host", "smtp_port", "smtp_username")
+                if any(not cleaned.get(field) for field in required):
+                    raise forms.ValidationError("启用 SMTP 前，请完整填写服务器、端口和发件邮箱。")
+                if not cleaned.get("smtp_password") and not self.instance.has_smtp_password:
+                    raise forms.ValidationError("首次启用 SMTP 时必须填写授权码。")
         return cleaned
 
     def save(self, commit=True):
         instance = super().save(commit=False)
+        instance.set_brevo_api_key(self.cleaned_data.get("brevo_api_key"))
         instance.set_smtp_password(self.cleaned_data.get("smtp_password"))
         if commit:
             instance.save()
@@ -332,6 +346,9 @@ class ParameterOptionAdmin(CatalogAdminMixin, admin.ModelAdmin):
     search_fields = ("source_id", "zh_name", "en_name", "zh_prompt", "en_prompt")
     list_editable = ("enabled", "order")
     readonly_fields = ("source_id_display", "updated_at")
+    list_per_page = 24
+    list_max_show_all = 48
+    show_full_result_count = False
     fields = (
         "source_id_display", "category", "style_group", "zh_name", "en_name", "image_file",
         "zh_prompt", "en_prompt", "negative", "enabled", "order", "updated_at",
@@ -363,6 +380,9 @@ class FeaturedPromptAdmin(CatalogAdminMixin, admin.ModelAdmin):
     search_fields = ("source_id", "zh_title", "en_title", "prompt")
     list_editable = ("enabled", "order")
     readonly_fields = ("source_id_display", "updated_at")
+    list_per_page = 24
+    list_max_show_all = 48
+    show_full_result_count = False
     fields = (
         "source_id_display", "category", "group", "zh_title", "en_title", "zh_description", "en_description", "prompt",
         "image_file", "original_image_file", "result_image_file", "enabled", "order", "updated_at",
@@ -435,13 +455,20 @@ class DeploymentSettingsAdmin(admin.ModelAdmin):
     form = DeploymentSettingsAdminForm
     change_form_template = "admin/content/deploymentsettings/change_form.html"
     fieldsets = (
-        ("SMTP 邮件", {
+        ("邮件发送", {
             "fields": (
-                "smtp_enabled", "smtp_host", "smtp_port", "smtp_username", "smtp_password",
-                "smtp_password_status", "smtp_use_ssl", "smtp_use_tls", "default_from_email",
-                "feedback_notification_email",
+                "smtp_enabled", "email_provider", "default_from_email", "brevo_sender_name",
+                "brevo_api_key", "brevo_api_key_status", "feedback_notification_email",
             ),
-            "description": "用于注册激活、忘记密码和意见建议提醒。保存后可点击页面底部的“保存并发送测试邮件”。",
+            "description": "Railway 免费、试用和 Hobby 套餐会拦截 SMTP，请选择 Brevo 邮件 API。用于注册激活、忘记密码和意见建议提醒。",
+        }),
+        ("SMTP 兼容设置", {
+            "fields": (
+                "smtp_host", "smtp_port", "smtp_username", "smtp_password",
+                "smtp_password_status", "smtp_use_ssl", "smtp_use_tls",
+            ),
+            "classes": ("collapse",),
+            "description": "仅在 Railway Pro 及以上套餐或其他允许 SMTP 的服务器上使用。",
         }),
         ("数据库连接", {
             "fields": ("database_status",),
@@ -453,7 +480,9 @@ class DeploymentSettingsAdmin(admin.ModelAdmin):
         }),
         ("系统信息", {"fields": ("updated_at",), "classes": ("collapse",)}),
     )
-    readonly_fields = ("smtp_password_status", "database_status", "storage_status", "updated_at")
+    readonly_fields = (
+        "brevo_api_key_status", "smtp_password_status", "database_status", "storage_status", "updated_at",
+    )
 
     def has_add_permission(self, request):
         return not DeploymentSettings.objects.exists()
@@ -467,6 +496,10 @@ class DeploymentSettingsAdmin(admin.ModelAdmin):
     @admin.display(description="授权码状态")
     def smtp_password_status(self, obj):
         return "已加密保存，可直接保留或填写新授权码替换" if obj and obj.has_smtp_password else "尚未填写"
+
+    @admin.display(description="Brevo API Key 状态")
+    def brevo_api_key_status(self, obj):
+        return "已加密保存，可直接保留或填写新 Key 替换" if obj and obj.has_brevo_api_key else "尚未填写"
 
     @admin.display(description="数据库配置状态")
     def database_status(self, obj):
@@ -489,8 +522,8 @@ class DeploymentSettingsAdmin(admin.ModelAdmin):
             recipient = request.user.email or obj.feedback_notification_email
             try:
                 sent = send_mail(
-                    "[图灵词造] SMTP 配置测试",
-                    "这是一封由图灵词造后台发送的测试邮件。收到此邮件表示 SMTP 配置可用。",
+                    "[图灵词造] 邮件配置测试",
+                    "这是一封由图灵词造后台发送的测试邮件。收到此邮件表示当前邮件发送方式可用。",
                     obj.default_from_email or obj.smtp_username,
                     [recipient],
                     fail_silently=False,
@@ -498,7 +531,7 @@ class DeploymentSettingsAdmin(admin.ModelAdmin):
                 if sent:
                     self.message_user(request, f"测试邮件已发送至 {recipient}。", messages.SUCCESS)
                 else:
-                    self.message_user(request, "邮件服务未返回发送成功，请检查 SMTP 配置。", messages.ERROR)
+                    self.message_user(request, "邮件服务未返回发送成功，请检查当前邮件配置。", messages.ERROR)
             except Exception as exc:
                 self.message_user(request, f"测试邮件发送失败：{exc}", messages.ERROR)
             return HttpResponseRedirect(request.path)

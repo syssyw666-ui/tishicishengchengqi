@@ -1,9 +1,11 @@
 import json
+from unittest.mock import MagicMock, patch
 
 from django.contrib import admin
 from django.contrib.auth import get_user_model
 from django.conf import settings
 from django.core import mail
+from django.core.mail import send_mail
 from django.test import RequestFactory, TestCase, override_settings
 from rest_framework import status
 from rest_framework.test import APITestCase
@@ -174,6 +176,8 @@ class AdminCustomizationTests(TestCase):
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertContains(response, "SMTP 授权码")
+        self.assertContains(response, "Brevo API Key")
+        self.assertContains(response, "Railway 免费、试用和 Hobby 套餐会拦截 SMTP")
         self.assertContains(response, "已加密保存")
         self.assertContains(response, "数据库连接")
         self.assertContains(response, "图片对象存储")
@@ -286,3 +290,29 @@ class AdminCustomizationTests(TestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertContains(response, "需要在后台完整显示的意见内容")
         self.assertContains(response, "feedback-content-cell")
+
+
+@override_settings(EMAIL_BACKEND="content.email_backend.DatabaseConfiguredEmailBackend")
+class BrevoEmailBackendTests(TestCase):
+    def test_brevo_backend_sends_https_api_request(self):
+        settings_row = DeploymentSettings.objects.first() or DeploymentSettings.objects.create()
+        settings_row.smtp_enabled = True
+        settings_row.email_provider = "brevo"
+        settings_row.default_from_email = "sender@example.com"
+        settings_row.brevo_sender_name = "图灵词造"
+        settings_row.set_brevo_api_key("brevo-secret-key")
+        settings_row.save()
+        response = MagicMock()
+        response.status = 201
+        response.__enter__.return_value = response
+
+        with patch("content.email_backend.urlopen", return_value=response) as mocked_urlopen:
+            sent = send_mail("激活账号", "请点击激活链接", None, ["reader@example.com"])
+
+        self.assertEqual(sent, 1)
+        request = mocked_urlopen.call_args.args[0]
+        payload = json.loads(request.data.decode("utf-8"))
+        self.assertEqual(request.full_url, "https://api.brevo.com/v3/smtp/email")
+        self.assertEqual(request.headers["Api-key"], "brevo-secret-key")
+        self.assertEqual(payload["sender"], {"name": "图灵词造", "email": "sender@example.com"})
+        self.assertEqual(payload["to"], [{"email": "reader@example.com"}])

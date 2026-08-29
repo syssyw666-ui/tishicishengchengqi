@@ -97,6 +97,7 @@ STORAGES = {
     "default": {"BACKEND": "django.core.files.storage.FileSystemStorage"},
     "staticfiles": {"BACKEND": "whitenoise.storage.CompressedStaticFilesStorage"},
 }
+WHITENOISE_MAX_AGE = 604800
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
 R2_BUCKET_NAME = os.getenv("R2_BUCKET_NAME", "")

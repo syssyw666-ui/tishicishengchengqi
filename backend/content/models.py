@@ -120,7 +120,17 @@ class SiteSettings(models.Model):
 
 
 class DeploymentSettings(models.Model):
-    smtp_enabled = models.BooleanField("启用后台 SMTP 配置", default=False)
+    EMAIL_PROVIDER_CHOICES = (
+        ("brevo", "Brevo 邮件 API（Railway 免费/试用推荐）"),
+        ("smtp", "SMTP（Railway Pro 及以上可用）"),
+    )
+
+    smtp_enabled = models.BooleanField("启用邮件发送", default=False)
+    email_provider = models.CharField(
+        "发送方式", max_length=20, choices=EMAIL_PROVIDER_CHOICES, default="brevo",
+    )
+    brevo_api_key_encrypted = models.TextField("Brevo API Key 密文", blank=True, editable=False)
+    brevo_sender_name = models.CharField("发件人名称", max_length=120, default="图灵词造")
     smtp_host = models.CharField("SMTP 服务器", max_length=255, default="smtp.163.com")
     smtp_port = models.PositiveIntegerField("SMTP 端口", default=465)
     smtp_username = models.EmailField("发件邮箱", blank=True)
@@ -148,3 +158,14 @@ class DeploymentSettings(models.Model):
     @property
     def has_smtp_password(self):
         return bool(self.smtp_password_encrypted)
+
+    def set_brevo_api_key(self, value):
+        if value:
+            self.brevo_api_key_encrypted = encrypt_secret(value)
+
+    def get_brevo_api_key(self):
+        return decrypt_secret(self.brevo_api_key_encrypted)
+
+    @property
+    def has_brevo_api_key(self):
+        return bool(self.brevo_api_key_encrypted)
