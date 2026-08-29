@@ -22,6 +22,7 @@ def get_deployment_email_settings():
                 "emailjs_service_id": row.emailjs_service_id,
                 "emailjs_template_id": row.emailjs_template_id,
                 "emailjs_public_key": row.emailjs_public_key,
+                "emailjs_private_key": row.get_emailjs_private_key(),
                 "host": row.smtp_host,
                 "port": row.smtp_port,
                 "username": row.smtp_username,
@@ -125,6 +126,8 @@ class DatabaseConfiguredEmailBackend(BaseEmailBackend):
                     "reply_to": message.reply_to[0] if message.reply_to else runtime.get("from_email", ""),
                 },
             }
+            if runtime.get("emailjs_private_key"):
+                payload["accessToken"] = runtime["emailjs_private_key"]
             try:
                 request = Request(
                     "https://api.emailjs.com/api/v1.0/email/send",
@@ -138,9 +141,20 @@ class DatabaseConfiguredEmailBackend(BaseEmailBackend):
                 sent += 1
             except (HTTPError, URLError, OSError, RuntimeError) as exc:
                 if not self.fail_silently:
-                    detail = getattr(exc, "reason", None) or str(exc)
+                    detail = self._error_detail(exc)
                     raise RuntimeError(f"EmailJS 邮件发送失败：{detail}") from exc
         return sent
+
+    @staticmethod
+    def _error_detail(exc):
+        if isinstance(exc, HTTPError):
+            try:
+                body = exc.read().decode("utf-8", errors="replace").strip()
+                if body:
+                    return body
+            except OSError:
+                pass
+        return getattr(exc, "reason", None) or str(exc)
 
     @staticmethod
     def _brevo_payload(message, runtime):

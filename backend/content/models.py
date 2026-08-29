@@ -135,6 +135,7 @@ class DeploymentSettings(models.Model):
     emailjs_service_id = models.CharField("EmailJS Service ID", max_length=120, blank=True)
     emailjs_template_id = models.CharField("EmailJS Template ID", max_length=120, blank=True)
     emailjs_public_key = models.CharField("EmailJS Public Key", max_length=255, blank=True)
+    emailjs_private_key_encrypted = models.TextField("EmailJS Private Key 密文", blank=True, editable=False)
     smtp_host = models.CharField("SMTP 服务器", max_length=255, default="smtp.163.com")
     smtp_port = models.PositiveIntegerField("SMTP 端口", default=465)
     smtp_username = models.EmailField("发件邮箱", blank=True)
@@ -173,3 +174,14 @@ class DeploymentSettings(models.Model):
     @property
     def has_brevo_api_key(self):
         return bool(self.brevo_api_key_encrypted)
+
+    def set_emailjs_private_key(self, value):
+        if value:
+            self.emailjs_private_key_encrypted = encrypt_secret(value)
+
+    def get_emailjs_private_key(self):
+        return decrypt_secret(self.emailjs_private_key_encrypted)
+
+    @property
+    def has_emailjs_private_key(self):
+        return bool(self.emailjs_private_key_encrypted)

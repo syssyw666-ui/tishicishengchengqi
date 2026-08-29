@@ -177,6 +177,8 @@ class AdminCustomizationTests(TestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertContains(response, "SMTP 授权码")
         self.assertContains(response, "Brevo API Key")
+        self.assertContains(response, "EmailJS Private Key")
+        self.assertContains(response, "email-provider-panel")
         self.assertContains(response, "Railway 免费、试用和 Hobby 套餐会拦截 SMTP")
         self.assertContains(response, "已加密保存")
         self.assertContains(response, "数据库连接")
@@ -325,6 +327,7 @@ class BrevoEmailBackendTests(TestCase):
         settings_row.emailjs_service_id = "service_personal"
         settings_row.emailjs_template_id = "template_activation"
         settings_row.emailjs_public_key = "public-key"
+        settings_row.set_emailjs_private_key("private-key")
         settings_row.save()
         response = MagicMock()
         response.status = 200
@@ -339,4 +342,5 @@ class BrevoEmailBackendTests(TestCase):
         self.assertEqual(request.full_url, "https://api.emailjs.com/api/v1.0/email/send")
         self.assertEqual(payload["service_id"], "service_personal")
         self.assertEqual(payload["template_id"], "template_activation")
+        self.assertEqual(payload["accessToken"], "private-key")
         self.assertEqual(payload["template_params"]["to_email"], "reader@example.com")

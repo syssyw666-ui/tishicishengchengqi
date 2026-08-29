@@ -176,6 +176,12 @@ class FeaturedPromptAdminForm(forms.ModelForm):
 
 
 class DeploymentSettingsAdminForm(forms.ModelForm):
+    emailjs_private_key = forms.CharField(
+        label="EmailJS Private Key",
+        required=False,
+        widget=forms.PasswordInput(render_value=False, attrs={"autocomplete": "new-password"}),
+        help_text="建议服务端发送时填写。留空会保留现有 Key；Key 会加密保存且不会回显。",
+    )
     brevo_api_key = forms.CharField(
         label="Brevo API Key",
         required=False,
@@ -191,7 +197,9 @@ class DeploymentSettingsAdminForm(forms.ModelForm):
 
     class Meta:
         model = DeploymentSettings
-        exclude = ("smtp_password_encrypted", "brevo_api_key_encrypted")
+        exclude = (
+            "smtp_password_encrypted", "brevo_api_key_encrypted", "emailjs_private_key_encrypted",
+        )
 
     def clean(self):
         cleaned = super().clean()
@@ -218,6 +226,7 @@ class DeploymentSettingsAdminForm(forms.ModelForm):
 
     def save(self, commit=True):
         instance = super().save(commit=False)
+        instance.set_emailjs_private_key(self.cleaned_data.get("emailjs_private_key"))
         instance.set_brevo_api_key(self.cleaned_data.get("brevo_api_key"))
         instance.set_smtp_password(self.cleaned_data.get("smtp_password"))
         if commit:
@@ -467,12 +476,16 @@ class DeploymentSettingsAdmin(admin.ModelAdmin):
             "description": "个人创作者推荐 EmailJS；Railway 免费、试用和 Hobby 套餐会拦截 SMTP。用于注册激活、忘记密码和意见建议提醒。",
         }),
         ("EmailJS 个人邮件 API", {
-            "fields": ("emailjs_service_id", "emailjs_template_id", "emailjs_public_key"),
+            "fields": (
+                "emailjs_service_id", "emailjs_template_id", "emailjs_public_key",
+                "emailjs_private_key", "emailjs_private_key_status",
+            ),
+            "classes": ("email-provider-panel", "email-provider-emailjs"),
             "description": "无需公司或自有域名。模板需设置 To Email={{to_email}}、Subject={{subject}}、Content={{message}}。",
         }),
         ("Brevo 邮件 API", {
             "fields": ("brevo_api_key", "brevo_api_key_status"),
-            "classes": ("collapse",),
+            "classes": ("email-provider-panel", "email-provider-brevo"),
             "description": "适合已有 Brevo 账号的用户。",
         }),
         ("SMTP 兼容设置", {
@@ -480,7 +493,7 @@ class DeploymentSettingsAdmin(admin.ModelAdmin):
                 "smtp_host", "smtp_port", "smtp_username", "smtp_password",
                 "smtp_password_status", "smtp_use_ssl", "smtp_use_tls",
             ),
-            "classes": ("collapse",),
+            "classes": ("email-provider-panel", "email-provider-smtp"),
             "description": "仅在 Railway Pro 及以上套餐或其他允许 SMTP 的服务器上使用。",
         }),
         ("数据库连接", {
@@ -494,7 +507,8 @@ class DeploymentSettingsAdmin(admin.ModelAdmin):
         ("系统信息", {"fields": ("updated_at",), "classes": ("collapse",)}),
     )
     readonly_fields = (
-        "brevo_api_key_status", "smtp_password_status", "database_status", "storage_status", "updated_at",
+        "emailjs_private_key_status", "brevo_api_key_status", "smtp_password_status",
+        "database_status", "storage_status", "updated_at",
     )
 
     def has_add_permission(self, request):
@@ -513,6 +527,10 @@ class DeploymentSettingsAdmin(admin.ModelAdmin):
     @admin.display(description="Brevo API Key 状态")
     def brevo_api_key_status(self, obj):
         return "已加密保存，可直接保留或填写新 Key 替换" if obj and obj.has_brevo_api_key else "尚未填写"
+
+    @admin.display(description="EmailJS Private Key 状态")
+    def emailjs_private_key_status(self, obj):
+        return "已加密保存，可直接保留或填写新 Key 替换" if obj and obj.has_emailjs_private_key else "尚未填写"
 
     @admin.display(description="数据库配置状态")
     def database_status(self, obj):
