@@ -30,6 +30,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "corsheaders.middleware.CorsMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -91,8 +92,30 @@ USE_TZ = True
 STATIC_URL = "/static/"
 STATIC_ROOT = BASE_DIR / "staticfiles"
 STATICFILES_DIRS = [BASE_DIR / "static"]
+STORAGES = {
+    "default": {"BACKEND": "django.core.files.storage.FileSystemStorage"},
+    "staticfiles": {"BACKEND": "whitenoise.storage.CompressedStaticFilesStorage"},
+}
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
+R2_BUCKET_NAME = os.getenv("R2_BUCKET_NAME", "")
+R2_ENDPOINT_URL = os.getenv("R2_ENDPOINT_URL", "")
+R2_PUBLIC_BASE_URL = os.getenv("R2_PUBLIC_BASE_URL", "").rstrip("/")
+if R2_BUCKET_NAME and R2_ENDPOINT_URL and os.getenv("R2_ACCESS_KEY_ID") and os.getenv("R2_SECRET_ACCESS_KEY"):
+    storage_options = {
+        "bucket_name": R2_BUCKET_NAME,
+        "access_key": os.getenv("R2_ACCESS_KEY_ID"),
+        "secret_key": os.getenv("R2_SECRET_ACCESS_KEY"),
+        "endpoint_url": R2_ENDPOINT_URL,
+        "region_name": "auto",
+        "default_acl": None,
+        "file_overwrite": False,
+        "querystring_auth": not bool(R2_PUBLIC_BASE_URL),
+    }
+    if R2_PUBLIC_BASE_URL:
+        storage_options["custom_domain"] = R2_PUBLIC_BASE_URL.replace("https://", "").replace("http://", "")
+        MEDIA_URL = f"{R2_PUBLIC_BASE_URL}/"
+    STORAGES["default"] = {"BACKEND": "storages.backends.s3.S3Storage", "OPTIONS": storage_options}
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 FRONTEND_URL = os.getenv("FRONTEND_URL", "http://127.0.0.1:5174")
@@ -133,7 +156,12 @@ DJOSER = {
 
 DEFAULT_FROM_EMAIL = os.getenv("DEFAULT_FROM_EMAIL", "no-reply@example.com")
 FEEDBACK_NOTIFICATION_EMAIL = os.getenv("FEEDBACK_NOTIFICATION_EMAIL", "934361900@qq.com")
-EMAIL_BACKEND = os.getenv("EMAIL_BACKEND", "django.core.mail.backends.console.EmailBackend")
+requested_email_backend = os.getenv("EMAIL_BACKEND", "content.email_backend.DatabaseConfiguredEmailBackend")
+EMAIL_BACKEND = requested_email_backend if requested_email_backend in {
+    "django.core.mail.backends.console.EmailBackend",
+    "django.core.mail.backends.locmem.EmailBackend",
+    "django.core.mail.backends.dummy.EmailBackend",
+} else "content.email_backend.DatabaseConfiguredEmailBackend"
 EMAIL_HOST = os.getenv("EMAIL_HOST", "")
 EMAIL_PORT = int(os.getenv("EMAIL_PORT", "587"))
 EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER", "")
@@ -143,6 +171,10 @@ EMAIL_USE_TLS = os.getenv("EMAIL_USE_TLS", "1") == "1" and not EMAIL_USE_SSL
 EMAIL_TIMEOUT = int(os.getenv("EMAIL_TIMEOUT", "20"))
 DOMAIN = os.getenv("DJOSER_DOMAIN", FRONTEND_URL.replace("https://", "").replace("http://", ""))
 SITE_NAME = os.getenv("SITE_NAME", "图片提示词生成器")
+
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+SESSION_COOKIE_SECURE = not DEBUG
+CSRF_COOKIE_SECURE = not DEBUG
 
 SIMPLEUI_HOME_INFO = False
 SIMPLEUI_ANALYSIS = False
@@ -157,4 +189,5 @@ SIMPLEUI_ICON = {
     "内容管理": "fas fa-images",
     "意见建议": "fas fa-bell",
     "反馈列表": "fas fa-envelope-open-text",
+    "部署配置": "fas fa-server",
 }

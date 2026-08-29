@@ -8,7 +8,7 @@ from django.test import RequestFactory, TestCase, override_settings
 from rest_framework import status
 from rest_framework.test import APITestCase
 
-from .models import Feedback, FeaturedPrompt, ParameterOption, PromptTemplate, SiteSettings
+from .models import DeploymentSettings, Feedback, FeaturedPrompt, ParameterOption, PromptTemplate, SiteSettings
 
 
 class CatalogApiTests(APITestCase):
@@ -158,6 +158,26 @@ class AdminCustomizationTests(TestCase):
         self.assertContains(response, "微信群二维码")
         self.assertContains(response, 'name="wechat_qr"')
         self.assertContains(response, "上传微信群二维码后")
+
+    def test_deployment_settings_admin_encrypts_smtp_password_and_shows_status(self):
+        settings_row = DeploymentSettings.objects.first()
+        settings_row.smtp_username = "sender@example.com"
+        settings_row.set_smtp_password("smtp-secret-value")
+        settings_row.save()
+
+        self.assertNotIn("smtp-secret-value", settings_row.smtp_password_encrypted)
+        self.assertEqual(settings_row.get_smtp_password(), "smtp-secret-value")
+
+        self.client.force_login(self.admin_user)
+        response = self.client.get(f"/admin/content/deploymentsettings/{settings_row.pk}/change/")
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertContains(response, "SMTP 授权码")
+        self.assertContains(response, "已加密保存")
+        self.assertContains(response, "数据库连接")
+        self.assertContains(response, "图片对象存储")
+        self.assertContains(response, "保存并发送测试邮件")
+        self.assertNotContains(response, "smtp-secret-value")
 
     def test_parameter_admin_uses_chinese_choices_and_merged_image_field(self):
         self.client.force_login(self.admin_user)

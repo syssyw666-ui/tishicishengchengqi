@@ -1,10 +1,12 @@
 import json
+import os
 from types import MethodType
 from urllib.parse import quote
 
 from django import forms
 from django.conf import settings
-from django.contrib import admin
+from django.contrib import admin, messages
+from django.core.mail import send_mail
 from django.db import transaction
 from django.http import HttpResponseRedirect
 from django.urls import reverse
@@ -13,7 +15,7 @@ from django.utils.html import format_html
 from .catalog_labels import (
     catalog_labels, catalog_ordering, category_choices, category_label, group_choices, group_label,
 )
-from .models import Feedback, FeaturedPrompt, ParameterOption, PromptTemplate, SiteSettings
+from .models import DeploymentSettings, Feedback, FeaturedPrompt, ParameterOption, PromptTemplate, SiteSettings
 
 
 def _effective_path(obj, uploaded_field, bundled_field):
@@ -170,6 +172,38 @@ class FeaturedPromptAdminForm(forms.ModelForm):
         if commit:
             instance.save()
             self.save_m2m()
+        return instance
+
+
+class DeploymentSettingsAdminForm(forms.ModelForm):
+    smtp_password = forms.CharField(
+        label="SMTP 授权码",
+        required=False,
+        widget=forms.PasswordInput(render_value=False, attrs={"autocomplete": "new-password"}),
+        help_text="留空表示保留当前授权码。授权码会使用 Django 密钥加密后保存，不会在页面中回显。",
+    )
+
+    class Meta:
+        model = DeploymentSettings
+        exclude = ("smtp_password_encrypted",)
+
+    def clean(self):
+        cleaned = super().clean()
+        if cleaned.get("smtp_use_ssl") and cleaned.get("smtp_use_tls"):
+            raise forms.ValidationError("SSL 与 TLS 不能同时启用。163 邮箱使用 465 端口时请选择 SSL。")
+        if cleaned.get("smtp_enabled"):
+            required = ("smtp_host", "smtp_port", "smtp_username")
+            if any(not cleaned.get(field) for field in required):
+                raise forms.ValidationError("启用后台 SMTP 前，请完整填写服务器、端口和发件邮箱。")
+            if not cleaned.get("smtp_password") and not self.instance.has_smtp_password:
+                raise forms.ValidationError("首次启用后台 SMTP 时必须填写授权码。")
+        return cleaned
+
+    def save(self, commit=True):
+        instance = super().save(commit=False)
+        instance.set_smtp_password(self.cleaned_data.get("smtp_password"))
+        if commit:
+            instance.save()
         return instance
 
 
@@ -396,6 +430,81 @@ class SiteSettingsAdmin(admin.ModelAdmin):
         return _preview(obj.wechat_qr.url if obj and obj.wechat_qr else "", "微信群二维码")
 
 
+@admin.register(DeploymentSettings)
+class DeploymentSettingsAdmin(admin.ModelAdmin):
+    form = DeploymentSettingsAdminForm
+    change_form_template = "admin/content/deploymentsettings/change_form.html"
+    fieldsets = (
+        ("SMTP 邮件", {
+            "fields": (
+                "smtp_enabled", "smtp_host", "smtp_port", "smtp_username", "smtp_password",
+                "smtp_password_status", "smtp_use_ssl", "smtp_use_tls", "default_from_email",
+                "feedback_notification_email",
+            ),
+            "description": "用于注册激活、忘记密码和意见建议提醒。保存后可点击页面底部的“保存并发送测试邮件”。",
+        }),
+        ("数据库连接", {
+            "fields": ("database_status",),
+            "description": "数据库密码必须在托管平台的加密环境变量中填写，因为 Django 必须先连接数据库才能打开本页面。",
+        }),
+        ("图片对象存储", {
+            "fields": ("storage_status",),
+            "description": "用户上传图片建议存入 Cloudflare R2；内置参考图库继续由前端 CDN 提供。",
+        }),
+        ("系统信息", {"fields": ("updated_at",), "classes": ("collapse",)}),
+    )
+    readonly_fields = ("smtp_password_status", "database_status", "storage_status", "updated_at")
+
+    def has_add_permission(self, request):
+        return not DeploymentSettings.objects.exists()
+
+    def changelist_view(self, request, extra_context=None):
+        row = DeploymentSettings.objects.order_by("pk").first()
+        if row:
+            return HttpResponseRedirect(reverse("admin:content_deploymentsettings_change", args=(row.pk,)))
+        return super().changelist_view(request, extra_context)
+
+    @admin.display(description="授权码状态")
+    def smtp_password_status(self, obj):
+        return "已加密保存，可直接保留或填写新授权码替换" if obj and obj.has_smtp_password else "尚未填写"
+
+    @admin.display(description="数据库配置状态")
+    def database_status(self, obj):
+        configured = all(os.getenv(key) for key in ("MYSQL_DATABASE", "MYSQL_USER", "MYSQL_PASSWORD", "MYSQL_HOST"))
+        state = "已配置" if configured else "未完整配置，将使用本地默认值"
+        host = os.getenv("MYSQL_HOST", "127.0.0.1")
+        database = os.getenv("MYSQL_DATABASE", "prompt_generator")
+        user = os.getenv("MYSQL_USER", "prompt_user")
+        return format_html("<strong>{}</strong><br>主机：{}<br>数据库：{}<br>用户：{}<br>密码：{}", state, host, database, user, "已设置" if os.getenv("MYSQL_PASSWORD") else "未设置")
+
+    @admin.display(description="运行时图片存储状态")
+    def storage_status(self, obj):
+        configured = all(os.getenv(key) for key in ("R2_BUCKET_NAME", "R2_ENDPOINT_URL", "R2_ACCESS_KEY_ID", "R2_SECRET_ACCESS_KEY"))
+        if configured:
+            return format_html("<strong>Cloudflare R2 已配置</strong><br>存储桶：{}<br>公开地址：{}", os.getenv("R2_BUCKET_NAME"), os.getenv("R2_PUBLIC_BASE_URL", "使用签名地址"))
+        return "当前使用服务器本地 media 目录；正式部署时请配置 Cloudflare R2，避免重启后图片丢失。"
+
+    def response_change(self, request, obj):
+        if "_send_test_email" in request.POST:
+            recipient = request.user.email or obj.feedback_notification_email
+            try:
+                sent = send_mail(
+                    "[图灵词造] SMTP 配置测试",
+                    "这是一封由图灵词造后台发送的测试邮件。收到此邮件表示 SMTP 配置可用。",
+                    obj.default_from_email or obj.smtp_username,
+                    [recipient],
+                    fail_silently=False,
+                )
+                if sent:
+                    self.message_user(request, f"测试邮件已发送至 {recipient}。", messages.SUCCESS)
+                else:
+                    self.message_user(request, "邮件服务未返回发送成功，请检查 SMTP 配置。", messages.ERROR)
+            except Exception as exc:
+                self.message_user(request, f"测试邮件发送失败：{exc}", messages.ERROR)
+            return HttpResponseRedirect(request.path)
+        return super().response_change(request, obj)
+
+
 @admin.register(Feedback)
 class FeedbackAdmin(admin.ModelAdmin):
     list_display = ("content_display", "user", "handled", "attachment_preview", "created_at")
@@ -437,6 +546,7 @@ def _install_admin_menu_organization():
         content_app = next((item for item in app_list if item["app_label"] == "content"), None)
         feedback_model = None
         site_settings_model = None
+        deployment_settings_model = None
 
         if content_app:
             retained_models = []
@@ -447,6 +557,8 @@ def _install_admin_menu_organization():
                     feedback_model = model
                 elif model["object_name"] == "SiteSettings":
                     site_settings_model = model
+                elif model["object_name"] == "DeploymentSettings":
+                    deployment_settings_model = model
                 else:
                     retained_models.append(model)
             content_app["models"] = retained_models
@@ -465,6 +577,13 @@ def _install_admin_menu_organization():
                 "name": "网站设置",
                 "icon": "fas fa-sliders-h",
                 "url": reverse("admin:content_sitesettings_change", args=(settings_row.pk,)) if settings_row else site_settings_model.get("add_url", ""),
+            })
+        if deployment_settings_model:
+            deployment_row = DeploymentSettings.objects.order_by("pk").first()
+            quick_menus.append({
+                "name": "部署配置",
+                "icon": "fas fa-server",
+                "url": reverse("admin:content_deploymentsettings_change", args=(deployment_row.pk,)) if deployment_row else deployment_settings_model.get("add_url", ""),
             })
         if quick_menus:
             settings.SIMPLEUI_CONFIG["system_keep"] = True

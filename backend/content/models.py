@@ -2,6 +2,8 @@ from django.conf import settings
 from django.db import models
 from uuid import uuid4
 
+from .secrets import decrypt_secret, encrypt_secret
+
 
 class ParameterOption(models.Model):
     source_id = models.CharField("项目 ID", max_length=120, unique=True, blank=True, editable=False)
@@ -115,3 +117,34 @@ class SiteSettings(models.Model):
 
     def __str__(self):
         return self.site_name
+
+
+class DeploymentSettings(models.Model):
+    smtp_enabled = models.BooleanField("启用后台 SMTP 配置", default=False)
+    smtp_host = models.CharField("SMTP 服务器", max_length=255, default="smtp.163.com")
+    smtp_port = models.PositiveIntegerField("SMTP 端口", default=465)
+    smtp_username = models.EmailField("发件邮箱", blank=True)
+    smtp_password_encrypted = models.TextField("SMTP 授权码密文", blank=True, editable=False)
+    smtp_use_ssl = models.BooleanField("使用 SSL", default=True)
+    smtp_use_tls = models.BooleanField("使用 TLS", default=False)
+    default_from_email = models.EmailField("默认发件邮箱", blank=True)
+    feedback_notification_email = models.EmailField("意见建议接收邮箱", default="934361900@qq.com")
+    updated_at = models.DateTimeField("更新时间", auto_now=True)
+
+    class Meta:
+        verbose_name = "部署配置"
+        verbose_name_plural = "部署配置"
+
+    def __str__(self):
+        return "部署配置"
+
+    def set_smtp_password(self, value):
+        if value:
+            self.smtp_password_encrypted = encrypt_secret(value)
+
+    def get_smtp_password(self):
+        return decrypt_secret(self.smtp_password_encrypted)
+
+    @property
+    def has_smtp_password(self):
+        return bool(self.smtp_password_encrypted)
