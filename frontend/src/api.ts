@@ -116,8 +116,8 @@ export const api = {
   submitFeedback(form: FormData) {
     return request("/feedback/", { method: "POST", body: form }, false);
   },
-  catalogParameters: () => request<any[]>("/catalog/parameters/", { cache: "no-store" }).then((body: any) => body.results || body),
-  catalogFeatured: () => request<any[]>("/catalog/featured-prompts/", { cache: "no-store" }).then((body: any) => body.results || body),
+  catalogParameters: () => request<any[]>("/catalog/parameters/").then((body: any) => body.results || body),
+  catalogFeatured: () => request<any[]>("/catalog/featured-prompts/").then((body: any) => body.results || body),
   resendActivation(email: string) {
     return request<void>("/auth/users/resend_activation/", {
       method: "POST",
@@ -139,5 +139,5 @@ export const api = {
   updateProfile(form: FormData) {
     return request<AuthUser>("/auth/users/me/", { method: "PATCH", body: form }, true);
   },
-  siteSettings: () => request<SiteSettings[]>("/site-settings/", { cache: "no-store" }).then((body: any) => (body.results || body)[0] || null),
+  siteSettings: () => request<SiteSettings[]>("/site-settings/").then((body: any) => (body.results || body)[0] || null),
 };

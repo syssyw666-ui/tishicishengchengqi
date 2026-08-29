@@ -5,6 +5,8 @@ from django.http import JsonResponse
 from django.urls import include, path
 from rest_framework.routers import DefaultRouter
 
+from accounts.views import ReliableUserViewSet
+
 from content.views import (
     FeedbackViewSet, FeaturedPromptViewSet, ParameterOptionViewSet, PromptTemplateViewSet, SiteSettingsViewSet,
     catalog_image_source,
@@ -23,6 +25,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("api/health/", lambda request: JsonResponse({"status": "ok"})),
     path("api/", include(router.urls)),
+    path("api/auth/users/", ReliableUserViewSet.as_view({"get": "list", "post": "create"})),
     path("api/auth/", include("djoser.urls")),
     path("api/auth/", include("djoser.urls.jwt")),
 ]

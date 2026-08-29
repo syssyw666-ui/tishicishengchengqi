@@ -1,5 +1,6 @@
 import logging
 import mimetypes
+from threading import Thread
 from io import BytesIO
 from pathlib import Path
 from urllib.error import HTTPError, URLError
@@ -10,18 +11,32 @@ from django.conf import settings
 from django.contrib.admin.views.decorators import staff_member_required
 from django.core.mail import send_mail
 from django.http import FileResponse, Http404
+from django.views.decorators.cache import cache_control, cache_page
 from django.utils.decorators import method_decorator
-from django.views.decorators.cache import never_cache
 from django.urls import reverse
 from rest_framework import mixins, permissions, viewsets
+from rest_framework.response import Response
 
 from .models import Feedback, FeaturedPrompt, ParameterOption, PromptTemplate, SiteSettings
 from .email_backend import get_deployment_email_settings
-from .catalog_labels import catalog_ordering
+from .catalog_labels import category_rank, group_rank
 from .serializers import FeedbackSerializer, FeaturedPromptSerializer, ParameterOptionSerializer, PromptTemplateSerializer, SiteSettingsSerializer
 
 
 logger = logging.getLogger(__name__)
+
+
+def send_feedback_notification(subject, message, from_email, recipient):
+    try:
+        send_mail(
+            subject=subject,
+            message=message,
+            from_email=from_email,
+            recipient_list=[recipient],
+            fail_silently=False,
+        )
+    except Exception:
+        logger.exception("意见建议通知邮件发送失败")
 
 
 @staff_member_required
@@ -50,18 +65,40 @@ def catalog_image_source(request):
     return FileResponse(BytesIO(payload), content_type=response_content_type or content_type)
 
 
-@method_decorator(never_cache, name="dispatch")
+@method_decorator(cache_page(60), name="list")
+@method_decorator(cache_control(public=True, max_age=60, stale_while_revalidate=300), name="list")
 class ParameterOptionViewSet(viewsets.ReadOnlyModelViewSet):
-    queryset = ParameterOption.objects.filter(enabled=True).order_by(*catalog_ordering())
+    queryset = ParameterOption.objects.filter(enabled=True).order_by("category", "style_group", "order", "id")
     serializer_class = ParameterOptionSerializer
     pagination_class = None
 
+    def list(self, request, *args, **kwargs):
+        items = list(self.get_queryset())
+        items.sort(key=lambda item: (
+            category_rank(item.category),
+            group_rank(item.category, item.style_group),
+            item.order,
+            item.id,
+        ))
+        return Response(self.get_serializer(items, many=True).data)
 
-@method_decorator(never_cache, name="dispatch")
+
+@method_decorator(cache_page(60), name="list")
+@method_decorator(cache_control(public=True, max_age=60, stale_while_revalidate=300), name="list")
 class FeaturedPromptViewSet(viewsets.ReadOnlyModelViewSet):
-    queryset = FeaturedPrompt.objects.filter(enabled=True).order_by(*catalog_ordering(featured=True))
+    queryset = FeaturedPrompt.objects.filter(enabled=True).order_by("category", "group", "order", "id")
     serializer_class = FeaturedPromptSerializer
     pagination_class = None
+
+    def list(self, request, *args, **kwargs):
+        items = list(self.get_queryset())
+        items.sort(key=lambda item: (
+            category_rank(item.category, featured=True),
+            group_rank(item.category, item.group, featured=True),
+            item.order,
+            item.id,
+        ))
+        return Response(self.get_serializer(items, many=True).data)
 
 
 class PromptTemplateViewSet(viewsets.ModelViewSet):
@@ -106,19 +143,15 @@ class FeedbackViewSet(mixins.CreateModelMixin, mixins.ListModelMixin, viewsets.G
         runtime_email = get_deployment_email_settings() or {}
         from_email = runtime_email.get("from_email") or settings.DEFAULT_FROM_EMAIL
         recipient = runtime_email.get("feedback_email") or settings.FEEDBACK_NOTIFICATION_EMAIL
-        try:
-            send_mail(
-                subject=f"[图片提示词生成器] 新意见建议 #{feedback.pk}",
-                message=(
-                    f"提交用户：{sender}\n"
-                    f"提交时间：{feedback.created_at:%Y-%m-%d %H:%M:%S}\n"
-                    f"图片附件：{attachment_note}\n\n"
-                    f"建议内容：\n{feedback.content or '（仅提交了图片）'}\n\n"
-                    f"后台查看：{admin_url}"
-                ),
-                from_email=from_email,
-                recipient_list=[recipient],
-                fail_silently=False,
-            )
-        except Exception:
-            logger.exception("意见建议 #%s 的管理员通知邮件发送失败", feedback.pk)
+        message = (
+            f"提交用户：{sender}\n"
+            f"提交时间：{feedback.created_at:%Y-%m-%d %H:%M:%S}\n"
+            f"图片附件：{attachment_note}\n\n"
+            f"建议内容：\n{feedback.content or '（仅提交了图片）'}\n\n"
+            f"后台查看：{admin_url}"
+        )
+        Thread(
+            target=send_feedback_notification,
+            args=(f"[图片提示词生成器] 新意见建议 #{feedback.pk}", message, from_email, recipient),
+            daemon=True,
+        ).start()

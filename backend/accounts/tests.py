@@ -4,6 +4,7 @@ from django.core import mail
 from django.test import override_settings
 from django.utils.encoding import force_bytes
 from django.utils.http import urlsafe_base64_encode
+from unittest.mock import patch
 from rest_framework import status
 from rest_framework.test import APITestCase
 
@@ -116,3 +117,18 @@ class AccountActivationTests(APITestCase):
         self.assertEqual(response.data["email"], ["该邮箱已注册，请直接登录或使用其他邮箱。"])
         self.assertFalse(get_user_model().objects.filter(username="another-user").exists())
         self.assertEqual(len(mail.outbox), 0)
+
+    @patch("djoser.email.ActivationEmail.send", side_effect=RuntimeError("smtp unavailable"))
+    def test_registration_rolls_back_when_activation_email_fails(self, _send):
+        response = self.client.post(
+            "/api/auth/users/",
+            {
+                "username": "mail-failure-user",
+                "email": "mail-failure@example.com",
+                "password": "StrongPass123!",
+                "re_password": "StrongPass123!",
+            },
+        )
+
+        self.assertEqual(response.status_code, status.HTTP_503_SERVICE_UNAVAILABLE)
+        self.assertFalse(get_user_model().objects.filter(username="mail-failure-user").exists())

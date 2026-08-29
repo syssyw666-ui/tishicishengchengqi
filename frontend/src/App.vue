@@ -40,6 +40,8 @@ const feedbackFile = ref<File | null>(null);
 const feedbackPreview = ref("");
 const feedbackStatus = ref("");
 const feedbackOpen = ref(false);
+const feedbackBusy = ref(false);
+const feedbackSuccess = ref(false);
 const siteSettings = ref<SiteSettings>({ site_name: "图灵词造·AI提示词实训营", slogan: "词出新意，图出惊喜", logo_url: "/assets/turing-cizao-logo-v2.png", wechat_qr_url: "", help_text: "需要帮助？扫码加入微信群" });
 
 const user = ref<AuthUser | null>(null);
@@ -219,6 +221,7 @@ function chooseFeedbackImage(event: Event) {
 }
 
 async function submitFeedback() {
+  if (feedbackBusy.value) return;
   if (!feedbackText.value.trim() && !feedbackFile.value) {
     feedbackStatus.value = "请填写建议或插入图片。";
     return;
@@ -226,16 +229,25 @@ async function submitFeedback() {
   const form = new FormData();
   form.append("content", feedbackText.value.trim());
   if (feedbackFile.value) form.append("image", feedbackFile.value);
+  feedbackBusy.value = true;
+  feedbackStatus.value = "";
   try {
     await api.submitFeedback(form);
     feedbackText.value = "";
     feedbackFile.value = null;
     feedbackPreview.value = "";
-    feedbackStatus.value = "感谢反馈，内容已提交。";
-    window.setTimeout(() => { feedbackOpen.value = false; }, 900);
+    feedbackSuccess.value = true;
   } catch (error) {
     feedbackStatus.value = error instanceof Error ? error.message : "提交失败，请稍后重试。";
+  } finally {
+    feedbackBusy.value = false;
   }
+}
+
+function finishFeedback() {
+  feedbackSuccess.value = false;
+  feedbackOpen.value = false;
+  feedbackStatus.value = "";
 }
 
 async function requestPasswordReset() {
@@ -458,30 +470,20 @@ function passwordResetFromHash() {
 }
 
 async function loadRemoteCatalog() {
-  try {
-    const remote = await api.catalogParameters();
-    if (remote.length) {
-      allParameters.value = remote;
-    }
-  } catch {
-    // The generator remains fully usable with the bundled offline catalog.
+  const [parametersResult, featuredResult, settingsResult] = await Promise.allSettled([
+    api.catalogParameters(),
+    api.catalogFeatured(),
+    api.siteSettings(),
+  ]);
+  if (parametersResult.status === "fulfilled" && parametersResult.value.length) {
+    allParameters.value = parametersResult.value;
   }
-  try {
-    const remote = await api.catalogFeatured();
-    if (remote.length) {
-      allFeatured.value = remote;
-    }
-  } catch {
-    // Keep bundled featured prompts when the backend is offline.
+  if (featuredResult.status === "fulfilled" && featuredResult.value.length) {
+    allFeatured.value = featuredResult.value;
   }
-  try {
-    const remoteSettings = await api.siteSettings();
-    if (remoteSettings) {
-      siteSettings.value = remoteSettings;
-      document.title = remoteSettings.site_name;
-    }
-  } catch {
-    // Keep the built-in site identity when the backend is offline.
+  if (settingsResult.status === "fulfilled" && settingsResult.value) {
+    siteSettings.value = settingsResult.value;
+    document.title = settingsResult.value.site_name;
   }
 }
 
@@ -495,7 +497,7 @@ onMounted(async () => {
   if (api.hasToken()) {
     try { user.value = await api.me(); } catch { api.logout(); }
   }
-  await loadRemoteCatalog();
+  void loadRemoteCatalog();
   window.addEventListener("focus", syncRemoteCatalog);
   window.addEventListener("click", closeAccountMenu);
   document.addEventListener("visibilitychange", syncRemoteCatalog);
@@ -642,7 +644,7 @@ onUnmounted(() => {
 
   <div v-if="passwordConfirmOpen" class="modal-backdrop"><form class="login-modal" @submit.prevent="confirmPasswordReset"><div class="modal-title"><div><h2>设置新密码</h2><p>请输入两次新密码，完成后即可返回登录。</p></div></div><label class="field"><span>新密码</span><input v-model="passwordConfirmForm.new_password" type="password" autocomplete="new-password" required /></label><label class="field"><span>确认新密码</span><input v-model="passwordConfirmForm.re_new_password" type="password" autocomplete="new-password" required /></label><p v-if="passwordConfirmStatus" class="password-reset-status">{{ passwordConfirmStatus }}</p><button class="primary-action auth-submit" type="submit" :disabled="passwordConfirmBusy">{{ passwordConfirmBusy ? '正在更新...' : '更新密码' }}</button></form></div>
 
-  <div v-if="feedbackOpen" class="modal-backdrop" @click.self="feedbackOpen = false"><section class="login-modal feedback-modal"><div class="modal-title"><div><h2>提交建议</h2><p>告诉我们希望增加的内容或遇到的问题，可同时上传图片。</p></div><button class="icon-button" type="button" @click="feedbackOpen = false"><X :size="18" /></button></div><textarea v-model="feedbackText" class="feedback-textarea" placeholder="写下你希望增加的风格、参数、使用问题或优化建议..." /><div class="feedback-actions"><label class="upload-button"><ImageIcon :size="15" />{{ t.upload }}<input accept="image/*" type="file" @change="chooseFeedbackImage" /></label><button class="primary-action" type="button" @click="submitFeedback"><Send :size="15" />{{ t.submit }}</button></div><div v-if="feedbackPreview" class="feedback-preview"><img :src="feedbackPreview" alt="反馈图片预览" /><div><strong>{{ feedbackFile?.name }}</strong><button type="button" @click="feedbackFile = null; feedbackPreview = ''">移除图片</button></div></div><p v-if="feedbackStatus" class="feedback-status">{{ feedbackStatus }}</p></section></div>
+  <div v-if="feedbackOpen" class="modal-backdrop" @click.self="!feedbackBusy && !feedbackSuccess && (feedbackOpen = false)"><section v-if="!feedbackSuccess" class="login-modal feedback-modal"><div class="modal-title"><div><h2>提交建议</h2><p>告诉我们希望增加的内容或遇到的问题，可同时上传图片。</p></div><button class="icon-button" type="button" :disabled="feedbackBusy" @click="feedbackOpen = false"><X :size="18" /></button></div><textarea v-model="feedbackText" class="feedback-textarea" placeholder="写下你希望增加的风格、参数、使用问题或优化建议..." /><div class="feedback-actions"><label class="upload-button"><ImageIcon :size="15" />{{ t.upload }}<input accept="image/*" type="file" @change="chooseFeedbackImage" /></label><button class="primary-action" type="button" :disabled="feedbackBusy" @click="submitFeedback"><Send :size="15" />{{ feedbackBusy ? '正在提交...' : t.submit }}</button></div><div v-if="feedbackPreview" class="feedback-preview"><img :src="feedbackPreview" alt="反馈图片预览" /><div><strong>{{ feedbackFile?.name }}</strong><button type="button" @click="feedbackFile = null; feedbackPreview = ''">移除图片</button></div></div><p v-if="feedbackStatus" class="feedback-status">{{ feedbackStatus }}</p></section><section v-else class="login-modal activation-modal"><div class="activation-icon success">✓</div><h2>提交成功</h2><p>感谢你的建议，我们已经收到并保存到管理后台。</p><button class="primary-action" type="button" @click="finishFeedback">确认</button></section></div>
 
   <div v-if="activationPending" class="modal-backdrop"><section class="login-modal activation-modal"><div class="activation-icon">@</div><h2>请激活你的账号</h2><p>激活邮件已发送至 <strong>{{ activationEmail }}</strong>。请确认地址无误，并检查垃圾邮件；激活后会自动返回本网站。</p><p v-if="activationResendStatus" class="activation-resend-status">{{ activationResendStatus }}</p><button class="auth-switch" type="button" :disabled="activationResendBusy" @click="resendActivationEmail">{{ activationResendBusy ? '正在重新发送...' : '没有收到？重新发送激活邮件' }}</button><button class="primary-action" type="button" @click="activationPending = false">我知道了</button></section></div>
   <div v-if="activationResult" class="modal-backdrop"><section class="login-modal activation-modal"><div :class="['activation-icon', activationResult]">{{ activationResult === 'success' ? '✓' : '!' }}</div><h2>{{ activationResult === 'success' ? '账号激活成功' : '账号激活失败' }}</h2><p>{{ activationMessage }}</p><button class="primary-action" type="button" @click="finishActivationDialog">{{ activationResult === 'success' ? '去登录' : '关闭' }}</button></section></div>

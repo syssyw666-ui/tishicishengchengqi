@@ -30,6 +30,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    "django.middleware.gzip.GZipMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
     "corsheaders.middleware.CorsMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
@@ -172,6 +173,7 @@ EMAIL_USE_TLS = os.getenv("EMAIL_USE_TLS", "1") == "1" and not EMAIL_USE_SSL
 EMAIL_TIMEOUT = int(os.getenv("EMAIL_TIMEOUT", "20"))
 DOMAIN = os.getenv("DJOSER_DOMAIN", FRONTEND_URL.replace("https://", "").replace("http://", ""))
 SITE_NAME = os.getenv("SITE_NAME", "图片提示词生成器")
+PROTOCOL = "https" if FRONTEND_URL.startswith("https://") else "http"
 
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 SESSION_COOKIE_SECURE = not DEBUG

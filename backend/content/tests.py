@@ -26,7 +26,8 @@ class CatalogApiTests(APITestCase):
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual([item["id"] for item in response.data], ["enabled"])
-        self.assertIn("no-cache", response["Cache-Control"])
+        self.assertIn("public", response["Cache-Control"])
+        self.assertIn("max-age=60", response["Cache-Control"])
 
     def test_site_settings_are_public(self):
         settings_row = SiteSettings.objects.first()
