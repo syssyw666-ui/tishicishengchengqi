@@ -544,11 +544,15 @@ class DeploymentSettingsAdmin(admin.ModelAdmin):
             "fields": ("storage_status",),
             "description": "用户上传图片建议存入 Cloudflare R2；内置参考图库继续由前端 CDN 提供。",
         }),
+        ("部署入口与操作流程", {
+            "fields": ("deployment_links", "deployment_workflow"),
+            "description": "集中管理前端网站、代码仓库、后端服务与数据库。链接会在新窗口打开，不展示密码、授权码等敏感信息。",
+        }),
         ("系统信息", {"fields": ("updated_at",), "classes": ("collapse",)}),
     )
     readonly_fields = (
         "emailjs_private_key_status", "brevo_api_key_status", "smtp_password_status",
-        "database_status", "storage_status", "updated_at",
+        "database_status", "storage_status", "deployment_links", "deployment_workflow", "updated_at",
     )
 
     class Media:
@@ -590,6 +594,51 @@ class DeploymentSettingsAdmin(admin.ModelAdmin):
         if configured:
             return format_html("<strong>Cloudflare R2 已配置</strong><br>存储桶：{}<br>公开地址：{}", os.getenv("R2_BUCKET_NAME"), os.getenv("R2_PUBLIC_BASE_URL", "使用签名地址"))
         return "当前使用服务器本地 media 目录；正式部署时请配置 Cloudflare R2，避免重启后图片丢失。"
+
+    @admin.display(description="常用管理入口")
+    def deployment_links(self, obj):
+        frontend_url = settings.FRONTEND_URL.rstrip("/")
+        backend_url = "https://backend-production-7c8d.up.railway.app"
+        return format_html(
+            """
+            <div class="deployment-link-grid">
+              <a class="deployment-link-card" href="https://dash.cloudflare.com/" target="_blank" rel="noopener">
+                <strong>Cloudflare 网页设置</strong><span>管理 Workers、域名、构建与发布记录</span>
+              </a>
+              <a class="deployment-link-card" href="{}" target="_blank" rel="noopener">
+                <strong>线上前端网站</strong><span>{}</span>
+              </a>
+              <a class="deployment-link-card" href="https://github.com/syssyw666-ui/tishicishengchengqi" target="_blank" rel="noopener">
+                <strong>前端 GitHub 仓库</strong><span>公开仓库 · Vue 前端与参考图库</span>
+              </a>
+              <a class="deployment-link-card" href="https://github.com/syssyw666-ui/tishicishengchengqi_ADMIN" target="_blank" rel="noopener">
+                <strong>后端 GitHub 仓库</strong><span>私有仓库 · Django 后端</span>
+              </a>
+              <a class="deployment-link-card" href="https://railway.com/dashboard" target="_blank" rel="noopener">
+                <strong>Railway 后端管理</strong><span>管理 Backend、MySQL、变量、日志与域名</span>
+              </a>
+              <a class="deployment-link-card" href="{}/admin/" target="_blank" rel="noopener">
+                <strong>线上 Django 管理后台</strong><span>{}/admin/</span>
+              </a>
+              <a class="deployment-link-card" href="{}/api/health/" target="_blank" rel="noopener">
+                <strong>后端健康检查</strong><span>正常时返回 status: ok</span>
+              </a>
+            </div>
+            """,
+            frontend_url, frontend_url, backend_url, backend_url, backend_url,
+        )
+
+    @admin.display(description="设置与发布流程")
+    def deployment_workflow(self, obj):
+        return mark_safe("""
+        <div class="deployment-workflow">
+          <section><strong>1. 发布前端网页</strong><p>修改 Vue 前端并推送到公开仓库 <code>syssyw666-ui/tishicishengchengqi</code> 的 <code>main</code> 分支。Cloudflare 会自动构建并发布；前往 Cloudflare 网页设置查看构建日志、Workers 域名和自定义域名。</p></section>
+          <section><strong>2. 发布 Django 后端</strong><p>后端代码只推送到私有仓库 <code>syssyw666-ui/tishicishengchengqi_ADMIN</code>。Railway 监听 <code>main</code> 分支并自动部署；部署后先打开健康检查，确认返回 <code>{&quot;status&quot;: &quot;ok&quot;}</code>，再测试登录、注册邮件和后台。</p></section>
+          <section><strong>3. 管理 Railway MySQL</strong><p>数据库变量在 Railway 的 MySQL 服务中管理。使用 Navicat 从电脑连接时，必须开启 MySQL 的 Public Networking，并填写公网 TCP Proxy 域名和端口；数据库名、用户名和密码从 Railway Variables 复制。不要把数据库密码写进 GitHub。</p></section>
+          <section><strong>4. 检查前后端连接</strong><p>Railway 的 <code>FRONTEND_URL</code>、<code>CORS_ALLOWED_ORIGINS</code>、<code>CSRF_TRUSTED_ORIGINS</code> 应填写线上前端网址；Cloudflare 构建变量 <code>VITE_API_BASE_URL</code> 应填写线上后端地址并以 <code>/api</code> 结尾。修改变量后需要重新部署对应服务。</p></section>
+          <section><strong>5. 图片与密钥</strong><p>用户上传图片放在 Cloudflare R2；内置参考图保留在前端仓库。SMTP 授权码、EmailJS Private Key、数据库密码和 R2 Secret Key 只能存放在后台加密字段或 Railway Variables 中。</p></section>
+        </div>
+        """)
 
     def response_change(self, request, obj):
         if "_send_test_email" in request.POST:

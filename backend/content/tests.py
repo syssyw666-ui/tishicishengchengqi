@@ -189,6 +189,12 @@ class AdminCustomizationTests(TestCase):
         self.assertContains(response, "已加密保存")
         self.assertContains(response, "数据库连接")
         self.assertContains(response, "图片对象存储")
+        self.assertContains(response, "部署入口与操作流程")
+        self.assertContains(response, "Cloudflare 网页设置")
+        self.assertContains(response, "https://github.com/syssyw666-ui/tishicishengchengqi_ADMIN")
+        self.assertContains(response, "https://railway.com/dashboard")
+        self.assertContains(response, "Navicat")
+        self.assertContains(response, "VITE_API_BASE_URL")
         self.assertContains(response, "保存并发送测试邮件")
         self.assertNotContains(response, "smtp-secret-value")
 

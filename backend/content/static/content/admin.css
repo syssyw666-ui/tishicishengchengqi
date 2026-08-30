@@ -331,3 +331,47 @@
   background: #e8eef7;
   color: #b42318;
 }
+.deployment-link-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 10px;
+  max-width: 1040px;
+}
+
+.deployment-link-card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-height: 72px;
+  padding: 13px 15px;
+  border: 1px solid #d8dee9;
+  border-radius: 6px;
+  background: #f7f9fc;
+  color: #1f2937 !important;
+  text-decoration: none !important;
+  box-sizing: border-box;
+}
+
+.deployment-link-card:hover {
+  border-color: #409eff;
+  background: #eef6ff;
+}
+
+.deployment-link-card strong { color: #1f2937; }
+.deployment-link-card span { color: #667085; font-size: 12px; overflow-wrap: anywhere; }
+
+.deployment-workflow {
+  display: grid;
+  gap: 10px;
+  max-width: 1040px;
+}
+
+.deployment-workflow section {
+  padding: 12px 15px;
+  border-left: 3px solid #409eff;
+  background: #f7f9fc;
+}
+
+.deployment-workflow strong { color: #1f2937; }
+.deployment-workflow p { margin: 6px 0 0; color: #475467; line-height: 1.7; }
+.deployment-workflow code { color: #b42318; background: #fff; padding: 1px 4px; border-radius: 3px; }
