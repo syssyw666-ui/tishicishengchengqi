@@ -314,8 +314,16 @@ async function login() {
 }
 
 async function register() {
-  authBusy.value = true;
   authError.value = "";
+  if (Array.from(registerForm.password).length < 10) {
+    authError.value = "密码至少需要 10 个字符。";
+    return;
+  }
+  if (registerForm.password !== registerForm.re_password) {
+    authError.value = "两次输入的密码不一致。";
+    return;
+  }
+  authBusy.value = true;
   try {
     const email = registerForm.email.trim().toLowerCase();
     await api.register({ ...registerForm, username: registerForm.username.trim(), email });
@@ -325,7 +333,7 @@ async function register() {
     activationPending.value = true;
   } catch (error) {
     const message = error instanceof Error ? error.message : "注册失败。";
-    authError.value = /邮箱|email|already|exists|unique/i.test(message)
+    authError.value = /该邮箱已注册|email.*already|already.*email|email.*exists|unique.*email/i.test(message)
       ? "该邮箱已注册，请直接登录或使用其他邮箱。"
       : message;
   } finally {

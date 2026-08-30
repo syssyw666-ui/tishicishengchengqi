@@ -70,7 +70,32 @@ async function request<T>(path: string, init: RequestInit = {}, authenticated = 
     let detail = `请求失败（${response.status}）`;
     try {
       const body = await response.json();
-      detail = body.detail || Object.values(body).flat().join(" ") || detail;
+      const fieldLabels: Record<string, string> = {
+        username: "用户名", email: "邮箱", password: "密码",
+        re_password: "确认密码", new_password: "新密码", re_new_password: "确认密码",
+        non_field_errors: "",
+      };
+      const translations: Array<[RegExp, string]> = [
+        [/This password is too short.*at least (\d+) characters?/i, "密码至少需要 $1 个字符。"],
+        [/This password is too common/i, "这个密码过于常见，请换一个更独特的密码。"],
+        [/This password is entirely numeric/i, "密码不能全部由数字组成。"],
+        [/The password is too similar to/i, "密码与用户名或邮箱过于相似。"],
+        [/The two password fields didn.?t match/i, "两次输入的密码不一致。"],
+      ];
+      const translate = (value: unknown) => translations.reduce(
+        (message, [pattern, replacement]) => message.replace(pattern, replacement),
+        String(value),
+      );
+      if (body.detail) {
+        detail = translate(body.detail);
+      } else if (body && typeof body === "object") {
+        const messages = Object.entries(body).flatMap(([field, values]) => {
+          const items = Array.isArray(values) ? values : [values];
+          const label = fieldLabels[field] ?? field;
+          return items.map((value) => `${label ? `${label}：` : ""}${translate(value)}`);
+        });
+        detail = messages.join("\n") || detail;
+      }
     } catch {
       // Keep the status-based message when the server did not return JSON.
     }
