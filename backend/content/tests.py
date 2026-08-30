@@ -1,5 +1,7 @@
 import json
+from io import BytesIO
 from unittest.mock import MagicMock, patch
+from urllib.error import HTTPError
 
 from django.contrib import admin
 from django.contrib.auth import get_user_model
@@ -348,3 +350,45 @@ class BrevoEmailBackendTests(TestCase):
         self.assertEqual(payload["template_id"], "template_activation")
         self.assertEqual(payload["accessToken"], "private-key")
         self.assertEqual(payload["template_params"]["to_email"], "reader@example.com")
+        self.assertEqual(payload["lib_version"], "5.0.2")
+        self.assertTrue(payload["template_params"]["delivery_id"])
+        self.assertEqual(request.headers["User-agent"], "TuringCizao-Mailer/1.0")
+
+    @patch("content.email_backend.time.sleep", return_value=None)
+    @patch("content.email_backend.uuid4")
+    def test_emailjs_1010_is_confirmed_from_delivery_history(self, mocked_uuid4, _mocked_sleep):
+        settings_row = DeploymentSettings.objects.first() or DeploymentSettings.objects.create()
+        settings_row.smtp_enabled = True
+        settings_row.email_provider = "emailjs"
+        settings_row.default_from_email = "sender@example.com"
+        settings_row.emailjs_service_id = "service_personal"
+        settings_row.emailjs_template_id = "template_activation"
+        settings_row.emailjs_public_key = "public-key"
+        settings_row.set_emailjs_private_key("private-key")
+        settings_row.save()
+        mocked_uuid4.return_value.hex = "delivery-known-id"
+        blocked_response = HTTPError(
+            "https://api.emailjs.com/api/v1.0/email/send", 403, "Forbidden", {},
+            BytesIO(b"error code: 1010"),
+        )
+        history_response = MagicMock()
+        history_response.status = 200
+        history_response.read.return_value = json.dumps({
+            "rows": [{
+                "result": 1,
+                "template_id": "template_activation",
+                "template_params": json.dumps({"delivery_id": "delivery-known-id"}),
+            }],
+        }).encode("utf-8")
+        history_response.__enter__.return_value = history_response
+
+        with patch(
+            "content.email_backend.urlopen",
+            side_effect=[blocked_response, history_response],
+        ) as mocked_urlopen:
+            sent = send_mail("激活账号", "请点击激活链接", None, ["reader@example.com"])
+
+        self.assertEqual(sent, 1)
+        self.assertEqual(mocked_urlopen.call_count, 2)
+        history_request = mocked_urlopen.call_args.args[0]
+        self.assertTrue(history_request.full_url.startswith("https://api.emailjs.com/api/v1.1/history?"))

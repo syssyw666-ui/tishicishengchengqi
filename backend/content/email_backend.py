@@ -1,7 +1,10 @@
 import json
+import time
 from email.utils import parseaddr
 from urllib.error import HTTPError, URLError
+from urllib.parse import urlencode
 from urllib.request import Request, urlopen
+from uuid import uuid4
 
 from django.conf import settings
 from django.core.mail.backends.base import BaseEmailBackend
@@ -38,6 +41,8 @@ def get_deployment_email_settings():
 
 
 class DatabaseConfiguredEmailBackend(BaseEmailBackend):
+    EMAILJS_USER_AGENT = "TuringCizao-Mailer/1.0"
+
     def send_messages(self, email_messages):
         if not email_messages:
             return 0
@@ -106,6 +111,7 @@ class DatabaseConfiguredEmailBackend(BaseEmailBackend):
 
         sent = 0
         for message in email_messages:
+            delivery_id = uuid4().hex
             html_content = ""
             for alternative in getattr(message, "alternatives", ()):
                 content = getattr(alternative, "content", alternative[0])
@@ -114,6 +120,7 @@ class DatabaseConfiguredEmailBackend(BaseEmailBackend):
                     html_content = content
                     break
             payload = {
+                "lib_version": "5.0.2",
                 "service_id": runtime["emailjs_service_id"],
                 "template_id": runtime["emailjs_template_id"],
                 "user_id": runtime["emailjs_public_key"],
@@ -124,6 +131,7 @@ class DatabaseConfiguredEmailBackend(BaseEmailBackend):
                     "html_content": html_content,
                     "from_name": runtime.get("brevo_sender_name") or "图灵词造",
                     "reply_to": message.reply_to[0] if message.reply_to else runtime.get("from_email", ""),
+                    "delivery_id": delivery_id,
                 },
             }
             if runtime.get("emailjs_private_key"):
@@ -132,7 +140,11 @@ class DatabaseConfiguredEmailBackend(BaseEmailBackend):
                 request = Request(
                     "https://api.emailjs.com/api/v1.0/email/send",
                     data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
-                    headers={"content-type": "application/json"},
+                    headers={
+                        "accept": "text/plain, application/json",
+                        "content-type": "application/json",
+                        "user-agent": self.EMAILJS_USER_AGENT,
+                    },
                     method="POST",
                 )
                 with urlopen(request, timeout=settings.EMAIL_TIMEOUT) as response:
@@ -140,10 +152,58 @@ class DatabaseConfiguredEmailBackend(BaseEmailBackend):
                         raise RuntimeError(f"EmailJS 邮件 API 返回状态 {response.status}。")
                 sent += 1
             except (HTTPError, URLError, OSError, RuntimeError) as exc:
+                detail = self._error_detail(exc)
+                if "1010" in detail and self._emailjs_history_confirms(delivery_id, runtime):
+                    sent += 1
+                    continue
                 if not self.fail_silently:
-                    detail = self._error_detail(exc)
+                    if "1010" in detail:
+                        detail = (
+                            "EmailJS 已接收请求，但其网络防护拦截了响应（错误 1010），"
+                            "且发送记录中暂未确认本次投递。请稍后重试。"
+                        )
                     raise RuntimeError(f"EmailJS 邮件发送失败：{detail}") from exc
         return sent
+
+    def _emailjs_history_confirms(self, delivery_id, runtime):
+        private_key = runtime.get("emailjs_private_key")
+        if not private_key:
+            return False
+        query = urlencode({
+            "user_id": runtime["emailjs_public_key"],
+            "accessToken": private_key,
+            "page": 1,
+            "count": 10,
+        })
+        request = Request(
+            f"https://api.emailjs.com/api/v1.1/history?{query}",
+            headers={
+                "accept": "application/json",
+                "user-agent": self.EMAILJS_USER_AGENT,
+            },
+            method="GET",
+        )
+        for delay in (0.4, 0.8, 1.2):
+            time.sleep(delay)
+            try:
+                with urlopen(request, timeout=settings.EMAIL_TIMEOUT) as response:
+                    if response.status != 200:
+                        continue
+                    history = json.loads(response.read().decode("utf-8"))
+                for row in history.get("rows", []):
+                    if row.get("result") != 1 or row.get("template_id") != runtime["emailjs_template_id"]:
+                        continue
+                    params = row.get("template_params") or {}
+                    if isinstance(params, str):
+                        try:
+                            params = json.loads(params)
+                        except json.JSONDecodeError:
+                            continue
+                    if params.get("delivery_id") == delivery_id:
+                        return True
+            except (HTTPError, URLError, OSError, ValueError):
+                continue
+        return False
 
     @staticmethod
     def _error_detail(exc):
@@ -151,11 +211,6 @@ class DatabaseConfiguredEmailBackend(BaseEmailBackend):
             try:
                 body = exc.read().decode("utf-8", errors="replace").strip()
                 if body:
-                    if "1010" in body:
-                        return (
-                            "EmailJS 未允许服务端访问（错误 1010）。请在 EmailJS 的 Account → Security 中开启 "
-                            "Allow EmailJS API for non-browser applications。"
-                        )
                     return body
             except OSError:
                 pass
