@@ -119,6 +119,36 @@ class AccountActivationTests(APITestCase):
         self.assertFalse(get_user_model().objects.filter(username="another-user").exists())
         self.assertEqual(len(mail.outbox), 0)
 
+    def test_registration_returns_precise_chinese_password_errors(self):
+        response = self.client.post(
+            "/api/auth/users/",
+            {
+                "username": "password-error-user",
+                "email": "password-error@example.com",
+                "password": "12345678901",
+                "re_password": "12345678901",
+            },
+        )
+
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertIn("这个密码过于常见，请换一个更独特的密码。", response.data["password"])
+        self.assertIn("密码不能全部由数字组成。", response.data["password"])
+        self.assertNotIn("密码至少需要 10 个字符。", response.data["password"])
+
+    def test_registration_returns_chinese_password_mismatch(self):
+        response = self.client.post(
+            "/api/auth/users/",
+            {
+                "username": "password-mismatch-user",
+                "email": "password-mismatch@example.com",
+                "password": "StrongPass123!",
+                "re_password": "DifferentPass456!",
+            },
+        )
+
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertIn("两次输入的密码不一致。", str(response.data))
+
     @patch("djoser.email.ActivationEmail.send", side_effect=RuntimeError("smtp unavailable"))
     def test_registration_rolls_back_when_activation_email_fails(self, _send):
         response = self.client.post(
