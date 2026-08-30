@@ -24,10 +24,10 @@ EMAILJS_SETUP_GUIDE = mark_safe("""
   <strong>个人创作者配置流程</strong>
   <ol>
     <li><a href="https://dashboard.emailjs.com/sign-up" target="_blank" rel="noopener">注册 EmailJS 个人账号</a>，不需要公司或自有域名。</li>
-    <li>进入 <a href="https://dashboard.emailjs.com/admin" target="_blank" rel="noopener">Email Services</a>，连接 Gmail、Outlook 等个人邮箱，并先通过服务测试。</li>
+    <li>进入 <a href="https://dashboard.emailjs.com/admin" target="_blank" rel="noopener">Email Services</a>，连接 Gmail、Outlook 等个人邮箱，通过服务测试，并将它设为 <strong>Default</strong>。</li>
     <li>进入 Email Templates 新建模板：To Email=<code>{{to_email}}</code>，Subject=<code>{{subject}}</code>，Content=<code>{{message}}</code>，From Name=<code>{{from_name}}</code>，Reply To=<code>{{reply_to}}</code>。</li>
     <li>进入 Account 获取 Public Key；打开 <strong>Account → Security</strong>，必须启用 <strong>Allow EmailJS API for non-browser applications</strong>。</li>
-    <li>若启用了 Use Private Key，请把同页 Private Key 填到下方；Service ID 与 Template ID 分别从服务页和模板 Settings 页复制。</li>
+    <li>若启用了 Use Private Key，请把同页 Private Key 填到下方；Service ID 必须复制服务卡片上的 ID（不要填写服务名称、邮箱或 Template ID）。只有一个默认服务时也可以填写 <code>default_service</code>。</li>
     <li>保存本页，再点击“保存并发送测试邮件”。测试邮件发送到当前管理员账号的邮箱；后端会在异常响应时自动核对 EmailJS 发送记录，避免邮件已送达却误报失败。</li>
   </ol>
 </div>

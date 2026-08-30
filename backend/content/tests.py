@@ -355,6 +355,36 @@ class BrevoEmailBackendTests(TestCase):
         self.assertEqual(request.headers["User-agent"], "TuringCizao-Mailer/1.0")
 
     @patch("content.email_backend.time.sleep", return_value=None)
+    def test_emailjs_missing_service_id_falls_back_to_default_service(self, _mocked_sleep):
+        settings_row = DeploymentSettings.objects.first() or DeploymentSettings.objects.create()
+        settings_row.smtp_enabled = True
+        settings_row.email_provider = "emailjs"
+        settings_row.default_from_email = "sender@example.com"
+        settings_row.emailjs_service_id = "incorrect-service-id"
+        settings_row.emailjs_template_id = "template_activation"
+        settings_row.emailjs_public_key = "public-key"
+        settings_row.save()
+        missing_service = HTTPError(
+            "https://api.emailjs.com/api/v1.0/email/send", 400, "Bad Request", {},
+            BytesIO(b"The service ID not found."),
+        )
+        success_response = MagicMock()
+        success_response.status = 200
+        success_response.__enter__.return_value = success_response
+
+        with patch(
+            "content.email_backend.urlopen",
+            side_effect=[missing_service, success_response],
+        ) as mocked_urlopen:
+            sent = send_mail("激活账号", "请点击激活链接", None, ["reader@example.com"])
+
+        self.assertEqual(sent, 1)
+        self.assertEqual(mocked_urlopen.call_count, 2)
+        retry_request = mocked_urlopen.call_args.args[0]
+        retry_payload = json.loads(retry_request.data.decode("utf-8"))
+        self.assertEqual(retry_payload["service_id"], "default_service")
+
+    @patch("content.email_backend.time.sleep", return_value=None)
     @patch("content.email_backend.uuid4")
     def test_emailjs_1010_is_confirmed_from_delivery_history(self, mocked_uuid4, _mocked_sleep):
         settings_row = DeploymentSettings.objects.first() or DeploymentSettings.objects.create()

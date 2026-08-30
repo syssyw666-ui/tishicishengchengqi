@@ -136,34 +136,57 @@ class DatabaseConfiguredEmailBackend(BaseEmailBackend):
             }
             if runtime.get("emailjs_private_key"):
                 payload["accessToken"] = runtime["emailjs_private_key"]
-            try:
-                request = Request(
-                    "https://api.emailjs.com/api/v1.0/email/send",
-                    data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
-                    headers={
-                        "accept": "text/plain, application/json",
-                        "content-type": "application/json",
-                        "user-agent": self.EMAILJS_USER_AGENT,
-                    },
-                    method="POST",
-                )
-                with urlopen(request, timeout=settings.EMAIL_TIMEOUT) as response:
-                    if response.status != 200:
-                        raise RuntimeError(f"EmailJS 邮件 API 返回状态 {response.status}。")
-                sent += 1
-            except (HTTPError, URLError, OSError, RuntimeError) as exc:
-                detail = self._error_detail(exc)
-                if "1010" in detail and self._emailjs_history_confirms(delivery_id, runtime):
+            active_payload = payload
+            used_default_service = False
+            while True:
+                try:
+                    self._send_emailjs_payload(active_payload)
                     sent += 1
-                    continue
-                if not self.fail_silently:
+                    break
+                except (HTTPError, URLError, OSError, RuntimeError) as exc:
+                    detail = self._error_detail(exc)
+                    if self._emailjs_service_not_found(detail) and not used_default_service:
+                        active_payload = {**payload, "service_id": "default_service"}
+                        used_default_service = True
+                        time.sleep(1.1)
+                        continue
+                    if "1010" in detail and self._emailjs_history_confirms(delivery_id, runtime):
+                        sent += 1
+                        break
+                    if self.fail_silently:
+                        break
                     if "1010" in detail:
                         detail = (
                             "EmailJS 已接收请求，但其网络防护拦截了响应（错误 1010），"
                             "且发送记录中暂未确认本次投递。请稍后重试。"
                         )
+                    elif self._emailjs_service_not_found(detail):
+                        detail = (
+                            "当前 Service ID 不存在，自动尝试默认服务也未成功。请在 EmailJS 的 "
+                            "Email Services 页面确认至少有一个已连接且设为 Default 的服务，"
+                            "再填写该服务卡片上显示的 Service ID。"
+                        )
                     raise RuntimeError(f"EmailJS 邮件发送失败：{detail}") from exc
         return sent
+
+    def _send_emailjs_payload(self, payload):
+        request = Request(
+            "https://api.emailjs.com/api/v1.0/email/send",
+            data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
+            headers={
+                "accept": "text/plain, application/json",
+                "content-type": "application/json",
+                "user-agent": self.EMAILJS_USER_AGENT,
+            },
+            method="POST",
+        )
+        with urlopen(request, timeout=settings.EMAIL_TIMEOUT) as response:
+            if response.status != 200:
+                raise RuntimeError(f"EmailJS 邮件 API 返回状态 {response.status}。")
+
+    @staticmethod
+    def _emailjs_service_not_found(detail):
+        return "service id not found" in detail.lower()
 
     def _emailjs_history_confirms(self, delivery_id, runtime):
         private_key = runtime.get("emailjs_private_key")
