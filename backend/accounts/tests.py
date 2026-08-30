@@ -66,6 +66,7 @@ class AccountActivationTests(APITestCase):
         self.assertEqual(len(mail.outbox), 1)
         message_text = mail.outbox[0].body + "".join(content for content, _mime in mail.outbox[0].alternatives)
         self.assertIn("#/activate/", message_text)
+        self.assertIn("你刚刚注册了“图灵词造”账号。请打开下面的链接完成邮箱激活：", message_text)
 
         user = get_user_model().objects.get(username="new-user")
         activation = self.client.post(
