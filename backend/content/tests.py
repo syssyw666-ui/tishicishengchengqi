@@ -1,5 +1,7 @@
 import json
 from io import BytesIO
+from pathlib import Path
+from tempfile import TemporaryDirectory
 from unittest.mock import MagicMock, patch
 from urllib.error import HTTPError
 
@@ -11,6 +13,7 @@ from django.core.mail import send_mail
 from django.test import RequestFactory, TestCase, override_settings
 from rest_framework import status
 from rest_framework.test import APITestCase
+from PIL import Image
 
 from .models import DeploymentSettings, Feedback, FeaturedPrompt, ParameterOption, PromptTemplate, SiteSettings
 
@@ -242,14 +245,21 @@ class AdminCustomizationTests(TestCase):
         self.assertEqual(anonymous_response.status_code, status.HTTP_302_FOUND)
 
         self.client.force_login(self.admin_user)
-        response = self.client.get(source_url)
-        invalid_response = self.client.get(
-            "/admin/content/catalog-image-source/?path=/assets/../../backend/config/settings.py"
-        )
-
-        self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(response["Content-Type"], "image/jpeg")
-        self.assertEqual(invalid_response.status_code, status.HTTP_404_NOT_FOUND)
+        # The backend repository does not contain the frontend's reference images.
+        with TemporaryDirectory() as directory, self.settings(BASE_DIR=Path(directory) / "backend"):
+            image_path = Path(directory) / "public/assets/parameters/style-photorealistic.jpg"
+            image_path.parent.mkdir(parents=True)
+            Image.new("RGB", (8, 8), "white").save(image_path)
+            response = self.client.get(source_url)
+            try:
+                invalid_response = self.client.get(
+                    "/admin/content/catalog-image-source/?path=/assets/../../backend/config/settings.py"
+                )
+                self.assertEqual(response.status_code, status.HTTP_200_OK)
+                self.assertEqual(response["Content-Type"], "image/jpeg")
+                self.assertEqual(invalid_response.status_code, status.HTTP_404_NOT_FOUND)
+            finally:
+                response.close()
 
     def test_admin_reorders_only_inside_current_subcategory(self):
         first = ParameterOption.objects.create(
