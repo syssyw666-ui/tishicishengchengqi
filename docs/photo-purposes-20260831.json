@@ -1,0 +1,273 @@
+{
+  "date": "2026-08-31",
+  "category": "purpose",
+  "group": "photography",
+  "inset": 12,
+  "size": [
+    960,
+    540
+  ],
+  "fit": "contain-with-same-image-blur",
+  "sheets": [
+    {
+      "source": "exec-95cc4488-37dd-4fa7-a707-48255fcc57b0.png",
+      "cells": [
+        {
+          "id": "purpose-realistic-photo",
+          "name": "写实照片",
+          "bounds": [
+            21,
+            21,
+            674,
+            386
+          ]
+        },
+        {
+          "id": "purpose-everyday-snapshot",
+          "name": "日常生活随拍",
+          "bounds": [
+            690,
+            21,
+            1343,
+            386
+          ]
+        },
+        {
+          "id": "purpose-travel-keepsake",
+          "name": "旅行纪念照",
+          "bounds": [
+            21,
+            399,
+            674,
+            762
+          ]
+        },
+        {
+          "id": "purpose-professional-headshot",
+          "name": "职业形象照",
+          "bounds": [
+            690,
+            399,
+            1343,
+            762
+          ]
+        },
+        {
+          "id": "purpose-family-group-photo",
+          "name": "家庭合影",
+          "bounds": [
+            21,
+            776,
+            674,
+            1132
+          ]
+        },
+        {
+          "id": "purpose-wedding-keepsake",
+          "name": "婚礼纪念照",
+          "bounds": [
+            690,
+            776,
+            1343,
+            1132
+          ]
+        }
+      ]
+    },
+    {
+      "source": "exec-b058599d-89f4-44bc-a96b-c00c5556b7cb.png",
+      "cells": [
+        {
+          "id": "purpose-graduation-group-photo",
+          "name": "毕业合影",
+          "bounds": [
+            15,
+            15,
+            620,
+            414
+          ]
+        },
+        {
+          "id": "purpose-child-growth-record",
+          "name": "儿童成长记录",
+          "bounds": [
+            634,
+            15,
+            1239,
+            414
+          ]
+        },
+        {
+          "id": "purpose-maternity-keepsake",
+          "name": "孕期纪念照",
+          "bounds": [
+            15,
+            428,
+            620,
+            826
+          ]
+        },
+        {
+          "id": "purpose-pet-portrait-photo",
+          "name": "宠物写真",
+          "bounds": [
+            634,
+            428,
+            1239,
+            826
+          ]
+        },
+        {
+          "id": "purpose-sports-event-photo",
+          "name": "运动赛事抓拍",
+          "bounds": [
+            15,
+            840,
+            620,
+            1239
+          ]
+        },
+        {
+          "id": "purpose-event-documentation",
+          "name": "活动现场记录",
+          "bounds": [
+            634,
+            840,
+            1239,
+            1239
+          ]
+        }
+      ]
+    },
+    {
+      "source": "exec-001ac087-1651-45c8-86e7-7d0afdce0fc1.png",
+      "cells": [
+        {
+          "id": "purpose-landscape-photo",
+          "name": "自然风光照片",
+          "bounds": [
+            16,
+            16,
+            675,
+            384
+          ]
+        },
+        {
+          "id": "purpose-urban-street-photo",
+          "name": "城市人文街拍",
+          "bounds": [
+            691,
+            16,
+            1351,
+            384
+          ]
+        },
+        {
+          "id": "purpose-built-architecture-photo",
+          "name": "建筑实景记录",
+          "bounds": [
+            16,
+            398,
+            675,
+            758
+          ]
+        },
+        {
+          "id": "purpose-property-interior-photo",
+          "name": "房源空间实拍",
+          "bounds": [
+            691,
+            398,
+            1351,
+            758
+          ]
+        },
+        {
+          "id": "purpose-wildlife-documentary-photo",
+          "name": "野生动物生态照片",
+          "bounds": [
+            16,
+            772,
+            675,
+            1135
+          ]
+        },
+        {
+          "id": "purpose-botanical-record-photo",
+          "name": "植物图鉴照片",
+          "bounds": [
+            691,
+            772,
+            1351,
+            1135
+          ]
+        }
+      ]
+    },
+    {
+      "source": "exec-192fe67f-c2a1-45ee-be0c-da42619ec727.png",
+      "cells": [
+        {
+          "id": "purpose-stage-performance-photo",
+          "name": "舞台演出照片",
+          "bounds": [
+            14,
+            13,
+            675,
+            380
+          ]
+        },
+        {
+          "id": "purpose-craft-process-photo",
+          "name": "手工制作过程照",
+          "bounds": [
+            692,
+            13,
+            1354,
+            380
+          ]
+        },
+        {
+          "id": "purpose-industrial-documentary-photo",
+          "name": "工业生产纪实",
+          "bounds": [
+            14,
+            396,
+            675,
+            742
+          ]
+        },
+        {
+          "id": "purpose-vehicle-listing-photo",
+          "name": "车辆展示实拍",
+          "bounds": [
+            692,
+            396,
+            1354,
+            742
+          ]
+        },
+        {
+          "id": "purpose-collection-archive-photo",
+          "name": "藏品档案摄影",
+          "bounds": [
+            14,
+            756,
+            675,
+            1138
+          ]
+        },
+        {
+          "id": "purpose-object-condition-photo",
+          "name": "物品状态记录照",
+          "bounds": [
+            692,
+            756,
+            1354,
+            1138
+          ]
+        }
+      ]
+    }
+  ]
+}

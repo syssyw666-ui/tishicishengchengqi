@@ -106,7 +106,7 @@ export const groupNameEn: Record<string, string> = {
   "negative-space": "Whitespace", "subject-position": "Subject Position", material: "Material", color: "Color", fabric: "Fabric",
   "camera-angle": "Camera Angle", motion: "Motion", natural: "Natural", interior: "Interior", dramatic: "Dramatic", realism: "Realism",
   stylized: "Stylized", elemental: "Elemental", atmosphere: "Atmosphere", social: "Social", design: "Design", cover: "Cover",
-  commercial: "Commercial", industrial: "Industrial", translucent: "Translucent",
+  commercial: "Commercial", photography: "Photography", industrial: "Industrial", translucent: "Translucent",
 };
 
 export const uiText = {

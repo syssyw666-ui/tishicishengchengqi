@@ -11,6 +11,7 @@ import { demographicParameters } from "./demographicParameters";
 import { poseParameters } from "./poseParameters";
 import { colorPaletteParameters } from "./colorPaletteParameters";
 import { supplementParameters } from "./supplementParameters";
+import { photoPurposeParameters } from "./photoPurposeParameters";
 
 export const categories: Category[] = [
   { id: "style", zhName: "画面风格", enName: "Style", mode: "multi", description: "决定整体视觉语言，可混选。" },
@@ -56,6 +57,10 @@ export const styleGroups = [
 ];
 
 export const categoryGroups: Partial<Record<Category["id"], Array<{ id: string; zhName: string }>>> = {
+  framing: [
+    { id: "all", zhName: "全部画面范围" },
+    { id: "shot-size", zhName: "景别与主体占比" }
+  ],
   style: styleGroups,
   "artist-style": [
     { id: "all", zhName: "全部艺术家" },
@@ -257,6 +262,7 @@ export const categoryGroups: Partial<Record<Category["id"], Array<{ id: string; 
   ],
   purpose: [
     { id: "all", zhName: "全部用途" },
+    { id: "photography", zhName: "照片摄影" },
     { id: "cover", zhName: "封面海报" },
     { id: "commercial", zhName: "商业电商" },
     { id: "layout-style", zhName: "排版风格" },
@@ -406,8 +412,8 @@ export const parameters: PromptParameter[] = [
   { id: "purpose-exploded-view", category: "purpose", styleGroup: "design", zhName: "物品拆分视图", enName: "Exploded View", defaultWeight: 1, image: img("purpose-exploded-view"), zhPrompt: "物品拆分视图，部件分离并展示结构", enPrompt: "exploded product view, separated components, clear mechanical structure, clean layout" },
   { id: "purpose-character-sheet", category: "purpose", styleGroup: "design", zhName: "角色设定图", enName: "Character Sheet", defaultWeight: 1, image: img("purpose-character-sheet"), zhPrompt: "角色设定图，包含全身和关键细节展示", enPrompt: "character concept sheet, full body design with detail callout areas, production-ready design" },
   { id: "purpose-product-shot", category: "purpose", styleGroup: "commercial", zhName: "产品图", enName: "Product Shot", defaultWeight: 1, image: img("purpose-product-shot"), zhPrompt: "高级产品摄影，清晰轮廓和商业质感", enPrompt: "premium product photography, clean silhouette, commercial polish, controlled studio lighting" },
-  { id: "purpose-portrait", category: "purpose", styleGroup: "commercial", zhName: "写真", enName: "Portrait", defaultWeight: 1, image: img("purpose-portrait"), zhPrompt: "写真肖像，人物姿态自然，情绪明确", enPrompt: "editorial portrait photoshoot, natural pose, expressive mood, flattering professional lighting" },
-  { id: "purpose-id-photo", category: "purpose", styleGroup: "social", zhName: "证件照", enName: "ID Photo", defaultWeight: 1, image: img("purpose-id-photo"), zhPrompt: "证件照，正面、白底、光线均匀", enPrompt: "clean ID photo headshot, front-facing, plain light background, even lighting" },
+  { id: "purpose-portrait", category: "purpose", styleGroup: "photography", zhName: "写真", enName: "Portrait", defaultWeight: 1, image: img("purpose-portrait"), zhPrompt: "写真肖像，人物姿态自然，情绪明确", enPrompt: "editorial portrait photoshoot, natural pose, expressive mood, flattering professional lighting" },
+  { id: "purpose-id-photo", category: "purpose", styleGroup: "photography", zhName: "证件照", enName: "ID Photo", defaultWeight: 1, image: img("purpose-id-photo"), zhPrompt: "证件照，正面、白底、光线均匀", enPrompt: "clean ID photo headshot, front-facing, plain light background, even lighting" },
   { id: "purpose-poster-key-visual", category: "purpose", styleGroup: "cover", zhName: "海报主视觉", enName: "Poster Key Visual", defaultWeight: 1, image: img("purpose-poster-key-visual"), zhPrompt: "海报主视觉，强焦点和标题留白", enPrompt: "dramatic poster key visual, strong focal subject, clear empty space for title, no text" },
   { id: "purpose-social-cover", category: "purpose", styleGroup: "social", zhName: "社媒封面", enName: "Social Cover", defaultWeight: 1, image: img("purpose-social-cover"), zhPrompt: "社媒封面构图，横向裁切，主体醒目", enPrompt: "social media cover image crop, strong focal subject, wide composition, readable at small size" },
   { id: "purpose-icon", category: "purpose", styleGroup: "social", zhName: "图标", enName: "Icon", defaultWeight: 1, image: img("purpose-icon"), zhPrompt: "应用图标风格，主体居中、轮廓清楚", enPrompt: "polished app icon style, centered object, clear silhouette, simple background" },
@@ -437,5 +443,6 @@ parameters.push(
   ...gapSupplementParameters,
   ...colorPaletteParameters,
   ...supplementParameters,
+  ...photoPurposeParameters,
   ...demographicParameters
 );
