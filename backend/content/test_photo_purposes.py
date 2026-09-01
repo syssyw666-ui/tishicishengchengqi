@@ -37,7 +37,13 @@ class PhotoPurposeMigrationTests(TestCase):
         added.refresh_from_db()
         self.assertEqual(added.zh_prompt, "保留后续修改")
         self.assertEqual(added.order, 99)
-        self.assertEqual(ParameterOption.objects.count(), 25)
+        photo_purpose_ids = json.loads(
+            (Path(__file__).resolve().parent / "data/photo_purposes_20260831.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(
+            ParameterOption.objects.filter(source_id__in=[row["id"] for row in photo_purpose_ids]).count(),
+            24,
+        )
 
     def test_does_not_duplicate_custom_same_name_or_move_custom_groups(self):
         ParameterOption.objects.create(

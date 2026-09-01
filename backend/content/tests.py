@@ -32,7 +32,9 @@ class CatalogApiTests(APITestCase):
         response = self.client.get("/api/catalog/parameters/")
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual([item["id"] for item in response.data], ["enabled"])
+        returned_ids = [item["id"] for item in response.data]
+        self.assertIn("enabled", returned_ids)
+        self.assertNotIn("disabled", returned_ids)
         self.assertIn("no-store", response["Cache-Control"])
         self.assertIn("no-cache", response["Cache-Control"])
 

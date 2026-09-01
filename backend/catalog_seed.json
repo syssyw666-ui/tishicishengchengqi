@@ -1585,8 +1585,8 @@
     },
     {
       "id": "style-bauhaus-poster",
-      "category": "purpose",
-      "styleGroup": "cover",
+      "category": "style",
+      "styleGroup": "design-retro",
       "zhName": "包豪斯海报",
       "enName": "Bauhaus Poster",
       "image": "/assets/parameters/style-bauhaus-poster.jpg",
@@ -1595,8 +1595,8 @@
     },
     {
       "id": "style-swiss-grid-poster",
-      "category": "purpose",
-      "styleGroup": "cover",
+      "category": "style",
+      "styleGroup": "design-retro",
       "zhName": "瑞士网格海报",
       "enName": "Swiss Grid Poster",
       "image": "/assets/parameters/style-swiss-grid-poster.jpg",
@@ -1734,6 +1734,16 @@
       "enPrompt": "fresh white-space watercolor style, transparent washes, warm off-white paper, simplified blocks, airy healing mood and generous blank space"
     },
     {
+      "id": "style-starryear-monet-stamp",
+      "category": "style",
+      "styleGroup": "design-retro",
+      "zhName": "星年莫奈邮票",
+      "enName": "Starryear Monet Stamp",
+      "image": "/assets/parameters/style-starryear-monet-stamp.jpg",
+      "zhPrompt": "星年莫奈邮票风格，印象派碎笔触、柔和蓝绿花园光、邮票边缘和精致纸面印刷感",
+      "enPrompt": "Starryear Monet stamp style, impressionist broken brushwork, soft blue-green garden light, perforated stamp edge, refined printed paper texture"
+    },
+    {
       "id": "style-vintage-travel-journal",
       "category": "purpose",
       "styleGroup": "cover",
@@ -1752,6 +1762,16 @@
       "image": "/assets/parameters/style-modern-minimal-logo.jpg",
       "zhPrompt": "现代极简标志成片用途，将主体提炼为几何图形、清晰剪影、品牌符号感和干净色卡",
       "enPrompt": "modern minimal logo finished-image use, subject reduced into geometric forms, clear silhouette, brand-symbol clarity and clean color swatches"
+    },
+    {
+      "id": "purpose-photo-sketch-editorial",
+      "category": "purpose",
+      "styleGroup": "cover",
+      "zhName": "摄影速写编辑页",
+      "enName": "Photo Sketch Editorial Page",
+      "image": "/assets/parameters/purpose-photo-sketch-editorial.jpg",
+      "zhPrompt": "摄影与手绘旅行速写编辑页，上方真实照片、暖白大留白纸面、下方小幅彩铅速写",
+      "enPrompt": "photography plus hand-drawn travel sketch editorial page, real photo on top, warm-white negative-space paper, small colored-pencil sketch below"
     },
     {
       "id": "style-rough-charcoal",
@@ -20828,6 +20848,30 @@
       "originalImage": "/assets/featured/img2img-photo-abstract-editorial-original.jpg",
       "resultImage": "/assets/featured/img2img-photo-abstract-editorial-result.jpg",
       "prompt": "请先检查当前环境是否安装 photo-abstract-editorial；若已安装，请调用该 skill 处理我上传的图片；若未安装，请根据以下规则直接完成图生图处理。实验提示词：将上传照片转化为“照片抽象社论海报”。保留原图核心主体、空间比例、视角关系和最有辨识度的轮廓，不改变主体位置。删除大量真实细节，把建筑、人物、植物、天空、道路或器物概括成大胆的几何块面、柔和剪影、局部真实照片纹理和少量抽象线条。画面具有高端杂志社论、当代艺术书籍和独立出版物气质，大面积留白，构图克制但有视觉张力。配色从原图提取“3至5个主色”，降低饱和度并保持高级统一，可加入轻微纸张纹理、扫描噪点、复印颗粒和局部半透明叠印。不要完整临摹照片，不要过度拼贴，不要商业广告感，不要 3D、动漫、厚重电影光、可读大字、乱码、水印或无关新主体。"
+    },
+    {
+      "id": "img2img-starryear-monet-stamp",
+      "category": "image-to-image",
+      "group": "style-transfer",
+      "zhTitle": "星年莫奈邮票",
+      "enTitle": "Starryear Monet Stamp",
+      "zhDescription": "把照片处理成莫奈印象派花园光感与艺术邮票质感的图生图模板。",
+      "enDescription": "Turn a photo into a Monet-inspired impressionist art stamp with soft garden light.",
+      "originalImage": "/assets/featured/img2img-starryear-monet-stamp-original.jpg",
+      "resultImage": "/assets/featured/img2img-starryear-monet-stamp-result.jpg",
+      "prompt": "实验提示词：请先检查当前环境是否安装 Starryear-Monet-Stamp；若已安装，请调用该 SKILL 处理我上传的图片；若未安装，请根据以下规则直接完成图生图处理。将上传照片转化为“星年莫奈邮票”风格图像，保留原图核心主体、构图关系、空间透视和主色调，将真实细节转译为莫奈印象派碎笔触、柔和蓝绿花园光、空气感色块和轻盈水面/花影般的笔触层次。画面整体像一枚精致艺术邮票或收藏级印刷小画，边缘可带克制的邮票齿孔感与旧纸纤维质感，但不要生成可读文字、面值、真实邮政标识或品牌 logo。色彩柔和、通透、带夏日花园与星年纪念感，可根据照片内容把“场景主体”“季节气氛”“主色调”替换为更具体描述。不要改变主体身份，不要新增无关物体，不要厚重油画堆叠，不要商业广告，不要水印，不要乱码文字。"
+    },
+    {
+      "id": "img2img-photo-sketch-editorial",
+      "category": "image-to-image",
+      "group": "poster-layout",
+      "zhTitle": "摄影速写编辑页",
+      "enTitle": "Photo Sketch Editorial Page",
+      "zhDescription": "上方保留真实照片，下方以大留白纸面承载小幅彩色铅笔旅行速写。",
+      "enDescription": "Keep the real photo on top and place a small colored-pencil travel sketch below on generous white paper.",
+      "originalImage": "/assets/featured/img2img-photo-sketch-editorial-original.jpg",
+      "resultImage": "/assets/featured/img2img-photo-sketch-editorial-result.jpg",
+      "prompt": "实验提示词：以用户上传的真实摄影照片为唯一场景来源，生成一张 3:4 竖版“摄影与手绘旅行速写编辑页”。固定页面比例：上方真实摄影照片占画面总高度“48%至52%”，照片下方衔接纯暖白纸张留白区域，插画画面内容仅占画面总高度“22%至27%”，插画下方保留至少“7%至10%”纯暖白纸张空白。上方真实照片必须从画面顶部开始横向满宽铺满，无边框、无纸白边、无投影；保留原照片摄影质感、真实光影、人物、景物、色彩和空间关系；照片底部以干净笔直的水平边缘结束，不向下渐变、融化、晕染或延伸。照片下方立刻衔接连续暖白绘画纸，一直延伸至画面底部，保持安静、干净、大面积留白。下方插画使用彩色铅笔、urban sketch、旅行写生手账、纸上速写风格，插画宽度约占纸张“76%至82%”，左右保留明显纸张留白，插画高度较矮、横向舒展，像嵌在大片白纸中的一幅小旅行速写。以真实照片为参考，忠实还原“建筑、树木、草地或景观构图”等核心关系，线条轻盈，带排线、轻微纹理和不规则手绘感，边缘笔触可轻微淡入纸张，但不可形成大面积满版绘画。整体参考旅行摄影作品集、艺术家速写本、极简编辑页，结构是“写实真照片 + 大面积暖白留白 + 小尺寸横向旅行速写”，高级、克制、干净，留白比插画更重要。负面约束：no dashed dotted line, no separation line, no watercolor transition, no fading transition between photo and paper, no torn paper edge, no large illustration, no full-page illustration, no illustration filling the lower half, no illustration touching page edges, no white border around the top photograph, no postcard frame, no shadow, no floating card, no turnaround, no logo, no watermark, no vector art, no cartoon。"
     },
     {
       "id": "img2img-fresh-watercolor-whitespace",
