@@ -4,6 +4,8 @@
 
 项目已拆分为 Vue 前端与 Django REST 后端。未登录用户仍可完整使用提示词生成器；登录后可为当前配置命名、上传展示图片并保存为个人模板。
 
+当前真实工作目录为 `D:\图片提示词生成器`。C 盘旧项目位置只作为跳转路径或兼容入口保留，后续开发、图片生成、缓存清理、构建、提交和发版均以 D 盘仓库为准。
+
 ## 技术架构
 
 - 前端：Vue 3 + TypeScript + Vite，代码位于 `frontend/`
@@ -46,7 +48,47 @@ pnpm run catalog:export
 python backend/manage.py seed_catalog
 ```
 
-这会把 1,334 个参数和 144 个精选提示词同步到数据库。管理员在 Simple UI 中上传替换图片或修改提示词后，前端会优先使用 API 返回的同 ID 内容。
+这会把内置参数和精选提示词同步到数据库。当前种子数据包含 1,367 个参数和 154 个精选提示词。管理员在 Simple UI 中上传替换图片或修改提示词后，前端会优先使用 API 返回的同 ID 内容。
+
+## 新增精选提示词固定流程
+
+后续凡是新增精选提示词，都必须先查重再新增：
+
+1. 检查前端精选提示词、后端 `catalog_seed.json`、后端数据库和提示词生成器参数库，确认没有重复或语义非常接近的项目。
+2. 若发现重复或近似内容，先告知已有项目及相似原因，并与操作者确认是否仍然新增。
+3. 若不重复，按所属类型加入精选提示词，并为需要展示图的项目生成全新图片。
+4. 若对应风格、媒介、用途或版式在提示词生成器中不存在，再新增一个简洁参数卡。
+5. 参数卡提示词只写该风格或用途本身的关键词，不复制精选提示词里的完整工作流。
+
+完整图片生产、裁切和验证规范见 `PROJECT_IMAGE_GENERATION_STANDARD.md`。
+
+## GitHub 同步与发版
+
+本项目绑定 GitHub `main` 分支进行前端和后端自动部署。推荐每次按以下顺序操作：
+
+```powershell
+Set-Location D:\图片提示词生成器
+git status --short
+git pull --rebase origin main
+$env:Path='C:\Users\Administrator\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin;'+$env:Path
+.\node_modules\.bin\vue-tsc.cmd --noEmit -p frontend\tsconfig.json
+.\node_modules\.bin\vite.cmd build --config frontend\vite.config.ts
+Set-Location D:\图片提示词生成器\backend
+$env:DJANGO_USE_SQLITE='1'
+.\.venv\Scripts\python.exe manage.py test content.tests content.test_photo_purposes
+Set-Location D:\图片提示词生成器
+git add <正式变更文件>
+git commit -m "<清晰提交说明>"
+git push origin main
+```
+
+注意：
+
+- 只提交正式源码、迁移、种子数据和正式资源图。
+- 不提交 `.env`、数据库备份、SMTP 授权码、缓存、临时检查图和未使用草图。
+- 如果第一次 GitHub push 或 pull 报网络/认证/远端更新错误，先不要改代码；确认是否需要 `pull --rebase`，然后重试。近期本项目多次出现第一次失败、后续重试成功的情况。
+- 如果 Git 报 `dubious ownership`，执行一次 `git config --global --add safe.directory D:/图片提示词生成器`。
+- 推送成功后记录提交 hash，Cloudflare Pages 和 Railway 会自动部署。若线上没有更新，优先查看部署日志。
 
 ## 邮件激活
 

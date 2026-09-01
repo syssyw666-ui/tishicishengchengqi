@@ -17,6 +17,10 @@ The prompt-generator project needs many small visual reference cards. Generating
 - UI labels should remain overlay text in the application. Do not bake Chinese labels into generated images.
 - For cards with sliders or overlays, keep the raw image clean and visually centered so UI elements do not cover the key feature.
 - Keep originals in the generated-images folder, and copy/crop into the project asset directory.
+- Featured prompt image-to-image cards need paired source/result images from the same scene. If the result no longer visibly relates to the source, regenerate instead of accepting a pretty but unrelated asset.
+- For portrait or vertical poster results shown in a fixed 16:9 card, preserve the full generated composition and fill the remaining area with a blurred copy of the same image. Never crop away the key content and never use neighboring contact-sheet content as fill.
+- Before adding featured prompts, search for exact and semantic duplicates in `featuredPrompts.ts`, `catalog_seed.json`, the database, and the parameter libraries. Add a prompt-generator parameter only when the style or use case is missing, and keep that parameter concise.
+- The canonical repository path is `D:\图片提示词生成器`; old C drive paths are compatibility jump paths only.
 
 ## Batch Grouping Heuristics
 

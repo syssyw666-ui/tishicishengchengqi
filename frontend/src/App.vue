@@ -185,6 +185,10 @@ function groupLabel(group: { id: string; zhName: string; enName?: string }) {
   return uiLanguage.value === "zh" ? group.zhName : (group.enName || groupNameEn[group.id] || group.id);
 }
 
+function featuredPromptCopyText(item: FeaturedPromptItem) {
+  return item.prompt.replace(/实验提示词[:：]\s*/g, "").trim();
+}
+
 function workflowLabel(workflow: GalleryWorkflow) {
   return uiLanguage.value === "zh" ? workflow.zhName : workflow.enName;
 }
@@ -686,7 +690,7 @@ onUnmounted(() => {
             <figure><img class="featured-blur-bg" :src="item.resultImage || item.image" alt="" /><img class="featured-main-img" :src="item.resultImage || item.image" :alt="item.zhTitle + ' 效果图'" /><figcaption>{{ uiLanguage === 'zh' ? '效果图' : 'After' }}</figcaption></figure>
           </div>
           <div v-else-if="item.image" class="featured-image"><img class="featured-blur-bg" :src="item.image" alt="" /><img class="featured-main-img" :src="item.image" :alt="item.zhTitle" /></div>
-          <div class="featured-card-body"><div><strong>{{ uiLanguage === 'zh' ? item.zhTitle : item.enTitle }}</strong><p>{{ uiLanguage === 'zh' ? item.zhDescription : item.enDescription }}</p></div><button class="quick-copy-button wide" type="button" @click="copyText(item.id, item.prompt)"><component :is="copied === item.id ? Check : Copy" :size="15" />{{ copied === item.id ? t.copied : t.copy }}</button></div>
+          <div class="featured-card-body"><div><strong>{{ uiLanguage === 'zh' ? item.zhTitle : item.enTitle }}</strong><p>{{ uiLanguage === 'zh' ? item.zhDescription : item.enDescription }}</p></div><button class="quick-copy-button wide" type="button" @click="copyText(item.id, featuredPromptCopyText(item))"><component :is="copied === item.id ? Check : Copy" :size="15" />{{ copied === item.id ? t.copied : t.copy }}</button></div>
         </article>
       </div>
     </section>
