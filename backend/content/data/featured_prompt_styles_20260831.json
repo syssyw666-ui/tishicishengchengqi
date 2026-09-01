@@ -1,0 +1,172 @@
+{
+  "parameters": [
+    {
+      "id": "style-gathered-scenes-zine",
+      "category": "purpose",
+      "styleGroup": "cover",
+      "zhName": "拾景纸刊",
+      "enName": "Gathered Scenes Zine",
+      "image": "/assets/parameters/style-gathered-scenes-zine.jpg",
+      "zhPrompt": "拾景纸刊风格，真实照片局部、温暖旧纸、手撕纤维边缘、抽象插画场域和复印网点颗粒",
+      "enPrompt": "gathered-scenes zine style, partial real-photo area, warm aged paper, torn fiber edge, abstract illustrated field, xerox halftone grain"
+    },
+    {
+      "id": "style-photo-abstract-editorial",
+      "category": "purpose",
+      "styleGroup": "cover",
+      "zhName": "照片抽象社论",
+      "enName": "Photo Abstract Editorial",
+      "image": "/assets/parameters/style-photo-abstract-editorial.jpg",
+      "zhPrompt": "照片抽象社论风格，从照片轮廓提炼几何块面、留白、克制配色和高级杂志感",
+      "enPrompt": "photo abstract editorial style, photographic silhouettes reduced into geometric planes, generous negative space, restrained palette, premium magazine mood"
+    },
+    {
+      "id": "style-fresh-whitespace-watercolor",
+      "category": "style",
+      "styleGroup": "design-retro",
+      "zhName": "清新留白水彩",
+      "enName": "Fresh White-Space Watercolor",
+      "image": "/assets/parameters/style-fresh-whitespace-watercolor.jpg",
+      "zhPrompt": "清新留白水彩风格，透明水彩、暖白纸面、简化块面、通透治愈和大面积空白",
+      "enPrompt": "fresh white-space watercolor style, transparent washes, warm off-white paper, simplified blocks, airy healing mood and generous blank space"
+    },
+    {
+      "id": "style-vintage-travel-journal",
+      "category": "purpose",
+      "styleGroup": "cover",
+      "zhName": "复古旅行手账",
+      "enName": "Vintage Travel Journal",
+      "image": "/assets/parameters/style-vintage-travel-journal.jpg",
+      "zhPrompt": "复古旅行手账成片用途，旧纸肌理、手绘场景、贴纸元素、低饱和色和轻微颗粒",
+      "enPrompt": "vintage travel journal finished-image use, aged notebook paper, hand-drawn scene, sticker-like extracted elements, muted colors and subtle grain"
+    },
+    {
+      "id": "style-modern-minimal-logo",
+      "category": "purpose",
+      "styleGroup": "design",
+      "zhName": "现代极简标志",
+      "enName": "Modern Minimal Logo",
+      "image": "/assets/parameters/style-modern-minimal-logo.jpg",
+      "zhPrompt": "现代极简标志成片用途，将主体提炼为几何图形、清晰剪影、品牌符号感和干净色卡",
+      "enPrompt": "modern minimal logo finished-image use, subject reduced into geometric forms, clear silhouette, brand-symbol clarity and clean color swatches"
+    },
+    {
+      "id": "style-rough-charcoal",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "粗碳笔黑白画",
+      "enName": "Rough Charcoal Drawing",
+      "image": "/assets/parameters/style-rough-charcoal.jpg",
+      "zhPrompt": "粗碳笔黑白画风格，粗黑干性笔触、断续毛边、暖白纸留白和少量红色强调",
+      "enPrompt": "rough charcoal black-and-white drawing style, thick dry broken strokes, ragged edges, warm white paper margins and tiny red accent"
+    },
+    {
+      "id": "style-child-crayon",
+      "category": "style",
+      "styleGroup": "design-retro",
+      "zhName": "儿童蜡笔手绘",
+      "enName": "Children's Crayon Drawing",
+      "image": "/assets/parameters/style-child-crayon.jpg",
+      "zhPrompt": "儿童蜡笔手绘风格，稚拙线条、明亮高明度色彩、油画棒颗粒和米白纸张",
+      "enPrompt": "children's crayon drawing style, naive uneven outlines, bright high-key colors, wax pastel grain and warm off-white paper"
+    }
+  ],
+  "featuredPrompts": [
+    {
+      "id": "img2img-gathered-scenes-zine",
+      "category": "image-to-image",
+      "group": "poster-layout",
+      "zhTitle": "拾景纸刊海报",
+      "enTitle": "Gathered Scenes Zine Poster",
+      "zhDescription": "把照片重构为旧纸、撕边、抽象插画和少量实景结合的竖版纸刊海报。",
+      "enDescription": "Turn a photo into a vertical zine poster mixing aged paper, torn edges, abstraction, and partial realism.",
+      "originalImage": "/assets/featured/img2img-gathered-scenes-zine-original.jpg",
+      "resultImage": "/assets/featured/img2img-gathered-scenes-zine-result.jpg",
+      "prompt": "请先检查当前环境是否安装 gathered-scenes-zine-skill；若已安装，请用该 skill 处理我上传的图片；若未安装，请根据以下规则直接完成图生图处理。实验提示词：将参考照片制作成竖版 3:5“拾景纸刊”海报。保留核心主体、真实色彩和关键空间关系，让原照片占画面约“30%至50%”；其余部分延展为温暖旧纸上的抽象插画场域。插画只提炼原图中的“1至2个核心轮廓、路径或动作”，删除 60%至80% 细节。树叶、人群和复杂纹理合并成少量大色块、断裂线条或剪纸形状，并保留大量空白。左上角 25% 留白区生成水彩写意极简图标，使用原图占比最高的 3 种颜色。照片与纸张交界处必须有清晰、不规则的手撕纤维边缘。加入一种源自原图的高饱和颜色，让它沿真实轮廓跨越照片和插画，引导视线或平衡构图。加入一行很小的打字机或活版印刷英文短句，默认不超过 5 个单词；若我提供“拍摄地/短句”，则原样使用。整体安静、克制、触感真实，带有纸纤维、网点、复印磨损和扫描噪点。避免完整描摹、细密树叶、数字矩形裁切、贴纸白边、规则撕纸框、厚重阴影、多种鲜艳颜色、商业广告、3D、电影光影、动漫、密集拼贴、长文字、错别字和水印。"
+    },
+    {
+      "id": "img2img-photo-abstract-editorial",
+      "category": "image-to-image",
+      "group": "poster-layout",
+      "zhTitle": "照片抽象社论",
+      "enTitle": "Photo Abstract Editorial",
+      "zhDescription": "把照片提炼成高级杂志感的抽象构图，保留主体关系并大幅简化细节。",
+      "enDescription": "Rebuild a photo into an abstract editorial composition while preserving core subject relationships.",
+      "originalImage": "/assets/featured/img2img-photo-abstract-editorial-original.jpg",
+      "resultImage": "/assets/featured/img2img-photo-abstract-editorial-result.jpg",
+      "prompt": "请先检查当前环境是否安装 photo-abstract-editorial；若已安装，请调用该 skill 处理我上传的图片；若未安装，请根据以下规则直接完成图生图处理。实验提示词：将上传照片转化为“照片抽象社论海报”。保留原图核心主体、空间比例、视角关系和最有辨识度的轮廓，不改变主体位置。删除大量真实细节，把建筑、人物、植物、天空、道路或器物概括成大胆的几何块面、柔和剪影、局部真实照片纹理和少量抽象线条。画面具有高端杂志社论、当代艺术书籍和独立出版物气质，大面积留白，构图克制但有视觉张力。配色从原图提取“3至5个主色”，降低饱和度并保持高级统一，可加入轻微纸张纹理、扫描噪点、复印颗粒和局部半透明叠印。不要完整临摹照片，不要过度拼贴，不要商业广告感，不要 3D、动漫、厚重电影光、可读大字、乱码、水印或无关新主体。"
+    },
+    {
+      "id": "img2img-fresh-watercolor-whitespace",
+      "category": "image-to-image",
+      "group": "style-transfer",
+      "zhTitle": "清新留白水彩",
+      "enTitle": "Fresh White-Space Watercolor",
+      "zhDescription": "把照片转成通透、治愈、留白充足的彩色水彩明信片。",
+      "enDescription": "Convert a photo into an airy watercolor postcard with generous white space.",
+      "originalImage": "/assets/featured/img2img-fresh-watercolor-whitespace-original.jpg",
+      "resultImage": "/assets/featured/img2img-fresh-watercolor-whitespace-result.jpg",
+      "prompt": "实验提示词：请将上传的照片转化为“清新留白感”的彩色水彩插画。保留原照片的主体、基本构图、空间关系、主要色块和景物层次。将建筑、植物、海岸、道路、花朵、天空等概括成简洁透明的水彩块面与少量细节。整体采用透明水彩质感，颜色明快清爽，纸面略带温暖米白色。插画主体集中在画面中间偏下位置，尺寸不要过大，四周保留大量留白，可在角落加入少量小色块作为配色标记。整体版式像文艺明信片或轻杂志封面，气质干净、轻松、治愈、通透。不要写实摄影、厚重数码笔触、复杂背景、过度描线、商业海报感、乱码、水印或多余文字。"
+    },
+    {
+      "id": "img2img-vintage-travel-journal",
+      "category": "image-to-image",
+      "group": "style-transfer",
+      "zhTitle": "复古旅行手账",
+      "enTitle": "Vintage Travel Journal",
+      "zhDescription": "把照片做成手账插画页，包含主场景和可爱贴纸元素。",
+      "enDescription": "Turn a photo into a travel journal page with a main scene and matching sticker elements.",
+      "originalImage": "/assets/featured/img2img-vintage-travel-journal-original.jpg",
+      "resultImage": "/assets/featured/img2img-vintage-travel-journal-result.jpg",
+      "prompt": "实验提示词：请将上传的任意照片转化为“复古旅行手账插画”。保留原图最核心的主体、场景关系与辨识特征，大幅删减真实细节，用简洁平涂色块、轻微颗粒笔触和柔和轮廓重新概括。色彩提取自原图并适度降低饱和度，呈现温暖、清新、略带旧纸印刷感的手绘效果。画面使用米白色粗纹理手账纸背景，左侧或主体区域放置一张近似方形的完整场景插画，四周留白；右侧将照片中的“3至6个代表性元素”单独提取，制作成带白色描边与轻微投影的手账贴纸，大小错落、疏密自然。主体插画与贴纸元素需一一呼应，造型简单可爱，不追求写实。底部可加入一行极小的“地点、天气或场景关键词”。整体像旅行途中亲手制作的拼贴手账页，生活感强、轻松自然、干净克制。禁止复杂装饰、过度精细、商业感海报、乱码、水印和无关新元素。"
+    },
+    {
+      "id": "img2img-modern-minimal-logo",
+      "category": "image-to-image",
+      "group": "poster-layout",
+      "zhTitle": "现代极简标志",
+      "enTitle": "Modern Minimal Logo",
+      "zhDescription": "把照片主体提炼为几何标志、品牌提案海报和配色色板。",
+      "enDescription": "Extract a photo subject into a geometric logo poster with color swatches.",
+      "originalImage": "/assets/featured/img2img-modern-minimal-logo-original.jpg",
+      "resultImage": "/assets/featured/img2img-modern-minimal-logo-result.jpg",
+      "prompt": "实验提示词：将上传的照片转化为“极简现代 logo 风格海报”。保留原照片的核心主体、最有辨识度的轮廓与构图关系，删除写实细节、纹理、复杂光影和杂乱背景，把真实场景提炼为简洁的几何图形、流畅色块与清晰剪影。主体可概括成“1至3个主要视觉元素”，强调图形识别度、符号感与品牌感，避免插画化叙事，整体更像干净、克制、现代的标志设计。配色从原照片中提取“4至6个代表性色彩”，形成下方小色板，颜色纯净、对比明确，可略微提升统一度与高级感。中间居中放置简化后的 logo 图形，下方搭配一行大写英文标题，可加一行较小副标题或地点说明，左下角可放一个极简小标签文字，右下角整齐排列配色方块。整体气质简洁、理性、现代，像品牌视觉提案。避免复杂插画、写实照片残留、可读乱码、商业水印和版权品牌标识。"
+    },
+    {
+      "id": "img2img-rough-charcoal",
+      "category": "image-to-image",
+      "group": "style-transfer",
+      "zhTitle": "粗碳笔黑白画",
+      "enTitle": "Rough Charcoal Drawing",
+      "zhDescription": "把照片概括为粗蜡笔/粗碳笔黑白插画，保留主体动作和大量纸面留白。",
+      "enDescription": "Convert a photo into a rough black-and-white charcoal/crayon illustration with broad paper margins.",
+      "originalImage": "/assets/featured/img2img-rough-charcoal-original.jpg",
+      "resultImage": "/assets/featured/img2img-rough-charcoal-result.jpg",
+      "prompt": "实验提示词：请将上传照片转化为极简粗蜡笔/粗碳笔黑白插画。不逐像素临摹原图，只提取最核心主体、动作关系和少量关键环境轮廓，删除背景杂物与次要细节。使用粗黑蜡笔、炭条、干性粉笔般的颗粒笔触，线条粗粝、断续、边缘毛躁，允许涂抹、缺口、重叠和不均匀块面，保持明显手绘感与稚拙感。主体黑色面积相对充实，但不要把背景涂黑；整体始终为大面积暖白或米白纸张背景，四周充分留白。构图像独立编辑海报，主体占画面约“50%至65%”，位置可略偏中心，不必完全对称；局部用极少量地面线、道具或植物辅助交代场景。避免写实素描、精细明暗、光滑数字笔刷和复杂纹理。可加入一个极小红点或短线作为视觉强调，文字尽量不生成；若必须出现，只保留极少、细小、克制的排版元素。"
+    },
+    {
+      "id": "img2img-child-crayon-drawing",
+      "category": "image-to-image",
+      "group": "style-transfer",
+      "zhTitle": "儿童蜡笔手绘",
+      "enTitle": "Children's Crayon Drawing",
+      "zhDescription": "把照片重画成童趣蜡笔画，稚拙、鲜亮、纸感明显。",
+      "enDescription": "Redraw a photo as a bright, naive children's crayon illustration.",
+      "originalImage": "/assets/featured/img2img-child-crayon-drawing-original.jpg",
+      "resultImage": "/assets/featured/img2img-child-crayon-drawing-result.jpg",
+      "prompt": "实验提示词：将上传的照片重新概括为一幅“儿童蜡笔手绘风格插画”。保留照片中最有辨识度的主体、轮廓、前后关系和核心空间关系。使用油画棒、蜡笔随手画出的质感，线条稚拙、不规整，轮廓略有歪斜，笔触粗糙可见，局部允许涂出边界和颜色叠擦，避免精致、写实、商业插画感。适当删减复杂背景和琐碎元素，只保留主体及少量具有代表性的环境元素。配色明亮、鲜艳、童趣，以蓝、绿、黄、橙等高明度色彩为主。插画统一放在米白色纸张背景中央偏下位置，可加入少量蜡笔画的小太阳、云朵等装饰，但不要文字、边框、复杂色块或过度装饰。"
+    },
+    {
+      "id": "img2img-vintage-screenprint-postcard",
+      "category": "image-to-image",
+      "group": "style-transfer",
+      "zhTitle": "复古丝网版画",
+      "enTitle": "Vintage Screenprint Postcard",
+      "zhDescription": "把照片转成低饱和复古丝网明信片，保留主体但大幅简化细节。",
+      "enDescription": "Convert a photo into a muted vintage screenprint postcard with simplified shapes.",
+      "originalImage": "/assets/featured/img2img-vintage-screenprint-postcard-original.jpg",
+      "resultImage": "/assets/featured/img2img-vintage-screenprint-postcard-result.jpg",
+      "prompt": "实验提示词：将上传的任意照片转化为“复古丝网版画明信片插画”。保留原照片主体、基本构图与辨识特征，大幅删减真实细节，把光影、材质和背景概括成简洁色块、剪影与手绘轮廓线。使用“2至4种低饱和复古色”，如灰绿、砖红、赭黄、雾蓝、米黄，并根据原照片灵活配色。画面采用米白色粗纤维旧纸作为背景，插画只占中间一块横向矩形区域，尺寸明显小于纸张，四周尤其上下保留大面积干净留白。可在纸张下方自然写一行极短英文句子，约“2至4个单词”，根据照片内容自动生成，字体纤细、自然、略潦草。整体呈现上世纪旅行明信片、独立出版物与手工孔版印刷的安静复古质感。避免写实摄影、复杂渐变、过度细节、鲜艳荧光色、乱码、水印和无关新主体。"
+    }
+  ]
+}

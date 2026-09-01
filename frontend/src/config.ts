@@ -88,11 +88,26 @@ export const galleryWorkflows: GalleryWorkflow[] = [
   },
 ];
 
-export const virtualGroupCategory: Partial<Record<CategoryId, Partial<Record<string, CategoryId>>>> = {
-  style: { "artist-style": "artist-style", "ethnic-style": "ethnic-style", render: "render", "visual-effect": "visual-effect", "color-grading": "color-grading", "color-material": "color-material" },
-  purpose: { "layout-style": "layout-style" },
-  scene: { "era-world": "era" },
-  camera: { "shot-size": "framing" },
+export interface VirtualGroupMapping {
+  category: CategoryId;
+  groups?: string[];
+}
+
+export const virtualGroupCategory: Partial<Record<CategoryId, Partial<Record<string, VirtualGroupMapping>>>> = {
+  style: {
+    "artist-style": { category: "artist-style" },
+    "ethnic-style": { category: "ethnic-style" },
+    render: { category: "render" },
+    "visual-effect": { category: "visual-effect" },
+    "color-grading": {
+      category: "color-grading",
+      groups: ["clean-bright", "cinematic", "film-vintage", "camera-look", "commercial", "drone-aerial", "mood"],
+    },
+    "color-material": { category: "color-material" },
+  },
+  purpose: { "layout-style": { category: "layout-style" } },
+  scene: { "era-world": { category: "era" } },
+  camera: { "shot-size": { category: "framing" } },
 };
 
 export const groupNameEn: Record<string, string> = {

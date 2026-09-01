@@ -7,7 +7,7 @@ import { computed, onMounted, onUnmounted, reactive, ref } from "vue";
 import { api, type AuthUser, type SavedTemplate, type SiteSettings } from "./api";
 import {
   aspectRatioOptions, clarityOptions, defaultInputs, galleryWorkflows, groupNameEn,
-  uiText, virtualGroupCategory, type UiLanguage,
+  uiText, virtualGroupCategory, type GallerySection, type GalleryWorkflow, type UiLanguage,
 } from "./config";
 import {
   featuredPromptCategories, featuredPromptGroups, featuredPrompts as builtInFeatured,
@@ -125,11 +125,21 @@ const filteredParameters = computed(() => {
   const virtual = virtualGroupCategory[section.category] || {};
   const sectionGroups = section.groups ? new Set(section.groups) : null;
   const validCategories = new Set<CategoryId>([section.category]);
-  Object.entries(virtual).forEach(([groupId, category]) => {
-    if ((!sectionGroups || sectionGroups.has(groupId)) && category) validCategories.add(category);
+  const virtualCategories = new Map<CategoryId, Set<string> | null>();
+  Object.entries(virtual).forEach(([groupId, mapping]) => {
+    if ((!sectionGroups || sectionGroups.has(groupId)) && mapping) {
+      validCategories.add(mapping.category);
+      virtualCategories.set(mapping.category, mapping.groups ? new Set(mapping.groups) : null);
+    }
   });
 
   let list = allParameters.value.filter((parameter) => validCategories.has(parameter.category));
+  list = list.filter((parameter) => {
+    if (parameter.category === section.category) return true;
+    if (!virtualCategories.has(parameter.category)) return true;
+    const allowedGroups = virtualCategories.get(parameter.category);
+    return !allowedGroups || Boolean(parameter.styleGroup && allowedGroups.has(parameter.styleGroup));
+  });
   if (sectionGroups) {
     list = list.filter((parameter) => {
       if (parameter.category !== section.category) return true;
@@ -139,7 +149,11 @@ const filteredParameters = computed(() => {
   if (group !== "all") {
     const mappedCategory = virtual[group];
     list = mappedCategory
-      ? list.filter((parameter) => parameter.category === mappedCategory)
+      ? list.filter((parameter) => {
+        if (parameter.category !== mappedCategory.category) return false;
+        if (!mappedCategory.groups) return true;
+        return Boolean(parameter.styleGroup && mappedCategory.groups.includes(parameter.styleGroup));
+      })
       : list.filter((parameter) => parameter.category === section.category && parameter.styleGroup === group);
   }
   return list;
@@ -169,6 +183,79 @@ function secondary(parameter: PromptParameter) {
 
 function groupLabel(group: { id: string; zhName: string; enName?: string }) {
   return uiLanguage.value === "zh" ? group.zhName : (group.enName || groupNameEn[group.id] || group.id);
+}
+
+function workflowLabel(workflow: GalleryWorkflow) {
+  return uiLanguage.value === "zh" ? workflow.zhName : workflow.enName;
+}
+
+function sectionLabel(section: GallerySection) {
+  return uiLanguage.value === "zh" ? section.zhName : section.enName;
+}
+
+function categoryLabel(categoryId: CategoryId) {
+  const category = categories.find((item) => item.id === categoryId);
+  if (!category) return categoryId;
+  return uiLanguage.value === "zh" ? category.zhName : category.enName;
+}
+
+function groupName(categoryId: CategoryId, groupId?: string) {
+  if (!groupId || groupId === "all") return "";
+  const group = categoryGroups[categoryId]?.find((item) => item.id === groupId);
+  return group ? groupLabel(group) : (uiLanguage.value === "zh" ? groupId : (groupNameEn[groupId] || groupId));
+}
+
+function directSectionGroup(section: GallerySection, parameter: PromptParameter) {
+  if (parameter.category !== section.category) return "";
+  if (section.groups?.length) {
+    if (parameter.styleGroup && section.groups.includes(parameter.styleGroup)) return parameter.styleGroup;
+    return "";
+  }
+  return parameter.styleGroup || "";
+}
+
+function virtualSectionGroup(section: GallerySection, parameter: PromptParameter) {
+  const virtual = virtualGroupCategory[section.category] || {};
+  for (const [groupId, mapping] of Object.entries(virtual)) {
+    if (!mapping || mapping.category !== parameter.category) continue;
+    if (!mapping.groups || (parameter.styleGroup && mapping.groups.includes(parameter.styleGroup))) return groupId;
+  }
+  return "";
+}
+
+function sectionContainsParameter(section: GallerySection, parameter: PromptParameter) {
+  if (parameter.category === section.category) {
+    return !section.groups?.length || Boolean(parameter.styleGroup && section.groups.includes(parameter.styleGroup));
+  }
+  return Boolean(virtualSectionGroup(section, parameter));
+}
+
+function parameterRoute(parameter: PromptParameter) {
+  for (const workflow of galleryWorkflows) {
+    const section = workflow.sections.find((item) => sectionContainsParameter(item, parameter));
+    if (!section) continue;
+    const groupId = directSectionGroup(section, parameter) || virtualSectionGroup(section, parameter);
+    return { workflow, section, groupId };
+  }
+  return null;
+}
+
+function parameterPathLabel(parameter: PromptParameter) {
+  const route = parameterRoute(parameter);
+  if (!route) return [categoryLabel(parameter.category), groupName(parameter.category, parameter.styleGroup)].filter(Boolean).join(" / ");
+  const thirdLevel = groupName(route.section.category, route.groupId) || groupName(parameter.category, parameter.styleGroup) || categoryLabel(parameter.category);
+  return [workflowLabel(route.workflow), sectionLabel(route.section), thirdLevel].join(" / ");
+}
+
+function jumpToParameterPath(parameter: PromptParameter) {
+  const route = parameterRoute(parameter);
+  if (!route) return;
+  viewMode.value = "generator";
+  selectedOnly.value = false;
+  search.value = "";
+  activeWorkflowId.value = route.workflow.id;
+  activeSectionId.value = route.section.id;
+  if (route.groupId) activeGroupBySection[route.section.id] = route.groupId;
 }
 
 function setWorkflow(id: string) {
@@ -616,7 +703,7 @@ onUnmounted(() => {
         <div class="parameter-grid">
           <article v-for="parameter in filteredParameters" :key="parameter.id" :class="['parameter-card', { selected: selectedSet.has(parameter.id) }]" :data-tooltip="`${parameter.zhPrompt}\n${parameter.enPrompt}`">
             <div class="image-frame"><button class="image-button" type="button" @click="toggleParameter(parameter)"><img aria-hidden="true" class="image-backdrop" :src="parameter.image" alt="" /><img class="image-main" :src="parameter.image" :alt="`${parameter.zhName} ${parameter.enName}`" /><span v-if="selectedSet.has(parameter.id)" class="check-mark"><Check :size="16" /></span></button></div>
-            <div class="card-meta"><div><strong>{{ primary(parameter) }}</strong><span>{{ secondary(parameter) }}</span></div></div>
+            <div class="card-meta"><div><strong>{{ primary(parameter) }}</strong><span>{{ secondary(parameter) }}</span></div><button class="card-path-button" type="button" :title="parameterPathLabel(parameter)" @click="jumpToParameterPath(parameter)">{{ uiLanguage === 'zh' ? '分类路径' : 'Path' }}</button></div>
           </article>
         </div>
       </section>

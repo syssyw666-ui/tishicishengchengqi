@@ -11,7 +11,7 @@ from django.conf import settings
 from django.contrib.admin.views.decorators import staff_member_required
 from django.core.mail import send_mail
 from django.http import FileResponse, Http404
-from django.views.decorators.cache import cache_control, cache_page
+from django.views.decorators.cache import cache_control
 from django.utils.decorators import method_decorator
 from django.urls import reverse
 from rest_framework import mixins, permissions, viewsets
@@ -65,8 +65,7 @@ def catalog_image_source(request):
     return FileResponse(BytesIO(payload), content_type=response_content_type or content_type)
 
 
-@method_decorator(cache_page(60), name="list")
-@method_decorator(cache_control(public=True, max_age=60, stale_while_revalidate=300), name="list")
+@method_decorator(cache_control(no_cache=True, no_store=True, must_revalidate=True), name="list")
 class ParameterOptionViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = ParameterOption.objects.filter(enabled=True).order_by("category", "style_group", "order", "id")
     serializer_class = ParameterOptionSerializer
@@ -83,8 +82,7 @@ class ParameterOptionViewSet(viewsets.ReadOnlyModelViewSet):
         return Response(self.get_serializer(items, many=True).data)
 
 
-@method_decorator(cache_page(60), name="list")
-@method_decorator(cache_control(public=True, max_age=60, stale_while_revalidate=300), name="list")
+@method_decorator(cache_control(no_cache=True, no_store=True, must_revalidate=True), name="list")
 class FeaturedPromptViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = FeaturedPrompt.objects.filter(enabled=True).order_by("category", "group", "order", "id")
     serializer_class = FeaturedPromptSerializer

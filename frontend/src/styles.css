@@ -923,26 +923,35 @@ textarea:focus,
 }
 
 .parameter-grid {
+  flex: 1 1 auto;
+  min-height: 0;
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  grid-auto-rows: max-content;
+  grid-auto-rows: 220px;
   align-content: start;
-  align-items: start;
+  align-items: stretch;
   justify-content: start;
   gap: 12px;
   padding: 14px;
   overflow-y: auto;
   overflow-x: hidden;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
 }
 
 .parameter-card {
   position: relative;
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  height: 220px;
   min-width: 0;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.055);
+  contain: layout paint;
 }
 
 .parameter-card.selected {
@@ -973,6 +982,7 @@ textarea:focus,
 
 .image-frame {
   position: relative;
+  flex: 0 0 158px;
   width: 100%;
   block-size: 158px;
   height: 158px;
@@ -1035,16 +1045,27 @@ textarea:focus,
 }
 
 .card-meta {
+  position: relative;
   display: flex;
+  flex: 1 1 auto;
   justify-content: space-between;
   gap: 10px;
+  min-height: 0;
   padding: 10px 11px 7px;
+}
+
+.card-meta > div {
+  min-width: 0;
+  padding-right: 86px;
 }
 
 .card-meta strong,
 .card-meta span {
   display: block;
+  overflow: hidden;
   line-height: 1.25;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .card-meta strong {
@@ -1055,6 +1076,32 @@ textarea:focus,
   margin-top: 2px;
   color: #aeb5b4;
   font-size: 12px;
+}
+
+.card-path-button {
+  position: absolute;
+  right: 9px;
+  bottom: 7px;
+  max-width: 78px;
+  overflow: hidden;
+  border: 1px solid rgba(246, 196, 83, 0.24);
+  border-radius: 6px;
+  padding: 4px 7px;
+  color: rgba(246, 196, 83, 0.92);
+  background: rgba(0, 0, 0, 0.34);
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card-path-button:hover {
+  border-color: rgba(246, 196, 83, 0.52);
+  color: #08100f;
+  background: #f6c453;
 }
 
 input[type="range"] {

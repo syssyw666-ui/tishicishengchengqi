@@ -33,8 +33,8 @@ class CatalogApiTests(APITestCase):
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual([item["id"] for item in response.data], ["enabled"])
-        self.assertIn("public", response["Cache-Control"])
-        self.assertIn("max-age=60", response["Cache-Control"])
+        self.assertIn("no-store", response["Cache-Control"])
+        self.assertIn("no-cache", response["Cache-Control"])
 
     def test_site_settings_are_public(self):
         settings_row = SiteSettings.objects.first()
@@ -105,7 +105,14 @@ class PromptTemplateApiTests(APITestCase):
 )
 class FeedbackApiTests(APITestCase):
     def test_anonymous_user_can_submit_feedback(self):
-        response = self.client.post("/api/feedback/", {"content": "希望增加新风格。"})
+        with patch("content.views.Thread") as thread_class:
+            def run_inline():
+                target = thread_class.call_args.kwargs["target"]
+                args = thread_class.call_args.kwargs["args"]
+                target(*args)
+
+            thread_class.return_value.start.side_effect = run_inline
+            response = self.client.post("/api/feedback/", {"content": "希望增加新风格。"})
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
         self.assertEqual(Feedback.objects.count(), 1)
         self.assertEqual(len(mail.outbox), 1)

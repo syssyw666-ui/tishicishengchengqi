@@ -141,8 +141,8 @@ export const api = {
   submitFeedback(form: FormData) {
     return request("/feedback/", { method: "POST", body: form }, false);
   },
-  catalogParameters: () => request<any[]>("/catalog/parameters/").then((body: any) => body.results || body),
-  catalogFeatured: () => request<any[]>("/catalog/featured-prompts/").then((body: any) => body.results || body),
+  catalogParameters: () => request<any[]>(`/catalog/parameters/?_=${Date.now()}`, { cache: "no-store" }).then((body: any) => body.results || body),
+  catalogFeatured: () => request<any[]>(`/catalog/featured-prompts/?_=${Date.now()}`, { cache: "no-store" }).then((body: any) => body.results || body),
   resendActivation(email: string) {
     return request<void>("/auth/users/resend_activation/", {
       method: "POST",
