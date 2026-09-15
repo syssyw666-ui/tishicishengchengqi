@@ -1,0 +1,64 @@
+{
+  "parameters": [
+    {
+      "id": "purpose-photo-slice-whitespace-poster",
+      "category": "purpose",
+      "styleGroup": "cover",
+      "zhName": "摄影切片留白海报",
+      "enName": "Photo Slice White-Space Poster",
+      "image": "/assets/parameters/purpose-photo-slice-whitespace-poster.jpg",
+      "zhPrompt": "摄影切片留白海报成片用途，真实照片区域、主体缩小居中、竖向切片、淡色块和大面积空白",
+      "enPrompt": "photo slice white-space poster purpose, real-photo area, small centered subject, vertical slices, pale extracted color blocks, generous blank space",
+      "negative": ["乱码", "水印", "无关新主体", "过度装饰"]
+    },
+    {
+      "id": "purpose-artist-travel-manuscript",
+      "category": "purpose",
+      "styleGroup": "cover",
+      "zhName": "艺术家旅行手稿",
+      "enName": "Artist Travel Manuscript",
+      "image": "/assets/parameters/purpose-artist-travel-manuscript.jpg",
+      "zhPrompt": "艺术家旅行手稿成片用途，米白纸张、水彩淡彩、钢笔铅笔速写、观察标记和随性留白",
+      "enPrompt": "artist travel manuscript purpose, ivory paper, watercolor tint, pen and pencil sketches, observation marks, loose generous negative space",
+      "negative": ["乱码", "水印", "商业海报感", "无关新主体"]
+    }
+  ],
+  "featuredPrompts": [
+    {
+      "id": "img2img-photo-slice-whitespace-poster",
+      "category": "image-to-image",
+      "group": "poster-layout",
+      "zhTitle": "摄影切片留白海报",
+      "enTitle": "Photo Slice White-Space Poster",
+      "zhDescription": "上半保留真实照片，下半把主体提炼为竖向切片、淡色块和大留白艺术海报。",
+      "enDescription": "Keep the real photo on top and rebuild the lower half as a white-space poster with vertical slices.",
+      "originalImage": "/assets/featured/img2img-photo-slice-whitespace-original.jpg",
+      "resultImage": "/assets/featured/img2img-photo-slice-whitespace-result.jpg",
+      "prompt": "请分析上传照片中的视觉主体、结构线条和色彩关系，提炼最有辨识度的部分，缩小后居中呈现，并保留真实摄影质感。在主体外围加入宽窄不一、高低错落的竖向切片，切片中穿插从原图提取的淡色块，用少量涂抹痕迹和细线自然收边，整体保留大面积空白。画面底部根据照片内容生成简短英文标题与观察式短句，字体简洁、小而清晰，不抢主体。整体画幅为竖版 3:4，上下严格各占 50%：上半部分直接使用原照片，仅允许等比缩放与适当裁切铺满，禁止 AI 扩图、重绘或改变原照片内容；下半部分生成艺术海报。避免厚重阴影、商业广告感、复杂拼贴、乱码、水印、无关新主体和过度装饰。"
+    },
+    {
+      "id": "img2img-artist-travel-manuscript",
+      "category": "image-to-image",
+      "group": "style-transfer",
+      "zhTitle": "艺术家旅行手稿",
+      "enTitle": "Artist Travel Manuscript",
+      "zhDescription": "把照片重构为水彩、钢笔、铅笔与观察笔记混合的高级旅行手稿页。",
+      "enDescription": "Rebuild a photo into a premium artist travel manuscript with watercolor, pen, pencil, and observation marks.",
+      "originalImage": "/assets/featured/img2img-artist-travel-manuscript-original.jpg",
+      "resultImage": "/assets/featured/img2img-artist-travel-manuscript-result.jpg",
+      "prompt": "请参考我上传的原图制作同比例图片，将原照片重新创作为一页高级艺术家的旅行手稿。保留照片中的主要人物、动作、场景、空间关系和构图关系。采用水彩、钢笔、铅笔、淡彩和速写线条混合表现；人物使用简洁的手绘速写线条，保留动作、姿态和服装特征；自然景观使用淡淡的水彩色块和快速笔触表现。部分区域只使用铅笔线稿，不完整上色，让不同区域的绘画完成度不同，有些地方精细，有些地方只有几笔简单线条。加入少量手绘箭头、植物速写、建筑局部线稿、艺术家观察痕迹和颜料飞溅。画面保留大量米白色哑光纸张与真实旅行手稿纸纹，带铅笔痕迹、水彩晕染和自然笔触。底部使用留白构图，添加与原画面符合的英文手写文字标题，标题下方添加随性的英文短句，字体应像真实手写而非数字化排版。整体像一位专业艺术家在旅行途中记录下来的私人艺术手稿，高级、自然、随性、有艺术家气质。留白不能与原画面有割裂感，不添加多余装饰元素。避免商业海报感、过度精修、数字矢量感、乱码、水印和无关新主体。"
+    },
+    {
+      "id": "color-dappled-warm-cool-portrait",
+      "category": "color-edit",
+      "group": "color-style",
+      "zhTitle": "斑驳冷暖电影人像",
+      "enTitle": "Dappled Warm-Cool Portrait",
+      "zhDescription": "保持人物构图，强化斑驳叶影、浅景深、金色暖光与青蓝暗部的电影静帧质感。",
+      "enDescription": "Keep the portrait composition while adding dappled leaf shadows, shallow depth, warm highlights, and cool cinematic shadows.",
+      "originalImage": "/assets/featured/color-dappled-warm-cool-portrait-original.jpg",
+      "resultImage": "/assets/featured/color-dappled-warm-cool-portrait-result.jpg",
+      "prompt": "请保持原图画面构图和人物不变，将照片处理为电影感人像摄影。画面采用浅景深和大光圈定焦镜头质感，主体面部和局部轮廓相对清晰，背景大幅虚化，形成柔和圆形光斑与模糊色块。暖色斜射光从右前侧照在脸部、头发、肩颈和衣物上，形成大块叶影斑驳；阴影不能遮挡脸部关键表情。亮部呈金黄色、琥珀色和蜂蜜色，阴影呈深蓝、青灰和墨黑色，形成强烈冷暖对比。环境色调加入青蓝、灰蓝、深青色，暖光局部点亮画面。亮部柔和且略微过曝，暗部深沉但保留细节；加入柔焦光晕、轻微镜头炫光、细腻胶片颗粒和自然曝光波动。整体氛围安静、孤独、浪漫、感伤、朦胧，具有电影静帧质感，重点强调斑驳光影与冷暖色彩。避免改变人物身份、五官、姿势和构图，避免过度磨皮、塑料质感、强 HDR、乱码、水印和夸张特效。"
+    }
+  ]
+}
