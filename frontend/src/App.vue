@@ -24,6 +24,11 @@ const viewMode = ref<"generator" | "featured">("generator");
 const inputs = reactive<PromptInputs>({ ...defaultInputs });
 const allParameters = ref<PromptParameter[]>([...builtInParameters]);
 const allFeatured = ref<FeaturedPromptItem[]>([...builtInFeatured]);
+const localPriorityFeaturedIds = new Set([
+  "img2img-photo-slice-whitespace-poster",
+  "img2img-artist-travel-manuscript",
+  "color-dappled-warm-cool-portrait",
+]);
 const selectedIds = ref<string[]>([]);
 const activeWorkflowId = ref(galleryWorkflows[0].id);
 const activeSectionId = ref(galleryWorkflows[0].sections[0].id);
@@ -578,7 +583,12 @@ async function loadRemoteCatalog() {
     allParameters.value = parametersResult.value;
   }
   if (featuredResult.status === "fulfilled" && featuredResult.value.length) {
-    allFeatured.value = featuredResult.value;
+    const priorityItems = builtInFeatured.filter((item) => localPriorityFeaturedIds.has(item.id));
+    const priorityIds = new Set(priorityItems.map((item) => item.id));
+    allFeatured.value = [
+      ...featuredResult.value.filter((item: FeaturedPromptItem) => !priorityIds.has(item.id)),
+      ...priorityItems,
+    ];
   }
   if (settingsResult.status === "fulfilled" && settingsResult.value) {
     siteSettings.value = settingsResult.value;
