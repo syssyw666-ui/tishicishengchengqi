@@ -20991,8 +20991,8 @@
     },
     {
       "id": "color-dappled-warm-cool-portrait",
-      "category": "color-edit",
-      "group": "color-style",
+      "category": "image-to-image",
+      "group": "style-transfer",
       "zhTitle": "斑驳冷暖电影人像",
       "enTitle": "Dappled Warm-Cool Portrait",
       "zhDescription": "保持人物构图，强化斑驳叶影、浅景深、金色暖光与青蓝暗部的电影静帧质感。",
