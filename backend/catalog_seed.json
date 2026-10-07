@@ -1794,6 +1794,36 @@
       "enPrompt": "artist travel manuscript purpose, ivory paper, watercolor tint, pen and pencil sketches, observation marks, loose generous negative space"
     },
     {
+      "id": "purpose-photo-second-world",
+      "category": "purpose",
+      "styleGroup": "cover",
+      "zhName": "照片里的第二世界",
+      "enName": "Second World in a Photo",
+      "image": "/assets/parameters/purpose-photo-second-world.jpg",
+      "zhPrompt": "摄影与极简线稿融合的第二世界海报，照片结构自然延伸到暖白纸面，小比例线稿人物与延伸结构发生真实互动",
+      "enPrompt": "second-world photo editorial, photographic structure extending naturally onto warm ivory paper, tiny line-drawn figures physically interacting with the extension"
+    },
+    {
+      "id": "purpose-geometric-rubbing-atlas",
+      "category": "purpose",
+      "styleGroup": "cover",
+      "zhName": "几何拓印图录",
+      "enName": "Geometric Rubbing Atlas",
+      "image": "/assets/parameters/purpose-geometric-rubbing-atlas.jpg",
+      "zhPrompt": "几何拓印图录海报，将主体轮廓重构为严谨几何骨架、负形与符号，结合木刻拓印、干刷丝网印刷和旧图录纸感",
+      "enPrompt": "geometric rubbing atlas poster, subject rebuilt as a strict geometric framework, negative shapes and symbols, with woodblock rubbing, dry screenprint and archival catalog paper"
+    },
+    {
+      "id": "purpose-isometric-miniature-editorial",
+      "category": "purpose",
+      "styleGroup": "cover",
+      "zhName": "等距微缩编辑页",
+      "enName": "Isometric Miniature Editorial",
+      "image": "/assets/parameters/purpose-isometric-miniature-editorial.jpg",
+      "zhPrompt": "等距微缩编辑页，将真实场景概括为纸面微缩模型、清晰体块、有限色盘和大面积留白",
+      "enPrompt": "isometric miniature editorial page, real scene reduced into a paper diorama with clear volumes, limited sampled palette and generous negative space"
+    },
+    {
       "id": "style-rough-charcoal",
       "category": "style",
       "styleGroup": "craft-print",
@@ -20988,6 +21018,42 @@
       "originalImage": "/assets/featured/img2img-artist-travel-manuscript-original.jpg",
       "resultImage": "/assets/featured/img2img-artist-travel-manuscript-result.jpg",
       "prompt": "请参考我上传的原图制作同比例图片，将原照片重新创作为一页高级艺术家的旅行手稿。保留照片中的主要人物、动作、场景、空间关系和构图关系。采用水彩、钢笔、铅笔、淡彩和速写线条混合表现；人物使用简洁的手绘速写线条，保留动作、姿态和服装特征；自然景观使用淡淡的水彩色块和快速笔触表现。部分区域只使用铅笔线稿，不完整上色，让不同区域的绘画完成度不同，有些地方精细，有些地方只有几笔简单线条。加入少量手绘箭头、植物速写、建筑局部线稿、艺术家观察痕迹和颜料飞溅。画面保留大量米白色哑光纸张与真实旅行手稿纸纹，带铅笔痕迹、水彩晕染和自然笔触。底部使用留白构图，添加与原画面符合的英文手写文字标题，标题下方添加随性的英文短句，字体应像真实手写而非数字化排版。整体像一位专业艺术家在旅行途中记录下来的私人艺术手稿，高级、自然、随性、有艺术家气质。留白不能与原画面有割裂感，不添加多余装饰元素。避免商业海报感、过度精修、数字矢量感、乱码、水印和无关新主体。"
+    },
+    {
+      "id": "img2img-photo-second-world",
+      "category": "image-to-image",
+      "group": "poster-layout",
+      "zhTitle": "照片里的第二世界",
+      "enTitle": "Second World in a Photo",
+      "zhDescription": "从照片自身的道路、光影、水波或轮廓中发现可被小线稿人物使用的另一个世界。",
+      "enDescription": "Discover a second world in the photo where tiny line figures interact with its roads, light, water, or contours.",
+      "originalImage": "/assets/featured/img2img-photo-second-world-original.jpg",
+      "resultImage": "/assets/featured/img2img-photo-second-world-result.jpg",
+      "prompt": "请基于我上传的摄影作品，制作一张 3:4 竖版的“第二世界”摄影二创海报。整体严格上下 1:1：上半部分尽可能忠实保留原照片，不改变主体、人物动作、空间关系、色彩和自然光影，只做必要的等比裁切；下半部分使用自然的暖米白纸张背景并保留大量留白，但不要直接套用“撕纸+小人”的固定模板。生成前先观察照片，找出最有辨识度的视觉结构，例如水波、道路、倒影、云层、枝条、光束、影子、建筑边缘、人物动作或山脊，并思考：如果这个结构真的变成一种可以被触碰、使用或改变的东西，它最自然会是什么？由此找到只属于这张照片的“第二世界”。摄影区域的形状也必须参与解释照片，不要默认使用普通不规则撕纸边。可以加入 0 至 3 个极简黑色手绘线稿人物；小人不是装饰，而是第二世界里的使用者，必须真正与照片中的物理结构互动并具有合理受力关系；如果原照片已有很强的人物动作，可以不新增小人。根据照片具体发生的事情生成一句简短英文手写旁白，语气自然、轻松、略有幽默或画外音感，不写成励志语录，文字位置根据留白和动作方向决定。整体为真实摄影、米白纸张与极简黑线涂鸦的融合，干净、明亮、克制，带轻微手工拼贴感和独立杂志感。不要商业广告感、复杂插画、密集小人、固定撕纸模板、重复动作、无关装饰、擅自改色、重新设计摄影内容、Logo 或水印。最重要的原则是：不要装饰照片，先理解照片，再发现它里面原本就可能存在的另一个世界。"
+    },
+    {
+      "id": "img2img-geometric-rubbing-atlas",
+      "category": "image-to-image",
+      "group": "poster-layout",
+      "zhTitle": "几何拓印图录",
+      "enTitle": "Geometric Rubbing Atlas",
+      "zhDescription": "把照片核心母题重构为几何骨架、古物拓片与现代图录秩序。",
+      "enDescription": "Rebuild a photo's core motif through geometric structure, rubbing texture, and modern atlas design.",
+      "originalImage": "/assets/featured/img2img-geometric-rubbing-atlas-original.jpg",
+      "resultImage": "/assets/featured/img2img-geometric-rubbing-atlas-result.jpg",
+      "prompt": "请将我上传的每张照片分别制作成一张独立的高级设计海报，每张单独输出，不拼图。画面采用 3:4 竖版构图，上下区域严格 1:1，各占 50%。上半部分完整保留原始照片，保持主体数量、位置比例、姿态、真实质感、自然光影和原有色彩，仅进行轻微高级摄影调色；不得裁掉主体、重新构图或改变原有内容。下半部分使用暖白色纹理纸张。分析照片中最具识别度的主体、轮廓、姿态、空间关系和情绪寓意，从中提取一个核心视觉母题，并以圆、方、三角、弧线、轴线或重复比例建立严谨的几何骨架。通过剪影、负形、局部放大、形态合并和符号化转译，将主体重构为兼具民俗图录、古物拓片与现代平面设计感的图形。配色从原图提取，以一个深色建立结构，搭配 1 至 2 个主题色和少量强调色。采用木刻拓印、干刷丝网印刷与旧式图录印刷的混合质感，保留断墨、擦痕、露底和轻微套色偏差，但重要轮廓与几何边界必须清晰。整体保持大面积留白，远看结构明确，近看具有纸张、颗粒与印刷细节。加入一个简短中文标题和一行小号英文注释，文字仅作为辅助信息，不抢夺主体。整体气质寓意先行、图形克制、几何严谨、拓印粗粝、配色清爽、留白清晰，传统文化感与现代设计秩序并存。避免逐一翻译照片元素、无意义传统纹样、装饰堆砌、随机散点、颜色杂乱、灰脏做旧、写实插画、模板感、大号文字、额外主体、拼贴感、Logo 及水印。"
+    },
+    {
+      "id": "img2img-isometric-miniature-editorial",
+      "category": "image-to-image",
+      "group": "poster-layout",
+      "zhTitle": "等距微缩编辑页",
+      "enTitle": "Isometric Miniature Editorial",
+      "zhDescription": "把照片下半区重构为从原片取色的等距微缩纸面模型。",
+      "enDescription": "Rebuild the lower half of a photo as a restrained isometric paper miniature using colors sampled from the source.",
+      "originalImage": "/assets/featured/img2img-isometric-miniature-editorial-original.jpg",
+      "resultImage": "/assets/featured/img2img-isometric-miniature-editorial-result.jpg",
+      "prompt": "请将我上传的每一张照片分别制作成一张独立的高级设计海报，不多图拼接，每张照片单独输出。整体采用 3:4 竖版构图，上下两个区域高度严格 1:1，各占画面 50%。上半部分保留原始照片，保持主体结构、真实质感、自然光影和原有色彩氛围，仅进行轻微高级摄影调色，使其具有艺术杂志、独立出版物和展览摄影质感。为适配画幅，可自然扩展天空、地面或环境背景，但不得拉伸、扭曲或改变主体。下半部分提取照片中最具识别性的主体、轮廓、姿态与叙事关系，重构为精致的极简等距视角插画，如一件陈列在纸面上的微缩立体模型或建筑沙盘。不要机械复刻照片细节，而是以概括体块、清晰边缘、简洁层级和微型场景关系重新表达主体，使其保留一眼可辨的身份特征，同时具有安静、克制、诗意的编辑插画气质。主体像被切割并安放在一小块纸面或微型基座上，周围保留大面积留白，通过体量对比、边缘裁切、轻微投影和少量微小细节建立尺度感与孤独感。可加入极少量辅助元素承托主体，但不得形成第二视觉中心。配色完全从上方原始照片中提取，归纳、提纯、柔化并统一为有限色盘，保留原图冷暖关系与色彩性格，通过同色深浅、邻近色和少量色差区分体块；不凭空加入无关固定色系。使用精细墨线、扁平色面、轻微阴影和纸张颗粒表现结构与层次。文字作为构图的一部分，从照片主题、地点、动作、状态或情绪中提炼一个简短英文标题，并搭配极少量编号、短句或微型注释；文字细瘦、克制、现代，可沿留白边缘、主体基座、水平轴线或等距结构排列。整体参考极简等距插画、微缩立体模型、纸上景观和高级编辑设计，呈现安静、诗意、克制、精致、具有收藏感的视觉气质。避免卡通感、高饱和撞色、与原图无关的固定配色、塑料 3D 感、复杂场景堆积、电商感、模板感、Logo 和水印。"
     },
     {
       "id": "color-dappled-warm-cool-portrait",
