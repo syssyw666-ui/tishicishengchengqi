@@ -43,7 +43,7 @@ export const colorGradingParameters: PromptParameter[] = [
   grade("grading-teal-landscape", "drone-aerial", "青蓝风光", "Teal Landscape", "青蓝风光调色，天空、水面和远山更清透", "teal-blue landscape color grade, clearer sky, water, and distant mountains"),
   grade("grading-sunset-aerial", "drone-aerial", "航拍夕阳暖调", "Sunset Aerial Warm", "航拍夕阳暖调，金橙色高光，地面暗部保持细节", "warm sunset aerial color grade, golden-orange highlights, detailed ground shadows"),
   grade("grading-urban-aerial-clean", "drone-aerial", "城市航拍清透", "Clean Urban Aerial", "城市航拍清透调色，建筑边缘清晰，灰蓝色不过脏", "clean urban aerial color grade, crisp building edges, controlled gray-blue tones"),
-  grade("grading-teal-orange-cinema", "cinematic", "青橙电影调", "Teal Orange Cinema", "青橙电影调色，肤色偏暖，阴影偏青，商业电影质感", "teal-and-orange cinematic color grade, warm skin tones, teal shadows, commercial film look"),
+  grade("grading-teal-orange-cinema", "cinematic", "青橙电影调", "Teal Orange Film Grade", "青橙电影调色，肤色偏暖，阴影偏青，商业电影质感", "teal-and-orange cinematic color grade, warm skin tones, teal shadows, commercial film look"),
   grade("grading-blockbuster-contrast", "cinematic", "商业大片高反差", "Blockbuster Contrast", "商业大片高反差调色，黑位深，局部高光有冲击力", "blockbuster high-contrast color grade, deep blacks, punchy controlled highlights"),
   grade("grading-filmic-low-contrast", "cinematic", "电影低反差", "Filmic Low Contrast", "电影低反差调色，层次柔和，暗部不死黑，质感高级", "filmic low-contrast color grade, soft tonal layers, lifted shadows, premium finish"),
   grade("grading-bleach-bypass", "cinematic", "银漂", "Bleach Bypass", "银漂调色，低饱和，高反差，金属般冷硬质感", "bleach-bypass color grade, low saturation, high contrast, cold metallic grit"),

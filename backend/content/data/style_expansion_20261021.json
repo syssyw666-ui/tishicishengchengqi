@@ -1,0 +1,623 @@
+{
+  "parameters": [
+    {
+      "id": "style-photorealistic",
+      "category": "style",
+      "styleGroup": "photo-film-3d",
+      "zhName": "写实摄影",
+      "enName": "Photorealistic",
+      "image": "/assets/parameters/style-photorealistic.jpg",
+      "zhPrompt": "写实摄影语言，物理可信的自然光、准确材质反射、真实景深、细腻但不过度磨皮的表面细节",
+      "enPrompt": "photorealistic photography, physically believable natural light, accurate material reflections, realistic depth of field and finely resolved surfaces without plastic smoothing",
+      "negative": [
+        "cartoon",
+        "plastic skin"
+      ]
+    },
+    {
+      "id": "style-cinematic",
+      "category": "style",
+      "styleGroup": "photo-film-3d",
+      "zhName": "电影感",
+      "enName": "Cinematic",
+      "image": "/assets/parameters/style-cinematic.jpg",
+      "zhPrompt": "电影剧照语言，明确主次关系、叙事性构图、受控明暗层次、电影色彩分离和自然镜头质感",
+      "enPrompt": "cinematic film-still language, clear visual hierarchy, narrative composition, controlled tonal range, filmic color separation and natural lens character"
+    },
+    {
+      "id": "style-animated-3d",
+      "category": "style",
+      "styleGroup": "photo-film-3d",
+      "zhName": "3D动画电影感",
+      "enName": "3D Animated",
+      "image": "/assets/parameters/style-animated-3d.jpg",
+      "zhPrompt": "家庭向动画长片式风格化 3D，清晰轮廓、富有表现力的比例、柔和全局光照和精致但不写实的材质",
+      "enPrompt": "family-friendly stylized 3D animated-feature look, clear silhouettes, expressive proportions, soft global illumination and polished non-photoreal materials"
+    },
+    {
+      "id": "style-anime",
+      "category": "style",
+      "styleGroup": "anime",
+      "zhName": "二次元",
+      "enName": "Anime",
+      "image": "/assets/parameters/style-anime.jpg",
+      "zhPrompt": "现代二次元插画，稳定清晰线稿、分层赛璐璐上色、受控高光与阴影、富有表现力的角色造型",
+      "enPrompt": "modern anime illustration, stable clean linework, layered cel shading, controlled highlights and expressive character design"
+    },
+    {
+      "id": "style-cyberpunk",
+      "category": "style",
+      "styleGroup": "design-retro",
+      "zhName": "赛博朋克",
+      "enName": "Cyberpunk",
+      "image": "/assets/parameters/style-cyberpunk.jpg",
+      "zhPrompt": "赛博朋克视觉，密集未来城市结构、潮湿反光表面、冷暖霓虹对比、义体与高科技低生活反差，避免可读品牌文字",
+      "enPrompt": "cyberpunk visual language, dense futuristic city structure, wet reflective surfaces, cool-warm neon contrast, cybernetics and high-tech low-life tension, no readable brand text"
+    },
+    {
+      "id": "style-watercolor",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "水彩",
+      "enName": "Watercolor",
+      "image": "/assets/parameters/style-watercolor.jpg",
+      "zhPrompt": "透明水彩绘画，湿画法柔和晕染、干画法边缘、水痕与纸张齿纹可见，色层轻盈通透",
+      "enPrompt": "transparent watercolor painting, soft wet-on-wet blooms, dry-brush edges, visible tide marks and paper tooth, airy luminous pigment layers"
+    },
+    {
+      "id": "style-oil-painting",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "油画",
+      "enName": "Oil Painting",
+      "image": "/assets/parameters/style-oil-painting.jpg",
+      "zhPrompt": "油画媒介，层叠罩染与厚涂并存，笔触方向清楚、颜料体积可见、暗部深沉且色彩关系丰富",
+      "enPrompt": "oil-paint medium, layered glazing combined with impasto, directional brushwork, visible pigment body, deep shadows and rich color relationships"
+    },
+    {
+      "id": "style-chinese-ink",
+      "category": "style",
+      "styleGroup": "eastern",
+      "zhName": "国风水墨",
+      "enName": "Chinese Ink",
+      "image": "/assets/parameters/style-chinese-ink.jpg",
+      "zhPrompt": "中国水墨语言，以墨分五色、干湿浓淡、飞白皴擦和大片留白建立山水层次与含蓄意境",
+      "enPrompt": "Chinese ink-wash language, layered ink values, wet and dry brushwork, flying-white texture, cun strokes and generous negative space creating poetic depth"
+    },
+    {
+      "id": "style-pixel-art",
+      "category": "style",
+      "styleGroup": "design-retro",
+      "zhName": "像素艺术",
+      "enName": "Pixel Art",
+      "image": "/assets/parameters/style-pixel-art.jpg",
+      "zhPrompt": "像素艺术，像素网格边缘清晰、有限色盘、无抗锯齿阶梯轮廓和手工点绘明暗，保持统一像素密度",
+      "enPrompt": "pixel art, crisp pixel-grid edges, limited palette, deliberately stepped non-antialiased contours and hand-placed pixel shading with consistent pixel density"
+    },
+    {
+      "id": "style-clay-animation",
+      "category": "style",
+      "styleGroup": "photo-film-3d",
+      "zhName": "黏土动画",
+      "enName": "Clay Animation",
+      "image": "/assets/parameters/style-clay-animation.jpg",
+      "zhPrompt": "黏土定格动画质感，手工塑形指纹、可见接缝、微小比例布景与柔和棚拍光，动作带逐帧制作感",
+      "enPrompt": "clay stop-motion look, handmade fingerprints and seams, miniature sets, soft studio lighting and subtle frame-by-frame crafted motion character"
+    },
+    {
+      "id": "style-low-poly",
+      "category": "style",
+      "styleGroup": "photo-film-3d",
+      "zhName": "低多边形",
+      "enName": "Low Poly",
+      "image": "/assets/parameters/style-low-poly.jpg",
+      "zhPrompt": "低多边形 3D，形体由清晰三角或多边形切面构成，面与面明暗分离，造型简练并保持可辨识轮廓",
+      "enPrompt": "low-poly 3D, forms built from clearly visible triangular or polygonal facets, separated planar shading, simplified geometry and readable silhouettes"
+    },
+    {
+      "id": "style-concept-art",
+      "category": "style",
+      "styleGroup": "design-retro",
+      "zhName": "概念设计",
+      "enName": "Concept Art",
+      "image": "/assets/parameters/style-concept-art.jpg",
+      "zhPrompt": "影视游戏概念设计语言，先以强剪影和尺度关系建立方案，再用功能结构、材质分区和环境叙事说明设计逻辑",
+      "enPrompt": "film-and-game concept design language, strong silhouette and scale first, then functional structure, material zoning and environmental storytelling that explain the design logic"
+    },
+    {
+      "id": "artist-precisionism",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "精准主义工业绘画",
+      "enName": "Precisionism",
+      "image": "/assets/parameters/artist-precisionism.jpg?v=20261021-style-expansion",
+      "zhPrompt": "精准主义绘画语言，工业建筑被提炼为光洁硬边几何体，轮廓锐利、表面平滑、空间安静，冷静表现机器时代秩序",
+      "enPrompt": "Precisionist painting language, industrial architecture reduced to immaculate hard-edged geometry, smooth surfaces, sharp contours, quiet machine-age order",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-italian-futurism",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "意大利未来主义",
+      "enName": "Italian Futurism",
+      "image": "/assets/parameters/artist-italian-futurism.jpg?v=20261021-style-expansion",
+      "zhPrompt": "意大利未来主义视觉语言，连续动作被切分和重复，斜线与放射结构强化速度、机械动力和城市节奏",
+      "enPrompt": "Italian Futurist visual language, sequential motion fractured and repeated, diagonals and radiating structures emphasizing speed, machinery and urban rhythm",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-dada-photomontage",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "达达摄影蒙太奇",
+      "enName": "Dada Photomontage",
+      "image": "/assets/parameters/artist-dada-photomontage.jpg?v=20261021-style-expansion",
+      "zhPrompt": "达达摄影蒙太奇，旧照片、机械零件和纸张碎片以反逻辑方式剪贴叠置，比例突变、边缘粗粝并带讽刺实验感",
+      "enPrompt": "Dada photomontage, archival photographs, machine parts and paper fragments assembled with anti-logical scale shifts, rough cut edges and subversive experimental energy",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-metaphysical-painting",
+      "category": "artist-style",
+      "styleGroup": "surreal-symbolic",
+      "zhName": "形而上绘画",
+      "enName": "Metaphysical Painting",
+      "image": "/assets/parameters/artist-metaphysical-painting.jpg?v=20261021-style-expansion",
+      "zhPrompt": "形而上绘画语言，空旷古典广场、漫长硬阴影、拱廊和孤立物件构成静止谜题，透视清晰却带不安梦境感",
+      "enPrompt": "Metaphysical painting language, empty classical plazas, long hard shadows, arcades and isolated objects forming a still visual riddle with lucid yet uncanny perspective",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-art-brut",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "粗野艺术",
+      "enName": "Art Brut",
+      "image": "/assets/parameters/artist-art-brut.jpg?v=20261021-style-expansion",
+      "zhPrompt": "粗野艺术语言，未经修饰的蜡笔与刮刻痕迹、稚拙符号、粗糙底材和本能式构图，保留强烈手工不规则感",
+      "enPrompt": "Art Brut language, unpolished crayon and scratched marks, naive symbols, rough ground and instinctive composition with emphatic handmade irregularity",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-neo-expressionism",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "新表现主义",
+      "enName": "Neo-Expressionism",
+      "image": "/assets/parameters/artist-neo-expressionism.jpg?v=20261021-style-expansion",
+      "zhPrompt": "新表现主义绘画，扭曲具象形体、猛烈宽笔触、厚重颜料与冲突色彩共同形成原始而直接的情绪张力",
+      "enPrompt": "Neo-Expressionist painting, distorted figurative forms, forceful broad strokes, heavy paint and clashing colors creating raw direct emotional tension",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-scientific-botanical",
+      "category": "artist-style",
+      "styleGroup": "international-illustration",
+      "zhName": "科学植物图谱",
+      "enName": "Scientific Botanical Plate",
+      "image": "/assets/parameters/artist-scientific-botanical.jpg?v=20261021-style-expansion",
+      "zhPrompt": "科学植物图谱插画，完整植株与局部解剖并置，轮廓精确、自然色克制、纸面洁净，具有博物学档案的观察性",
+      "enPrompt": "scientific botanical plate illustration, complete specimen paired with anatomical details, precise contours, restrained natural color and clean archival paper",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-fashion-gesture",
+      "category": "artist-style",
+      "styleGroup": "editorial-graphic",
+      "zhName": "时装动态速写",
+      "enName": "Fashion Gesture Illustration",
+      "image": "/assets/parameters/artist-fashion-gesture.jpg?v=20261021-style-expansion",
+      "zhPrompt": "时装动态速写，修长人物比例、快速墨线和选择性水彩铺色，强调服装廓形、姿态节奏与大片纸面留白",
+      "enPrompt": "fashion gesture illustration, elongated proportions, rapid ink contours and selective watercolor washes emphasizing garment silhouette, pose rhythm and generous paper space",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-architectural-ink-wash",
+      "category": "artist-style",
+      "styleGroup": "editorial-graphic",
+      "zhName": "建筑钢笔淡彩",
+      "enName": "Architectural Ink and Wash",
+      "image": "/assets/parameters/artist-architectural-ink-wash.jpg?v=20261021-style-expansion",
+      "zhPrompt": "建筑钢笔淡彩速写，自由但准确的透视墨线、透明水彩块面、局部排线和未完成边缘，呈现现场写生感",
+      "enPrompt": "architectural ink-and-wash sketch, loose yet accurate perspective lines, transparent watercolor planes, selective hatching and unfinished edges with an on-location sketchbook feel",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-madhubani",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "米蒂拉民间画",
+      "enName": "Madhubani Painting",
+      "image": "/assets/parameters/artist-madhubani.jpg?v=20261021-style-expansion",
+      "zhPrompt": "米蒂拉民间绘画语言，双重轮廓、平涂天然色、花鸟鱼与几何边饰密集填满空间，装饰性强且几乎不留空白",
+      "enPrompt": "Madhubani folk-painting language, double outlines, flat natural pigments, dense floral bird fish motifs and geometric borders filling nearly all space",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-warli",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "瓦尔利部落画",
+      "enName": "Warli Painting",
+      "image": "/assets/parameters/artist-warli.jpg?v=20261021-style-expansion",
+      "zhPrompt": "瓦尔利民间绘画，以红褐泥墙为底、白色米浆线描人物与动物，用圆形舞蹈和村落劳动形成简洁叙事节奏",
+      "enPrompt": "Warli folk painting, white rice-paste figures and animals on red-ochre earthen ground, circular dances and village work arranged in spare narrative rhythm",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-gond",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "贡德点线民间画",
+      "enName": "Gond Painting",
+      "image": "/assets/parameters/artist-gond.jpg?v=20261021-style-expansion",
+      "zhPrompt": "贡德民间绘画，树木和动物轮廓内部填入连续圆点、短线与鳞片纹，色彩鲜明并带有生长般的有机节奏",
+      "enPrompt": "Gond folk painting, trees and animals filled with rhythmic dots, dashes and scale-like patterns, vivid color and an organic sense of growth",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-kalamkari",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "卡拉姆卡里手绘染布",
+      "enName": "Kalamkari Textile Painting",
+      "image": "/assets/parameters/artist-kalamkari.jpg?v=20261021-style-expansion",
+      "zhPrompt": "卡拉姆卡里手绘染布风格，棉布上的流畅植物轮廓、靛蓝茜红与赭黄天然染色、重复花藤和手工渗色边缘",
+      "enPrompt": "Kalamkari textile-painting style, flowing vegetal contours on cotton, indigo madder and ochre natural dyes, repeating vines and hand-dyed bleeding edges",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-pattachitra",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "帕塔契特拉卷轴画",
+      "enName": "Pattachitra Painting",
+      "image": "/assets/parameters/artist-pattachitra.jpg?v=20261021-style-expansion",
+      "zhPrompt": "帕塔契特拉卷轴绘画，清晰黑色装饰轮廓、红黑赭黄平涂、繁密花边与平面叙事人物，呈现精密传统手绘感",
+      "enPrompt": "Pattachitra scroll-painting language, crisp black ornamental contours, flat red black and ochre pigments, dense floral borders and precise planar narrative figures",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-petrykivka",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "佩特里基夫卡花卉画",
+      "enName": "Petrykivka Painting",
+      "image": "/assets/parameters/artist-petrykivka.jpg?v=20261021-style-expansion",
+      "zhPrompt": "佩特里基夫卡装饰绘画，大朵花卉、浆果与羽状叶片由轻快笔触层层展开，色彩明艳、枝叶流动且背景洁净",
+      "enPrompt": "Petrykivka decorative painting, exuberant flowers, berries and feathered leaves built from lively layered brushstrokes, vivid color and a clean ground",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-rosemaling",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "北欧玫瑰彩绘",
+      "enName": "Scandinavian Rosemaling",
+      "image": "/assets/parameters/artist-rosemaling.jpg?v=20261021-style-expansion",
+      "zhPrompt": "北欧玫瑰彩绘，C形与S形卷草花卉沿木器表面流动，笔触有明暗渐层、构图对称舒展并保留手绘木纹",
+      "enPrompt": "Scandinavian Rosemaling, flowing C- and S-scroll flowers painted on wood, shaded brushstrokes, balanced symmetry and visible handmade grain",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-portuguese-azulejo",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "葡萄牙蓝白瓷砖画",
+      "enName": "Portuguese Azulejo",
+      "image": "/assets/parameters/artist-portuguese-azulejo.jpg?v=20261021-style-expansion",
+      "zhPrompt": "葡萄牙蓝白瓷砖画，钴蓝单色叙事图像跨越白釉方砖，边饰卷草清晰，釉面接缝和轻微烧制差异可见",
+      "enPrompt": "Portuguese Azulejo tile painting, cobalt-blue narrative imagery spanning white glazed square tiles, ornate borders, visible grout and subtle firing variation",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-moroccan-zellige",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "摩洛哥泽利格拼砖",
+      "enName": "Moroccan Zellige",
+      "image": "/assets/parameters/artist-moroccan-zellige.jpg?v=20261021-style-expansion",
+      "zhPrompt": "摩洛哥泽利格拼砖，以手工切割釉面小砖组成连续星形与多边形镶嵌，钴蓝、翡翠绿、赭黄和白色形成精密节奏",
+      "enPrompt": "Moroccan Zellige mosaic, hand-cut glazed tiles forming continuous stars and polygons, cobalt, emerald, ochre and white in precise rhythmic tessellation",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-persian-miniature",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "波斯细密画",
+      "enName": "Persian Miniature",
+      "image": "/assets/parameters/artist-persian-miniature.jpg?v=20261021-style-expansion",
+      "zhPrompt": "波斯细密画语言，宝石色平面空间、精细花园与建筑、微小人物和金色装饰密集交织，透视层叠而非写实",
+      "enPrompt": "Persian miniature language, jewel-toned planar space, intricate gardens and architecture, tiny figures and gold ornament woven through layered non-naturalistic perspective",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-mexican-amate",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "墨西哥阿马特树皮画",
+      "enName": "Mexican Amate Painting",
+      "image": "/assets/parameters/artist-mexican-amate.jpg?v=20261021-style-expansion",
+      "zhPrompt": "墨西哥阿马特树皮画，纤维感棕色树皮纸上描绘高饱和花鸟、村落与生活场景，黑色轮廓粗朴而装饰密集",
+      "enPrompt": "Mexican Amate bark-paper painting, vivid flowers, birds and village life on fibrous brown paper, bold rustic black contours and dense decoration",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-orange-line-editorial",
+      "category": "style",
+      "styleGroup": "design-retro",
+      "zhName": "橙线极简社论",
+      "enName": "Orange-Line Editorial",
+      "image": "/assets/parameters/style-orange-line-editorial.jpg?v=20261021-style-expansion",
+      "zhPrompt": "极简概念社论插画，纯白背景与大量留白，纤细黑色手绘线描、极小人物和唯一一处暖橙色视觉强调，构图机智克制",
+      "enPrompt": "minimal conceptual editorial illustration, pure white field and generous negative space, thin hand-drawn black ink lines, a tiny figure and exactly one warm-orange focal accent, witty restrained composition",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-paper-cut-editorial",
+      "category": "style",
+      "styleGroup": "design-retro",
+      "zhName": "纸切社论拼贴",
+      "enName": "Cut-Paper Editorial Collage",
+      "image": "/assets/parameters/style-paper-cut-editorial.jpg?v=20261021-style-expansion",
+      "zhPrompt": "纸切社论拼贴，少量手工裁切色纸构成清晰概念图形，纸纤维与轻微层间阴影可见，造型简洁并保留充足留白",
+      "enPrompt": "cut-paper editorial collage, a few hand-cut colored-paper shapes forming a clear conceptual image, visible fibers and subtle layer shadows, simple forms with generous negative space",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-reverse-glass-painting",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "玻璃反绘",
+      "enName": "Reverse-Glass Painting",
+      "image": "/assets/parameters/style-reverse-glass-painting.jpg?v=20261021-style-expansion",
+      "zhPrompt": "玻璃反绘工艺，颜料从背面分层绘制，正面呈现高饱和通透色、锐利轮廓、镜面高光和轻微玻璃折射",
+      "enPrompt": "reverse-glass painting, pigment layered from the back and viewed through glossy glass, saturated luminous color, crisp contours, mirror highlights and subtle refraction",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "mood-mysterious",
+      "category": "mood",
+      "styleGroup": "dark",
+      "zhName": "神秘悬疑",
+      "enName": "Mysterious Atmosphere",
+      "image": "/assets/parameters/mood-mysterious.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "神秘悬疑情绪，幽暗森林、雾气、低照度和未知感",
+      "enPrompt": "mysterious suspense mood, dark forest, fog, low light, sense of the unknown"
+    },
+    {
+      "id": "material-holographic-foil",
+      "category": "color-material",
+      "styleGroup": "translucent",
+      "zhName": "镭射箔膜",
+      "enName": "Holographic Foil Material",
+      "image": "/assets/parameters/material-holographic-foil.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "镭射箔膜材质，彩虹折射、高反光皱褶和未来包装感",
+      "enPrompt": "holographic foil material, rainbow refraction, reflective crinkles, futuristic packaging feel"
+    },
+    {
+      "id": "material-frosted-glass",
+      "category": "color-material",
+      "styleGroup": "translucent",
+      "zhName": "磨砂玻璃",
+      "enName": "Frosted Glass Material",
+      "image": "/assets/parameters/material-frosted-glass.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "磨砂玻璃材质，半透明雾面、柔化轮廓和干净现代质感",
+      "enPrompt": "frosted glass material, translucent matte surface, softened silhouettes, clean modern feel"
+    },
+    {
+      "id": "grading-teal-orange-cinema",
+      "category": "color-grading",
+      "styleGroup": "cinematic",
+      "zhName": "青橙电影调",
+      "enName": "Teal Orange Film Grade",
+      "image": "/assets/parameters/grading-teal-orange-cinema.jpg",
+      "zhPrompt": "青橙电影调色，肤色偏暖，阴影偏青，商业电影质感",
+      "enPrompt": "teal-and-orange cinematic color grade, warm skin tones, teal shadows, commercial film look",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "bg-frosted-glass",
+      "category": "background",
+      "styleGroup": "special",
+      "zhName": "磨砂玻璃背景",
+      "enName": "Frosted Glass Backdrop",
+      "image": "/assets/parameters/bg-frosted-glass.png?v=20260827-bg-path-fix",
+      "zhPrompt": "磨砂玻璃背景，半透明柔焦、克制漫反射和现代科技感",
+      "enPrompt": "frosted glass background, translucent soft diffusion, restrained reflections, modern technology mood",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-holographic-foil",
+      "category": "background",
+      "styleGroup": "special",
+      "zhName": "镭射虹彩膜背景",
+      "enName": "Holographic Foil Backdrop",
+      "image": "/assets/parameters/bg-holographic-foil.png?v=20260827-bg-path-fix",
+      "zhPrompt": "镭射虹彩膜背景，半透明彩虹反射、褶皱光线和潮流未来质感",
+      "enPrompt": "holographic foil background, translucent rainbow reflections, folded light, fashion-forward futuristic texture",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "palette-teal-orange-cinema",
+      "category": "palette",
+      "styleGroup": "cinema",
+      "zhName": "青橙电影配色",
+      "enName": "Teal Orange Film Palette",
+      "image": "/assets/parameters/palette-teal-orange-cinema.png?v=20260827-palette-expansion",
+      "zhPrompt": "青色阴影、橙色主光、深海军蓝、肤色米与炭黑形成经典电影冷暖对比，避免过度橙化",
+      "enPrompt": "teal shadows, orange key light, deep navy, skin beige, and charcoal in classic cinematic warm-cool contrast without excessive orange cast",
+      "negative": [
+        "random unrelated colors",
+        "color banding",
+        "oversaturated noise",
+        "readable text"
+      ]
+    },
+    {
+      "id": "palette-persian-miniature",
+      "category": "palette",
+      "styleGroup": "global",
+      "zhName": "波斯细密画配色",
+      "enName": "Persian Miniature Palette",
+      "image": "/assets/parameters/palette-persian-miniature.png?v=20260827-palette-expansion",
+      "zhPrompt": "青金蓝、孔雀绿、石榴红、藏红花金与羊皮纸米组成波斯细密画配色，华丽但主次秩序明确",
+      "enPrompt": "lapis blue, peacock teal, pomegranate red, saffron gold, and parchment cream in an ornate Persian-miniature palette with clear hierarchy",
+      "negative": [
+        "random unrelated colors",
+        "color banding",
+        "oversaturated noise",
+        "readable text"
+      ]
+    },
+    {
+      "id": "expression-mysterious",
+      "category": "expression",
+      "styleGroup": "personality",
+      "zhName": "神秘",
+      "enName": "Enigmatic Expression",
+      "image": "/assets/parameters/expression-mysterious.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "神秘神态，眼神含蓄，表情难以捉摸",
+      "enPrompt": "mysterious expression, subtle gaze, unreadable facial emotion",
+      "negative": [
+        "blank dead eyes",
+        "asymmetric expression",
+        "distorted face"
+      ]
+    }
+  ],
+  "removeParameters": [
+    "effect-hologram",
+    "style-cloisonne-enamel"
+  ]
+}

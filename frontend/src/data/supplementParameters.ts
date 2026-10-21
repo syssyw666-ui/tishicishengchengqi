@@ -71,7 +71,7 @@ export const supplementParameters: PromptParameter[] = [
   param("expression", "expression-confident", "personality", "自信", "Confident", "自信神态，目光直接，面部放松有力量", "confident expression, direct gaze, relaxed powerful face", expressionNegative),
   param("expression", "expression-proud", "personality", "骄傲", "Proud", "骄傲神态，下巴微抬，姿态昂扬", "proud expression, chin slightly raised, elevated presence", expressionNegative),
   param("expression", "expression-tired", "negative", "疲惫", "Tired", "疲惫神态，眼神倦怠，面部放松下沉", "tired expression, weary eyes, relaxed downward facial tension", expressionNegative),
-  param("expression", "expression-mysterious", "personality", "神秘", "Mysterious", "神秘神态，眼神含蓄，表情难以捉摸", "mysterious expression, subtle gaze, unreadable facial emotion", expressionNegative),
+  param("expression", "expression-mysterious", "personality", "神秘", "Enigmatic Expression", "神秘神态，眼神含蓄，表情难以捉摸", "mysterious expression, subtle gaze, unreadable facial emotion", expressionNegative),
 
   param("hair-makeup", "hair-short", "hair-length", "短发", "Short Hair", "短发造型，轮廓清爽，脸部结构清楚", "short hairstyle, clean silhouette, clear facial structure", hairNegative),
   param("hair-makeup", "hair-long", "hair-length", "长发", "Long Hair", "长发造型，发丝自然垂落，层次清晰", "long hairstyle, natural falling strands, clear layers", hairNegative),
@@ -111,7 +111,6 @@ export const supplementParameters: PromptParameter[] = [
   param("visual-effect", "effect-smoke", "atmosphere", "烟雾", "Smoke", "画面加入烟雾效果，边缘柔散，氛围神秘", "smoke effect with soft edges and mysterious atmosphere", effectNegative),
   param("visual-effect", "effect-fire", "elemental", "火焰", "Fire", "画面加入火焰效果，暖色高光和热量感明显", "fire effect with warm highlights and visible heat feeling", effectNegative),
   param("visual-effect", "effect-electric-arc", "elemental", "电弧", "Electric Arc", "画面加入电弧效果，蓝白光线和瞬间能量", "electric arc effect, blue-white light and instant energy", effectNegative),
-  param("visual-effect", "effect-hologram", "digital", "全息投影", "Hologram", "画面加入全息投影，透明蓝光和未来科技感", "hologram effect with translucent blue light and futuristic technology", effectNegative),
   param("visual-effect", "effect-glitch", "digital", "故障错位", "Glitch", "画面加入故障错位效果，数字噪声和断裂感", "glitch effect, digital noise and displaced broken image fragments", effectNegative),
   param("visual-effect", "effect-motion-blur", "dynamic", "动态模糊", "Motion Blur", "画面加入动态模糊，速度方向清楚", "motion blur effect with clear speed direction", effectNegative),
   param("visual-effect", "effect-light-streaks", "light-particle", "光轨", "Light Streaks", "画面加入光轨效果，线性高光和速度感", "light streak effects, linear highlights and sense of speed", effectNegative),
