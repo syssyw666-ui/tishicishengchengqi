@@ -10,6 +10,8 @@ BACKEND_ROOT = Path(__file__).resolve().parents[1]
 PROJECT_ROOT = BACKEND_ROOT.parent if BACKEND_ROOT.name == "backend" else BACKEND_ROOT
 SEED_PATH = BACKEND_ROOT / "catalog_seed.json"
 SNAPSHOT_PATH = BACKEND_ROOT / "content" / "data" / "style_expansion_20261021.json"
+SNAPSHOT_PATH_B = BACKEND_ROOT / "content" / "data" / "style_expansion_20261021_b.json"
+SNAPSHOT_PATH_C = BACKEND_ROOT / "content" / "data" / "style_expansion_20261021_c.json"
 
 
 class StyleExpansionTests(SimpleTestCase):
@@ -18,6 +20,8 @@ class StyleExpansionTests(SimpleTestCase):
         super().setUpClass()
         cls.seed = json.loads(SEED_PATH.read_text(encoding="utf-8"))
         cls.snapshot = json.loads(SNAPSHOT_PATH.read_text(encoding="utf-8"))
+        cls.snapshot_b = json.loads(SNAPSHOT_PATH_B.read_text(encoding="utf-8"))
+        cls.snapshot_c = json.loads(SNAPSHOT_PATH_C.read_text(encoding="utf-8"))
         cls.parameters = cls.seed["parameters"]
 
     def test_parameter_ids_and_names_are_unique(self):
@@ -55,3 +59,46 @@ class StyleExpansionTests(SimpleTestCase):
         for row in new_rows:
             self.assertGreaterEqual(len(row["zhPrompt"]), 24, row["id"])
             self.assertGreaterEqual(len(row["enPrompt"]), 45, row["id"])
+
+    def test_second_expansion_assets_are_unique_widescreen_images(self):
+        asset_root = PROJECT_ROOT / "public"
+        if not asset_root.is_dir():
+            self.skipTest("Frontend assets are not included in the standalone backend repository.")
+        new_rows = [row for row in self.snapshot_b["parameters"] if "20261021-style-expansion-b" in row["image"]]
+        self.assertEqual(len(new_rows), 20)
+        hashes = set()
+        for row in new_rows:
+            asset = asset_root / row["image"].split("?", 1)[0].lstrip("/")
+            self.assertTrue(asset.is_file(), row["id"])
+            with Image.open(asset) as image:
+                self.assertEqual(image.size, (960, 540), row["id"])
+            digest = __import__("hashlib").sha256(asset.read_bytes()).hexdigest()
+            self.assertNotIn(digest, hashes, row["id"])
+            hashes.add(digest)
+
+    def test_second_expansion_prompts_are_specific(self):
+        for row in self.snapshot_b["parameters"]:
+            self.assertGreaterEqual(len(row["zhPrompt"]), 24, row["id"])
+            self.assertGreaterEqual(len(row["enPrompt"]), 65, row["id"])
+
+    def test_third_expansion_assets_are_unique_widescreen_images(self):
+        asset_root = PROJECT_ROOT / "public"
+        if not asset_root.is_dir():
+            self.skipTest("Frontend assets are not included in the standalone backend repository.")
+        new_rows = [row for row in self.snapshot_c["parameters"] if "20261021-style-expansion-c" in row["image"]]
+        self.assertEqual(len(new_rows), 20)
+        hashes = set()
+        for row in new_rows:
+            asset = asset_root / row["image"].split("?", 1)[0].lstrip("/")
+            self.assertTrue(asset.is_file(), row["id"])
+            with Image.open(asset) as image:
+                self.assertEqual(image.size, (960, 540), row["id"])
+            digest = __import__("hashlib").sha256(asset.read_bytes()).hexdigest()
+            self.assertNotIn(digest, hashes, row["id"])
+            hashes.add(digest)
+
+    def test_third_expansion_prompts_are_specific(self):
+        self.assertEqual(len(self.snapshot_c["parameters"]), 40)
+        for row in self.snapshot_c["parameters"]:
+            self.assertGreaterEqual(len(row["zhPrompt"]), 24, row["id"])
+            self.assertGreaterEqual(len(row["enPrompt"]), 65, row["id"])

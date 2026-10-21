@@ -1,0 +1,595 @@
+{
+  "parameters": [
+    {
+      "id": "grading-sabattier-solarization",
+      "category": "color-grading",
+      "styleGroup": "camera-look",
+      "zhName": "萨巴蒂尔银化反转",
+      "enName": "Sabattier Solarization",
+      "image": "/assets/parameters/grading-sabattier-solarization.jpg?v=20261021-style-expansion-b",
+      "zhPrompt": "萨巴蒂尔暗房银化反转效果，中间调局部反转，人物与物体边缘形成银白轮廓光，黑白层次诡谲而保留摄影细节",
+      "enPrompt": "Sabattier darkroom solarization, partially reversed midtones, luminous silver contour halos around forms, uncanny monochrome tonal separation with retained photographic detail",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "grading-false-color-infrared",
+      "category": "color-grading",
+      "styleGroup": "camera-look",
+      "zhName": "假彩红外摄影",
+      "enName": "False-Color Infrared",
+      "image": "/assets/parameters/grading-false-color-infrared.jpg?v=20261021-style-expansion-b",
+      "zhPrompt": "假彩红外摄影效果，叶片呈明亮白粉色，天空压成深蓝黑，青色与洋红形成非自然色调，同时保持清晰真实的摄影结构",
+      "enPrompt": "false-color infrared photography, foliage rendered luminous white and pale pink, sky deep navy-black, cyan-magenta spectral mapping with crisp photographic structure",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-lumen-print",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "日光显影印相",
+      "enName": "Lumen Print",
+      "image": "/assets/parameters/style-lumen-print.jpg?v=20261021-style-expansion-b",
+      "zhPrompt": "日光显影接触印相，植物轮廓直接压印在感光纸上，出现粉紫、琥珀与褐色化学渐变，边缘柔软并带不均匀曝光痕迹",
+      "enPrompt": "lumen contact print, botanical silhouettes exposed directly on light-sensitive paper, pink violet amber and brown chemical shifts, soft edges and uneven sun-exposure marks",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-anthotype-print",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "花汁植物印相",
+      "enName": "Anthotype Print",
+      "image": "/assets/parameters/style-anthotype-print.jpg?v=20261021-style-expansion-b",
+      "zhPrompt": "花汁植物印相，以天然花叶色素在手工纸上缓慢曝光，图像低对比、边缘微褪，橄榄绿、赭黄与莓果色呈现脆弱植物质感",
+      "enPrompt": "anthotype botanical print made with natural flower and leaf pigments, low contrast and gently faded edges, muted olive ochre and berry tones on handmade paper",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-collotype-print",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "珂罗版印相",
+      "enName": "Collotype Print",
+      "image": "/assets/parameters/style-collotype-print.jpg?v=20261021-style-expansion-b",
+      "zhPrompt": "珂罗版摄影印刷，连续灰阶细腻无明显网点，暗部呈天鹅绒般深沉层次，纸面哑光并保留轻微胶膜网裂纹理",
+      "enPrompt": "collotype photographic print, delicate continuous tones without visible halftone dots, velvety shadow depth, matte archival paper and subtle gelatin reticulation",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-adinkra-block-print",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "阿丁克拉符号印花",
+      "enName": "Adinkra Block Print",
+      "image": "/assets/parameters/artist-adinkra-block-print.jpg?v=20261021-style-expansion-b",
+      "zhPrompt": "西非阿丁克拉手工印花语言，黑色象征几何以雕刻印章重复压印在赭色布面，排列有秩序并保留墨色浓淡和手压偏差",
+      "enPrompt": "West African Adinkra block-print language, black symbolic geometry repeatedly hand-stamped on ochre cloth, ordered spacing with visible ink variation and pressure irregularity",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-ndebele-mural",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "恩德贝勒几何壁画",
+      "enName": "Ndebele Mural Painting",
+      "image": "/assets/parameters/artist-ndebele-mural.jpg?v=20261021-style-expansion-b",
+      "zhPrompt": "恩德贝勒几何壁画语言，白色墙面上以粗黑轮廓组织阶梯形、三角形与对称色块，原色明快、边界锐利且建筑装饰感强",
+      "enPrompt": "Ndebele mural-painting language, bold black outlines organizing stepped geometry, triangles and symmetrical color fields on white walls, vivid primaries and crisp architectural decoration",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-tingatinga",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "廷加廷加民间画",
+      "enName": "Tingatinga Painting",
+      "image": "/assets/parameters/artist-tingatinga.jpg?v=20261021-style-expansion-b",
+      "zhPrompt": "东非廷加廷加绘画语言，动物与植物被简化为明快平涂形体，轮廓粗实、色彩高亮，装饰性斑点和叶片密集形成活泼叙事",
+      "enPrompt": "East African Tingatinga painting language, animals and plants simplified into bright flat shapes, strong contours, enamel-like color and dense decorative spots and foliage",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-inuit-stonecut",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "因纽特石刻版画",
+      "enName": "Inuit Stonecut Print",
+      "image": "/assets/parameters/artist-inuit-stonecut.jpg?v=20261021-style-expansion-b",
+      "zhPrompt": "因纽特石刻版画语言，人物与北方动物被概括为强烈黑色剪影，刀痕边缘粗粝，墨压不均，纤维纸上保留安静大面积留白",
+      "enPrompt": "Inuit stonecut-print language, people and northern animals reduced to emphatic black silhouettes, rough carved edges, uneven ink pressure and quiet open space on fibrous paper",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-maori-kowhaiwhai",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "毛利科怀怀纹样",
+      "enName": "Maori Kowhaiwhai",
+      "image": "/assets/parameters/artist-maori-kowhaiwhai.jpg?v=20261021-style-expansion-b",
+      "zhPrompt": "毛利科怀怀装饰语言，红黑白三色的蕨芽螺旋与流动曲线沿长条结构连续展开，正负形清晰并保持严格节奏和对称呼应",
+      "enPrompt": "Maori kowhaiwhai visual language, red black and white koru spirals and flowing curves extending rhythmically along elongated structures with crisp positive-negative shapes",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-polynesian-tapa",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "波利尼西亚塔帕布纹",
+      "enName": "Polynesian Tapa Cloth",
+      "image": "/assets/parameters/artist-polynesian-tapa.jpg?v=20261021-style-expansion-b",
+      "zhPrompt": "波利尼西亚塔帕树皮布视觉语言，棕黑植物与几何印记铺陈在暖赭纤维布面，以重复网格组织并保留手工敲制和颜料渗透痕迹",
+      "enPrompt": "Polynesian tapa-cloth language, brown-black botanical and geometric marks arranged in repeating grids on warm fibrous barkcloth with beaten texture and pigment bleed",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-mola-applique",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "古纳莫拉反向贴布",
+      "enName": "Guna Mola Applique",
+      "image": "/assets/parameters/artist-mola-applique.jpg?v=20261021-style-expansion-b",
+      "zhPrompt": "古纳莫拉反向贴布语言，多层红橙黑白棉布逐层剪开并缝合，动物和几何轮廓层层嵌套，色带密集且手工针脚可见",
+      "enPrompt": "Guna mola reverse-applique language, layered red orange black and white cotton cut back and stitched into nested animal and geometric contours with visible hand sewing",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-otomi-tenango",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "奥托米特南戈刺绣",
+      "enName": "Otomi Tenango Embroidery",
+      "image": "/assets/parameters/artist-otomi-tenango.jpg?v=20261021-style-expansion-b",
+      "zhPrompt": "奥托米特南戈刺绣语言，白布上以高明度彩线平面填绣花鸟动物，形体简洁、轮廓连续，构图对称而充满轻快生命力",
+      "enPrompt": "Otomi Tenango embroidery language, vivid flat-thread animals flowers and birds on white cloth, simple continuous silhouettes, balanced symmetry and lively folk rhythm",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-haida-formline",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "西北海岸形线艺术",
+      "enName": "Northwest Coast Formline",
+      "image": "/assets/parameters/artist-haida-formline.jpg?v=20261021-style-expansion-b",
+      "zhPrompt": "西北海岸形线艺术语言，以粗黑主线、红色辅线、卵形与U形结构拼合动物形象，曲线彼此嵌套，正负空间严谨而有雕刻感",
+      "enPrompt": "Northwest Coast formline language, bold black primary lines and red secondary forms using ovoids, U-forms and split forms to construct animals through disciplined interlocking space",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-kalighat",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "卡利加特民间画",
+      "enName": "Kalighat Painting",
+      "image": "/assets/parameters/artist-kalighat.jpg?v=20261021-style-expansion-b",
+      "zhPrompt": "卡利加特绘画语言，人物由宽而流畅的单笔轮廓塑造，透明平涂色与极少阴影集中表现姿态，背景洁净，线条带书写般韵律",
+      "enPrompt": "Kalighat painting language, figures shaped by broad fluid single-stroke contours, transparent flat color and minimal shading focused on gesture against a clean ground",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-kantha-embroidery",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "坎塔叙事刺绣",
+      "enName": "Kantha Embroidery",
+      "image": "/assets/parameters/artist-kantha-embroidery.jpg?v=20261021-style-expansion-b",
+      "zhPrompt": "坎塔叙事刺绣语言，以密集平行跑针在旧棉布上描绘人物、动物和村落，针脚起伏形成柔软波纹，色彩朴素而故事性明确",
+      "enPrompt": "Kantha narrative embroidery, dense running stitches depicting people animals and village scenes on reused cotton, soft rippling surface and restrained handmade color",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-sashiko",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "日式刺子绣",
+      "enName": "Japanese Sashiko",
+      "image": "/assets/parameters/artist-sashiko.jpg?v=20261021-style-expansion-b",
+      "zhPrompt": "日式刺子绣语言，深靛蓝布面上以等距白色跑针组成青海波、麻叶与交错几何，针距清楚、重复秩序稳定并保留布纤维",
+      "enPrompt": "Japanese sashiko language, evenly spaced white running stitches forming waves hemp leaves and interlocking geometry on deep indigo cloth with visible textile grain",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-bengal-alpana",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "孟加拉阿尔帕纳地画",
+      "enName": "Bengal Alpana",
+      "image": "/assets/parameters/artist-bengal-alpana.jpg?v=20261021-style-expansion-b",
+      "zhPrompt": "孟加拉阿尔帕纳地画语言，白色米浆线条在红褐地面上围绕中心展开莲花、叶片与几何纹样，手绘边缘柔和，放射结构清晰",
+      "enPrompt": "Bengal alpana floor-art language, white rice-paste lines radiating into lotus leaf and geometric motifs on red earthen ground with soft handmade edges",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-talavera",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "塔拉维拉陶瓷彩绘",
+      "enName": "Talavera Ceramic Painting",
+      "image": "/assets/parameters/artist-talavera.jpg?v=20261021-style-expansion-b",
+      "zhPrompt": "塔拉维拉陶瓷彩绘语言，白釉底上以钴蓝、黄、绿描绘对称花叶和几何纹，釉面明亮，笔触略有手工偏差与窑烧色差",
+      "enPrompt": "Talavera ceramic-painting language, cobalt blue yellow and green symmetrical florals and geometry on glossy white glaze with hand-painted variation and firing shifts",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-alebrije",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "阿莱布里赫彩绘",
+      "enName": "Alebrije Folk Painting",
+      "image": "/assets/parameters/artist-alebrije.jpg?v=20261021-style-expansion-b",
+      "zhPrompt": "阿莱布里赫彩绘语言，幻想动物的雕刻形体覆盖高饱和点线、鳞纹和微型几何，色彩分区密集清晰，表面呈哑光手绘质感",
+      "enPrompt": "Alebrije folk-painting language, fantastical carved animal forms covered in vivid dots lines scales and miniature geometry, densely separated color fields on a matte hand-painted surface",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "render-cinematic-texture",
+      "category": "render",
+      "styleGroup": "realism",
+      "zhName": "电影级质感",
+      "enName": "Cinematic Texture",
+      "image": "/assets/parameters/render-cinematic-texture.jpg",
+      "zhPrompt": "电影级画面质感，亮暗层次平滑，高光克制、暗部保留细节，材质反应真实并带统一的胶片式色彩关系",
+      "enPrompt": "cinematic image finish with smooth tonal roll-off, controlled highlights, detailed shadows, believable material response and cohesive filmic color separation"
+    },
+    {
+      "id": "render-realistic-texture",
+      "category": "render",
+      "styleGroup": "realism",
+      "zhName": "写实纹理",
+      "enName": "Realistic Texture",
+      "image": "/assets/parameters/render-realistic-texture.jpg",
+      "zhPrompt": "写实微观纹理，皮肤毛孔、织物纤维、木石细孔与使用痕迹符合真实尺度，粗糙度变化自然且不过度锐化",
+      "enPrompt": "physically scaled realistic microtexture, visible skin pores, textile fibers, wood or stone grain and natural wear, nuanced roughness without oversharpening"
+    },
+    {
+      "id": "render-shallow-depth",
+      "category": "render",
+      "styleGroup": "realism",
+      "zhName": "浅景深",
+      "enName": "Shallow DOF",
+      "image": "/assets/parameters/render-shallow-depth.jpg",
+      "zhPrompt": "浅景深效果，焦点平面准确落在主体关键部位，前后景逐渐柔化为自然散景，主体边缘过渡真实且不出现抠图感",
+      "enPrompt": "shallow depth of field with the focus plane locked to the subject's key feature, gradual foreground and background falloff, natural bokeh and believable edge transition"
+    },
+    {
+      "id": "render-film-grain",
+      "category": "render",
+      "styleGroup": "technical",
+      "zhName": "胶片颗粒",
+      "enName": "Film Grain",
+      "image": "/assets/parameters/render-film-grain.jpg",
+      "zhPrompt": "有机胶片颗粒，亮部颗粒细、暗部颗粒稍明显，密度随明暗自然变化，保留模拟底片的层次而非数字噪点",
+      "enPrompt": "organic analog film grain, finer in highlights and more visible in shadows, density responding naturally to exposure with tonal depth rather than digital noise"
+    },
+    {
+      "id": "render-hdr",
+      "category": "render",
+      "styleGroup": "technical",
+      "zhName": "HDR",
+      "enName": "HDR",
+      "image": "/assets/parameters/render-hdr.jpg",
+      "zhPrompt": "自然高动态范围，强光与深阴影同时保留纹理，局部对比清晰但不过度映射，不产生光晕、脏灰或塑料质感",
+      "enPrompt": "natural high dynamic range retaining texture in bright highlights and deep shadows, clear local contrast without overmapping, halos, muddy gray or plastic surfaces"
+    },
+    {
+      "id": "render-ultra-detailed-material",
+      "category": "render",
+      "styleGroup": "realism",
+      "zhName": "高细节材质",
+      "enName": "Material Detail",
+      "image": "/assets/parameters/render-ultra-detailed-material.jpg",
+      "zhPrompt": "高细节材质表现，表面微划痕、织纹、孔隙、磨损与反射随结构变化，近看信息丰富但整体轮廓仍干净可读",
+      "enPrompt": "high-detail material rendering with micro-scratches, weave, pores, wear and structure-aware reflections, rich close inspection while preserving a clean readable silhouette"
+    },
+    {
+      "id": "effect-sparkles",
+      "category": "visual-effect",
+      "styleGroup": "light-particle",
+      "zhName": "闪粉星点",
+      "enName": "Sparkles",
+      "image": "/assets/parameters/effect-sparkles.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "少量细碎闪粉星点分布在焦点附近，亮度和尺寸有层次，边缘清晰但不过曝，形成轻盈梦幻的高光节奏",
+      "enPrompt": "fine sparkle points clustered near the focal area, varied scale and brightness, crisp without clipping, creating a light dreamy highlight rhythm",
+      "negative": [
+        "muddy effects",
+        "overcrowded particles",
+        "visual noise"
+      ]
+    },
+    {
+      "id": "effect-particle-trails",
+      "category": "visual-effect",
+      "styleGroup": "light-particle",
+      "zhName": "粒子轨迹",
+      "enName": "Particle Trails",
+      "image": "/assets/parameters/effect-particle-trails.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "粒子沿主体运动方向形成由密到疏的连续轨迹，近端清晰、远端衰减，用速度曲线强化动作和能量走向",
+      "enPrompt": "particle trails following the subject's motion vector, dense and sharp near the source then gradually dispersing, describing speed and energy flow",
+      "negative": [
+        "muddy effects",
+        "overcrowded particles",
+        "visual noise"
+      ]
+    },
+    {
+      "id": "effect-smoke",
+      "category": "visual-effect",
+      "styleGroup": "atmosphere",
+      "zhName": "烟雾",
+      "enName": "Smoke",
+      "image": "/assets/parameters/effect-smoke.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "半透明烟雾以分层卷曲结构穿过空间，受场景光线染色，边缘由实到虚并保持前中后景深度，不遮没主体",
+      "enPrompt": "layered translucent smoke with curling volume, tinted by scene lighting, edges shifting from defined to diffuse across depth without obscuring the subject",
+      "negative": [
+        "muddy effects",
+        "overcrowded particles",
+        "visual noise"
+      ]
+    },
+    {
+      "id": "effect-fire",
+      "category": "visual-effect",
+      "styleGroup": "elemental",
+      "zhName": "火焰",
+      "enName": "Fire",
+      "image": "/assets/parameters/effect-fire.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "具有清晰焰心、橙黄外焰和热扰动的真实火焰，火光照亮邻近表面并形成方向一致的反射与烟迹",
+      "enPrompt": "physically readable fire with bright core, orange-yellow outer flame and heat distortion, casting coherent warm light, reflections and smoke on nearby surfaces",
+      "negative": [
+        "muddy effects",
+        "overcrowded particles",
+        "visual noise"
+      ]
+    },
+    {
+      "id": "effect-electric-arc",
+      "category": "visual-effect",
+      "styleGroup": "elemental",
+      "zhName": "电弧",
+      "enName": "Electric Arc",
+      "image": "/assets/parameters/effect-electric-arc.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "蓝白电弧在两个受力点之间分叉跳跃，核心亮度高、外围带淡紫辉光，并对周围材质产生瞬时反射和微小火花",
+      "enPrompt": "branching blue-white electric arcs jumping between contact points, brilliant core with faint violet bloom, momentary reflections and tiny sparks on nearby materials",
+      "negative": [
+        "muddy effects",
+        "overcrowded particles",
+        "visual noise"
+      ]
+    },
+    {
+      "id": "effect-glitch",
+      "category": "visual-effect",
+      "styleGroup": "digital",
+      "zhName": "故障错位",
+      "enName": "Glitch",
+      "image": "/assets/parameters/effect-glitch.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "数字故障由局部RGB通道偏移、扫描线断裂、块状压缩和水平撕裂组成，集中作用于少量区域并保留主体识别度",
+      "enPrompt": "controlled digital glitch using local RGB channel offsets, broken scan lines, compression blocks and horizontal tearing while keeping the subject recognizable",
+      "negative": [
+        "muddy effects",
+        "overcrowded particles",
+        "visual noise"
+      ]
+    },
+    {
+      "id": "effect-motion-blur",
+      "category": "visual-effect",
+      "styleGroup": "dynamic",
+      "zhName": "动态模糊",
+      "enName": "Motion Blur",
+      "image": "/assets/parameters/effect-motion-blur.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "动态模糊严格沿运动方向展开，主体关键焦点仍清晰，四肢或背景拖影逐渐衰减，以真实快门感表现速度而非整体糊化",
+      "enPrompt": "directional motion blur aligned with movement, key focal area remaining sharp while limbs or background trails decay naturally like a real shutter exposure",
+      "negative": [
+        "muddy effects",
+        "overcrowded particles",
+        "visual noise"
+      ]
+    },
+    {
+      "id": "effect-light-streaks",
+      "category": "visual-effect",
+      "styleGroup": "light-particle",
+      "zhName": "光轨",
+      "enName": "Light Streaks",
+      "image": "/assets/parameters/effect-light-streaks.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "连续光轨沿空间透视和运动路径弯曲，起止亮度自然衰减，颜色受场景光源控制，并在反光表面留下对应映射",
+      "enPrompt": "continuous light streaks curving with perspective and movement, naturally tapered at both ends, scene-matched color and coherent reflections on glossy surfaces",
+      "negative": [
+        "muddy effects",
+        "overcrowded particles",
+        "visual noise"
+      ]
+    },
+    {
+      "id": "effect-lens-flare",
+      "category": "visual-effect",
+      "styleGroup": "light-particle",
+      "zhName": "镜头眩光",
+      "enName": "Lens Flare",
+      "image": "/assets/parameters/effect-lens-flare.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "镜头眩光与画面内强光源严格对齐，包含克制的光环、鬼影和轻微雾化，高光不遮挡主体五官和关键结构",
+      "enPrompt": "lens flare optically aligned to an in-frame bright source, restrained halo, ghost reflections and slight veiling glare without covering faces or key structure",
+      "negative": [
+        "muddy effects",
+        "overcrowded particles",
+        "visual noise"
+      ]
+    },
+    {
+      "id": "effect-bokeh",
+      "category": "visual-effect",
+      "styleGroup": "light-particle",
+      "zhName": "散景光斑",
+      "enName": "Bokeh",
+      "image": "/assets/parameters/effect-bokeh.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "失焦高光形成大小随景深变化的柔和散景，光斑边缘圆润、内部亮度自然，前后层次明确且不覆盖主体焦点",
+      "enPrompt": "defocused highlights forming soft bokeh whose size changes with depth, rounded edges and natural internal luminance, layered clearly around rather than over the focal subject",
+      "negative": [
+        "muddy effects",
+        "overcrowded particles",
+        "visual noise"
+      ]
+    },
+    {
+      "id": "effect-water-splash",
+      "category": "visual-effect",
+      "styleGroup": "elemental",
+      "zhName": "水花飞溅",
+      "enName": "Water Splash",
+      "image": "/assets/parameters/effect-water-splash.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "水花沿碰撞方向展开为主水体、薄膜、弧线和细小水珠，透明折射与高光符合光源，冻结瞬间仍保持液体连贯性",
+      "enPrompt": "water splash shaped by impact direction into coherent body, sheets, arcs and droplets, transparent refraction and highlights matching the light while preserving fluid continuity",
+      "negative": [
+        "muddy effects",
+        "overcrowded particles",
+        "visual noise"
+      ]
+    },
+    {
+      "id": "effect-shattered-glass",
+      "category": "visual-effect",
+      "styleGroup": "surreal",
+      "zhName": "碎玻璃",
+      "enName": "Shattered Glass",
+      "image": "/assets/parameters/effect-shattered-glass.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "碎玻璃从明确冲击点向外形成放射裂纹，碎片厚度、折射和反射一致，前景碎片有景深变化但不无序遮挡主体",
+      "enPrompt": "shattered glass radiating from a clear impact point, consistent shard thickness, refraction and reflection, with depth-varying foreground pieces that do not randomly obscure the subject",
+      "negative": [
+        "muddy effects",
+        "overcrowded particles",
+        "visual noise"
+      ]
+    },
+    {
+      "id": "effect-floating-fragments",
+      "category": "visual-effect",
+      "styleGroup": "surreal",
+      "zhName": "漂浮碎片",
+      "enName": "Floating Fragments",
+      "image": "/assets/parameters/effect-floating-fragments.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "不同尺度的碎片围绕主体形成有方向的悬浮流线，近大远小、旋转角度和投影一致，营造失重感而不变成杂乱噪点",
+      "enPrompt": "floating fragments arranged in a directional flow around the subject, scale diminishing with depth, coherent rotation and shadows, conveying weightlessness without random clutter",
+      "negative": [
+        "muddy effects",
+        "overcrowded particles",
+        "visual noise"
+      ]
+    },
+    {
+      "id": "effect-energy-aura",
+      "category": "visual-effect",
+      "styleGroup": "surreal",
+      "zhName": "能量光环",
+      "enName": "Energy Aura",
+      "image": "/assets/parameters/effect-energy-aura.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "主体周围形成贴合轮廓的半透明能量场，核心亮、外缘渐弱，并以粒子和空气折射向外扩散，颜色与场景光线协调",
+      "enPrompt": "semi-transparent energy field conforming to the subject silhouette, bright core fading outward through particles and air refraction, color integrated with the scene lighting",
+      "negative": [
+        "muddy effects",
+        "overcrowded particles",
+        "visual noise"
+      ]
+    }
+  ],
+  "removeParameters": []
+}

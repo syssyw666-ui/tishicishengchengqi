@@ -13,6 +13,8 @@ import { colorPaletteParameters } from "./colorPaletteParameters";
 import { supplementParameters } from "./supplementParameters";
 import { photoPurposeParameters } from "./photoPurposeParameters";
 import { styleExpansionParameters } from "./styleExpansionParameters";
+import { styleExpansionParameters2 } from "./styleExpansionParameters2";
+import { styleExpansionParameters3 } from "./styleExpansionParameters3";
 
 export const categories: Category[] = [
   { id: "style", zhName: "画面风格", enName: "Style", mode: "multi", description: "决定整体视觉语言，可混选。" },
@@ -414,14 +416,14 @@ export const parameters: PromptParameter[] = [
   { id: "lighting-fog", category: "lighting", styleGroup: "dramatic", zhName: "体积雾", enName: "Atmospheric Fog", defaultWeight: 1, image: img("lighting-fog"), zhPrompt: "浓厚体积雾，空间层次朦胧", enPrompt: "dense atmospheric fog, softened distance, layered depth" },
   { id: "lighting-rainy-night", category: "lighting", styleGroup: "natural", zhName: "雨夜", enName: "Rainy Night", defaultWeight: 1, image: img("lighting-rainy-night"), zhPrompt: "雨夜湿润反光，冷色夜景氛围", enPrompt: "rainy night, wet reflective ground, cool moody atmosphere" },
 
-  { id: "render-cinematic-texture", category: "render", styleGroup: "realism", zhName: "电影级质感", enName: "Cinematic Texture", defaultWeight: 1, image: img("render-cinematic-texture"), zhPrompt: "电影级质感，精致光影和高级色彩", enPrompt: "premium cinematic texture, refined lighting, polished color grading" },
+  { id: "render-cinematic-texture", category: "render", styleGroup: "realism", zhName: "电影级质感", enName: "Cinematic Texture", defaultWeight: 1, image: img("render-cinematic-texture"), zhPrompt: "电影级画面质感，亮暗层次平滑，高光克制、暗部保留细节，材质反应真实并带统一的胶片式色彩关系", enPrompt: "cinematic image finish with smooth tonal roll-off, controlled highlights, detailed shadows, believable material response and cohesive filmic color separation" },
   { id: "render-game-engine", category: "render", styleGroup: "realism", zhName: "虚幻引擎渲染", enName: "Game Engine Render", defaultWeight: 1, image: img("render-game-engine"), zhPrompt: "实时游戏引擎渲染质感，高质量 PBR 材质", enPrompt: "high-end real-time game engine render look, PBR materials, crisp realtime lighting" },
   { id: "render-octane", category: "render", styleGroup: "realism", zhName: "Octane 渲染", enName: "Octane Render", defaultWeight: 1, image: img("render-octane"), zhPrompt: "高端无偏 3D 渲染，干净反射和真实材质", enPrompt: "high-end unbiased 3D render look, clean reflections, physically plausible materials" },
-  { id: "render-realistic-texture", category: "render", styleGroup: "realism", zhName: "写实纹理", enName: "Realistic Texture", defaultWeight: 1, image: img("render-realistic-texture"), zhPrompt: "写实皮肤、布料和表面微纹理", enPrompt: "realistic skin, fabric, and surface micro-texture with natural imperfections" },
-  { id: "render-shallow-depth", category: "render", styleGroup: "realism", zhName: "浅景深", enName: "Shallow DOF", defaultWeight: 1, image: img("render-shallow-depth"), zhPrompt: "浅景深，主体清晰、背景柔和虚化", enPrompt: "shallow depth of field, sharp subject, soft creamy background bokeh" },
-  { id: "render-film-grain", category: "render", styleGroup: "technical", zhName: "胶片颗粒", enName: "Film Grain", defaultWeight: 1, image: img("render-film-grain"), zhPrompt: "胶片颗粒，模拟胶片质感和自然噪点", enPrompt: "subtle analog film grain, organic texture, cinematic tonal response" },
-  { id: "render-hdr", category: "render", styleGroup: "technical", zhName: "HDR", enName: "HDR", defaultWeight: 1, image: img("render-hdr"), zhPrompt: "HDR 高动态范围，亮部和暗部细节丰富", enPrompt: "high dynamic range detail, rich highlights and shadows, vivid tonal depth" },
-  { id: "render-ultra-detailed-material", category: "render", styleGroup: "realism", zhName: "高细节材质", enName: "Material Detail", defaultWeight: 1, image: img("render-ultra-detailed-material"), zhPrompt: "极高材质细节，表面纹理清晰可见", enPrompt: "ultra-detailed material close-up, tactile surface detail, crisp micro scratches" },
+  { id: "render-realistic-texture", category: "render", styleGroup: "realism", zhName: "写实纹理", enName: "Realistic Texture", defaultWeight: 1, image: img("render-realistic-texture"), zhPrompt: "写实微观纹理，皮肤毛孔、织物纤维、木石细孔与使用痕迹符合真实尺度，粗糙度变化自然且不过度锐化", enPrompt: "physically scaled realistic microtexture, visible skin pores, textile fibers, wood or stone grain and natural wear, nuanced roughness without oversharpening" },
+  { id: "render-shallow-depth", category: "render", styleGroup: "realism", zhName: "浅景深", enName: "Shallow DOF", defaultWeight: 1, image: img("render-shallow-depth"), zhPrompt: "浅景深效果，焦点平面准确落在主体关键部位，前后景逐渐柔化为自然散景，主体边缘过渡真实且不出现抠图感", enPrompt: "shallow depth of field with the focus plane locked to the subject's key feature, gradual foreground and background falloff, natural bokeh and believable edge transition" },
+  { id: "render-film-grain", category: "render", styleGroup: "technical", zhName: "胶片颗粒", enName: "Film Grain", defaultWeight: 1, image: img("render-film-grain"), zhPrompt: "有机胶片颗粒，亮部颗粒细、暗部颗粒稍明显，密度随明暗自然变化，保留模拟底片的层次而非数字噪点", enPrompt: "organic analog film grain, finer in highlights and more visible in shadows, density responding naturally to exposure with tonal depth rather than digital noise" },
+  { id: "render-hdr", category: "render", styleGroup: "technical", zhName: "HDR", enName: "HDR", defaultWeight: 1, image: img("render-hdr"), zhPrompt: "自然高动态范围，强光与深阴影同时保留纹理，局部对比清晰但不过度映射，不产生光晕、脏灰或塑料质感", enPrompt: "natural high dynamic range retaining texture in bright highlights and deep shadows, clear local contrast without overmapping, halos, muddy gray or plastic surfaces" },
+  { id: "render-ultra-detailed-material", category: "render", styleGroup: "realism", zhName: "高细节材质", enName: "Material Detail", defaultWeight: 1, image: img("render-ultra-detailed-material"), zhPrompt: "高细节材质表现，表面微划痕、织纹、孔隙、磨损与反射随结构变化，近看信息丰富但整体轮廓仍干净可读", enPrompt: "high-detail material rendering with micro-scratches, weave, pores, wear and structure-aware reflections, rich close inspection while preserving a clean readable silhouette" },
 
   { id: "purpose-turnaround", category: "purpose", styleGroup: "design", zhName: "三视图", enName: "Turnaround Sheet", defaultWeight: 1, image: img("purpose-turnaround"), zhPrompt: "角色三视图，正面、侧面、背面清晰展示", enPrompt: "character turnaround sheet, front side and back views, plain background, consistent proportions" },
   { id: "purpose-exploded-view", category: "purpose", styleGroup: "design", zhName: "物品拆分视图", enName: "Exploded View", defaultWeight: 1, image: img("purpose-exploded-view"), zhPrompt: "物品拆分视图，部件分离并展示结构", enPrompt: "exploded product view, separated components, clear mechanical structure, clean layout" },
@@ -449,6 +451,8 @@ export const parameters: PromptParameter[] = [
 parameters.push(
   ...artistParameters,
   ...styleExpansionParameters,
+  ...styleExpansionParameters2,
+  ...styleExpansionParameters3,
   ...clothingParameters,
   ...poseParameters,
   ...expandedParameters,

@@ -1,0 +1,644 @@
+{
+  "parameters": [
+    {
+      "id": "artist-rococo",
+      "category": "artist-style",
+      "styleGroup": "renaissance-baroque",
+      "zhName": "洛可可绘画",
+      "enName": "Rococo Painting",
+      "image": "/assets/parameters/artist-rococo.jpg?v=20261021-style-expansion-c",
+      "zhPrompt": "洛可可绘画语言，轻盈花园或室内雅集、贝壳曲线与花饰环绕，粉蓝粉绿等浅色层层晕染，笔触柔软而光线明快",
+      "enPrompt": "Rococo painting language, airy garden or salon gathering framed by shell curves and floral ornament, layered pastel blue pink and mint, feathery brushwork and luminous light",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-neoclassical",
+      "category": "artist-style",
+      "styleGroup": "renaissance-baroque",
+      "zhName": "新古典主义绘画",
+      "enName": "Neoclassical Painting",
+      "image": "/assets/parameters/artist-neoclassical.jpg?v=20261021-style-expansion-c",
+      "zhPrompt": "新古典主义历史画语言，人物如雕塑般轮廓清楚，横向群像秩序严谨，建筑透视稳定，石色与克制红赭突出理性和庄严",
+      "enPrompt": "Neoclassical history-painting language, sculptural figures with lucid contours, disciplined frieze-like grouping, stable architecture and restrained stone red and ochre palette",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-pre-raphaelite",
+      "category": "artist-style",
+      "styleGroup": "decorative-illustration",
+      "zhName": "拉斐尔前派绘画",
+      "enName": "Pre-Raphaelite Painting",
+      "image": "/assets/parameters/artist-pre-raphaelite.jpg?v=20261021-style-expansion-c",
+      "zhPrompt": "拉斐尔前派绘画语言，中世纪服饰人物置于植物繁茂的自然环境，宝石色明亮通透，花叶细节精确，清晰日光中带象征性叙事",
+      "enPrompt": "Pre-Raphaelite painting language, medieval-dress figures amid botanically precise nature, luminous jewel colors, crisp daylight and dense symbolic storytelling",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-dutch-golden-still-life",
+      "category": "artist-style",
+      "styleGroup": "renaissance-baroque",
+      "zhName": "荷兰黄金时代静物",
+      "enName": "Dutch Golden Age Still Life",
+      "image": "/assets/parameters/artist-dutch-golden-still-life.jpg?v=20261021-style-expansion-c",
+      "zhPrompt": "荷兰黄金时代静物画语言，深色背景前陈列银器、玻璃、果实与剥开的柠檬，侧窗光精确描绘反射、透明度和易逝寓意",
+      "enPrompt": "Dutch Golden Age still-life language, silverware glass fruit and peeled lemon arranged against darkness, controlled side-window light resolving reflections transparency and vanitas symbolism",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-hudson-river-school",
+      "category": "artist-style",
+      "styleGroup": "impression-post",
+      "zhName": "哈德逊河画派风景",
+      "enName": "Hudson River School",
+      "image": "/assets/parameters/artist-hudson-river-school.jpg?v=20261021-style-expansion-c",
+      "zhPrompt": "哈德逊河画派风景语言，辽阔荒野与层叠山谷占据主体，微小人物强调尺度，金色天光穿过云层，细密自然描绘营造崇高感",
+      "enPrompt": "Hudson River School landscape language, vast wilderness and layered valleys dwarfing tiny figures, golden atmospheric light and finely observed nature creating sublime scale",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-barbizon",
+      "category": "artist-style",
+      "styleGroup": "impression-post",
+      "zhName": "巴比松画派风景",
+      "enName": "Barbizon School",
+      "image": "/assets/parameters/artist-barbizon.jpg?v=20261021-style-expansion-c",
+      "zhPrompt": "巴比松画派风景语言，林缘、牧场与乡村劳动在阴天自然光下展开，橄榄绿和土地色厚实克制，松散写生笔触保留空气湿度",
+      "enPrompt": "Barbizon School landscape language, forest edge pasture and rural work under soft overcast daylight, grounded olive and earth colors with loose plein-air texture and humid atmosphere",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-symbolism",
+      "category": "artist-style",
+      "styleGroup": "surreal-symbolic",
+      "zhName": "象征主义绘画",
+      "enName": "Symbolist Painting",
+      "image": "/assets/parameters/artist-symbolism.jpg?v=20261021-style-expansion-c",
+      "zhPrompt": "象征主义绘画语言，孤独人物、月夜植物和仪式物件构成隐喻性场景，空间静止、色彩幽暗如宝石，情绪和寓意高于现实叙事",
+      "enPrompt": "Symbolist painting language, solitary figures, moonlit flora and ritual objects forming allegorical scenes, still space and muted jewel tones where mood and metaphor outweigh realism",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-magic-realism",
+      "category": "artist-style",
+      "styleGroup": "surreal-symbolic",
+      "zhName": "魔幻现实主义绘画",
+      "enName": "Magic Realism Painting",
+      "image": "/assets/parameters/artist-magic-realism.jpg?v=20261021-style-expansion-c",
+      "zhPrompt": "魔幻现实主义绘画语言，日常空间以冷静精确的写实方式描绘，其中只出现一个不可能却被自然接受的事件，光线清晰、氛围安静而陌生",
+      "enPrompt": "magic-realist painting language, an ordinary space rendered with calm precision containing one impossible event treated as natural, lucid light and quietly uncanny atmosphere",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-op-art",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "欧普艺术",
+      "enName": "Op Art",
+      "image": "/assets/parameters/artist-op-art.jpg?v=20261021-style-expansion-c",
+      "zhPrompt": "欧普艺术语言，以高对比黑白线、重复网格和几何干涉制造振动、凹凸与旋转错觉，边缘极其清晰，画面保持纯平面",
+      "enPrompt": "Op Art language, high-contrast black-white lines, repeated grids and geometric interference producing vibration depth and rotational illusion with razor-sharp flat edges",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-hard-edge",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "硬边抽象",
+      "enName": "Hard-Edge Abstraction",
+      "image": "/assets/parameters/artist-hard-edge.jpg?v=20261021-style-expansion-c",
+      "zhPrompt": "硬边抽象绘画，大面积纯色色域以锐利边界相接，几何比例精确，色彩数量有限但对比明确，不保留可见笔触和空间幻觉",
+      "enPrompt": "hard-edge abstraction, large flat color fields meeting at exact crisp boundaries, precise geometric proportion, limited decisive palette and no visible brushwork or spatial illusion",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-tachisme",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "塔希主义",
+      "enName": "Tachisme",
+      "image": "/assets/parameters/artist-tachisme.jpg?v=20261021-style-expansion-c",
+      "zhPrompt": "塔希主义抽象语言，颜料污迹、泼洒、刮擦与快速书写性笔触分布在开放画面中，构图非中心化，墨黑、锈褐与土色保留偶发性",
+      "enPrompt": "Tachisme abstraction, stains splashes scraping and rapid calligraphic gestures distributed across an open non-centered field, black rust and earth pigments preserving spontaneity",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-cobra",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "科布拉画派",
+      "enName": "CoBrA Movement",
+      "image": "/assets/parameters/artist-cobra.jpg?v=20261021-style-expansion-c",
+      "zhPrompt": "科布拉画派语言，儿童般的生物与符号由粗重冲动线条构成，原色厚涂、造型夸张，保留未经修饰的集体创作活力",
+      "enPrompt": "CoBrA movement language, childlike creatures and symbols drawn with forceful impulsive lines, thick primary colors and exaggerated forms retaining raw collective energy",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-arte-povera",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "贫穷艺术",
+      "enName": "Arte Povera",
+      "image": "/assets/parameters/artist-arte-povera.jpg?v=20261021-style-expansion-c",
+      "zhPrompt": "贫穷艺术语言，以石块、麻布、原木、铁丝和氧化金属等普通材料直接建立关系，展示重量、时间和物性，空间克制且拒绝精致加工",
+      "enPrompt": "Arte Povera language, raw stone burlap timber wire and oxidized metal placed in direct relation, foregrounding weight time and material behavior through restrained unpolished space",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-orphism",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "奥菲主义",
+      "enName": "Orphism",
+      "image": "/assets/parameters/artist-orphism.jpg?v=20261021-style-expansion-c",
+      "zhPrompt": "奥菲主义抽象语言，透明圆环、弧线和色盘相互穿插，暖冷色形成音乐般节奏，光线被拆解为连续旋转的棱镜色层",
+      "enPrompt": "Orphist abstraction, transparent circles arcs and color discs interlocking in musical rhythm, warm-cool contrast breaking light into rotating prismatic layers",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-vorticism",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "漩涡主义",
+      "enName": "Vorticism",
+      "image": "/assets/parameters/artist-vorticism.jpg?v=20261021-style-expansion-c",
+      "zhPrompt": "漩涡主义视觉语言，机器、桥梁和城市被压缩为锐利折面与强烈斜线，黑色、赭黄和冷蓝形成工业时代的聚合力量",
+      "enPrompt": "Vorticist visual language, machinery bridges and city forms compressed into sharp facets and forceful diagonals, black ochre and cool blue concentrating machine-age energy",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-rayonism",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "光线主义",
+      "enName": "Rayonism",
+      "image": "/assets/parameters/artist-rayonism.jpg?v=20261021-style-expansion-c",
+      "zhPrompt": "光线主义绘画语言，物体被交叉放射的彩色光束拆解，透明锐角色面沿多方向穿透画面，主体若隐若现并产生光谱振动",
+      "enPrompt": "Rayonist painting language, objects fragmented by intersecting colored rays, transparent acute planes crossing in multiple directions while the subject flickers through spectral vibration",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-gutai",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "具体派行动绘画",
+      "enName": "Gutai Action Painting",
+      "image": "/assets/parameters/artist-gutai.jpg?v=20261021-style-expansion-c",
+      "zhPrompt": "具体派行动绘画语言，颜料被投掷、拖拽、踩压或穿破画布，厚薄颜料与破口直接记录身体动作，色彩强烈并突出材料实验",
+      "enPrompt": "Gutai action-painting language, pigment thrown dragged pressed or punctured through the support, thick paint and ruptures directly recording bodily action and material experiment",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-mono-ha",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "物派材料装置",
+      "enName": "Mono-ha",
+      "image": "/assets/parameters/artist-mono-ha.jpg?v=20261021-style-expansion-c",
+      "zhPrompt": "物派材料语言，未经加工的石、木、玻璃和钢板在安静空间中直接并置，通过接触、倚靠、重量和空隙呈现材料本身的关系",
+      "enPrompt": "Mono-ha material language, unprocessed stone timber glass and steel placed quietly in direct relation, revealing contact support weight and interval with minimal intervention",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-afrofuturist-editorial",
+      "category": "style",
+      "styleGroup": "design-retro",
+      "zhName": "非洲未来主义社论",
+      "enName": "Afrofuturist Editorial",
+      "image": "/assets/parameters/style-afrofuturist-editorial.jpg?v=20261021-style-expansion-c",
+      "zhPrompt": "非洲未来主义社论插画，未来城市、优雅人物与航天科技以深靛蓝、珊瑚红和金属金组织，几何纹样形成节奏，兼具历史感和技术想象",
+      "enPrompt": "Afrofuturist editorial illustration, futuristic cities elegant figures and space technology organized in deep indigo coral and metallic gold, geometric pattern rhythm joining history with technological imagination",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-frutiger-aero",
+      "category": "style",
+      "styleGroup": "design-retro",
+      "zhName": "Frutiger Aero生态数码",
+      "enName": "Frutiger Aero",
+      "image": "/assets/parameters/style-frutiger-aero.jpg?v=20261021-style-expansion-c",
+      "zhPrompt": "Frutiger Aero早期数码视觉，通透蓝天、鲜绿草地和洁净水面搭配玻璃气泡、柔亮高光与流线科技结构，呈现千禧年代乐观生态感",
+      "enPrompt": "Frutiger Aero early-digital aesthetic, clear blue sky, vivid green grass and clean water paired with glass bubbles, soft glossy highlights and streamlined eco-technology optimism",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "grading-high-key-white",
+      "category": "color-grading",
+      "styleGroup": "clean-bright",
+      "zhName": "高调白净",
+      "enName": "High-Key White",
+      "image": "/assets/parameters/grading-high-key-white.jpg",
+      "zhPrompt": "高调白净调色，整体曝光明亮，白色与浅灰层次通透，阴影轻柔但保留轮廓，肤色自然不泛白，适合人像与极简商业画面",
+      "enPrompt": "high-key white color grade, luminous exposure, airy white and pale-gray separation, soft restrained shadows with preserved contours, natural skin tones without bleaching, suited to portraits and minimal commercial imagery",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-social-light",
+      "category": "color-grading",
+      "styleGroup": "clean-bright",
+      "zhName": "社媒明亮",
+      "enName": "Social Bright",
+      "image": "/assets/parameters/grading-social-light.jpg",
+      "zhPrompt": "社媒明亮调色，中高曝光、清晰中间调和轻快饱和度，压住刺眼高光并提亮面部，保证小尺寸缩略图中主体醒目易读",
+      "enPrompt": "bright social-media color grade, medium-high exposure, crisp midtones and lively saturation, controlled harsh highlights, lifted faces, strong subject readability at thumbnail size",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-vintage-warm",
+      "category": "color-grading",
+      "styleGroup": "film-vintage",
+      "zhName": "复古暖调",
+      "enName": "Vintage Warm",
+      "image": "/assets/parameters/grading-vintage-warm.jpg",
+      "zhPrompt": "复古暖调调色，奶油黄高光、砖红棕中间调与微抬黑位，降低数码锐利感并加入轻微褪色，形成温暖旧照片气息",
+      "enPrompt": "warm vintage color grade with creamy yellow highlights, brick-red brown midtones, gently lifted blacks, softened digital sharpness and subtle fading for an aged photographic mood",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-positive-film",
+      "category": "color-grading",
+      "styleGroup": "film-vintage",
+      "zhName": "反转片色彩",
+      "enName": "Slide Film",
+      "image": "/assets/parameters/grading-positive-film.jpg",
+      "zhPrompt": "反转片色彩，高密度饱和度、清透高光与深实暗部并存，蓝天、绿植和红色层次鲜明，保留胶片式色彩分离而非数码荧光感",
+      "enPrompt": "slide-film-inspired grade with dense saturation, transparent highlights and solid shadows, distinctly separated blues, greens and reds, rich filmic color without synthetic digital neon",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-warm-film-yellow",
+      "category": "color-grading",
+      "styleGroup": "film-vintage",
+      "zhName": "暖黄胶片",
+      "enName": "Warm Yellow Film",
+      "image": "/assets/parameters/grading-warm-film-yellow.jpg",
+      "zhPrompt": "暖黄胶片调色，日光高光偏蜂蜜黄，肤色呈柔和桃金色，阴影保留中性棕，配合细颗粒与轻微高光溢出",
+      "enPrompt": "warm yellow film grade with honey-toned sunlight, soft peach-gold skin, neutral brown shadows, fine grain and gentle highlight bloom",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-cyan-green-film",
+      "category": "color-grading",
+      "styleGroup": "film-vintage",
+      "zhName": "青绿胶片",
+      "enName": "Cyan Green Film",
+      "image": "/assets/parameters/grading-cyan-green-film.jpg",
+      "zhPrompt": "青绿胶片调色，暗部注入克制的青绿偏色，中间调略去饱和，高光保持米白，形成清冷、潮湿且带年代感的电影色彩",
+      "enPrompt": "cyan-green film grade with restrained teal-green shadow cast, slightly desaturated midtones and creamy off-white highlights, creating a cool damp period-film atmosphere",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-faded-print",
+      "category": "color-grading",
+      "styleGroup": "film-vintage",
+      "zhName": "褪色老照片",
+      "enName": "Faded Print",
+      "image": "/assets/parameters/grading-faded-print.jpg",
+      "zhPrompt": "褪色老照片调色，黑位抬起、对比压低，红黄染料轻微残留而蓝色先行褪去，边缘带柔和纸面老化与低密度印相感",
+      "enPrompt": "faded photographic print grade with lifted blacks, reduced contrast, lingering red-yellow dyes, weakened blues, soft paper aging and low-density analog print character",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-noir-bw",
+      "category": "color-grading",
+      "styleGroup": "film-vintage",
+      "zhName": "黑白高反差",
+      "enName": "High-Contrast B&W",
+      "image": "/assets/parameters/grading-noir-bw.jpg",
+      "zhPrompt": "黑白高反差后期，以深黑大色块和锐利亮部塑造轮廓，中间灰阶精简但不过曝，突出斜光、烟雾与硬朗戏剧阴影",
+      "enPrompt": "high-contrast monochrome grade built from deep black masses and sharp highlights, compressed yet controlled mid-grays, emphasizing raking light, haze and hard dramatic shadows",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-instant-photo",
+      "category": "color-grading",
+      "styleGroup": "camera-look",
+      "zhName": "即影即有",
+      "enName": "Instant Photo",
+      "image": "/assets/parameters/grading-instant-photo.jpg",
+      "zhPrompt": "即影即有相纸调色，奶油色高光、轻微青灰阴影与温暖肤色，整体反差柔和，加入边缘暗角、色彩漂移和即时显影的不均匀感",
+      "enPrompt": "instant-photo print grade with creamy highlights, faint cyan-gray shadows, warm skin, soft contrast, subtle vignette, color drift and uneven instant-development character",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-teal-landscape",
+      "category": "color-grading",
+      "styleGroup": "drone-aerial",
+      "zhName": "青蓝风光",
+      "enName": "Teal Landscape",
+      "image": "/assets/parameters/grading-teal-landscape.jpg",
+      "zhPrompt": "青蓝风光调色，统一天空、水面与远山的青蓝关系，适度去雾并压住高光，保留近景自然绿与岩土暖色，形成通透但不失真的纵深",
+      "enPrompt": "teal-blue landscape grade unifying sky, water and distant mountains, moderate dehaze and highlight control, preserving natural foreground greens and warm earth tones for clear believable depth",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-bleach-bypass",
+      "category": "color-grading",
+      "styleGroup": "cinematic",
+      "zhName": "银漂",
+      "enName": "Bleach Bypass",
+      "image": "/assets/parameters/grading-bleach-bypass.jpg",
+      "zhPrompt": "银漂调色，显著降低彩度并强化银质黑位，亮部偏冷白、中间调硬朗，保留粗颗粒和金属质感，适合战争、工业与紧张动作场面",
+      "enPrompt": "bleach-bypass grade with strongly reduced chroma, silver-dense blacks, cold white highlights, hard midtones, coarse grain and metallic grit for war, industrial or tense action imagery",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-cyberpunk-neon",
+      "category": "color-grading",
+      "styleGroup": "cinematic",
+      "zhName": "赛博霓虹调色",
+      "enName": "Cyberpunk Neon Grade",
+      "image": "/assets/parameters/grading-cyberpunk-neon.jpg",
+      "zhPrompt": "赛博霓虹调色，以紫蓝暗部、青色环境光和洋红霓虹高光建立冷暖分离，控制黑位与灯牌溢光，保持人物肤色和主体边缘可辨",
+      "enPrompt": "cyberpunk neon grade with violet-blue shadows, cyan ambient light and magenta neon highlights, controlled blacks and sign bloom, preserving readable skin tones and subject edges",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-moody-dark",
+      "category": "color-grading",
+      "styleGroup": "mood",
+      "zhName": "暗调情绪",
+      "enName": "Moody Dark",
+      "image": "/assets/parameters/grading-moody-dark.jpg",
+      "zhPrompt": "暗调情绪调色，整体曝光下压但保留暗部纹理，以局部受控亮点引导视线，色彩低饱和、黑位深沉，营造压迫、悬疑和内省氛围",
+      "enPrompt": "moody dark grade with lowered exposure yet retained shadow texture, controlled local highlights guiding attention, subdued chroma and deep blacks for tense, mysterious and introspective atmosphere",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-cool-blue",
+      "category": "color-grading",
+      "styleGroup": "mood",
+      "zhName": "冷蓝调",
+      "enName": "Cool Blue",
+      "image": "/assets/parameters/grading-cool-blue.jpg",
+      "zhPrompt": "冷蓝调后期，以蓝灰中间调和冷白高光主导，肤色适度中和不过分发青，降低暖色干扰，形成安静、疏离、冬日般清冷的画面",
+      "enPrompt": "cool blue grade led by blue-gray midtones and cool white highlights, balanced skin without excessive cyan cast, reduced warm distractions, creating quiet distant winterlike clarity",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-warm-golden",
+      "category": "color-grading",
+      "styleGroup": "mood",
+      "zhName": "暖金调",
+      "enName": "Warm Golden",
+      "image": "/assets/parameters/grading-warm-golden.jpg",
+      "zhPrompt": "暖金调后期，高光呈琥珀金与蜂蜜色，中间调温润、阴影略带暖棕，保护肤色红润度并加入柔和辉光，营造亲密怀旧氛围",
+      "enPrompt": "warm golden grade with amber and honey highlights, mellow midtones, subtly warm-brown shadows, protected healthy skin color and soft glow for intimate nostalgic imagery",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-muted-desaturated",
+      "category": "color-grading",
+      "styleGroup": "mood",
+      "zhName": "低饱和灰调",
+      "enName": "Muted Desaturated",
+      "image": "/assets/parameters/grading-muted-desaturated.jpg",
+      "zhPrompt": "低饱和灰调，压低艳色并保留关键色相差异，以柔和灰阶和细腻中间调维持层次，避免灰脏，适合克制的编辑与叙事影像",
+      "enPrompt": "muted desaturated grade suppressing vivid colors while preserving key hue differences, using soft grays and nuanced midtones for depth without muddiness, suited to restrained editorial storytelling",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-vivid-commercial",
+      "category": "color-grading",
+      "styleGroup": "mood",
+      "zhName": "高饱和商业色",
+      "enName": "Vivid Commercial",
+      "image": "/assets/parameters/grading-vivid-commercial.jpg",
+      "zhPrompt": "高饱和商业调色，提升主色纯度与明度，强化互补色分离和干净高光，同时控制肤色、白色与黑位不受污染，形成醒目而精确的广告视觉",
+      "enPrompt": "vivid commercial grade boosting primary-color purity and brightness, crisp complementary separation and clean highlights while protecting skin, whites and blacks for bold precise advertising imagery",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-product-clean-white",
+      "category": "color-grading",
+      "styleGroup": "commercial",
+      "zhName": "电商干净白底",
+      "enName": "Clean Product White",
+      "image": "/assets/parameters/grading-product-clean-white.jpg",
+      "zhPrompt": "电商干净白底后期，将背景校正为中性纯白并保留主体真实边缘，消除杂色反光，维持柔和接触阴影和准确材质色，适合商品目录与平台主图",
+      "enPrompt": "clean product-on-white grade with a neutral pure-white background, preserved authentic edges, removed color casts, soft contact shadows and accurate material colors for catalogs and marketplace hero images",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-food-warm",
+      "category": "color-grading",
+      "styleGroup": "commercial",
+      "zhName": "美食暖调",
+      "enName": "Food Warm",
+      "image": "/assets/parameters/grading-food-warm.jpg",
+      "zhPrompt": "美食暖调，使用温暖侧光增强烘烤金黄、汤汁通透和油脂光泽，同时保护蔬菜等食材本色，控制红黄过饱和，呈现自然可口质感",
+      "enPrompt": "warm food grade using warm side light to enrich baked golds, translucent sauces and natural gloss while preserving ingredient colors and controlling red-yellow oversaturation for appetizing realism",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-luxury-ad",
+      "category": "color-grading",
+      "styleGroup": "commercial",
+      "zhName": "高级广告调",
+      "enName": "Luxury Ad Grade",
+      "image": "/assets/parameters/grading-luxury-ad.jpg",
+      "zhPrompt": "高级广告调色，以克制低饱和色盘、深实黑位和精准高光塑造黑色、白色、金属、玻璃与皮革层次，保持色彩纯净和高级材质反射",
+      "enPrompt": "luxury advertising grade with a restrained low-saturation palette, solid blacks and precise highlights defining black, white, metal, glass and leather, maintaining clean color and premium material reflections",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    }
+  ]
+}
