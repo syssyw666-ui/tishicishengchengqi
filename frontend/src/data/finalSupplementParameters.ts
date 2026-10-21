@@ -99,7 +99,7 @@ export const finalSupplementParameters: PromptParameter[] = [
 
 
   param("render", "render-blueprint-technical", "technical", "蓝图技术渲染", "Blueprint Technical Render", "蓝图技术渲染，白色线框、测量线和工程图纸质感", "blueprint technical render, white wireframe lines, measurement marks, engineering drawing texture", renderNegative),
-  param("render", "render-clay-material", "stylized", "陶土材质渲染", "Clay Material Render", "陶土材质渲染，哑光颗粒、手捏质感和柔和实体体积", "clay material render, matte grain, handmade tactile surface, soft solid volume", renderNegative)
+  param("render", "render-clay-material", "stylized", "陶土材质渲染", "Clay Material Render", "陶土材质渲染，表面保留手捏凹痕、指纹、细砂颗粒和略不均匀的哑光吸光特性，转折处体积柔和厚实；不同部件像真实泥料连接而非塑料模型，避免镜面高光与过分锋利边缘", "clay-material rendering with hand-pinched dents fingerprints fine grit and subtly uneven matte light absorption, soft substantial volume through turns; components join like real clay rather than molded plastic, avoiding mirror highlights and overly sharp edges", renderNegative)
 ];
 
 

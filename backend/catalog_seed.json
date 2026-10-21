@@ -1252,8 +1252,8 @@
       "zhName": "清澈天空青春动画",
       "enName": "Clear-Sky Youth Anime",
       "image": "/assets/parameters/style-clear-sky-youth-anime.jpg",
-      "zhPrompt": "清澈天空青春动画，通透蓝天、闪耀光斑和细致云层",
-      "enPrompt": "clear-sky youth anime, sparkling sunlight, detailed clouds, airy emotional atmosphere"
+      "zhPrompt": "清澈天空青春动画以高透明度蓝天、层次分明的积云和强烈日光闪点建立开阔感，人物与城市边缘采用细净线条，空气透视从暖亮近景过渡到青蓝远景；情绪轻盈但不使用过曝白幕或无结构云团",
+      "enPrompt": "clear-sky youth-animation language built from transparent blue atmosphere, structurally layered cumulus clouds and sharp sunlight glints, with clean fine edges on figures and city forms and aerial perspective shifting from warm bright foreground to cyan-blue distance; airy emotion without blown-out white haze or shapeless clouds"
     },
     {
       "id": "style-chinese-paper-cut-animation",
@@ -1302,8 +1302,8 @@
       "zhName": "复古赛璐璐动画",
       "enName": "Retro Cel Anime",
       "image": "/assets/parameters/style-retro-cel-anime.jpg",
-      "zhPrompt": "复古赛璐璐动画，90年代动画色彩、胶片感和手绘阴影",
-      "enPrompt": "retro 1990s cel animation, hand-painted shadows, nostalgic color, analog anime texture"
+      "zhPrompt": "复古赛璐璐动画采用手绘轮廓与二至三层平涂阴影，色彩像旧胶片拷贝般稍偏黄绿或洋红，背景具有颜料笔触和有限空气透视；保留轻微套色偏差、颗粒和帧感，避免现代数码渐变、锐利发光与三维塑料感",
+      "enPrompt": "retro cel-animation language using hand-drawn contours and two or three flat shadow levels, colors carrying the slight yellow-green or magenta bias of aged film prints, and painted backgrounds with limited aerial depth; retain mild registration drift grain and frame texture, avoiding modern digital gradients razor-sharp glow and plastic 3D surfaces"
     },
     {
       "id": "style-modern-webtoon",
@@ -1342,8 +1342,8 @@
       "zhName": "哥特动漫",
       "enName": "Gothic Anime",
       "image": "/assets/parameters/style-gothic-anime.jpg",
-      "zhPrompt": "哥特动漫，暗色城堡、月光、神秘阴影和优雅压迫感",
-      "enPrompt": "dark gothic anime, moonlit castles, elegant shadows, mysterious dramatic mood"
+      "zhPrompt": "哥特动漫视觉语言，尖拱、玫瑰窗与高耸室内形成纵向压迫，原创人物以细长轮廓、深色层叠服饰和克制表情出现；月光蓝灰、酒红与旧金有限配色配合硬边赛璐璐阴影，不使用血腥元素",
+      "enPrompt": "gothic anime language with pointed arches rose windows and towering interiors creating vertical pressure, original figures in elongated silhouettes layered dark clothing and restrained expressions; moonlit blue-gray wine red and antique gold with hard-edged cel shadows, without gore"
     },
     {
       "id": "style-pastel-magical-girl",
@@ -1402,8 +1402,8 @@
       "zhName": "宋代水墨山水",
       "enName": "Song Ink Landscape",
       "image": "/assets/parameters/style-song-ink-landscape.jpg",
-      "zhPrompt": "宋代水墨山水气质，克制留白、淡墨层次和清远意境",
-      "enPrompt": "Song dynasty minimalist ink landscape mood, restrained negative space, subtle ink layers"
+      "zhPrompt": "宋代水墨山水以高远、深远或平远组织山体与行旅，皴法、苔点和淡墨积染区分岩石、林木与云气，大面积绢白留出呼吸；近景墨色厚、远山随雾减淡，尺度含蓄，避免现代装饰水墨和随意泼墨",
+      "enPrompt": "Song-dynasty ink-landscape language organizing mountains and travelers through high deep or level distance, with cun texture strokes moss dots and layered pale washes separating rock woodland and mist across generous silk-white space; near forms carry denser ink and distant ridges dissolve through haze, avoiding modern decorative splash-ink effects"
     },
     {
       "id": "style-new-year-woodblock",
@@ -1442,8 +1442,8 @@
       "zhName": "浮世绘",
       "enName": "Ukiyo-e",
       "image": "/assets/parameters/style-ukiyo-e.jpg",
-      "zhPrompt": "浮世绘木版画，平涂色块、波纹线条和复古印刷质感",
-      "enPrompt": "Japanese ukiyo-e woodblock print, flat color planes, carved linework, vintage paper texture"
+      "zhPrompt": "浮世绘木版画以流畅墨线、平涂矿物色和大胆裁切组织人物与风景，水浪、衣纹和云气沿雕版方向形成节奏；可见和纸纤维、轻微套色偏差与木纹压力，高低远近通过重叠和色阶表达，避免西式体积明暗和数码渐变",
+      "enPrompt": "ukiyo-e woodblock language organizing figures and landscape through flowing key lines flat mineral color and bold cropping, with waves drapery and clouds following carved directional rhythm; visible washi fiber slight registration shift and wood-pressure texture, depth expressed through overlap and color steps rather than Western modeling or digital gradients"
     },
     {
       "id": "style-korean-minhwa",
@@ -1562,8 +1562,8 @@
       "zhName": "恐怖悬疑片",
       "enName": "Horror Suspense",
       "image": "/assets/parameters/style-horror-suspense-film.jpg",
-      "zhPrompt": "恐怖悬疑片氛围，冷雾、低照度和不安阴影，无血腥",
-      "enPrompt": "horror suspense film look without gore, cold fog, low light, uneasy shadows"
+      "zhPrompt": "非血腥恐怖悬疑电影语言，走廊、门框和遮挡前景制造看不见的画外空间，冷雾与单一实景光源只揭示局部线索；深黑中保留微弱材质，构图故意留出不安空位，通过等待和未知制造压力",
+      "enPrompt": "non-gory horror-suspense cinematography using corridors doorframes and obstructed foreground to imply unseen off-screen space, cold haze and one practical light revealing only partial clues; faint material remains in deep shadow and uneasy empty framing builds pressure through waiting and uncertainty"
     },
     {
       "id": "style-stop-motion-miniature",
@@ -1572,8 +1572,8 @@
       "zhName": "定格微缩模型",
       "enName": "Stop-Motion Miniature",
       "image": "/assets/parameters/style-stop-motion-miniature.jpg",
-      "zhPrompt": "定格微缩模型质感，小比例布景、手工道具和浅景深",
-      "enPrompt": "stop-motion miniature look, handmade sets, small-scale props, shallow depth of field"
+      "zhPrompt": "定格动画微缩布景语言，角色和道具保留手工接缝、细小磨损与逐帧姿态，缩尺木材、布料和纸板材质真实；桌面级景深、略硬棚拍光和轻微动作停顿共同暴露模型尺度，不追求光滑 CG",
+      "enPrompt": "stop-motion miniature language with handmade seams tiny wear and frame-by-frame pose in characters and props, believable scale wood fabric and cardboard; tabletop depth of field, slightly hard stage light and subtle motion staccato reveal the model scale rather than polished CGI"
     },
     {
       "id": "style-collectible-3d",
@@ -1592,8 +1592,8 @@
       "zhName": "等距3D场景",
       "enName": "Isometric Diorama",
       "image": "/assets/parameters/style-isometric-diorama.jpg",
-      "zhPrompt": "等距 3D 场景，微缩建筑、清晰层次和桌面模型感",
-      "enPrompt": "isometric 3D diorama, miniature architecture, clear layers, polished tabletop model"
+      "zhPrompt": "等距微缩场景，以平行轴测而非广角透视展示建筑、道路和人物，模块沿统一网格排列，屋顶与立面同时清楚可读；边缘像被整齐切开的桌面沙盘，柔和投影区分高度，细节服务空间关系而不堆满画面",
+      "enPrompt": "isometric miniature scene using parallel axonometric projection rather than wide-angle perspective, buildings roads and figures aligned to one grid with roofs and facades simultaneously legible; clean cutaway tabletop edges and soft shadows separate height while detail serves spatial relationships instead of clutter"
     },
     {
       "id": "style-bauhaus-poster",
@@ -1642,8 +1642,8 @@
       "zhName": "蒸汽波",
       "enName": "Vaporwave",
       "image": "/assets/parameters/style-vaporwave.jpg",
-      "zhPrompt": "蒸汽波复古数码美学，粉紫霓虹、网格地平线和怀旧未来感",
-      "enPrompt": "vaporwave retro digital aesthetic, pink purple neon, grid horizon, nostalgic futurism"
+      "zhPrompt": "蒸汽波复古数码美学以粉紫晚霞、青色网格地平线、低保真三维雕像和旧电脑界面碎片建立怀旧未来感，带 VHS 色散、扫描线和早期压缩噪点；构图保留冷静空旷感，避免仅用霓虹渐变替代完整视觉语言",
+      "enPrompt": "vaporwave retro-digital language combining pink-violet sunsets cyan grid horizons lo-fi classical busts and fragments of early computer interfaces, with VHS chromatic bleed scanlines and primitive compression noise; preserve cool spacious composition rather than reducing the style to a generic neon gradient"
     },
     {
       "id": "style-synthwave",
@@ -1662,8 +1662,8 @@
       "zhName": "Risograph印刷",
       "enName": "Risograph",
       "image": "/assets/parameters/style-risograph.jpg",
-      "zhPrompt": "Risograph 印刷质感，套色错位、颗粒纸张和有限色盘",
-      "enPrompt": "risograph print texture, offset colors, grainy paper, limited palette"
+      "zhPrompt": "Risograph 孔版印刷语言，仅用两到三种专色叠印出新的综合色，网点密度承担明暗，套色边缘保留轻微错位；油墨吸入未涂布纸形成纤维颗粒和不均匀实地色，避免数字渐变和光滑矢量表面",
+      "enPrompt": "Risograph stencil-print language using only two or three spot inks whose overlaps create secondary color, halftone density carrying tone and slight registration drift at edges; ink absorbs into uncoated fibrous paper with uneven solids, avoiding digital gradients and slick vector surfaces"
     },
     {
       "id": "style-screenprint",
@@ -1672,8 +1672,8 @@
       "zhName": "丝网印刷",
       "enName": "Screenprint",
       "image": "/assets/parameters/style-screenprint.jpg",
-      "zhPrompt": "丝网印刷海报质感，平涂色块、粗颗粒和手工印刷感",
-      "enPrompt": "screenprint poster texture, flat color blocks, coarse grain, handmade print feel"
+      "zhPrompt": "丝网印刷视觉语言，厚实不透明油墨形成边缘清楚的平涂色块，局部通过粗网点或多次刮印建立明暗，颜色叠压处可见第三色与轻微错版；纸纹从薄墨区透出，保持手工刮板压力差异",
+      "enPrompt": "screenprint language with thick opaque ink forming crisp flat color masses, coarse halftone or repeated pulls building tone, overlaps producing a third color and slight misregistration; paper texture shows through thinner areas with visible variation in squeegee pressure"
     },
     {
       "id": "style-linocut",
@@ -5784,6 +5784,666 @@
       ]
     },
     {
+      "id": "artist-chicha-poster",
+      "category": "artist-style",
+      "styleGroup": "poster-print",
+      "zhName": "秘鲁奇查荧光海报",
+      "enName": "Peruvian Chicha Poster",
+      "image": "/assets/parameters/artist-chicha-poster.jpg?v=20261021-style-expansion-g",
+      "zhPrompt": "秘鲁奇查街头海报视觉语言，荧光洋红、酸橙绿、橙黄与青蓝形成高密度手绘曲线，图形像音乐节奏般向外翻卷，丝网印刷颗粒和轻微套色偏差保留廉价印刷的活力，不生成可读文字",
+      "enPrompt": "Peruvian Chicha street-poster language, fluorescent magenta lime orange and cyan forming dense hand-painted curves that unfurl with musical rhythm, screenprint grain and slight misregistration preserving lively low-cost print energy, without readable lettering",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol"
+      ]
+    },
+    {
+      "id": "artist-matatu-art",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "肯尼亚马塔图车身彩绘",
+      "enName": "Kenyan Matatu Art",
+      "image": "/assets/parameters/artist-matatu-art.jpg?v=20261021-style-expansion-g",
+      "zhPrompt": "肯尼亚马塔图车身艺术语言，城市交通工具被高饱和喷绘、锐利几何、人物剪影与金属反光层层覆盖，色带顺着车体结构流动，街头涂鸦能量强烈但不出现品牌和可读文字",
+      "enPrompt": "Kenyan Matatu vehicle-art language, urban transport covered in layered saturated airbrush color angular geometry figure silhouettes and chrome reflection, bands flowing with the bodywork, energetic street graphics without brands or readable text",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol"
+      ]
+    },
+    {
+      "id": "artist-mission-school",
+      "category": "artist-style",
+      "styleGroup": "editorial-graphic",
+      "zhName": "使命区手记绘画",
+      "enName": "Mission School Drawing",
+      "image": "/assets/parameters/artist-mission-school.jpg?v=20261021-style-expansion-g",
+      "zhPrompt": "九十年代使命区艺术语言，以私人手记般的细墨线、随手水彩和局部文字痕迹记录街道、人物与店面，透视略显稚拙，画面亲密、日常并带观察式叙事，不生成可读文字",
+      "enPrompt": "1990s Mission School visual language, intimate streets people and storefront fragments recorded with notebook-like fine ink, casual watercolor and incidental marks, deliberately awkward perspective and personal observational narrative, no readable text",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol"
+      ]
+    },
+    {
+      "id": "artist-mudejar-ornament",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "穆德哈尔建筑纹饰",
+      "enName": "Mudejar Ornament",
+      "image": "/assets/parameters/artist-mudejar-ornament.jpg?v=20261021-style-expansion-g",
+      "zhPrompt": "伊比利亚穆德哈尔装饰语言，暖色砖砌、雕花灰泥、木构藻井与蓝绿釉砖交织，八角星和多边形几何连续延展，细密纹样服从拱券与墙面结构，呈现中世纪跨文化建筑工艺",
+      "enPrompt": "Iberian Mudejar ornamental language, warm brick carved plaster timber coffering and turquoise glazed tile interwoven through eight-point stars and polygon tessellations, dense pattern following arches and wall structure with medieval cross-cultural craft",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol"
+      ]
+    },
+    {
+      "id": "artist-plakatstil",
+      "category": "artist-style",
+      "styleGroup": "poster-print",
+      "zhName": "物件海报风",
+      "enName": "Plakatstil",
+      "image": "/assets/parameters/artist-plakatstil.jpg?v=20261021-style-expansion-g",
+      "zhPrompt": "二十世纪初物件海报视觉语言，将单一商品或日常物压缩为巨大平面剪影，只保留两三种专色、厚重黑轮廓和极简背景，石版印刷颗粒可见，依靠形状与色面对比而非文字传达",
+      "enPrompt": "early twentieth-century Plakatstil object-poster language, one everyday object reduced to an oversized flat silhouette, two or three spot colors, heavy black contour and minimal ground, visible lithographic grain communicating through shape rather than text",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol"
+      ]
+    },
+    {
+      "id": "artist-polish-poster-school",
+      "category": "artist-style",
+      "styleGroup": "poster-print",
+      "zhName": "波兰海报学派",
+      "enName": "Polish Poster School",
+      "image": "/assets/parameters/artist-polish-poster-school.jpg?v=20261021-style-expansion-g",
+      "zhPrompt": "波兰海报学派视觉语言，以手绘、剪贴和粗糙印刷把人物或事件转译成超现实隐喻，色块有限、轮廓自由、留白大胆，图形带剧场感与黑色幽默，不依赖可读文字",
+      "enPrompt": "Polish Poster School language translating people or events into surreal metaphor through painterly marks collage and rough print, limited color, free contour and bold negative space with theatrical tension and dark humor, without readable type",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol"
+      ]
+    },
+    {
+      "id": "artist-seiz-breur",
+      "category": "artist-style",
+      "styleGroup": "decorative-illustration",
+      "zhName": "布列塔尼七兄弟派",
+      "enName": "Seiz Breur",
+      "image": "/assets/parameters/artist-seiz-breur.jpg?v=20261021-style-expansion-g",
+      "zhPrompt": "布列塔尼七兄弟派区域现代主义，以渔民、帆船和海岸为母题，人物与浪花被压缩成棱角分明的木刻色块，凯尔特几何和黑、钴蓝、赭黄有限色盘连接民艺与装饰艺术秩序",
+      "enPrompt": "Breton Seiz Breur regional-modernist language, fishers boats and coast reduced to angular woodcut-like masses, Celtic geometry and a limited black cobalt and ochre palette joining folk craft with disciplined decorative modernism",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol"
+      ]
+    },
+    {
+      "id": "artist-sots-art",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "苏茨艺术",
+      "enName": "Sots Art",
+      "image": "/assets/parameters/artist-sots-art.jpg?v=20261021-style-expansion-g",
+      "zhPrompt": "苏茨艺术视觉语言，把僵硬的红色宣传构图、英雄化侧影与闪亮消费品包装并置，官方图像的庄严秩序被日常商品和刻意不协调的材质打断，形成冷静讽喻，不复制真实标志",
+      "enPrompt": "Sots Art visual language juxtaposing rigid red propaganda geometry and heroic profiles with glossy consumer packaging, official solemn order interrupted by ordinary commodities and deliberately incompatible materials to create cool irony, no real insignia",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol"
+      ]
+    },
+    {
+      "id": "artist-xerox-art",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "复印机艺术",
+      "enName": "Xerox Art",
+      "image": "/assets/parameters/artist-xerox-art.jpg?v=20261021-style-expansion-g",
+      "zhPrompt": "复印机艺术语言，手、面孔和日常物被直接压在扫描面上反复复制，黑白反差被压碎，边缘拖影、碳粉条纹、纸张折痕与尺寸递归共同构成机械复制的实验节奏",
+      "enPrompt": "Xerox copy-art language, hands faces and everyday objects pressed to the platen and repeatedly recopied, crushed black-white contrast, dragged edges toner streaks paper folds and recursive scaling forming an experimental rhythm of mechanical reproduction",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol"
+      ]
+    },
+    {
+      "id": "artist-mail-art",
+      "category": "artist-style",
+      "styleGroup": "editorial-graphic",
+      "zhName": "邮寄艺术拼贴",
+      "enName": "Mail Art",
+      "image": "/assets/parameters/artist-mail-art.jpg?v=20261021-style-expansion-g",
+      "zhPrompt": "邮寄艺术视觉语言，以旧信封、穿孔票片、橡皮章肌理、路线箭头和手工拼贴构成可流通的纸上作品，纸边磨损、胶带与套印痕迹真实，信息层级松散但有路径感，不生成真实邮票或地址",
+      "enPrompt": "Mail Art visual language built from aged envelopes perforated paper shapes rubber-stamp texture routing arrows and handmade collage, authentic worn edges tape and overprint marks, loosely layered yet directional, without real stamps addresses or readable correspondence",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol"
+      ]
+    },
+    {
+      "id": "artist-delftware",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "代尔夫特蓝陶",
+      "enName": "Delftware",
+      "image": "/assets/parameters/artist-delftware.jpg?v=20261021-style-expansion-g",
+      "zhPrompt": "荷兰代尔夫特蓝陶视觉语言，乳白釉面以浓淡钴蓝手绘风车、花卉、河岸与小型人物，中心叙事被花叶边饰环绕，笔触深浅和细微釉裂保留真实陶瓷工艺感",
+      "enPrompt": "Dutch Delftware visual language, cobalt-blue windmills flowers riverbanks and tiny figures hand-painted in varied intensity on milky white glaze, a central vignette framed by floral ornament with authentic brush variation and fine craquelure",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol"
+      ]
+    },
+    {
+      "id": "artist-matyo-embroidery",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "匈牙利马乔刺绣",
+      "enName": "Hungarian Matyo Embroidery",
+      "image": "/assets/parameters/artist-matyo-embroidery.jpg?v=20261021-style-expansion-g",
+      "zhPrompt": "匈牙利马乔刺绣视觉语言，黑色织物上密集铺陈红、玫红、蓝、黄花朵与卷叶，大型玫瑰成为中心，缎面针和凸起线迹形成饱满浮雕触感，色彩热烈但花簇结构清楚",
+      "enPrompt": "Hungarian Matyo embroidery language, dense red pink blue and yellow flowers with curling leaves on black cloth, oversized roses anchoring the design, raised satin stitches creating plush relief while floral clusters remain structurally clear",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol"
+      ]
+    },
+    {
+      "id": "artist-iznik-ceramics",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "伊兹尼克陶瓷纹样",
+      "enName": "Iznik Ceramics",
+      "image": "/assets/parameters/artist-iznik-ceramics.jpg?v=20261021-style-expansion-g",
+      "zhPrompt": "奥斯曼伊兹尼克陶瓷视觉语言，白釉上以钴蓝、青绿和珊瑚红描绘郁金香、康乃馨与长形萨兹叶，深色细线控制曲线节奏，透明釉光与轻微手绘偏差并存",
+      "enPrompt": "Ottoman Iznik ceramic language, cobalt blue turquoise and coral-red tulips carnations and elongated saz leaves painted on white glaze, fine dark outlines controlling rhythmic curves with translucent gloss and subtle hand-painted variation",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol"
+      ]
+    },
+    {
+      "id": "artist-palekh-lacquer",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "帕列赫漆画微型画",
+      "enName": "Palekh Lacquer Miniature",
+      "image": "/assets/parameters/artist-palekh-lacquer.jpg?v=20261021-style-expansion-g",
+      "zhPrompt": "俄罗斯帕列赫漆画微型画语言，光亮黑漆底上以金线、朱红和宝石色描绘细长人物、幻想建筑与连续故事，人物衣纹像火焰般流动，微小笔触在深黑留白中发光",
+      "enPrompt": "Russian Palekh lacquer-miniature language, elongated figures fantasy architecture and continuous tales painted in gold line scarlet and jewel color on glossy black lacquer, flame-like drapery and minute luminous brushwork floating in deep negative space",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol"
+      ]
+    },
+    {
+      "id": "artist-japanese-makie",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "日本莳绘漆艺",
+      "enName": "Japanese Maki-e",
+      "image": "/assets/parameters/artist-japanese-makie.jpg?v=20261021-style-expansion-g",
+      "zhPrompt": "日本莳绘漆艺视觉语言，在深黑漆面上以金银粉层层撒绘芦苇、月色、流水和雾气，金属粉密度形成远近与光泽变化，构图极度克制并利用大片黑色留白突出抛光深度",
+      "enPrompt": "Japanese maki-e lacquer language, reeds moon water and mist built by layered gold and silver powder on deep black lacquer, changing powder density creating distance and sheen, highly restrained composition using black negative space to reveal polished depth",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol"
+      ]
+    },
+    {
+      "id": "artist-korean-dancheong",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "韩国丹青纹饰",
+      "enName": "Korean Dancheong",
+      "image": "/assets/parameters/artist-korean-dancheong.jpg?v=20261021-style-expansion-g",
+      "zhPrompt": "韩国传统丹青建筑彩绘语言，寺庙梁枋与斗拱覆盖绿、红、蓝、赭黄和白色莲花几何，纹样沿木构层级重复并由深色轮廓分隔，色彩鲜明但服从建筑节奏",
+      "enPrompt": "Korean dancheong architectural-painting language, temple beams brackets and eaves covered in green red blue ochre and white lotus geometry, patterns repeating with the timber hierarchy and separated by dark outlines, vivid color disciplined by structure",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol"
+      ]
+    },
+    {
+      "id": "artist-maasai-beadwork",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "马赛珠饰",
+      "enName": "Maasai Beadwork",
+      "image": "/assets/parameters/artist-maasai-beadwork.jpg?v=20261021-style-expansion-g",
+      "zhPrompt": "马赛珠饰视觉语言，红、白、钴蓝、橙与黑色微型玻璃珠围绕圆心形成宽阔放射领饰，三角与棋盘单元重复但保留手工不均，珠面反光、线结和层叠重量清晰可见",
+      "enPrompt": "Maasai beadwork visual language, tiny red white cobalt orange and black glass beads radiating into a broad circular collar, repeated triangles and checks with handmade variation, visible bead reflection thread knots and layered physical weight",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol"
+      ]
+    },
+    {
+      "id": "artist-zulu-beadwork",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "祖鲁珠饰",
+      "enName": "Zulu Beadwork",
+      "image": "/assets/parameters/artist-zulu-beadwork.jpg?v=20261021-style-expansion-g",
+      "zhPrompt": "祖鲁珠饰视觉语言，白、蓝、绿、红、黄与黑色玻璃珠构成矩形和三角吊片，阶梯几何被清晰黑白边界组织，不同色块形成有节奏的信息层次，保留珠粒和垂坠结构",
+      "enPrompt": "Zulu beadwork visual language, white blue green red yellow and black glass beads forming rectangular bands and triangular pendants, stepped geometry organized by crisp black-white boundaries, rhythmic color blocks with visible bead scale and hanging construction",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol"
+      ]
+    },
+    {
+      "id": "artist-senufo-korhogo",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "科霍戈手绘布",
+      "enName": "Senufo Korhogo Cloth",
+      "image": "/assets/parameters/artist-senufo-korhogo.jpg?v=20261021-style-expansion-g",
+      "zhPrompt": "科特迪瓦科霍戈手绘布视觉语言，在粗纤维米白棉布上以棕黑植物染料描绘动物、村落人物与线性边饰，形体平面简洁、间距疏朗，发酵泥浆颜料边缘自然不齐",
+      "enPrompt": "Senufo Korhogo-cloth visual language, animals village figures and linear borders painted in brown-black plant pigment on coarse cream cotton, spare flat silhouettes and open spacing with naturally irregular fermented-mud dye edges",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol"
+      ]
+    },
+    {
+      "id": "style-platinum-palladium-print",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "铂钯印相",
+      "enName": "Platinum Palladium Print",
+      "image": "/assets/parameters/style-platinum-palladium-print.jpg?v=20261021-style-expansion-g",
+      "zhPrompt": "铂钯印相摄影质感，影像沉入哑光棉纸纤维，黑位呈温暖中性而非油亮纯黑，灰阶极长、亮部层次细腻，边缘清晰度柔和但微小材质仍可辨，整体安静耐看",
+      "enPrompt": "platinum-palladium photographic-print character, image embedded in matte cotton paper fibers, warm neutral blacks rather than glossy density, exceptionally long gray scale and delicate highlight separation, softly resolved edges with legible material detail",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol"
+      ]
+    },
+    {
+      "id": "artist-nouveau-realisme",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "新现实主义物质拼装",
+      "enName": "Nouveau Realisme",
+      "image": "/assets/parameters/artist-nouveau-realisme.jpg?v=20261021-style-expansion-h",
+      "zhPrompt": "新现实主义视觉语言，直接压缩、撕取或聚合废金属、工业残片、包装和城市表面，让真实物质而非描绘承担画面；锈蚀、凹陷、胶痕与原有色块共同形成粗粝浮雕，不保留可读广告文字",
+      "enPrompt": "Nouveau Realisme language directly compressing tearing or accumulating scrap metal industrial remnants packaging and urban surfaces so real matter replaces depiction; rust dents adhesive traces and found color form a rough relief without readable advertising text",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-new-figuration",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "新具象绘画",
+      "enName": "New Figuration",
+      "image": "/assets/parameters/artist-new-figuration.jpg?v=20261021-style-expansion-h",
+      "zhPrompt": "新具象绘画语言，在可辨认的城市人物和社会现场上叠加宽阔手势色、断裂轮廓与未完成底层，形象不被完全抽象化却持续受到颜料冲击，红黑蓝灰形成直接而带政治情绪的视觉张力",
+      "enPrompt": "New Figuration painting language retaining recognizable urban figures and social settings beneath broad gestural color broken contours and exposed underpainting, imagery never fully abstract yet continually disrupted by paint, with direct red black blue-gray tension",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-pont-aven-school",
+      "category": "artist-style",
+      "styleGroup": "impression-post",
+      "zhName": "阿旺桥画派",
+      "enName": "Pont-Aven School",
+      "image": "/assets/parameters/artist-pont-aven-school.jpg?v=20261021-style-expansion-h",
+      "zhPrompt": "阿旺桥画派视觉语言，将布列塔尼乡村、劳动者与宗教氛围压缩为大块平涂色面，深色围线像彩色玻璃般封闭形体，透视趋平，赭黄、深绿和藏蓝在安静而象征性的构图中并置",
+      "enPrompt": "Pont-Aven School language reducing Breton countryside labor and devotional atmosphere to broad flat color fields enclosed by dark cloisonne-like contours, shallow perspective and an ochre deep-green navy palette arranged in quiet symbolic composition",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-young-poland",
+      "category": "artist-style",
+      "styleGroup": "surreal-symbolic",
+      "zhName": "青年波兰象征主义",
+      "enName": "Young Poland",
+      "image": "/assets/parameters/artist-young-poland.jpg?v=20261021-style-expansion-h",
+      "zhPrompt": "青年波兰视觉语言，以风吹白桦、暮色山川和孤独人物承载世纪末象征情绪，细长装饰线与自然主义细节并存，灰紫、苔绿和旧金色调低沉统一，画面具有诗性忧郁与民族浪漫感",
+      "enPrompt": "Young Poland visual language using windswept birches twilight landscape and solitary figures to carry fin-de-siecle symbolism, elongated decorative line beside natural detail, muted violet moss green and antique gold creating poetic melancholy and regional Romantic feeling",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-zenitism",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "巴尔干顶峰主义",
+      "enName": "Zenitism",
+      "image": "/assets/parameters/artist-zenitism.jpg?v=20261021-style-expansion-h",
+      "zhPrompt": "巴尔干顶峰主义先锋语言，机器桁架、碎裂侧脸、圆盘和锐利斜线在红黑钴蓝与纸白之间冲撞，拼贴和粗糙印刷共同强调速度、都市与反学院姿态，结构动态但不生成可读文字",
+      "enPrompt": "Balkan Zenitist avant-garde language, machine trusses fragmented profiles discs and sharp diagonals colliding across red black cobalt and paper white, collage and rough print stressing speed urban force and anti-academic energy without readable typography",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-czech-cubism",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "捷克立体主义",
+      "enName": "Czech Cubism",
+      "image": "/assets/parameters/artist-czech-cubism.jpg?v=20261021-style-expansion-h",
+      "zhPrompt": "捷克立体主义视觉语言，静物、家具与建筑像水晶般被切成尖锐棱面，折线和三角体从结构内部生长而非简单贴图，赭色、墨绿、黑与奶油白营造坚硬而精密的空间节奏",
+      "enPrompt": "Czech Cubist language faceting still life furniture and architecture into sharp crystalline planes, zigzags and triangular volumes growing from structural logic rather than surface decoration, in ochre dark green black and cream with rigorous spatial rhythm",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-dau-al-set",
+      "category": "artist-style",
+      "styleGroup": "surreal-symbolic",
+      "zhName": "七骰社暗黑超现实",
+      "enName": "Dau al Set",
+      "image": "/assets/parameters/artist-dau-al-set.jpg?v=20261021-style-expansion-h",
+      "zhPrompt": "七骰社式加泰罗尼亚战后超现实语言，夜色底上出现生物形怪物、星月符号、刮擦线和原始图腾般形态，黑褐、赭黄与少量朱红像旧印刷层叠，氛围神秘、粗粝且拒绝写实叙事",
+      "enPrompt": "Dau al Set Catalan postwar-surrealist language, biomorphic creatures lunar signs scratched lines and primal symbolic forms on a nocturnal ground, black-brown ochre and sparse vermilion layered like aged print, mysterious rough and deliberately non-naturalistic",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-spatialism",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "空间主义割画",
+      "enName": "Spatialism",
+      "image": "/assets/parameters/artist-spatialism.jpg?v=20261021-style-expansion-h",
+      "zhPrompt": "空间主义视觉语言，在近乎单色的真实画布上留下少量经过控制的切口或穿孔，让阴影与背后空间成为作品本体；表面均一、动作克制，构图依靠裂隙的长度、间距和物理深度而非绘制图案",
+      "enPrompt": "Spatialist language using a few controlled slashes or perforations in a nearly monochrome physical canvas so shadow and space behind become the work itself; uniform surface and restrained gesture, composition carried by opening length interval and real depth rather than painted motif",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-dansaekhwa",
+      "category": "artist-style",
+      "styleGroup": "east-asian",
+      "zhName": "韩国单色画",
+      "enName": "Dansaekhwa",
+      "image": "/assets/parameters/artist-dansaekhwa.jpg?v=20261021-style-expansion-h",
+      "zhPrompt": "韩国单色画视觉语言，以白、米灰或土色颜料反复推、刮、压入粗纤维画布，细线和沟槽记录身体节奏，微小光影来自颜料厚度与纸纤维，不靠图案、渐变或强对比制造装饰效果",
+      "enPrompt": "Korean Dansaekhwa language repeatedly pushing scraping and pressing white off-gray or earth pigment into coarse canvas, fine lines and grooves recording bodily rhythm, subtle light arising from material thickness and fiber rather than decorative pattern gradients or strong contrast",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-zero-art",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "零点艺术光动构成",
+      "enName": "ZERO Art",
+      "image": "/assets/parameters/artist-zero-art.jpg?v=20261021-style-expansion-h",
+      "zhPrompt": "零点艺术视觉语言，以白色浮雕、重复钉点、穿孔金属或镜面模块建立序列，移动光线在表面产生真实闪烁与阴影波纹；材料和观看角度驱动变化，色彩极少，秩序精确却具有光学运动",
+      "enPrompt": "ZERO art language organizing white relief repeated pins perforated metal or mirrored modules into serial fields, moving light producing real flicker and rippling shadows; material and viewing angle drive change, with minimal color and precise yet optically kinetic order",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-neo-dada-assemblage",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "新达达现成物拼装",
+      "enName": "Neo-Dada Assemblage",
+      "image": "/assets/parameters/artist-neo-dada-assemblage.jpg?v=20261021-style-expansion-h",
+      "zhPrompt": "新达达拼装语言，把椅子碎片、旧布、报纸肌理、木板和随手涂刷组合成介于绘画与物件之间的墙面作品，真实磨损与日常用途仍可辨认，构图故意反精致并带轻微荒诞",
+      "enPrompt": "Neo-Dada assemblage language combining chair fragments worn fabric newspaper texture boards and casual paint into a wall work between painting and object, preserving recognizable use and physical wear with deliberately anti-polished composition and quiet absurdity",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-purism",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "纯粹主义静物",
+      "enName": "Purism",
+      "image": "/assets/parameters/artist-purism.jpg?v=20261021-style-expansion-h",
+      "zhPrompt": "纯粹主义绘画语言，将瓶、玻璃杯与机械物概括为圆柱、圆弧和稳定平面，重叠透明关系精确但不碎裂，奶油白、灰蓝和黑色有限色盘建立理性安静的现代秩序",
+      "enPrompt": "Purist painting language reducing bottles glassware and mechanical objects to cylinders arcs and stable planes, precise transparent overlaps without Cubist fragmentation, a limited cream gray-blue and black palette establishing calm rational modern order",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-chemigram",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "化学显影绘画",
+      "enName": "Chemigram",
+      "image": "/assets/parameters/style-chemigram.jpg?v=20261021-style-expansion-h",
+      "zhPrompt": "化学显影绘画质感，不使用相机而让显影液、定影液与防染介质直接在银盐相纸上反应，黑银池状区域沿阻隔边缘分枝、龟裂和潮汐扩散，过程痕迹不可预测但材料层次清楚",
+      "enPrompt": "camera-less chemigram process, developer fixer and resist acting directly on silver-gelatin paper, black-silver pools branching cracking and forming tide lines along chemical barriers, unpredictable process marks with clearly legible material layers",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-gum-bichromate",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "重铬酸盐树胶印相",
+      "enName": "Gum Bichromate Print",
+      "image": "/assets/parameters/style-gum-bichromate.jpg?v=20261021-style-expansion-h",
+      "zhPrompt": "重铬酸盐树胶印相质感，多次手工涂布颜料层在水彩纸上叠加，影像边缘柔软、暗部像粉彩和水彩交融，刷痕、纸纹与轻微套准差可见，色彩哑光克制而非数码滤镜",
+      "enPrompt": "gum-bichromate print character built from repeated hand-coated pigment layers on watercolor paper, soft image edges and shadows between pastel and watercolor, visible brush coating paper tooth and slight registration variation, matte restrained color rather than a digital filter",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-salt-print",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "盐纸印相",
+      "enName": "Salted Paper Print",
+      "image": "/assets/parameters/style-salt-print.jpg?v=20261021-style-expansion-h",
+      "zhPrompt": "盐纸印相摄影质感，影像嵌入哑光纸纤维，呈红褐到紫褐的银盐色调，细节柔和、大片明暗关系明确，纸白承担高光并在边缘轻微减淡，具有早期建筑与风景照片的安静气息",
+      "enPrompt": "salted-paper photographic character with the image embedded in matte fibers, reddish-brown to purplish silver tone, softly resolved detail and broad clear tonal masses, paper white carrying highlights with gentle edge fading and the quiet presence of early landscape photography",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-albumen-print",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "蛋白印相",
+      "enName": "Albumen Print",
+      "image": "/assets/parameters/style-albumen-print.jpg?v=20261021-style-expansion-h",
+      "zhPrompt": "蛋白印相摄影质感，蛋清涂层使棉纸表面略带光泽并承载细密银盐细节，肤色和背景呈温暖紫褐，亮部柔和、边缘略有衰减，可见十九世纪肖像特有的长曝光静态感",
+      "enPrompt": "albumen-print character, an egg-white coating giving cotton paper a slight gloss and carrying fine silver detail, skin and background in warm purple-brown, gentle highlights and edge falloff with the stillness of a nineteenth-century long-exposure portrait",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-autochrome",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "奥托克罗姆彩色片",
+      "enName": "Autochrome",
+      "image": "/assets/parameters/style-autochrome.jpg?v=20261021-style-expansion-h",
+      "zhPrompt": "奥托克罗姆早期彩色摄影质感，红绿蓝染色淀粉颗粒形成可见马赛克，色彩像宝石却低饱和，轮廓在散射光中轻微软化；花园、织物与肤色带有独特的彩雾和长曝光静谧感",
+      "enPrompt": "Autochrome early-color photographic character, visible mosaic grain from dyed red green and blue starch particles, jewel-like yet muted color and gently diffused contours; gardens fabric and skin carry distinctive chromatic haze and long-exposure stillness",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-bromoil-print",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "溴油印相",
+      "enName": "Bromoil Print",
+      "image": "/assets/parameters/style-bromoil-print.jpg?v=20261021-style-expansion-h",
+      "zhPrompt": "溴油印相质感，将漂白银盐照片重新以油墨手工刷敷，暗部浓厚如炭笔，亮部被纸纹与刷痕柔化，局部可见不均匀上墨和绘画式取舍，使摄影结构与版画触感同时存在",
+      "enPrompt": "bromoil-print character, a bleached silver photograph re-inked by hand with oily pigment, shadows dense like charcoal and highlights softened by paper tooth and brush marks, uneven inking and painterly selection preserving both photographic structure and print tactility",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-calotype",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "卡罗式纸负片",
+      "enName": "Calotype",
+      "image": "/assets/parameters/style-calotype.jpg?v=20261021-style-expansion-h",
+      "zhPrompt": "卡罗式纸负片摄影质感，纸纤维穿过影像产生柔软轮廓与颗粒，棕褐色调以大块明暗描述树木、建筑和天空，微小细节被材料吸收，保留十九世纪早期风景的朦胧体积感",
+      "enPrompt": "calotype paper-negative character, paper fibers passing through the image to create soft contours and grain, warm brown broad tonal masses describing trees buildings and sky while minute detail is absorbed into the support, preserving early nineteenth-century atmospheric volume",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-van-dyke-brown",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "范戴克棕印相",
+      "enName": "Van Dyke Brown Print",
+      "image": "/assets/parameters/style-van-dyke-brown.jpg?v=20261021-style-expansion-h",
+      "zhPrompt": "范戴克棕铁银印相质感，深巧克力棕阴影与奶油纸白形成温暖层次，中间调过渡直接但不堵塞，影像沉入哑光水彩纸并保留刷涂边缘，适合植物与静物的古典材料表现",
+      "enPrompt": "Van Dyke brown iron-silver print character, deep chocolate shadows and creamy paper white creating warm tonal depth, direct midtone transitions without blocking, the image sinking into matte watercolor paper with hand-coated edges, suited to botanical and still-life material detail",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
       "id": "clothing-long-sleeve",
       "category": "clothing",
       "styleGroup": "tops-sleeves",
@@ -8207,8 +8867,8 @@
       "zhName": "布朗族茶山织纹",
       "enName": "Blang Tea Mountain",
       "image": "/assets/parameters/ethnic-blang.jpg?v=20260827-scene-crop-fix",
-      "zhPrompt": "布朗族茶山与织物灵感，茶园梯坡、深色织纹和山雾氛围",
-      "enPrompt": "Blang tea-mountain textile inspired style, tea terraces, dark woven motifs, misty hills"
+      "zhPrompt": "布朗族茶山文化视觉以层叠古茶林、竹楼轮廓和深色手织布为核心，黑靛、赭红与土黄纹带形成稳重节奏，银饰与茶叶仅作局部点缀；突出西南山地生活和经纬织纹，避免混入其他民族服饰符号",
+      "enPrompt": "Blang cultural visual language centered on layered old tea forests stilt-house silhouettes and dark handwoven cloth, with black-indigo ochre red and earth-yellow bands forming a grounded rhythm and silver or tea leaves used only as accents; emphasize southwest mountain life and woven structure without borrowing unrelated ethnic costume symbols"
     },
     {
       "id": "ethnic-tajik",
@@ -8947,8 +9607,8 @@
       "zhName": "卡通赛璐璐渲染",
       "enName": "Cel Shaded",
       "image": "/assets/parameters/render-cel-shaded.jpg?v=20260827-scene-crop-fix",
-      "zhPrompt": "卡通赛璐璐渲染，清晰色块、硬边阴影和游戏动画质感",
-      "enPrompt": "cel-shaded 3D render, clean color blocks, hard-edged shadows, stylized game-animation look"
+      "zhPrompt": "卡通赛璐璐渲染把连续光照压缩成二到三档明确色阶，以硬边阴影、受控轮廓线和少量高光表现三维体积；材质靠固有色与形面转折区分，线宽随景深和朝向变化，避免软渐变、塑料反射和过密描边",
+      "enPrompt": "cel-shaded rendering compressing continuous illumination into two or three deliberate tone bands, using hard-edged shadows controlled contour lines and sparse highlights to describe 3D volume; materials separate through local color and plane changes, with line weight responding to depth and orientation, avoiding soft gradients plastic reflections and dense outlining"
     },
     {
       "id": "render-vector-illustration",
@@ -8967,8 +9627,8 @@
       "zhName": "黑白线稿",
       "enName": "Line Art",
       "image": "/assets/parameters/render-line-art.jpg?v=20260827-scene-crop-fix",
-      "zhPrompt": "黑白线稿，干净线条、无上色、适合草图或线稿输出",
-      "enPrompt": "black-and-white line art, clean outlines, no color fill, sketch or coloring-book style"
+      "zhPrompt": "黑白线稿以清楚外轮廓、结构转折线和少量疏密排线描述形体，不使用色块填充；前景线条略粗、内部细节更轻，遮挡关系和透视闭合准确，留白充足，避免重复轮廓、灰色涂抹与无法辨认的碎线",
+      "enPrompt": "black-and-white line art describing form through clear silhouettes structural turns and sparse controlled hatching with no color fill; foreground contours are slightly heavier while internal detail stays light, occlusion and perspective close correctly with generous white space, avoiding doubled outlines gray smudging and unreadable scratchy fragments"
     },
     {
       "id": "purpose-storyboard",
@@ -11178,8 +11838,8 @@
       "zhName": "光追反射",
       "enName": "Ray-Traced Reflections",
       "image": "/assets/parameters/render-ray-traced-reflections.jpg?v=20260827-purpose-crop-fix",
-      "zhPrompt": "光线追踪反射质感，镜面物体、精确反射和真实高光",
-      "enPrompt": "ray-traced reflections, mirror-like objects, accurate reflections, realistic highlights"
+      "zhPrompt": "光线追踪反射渲染，让玻璃、抛光金属、湿地面和镜面准确映出场景及遮挡关系，多次反弹产生真实亮度衰减与色彩串染；粗糙表面反射自然扩散，接触处稳定无穿帮，避免所有材质都像镜子",
+      "enPrompt": "ray-traced reflection rendering in which glass polished metal wet ground and mirrors accurately reflect scene geometry and occlusion, with realistic brightness falloff and color bleeding across multiple bounces; rough surfaces broaden reflections naturally and contact points remain stable, avoiding a mirror finish on every material"
     },
     {
       "id": "render-path-traced-gi",
@@ -11208,8 +11868,8 @@
       "zhName": "程序纹理",
       "enName": "Procedural Texture",
       "image": "/assets/parameters/render-procedural-texture.jpg?v=20260827-purpose-crop-fix",
-      "zhPrompt": "程序化复杂纹理，细密鳞片、自然噪声和高频材质细节",
-      "enPrompt": "procedural complex texture, fine scales, natural noise, high-frequency material detail"
+      "zhPrompt": "程序化纹理通过多尺度噪声、方向场和遮罩生成连续材质，鳞片、岩层、木纹或侵蚀痕迹随表面曲率与边缘自然变化；微观粗糙度和大尺度结构彼此关联，无明显平铺接缝、重复图章或与形体无关的随机噪点",
+      "enPrompt": "procedural texture built from multiscale noise directional fields and masks, allowing scales strata wood grain or erosion to respond naturally to surface curvature and edges; microscopic roughness relates to large structural patterns, with no visible tiling seams repeated stamps or random noise disconnected from the form"
     },
     {
       "id": "render-miniature-diorama",
@@ -11228,8 +11888,8 @@
       "zhName": "纸艺立体",
       "enName": "Paper Craft 3D",
       "image": "/assets/parameters/render-paper-craft-3d.jpg?v=20260827-purpose-crop-fix",
-      "zhPrompt": "纸艺立体渲染，分层纸张、折纸边缘和手工拼贴空间",
-      "enPrompt": "3D paper craft render, layered paper, folded edges, handmade collage space"
+      "zhPrompt": "纸艺立体渲染，以不同克重和颜色的纸片搭建前中后景，折线、切口、卷边和插接结构真实可见；层间投下短而柔的实体阴影，边缘略有纤维毛口，保持纸材而非塑料或光滑 3D 的触感",
+      "enPrompt": "3D paper-craft rendering built from sheets of varied weight and color across foreground midground and background, with believable folds cuts curled edges and slot joints; short soft physical shadows between layers and subtly fibrous edges, unmistakably paper rather than plastic or smooth CGI"
     },
     {
       "id": "render-holographic-projection",
@@ -11248,8 +11908,8 @@
       "zhName": "热成像",
       "enName": "Thermal Infrared",
       "image": "/assets/parameters/render-thermal-infrared.jpg?v=20260827-purpose-crop-fix",
-      "zhPrompt": "热成像渲染，紫橙伪彩、温度分布和红外相机视觉",
-      "enPrompt": "thermal infrared render, purple-orange false color, heat distribution, infrared camera look"
+      "zhPrompt": "热成像视觉按表面温度而非可见光颜色映射伪彩，冷区呈深紫蓝，中温区转红橙，高温核心接近黄白；人体、机械和环境之间显示连续热梯度、散热边缘与局部噪声，避免把普通照片简单套上彩虹渐变",
+      "enPrompt": "thermal-infrared visualization mapping false color from surface temperature rather than visible-light hue, with cold regions in deep violet-blue, mid heat in red-orange and hot cores near yellow-white; bodies machines and surroundings show continuous gradients heat spill at edges and sensor noise, not a rainbow overlay on an ordinary photograph"
     },
     {
       "id": "color-pastel-palette",
@@ -11438,8 +12098,8 @@
       "zhName": "蚀刻版画",
       "enName": "Etching Print",
       "image": "/assets/parameters/style-etching-print.jpg?v=20260827-purpose-crop-fix",
-      "zhPrompt": "蚀刻版画风格，纤细墨线、铜版压痕和温暖旧纸质地",
-      "enPrompt": "etching print style, delicate ink lines, plate impression, warm aged paper texture"
+      "zhPrompt": "铜版蚀刻视觉语言，以酸蚀形成的纤细线条、交叉排线和局部腐蚀灰调塑造体积，墨色在线槽中浓重、开放区域保持纸白；四周可见浅压版痕和温暖棉纸纤维，线密度随明暗变化",
+      "enPrompt": "copperplate etching language, acid-bitten fine lines cross-hatching and selectively bitten gray tone modeling volume, ink held densely in grooves while open areas retain paper white; a shallow plate mark and warm cotton-paper fibers remain visible, with line density following light"
     },
     {
       "id": "style-mezzotint-print",
@@ -11448,8 +12108,8 @@
       "zhName": "美柔汀版画",
       "enName": "Mezzotint Print",
       "image": "/assets/parameters/style-mezzotint-print.jpg?v=20260827-purpose-crop-fix",
-      "zhPrompt": "美柔汀版画风格，天鹅绒般暗调、细腻灰阶和柔和明暗过渡",
-      "enPrompt": "mezzotint print style, velvety dark tones, delicate grayscale, soft tonal transitions"
+      "zhPrompt": "美柔汀铜版画从遍布摇刀颗粒的天鹅绒深黑中刮亮形体，亮部由密集小点逐层抛出，灰阶连续柔软而边缘不靠硬线勾勒；保留压印凹痕、油墨浓度与纸纤维，避免数码渐变和普通铅笔排线",
+      "enPrompt": "mezzotint engraving emerging from a velvety black field roughened by rocker marks, forms burnished into light through dense granular stages, producing continuous soft tonal transitions without hard contour lines; preserve plate impression ink density and paper fiber, avoiding digital gradients or ordinary pencil hatching"
     },
     {
       "id": "style-scratchboard",
@@ -11468,8 +12128,8 @@
       "zhName": "点刻版画",
       "enName": "Stipple Engraving",
       "image": "/assets/parameters/style-stipple-engraving.jpg?v=20260827-purpose-crop-fix",
-      "zhPrompt": "点刻版画风格，密集点状阴影、细腻明暗和复古印刷感",
-      "enPrompt": "stipple engraving style, dense dot shading, delicate tones, vintage print feel"
+      "zhPrompt": "点刻版画视觉语言，仅用大小、疏密和方向受控的细点建立面部、织物和空气明暗，轮廓由点群自然聚合而非粗线围边；高光保留纸白，暗部仍能辨认单点与铜版墨压质感",
+      "enPrompt": "stipple-engraving language building faces fabric and atmospheric tone only through controlled dot size density and direction, contours emerging from dot clusters rather than heavy outlines; highlights preserve paper white while shadows retain individual marks and pressed copperplate ink character"
     },
     {
       "id": "style-embroidered-illustration",
@@ -11498,8 +12158,8 @@
       "zhName": "挂毯织物",
       "enName": "Woven Tapestry",
       "image": "/assets/parameters/style-tapestry-woven.jpg?v=20260827-purpose-crop-fix",
-      "zhPrompt": "挂毯织物风格，粗织线、经纬纹理和壁毯插画质感",
-      "enPrompt": "woven tapestry style, coarse threads, warp-and-weft texture, wall-hanging illustration feel"
+      "zhPrompt": "挂毯织物风格以可见经纬线和色纱交错构成图像，轮廓沿织造网格略呈阶梯，大片颜色由不同纱线密度和混色产生；边缘有流苏或收边，表面厚实哑光，避免把照片纹理简单覆盖在平滑插画上",
+      "enPrompt": "woven-tapestry style constructing the image through visible warp and weft interlacing, contours stepping subtly along the loom grid and broad colors formed by yarn density and optical blending; finished edges or fringe and a substantial matte surface, avoiding a flat illustration with a generic fabric overlay"
     },
     {
       "id": "style-jacquard-brocade",
@@ -11518,8 +12178,8 @@
       "zhName": "拼布贴花",
       "enName": "Quilted Applique",
       "image": "/assets/parameters/style-quilted-applique.jpg?v=20260827-purpose-crop-fix",
-      "zhPrompt": "拼布贴花风格，缝合布片、棉被压线和手作乡村质感",
-      "enPrompt": "quilted applique style, sewn fabric patches, stitched quilting lines, handmade folk texture"
+      "zhPrompt": "拼布贴花以不同织纹和印花棉布剪片叠缝成形，边缘可见针脚、包边与轻微起翘，底层填棉通过连续压线形成柔软浮雕；色块遵循布片结构而非数码渐变，保留手工误差但避免杂乱碎布堆积",
+      "enPrompt": "quilted applique assembled from cut cotton pieces with distinct weave and print, visible stitching bound edges and slight lift, while padded backing and continuous quilting create soft relief; color follows fabric construction rather than digital gradients, retaining handmade variation without becoming a chaotic pile of scraps"
     },
     {
       "id": "style-gold-thread-embroidery",
@@ -11548,8 +12208,8 @@
       "zhName": "绳结纤维艺术",
       "enName": "Macrame Fiber Art",
       "image": "/assets/parameters/style-macrame-fiber-art.jpg?v=20260827-purpose-crop-fix",
-      "zhPrompt": "绳结纤维艺术风格，编结棉绳、流苏和天然手工纤维质感",
-      "enPrompt": "macrame fiber art style, knotted cotton cords, fringes, natural handmade fiber texture"
+      "zhPrompt": "绳结纤维艺术以天然棉绳的平结、卷结、网眼和垂坠流苏组织图形，粗细绳股、张力与重力方向清楚，结点形成真实厚度和投影；色彩保持原麻、米白或少量植物染，避免塑料绳光泽与无法编织的封闭形状",
+      "enPrompt": "macrame fiber art organizing form through square knots half hitches open mesh and hanging fringe in natural cotton cord, with clear strand thickness tension gravity and real knot depth casting soft shadows; favor raw flax ivory or limited plant dye, avoiding plastic shine and impossible closed shapes that could not be tied"
     },
     {
       "id": "style-ceramic-tile-mosaic",
@@ -12744,8 +13404,8 @@
       "zhName": "清透自然",
       "enName": "Fresh Natural",
       "image": "/assets/parameters/grading-fresh-natural.jpg",
-      "zhPrompt": "后期调色清透自然，白平衡准确，色彩干净不过度",
-      "enPrompt": "fresh natural color grade, accurate white balance, clean restrained colors",
+      "zhPrompt": "清透自然后期，先校正白平衡与曝光，再轻提阴影、压住刺眼高光并清除综合色偏；植物、天空和肤色各自保持真实分离，黑位不漂灰，饱和度克制，像光线良好的原生照片而不是滤镜",
+      "enPrompt": "fresh natural color grade with corrected white balance and exposure, gently opened shadows, controlled highlights and removed color cast; foliage sky and skin stay naturally separated, blacks remain anchored and saturation restrained, resembling a well-lit original rather than a filter",
       "negative": [
         "color banding",
         "muddy colors",
@@ -12840,8 +13500,8 @@
       "zhName": "负片胶片",
       "enName": "Negative Film",
       "image": "/assets/parameters/grading-negative-film.jpg",
-      "zhPrompt": "负片胶片调色，肤色厚实，暗部带绿色或青色倾向",
-      "enPrompt": "negative film-inspired color grade, rich skin tones, subtle green-cyan shadows",
+      "zhPrompt": "彩色负片扫描质感，肤色呈厚实的蜜桃与琥珀中间调，暗部轻微偏青绿，亮部有柔和肩部而不过曝；颗粒随密度变化、红黄不过饱和，并保留扫描底片常见的温暖空气感",
+      "enPrompt": "color-negative scan character with substantial peach and amber skin midtones, subtly cyan-green shadows and a soft highlight shoulder without clipping; density-dependent grain, restrained reds and yellows, and the warm atmospheric separation of a carefully scanned film negative",
       "negative": [
         "color banding",
         "muddy colors",
@@ -12952,8 +13612,8 @@
       "zhName": "旁轴纪实",
       "enName": "Rangefinder Documentary",
       "image": "/assets/parameters/grading-rangefinder-documentary.jpg",
-      "zhPrompt": "旁轴纪实调色，自然环境光，街头真实感，色彩克制",
-      "enPrompt": "rangefinder documentary color grade, natural ambient light, restrained street realism",
+      "zhPrompt": "旁轴纪实后期保留自然环境光与现场综合色偏，以扎实黑位、细腻中间调和适度微反差呈现街头瞬间；肤色、招牌与建筑材质不过度提纯，颗粒轻微，避免商业棚拍般的洁净与夸张锐化",
+      "enPrompt": "rangefinder documentary grade preserving available light and believable ambient color casts, with anchored blacks, nuanced midtones and restrained microcontrast for candid street moments; skin signs and architecture remain naturally imperfect, with fine grain and no studio-clean polish or aggressive sharpening",
       "negative": [
         "color banding",
         "muddy colors",
@@ -13048,8 +13708,8 @@
       "zhName": "航拍HDR",
       "enName": "Aerial HDR",
       "image": "/assets/parameters/grading-drone-hdr.jpg",
-      "zhPrompt": "航拍HDR后期，亮部和暗部细节都清楚，空间层次强",
-      "enPrompt": "aerial HDR color grade, clear highlight and shadow detail, strong spatial depth",
+      "zhPrompt": "航拍 HDR 后期，合并动态范围以保留云层亮部、建筑暗面与地表纹理，局部对比随距离递减并通过轻微去雾拉开空间；颜色保持自然，屋顶边缘无光晕，阴影不过度提亮成灰",
+      "enPrompt": "aerial HDR grade balancing cloud highlights shaded facades and ground texture, with distance-aware local contrast and restrained dehaze for depth; natural color, no halos around rooftops and no gray over-lifted shadows",
       "negative": [
         "color banding",
         "muddy colors",
@@ -13096,8 +13756,8 @@
       "zhName": "城市航拍清透",
       "enName": "Clean Urban Aerial",
       "image": "/assets/parameters/grading-urban-aerial-clean.jpg",
-      "zhPrompt": "城市航拍清透调色，建筑边缘清晰，灰蓝色不过脏",
-      "enPrompt": "clean urban aerial color grade, crisp building edges, controlled gray-blue tones",
+      "zhPrompt": "城市航拍清透后期，校正雾霾造成的黄灰偏色，以中性灰蓝建立远近层次，建筑立面和道路边缘清晰但不锐化出白边；玻璃、绿化和混凝土保持独立色相，天空不过分染蓝",
+      "enPrompt": "clean urban-aerial grade correcting yellow-gray haze into neutral blue-gray distance, crisp facades and roads without sharpening halos; glass vegetation and concrete keep distinct hues while the sky remains believable rather than excessively blue",
       "negative": [
         "color banding",
         "muddy colors",
@@ -13112,8 +13772,8 @@
       "zhName": "青橙电影调",
       "enName": "Teal Orange Film Grade",
       "image": "/assets/parameters/grading-teal-orange-cinema.jpg",
-      "zhPrompt": "青橙电影调色，肤色偏暖，阴影偏青，商业电影质感",
-      "enPrompt": "teal-and-orange cinematic color grade, warm skin tones, teal shadows, commercial film look",
+      "zhPrompt": "青橙电影调色将肤色与关键暖光稳定在自然橙金区间，把环境阴影和远景推向克制青蓝，并用中性过渡区维持材质分离；高光柔和滚降、黑位保留纹理，避免整幅套色、荧光肤色和廉价高饱和感",
+      "enPrompt": "teal-and-orange cinematic grade keeping skin and motivated warm light in a natural amber range while shifting environmental shadows and distance toward restrained teal-blue, with neutral transition zones preserving material separation; smooth highlight rolloff and textured blacks, avoiding blanket tinting neon skin and cheap oversaturation",
       "negative": [
         "color banding",
         "muddy colors",
@@ -13128,8 +13788,8 @@
       "zhName": "商业大片高反差",
       "enName": "Blockbuster Contrast",
       "image": "/assets/parameters/grading-blockbuster-contrast.jpg",
-      "zhPrompt": "商业大片高反差调色，黑位深，局部高光有冲击力",
-      "enPrompt": "blockbuster high-contrast color grade, deep blacks, punchy controlled highlights",
+      "zhPrompt": "商业大片高反差调色，以稳定深黑、受控高光和有力中间调塑造体积，主体获得冷暖分离与局部轮廓光，背景适度降饱和；保留肤色和暗部纹理，避免全局压黑、青橙套色与高光剪切",
+      "enPrompt": "blockbuster contrast grade using anchored blacks controlled highlights and forceful midtones to model volume, with selective warm-cool separation and rim accents on the subject while the background is restrained; protect skin and shadow texture, avoiding crushed blacks generic teal-orange tint and clipped highlights",
       "negative": [
         "color banding",
         "muddy colors",
@@ -13144,8 +13804,8 @@
       "zhName": "电影低反差",
       "enName": "Filmic Low Contrast",
       "image": "/assets/parameters/grading-filmic-low-contrast.jpg",
-      "zhPrompt": "电影低反差调色，层次柔和，暗部不死黑，质感高级",
-      "enPrompt": "filmic low-contrast color grade, soft tonal layers, lifted shadows, premium finish",
+      "zhPrompt": "电影低反差曲线，黑位略抬但仍有锚点，高光平缓滚降，中间调层层分离；综合色彩轻微去饱和，肤色和关键道具保持局部纯度，画面柔和却不雾白，不用统一灰滤镜掩盖材质",
+      "enPrompt": "filmic low-contrast curve with gently raised yet anchored blacks, smooth highlight roll-off and separated midtone layers; overall color is slightly muted while skin and key props retain local purity, soft without milky haze or a blanket gray filter that erases materials",
       "negative": [
         "color banding",
         "muddy colors",
@@ -13288,8 +13948,8 @@
       "zhName": "交叉冲洗",
       "enName": "Cross Process",
       "image": "/assets/parameters/grading-cross-process.jpg",
-      "zhPrompt": "交叉冲洗感调色，色偏大胆，对比强，实验胶片氛围",
-      "enPrompt": "cross-process color grade, bold color shifts, strong contrast, experimental film mood",
+      "zhPrompt": "交叉冲洗后期模拟反转片使用负片药液产生的非线性色偏：阴影偏青绿或蓝紫，高光偏黄绿，红色局部跳出，中间调对比突然转折；保留胶片颗粒与轻微曝光不均，避免简单双色滤镜和全面死黑",
+      "enPrompt": "cross-process grade simulating slide film developed in negative chemistry, with nonlinear color crossover: cyan-green or violet shadows, yellow-green highlights, selective red jumps and abrupt midtone contrast; retain film grain and slight exposure irregularity while avoiding a simple two-color filter or globally crushed blacks",
       "negative": [
         "color banding",
         "muddy colors",
@@ -13384,8 +14044,8 @@
       "zhName": "旅行明信片",
       "enName": "Travel Postcard",
       "image": "/assets/parameters/grading-travel-postcard.jpg",
-      "zhPrompt": "旅行明信片调色，天空清亮，局部对比增强，色彩讨喜",
-      "enPrompt": "travel postcard color grade, clear sky, enhanced local contrast, pleasing colors",
+      "zhPrompt": "旅行明信片式后期，校正地标垂直线与天空综合色偏，适度提升蓝天、植被和暖色建筑的分离度，以清晰局部对比突出天气与地点特征；保持自然阴影和空气透视，避免 HDR 光晕与旅游宣传式过饱和",
+      "enPrompt": "travel-postcard grade correcting landmark verticals and sky cast, moderately separating blue sky vegetation and warm architecture with clear local contrast that communicates place and weather; preserve natural shadows and aerial perspective, avoiding HDR halos and tourist-brochure oversaturation",
       "negative": [
         "color banding",
         "muddy colors",
@@ -13400,8 +14060,8 @@
       "zhName": "哑光社媒滤镜",
       "enName": "Matte Social Filter",
       "image": "/assets/parameters/grading-matte-social.jpg",
-      "zhPrompt": "哑光社媒滤镜，黑位抬高，饱和度适中，柔和耐看",
-      "enPrompt": "matte social-media filter, lifted blacks, moderate saturation, soft pleasing finish",
+      "zhPrompt": "哑光社媒后期，以柔和 S 曲线轻抬最深黑位、压低刺眼白点，并保持中间调清楚；主色统一但不过度褪色，肤色、食物和产品仍有真实质感，颗粒极细，缩略图观看时不会灰成一片",
+      "enPrompt": "matte social-media grade with a gentle S-curve, slightly lifted deepest blacks and softened white points while keeping midtones clear; unified color without excessive fading, believable skin food and product texture, and fine grain that does not collapse into gray at thumbnail size",
       "negative": [
         "color banding",
         "muddy colors",
@@ -13896,8 +14556,8 @@
       "zhName": "姿态挺拔修正",
       "enName": "Posture Correction",
       "image": "/assets/parameters/retouch-posture-correction.jpg",
-      "zhPrompt": "人物修图让姿态更挺拔，改善圆肩含胸感，保持动作自然",
-      "enPrompt": "portrait retouch to improve posture, reduce rounded shoulders, keep pose natural",
+      "zhPrompt": "人物姿态修正仅轻调肩颈轴线、圆肩和含胸幅度，让脊柱与头部重心更舒展；衣领、发丝、背景直线和肢体比例同步保持连续，保留原动作、体型与个人特征，不把肩部机械拉平或拉长躯干",
+      "enPrompt": "portrait posture correction limited to subtle shoulder-neck alignment, rounded shoulders and chest openness so the spine and head balance feel relaxed; preserve clothing seams hair background lines limb proportion original action body type and identity, avoiding mechanically level shoulders or an elongated torso",
       "negative": [
         "color banding",
         "muddy colors",
@@ -14072,8 +14732,8 @@
       "zhName": "森林深绿调",
       "enName": "Deep Forest Green",
       "image": "/assets/parameters/grading-forest-deep-green.jpg",
-      "zhPrompt": "森林深绿调色，绿色层次丰富，暗部干净，空气湿润自然",
-      "enPrompt": "deep forest green grade, rich green layers, clean shadows, humid natural atmosphere",
+      "zhPrompt": "森林深绿调色以黄绿、苔绿和冷杉绿区分近中远植被，压低杂乱荧光绿并保持叶片湿润高光；雾气随距离转为青灰，林下暗部深而不堵塞，避免统一染绿和过度去雾破坏空气层次",
+      "enPrompt": "deep-forest green grade separating near middle and distant foliage through yellow-green moss and fir tones, suppressing fluorescent greens while retaining moist leaf highlights; haze shifts toward blue-gray with distance and forest-floor shadows stay deep but open, avoiding blanket green tint or excessive dehaze that destroys atmosphere",
       "negative": [
         "color banding",
         "muddy colors",
@@ -14120,8 +14780,8 @@
       "zhName": "雨街胶片感",
       "enName": "Rainy Street Film",
       "image": "/assets/parameters/grading-rainy-street-film.jpg",
-      "zhPrompt": "雨街胶片调色，湿地反光、低饱和霓虹、暗部有颗粒和电影感",
-      "enPrompt": "rainy street film grade, wet reflections, muted neon, grainy cinematic shadows",
+      "zhPrompt": "雨街胶片调色，以湿地倒影承接琥珀、青蓝和少量洋红霓虹，环境综合色偏冷但人物肤色不被污染；高光在雨雾中柔和扩散，暗部保留颗粒与路面纹理，避免荧光色溢出和纯黑死角",
+      "enPrompt": "rainy-street film grade using wet reflections to carry amber cyan-blue and restrained magenta neon, with a cool environment that does not contaminate skin; highlights bloom softly through rain haze and shadows retain grain and pavement texture, avoiding fluorescent spill and dead black corners",
       "negative": [
         "color banding",
         "muddy colors",
@@ -15217,8 +15877,8 @@
       "zhName": "陶土材质渲染",
       "enName": "Clay Material Render",
       "image": "/assets/parameters/render-clay-material.jpg",
-      "zhPrompt": "陶土材质渲染，哑光颗粒、手捏质感和柔和实体体积",
-      "enPrompt": "clay material render, matte grain, handmade tactile surface, soft solid volume",
+      "zhPrompt": "陶土材质渲染，表面保留手捏凹痕、指纹、细砂颗粒和略不均匀的哑光吸光特性，转折处体积柔和厚实；不同部件像真实泥料连接而非塑料模型，避免镜面高光与过分锋利边缘",
+      "enPrompt": "clay-material rendering with hand-pinched dents fingerprints fine grit and subtly uneven matte light absorption, soft substantial volume through turns; components join like real clay rather than molded plastic, avoiding mirror highlights and overly sharp edges",
       "negative": [
         "low detail texture",
         "messy material",
@@ -21146,8 +21806,8 @@
       "zhName": "树脂潮玩质感",
       "enName": "Resin Toy Texture",
       "image": "/assets/parameters/render-resin-toy.png?v=20260827-character-crop-fix",
-      "zhPrompt": "树脂潮玩质感，半哑光表面、圆润高光和精致模型感",
-      "enPrompt": "resin designer-toy texture, semi-matte surface, rounded highlights, polished model feel",
+      "zhPrompt": "树脂潮玩渲染呈现厚实浇注体、圆润倒角和半哑光涂装，局部高光沿曲面柔和移动，细小接缝与喷涂层次可见；五官和配件像真实收藏模型装配，避免空心塑料感、油腻镜面和皮肤毛孔写实化",
+      "enPrompt": "resin designer-toy rendering with substantial cast volume rounded bevels and semi-matte paint, soft highlights traveling across curves and subtle seams or sprayed layers remaining visible; face and accessories feel like assembled collectible parts, avoiding hollow plastic shine greasy mirrors or realistic skin pores",
       "negative": []
     },
     {

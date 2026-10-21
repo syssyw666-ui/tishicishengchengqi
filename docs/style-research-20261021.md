@@ -57,3 +57,20 @@
 This pass filled distinct gaps that were not represented by the existing Chinese heritage, printmaking, textile, and regional folk-art entries. It adds 20 non-overlapping visual languages: Bogolan mudcloth, Kuba raffia cloth, Suzani embroidery, Palestinian Tatreez, Japanese boro, Japanese shibori, Peruvian retablo, Andean weaving, Aboriginal bark-painting inspiration, Javanese wayang kulit, Balinese Kamasan painting, Thai Benjarong porcelain, Burmese lacquerware, Persian khatam marquetry, pietra dura inlay, Yoruba Adire, Egyptian Khayamiya applique, Pennsylvania Fraktur, Japanese kintsugi, and Plains ledger-art inspiration.
 
 The prompts describe visible construction, material, palette, edge behavior, and compositional rhythm rather than copying a named artifact. Culturally sensitive entries explicitly avoid reproducing sacred or tribe-specific symbols. All 20 references were newly generated in two contact sheets, measured against their actual panel boundaries, cropped to unique 960 x 540 assets, and visually audited to prevent neighboring-panel bleed.
+
+## 第七轮补充
+
+- 以 GitHub 的 [AI Art Style Prompt Library](https://github.com/bthnbdk/ai-art-style-prompts)、[handraw-style](https://github.com/yang0/handraw-style) 和 [story-picture](https://github.com/songxiaopeng529/story-picture) 为外部候选清单，先与本地 1493 项按名称、媒介机制和生成作用交叉检查；已存在的艺术装饰、构成主义、民间织物、常见摄影和动漫方向均未重复增加。
+- 补充城市与区域视觉：秘鲁奇查荧光海报、肯尼亚马塔图车身彩绘、使命区手记绘画、穆德哈尔建筑纹饰、布列塔尼七兄弟派。
+- 补充海报与复制媒介：物件海报风、波兰海报学派、苏茨艺术、复印机艺术、邮寄艺术拼贴和铂钯印相。每项均按平面结构、油墨或纸张行为区分，不以近义标题换皮。
+- 补充区域工艺：代尔夫特蓝陶、马乔刺绣、伊兹尼克陶瓷、帕列赫漆画、日本莳绘、韩国丹青、马赛珠饰、祖鲁珠饰和科霍戈手绘布；涉及民族传统的提示词只描述可见材料与构造，不复制特定神圣符号。
+- 扩写 20 个原本过短的调色、渲染、动画和版画提示词，补充色调曲线、材质响应、空间组织与失败边界，使不同选项产生可观察的差异。
+- 20 张参考图全部重新生成，按真实拼图边界单独裁切为 960 × 540，并针对白色分隔线进行了二次裁剪审查。
+
+## 第八轮补充
+
+- 继续参考 GitHub 的 [AI Art Style Prompt Library](https://github.com/bthnbdk/ai-art-style-prompts)、[handraw-style](https://github.com/yang0/handraw-style) 与 [story-picture](https://github.com/songxiaopeng529/story-picture)，同时对照 [Alternative Process Reference](https://github.com/peva3/Lightroom-Presets/blob/main/docs/alternative-process.md) 核对历史摄影工艺。候选项先与本地目录按名称、视觉机制和适用结果三层去重。
+- 补充现代艺术史断层：新现实主义、新具象、阿旺桥画派、青年波兰、顶峰主义、捷克立体主义、七骰社、空间主义、韩国单色画、ZERO 艺术、新达达拼装与纯粹主义。提示词聚焦构图、材料和表面行为，不要求复刻某一件既有作品。
+- 补充独立历史摄影工艺：化学显影绘画、重铬酸盐树胶印相、盐纸印相、蛋白印相、奥托克罗姆、溴油印相、卡罗式纸负片和范戴克棕印相。各项按感光材料、承印纸、颗粒与综合色调明确区分，避免全部退化成同一种棕色旧照片滤镜。
+- 扩写 20 个原本过短的动画、东方绘画、渲染、调色、民族织纹和纤维工艺提示词，明确可观察的线条、色阶、反射、温度映射、织造结构与失败边界。
+- 20 张新增参考图均为独立生成内容，依据拼图实际分隔边界裁切为 960 × 540；完成尺寸、哈希唯一性和相邻画面串入检查。
