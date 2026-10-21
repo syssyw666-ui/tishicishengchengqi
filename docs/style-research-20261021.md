@@ -35,3 +35,25 @@
 - 补充西方艺术史中视觉机制明确且库内缺失的方向：洛可可、新古典主义、拉斐尔前派、荷兰黄金时代静物、哈德逊河画派、巴比松画派、象征主义、魔幻现实主义、欧普艺术、硬边抽象、塔希主义、科布拉画派、贫穷艺术、奥菲主义、漩涡主义、光线主义、具体派行动绘画与物派材料装置。
 - 补充两个跨媒介设计方向：非洲未来主义社论与 Frutiger Aero 生态数码视觉。前者强调历史文化和未来技术的编辑式融合，后者强调千禧年代透明、生态、乐观的早期数码质感。
 - 扩写 20 个原本偏短的后期调色提示词，增加色温、黑白位、中间调、肤色保护、材质表现和适用场景，避免多个调色项目只产生“加饱和或加冷暖”的同质结果。
+
+## 第四轮补充
+
+- 参考 [imagegen-skills 的风格菜单](https://github.com/veryCoolTimo/imagegen-skills/blob/main/skills/image-prompt/references/styles.md)、[MUJI Style Skill](https://github.com/yanliudesign/muji-style-skill) 与 [baoyu-comic](https://github.com/sdoaiya/skills/tree/master/baoyu-comic) 的视觉拆解方式，继续以媒介、线条、色盘、空间密度和材料证据定义风格，而不是只堆叠风格名称。
+- GitHub 清单中的水彩、油画、素描、线稿、水墨、赛博朋克、动漫、装饰艺术、低多边形、蒸汽波、欧漫清线、漫画网点和常见电影风格均已存在，因此未重复新增。
+- 补充历史图像体系：拜占庭圣像画、彩绘手抄本、古罗马马赛克、奥斯曼细密画、莫卧儿细密画、拉贾斯坦细密画与埃塞俄比亚教堂画。
+- 补充全球民艺与纺织体系：海地朴素画、巴西科尔德尔木刻、维乔尔珠饰、肯特织布、印尼蜡染、韩式包袱布、日式型染、印度法德卷轴画、越南东湖版画、菲律宾奥基尔纹饰与乌克兰彩蛋蜡染。
+- 补充独立媒介：蜡画层染、衍纸卷条、擦印肌理拼贴和刮擦显纹绘画。
+- 删除与“光追反射”作用高度重合的泛化“光线追踪”项目；扩写 19 个最短的动画、东方绘画、电影、渲染和天气特效提示词，使其描述可见结构而非抽象形容词。
+
+## 第五轮补充
+
+- 参考 [Higgsfield cartoon Skill 的 Rubber Hose 规范](https://github.com/cfongai/higgsfield-content-pipeline/blob/main/skills/seedance/03-cartoon/SKILL.md) 与 [aesthetic-frontend-skills 的视觉词典](https://github.com/alexiseverage/aesthetic-frontend-skills)，检查早期动画、现代设计和艺术史画派的断层。
+- 补充风格主义、浪漫主义、学院派历史画、自然主义、唯美主义、维也纳分离派、纳比派、新客观主义、垃圾箱画派、美国地域主义、抒情抽象、极简主义绘画、动态艺术、光与空间艺术、低眉波普超现实以及图案与装饰运动。
+- 补充橡皮管复古动画、中世纪现代平涂动画、纸浆冒险杂志插画与复古科幻平装封面。现有“中世纪现代社论插画”“装饰艺术”“合成波”只保留原项目，未以近义名称重复建立。
+- 扩写 20 个原本最短的风格、渲染与调色提示词，为合成波、东方绘画、电影类型、版画、彩色玻璃、纸艺、实时渲染和相机调色补充可见结构与失败边界。
+
+## Expansion F: global textile and heritage craft coverage
+
+This pass filled distinct gaps that were not represented by the existing Chinese heritage, printmaking, textile, and regional folk-art entries. It adds 20 non-overlapping visual languages: Bogolan mudcloth, Kuba raffia cloth, Suzani embroidery, Palestinian Tatreez, Japanese boro, Japanese shibori, Peruvian retablo, Andean weaving, Aboriginal bark-painting inspiration, Javanese wayang kulit, Balinese Kamasan painting, Thai Benjarong porcelain, Burmese lacquerware, Persian khatam marquetry, pietra dura inlay, Yoruba Adire, Egyptian Khayamiya applique, Pennsylvania Fraktur, Japanese kintsugi, and Plains ledger-art inspiration.
+
+The prompts describe visible construction, material, palette, edge behavior, and compositional rhythm rather than copying a named artifact. Culturally sensitive entries explicitly avoid reproducing sacred or tribe-specific symbols. All 20 references were newly generated in two contact sheets, measured against their actual panel boundaries, cropped to unique 960 x 540 assets, and visually audited to prevent neighboring-panel bleed.

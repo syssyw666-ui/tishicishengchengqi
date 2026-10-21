@@ -128,12 +128,11 @@ export const demographicParameters: PromptParameter[] = [
   param("lighting", "lighting-projector", "dramatic", "投影光", "Projector Light", "投影光照明，画面带投影图案、切割光斑和戏剧层次", "projector lighting, projected patterns, cut light patches, dramatic layers", lightingImage),
   param("lighting", "lighting-stage-spotlight", "dramatic", "舞台追光", "Stage Spotlight", "舞台追光，主体被强光圈定，背景进入暗部", "stage spotlight, subject isolated by strong cone of light, background falling into darkness", lightingImage),
 
-  param("render", "render-ray-traced", "realism", "光线追踪", "Ray Traced", "光线追踪渲染，反射、折射和阴影物理准确", "ray-traced rendering, physically accurate reflections refractions and shadows", renderImage),
   param("render", "render-resin-toy", "stylized", "树脂潮玩质感", "Resin Toy Texture", "树脂潮玩质感，半哑光表面、圆润高光和精致模型感", "resin designer-toy texture, semi-matte surface, rounded highlights, polished model feel", renderImage),
 
-  param("visual-effect", "visual-embers", "elemental", "火星余烬", "Embers", "火星余烬漂浮，橙红粒子和热空气氛围", "floating embers, orange-red particles and warm heated atmosphere"),
-  param("visual-effect", "visual-snowfall", "elemental", "飘雪", "Snowfall", "飘雪效果，前中后景雪粒层次和冷空气感", "falling snow effect, layered snow particles across foreground midground and background"),
-  param("visual-effect", "visual-rain-streaks", "elemental", "雨丝", "Rain Streaks", "雨丝效果，斜向雨线、湿润反光和动态天气感", "rain streak effect, diagonal rain lines, wet reflections and dynamic weather mood"),
+  param("visual-effect", "visual-embers", "elemental", "火星余烬", "Embers", "火星余烬特效，大小不一的橙红炽热颗粒沿上升气流漂移，近景少量虚化、中景轮廓清晰，亮度随冷却递减并伴随轻微热浪扭曲", "ember effect with varied orange-red glowing particles rising on convection, a few defocused in foreground and crisp through midground, brightness fading as they cool with subtle heat distortion"),
+  param("visual-effect", "visual-snowfall", "elemental", "飘雪", "Snowfall", "飘雪特效，前景大雪片轻微运动虚化，中景雪粒清楚，远景细雪形成空气纵深；积雪和受光方向与场景一致，不以白点均匀铺满画面", "snowfall effect with larger softly motion-blurred foreground flakes, crisp midground snow and fine distant particles building depth, accumulation and lighting consistent with the scene rather than uniform white dots"),
+  param("visual-effect", "visual-rain-streaks", "elemental", "雨丝", "Rain Streaks", "雨丝特效，受风影响的斜向细雨在不同景深中呈现长短变化，强光处雨线更清楚，地面形成湿润反射与细小溅水，人物和主体轮廓仍保持可读", "rain-streak effect with wind-driven diagonal drops varying in length across depth, more visible near light sources, wet-ground reflections and fine splashes while keeping subjects readable"),
 
   param("purpose", "purpose-sticker-sheet", "social", "贴纸套组", "Sticker Sheet", "贴纸套组用途，多个表情或姿态，白边清晰，独立可裁切", "sticker sheet purpose, multiple expressions or poses, clear white borders, individually cuttable", layoutImage),
   param("purpose", "purpose-ui-mockup", "design", "界面样机", "UI Mockup", "界面样机用途，屏幕内容清楚、层级整齐、适合产品展示", "UI mockup purpose, clear screen content, organized hierarchy, suitable for product presentation", layoutImage),
