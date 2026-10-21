@@ -6,9 +6,10 @@ from django.test import SimpleTestCase
 from PIL import Image
 
 
-ROOT = Path(__file__).resolve().parents[2]
-SEED_PATH = ROOT / "backend" / "catalog_seed.json"
-SNAPSHOT_PATH = ROOT / "backend" / "content" / "data" / "style_expansion_20261021.json"
+BACKEND_ROOT = Path(__file__).resolve().parents[1]
+PROJECT_ROOT = BACKEND_ROOT.parent if BACKEND_ROOT.name == "backend" else BACKEND_ROOT
+SEED_PATH = BACKEND_ROOT / "catalog_seed.json"
+SNAPSHOT_PATH = BACKEND_ROOT / "content" / "data" / "style_expansion_20261021.json"
 
 
 class StyleExpansionTests(SimpleTestCase):
@@ -35,10 +36,13 @@ class StyleExpansionTests(SimpleTestCase):
         self.assertNotIn("effect-hologram", ids)
 
     def test_new_style_assets_are_unique_widescreen_images(self):
+        asset_root = PROJECT_ROOT / "public"
+        if not asset_root.is_dir():
+            self.skipTest("Frontend assets are not included in the standalone backend repository.")
         new_rows = [row for row in self.snapshot["parameters"] if "20261021-style-expansion" in row["image"]]
         hashes = set()
         for row in new_rows:
-            asset = ROOT / "public" / row["image"].split("?", 1)[0].lstrip("/")
+            asset = asset_root / row["image"].split("?", 1)[0].lstrip("/")
             self.assertTrue(asset.is_file(), row["id"])
             with Image.open(asset) as image:
                 self.assertEqual(image.size, (960, 540), row["id"])
