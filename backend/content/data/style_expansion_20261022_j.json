@@ -1,0 +1,617 @@
+{
+  "parameters": [
+    {
+      "id": "style-modern-webtoon",
+      "category": "style",
+      "styleGroup": "anime",
+      "zhName": "现代条漫",
+      "enName": "Modern Webtoon",
+      "image": "/assets/parameters/style-modern-webtoon.jpg",
+      "zhPrompt": "现代条漫视觉语言，以粗细稳定的数字线稿、清爽平涂和少量柔和阴影保持移动端小屏可读性；人物表情与动作轮廓优先，背景按镜头重点简化并使用纵向节奏，色彩明快但不堆叠复杂纹理，避免纸质漫画网点和过度写实渲染",
+      "enPrompt": "modern webtoon visual language using controlled digital line weight clean flat color and a small amount of soft shading for mobile-screen readability; expressive faces and action silhouettes take priority while backgrounds simplify according to shot focus and vertical pacing, with bright coherent color but no paper halftone texture or excessive photoreal rendering"
+    },
+    {
+      "id": "style-shadow-puppet",
+      "category": "style",
+      "styleGroup": "eastern",
+      "zhName": "皮影戏",
+      "enName": "Shadow Puppet",
+      "image": "/assets/parameters/style-shadow-puppet.jpg",
+      "zhPrompt": "皮影戏视觉语言，以关节铆接的侧身人物、镂空服饰和细杆控制结构形成扁平剪影；染色皮革在幕布背光下呈半透明红黄蓝层次，边缘有手工刀刻与轻微翘曲，动作遵循关节转动，不画成普通黑色纸剪影",
+      "enPrompt": "shadow-puppet visual language using articulated riveted profile figures pierced costume details and visible rod-controlled construction as flat silhouettes; dyed leather becomes translucent red yellow and blue under screen backlight, with hand-cut edges slight warping and joint-led motion, distinct from ordinary solid-black paper cutouts"
+    },
+    {
+      "id": "style-southeast-asian-mural",
+      "category": "style",
+      "styleGroup": "eastern",
+      "zhName": "东南亚寺庙壁画",
+      "enName": "SE Asian Mural",
+      "image": "/assets/parameters/style-southeast-asian-mural.jpg",
+      "zhPrompt": "东南亚寺庙壁画视觉语言，以连续叙事、侧身人物、层叠热带建筑和卷叶边饰组织平面空间；矿物红、靛蓝、墨黑与金色细线在灰泥上形成明确分区，墙面有粉化、细裂和局部磨损，但不复刻具体宗教人物或现存壁画",
+      "enPrompt": "Southeast Asian temple-mural visual language organizing flat space through continuous narrative profile figures layered tropical architecture and scrolling foliage borders; mineral red indigo black and fine gold lines create clear zones on plaster with chalking hairline cracks and selective wear, without copying a named religious figure or an existing mural composition"
+    },
+    {
+      "id": "style-holographic-iridescent",
+      "category": "style",
+      "styleGroup": "design-retro",
+      "zhName": "镭射虹彩",
+      "enName": "Holographic",
+      "image": "/assets/parameters/style-holographic-iridescent.jpg",
+      "zhPrompt": "镭射虹彩视觉以衍射薄膜和多层干涉为依据，视角变化处出现受控的青、品红、金与紫色带，基底仍能辨认金属、透明塑料或晶体结构；高光锐利、暗部保持中性，彩虹只沿曲率和反射方向移动，避免全画面随意渐变或荧光雾",
+      "enPrompt": "holographic iridescent visual language grounded in diffraction film and thin-layer interference, producing controlled cyan magenta gold and violet bands where viewing angle changes while the metal transparent polymer or crystal substrate remains legible; highlights stay sharp and shadows neutral, with color following curvature and reflection rather than an arbitrary full-frame rainbow gradient or neon haze"
+    },
+    {
+      "id": "artist-ajrakh",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "阿杰拉克木版染印",
+      "enName": "Ajrakh Block Print",
+      "image": "/assets/parameters/artist-ajrakh.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "阿杰拉克木版染印语言，以靛蓝与茜草红为主色，用多轮雕版、防染、媒染和套印构成密集玫瑰花结、星形与几何网格；白色细线来自防染留白，重复单元保留轻微错版、染料渗化和棉布纤维，不简化为数码无缝纹样",
+      "enPrompt": "Ajrakh block-print language built through repeated carved-block registration, resist and mordant dyeing in indigo and madder red; dense rosettes stars and geometric lattices are separated by fine resist-white lines, retaining slight misregistration dye feathering and cotton fiber instead of becoming a frictionless digital seamless pattern",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-Indian ornament"
+      ]
+    },
+    {
+      "id": "artist-dabu-resist",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "达布泥浆防染",
+      "enName": "Dabu Mud Resist",
+      "image": "/assets/parameters/artist-dabu-resist.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "达布泥浆防染以黏土、树胶和糠屑形成厚薄不均的防染层，再经靛蓝浸染显出米白裂纹、块状花叶与几何边界；手盖木版的压力差、泥浆龟裂和染缸深浅真实可见，避免变成普通蓝白印花或蜡染裂纹滤镜",
+      "enPrompt": "Dabu mud-resist textile language using an uneven clay gum and chaff paste before indigo immersion, leaving warm un-dyed cracks blocky foliage and geometric boundaries; hand-stamped pressure variation paste fissures and vat-depth shifts remain visible, distinct from generic blue-and-white printing or a batik crackle filter",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-Indian ornament"
+      ]
+    },
+    {
+      "id": "artist-rogan-textile",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "罗甘油彩织物画",
+      "enName": "Rogan Textile Painting",
+      "image": "/assets/parameters/artist-rogan-textile.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "罗甘织物画以加热蓖麻油调制的黏稠颜料拉出悬浮细线，在深色布面折印或对称展开原创树形、花叶和鸟形纹样；线条微微隆起、转折连续并带手拉粗细差，宝石色饱满但不出现塑料描边或机器刺绣针脚",
+      "enPrompt": "Rogan textile-painting language drawing suspended strands of viscous castor-oil pigment onto dark cloth, then folding or mirroring them into original trees foliage and birdlike ornaments; lines remain slightly raised continuous and hand-varied in width with saturated jewel colors, never resembling plastic piping or machine embroidery stitches",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-Indian ornament"
+      ]
+    },
+    {
+      "id": "artist-cheriyal-scroll",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "切里亚尔叙事卷轴画",
+      "enName": "Cheriyal Scroll Painting",
+      "image": "/assets/parameters/artist-cheriyal-scroll.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "切里亚尔卷轴画语言，在暖红底上用黑色粗轮廓组织紧凑横向叙事格，原创人物、动物、树木和村落以侧面姿态连续展开；赭黄、白、绿与深蓝平涂，棉布与天然颜料保持粉质，不套用具体传说角色或现成宗教场景",
+      "enPrompt": "Cheriyal scroll-painting language organizing compact horizontal narrative registers on a warm red ground, with original profile figures animals trees and village forms linked by bold black contours; ochre white green and deep blue remain flat and chalky on prepared cloth, without borrowing named legendary characters or existing religious scenes",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-Indian ornament"
+      ]
+    },
+    {
+      "id": "artist-pithora-wall",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "皮托拉壁画语言",
+      "enName": "Pithora Wall Painting",
+      "image": "/assets/parameters/artist-pithora-wall.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "皮托拉壁画视觉语言，以多排小型马匹、人物、太阳、植物和村落符号在粉白墙面形成横向节奏，造型正侧混合、比例自由、色块明亮并由细黑线收束；保留刷痕与石灰墙颗粒，只借鉴排列和绘制机制，不复刻仪式图式",
+      "enPrompt": "Pithora wall-painting visual language arranging rows of small horses people suns plants and village signs into a horizontal rhythm on chalk-white plaster, using mixed profile-front views free scale bright flat pigment and fine dark outlines; brush drag and lime-wall grain remain while the composition stays original rather than copying a ceremonial scheme",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-Indian ornament"
+      ]
+    },
+    {
+      "id": "artist-sohrai-wall",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "索赫莱泥墙彩绘",
+      "enName": "Sohrai Wall Painting",
+      "image": "/assets/parameters/artist-sohrai-wall.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "索赫莱泥墙彩绘使用黑、白、赭红与黄土矿物色，以手指、布团或梳齿宽笔塑造大型动物、藤蔓和生命树般的原创轮廓；色层厚薄、泥墙裂隙和刮梳纹理共同构图，形态质朴有力而非精细数码民俗插画",
+      "enPrompt": "Sohrai mud-wall painting language using black white red ochre and yellow earth pigments, applied by fingers cloth pads or comb-like tools to form large original animals vines and tree structures; pigment thickness plaster fissures and dragged comb marks compose the surface, remaining robust and handmade rather than polished digital folk illustration",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-Indian ornament"
+      ]
+    },
+    {
+      "id": "artist-khovar-wall",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "科瓦尔刮刻壁画",
+      "enName": "Khovar Sgraffito Wall Art",
+      "image": "/assets/parameters/artist-khovar-wall.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "科瓦尔壁画以黑色锰土覆盖浅色湿泥，再用梳齿和手指刮开表层，显露白色植物、动物和几何剪影；黑白反差由真实刮除形成，线槽密集但层次清楚，保留泥灰粉感，避免与普通版画或刻划灰泥装饰混同",
+      "enPrompt": "Khovar wall-art language covering pale wet clay with black manganese earth and scratching it back with combs and fingers to reveal white botanical animal and geometric silhouettes; the black-white contrast comes from actual removal, with dense legible grooves and powdery mud-plaster texture, distinct from printed graphics or decorative plaster sgraffito",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-Indian ornament"
+      ]
+    },
+    {
+      "id": "artist-sanjhi-stencil",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "桑吉镂纸模板艺术",
+      "enName": "Sanjhi Paper Stencil",
+      "image": "/assets/parameters/artist-sanjhi-stencil.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "桑吉镂纸语言以一张连续薄纸手工切出极细藤蔓、花叶、鸟形和放射负形，所有细桥保持结构连通，刀口略有毛边与宽窄变化；画面依赖纸与底色的正负形关系，原创图案不包含具体神像，也不变成激光切割蕾丝",
+      "enPrompt": "Sanjhi paper-stencil language hand-cutting one continuous thin sheet into fine vines leaves birds and radial negative spaces, every narrow bridge remaining structurally connected with slight blade burr and width variation; the image depends on paper-ground figure relationships, using an original non-iconic pattern rather than laser-cut lace",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-Indian ornament"
+      ]
+    },
+    {
+      "id": "artist-mandana",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "曼达纳泥墙地画",
+      "enName": "Mandana Folk Painting",
+      "image": "/assets/parameters/artist-mandana.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "曼达纳地墙画以赭红泥土为底，用白色石灰或米浆徒手勾画阶梯菱形、三角格、花心与简化动物，线条重复围合形成清晰中心秩序；笔画有手绘抖动和粉化边缘，留白充足，不套用曼陀罗或通用印度花纹",
+      "enPrompt": "Mandana folk-painting language drawing stepped diamonds triangular grids floral centers and simplified animals by hand in white lime or rice paste over red-ochre earth; repeated enclosing lines create a clear central order with tremor chalky edges and generous ground, without turning into a mandala or generic Indian ornament",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-Indian ornament"
+      ]
+    },
+    {
+      "id": "artist-phulkari",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "普尔卡里长针刺绣",
+      "enName": "Phulkari Embroidery",
+      "image": "/assets/parameters/artist-phulkari.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "普尔卡里刺绣以长距离平针从粗棉布背面计数穿引，正面形成方向不断变化的亮丝几何花田；藏红、洋红、金黄与绿色针面通过反光产生明暗，局部露出深红底布，避免写实花朵贴花或机器缎面绣",
+      "enPrompt": "Phulkari embroidery language counting long darning stitches from the reverse of coarse cotton so changing thread directions build luminous geometric flower fields on the front; saffron magenta gold and green silk facets shift with light while deep red ground remains visible, avoiding realistic floral appliques or machine satin embroidery",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-Indian ornament"
+      ]
+    },
+    {
+      "id": "artist-chikankari",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "奇坎卡里白绣",
+      "enName": "Chikankari Embroidery",
+      "image": "/assets/parameters/artist-chikankari.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "奇坎卡里白绣以白线在轻薄白棉或薄纱上组合平针、凸起结粒、镂空网眼和背面阴影绣，形成低对比花枝与叶脉；侧光显出细微浮雕和透明层次，针法清楚而克制，不靠银线、亮片或高反差彩色装饰",
+      "enPrompt": "Chikankari whitework combining flat stitches raised knots open drawn-thread meshes and shadow work on translucent white cotton or muslin, forming low-contrast floral stems and leaf veins; side light reveals subtle relief and transparency while stitch logic stays restrained, without metallic thread sequins or high-contrast colored ornament",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-Indian ornament"
+      ]
+    },
+    {
+      "id": "artist-kasuti",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "卡苏蒂数纱刺绣",
+      "enName": "Kasuti Embroidery",
+      "image": "/assets/parameters/artist-kasuti.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "卡苏蒂刺绣依织物经纬精确数纱，以连续双面线迹构成阶梯式建筑轮廓、花瓶、鸟形和几何边饰；红橙绿紫细线在深色手织布上保持像素般转折却有真实纤维张力，正反面整洁，不替换为十字绣方格",
+      "enPrompt": "Kasuti embroidery precisely counts the warp and weft to build stepped architectural outlines vessels birds and geometric borders with continuous reversible stitches; fine red orange green and violet threads turn almost pixel-like across dark handwoven cloth while retaining real fiber tension and clean reverses, distinct from ordinary cross-stitch grids",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-Indian ornament"
+      ]
+    },
+    {
+      "id": "artist-toda-embroidery",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "托达人红黑挑织",
+      "enName": "Toda Embroidery",
+      "image": "/assets/parameters/artist-toda-embroidery.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "托达人刺绣以红黑粗线在厚实米白棉布上进行反面挑织，正面形成凸起条带、重复菱形和阶梯几何，留白与双色情况严格平衡；针迹厚实可逆、边缘略有手工起伏，不加入多彩花卉或泛化部落图腾",
+      "enPrompt": "Toda embroidery works coarse red and black thread from the reverse of thick off-white cotton, producing raised bands repeated diamonds and stepped geometry on the face with a disciplined balance of white ground and two colors; stitches remain substantial reversible and slightly uneven, without multicolor florals or generic tribal emblems",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-Indian ornament"
+      ]
+    },
+    {
+      "id": "artist-aipan",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "艾潘米浆地画",
+      "enName": "Aipan Floor Art",
+      "image": "/assets/parameters/artist-aipan.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "艾潘地画以深赭红矿物底衬托白色米浆线条，点、短弧、同心边框和几何花形从中心向外有节奏扩展；手指或细布笔留下粗细变化与滴点，强调红白平面秩序和原创建构，不复制特定祭祀符号",
+      "enPrompt": "Aipan floor-art language setting white rice-paste lines against deep red mineral ground, expanding dots short arcs concentric borders and geometric floral forms rhythmically from a center; finger or cloth-tip application leaves width changes and droplets, emphasizing an original red-white planar order rather than reproducing a specific ritual symbol",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-Indian ornament"
+      ]
+    },
+    {
+      "id": "style-ambrotype",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "玻璃湿版正片",
+      "enName": "Ambrotype",
+      "image": "/assets/parameters/style-ambrotype.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "玻璃湿版正片把曝光不足的火棉胶银影像置于黑色背衬前，透明玻璃上的浅灰负片因背景转为柔和正像；高光乳白、暗部通透，板缘、涂布流痕与细小化学斑保留，影像似悬在玻璃中，不等同于纸面褐色旧照",
+      "enPrompt": "ambrotype made from an underexposed wet-collodion silver negative on glass viewed against a black backing, turning pale gray deposits into a soft positive; milky highlights transparent shadows plate edges coating flow and small chemical marks remain, so the image appears suspended in glass rather than as a sepia paper print",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-tintype",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "黑铁湿版正片",
+      "enName": "Tintype",
+      "image": "/assets/parameters/style-tintype.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "黑铁湿版正片在涂黑薄铁板上直接形成火棉胶银正像，综合色调偏冷灰或深褐，金属底使中间调紧实、亮部略带银光；剪切圆角、轻微弯曲、擦伤与乳剂边缘真实存在，避免套用普通复古滤镜或纸张边框",
+      "enPrompt": "tintype direct-positive image formed in wet collodion on a blackened thin iron plate, with cool gray or deep brown tonality compressed midtones and faintly metallic highlights; clipped corners slight bends abrasions and emulsion edges remain materially present, avoiding a generic vintage filter or paper-border treatment",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-kallitype",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "铁银印相",
+      "enName": "Kallitype",
+      "image": "/assets/parameters/style-kallitype.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "铁银印相以铁盐感光并由银形成接触印像，在哑光棉纸上呈现从中性黑、紫黑到暖棕的长灰阶；手工刷涂边界、纸纤维和略柔的细节共同可见，暗部深但不镜面银化，区别于范戴克棕和普通棕褐滤镜",
+      "enPrompt": "kallitype contact print sensitized with iron salts and developed into a silver image, producing a long scale from neutral black and violet-black to warm brown on matte cotton paper; hand-brushed coating edges paper fibers and gently resolved detail remain, with dense non-mirrored shadows distinct from Van Dyke brown or generic sepia filtering",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-cliche-verre",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "玻璃版线描摄影",
+      "enName": "Cliche-Verre",
+      "image": "/assets/parameters/style-cliche-verre.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "玻璃版线描摄影先在涂黑或烟熏玻璃上用针刮出植物、地景与自由线条，再把玻璃覆于感光纸接触曝光；划痕转化为发光白线和灰线，笔触兼具绘画手势与摄影颗粒，保留断线和刮擦阻力，不模拟数字白描反相",
+      "enPrompt": "cliche-verre process scratching botanical landscape or gestural lines through an opaque or smoked coating on glass, then contact-printing the plate onto light-sensitive paper; marks become luminous white and gray lines combining drawn gesture with photographic grain, retaining breaks and scraping resistance rather than a digitally inverted line drawing",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-verre-eglomise",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "玻璃背金装饰",
+      "enName": "Verre Eglomise",
+      "image": "/assets/parameters/style-verre-eglomise.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "玻璃背金装饰在玻璃背面贴覆金箔并刻画、擦除或罩染，再以深色漆封底，正面观看时金叶被玻璃保护并呈镜面反射；箔片接缝、细刻线、透明罩色和手工缺口可见，避免变成正面金属贴纸或通体金色滤镜",
+      "enPrompt": "verre eglomise decorating the reverse of glass with laid gold leaf that is engraved abraded or glazed before receiving a dark painted backing, so the protected leaf reads reflectively through the front; foil seams fine incisions transparent color and handmade losses remain visible, unlike a surface-applied metallic decal or all-over gold filter",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-niello",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "乌银填刻工艺",
+      "enName": "Niello Metalwork",
+      "image": "/assets/parameters/style-niello.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "乌银工艺先在抛光银或金属上雕刻细密沟槽，再填入黑色硫化合金并烧结磨平，形成冷亮金属与哑黑凹线的强烈正负关系；雕刀转折、填料边界与轻微磨痕真实存在，图案像嵌入金属而非黑色印刷",
+      "enPrompt": "niello metalwork cutting fine channels into polished silver or metal, packing them with a black sulfide alloy and firing and polishing the surface flush; cool reflective metal and matte recessed black lines create a strong figure-ground contrast with visible tool turns fill boundaries and faint abrasion, appearing embedded rather than printed",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "ethnic-zhuang",
+      "category": "ethnic-style",
+      "styleGroup": "south",
+      "zhName": "壮锦纹样",
+      "enName": "Zhuang Brocade",
+      "image": "/assets/parameters/ethnic-zhuang.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "壮锦视觉语言，以经纬显色的菱形、回纹、八角花和连续几何边饰构成紧密织锦节奏，红黑蓝黄对比鲜明但层级有序；丝棉纱线的交织、轻微浮纹与手工边缘清楚，可融入桂西山水抽象轮廓，不复制具体神圣图腾",
+      "enPrompt": "Zhuang brocade visual language organizing warp-and-weft diamonds key patterns eight-petal forms and continuous geometric borders into a dense woven rhythm, with vivid red black blue and yellow held in a clear hierarchy; silk-cotton interlacing slight relief and handmade edges remain visible, optionally abstracting Guangxi mountain-water contours without copying a sacred emblem"
+    },
+    {
+      "id": "render-vector-illustration",
+      "category": "render",
+      "styleGroup": "stylized",
+      "zhName": "矢量插画",
+      "enName": "Vector Illustration",
+      "image": "/assets/parameters/render-vector-illustration.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "干净矢量插画渲染，以封闭贝塞尔轮廓、有限平面色块和可缩放几何形构成主体；边缘锐利、节点简洁，阴影只用少量分层色面表达，负形关系清楚，不出现像素毛边、写实纹理、复杂渐变或伪三维体积",
+      "enPrompt": "clean vector-illustration rendering built from closed Bezier contours a limited set of flat color shapes and scalable geometry; edges stay crisp nodes economical and shadows use only a few layered planes, with clear negative-space relationships and no pixel fringing photoreal texture excessive gradients or pseudo-3D volume"
+    },
+    {
+      "id": "style-scratchboard",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "黑刮板",
+      "enName": "Scratchboard",
+      "image": "/assets/parameters/style-scratchboard.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "黑刮板插画从黑色墨层中用尖针刮出白线，以线条疏密、交叉排线和刀口宽窄塑造光线与体积；高光由露出的白底形成，边缘带细小断裂和手工阻力，整体黑白高反差但不变成数字反相照片或普通钢笔线描",
+      "enPrompt": "scratchboard illustration removing black ink with a pointed blade to expose white marks, using line density crosshatching and varied cut width to model light and volume; highlights come from the revealed ground and edges retain small breaks and tool resistance, creating strong black-white contrast without becoming an inverted photograph or ordinary pen drawing"
+    },
+    {
+      "id": "style-cross-stitch",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "十字绣",
+      "enName": "Cross-Stitch",
+      "image": "/assets/parameters/style-cross-stitch.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "十字绣风格以可见埃达布网格为坐标，每个色块由两条方向一致的斜线交叉成完整 X 针；棉线有纤维、张力与轻微高低差，有限色盘通过针数形成像素化轮廓，避免直接套用马赛克像素滤镜或印刷格纹",
+      "enPrompt": "cross-stitch style mapped to a visible Aida-cloth grid, every colored unit formed by two consistently oriented diagonal strands crossing as a complete X; cotton floss shows fiber tension and slight relief while a limited palette builds pixel-like contours by stitch count, avoiding a mosaic pixel filter or printed checker pattern"
+    },
+    {
+      "id": "style-gold-thread-embroidery",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "金线刺绣",
+      "enName": "Gold-Thread Embroidery",
+      "image": "/assets/parameters/style-gold-thread-embroidery.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "金线刺绣以金属绕线沿图案表面盘铺，再用细小固定针压住，形成凸起轮廓、密集回转和局部垫高；深色丝绒或缎面吸收背景光，金线随方向产生细碎高光，保留针脚与纤维，不表现为平面金色描边或塑料金属贴膜",
+      "enPrompt": "gold-thread embroidery couching metal-wrapped cords across the surface and fastening them with tiny stitches, creating raised contours dense turns and selectively padded relief; dark velvet or satin absorbs surrounding light while strand direction breaks highlights into fine glints, preserving stitches and fiber instead of flat gold outlines or plastic metallic foil"
+    },
+    {
+      "id": "grading-soft-pastel",
+      "category": "color-grading",
+      "styleGroup": "clean-bright",
+      "zhName": "柔和粉彩",
+      "enName": "Soft Pastel",
+      "image": "/assets/parameters/grading-soft-pastel.jpg",
+      "zhPrompt": "柔和粉彩调色，抬高黑位并压低整体反差，以浅粉、雾蓝和奶油色重组中高光；肤色保持自然血色，白色不偏灰，饱和度集中在少量柔和色面，避免全片泛白或糖果色溢出",
+      "enPrompt": "soft pastel color grade with lifted blacks and restrained global contrast, reorganizing midtones and highlights through pale pink mist blue and cream; preserve believable warmth in skin and clean whites while concentrating saturation in a few gentle color fields, avoiding a washed-out veil or uncontrolled candy-color clipping",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-korean-clean",
+      "category": "color-grading",
+      "styleGroup": "clean-bright",
+      "zhName": "韩系清透",
+      "enName": "Korean Clean",
+      "image": "/assets/parameters/grading-korean-clean.jpg",
+      "zhPrompt": "韩系清透人像调色，以明亮中间调、干净白位和轻柔阴影构成通透层次；肤色偏中性暖、红黄分离准确，背景低杂色但保留材质，局部对比集中在眼睛与发丝，避免过度磨皮或高曝光吞掉五官",
+      "enPrompt": "clean Korean-style portrait grade built from bright midtones clean whites and softly open shadows; skin stays neutral-warm with controlled red-yellow separation, backgrounds lose color noise without losing material detail, and local contrast remains around eyes and hair, avoiding waxy smoothing or facial features erased by excessive exposure",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-leica-like",
+      "category": "color-grading",
+      "styleGroup": "camera-look",
+      "zhName": "莱卡感",
+      "enName": "Rangefinder Premium",
+      "image": "/assets/parameters/grading-leica-like.jpg",
+      "zhPrompt": "高级旁轴纪实调色，以扎实但不死黑的暗部、清楚微反差和温润红色形成紧凑色阶；绿色略收敛，肤色保持自然，边缘锐度克制并带细微胶片颗粒，避免套用品牌色偏或夸张高锐化",
+      "enPrompt": "premium rangefinder documentary grade with firm but uncrushed blacks, articulate microcontrast and restrained warm reds forming a compact tonal scale; greens are slightly subdued, skin remains believable, edge acuity stays controlled and fine grain is subtle, avoiding a branded preset caricature or aggressive digital sharpening",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-day-for-night",
+      "category": "color-grading",
+      "styleGroup": "cinematic",
+      "zhName": "日拍夜",
+      "enName": "Day For Night",
+      "image": "/assets/parameters/grading-day-for-night.jpg",
+      "zhPrompt": "日拍夜后期调色，整体压低一至两档曝光并把环境中间调推向深蓝青色，天空和远景降低饱和度；人物轮廓、窗灯与局部反光仍可辨，阴影有层次而非纯黑，避免白昼高光、暖阳方向或统一蓝色蒙版暴露伪夜感",
+      "enPrompt": "day-for-night grade lowering ambient exposure by roughly one to two stops and shifting environmental midtones toward deep blue-cyan while muting sky and distance; silhouettes window light and small reflections remain readable and shadows retain separation, avoiding obvious daylight highlights warm sun direction or a uniform blue overlay that reveals the conversion",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-beauty-retouch",
+      "category": "color-grading",
+      "styleGroup": "commercial",
+      "zhName": "妆面精修",
+      "enName": "Beauty Retouch Grade",
+      "image": "/assets/parameters/grading-beauty-retouch.jpg",
+      "zhPrompt": "商业妆面精修调色，校正肤色不均与局部泛红，同时保留毛孔、细小绒毛和真实高光；通过轻微明暗塑形强化眼眶、鼻梁与唇形，口红和眼影颜色准确，避免磨皮蜡感、过度液化或改变本人五官",
+      "enPrompt": "commercial beauty-retouch grade correcting uneven skin color and localized redness while preserving pores fine facial hair and authentic specular highlights; subtle dodge-and-burn shapes eyes nose and lips while lipstick and eye-shadow hues stay accurate, avoiding waxy smoothing excessive liquify or alteration of the person's facial identity",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-social-vivid",
+      "category": "color-grading",
+      "styleGroup": "commercial",
+      "zhName": "社媒鲜艳",
+      "enName": "Social Vivid",
+      "image": "/assets/parameters/grading-social-vivid.jpg",
+      "zhPrompt": "社媒鲜艳调色，以明亮中间调、清楚主体对比和有选择的高饱和色吸引缩略图视线；肤色与白色保持稳定，背景杂色被归并，亮部不过曝、红蓝不过饱和，适合封面但不产生廉价荧光滤镜感",
+      "enPrompt": "vivid social-media grade using bright midtones decisive subject contrast and selective high-saturation accents for thumbnail readability; skin and whites remain stable, background color clutter is consolidated, highlights do not clip and reds or blues do not bleed, giving cover impact without a cheap fluorescent-filter appearance",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "retouch-dark-circle",
+      "category": "color-grading",
+      "styleGroup": "skin-detail",
+      "zhName": "黑眼圈减淡",
+      "enName": "Dark Circle Softening",
+      "image": "/assets/parameters/retouch-dark-circle.jpg",
+      "zhPrompt": "人物修图中自然减淡眼下青紫、暗沉与疲态，只调整综合色和局部明度，不抹平卧蚕、眼袋结构、细纹与皮肤纹理；双眼受光和锐度保持一致，避免眼下发灰、塑料平面或改变原有年龄特征",
+      "enPrompt": "portrait retouch that naturally reduces blue-purple discoloration and tired darkness beneath the eyes through local color and luminance correction only; preserve the natural lower-lid roll bag structure fine lines and skin texture, keep light and acuity consistent between both eyes, and avoid gray patches plastic flattening or erasing age-defining features",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-olive-film",
+      "category": "color-grading",
+      "styleGroup": "film-vintage",
+      "zhName": "橄榄绿胶片",
+      "enName": "Olive Film",
+      "image": "/assets/parameters/grading-olive-film.jpg",
+      "zhPrompt": "橄榄绿胶片调色，将暗部与低中间调轻推向苔绿和黄绿，高光保持暖灰，红色降饱和但肤色不过绿；黑位略抬并加入细颗粒与柔和高光滚降，形成旧纪实气息，避免全局绿色罩染或军绿色脏片",
+      "enPrompt": "olive-film grade nudging shadows and lower midtones toward moss and yellow-green while keeping highlights warm gray; reds are restrained without contaminating skin, blacks lift slightly with fine grain and a gentle highlight roll-off for aged documentary character, avoiding a global green cast or muddy military-green treatment",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-noir-soft-bw",
+      "category": "color-grading",
+      "styleGroup": "film-vintage",
+      "zhName": "柔黑白纪实",
+      "enName": "Soft Documentary B&W",
+      "image": "/assets/parameters/grading-noir-soft-bw.jpg",
+      "zhPrompt": "柔黑白纪实调色，以完整灰阶和缓慢高光过渡保留街景、皮肤与织物细节；黑位深但不封死，中间调略有银盐般柔软分离，局部对比服务人物视线并配细颗粒，避免硬朗黑白剪影或低反差灰雾",
+      "enPrompt": "soft documentary black-and-white grade preserving street skin and fabric detail through a full grayscale and gradual highlight transition; blacks remain deep without blocking up, midtones separate with a gentle silver-gelatin feel, and local contrast follows the human subject with fine grain, avoiding hard graphic silhouettes or low-contrast gray haze",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "retouch-scar-soften",
+      "category": "color-grading",
+      "styleGroup": "skin-detail",
+      "zhName": "疤痕淡化",
+      "enName": "Scar Softening",
+      "image": "/assets/parameters/retouch-scar-soften.jpg",
+      "zhPrompt": "人物修图中选择性减淡临时印记或突兀疤痕的色差与边缘反差，不直接复制无纹理皮肤覆盖；保留毛孔、皮沟、受光方向和自然光泽，并根据需求保留可辨识特征，避免整片模糊、重复纹理或改变身体结构",
+      "enPrompt": "portrait retouch selectively reducing color difference and edge contrast in temporary marks or distracting scars without pasting textureless skin over them; preserve pores skin furrows lighting direction and natural sheen, retaining identity-defining features when appropriate, and avoid broad blur repeated texture or any change to body structure",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "render-blueprint-technical",
+      "category": "render",
+      "styleGroup": "technical",
+      "zhName": "蓝图技术渲染",
+      "enName": "Blueprint Technical Render",
+      "image": "/assets/parameters/render-blueprint-technical.jpg",
+      "zhPrompt": "蓝图技术渲染以深蓝底和高对比白线表达正投影、剖面、轴测结构与隐藏线，线宽按轮廓、构造和尺寸分级；测量线、节点和网格服从真实几何关系，纸面有轻微复制颗粒，但不生成乱码尺寸、装饰性假公式或透视互相矛盾的结构",
+      "enPrompt": "blueprint technical rendering using a deep blue ground and high-contrast white lines for orthographic sections axonometric structure and hidden edges, with line weights graded by outline construction and dimension roles; measurements nodes and grid follow coherent geometry with subtle reproduction grain, avoiding garbled dimensions decorative fake equations or mutually inconsistent perspective",
+      "negative": [
+        "low detail texture",
+        "messy material",
+        "visual noise"
+      ]
+    }
+  ]
+}

@@ -1312,8 +1312,8 @@
       "zhName": "现代条漫",
       "enName": "Modern Webtoon",
       "image": "/assets/parameters/style-modern-webtoon.jpg",
-      "zhPrompt": "现代条漫风格，干净线条、清爽上色和移动端阅读感",
-      "enPrompt": "modern clean webtoon art, crisp linework, simple readable color, polished digital illustration"
+      "zhPrompt": "现代条漫视觉语言，以粗细稳定的数字线稿、清爽平涂和少量柔和阴影保持移动端小屏可读性；人物表情与动作轮廓优先，背景按镜头重点简化并使用纵向节奏，色彩明快但不堆叠复杂纹理，避免纸质漫画网点和过度写实渲染",
+      "enPrompt": "modern webtoon visual language using controlled digital line weight clean flat color and a small amount of soft shading for mobile-screen readability; expressive faces and action silhouettes take priority while backgrounds simplify according to shot focus and vertical pacing, with bright coherent color but no paper halftone texture or excessive photoreal rendering"
     },
     {
       "id": "style-chibi-cute",
@@ -1412,8 +1412,8 @@
       "zhName": "年画木版",
       "enName": "New Year Woodblock",
       "image": "/assets/parameters/style-new-year-woodblock.jpg",
-      "zhPrompt": "中国年画木版风，鲜明民俗色、装饰云纹和热闹节庆感",
-      "enPrompt": "Chinese New Year folk woodblock print style, vivid folk colors, decorative clouds, festive detail"
+      "zhPrompt": "中国木版年画语言，以粗黑主版勾勒圆润人物、器物和装饰云纹，再用朱红、藤黄、石绿与桃红分版套印；构图饱满对称、节庆叙事清楚，保留纸纤维、木版压力和轻微套色偏差，不复制具体门神形象或变成现代卡通海报",
+      "enPrompt": "Chinese New Year woodblock language using a bold black key block for rounded figures objects and decorative clouds, followed by separate vermilion yellow mineral green and peach printing blocks; composition is full balanced and festive with visible paper fiber wood pressure and slight registration shift, without copying a named door-god image or becoming a modern cartoon poster"
     },
     {
       "id": "style-shadow-puppet",
@@ -1422,8 +1422,8 @@
       "zhName": "皮影戏",
       "enName": "Shadow Puppet",
       "image": "/assets/parameters/style-shadow-puppet.jpg",
-      "zhPrompt": "皮影戏风格，剪影人物、半透明皮革纹理和戏台背光",
-      "enPrompt": "shadow-puppet animation look, ornate silhouettes, translucent leather texture, backlit stage"
+      "zhPrompt": "皮影戏视觉语言，以关节铆接的侧身人物、镂空服饰和细杆控制结构形成扁平剪影；染色皮革在幕布背光下呈半透明红黄蓝层次，边缘有手工刀刻与轻微翘曲，动作遵循关节转动，不画成普通黑色纸剪影",
+      "enPrompt": "shadow-puppet visual language using articulated riveted profile figures pierced costume details and visible rod-controlled construction as flat silhouettes; dyed leather becomes translucent red yellow and blue under screen backlight, with hand-cut edges slight warping and joint-led motion, distinct from ordinary solid-black paper cutouts"
     },
     {
       "id": "style-paper-cut-folk",
@@ -1472,8 +1472,8 @@
       "zhName": "东南亚寺庙壁画",
       "enName": "SE Asian Mural",
       "image": "/assets/parameters/style-southeast-asian-mural.jpg",
-      "zhPrompt": "东南亚寺庙壁画风，金色纹样、热带建筑和古壁画质感",
-      "enPrompt": "Southeast Asian temple mural style, golden ornament, tropical architecture, aged mural texture"
+      "zhPrompt": "东南亚寺庙壁画视觉语言，以连续叙事、侧身人物、层叠热带建筑和卷叶边饰组织平面空间；矿物红、靛蓝、墨黑与金色细线在灰泥上形成明确分区，墙面有粉化、细裂和局部磨损，但不复刻具体宗教人物或现存壁画",
+      "enPrompt": "Southeast Asian temple-mural visual language organizing flat space through continuous narrative profile figures layered tropical architecture and scrolling foliage borders; mineral red indigo black and fine gold lines create clear zones on plaster with chalking hairline cracks and selective wear, without copying a named religious figure or an existing mural composition"
     },
     {
       "id": "style-documentary-photo",
@@ -1712,8 +1712,8 @@
       "zhName": "镭射虹彩",
       "enName": "Holographic",
       "image": "/assets/parameters/style-holographic-iridescent.jpg",
-      "zhPrompt": "镭射虹彩数字艺术，虹彩反射、梦幻晶体和未来质感",
-      "enPrompt": "holographic iridescent digital art, rainbow reflections, dreamy crystal surfaces, futuristic shimmer"
+      "zhPrompt": "镭射虹彩视觉以衍射薄膜和多层干涉为依据，视角变化处出现受控的青、品红、金与紫色带，基底仍能辨认金属、透明塑料或晶体结构；高光锐利、暗部保持中性，彩虹只沿曲率和反射方向移动，避免全画面随意渐变或荧光雾",
+      "enPrompt": "holographic iridescent visual language grounded in diffraction film and thin-layer interference, producing controlled cyan magenta gold and violet bands where viewing angle changes while the metal transparent polymer or crystal substrate remains legible; highlights stay sharp and shadows neutral, with color following curvature and reflection rather than an arbitrary full-frame rainbow gradient or neon haze"
     },
     {
       "id": "style-gathered-scenes-zine",
@@ -6769,6 +6769,1052 @@
       ]
     },
     {
+      "id": "artist-ajrakh",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "阿杰拉克木版染印",
+      "enName": "Ajrakh Block Print",
+      "image": "/assets/parameters/artist-ajrakh.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "阿杰拉克木版染印语言，以靛蓝与茜草红为主色，用多轮雕版、防染、媒染和套印构成密集玫瑰花结、星形与几何网格；白色细线来自防染留白，重复单元保留轻微错版、染料渗化和棉布纤维，不简化为数码无缝纹样",
+      "enPrompt": "Ajrakh block-print language built through repeated carved-block registration, resist and mordant dyeing in indigo and madder red; dense rosettes stars and geometric lattices are separated by fine resist-white lines, retaining slight misregistration dye feathering and cotton fiber instead of becoming a frictionless digital seamless pattern",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-Indian ornament"
+      ]
+    },
+    {
+      "id": "artist-dabu-resist",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "达布泥浆防染",
+      "enName": "Dabu Mud Resist",
+      "image": "/assets/parameters/artist-dabu-resist.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "达布泥浆防染以黏土、树胶和糠屑形成厚薄不均的防染层，再经靛蓝浸染显出米白裂纹、块状花叶与几何边界；手盖木版的压力差、泥浆龟裂和染缸深浅真实可见，避免变成普通蓝白印花或蜡染裂纹滤镜",
+      "enPrompt": "Dabu mud-resist textile language using an uneven clay gum and chaff paste before indigo immersion, leaving warm un-dyed cracks blocky foliage and geometric boundaries; hand-stamped pressure variation paste fissures and vat-depth shifts remain visible, distinct from generic blue-and-white printing or a batik crackle filter",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-Indian ornament"
+      ]
+    },
+    {
+      "id": "artist-rogan-textile",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "罗甘油彩织物画",
+      "enName": "Rogan Textile Painting",
+      "image": "/assets/parameters/artist-rogan-textile.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "罗甘织物画以加热蓖麻油调制的黏稠颜料拉出悬浮细线，在深色布面折印或对称展开原创树形、花叶和鸟形纹样；线条微微隆起、转折连续并带手拉粗细差，宝石色饱满但不出现塑料描边或机器刺绣针脚",
+      "enPrompt": "Rogan textile-painting language drawing suspended strands of viscous castor-oil pigment onto dark cloth, then folding or mirroring them into original trees foliage and birdlike ornaments; lines remain slightly raised continuous and hand-varied in width with saturated jewel colors, never resembling plastic piping or machine embroidery stitches",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-Indian ornament"
+      ]
+    },
+    {
+      "id": "artist-cheriyal-scroll",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "切里亚尔叙事卷轴画",
+      "enName": "Cheriyal Scroll Painting",
+      "image": "/assets/parameters/artist-cheriyal-scroll.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "切里亚尔卷轴画语言，在暖红底上用黑色粗轮廓组织紧凑横向叙事格，原创人物、动物、树木和村落以侧面姿态连续展开；赭黄、白、绿与深蓝平涂，棉布与天然颜料保持粉质，不套用具体传说角色或现成宗教场景",
+      "enPrompt": "Cheriyal scroll-painting language organizing compact horizontal narrative registers on a warm red ground, with original profile figures animals trees and village forms linked by bold black contours; ochre white green and deep blue remain flat and chalky on prepared cloth, without borrowing named legendary characters or existing religious scenes",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-Indian ornament"
+      ]
+    },
+    {
+      "id": "artist-pithora-wall",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "皮托拉壁画语言",
+      "enName": "Pithora Wall Painting",
+      "image": "/assets/parameters/artist-pithora-wall.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "皮托拉壁画视觉语言，以多排小型马匹、人物、太阳、植物和村落符号在粉白墙面形成横向节奏，造型正侧混合、比例自由、色块明亮并由细黑线收束；保留刷痕与石灰墙颗粒，只借鉴排列和绘制机制，不复刻仪式图式",
+      "enPrompt": "Pithora wall-painting visual language arranging rows of small horses people suns plants and village signs into a horizontal rhythm on chalk-white plaster, using mixed profile-front views free scale bright flat pigment and fine dark outlines; brush drag and lime-wall grain remain while the composition stays original rather than copying a ceremonial scheme",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-Indian ornament"
+      ]
+    },
+    {
+      "id": "artist-sohrai-wall",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "索赫莱泥墙彩绘",
+      "enName": "Sohrai Wall Painting",
+      "image": "/assets/parameters/artist-sohrai-wall.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "索赫莱泥墙彩绘使用黑、白、赭红与黄土矿物色，以手指、布团或梳齿宽笔塑造大型动物、藤蔓和生命树般的原创轮廓；色层厚薄、泥墙裂隙和刮梳纹理共同构图，形态质朴有力而非精细数码民俗插画",
+      "enPrompt": "Sohrai mud-wall painting language using black white red ochre and yellow earth pigments, applied by fingers cloth pads or comb-like tools to form large original animals vines and tree structures; pigment thickness plaster fissures and dragged comb marks compose the surface, remaining robust and handmade rather than polished digital folk illustration",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-Indian ornament"
+      ]
+    },
+    {
+      "id": "artist-khovar-wall",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "科瓦尔刮刻壁画",
+      "enName": "Khovar Sgraffito Wall Art",
+      "image": "/assets/parameters/artist-khovar-wall.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "科瓦尔壁画以黑色锰土覆盖浅色湿泥，再用梳齿和手指刮开表层，显露白色植物、动物和几何剪影；黑白反差由真实刮除形成，线槽密集但层次清楚，保留泥灰粉感，避免与普通版画或刻划灰泥装饰混同",
+      "enPrompt": "Khovar wall-art language covering pale wet clay with black manganese earth and scratching it back with combs and fingers to reveal white botanical animal and geometric silhouettes; the black-white contrast comes from actual removal, with dense legible grooves and powdery mud-plaster texture, distinct from printed graphics or decorative plaster sgraffito",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-Indian ornament"
+      ]
+    },
+    {
+      "id": "artist-sanjhi-stencil",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "桑吉镂纸模板艺术",
+      "enName": "Sanjhi Paper Stencil",
+      "image": "/assets/parameters/artist-sanjhi-stencil.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "桑吉镂纸语言以一张连续薄纸手工切出极细藤蔓、花叶、鸟形和放射负形，所有细桥保持结构连通，刀口略有毛边与宽窄变化；画面依赖纸与底色的正负形关系，原创图案不包含具体神像，也不变成激光切割蕾丝",
+      "enPrompt": "Sanjhi paper-stencil language hand-cutting one continuous thin sheet into fine vines leaves birds and radial negative spaces, every narrow bridge remaining structurally connected with slight blade burr and width variation; the image depends on paper-ground figure relationships, using an original non-iconic pattern rather than laser-cut lace",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-Indian ornament"
+      ]
+    },
+    {
+      "id": "artist-mandana",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "曼达纳泥墙地画",
+      "enName": "Mandana Folk Painting",
+      "image": "/assets/parameters/artist-mandana.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "曼达纳地墙画以赭红泥土为底，用白色石灰或米浆徒手勾画阶梯菱形、三角格、花心与简化动物，线条重复围合形成清晰中心秩序；笔画有手绘抖动和粉化边缘，留白充足，不套用曼陀罗或通用印度花纹",
+      "enPrompt": "Mandana folk-painting language drawing stepped diamonds triangular grids floral centers and simplified animals by hand in white lime or rice paste over red-ochre earth; repeated enclosing lines create a clear central order with tremor chalky edges and generous ground, without turning into a mandala or generic Indian ornament",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-Indian ornament"
+      ]
+    },
+    {
+      "id": "artist-phulkari",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "普尔卡里长针刺绣",
+      "enName": "Phulkari Embroidery",
+      "image": "/assets/parameters/artist-phulkari.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "普尔卡里刺绣以长距离平针从粗棉布背面计数穿引，正面形成方向不断变化的亮丝几何花田；藏红、洋红、金黄与绿色针面通过反光产生明暗，局部露出深红底布，避免写实花朵贴花或机器缎面绣",
+      "enPrompt": "Phulkari embroidery language counting long darning stitches from the reverse of coarse cotton so changing thread directions build luminous geometric flower fields on the front; saffron magenta gold and green silk facets shift with light while deep red ground remains visible, avoiding realistic floral appliques or machine satin embroidery",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-Indian ornament"
+      ]
+    },
+    {
+      "id": "artist-chikankari",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "奇坎卡里白绣",
+      "enName": "Chikankari Embroidery",
+      "image": "/assets/parameters/artist-chikankari.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "奇坎卡里白绣以白线在轻薄白棉或薄纱上组合平针、凸起结粒、镂空网眼和背面阴影绣，形成低对比花枝与叶脉；侧光显出细微浮雕和透明层次，针法清楚而克制，不靠银线、亮片或高反差彩色装饰",
+      "enPrompt": "Chikankari whitework combining flat stitches raised knots open drawn-thread meshes and shadow work on translucent white cotton or muslin, forming low-contrast floral stems and leaf veins; side light reveals subtle relief and transparency while stitch logic stays restrained, without metallic thread sequins or high-contrast colored ornament",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-Indian ornament"
+      ]
+    },
+    {
+      "id": "artist-kasuti",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "卡苏蒂数纱刺绣",
+      "enName": "Kasuti Embroidery",
+      "image": "/assets/parameters/artist-kasuti.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "卡苏蒂刺绣依织物经纬精确数纱，以连续双面线迹构成阶梯式建筑轮廓、花瓶、鸟形和几何边饰；红橙绿紫细线在深色手织布上保持像素般转折却有真实纤维张力，正反面整洁，不替换为十字绣方格",
+      "enPrompt": "Kasuti embroidery precisely counts the warp and weft to build stepped architectural outlines vessels birds and geometric borders with continuous reversible stitches; fine red orange green and violet threads turn almost pixel-like across dark handwoven cloth while retaining real fiber tension and clean reverses, distinct from ordinary cross-stitch grids",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-Indian ornament"
+      ]
+    },
+    {
+      "id": "artist-toda-embroidery",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "托达人红黑挑织",
+      "enName": "Toda Embroidery",
+      "image": "/assets/parameters/artist-toda-embroidery.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "托达人刺绣以红黑粗线在厚实米白棉布上进行反面挑织，正面形成凸起条带、重复菱形和阶梯几何，留白与双色情况严格平衡；针迹厚实可逆、边缘略有手工起伏，不加入多彩花卉或泛化部落图腾",
+      "enPrompt": "Toda embroidery works coarse red and black thread from the reverse of thick off-white cotton, producing raised bands repeated diamonds and stepped geometry on the face with a disciplined balance of white ground and two colors; stitches remain substantial reversible and slightly uneven, without multicolor florals or generic tribal emblems",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-Indian ornament"
+      ]
+    },
+    {
+      "id": "artist-aipan",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "艾潘米浆地画",
+      "enName": "Aipan Floor Art",
+      "image": "/assets/parameters/artist-aipan.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "艾潘地画以深赭红矿物底衬托白色米浆线条，点、短弧、同心边框和几何花形从中心向外有节奏扩展；手指或细布笔留下粗细变化与滴点，强调红白平面秩序和原创建构，不复制特定祭祀符号",
+      "enPrompt": "Aipan floor-art language setting white rice-paste lines against deep red mineral ground, expanding dots short arcs concentric borders and geometric floral forms rhythmically from a center; finger or cloth-tip application leaves width changes and droplets, emphasizing an original red-white planar order rather than reproducing a specific ritual symbol",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-Indian ornament"
+      ]
+    },
+    {
+      "id": "style-ambrotype",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "玻璃湿版正片",
+      "enName": "Ambrotype",
+      "image": "/assets/parameters/style-ambrotype.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "玻璃湿版正片把曝光不足的火棉胶银影像置于黑色背衬前，透明玻璃上的浅灰负片因背景转为柔和正像；高光乳白、暗部通透，板缘、涂布流痕与细小化学斑保留，影像似悬在玻璃中，不等同于纸面褐色旧照",
+      "enPrompt": "ambrotype made from an underexposed wet-collodion silver negative on glass viewed against a black backing, turning pale gray deposits into a soft positive; milky highlights transparent shadows plate edges coating flow and small chemical marks remain, so the image appears suspended in glass rather than as a sepia paper print",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-tintype",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "黑铁湿版正片",
+      "enName": "Tintype",
+      "image": "/assets/parameters/style-tintype.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "黑铁湿版正片在涂黑薄铁板上直接形成火棉胶银正像，综合色调偏冷灰或深褐，金属底使中间调紧实、亮部略带银光；剪切圆角、轻微弯曲、擦伤与乳剂边缘真实存在，避免套用普通复古滤镜或纸张边框",
+      "enPrompt": "tintype direct-positive image formed in wet collodion on a blackened thin iron plate, with cool gray or deep brown tonality compressed midtones and faintly metallic highlights; clipped corners slight bends abrasions and emulsion edges remain materially present, avoiding a generic vintage filter or paper-border treatment",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-kallitype",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "铁银印相",
+      "enName": "Kallitype",
+      "image": "/assets/parameters/style-kallitype.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "铁银印相以铁盐感光并由银形成接触印像，在哑光棉纸上呈现从中性黑、紫黑到暖棕的长灰阶；手工刷涂边界、纸纤维和略柔的细节共同可见，暗部深但不镜面银化，区别于范戴克棕和普通棕褐滤镜",
+      "enPrompt": "kallitype contact print sensitized with iron salts and developed into a silver image, producing a long scale from neutral black and violet-black to warm brown on matte cotton paper; hand-brushed coating edges paper fibers and gently resolved detail remain, with dense non-mirrored shadows distinct from Van Dyke brown or generic sepia filtering",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-cliche-verre",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "玻璃版线描摄影",
+      "enName": "Cliche-Verre",
+      "image": "/assets/parameters/style-cliche-verre.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "玻璃版线描摄影先在涂黑或烟熏玻璃上用针刮出植物、地景与自由线条，再把玻璃覆于感光纸接触曝光；划痕转化为发光白线和灰线，笔触兼具绘画手势与摄影颗粒，保留断线和刮擦阻力，不模拟数字白描反相",
+      "enPrompt": "cliche-verre process scratching botanical landscape or gestural lines through an opaque or smoked coating on glass, then contact-printing the plate onto light-sensitive paper; marks become luminous white and gray lines combining drawn gesture with photographic grain, retaining breaks and scraping resistance rather than a digitally inverted line drawing",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-verre-eglomise",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "玻璃背金装饰",
+      "enName": "Verre Eglomise",
+      "image": "/assets/parameters/style-verre-eglomise.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "玻璃背金装饰在玻璃背面贴覆金箔并刻画、擦除或罩染，再以深色漆封底，正面观看时金叶被玻璃保护并呈镜面反射；箔片接缝、细刻线、透明罩色和手工缺口可见，避免变成正面金属贴纸或通体金色滤镜",
+      "enPrompt": "verre eglomise decorating the reverse of glass with laid gold leaf that is engraved abraded or glazed before receiving a dark painted backing, so the protected leaf reads reflectively through the front; foil seams fine incisions transparent color and handmade losses remain visible, unlike a surface-applied metallic decal or all-over gold filter",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-niello",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "乌银填刻工艺",
+      "enName": "Niello Metalwork",
+      "image": "/assets/parameters/style-niello.jpg?v=20261022-style-expansion-j",
+      "zhPrompt": "乌银工艺先在抛光银或金属上雕刻细密沟槽，再填入黑色硫化合金并烧结磨平，形成冷亮金属与哑黑凹线的强烈正负关系；雕刀转折、填料边界与轻微磨痕真实存在，图案像嵌入金属而非黑色印刷",
+      "enPrompt": "niello metalwork cutting fine channels into polished silver or metal, packing them with a black sulfide alloy and firing and polishing the surface flush; cool reflective metal and matte recessed black lines create a strong figure-ground contrast with visible tool turns fill boundaries and faint abrasion, appearing embedded rather than printed",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-guilloche-enamel",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "机刻纹透明珐琅",
+      "enName": "Guilloche Enamel",
+      "image": "/assets/parameters/style-guilloche-enamel.jpg?v=20261022-style-expansion-k",
+      "zhPrompt": "机刻纹透明珐琅先在金属底材上车出精密放射波纹、同心环或交错曲线，再覆烧半透明彩釉；釉层像有色玻璃般显露下方机械刻纹，转动处产生有序闪光，保留金属边圈和细微烧成差异，避免印刷旋纹或平面渐变",
+      "enPrompt": "guilloche enamel made by engine-turning precise radial waves concentric rings or interlaced curves into metal before firing translucent colored enamel above them; the glasslike layer reveals ordered machining and directional shimmer with a visible metal rim and slight kiln variation, distinct from a printed swirl or flat gradient",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-straw-marquetry",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "麦秆拼花镶嵌",
+      "enName": "Straw Marquetry",
+      "image": "/assets/parameters/style-straw-marquetry.jpg?v=20261022-style-expansion-k",
+      "zhPrompt": "麦秆拼花把剖开压平的黑麦秆切成细条，依纤维方向逐片铺贴成放射、折线和几何扇面；天然金黄至深棕色随观看角度改变光泽，接缝紧密但仍有手工宽窄差，不表现为木纹贴皮、金属箔或数码光线",
+      "enPrompt": "straw marquetry splitting and flattening rye stalks into narrow strips laid piece by piece as sunbursts chevrons and geometric fans; natural gold-to-brown fibers change sheen with direction, with tight seams and slight handmade width variation, never reading as wood veneer metallic foil or digitally painted rays",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-mokume-gane",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "日本木目金",
+      "enName": "Japanese Mokume-Gane",
+      "image": "/assets/parameters/artist-mokume-gane.jpg?v=20261022-style-expansion-k",
+      "zhPrompt": "日本木目金将铜、银与不同色合金多层扩散结合，经锻打、切削和扭转后显露类似木纹的流动金属层；每条纹路由真实层片连续转折，抛光面同时保留铜红、银白与深灰，不画成大理石纹、印花金属或真实木材",
+      "enPrompt": "Japanese mokume-gane diffusion-bonding layers of copper silver and differently colored alloys, then forging carving and twisting them to reveal flowing woodlike metal grain; every line follows continuous physical lamination across a polished surface of copper red silver white and dark gray, avoiding marble pattern printed metal or literal wood",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-cultural ornament"
+      ]
+    },
+    {
+      "id": "artist-shakudo",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "日本赤铜着色金工",
+      "enName": "Japanese Shakudo",
+      "image": "/assets/parameters/artist-shakudo.jpg?v=20261022-style-expansion-k",
+      "zhPrompt": "日本赤铜金工以含少量金的铜合金经传统着色形成深蓝黑或紫黑表面，再用金、银与素铜细镶表现原创花叶和几何纹；暗色不是油漆而有柔和金属深度，雕刀线和嵌丝边缘克制可见，避免黑色塑料或普通金色贴花",
+      "enPrompt": "Japanese shakudo metalwork patinating a copper alloy containing a small amount of gold into deep blue-black or violet-black, then adding restrained gold silver and bare-copper inlay as original botanical or geometric motifs; the dark surface retains metallic depth with fine engraving and inlay edges, not black paint plastic or applied gold decals",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-cultural ornament"
+      ]
+    },
+    {
+      "id": "style-boulle-marquetry",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "布尔式金属拼花",
+      "enName": "Boulle Marquetry",
+      "image": "/assets/parameters/style-boulle-marquetry.jpg?v=20261022-style-expansion-k",
+      "zhPrompt": "布尔式拼花以黄铜薄片和深色伦理替代材料叠合锯切，再正反互换嵌成连续卷草、花叶与曲线框饰；金属与暗底边缘严密咬合，表面有细刻线和局部包浆，强调精确反向拼接，不使用真实龟甲或泛化巴洛克金色贴花",
+      "enPrompt": "Boulle-style marquetry stacking and fret-cutting thin brass with a dark ethical shell substitute, then counterchanging the pieces into continuous scrolls foliage and curved borders; metal and dark ground interlock precisely with fine engraving and selective patina, emphasizing reciprocal inlay without real tortoiseshell or generic Baroque gold decals",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-opus-sectile",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "彩石切片镶嵌",
+      "enName": "Opus Sectile",
+      "image": "/assets/parameters/style-opus-sectile.jpg?v=20261022-style-expansion-k",
+      "zhPrompt": "彩石切片镶嵌以较大的彩色大理石、玻璃或贝石薄片按轮廓精确切割，直接拼成鸟兽、植物和建筑形块；每块材料内部保留天然脉理，曲线接缝清晰且数量有限，画面依靠形状而非微小颗粒，避免退化为普通马赛克或碎瓷拼贴",
+      "enPrompt": "opus sectile fitting relatively large precisely shaped pieces of colored marble glass or shell-like stone directly into birds plants and architectural forms; each piece retains its natural veining and a limited set of clear curved joints, constructing the image through shaped slabs rather than tiny particles, distinct from ordinary mosaic or broken-tile collage",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-plique-a-jour",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "透明无胎珐琅",
+      "enName": "Plique-a-Jour Enamel",
+      "image": "/assets/parameters/style-plique-a-jour.jpg?v=20261022-style-expansion-k",
+      "zhPrompt": "透明无胎珐琅以细金属丝构成开放小格，在没有背板的情况下填烧透明彩釉，完成后光线可直接穿透红蓝绿玻璃质色块；金属骨架纤细但承力真实，釉面略有厚薄和气泡，不表现为普通彩窗、树脂塑料或有底胎景泰蓝",
+      "enPrompt": "plique-a-jour enamel forming open cells from fine metal wires and firing transparent colored glass into them without a backing, allowing light to pass directly through ruby blue and green fields; the metal skeleton stays delicate yet structurally credible with slight enamel thickness and bubbles, unlike stained glass resin plastic or backed cloisonne",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-champleve-enamel",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "内填式凿槽珐琅",
+      "enName": "Champleve Enamel",
+      "image": "/assets/parameters/style-champleve-enamel.jpg?v=20261022-style-expansion-k",
+      "zhPrompt": "内填式凿槽珐琅在厚铜或青铜底板上直接挖出浅槽并填烧不透明彩釉，未挖金属作为宽厚分隔线和结构边；釉面与金属磨平后仍可见槽深、烧色和包浆差异，避免细丝掐制的景泰蓝外观或表面彩绘仿珐琅",
+      "enPrompt": "champleve enamel carving broad shallow recesses directly into a thick copper or bronze plate and firing opaque color into them, leaving the uncut metal as substantial partitions and structural edges; polished enamel and metal retain differences in depth firing color and patina, distinct from wire-built cloisonne or painted imitation enamel",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-damascening",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "金银错丝嵌饰",
+      "enName": "Damascening",
+      "image": "/assets/parameters/style-damascening.jpg?v=20261022-style-expansion-k",
+      "zhPrompt": "金银错丝嵌饰先在深色钢铁表面刻出细槽或交叉毛面，再把极细金银丝锤压入槽形成连续几何、卷草和边饰；贵金属与钢面齐平，线条在侧光下明亮但不浮起，保留锤击与刻痕，不变成电镀花纹或金色印刷",
+      "enPrompt": "damascening scoring grooves or crosshatched keying into dark steel before hammering extremely fine gold and silver wire into continuous geometry scrollwork and borders; precious metal finishes flush with the steel and glints under side light without standing proud, retaining hammer and tool traces rather than plated ornament or gold printing",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-bidriware",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "比德里黑银器",
+      "enName": "Bidriware",
+      "image": "/assets/parameters/artist-bidriware.jpg?v=20261022-style-expansion-k",
+      "zhPrompt": "比德里金工以锌基合金器物刻槽并嵌入纯银，随后用土盐溶液氧化底材成均匀哑黑，使银色花叶、几何带和点线纹清晰浮现；银嵌与黑底齐平、光泽克制，保留手工刻槽差异，不画成黑瓷贴花或普通金属雕花",
+      "enPrompt": "Bidriware engraving a zinc-alloy vessel and inlaying pure silver before chemically blackening the base to a uniform matte charcoal, making silver foliage geometric bands and dot-line motifs emerge clearly; inlay sits flush with the dark ground with restrained sheen and handmade groove variation, unlike black ceramic decals or ordinary metal engraving",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-cultural ornament"
+      ]
+    },
+    {
+      "id": "artist-kirikane",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "日本截金细饰",
+      "enName": "Japanese Kirikane",
+      "image": "/assets/parameters/artist-kirikane.jpg?v=20261022-style-expansion-k",
+      "zhPrompt": "日本截金以多层金箔烧合后切成极细直丝、菱片与小方片，再逐段贴附于哑光绘画表面，构成精密网格、曲线和放射纹；金线细到近似发丝却保持断续手工节奏，只描述装饰技法，不复制宗教图像或使用大片金箔背景",
+      "enPrompt": "Japanese kirikane fusing layers of gold leaf, cutting them into hair-fine strips diamonds and tiny squares, then placing each segment onto a matte painted surface as precise grids curves and radial motifs; the gold remains extremely fine with a segmented handmade rhythm, describing the decorative technique without copying religious imagery or using an all-over gold ground",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-cultural ornament"
+      ]
+    },
+    {
+      "id": "style-metal-granulation",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "金属微珠粒金工艺",
+      "enName": "Metal Granulation",
+      "image": "/assets/parameters/style-metal-granulation.jpg?v=20261022-style-expansion-k",
+      "zhPrompt": "金属粒金工艺以大量尺寸受控的微小金珠直接熔接于金属底面，组成边框、花瓣、三角和颗粒渐变；每颗珠体保持圆度、真实间距和细小阴影，连接点精细不见粗焊料，避免珍珠贴片、铸造凸点或均匀数字噪点",
+      "enPrompt": "metal granulation fusing many size-controlled microscopic gold spheres directly onto a metal ground as borders petals triangles and granular gradients; each sphere retains roundness credible spacing and a tiny cast shadow with discreet joins and no coarse solder, distinct from pearl applique cast bumps or uniform digital noise",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-basse-taille-enamel",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "浅浮雕透彩珐琅",
+      "enName": "Basse-Taille Enamel",
+      "image": "/assets/parameters/style-basse-taille-enamel.jpg?v=20261022-style-expansion-k",
+      "zhPrompt": "浅浮雕透彩珐琅先在银或金属底面雕出低起伏明暗，再覆盖透明或半透明彩釉；下方浮雕通过釉层显现为深浅连续的波浪、叶脉或光带，亮部由金属反射透出，避免不透明平涂珐琅、表面树脂或普通压花金属",
+      "enPrompt": "basse-taille enamel engraving a low-relief tonal design into silver or metal before covering it with transparent or translucent colored enamel; underlying relief appears through the glassy layer as graded waves veins or light bands and highlights rise from metal reflection, unlike opaque flat enamel surface resin or plain embossed metal",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-korean-maedeup",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "韩国梅杜普结艺",
+      "enName": "Korean Maedeup Knot",
+      "image": "/assets/parameters/artist-korean-maedeup.jpg?v=20261022-style-expansion-k",
+      "zhPrompt": "韩国梅杜普结艺以紧实丝绳按固定穿压顺序形成左右对称、层层咬合的立体结体，并配细密流苏；每个环、压点和绳向可追踪，红、青绿、靛蓝与象牙色节奏克制，保留丝线光泽和张力，不简化为普通蝴蝶结或西式编绳",
+      "enPrompt": "Korean maedeup knot craft threading firm silk cord through a fixed sequence of crossings into a symmetrical interlocked three-dimensional knot with fine tassels; every loop pressure point and cord direction remains traceable in restrained crimson jade indigo and ivory, preserving silk sheen and tension rather than becoming a casual bow or Western macrame",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-cultural ornament"
+      ]
+    },
+    {
+      "id": "artist-korean-hanji",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "韩国韩纸编塑",
+      "enName": "Korean Hanji Craft",
+      "image": "/assets/parameters/artist-korean-hanji.jpg?v=20261022-style-expansion-k",
+      "zhPrompt": "韩国韩纸工艺把楮皮纸裁成纸绳、纸条或多层片材，经搓捻、编织、裱糊和轻度上漆形成坚挺器物；纸纤维、搭接边与编织方向清晰，综合色温润且重量轻，不表现为藤编、陶瓷、塑料或光滑工业纸浆模塑",
+      "enPrompt": "Korean hanji craft cutting mulberry-bark paper into cords strips or laminated sheets, then twisting weaving pasting and lightly lacquering them into firm vessels; paper fibers overlap edges and weave direction remain legible with warm low-weight material character, distinct from rattan ceramic plastic or smooth industrial pulp molding",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-cultural ornament"
+      ]
+    },
+    {
+      "id": "artist-yuzen-dye",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "日本友禅染",
+      "enName": "Japanese Yuzen Dyeing",
+      "image": "/assets/parameters/artist-yuzen-dye.jpg?v=20261022-style-expansion-k",
+      "zhPrompt": "日本友禅染以细米糊防染线围合原创花叶、水流与季节景物，再在丝绸分区内手工晕染色阶；轮廓纤细连续，局部可有金彩点缀，色彩柔和过渡并透出丝面光泽，避免数码花布、粗蜡染裂纹或现成和服纹样复制",
+      "enPrompt": "Japanese yuzen dyeing outlining original flowers flowing water and seasonal forms with fine rice-paste resist before hand-brushing graded color inside each silk area; contours stay slender and continuous with restrained gold accents soft transitions and visible silk sheen, avoiding digital floral fabric coarse batik cracks or copied kimono motifs",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-cultural ornament"
+      ]
+    },
+    {
+      "id": "artist-tsutsugaki",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "日本筒描蓝染",
+      "enName": "Japanese Tsutsugaki",
+      "image": "/assets/parameters/artist-tsutsugaki.jpg?v=20261022-style-expansion-k",
+      "zhPrompt": "日本筒描以锥形筒袋手绘厚米糊防染线，在棉布靛蓝浸染后形成自由白色轮廓和大面积负形；松枝、水浪、鸟形与几何图案保持原创，糊线边缘有手挤粗细和蓝染渗化，不等同于型纸重复印花或机械白色描边",
+      "enPrompt": "Japanese tsutsugaki piping thick rice-paste resist freehand through a cone onto cotton before indigo immersion, leaving broad white contours and negative forms; original pine wave birdlike and geometric motifs retain hand-squeezed width variation and dye feathering, distinct from repeated stencil printing or mechanically applied white outlines",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-cultural ornament"
+      ]
+    },
+    {
+      "id": "artist-songket",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "马来宋吉金银织锦",
+      "enName": "Malay Songket",
+      "image": "/assets/parameters/artist-songket.jpg?v=20261022-style-expansion-k",
+      "zhPrompt": "马来宋吉织锦在深色丝或棉底上加入额外金银纬线，形成浮于布面的菱形、八角花和连续边饰；金属线只在纹样区域显露并随方向闪烁，底布经纬仍可辨，构图华丽但有节奏，不变成整面亮片或印刷金纹",
+      "enPrompt": "Malay songket weaving adding supplementary gold and silver wefts over a dark silk or cotton ground to form diamonds eight-petal motifs and continuous borders; metallic threads float only where the pattern requires and shimmer directionally while the ground weave remains visible, ornate yet rhythmic rather than an all-over sequin surface or printed gold design",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-cultural ornament"
+      ]
+    },
+    {
+      "id": "artist-tnalak",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "特纳拉克蕉麻织纹",
+      "enName": "Tnalak Abaca Weaving",
+      "image": "/assets/parameters/artist-tnalak.jpg?v=20261022-style-expansion-k",
+      "zhPrompt": "特纳拉克织物以蕉麻纤维在织前分段扎染，织成黑、深棕与天然象牙色交替的连续几何节奏；图形边缘因经线染段产生柔和锯齿和轻微错位，纤维略硬并有植物光泽，只借鉴材料与组织，不复制特定神圣图案",
+      "enPrompt": "Tnalak-inspired abaca weaving using resist-dyed warp segments to build repeating geometry in black deep brown and natural ivory; motif edges gain soft serration and slight displacement from dyed warp alignment while stiff plant fibers keep a subdued sheen, referencing material and weave logic without reproducing a specific sacred pattern",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-cultural ornament"
+      ]
+    },
+    {
+      "id": "artist-inabel",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "菲律宾伊纳贝尔织布",
+      "enName": "Philippine Inabel Weaving",
+      "image": "/assets/parameters/artist-inabel.jpg?v=20261022-style-expansion-k",
+      "zhPrompt": "菲律宾伊纳贝尔织布以清晰经纬和手工张力组织靛蓝、砖红与象牙白条带、菱形和光学几何，部分纹样通过纱线交错产生旋动错视；棉线颗粒、边缘微差与双面结构可见，避免数码欧普图、机织完美重复或泛化民族纹样",
+      "enPrompt": "Philippine Inabel weaving organizing indigo brick red and ivory stripes diamonds and optical geometry through a clear warp-weft structure and handloom tension, with selected interlacings producing controlled rotational illusion; cotton grain edge variation and reversible construction remain visible, avoiding digital op art machine-perfect repeat or generic ethnic pattern",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-cultural ornament"
+      ]
+    },
+    {
+      "id": "artist-thai-lai-rod-nam",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "泰式漆金擦洗画",
+      "enName": "Thai Lai Rod Nam",
+      "image": "/assets/parameters/artist-thai-lai-rod-nam.jpg?v=20261022-style-expansion-l",
+      "zhPrompt": "泰式漆金擦洗画在黑漆面以防染胶绘制负形，贴覆金箔后洗去遮挡层，使细密金色藤蔓、鸟形和几何边饰从哑黑底上显现；金叶接缝、漆面深度与轻微磨损可见，图案保持原创，不复刻具体寺院或神圣形象",
+      "enPrompt": "Thai lai rod nam lacquer using a resist drawing over black lacquer before laying gold leaf and washing away the masked areas, revealing fine golden vines birdlike forms and geometric borders against matte black; leaf seams lacquer depth and restrained wear remain visible, with an original composition that does not copy a temple panel or sacred figure",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-cultural ornament"
+      ]
+    },
+    {
+      "id": "style-tadelakt-plaster",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "塔德拉克抛光灰泥",
+      "enName": "Tadelakt Plaster",
+      "image": "/assets/parameters/style-tadelakt-plaster.jpg?v=20261022-style-expansion-l",
+      "zhPrompt": "塔德拉克灰泥以石灰膏分层压抹，再用光滑石块和橄榄皂反复压光，形成无缝、微防水的云雾色面；暖沙、玫瑰或土灰色在弧形墙和壁龛上缓慢变化，细小抹痕与柔和反射真实存在，避免瓷砖缝、混凝土粗孔或塑料亮漆",
+      "enPrompt": "tadelakt plaster built from layered lime paste compressed with a smooth stone and finished with olive soap, producing a seamless softly waterproof cloudy surface; warm sand rose or earth-gray tones shift slowly across curved walls and niches with fine trowel traces and gentle reflection, avoiding tile joints rough concrete pores or plastic gloss paint",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-horezu-pottery",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "罗马尼亚霍雷祖陶绘",
+      "enName": "Romanian Horezu Pottery",
+      "image": "/assets/parameters/artist-horezu-pottery.jpg?v=20261022-style-expansion-l",
+      "zhPrompt": "霍雷祖陶绘在乳白或暖赭陶胎上用牛角滴绘、梳齿拖拽和细线旋转形成螺旋、羽状花叶与原创鸟形；砖红、橄榄绿、深褐和米白釉色略有流动，盘面保留手拉坯和窑变，不表现为印花餐具或精确数字曼陀罗",
+      "enPrompt": "Romanian Horezu pottery using horn-dripped slip comb dragging and rotating fine lines over cream or warm ochre clay to form spirals feathered foliage and original bird motifs; brick red olive green dark brown and ivory glazes flow slightly across a hand-thrown kiln-varied plate, distinct from transfer-printed tableware or a mathematically perfect digital mandala",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-cultural ornament"
+      ]
+    },
+    {
+      "id": "artist-gzhel-ceramics",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "格热利蓝白陶绘",
+      "enName": "Gzhel Ceramic Painting",
+      "image": "/assets/parameters/artist-gzhel-ceramics.jpg?v=20261022-style-expansion-l",
+      "zhPrompt": "格热利陶绘以钴蓝在白瓷釉下用单笔浓淡塑造花瓣、叶片和卷草，笔锋从深蓝边缘过渡到淡蓝水色；白地清亮、构图围绕器形旋转，保留手绘停顿与釉烧扩散，避免青花瓷式细线叙事或统一蓝色印花",
+      "enPrompt": "Gzhel ceramic painting using cobalt underglaze in single loaded brushstrokes that move from deep blue edges into pale watery petals leaves and scrolls; the white ground stays luminous and the composition turns with the vessel, retaining hand-painted pauses and kiln diffusion rather than Chinese blue-and-white narrative linework or uniform transfer print",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-cultural ornament"
+      ]
+    },
+    {
+      "id": "artist-khokhloma",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "霍赫洛玛木器彩绘",
+      "enName": "Khokhloma Painting",
+      "image": "/assets/parameters/artist-khokhloma.jpg?v=20261022-style-expansion-l",
+      "zhPrompt": "霍赫洛玛木器彩绘在黑漆底上以红色浆果、金色叶片和细长卷茎形成饱满环绕纹样，金色来自金属粉底与多层清漆烘烤而非真金；笔触沿木器曲面连续，红黑金层次清楚，避免普通金箔贴花或扁平矢量花纹",
+      "enPrompt": "Khokhloma wood painting wrapping black-lacquered vessels in red berries golden leaves and slender curling stems, with the gold effect produced by metallic ground and baked varnish rather than real leaf; brushwork follows the curved wooden form and maintains clear red-black-gold hierarchy, avoiding applied foil decals or flat vector ornament",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-cultural ornament"
+      ]
+    },
+    {
+      "id": "artist-zhostovo-tray",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "若斯托沃托盘花绘",
+      "enName": "Zhostovo Tray Painting",
+      "image": "/assets/parameters/artist-zhostovo-tray.jpg?v=20261022-style-expansion-l",
+      "zhPrompt": "若斯托沃托盘画在黑色金属漆面以透明底色、半透明罩染和亮部提笔逐层塑造大型花束，中心花朵明亮饱满，外围叶片渐隐入暗底；金色细边顺着托盘轮廓，保留油彩笔触和漆面反光，避免照片花束贴图",
+      "enPrompt": "Zhostovo tray painting building a large bouquet on black lacquered metal through transparent underpainting layered glazes and final highlight strokes, with luminous central blooms and outer leaves dissolving into the dark ground; a fine gold border follows the tray contour while oil-brush texture and lacquer reflection remain, avoiding pasted photographic flowers",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-cultural ornament"
+      ]
+    },
+    {
+      "id": "artist-mezen-painting",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "梅津木器线绘",
+      "enName": "Mezen Wood Painting",
+      "image": "/assets/parameters/artist-mezen-painting.jpg?v=20261022-style-expansion-l",
+      "zhPrompt": "梅津木器画在浅色原木上只用砖红与黑色细线分层排列抽象马、鹿、鸟、树形和连续几何带；上下横向区隔严格，动物由少量符号化笔画构成，木纹贯穿空白，保留手笔粗细，不混入多彩花卉或写实阴影",
+      "enPrompt": "Mezen wood painting arranging abstract horses deer birds trees and continuous geometric bands in strict horizontal registers using only brick red and black lines on pale raw wood; animals are reduced to a few symbolic strokes and grain runs through the open ground with handmade width variation, without multicolor flowers or realistic shading",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-cultural ornament"
+      ]
+    },
+    {
+      "id": "artist-gorodets-painting",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "戈罗杰茨木板彩绘",
+      "enName": "Gorodets Painting",
+      "image": "/assets/parameters/artist-gorodets-painting.jpg?v=20261022-style-expansion-l",
+      "zhPrompt": "戈罗杰茨木板彩绘以不打底或暖木色为背景，用红、蓝、绿、黑色平涂描绘圆形玫瑰、马匹和日常人物，再以白色短线和黑色细线提亮收边；造型正面、节奏活泼且笔触可见，不变成印刷童话插图",
+      "enPrompt": "Gorodets wood painting working over bare or warm-toned wood with flat red blue green and black roses horses and everyday figures, then finishing forms with short white highlights and fine dark contours; shapes remain frontal lively and visibly brushed rather than becoming a printed fairy-tale illustration",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-cultural ornament"
+      ]
+    },
+    {
+      "id": "artist-vietnamese-silk",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "越南丝绸画",
+      "enName": "Vietnamese Silk Painting",
+      "image": "/assets/parameters/artist-vietnamese-silk.jpg?v=20261022-style-expansion-l",
+      "zhPrompt": "越南丝绸画让稀释颜料渗入半透明丝纤维，以柔和赭色、青绿、灰蓝和米白描绘河岸、人物或静物；轮廓纤细但不僵硬，颜色多次罩染后仍轻薄通透，大面积安静留白显出丝面，不使用水彩纸纹或厚重油彩",
+      "enPrompt": "Vietnamese silk painting letting diluted pigment sink into translucent silk fibers, depicting riverside life figures or still objects in soft ochre jade gray-blue and ivory; contours remain fine but relaxed and repeated washes stay light and luminous across broad quiet silk ground, without watercolor-paper grain or heavy opaque paint",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-cultural ornament"
+      ]
+    },
+    {
+      "id": "artist-chinese-jiehua",
+      "category": "artist-style",
+      "styleGroup": "east-asian",
+      "zhName": "中国界画建筑绘法",
+      "enName": "Chinese Jiehua Painting",
+      "image": "/assets/parameters/artist-chinese-jiehua.jpg?v=20261022-style-expansion-l",
+      "zhPrompt": "中国界画以界尺辅助的细直墨线精确描绘梁柱、斗拱、栏杆和瓦檐，建筑透视、层高和节点关系严谨，再以淡彩、树石和微小人物柔化工程感；绢本留白和线宽层级清楚，避免现代 CAD 蓝图或失真的幻想建筑",
+      "enPrompt": "Chinese jiehua ruled-line painting using straightedge-guided fine ink to describe beams brackets railings and tiled eaves with coherent perspective floor height and structural joints, then softening the precision through pale color trees rocks and tiny figures; silk negative space and line hierarchy remain clear, avoiding modern CAD blueprints or impossible fantasy architecture",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-patola",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "帕托拉双重伊卡特",
+      "enName": "Patola Double Ikat",
+      "image": "/assets/parameters/artist-patola.jpg?v=20261022-style-expansion-l",
+      "zhPrompt": "帕托拉双重伊卡特在织前分别对经线与纬线分段扎染，织造时两组染段同时对位形成多色几何、花叶与原创动物形；边缘有细密羽化却整体对称清楚，丝线色彩从结构中相交，不表现为印花布或单向模糊伊卡特",
+      "enPrompt": "Patola double ikat resist-dyeing both warp and weft in segmented colors before weaving, aligning the two prepared systems into multicolor geometry foliage and original animal forms; edges carry fine feathering while symmetry remains legible and silk colors intersect structurally, distinct from printed cloth or one-direction blurred ikat",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-cultural ornament"
+      ]
+    },
+    {
+      "id": "artist-jamdani",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "贾姆达尼补纬细布",
+      "enName": "Jamdani Muslin",
+      "image": "/assets/parameters/artist-jamdani.jpg?v=20261022-style-expansion-l",
+      "zhPrompt": "贾姆达尼细布在通透棉纱底上用不连续补充纬线逐小段挑织花朵、叶片和几何点阵，使纹样像悬浮于空气中；底布网格极细、图案边缘由短纬线自然阶梯化，白、金或柔彩克制出现，避免蕾丝刺绣或表面印花",
+      "enPrompt": "Jamdani muslin inserting discontinuous supplementary wefts by hand into a translucent fine-cotton ground so flowers leaves and geometric dots appear to float in air; the base grid is extremely delicate and motif edges step naturally through short wefts in restrained white gold or pale color, distinct from lace embroidery or surface printing",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-cultural ornament"
+      ]
+    },
+    {
+      "id": "artist-bandhani",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "班达尼点扎染",
+      "enName": "Bandhani Tie-Dye",
+      "image": "/assets/parameters/artist-bandhani.jpg?v=20261022-style-expansion-l",
+      "zhPrompt": "班达尼点扎染以指尖捏起布面并逐点紧扎，染后留下成千细小白点或黄点，点群组合成同心花章、波浪与边饰；每点大小和渗色略有差异，红、洋红、靛蓝或黄色底色饱满，不放大成白族团花或数字圆点图案",
+      "enPrompt": "Bandhani tie-dye pinching and tightly binding cloth point by point so thousands of tiny white or yellow resist dots combine into concentric medallions waves and borders; every dot varies slightly in size and feathering over saturated crimson magenta indigo or yellow grounds, distinct from large rosette tie-dye or a digital polka-dot pattern",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-cultural ornament"
+      ]
+    },
+    {
+      "id": "artist-leheriya",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "莱赫里亚波浪扎染",
+      "enName": "Leheriya Resist Dye",
+      "image": "/assets/parameters/artist-leheriya.jpg?v=20261022-style-expansion-l",
+      "zhPrompt": "莱赫里亚扎染把轻薄布料沿对角线紧密卷成长条并分段捆扎，染后形成连续斜向波浪带；藏红、青绿、粉红与白色条纹边缘柔和渗化，波距随手工卷束略有起伏，强调流动方向，不变成笔刷彩虹或普通横条纹",
+      "enPrompt": "Leheriya resist dye rolling lightweight cloth tightly along the diagonal and binding it in intervals before dyeing, producing continuous slanted wave bands; saffron turquoise pink and white edges feather softly and spacing varies with the hand-rolled bundle, emphasizing directional flow rather than painted rainbow strokes or ordinary horizontal stripes",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-cultural ornament"
+      ]
+    },
+    {
+      "id": "artist-kutch-mirror",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "库奇镜片刺绣",
+      "enName": "Kutch Mirror Embroidery",
+      "image": "/assets/parameters/artist-kutch-mirror.jpg?v=20261022-style-expansion-l",
+      "zhPrompt": "库奇镜片刺绣在深色棉布上以链绣、扣眼针和密集几何线迹固定小圆镜或多边镜，镜片真实反射环境光并由彩线包边；红橙绿蓝纹样围绕镜面形成节奏，布纹和针脚清楚，避免亮片贴布或无序镜面堆积",
+      "enPrompt": "Kutch mirror embroidery securing small round or polygonal real mirrors to dark cotton through chain stitch buttonhole stitch and dense geometric threadwork, with mirrors reflecting environmental light inside colored stitched rims; red orange green and blue motifs rhythmically surround each mirror while cloth and needlework remain visible, avoiding sequins or random mirrored clutter",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-cultural ornament"
+      ]
+    },
+    {
+      "id": "artist-uzbek-ikat",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "乌兹别克阿特拉斯伊卡特",
+      "enName": "Uzbek Atlas Ikat",
+      "image": "/assets/parameters/artist-uzbek-ikat.jpg?v=20261022-style-expansion-l",
+      "zhPrompt": "乌兹别克阿特拉斯伊卡特以预染经线织成纵向拉长的火焰、云形和椭圆花章，钴蓝、洋红、翠绿、黄色与白色强烈交错；经向边缘柔糊而纬向结构清楚，丝缎光泽随褶皱移动，避免数码模糊印花或任意霓虹渐变",
+      "enPrompt": "Uzbek atlas ikat weaving pre-dyed warp into vertically elongated flame cloud and oval medallion forms in cobalt magenta emerald yellow and white; edges feather along the warp while weft structure remains legible and satin sheen moves with folds, avoiding digitally blurred printing or arbitrary neon gradients",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-cultural ornament"
+      ]
+    },
+    {
+      "id": "artist-kazakh-tuskiiz",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "哈萨克图斯基兹壁毡绣",
+      "enName": "Kazakh Tuskiiz",
+      "image": "/assets/parameters/artist-kazakh-tuskiiz.jpg?v=20261022-style-expansion-l",
+      "zhPrompt": "哈萨克图斯基兹壁挂在深色毡或绒布上以链绣、缎面绣和贴布形成大尺度对称卷角、花枝与宽边框，中心常保留呼吸区；红、青绿、象牙和金色线迹凸起清晰，强调墙挂刺绣结构，不与已有哈萨克平面毡毯混同",
+      "enPrompt": "Kazakh tuskiiz wall hanging building large symmetrical curled forms floral stems and broad borders through chain stitch satin embroidery and applique on dark felt or velvet, often preserving an open central field; raised crimson turquoise ivory and gold thread remains legible, emphasizing embroidered wall-hanging construction rather than the existing flat felt-carpet style",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-cultural ornament"
+      ]
+    },
+    {
+      "id": "artist-turkmen-carpet",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "土库曼绒结地毯",
+      "enName": "Turkmen Pile Carpet",
+      "image": "/assets/parameters/artist-turkmen-carpet.jpg?v=20261022-style-expansion-l",
+      "zhPrompt": "土库曼地毯以高密度羊毛绒结在茜草红底上排列多行紧凑八角花章和细小护边，深蓝、黑、象牙与红色通过结点形成清晰几何；绒面厚度、毛向和手工微差可见，采用原创花章，不复制特定部族标志",
+      "enPrompt": "Turkmen pile-carpet language arranging rows of compact octagonal medallions and narrow guarded borders through dense wool knots over a madder-red field, with navy black ivory and red geometry resolved by individual knots; pile depth nap direction and handmade variation remain visible, using original medallions rather than copying a specific tribal emblem",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-cultural ornament"
+      ]
+    },
+    {
+      "id": "artist-persian-termeh",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "波斯特尔梅织锦",
+      "enName": "Persian Termeh",
+      "image": "/assets/parameters/artist-persian-termeh.jpg?v=20261022-style-expansion-l",
+      "zhPrompt": "波斯特尔梅织物以细密羊毛丝混纺和补充纬线织出连续弯曲花形、细藤和密集小花，酒红、青绿、赭金与米白层次繁复但节奏统一；纹样来自织造而非印花，表面柔软微亮，避免放大的单一佩斯利图标或现代壁纸感",
+      "enPrompt": "Persian termeh weaving fine wool-silk and supplementary wefts into continuous curved boteh-like forms delicate vines and dense small flowers in burgundy teal ochre gold and ivory; complexity remains rhythmically unified and structurally woven rather than printed, with a soft subdued sheen that avoids oversized isolated paisley icons or modern wallpaper",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-cultural ornament"
+      ]
+    },
+    {
+      "id": "artist-anatolian-kilim",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "安纳托利亚基里姆平织",
+      "enName": "Anatolian Kilim",
+      "image": "/assets/parameters/artist-anatolian-kilim.jpg?v=20261022-style-expansion-l",
+      "zhPrompt": "安纳托利亚基里姆采用无绒平织和分缝挂毯结构，以砖红、靛蓝、赭黄与象牙色构成阶梯菱形、钩形和宽条带；颜色交界可见细窄经线缝隙，表面平薄、边缘有手织变化，原创纹样不复制护符符号，也不表现为绒头地毯",
+      "enPrompt": "Anatolian kilim using pileless flatweave and slit-tapestry construction to form stepped diamonds hooks and broad bands in brick red indigo ochre and ivory; narrow warp slits remain visible where color areas meet and the surface stays flat with handwoven edge variation, using original motifs without copying talismanic symbols or resembling a pile carpet",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-cultural ornament"
+      ]
+    },
+    {
       "id": "clothing-long-sleeve",
       "category": "clothing",
       "styleGroup": "tops-sleeves",
@@ -8882,8 +9928,8 @@
       "zhName": "苗族蜡染",
       "enName": "Miao Batik",
       "image": "/assets/parameters/ethnic-miao.jpg?v=20260827-scene-crop-fix",
-      "zhPrompt": "苗族蜡染灵感，蓝白蜡染纹样、银饰质感和山地村寨氛围",
-      "enPrompt": "Miao batik inspired visual style, blue-and-white wax-resist textile motifs, silver ornament detail, mountain village atmosphere"
+      "zhPrompt": "苗族蜡染视觉以深靛蓝棉布、手绘蜡防染裂纹和留白纹样形成清晰正负形，蝴蝶、涡旋、花叶与几何边饰按布幅结构组织；可点缀克制银饰反光与山地综合色，保留染液渗边和手工不对称，不泛化为蓝白瓷纹或复制具有特定仪式含义的图样",
+      "enPrompt": "Miao batik visual language using deep indigo cotton, hand-drawn wax-resist crackle and reserved white motifs to form clear positive-negative shapes, arranging butterflies spirals foliage and geometric borders according to the cloth structure; restrained silver glints and mountain colors may appear, while dye bleed and handmade asymmetry remain visible instead of becoming blue-and-white porcelain pattern or a copied ceremonial emblem"
     },
     {
       "id": "ethnic-zhuang",
@@ -8892,8 +9938,8 @@
       "zhName": "壮锦纹样",
       "enName": "Zhuang Brocade",
       "image": "/assets/parameters/ethnic-zhuang.jpg?v=20260827-scene-crop-fix",
-      "zhPrompt": "壮锦纹样灵感，几何织锦、桂西山水和鲜明民俗色彩",
-      "enPrompt": "Zhuang brocade inspired style, geometric woven patterns, Guangxi mountain-water landscape, vivid folk palette"
+      "zhPrompt": "壮锦视觉语言，以经纬显色的菱形、回纹、八角花和连续几何边饰构成紧密织锦节奏，红黑蓝黄对比鲜明但层级有序；丝棉纱线的交织、轻微浮纹与手工边缘清楚，可融入桂西山水抽象轮廓，不复制具体神圣图腾",
+      "enPrompt": "Zhuang brocade visual language organizing warp-and-weft diamonds key patterns eight-petal forms and continuous geometric borders into a dense woven rhythm, with vivid red black blue and yellow held in a clear hierarchy; silk-cotton interlacing slight relief and handmade edges remain visible, optionally abstracting Guangxi mountain-water contours without copying a sacred emblem"
     },
     {
       "id": "ethnic-tibetan",
@@ -8902,8 +9948,8 @@
       "zhName": "藏式唐卡",
       "enName": "Tibetan Thangka",
       "image": "/assets/parameters/ethnic-tibetan.jpg?v=20260827-scene-crop-fix",
-      "zhPrompt": "藏式唐卡与高原建筑灵感，宝石色、云纹、雪山和庄重装饰",
-      "enPrompt": "Tibetan thangka and plateau architecture inspired style, jewel colors, cloud ornament, snow mountains, solemn decoration"
+      "zhPrompt": "藏式唐卡绘画语言以矿物宝石色、细密金线、层叠云气和严格中心秩序构成庄重画面，轮廓清楚、色面平整并带手工棉布底与颜料颗粒；背景可吸收雪山、寺院建筑和高原天空的综合色，仅借鉴材质、配色与构图纪律，不复制具体神像、经文或神圣图式",
+      "enPrompt": "Tibetan thangka painting language built from mineral jewel colors fine gold lines layered clouds and disciplined central order, with crisp contours flat color fields and visible cotton-ground pigment grain; the background may absorb plateau sky snow mountains and monastery architecture, borrowing material palette and compositional discipline without reproducing a specific deity scripture or sacred diagram"
     },
     {
       "id": "ethnic-mongolian",
@@ -8932,8 +9978,8 @@
       "zhName": "傣族孔雀寺庙",
       "enName": "Dai Peacock Temple",
       "image": "/assets/parameters/ethnic-dai.jpg?v=20260827-scene-crop-fix",
-      "zhPrompt": "傣族热带寺庙壁画灵感，孔雀、金色寺塔、莲花和湿润绿植",
-      "enPrompt": "Dai tropical peacock and temple mural inspired style, golden pagodas, lotus motifs, lush greenery"
+      "zhPrompt": "傣族热带寺院与织锦视觉，以修长金色屋脊、层叠塔檐、孔雀羽眼般的青绿蓝纹和莲瓣边饰建立轻盈节奏，综合色来自湿润绿植、赭红木构与金箔反光；保持壁画式平面层次和细线装饰，不把宗教建筑、孔雀和热带植物堆成通用东南亚拼贴",
+      "enPrompt": "Dai tropical temple and brocade visual language using slender gilded rooflines layered eaves peacock-eye teal-blue patterning and lotus-petal borders to create a light rhythm, drawing its palette from lush vegetation red-brown timber and restrained gold-leaf glints; preserve mural-like flat depth and fine linear ornament rather than piling temples peacocks and plants into a generic Southeast Asian collage"
     },
     {
       "id": "ethnic-dong",
@@ -8952,8 +9998,8 @@
       "zhName": "彝族漆器纹样",
       "enName": "Yi Lacquer Pattern",
       "image": "/assets/parameters/ethnic-yi.jpg?v=20260827-scene-crop-fix",
-      "zhPrompt": "彝族漆器纹样灵感，红黑黄强对比、太阳纹和山地装饰图案",
-      "enPrompt": "Yi lacquer pattern inspired style, red black yellow contrast, sun motifs, mountain folk ornament"
+      "zhPrompt": "彝族漆器视觉以黑色髹漆为底，用朱红与土黄连续绘制日轮、火焰、涡旋和几何分区，图形沿器物弧面保持紧凑节奏；漆面深润、手绘边缘略有起伏，色彩强烈但限制在三色体系，避免扩展成泛民族图腾拼盘或塑料亮面印刷",
+      "enPrompt": "Yi lacquerware visual language using a black lacquer ground with vermilion and earth-yellow sun wheels flames spirals and geometric compartments arranged in a compact rhythm that follows the curved vessel; the surface is deep and lustrous with slightly irregular hand-painted edges, keeping a forceful three-color system rather than a generic ethnic-symbol mix or plastic glossy print"
     },
     {
       "id": "ethnic-qiang",
@@ -8962,8 +10008,8 @@
       "zhName": "羌绣石寨",
       "enName": "Qiang Embroidery",
       "image": "/assets/parameters/ethnic-qiang.jpg?v=20260827-scene-crop-fix",
-      "zhPrompt": "羌绣与石寨灵感，花卉刺绣、碉楼、峡谷山地和朴素石材",
-      "enPrompt": "Qiang embroidery and stone-village inspired style, floral stitching, watchtowers, canyon mountains, rugged stone texture"
+      "zhPrompt": "羌绣与石寨视觉将黑蓝布底上的挑花、十字针与彩色花叶边饰，同峡谷石墙、碉楼垂直轮廓和粗粝灰褐石材相结合；针脚方向、布边结构与建筑砌石均清晰，综合色质朴而局部鲜亮，避免把刺绣铺满建筑或混用不相关民族符号",
+      "enPrompt": "Qiang embroidery and stone-village visual language combining counted-thread motifs cross stitches and bright floral borders on dark blue-black cloth with canyon masonry tall watchtower silhouettes and rugged gray-brown stone; stitch direction textile edging and wall construction remain legible, with an earthy palette and concentrated color rather than embroidery pasted across buildings or unrelated ethnic symbols"
     },
     {
       "id": "ethnic-naxi",
@@ -8982,8 +10028,8 @@
       "zhName": "白族扎染",
       "enName": "Bai Tie-Dye",
       "image": "/assets/parameters/ethnic-bai.jpg?v=20260827-scene-crop-fix",
-      "zhPrompt": "白族扎染灵感，靛蓝扎染纹样、白墙民居和洱海山水气质",
-      "enPrompt": "Bai tie-dye indigo craft inspired style, blue resist-dye patterns, white-walled homes, lake-and-mountain mood"
+      "zhPrompt": "白族扎染视觉以棉布折叠、缝扎和紧束后反复靛蓝浸染形成蓝白花团、放射点和连续几何，结扎处保留清晰白芯，边缘自然渗蓝并有深浅层次；可配白墙青瓦与洱海山水综合色，但不把纹样替换成数码对称滤镜",
+      "enPrompt": "Bai tie-dye visual language repeatedly folding stitching binding and indigo-dipping cotton to form blue-white floral clusters radial dots and continuous geometry, with clear white cores at ties and naturally feathered layered blue edges; it may pair with white walls gray tile and Erhai mountain-water color while avoiding a digitally mirrored resist pattern"
     },
     {
       "id": "ethnic-tujia",
@@ -8992,8 +10038,8 @@
       "zhName": "土家织锦",
       "enName": "Tujia Brocade",
       "image": "/assets/parameters/ethnic-tujia.jpg?v=20260827-scene-crop-fix",
-      "zhPrompt": "土家织锦灵感，西兰卡普几何纹、吊脚楼和浓烈织物色彩",
-      "enPrompt": "Tujia brocade inspired style, colorful geometric Xilankapu textile motifs, stilt houses, strong woven color"
+      "zhPrompt": "土家西兰卡普织锦以厚实纬线在深色底经上形成阶梯菱形、钩纹和连续几何带，红橙黄绿对比强烈且由织造层级控制；纱线浮起、边缘锯齿与手工张力可见，可呼应吊脚楼木构节奏，不复制具体祭祀图腾",
+      "enPrompt": "Tujia Xilankapu brocade using substantial colored wefts over a dark warp to build stepped diamonds hooked motifs and continuous geometric bands, with vivid red orange yellow and green controlled by woven hierarchy; raised yarn serrated edges and handloom tension remain visible and may echo stilt-house timber rhythm without copying a ceremonial emblem"
     },
     {
       "id": "ethnic-han",
@@ -9022,8 +10068,8 @@
       "zhName": "满族宫廷纹饰",
       "enName": "Manchu Court Ornament",
       "image": "/assets/parameters/ethnic-manchu.jpg?v=20260827-scene-crop-fix",
-      "zhPrompt": "满族宫廷织物与纹饰灵感，金线刺绣、宫墙色彩和典雅秩序",
-      "enPrompt": "Manchu court textile and palace ornament inspired style, gold embroidery, palace colors, elegant order"
+      "zhPrompt": "满族宫廷织物视觉以缎面袍料、盘金绣、云水边饰和对称构件形成严整层级，石青、明黄、朱红与宫墙灰按主次分配；金线随针向产生细碎高光，纹样服从衣片或器物结构，仅借鉴历史工艺与配色，不复制身份等级专属章纹",
+      "enPrompt": "Manchu court-textile visual language using satin robe cloth couched gold embroidery cloud-and-water borders and symmetrical components in a disciplined hierarchy, allocating deep blue imperial yellow vermilion and palace gray by importance; gold catches fine directional highlights and ornament follows garment or object construction, borrowing historical craft and palette without copying rank-specific insignia"
     },
     {
       "id": "ethnic-yao",
@@ -9032,8 +10078,8 @@
       "zhName": "瑶族刺绣山寨",
       "enName": "Yao Embroidery",
       "image": "/assets/parameters/ethnic-yao.jpg?v=20260827-scene-crop-fix",
-      "zhPrompt": "瑶族刺绣与山寨灵感，高饱和纹样、山地村落和细密织绣",
-      "enPrompt": "Yao embroidery and mountain village inspired style, saturated motifs, hill villages, dense textile detail"
+      "zhPrompt": "瑶族刺绣视觉以深蓝或黑布为底，用红、白、黄细线组织密集十字、菱格、折线和窄幅边饰，局部银饰反光与山地木寨综合色呼应；针脚方向和布纹清楚，色彩集中于服饰结构，不泛化成满屏高饱和民族花纹",
+      "enPrompt": "Yao embroidery visual language using deep indigo or black cloth with dense red white and yellow crosses diamonds zigzags and narrow borders, balanced by restrained silver ornament reflections and mountain timber-village color; stitch direction and ground weave stay legible with color concentrated on garment structure rather than generic full-frame saturated folk pattern"
     },
     {
       "id": "ethnic-korean",
@@ -9042,8 +10088,8 @@
       "zhName": "朝鲜族民画",
       "enName": "Korean-Chinese Folk",
       "image": "/assets/parameters/ethnic-korean.jpg?v=20260827-scene-crop-fix",
-      "zhPrompt": "朝鲜族民画与服饰织物灵感，柔和山水、花卉纹和清丽色彩",
-      "enPrompt": "Korean-Chinese folk painting and textile inspired style, soft landscape, floral motifs, clear delicate colors"
+      "zhPrompt": "朝鲜族民画与服饰织物视觉，以清透矿物色、平缓山水层次、花鸟屏风式构图和轻盈衣料色块营造明净秩序；轮廓细而稳定，纸面与丝织纹理可见，粉、青、黄、白保持低冲突，不混同为高饱和宫廷装饰或现代卡通图案",
+      "enPrompt": "Korean-Chinese folk painting and textile visual language using translucent mineral colors gently layered landscapes floral-bird screen composition and light garment color blocks to create clear order; contours remain fine and stable with paper and silk texture visible, balancing pink cyan yellow and white without turning into saturated palace ornament or modern cartoon pattern"
     },
     {
       "id": "ethnic-hani",
@@ -9052,8 +10098,8 @@
       "zhName": "哈尼梯田",
       "enName": "Hani Terraces",
       "image": "/assets/parameters/ethnic-hani.jpg?v=20260827-scene-crop-fix",
-      "zhPrompt": "哈尼梯田与织物灵感，层叠水田、山地村寨和织纹边饰",
-      "enPrompt": "Hani terrace-field textile inspired style, layered rice terraces, mountain villages, woven border motifs"
+      "zhPrompt": "哈尼视觉语言以随山势层叠的水田曲线、云雾反光和紧凑山地村寨建立空间节奏，服饰或边框可使用靛黑底、红白细线与银色点饰；梯田水面按高度分层而非随意波纹，环境与织纹互相呼应但不拼贴具体图腾",
+      "enPrompt": "Hani-inspired visual language using contour-following rice-terrace curves mist reflections and compact mountain villages to build spatial rhythm, with optional indigo-black textile borders carrying fine red-white lines and silver points; water surfaces step coherently by elevation rather than random waves, linking landscape and weave without pasting a specific emblem"
     },
     {
       "id": "ethnic-li",
@@ -9222,8 +10268,8 @@
       "zhName": "阿昌族银饰刀工艺",
       "enName": "Achang Silver Craft",
       "image": "/assets/parameters/ethnic-achang.jpg?v=20260827-scene-crop-fix",
-      "zhPrompt": "阿昌族银饰与刀工艺灵感，银色金属、木构村寨和精致边饰",
-      "enPrompt": "Achang silver ornament and knife-craft inspired style, silver metalwork, wooden villages, detailed borders"
+      "zhPrompt": "阿昌族银饰与金属锻制视觉，以锻打银面、细刻边线、深色木柄和局部皮革形成冷暖材质对照，构图可结合木构村寨与窄幅织物边饰；金属保留锤痕、氧化暗部和真实刃口秩序，不展示可操作武器动作，不把银饰泛化成镜面珠宝",
+      "enPrompt": "Achang silver ornament and forged-metal visual language contrasting hammered silver fine incised borders dark wooden handles and restrained leather, optionally set against timber village structures and narrow woven bands; metal retains hammer marks oxidized recesses and credible edge construction without depicting actionable weapon use or turning craft silver into mirror-polished generic jewelry"
     },
     {
       "id": "ethnic-nu",
@@ -9232,8 +10278,8 @@
       "zhName": "怒族峡谷织纹",
       "enName": "Nu River Textile",
       "image": "/assets/parameters/ethnic-nu.jpg?v=20260827-scene-crop-fix",
-      "zhPrompt": "怒族峡谷与织物灵感，怒江峡谷、木寨、彩色织带和山风感",
-      "enPrompt": "Nu river canyon textile and wooden village inspired style, river canyon, wooden homes, colorful woven straps"
+      "zhPrompt": "怒族峡谷织物视觉以粗纺麻棉、窄幅彩条和清楚经纬组织呼应陡峭河谷、悬坡木寨与湍急水流，织带色彩集中为红、蓝、黄的小面积节奏；环境保持湿润岩壁和山风方向，避免把彩条无限放大成抽象彩虹或混入不相干图腾",
+      "enPrompt": "Nu river-canyon textile visual language using coarse hemp-cotton narrow colored bands and legible warp-weft structure to echo steep gorges hillside timber homes and fast water, concentrating red blue and yellow in small rhythmic accents; retain wet rock and mountain-wind direction rather than enlarging stripes into an abstract rainbow or adding unrelated emblems"
     },
     {
       "id": "ethnic-ewenki",
@@ -9252,8 +10298,8 @@
       "zhName": "景颇族银饰织纹",
       "enName": "Jingpo Silver Textile",
       "image": "/assets/parameters/ethnic-jingpo.jpg?v=20260827-scene-crop-fix",
-      "zhPrompt": "景颇族银饰与山地织纹灵感，银链、黑白纹样和高山云雾",
-      "enPrompt": "Jingpo silver ornament and mountain textile inspired style, silver chains, black-white motifs, misty mountains"
+      "zhPrompt": "景颇族织饰视觉以深色织物、红黑白窄带几何和成排银泡、银片或链饰形成清楚层级，金属点光随动作分散而不遮盖织纹；可结合高山云雾与木构村寨综合色，保留材料差异并避免泛化为重型银饰堆叠",
+      "enPrompt": "Jingpo textile-and-silver visual language layering dark cloth narrow red-black-white geometric bands and rows of silver bosses plaques or chains, with moving point highlights that never obscure the weave; it may connect to misty highland and timber-village color while preserving material differences and avoiding a generic overload of heavy silver ornaments"
     },
     {
       "id": "ethnic-jino",
@@ -9272,8 +10318,8 @@
       "zhName": "德昂族茶文化织物",
       "enName": "Deang Tea Textile",
       "image": "/assets/parameters/ethnic-deang.jpg?v=20260827-scene-crop-fix",
-      "zhPrompt": "德昂族茶文化与山地织物灵感，茶园、蓝黑织纹和晨雾村寨",
-      "enPrompt": "Deang tea culture textile and mountain village inspired style, tea fields, blue-black fabric, misty villages"
+      "zhPrompt": "德昂族茶文化与山地织物视觉，以蓝黑粗布、横向彩织腰箍般的层层结构、茶叶嫩绿和晨雾灰建立克制色谱；梯坡茶园与村寨顺地形排布，纱线、竹器和茶叶质地可辨，避免把茶园装饰成满屏花纹或混同其他西南民族服饰",
+      "enPrompt": "Deang tea-culture and mountain-textile visual language using blue-black coarse cloth layered horizontal woven-band structure tender tea green and morning-mist gray as a restrained palette; hillside tea rows and villages follow terrain while yarn bamboo and leaf textures stay distinct, avoiding tea fields converted into all-over ornament or a blend of unrelated southwest garments"
     },
     {
       "id": "ethnic-baoan",
@@ -9322,8 +10368,8 @@
       "zhName": "仫佬族石寨靛蓝",
       "enName": "Mulao Indigo Stone Village",
       "image": "/assets/parameters/ethnic-mulao.jpg?v=20260827-scene-crop-fix",
-      "zhPrompt": "仫佬族石寨与靛蓝织物灵感，石板巷、蓝染布和喀斯特山村",
-      "enPrompt": "Mulao stone village and indigo textile inspired style, stone lanes, blue-dyed cloth, karst village"
+      "zhPrompt": "仫佬族石寨与靛蓝织物视觉，以灰青石板巷、喀斯特山形、木门与晾晒蓝染布建立朴素空间，布面呈手工染色深浅、折痕和棉麻纤维；综合色控制在石灰、靛蓝、木褐和少量暖色点缀，避免泛化为江南古镇或蓝白旅游海报",
+      "enPrompt": "Mulao indigo and stone-village visual language using blue-gray slab lanes karst silhouettes timber doors and hanging dyed cloth to build an unvarnished setting, with handmade indigo variation folds and cotton-hemp fibers visible; limit the palette to limestone indigo wood brown and sparse warm accents, avoiding a generic Jiangnan old town or blue-white tourism poster"
     },
     {
       "id": "ethnic-oroqen",
@@ -9342,8 +10388,8 @@
       "zhName": "独龙族彩毯峡谷",
       "enName": "Derung Striped Blanket",
       "image": "/assets/parameters/ethnic-derung.jpg?v=20260827-scene-crop-fix",
-      "zhPrompt": "独龙族彩条毯与峡谷灵感，怒江峡谷、条纹织物和高山水流",
-      "enPrompt": "Derung striped blanket and river canyon inspired style, canyon river, striped textile, high mountain water"
+      "zhPrompt": "独龙族彩条毯视觉以手纺粗线和红、蓝、绿、黄、白纵向条带形成明快但有纱线层级的节奏，布边、接缝和披裹方向保持真实；环境可借高山峡谷、江水与湿雾综合色承托织物，不把条纹变成数字渐变、品牌彩虹或与服装结构无关的背景",
+      "enPrompt": "Derung striped-blanket visual language using hand-spun coarse yarn and vertical red blue green yellow and white bands in a bright yet materially layered rhythm, preserving selvedges seams and believable wrapping direction; mountain gorge river and damp mist may support the textile palette without turning the stripes into a digital gradient branded rainbow or structureless background"
     },
     {
       "id": "ethnic-tatar",
@@ -9942,8 +10988,8 @@
       "zhName": "矢量插画",
       "enName": "Vector Illustration",
       "image": "/assets/parameters/render-vector-illustration.jpg?v=20260827-scene-crop-fix",
-      "zhPrompt": "干净矢量插画，平面色块、简洁轮廓和清晰图形语言",
-      "enPrompt": "clean vector illustration style, flat color shapes, simple silhouettes, crisp graphic language"
+      "zhPrompt": "干净矢量插画渲染，以封闭贝塞尔轮廓、有限平面色块和可缩放几何形构成主体；边缘锐利、节点简洁，阴影只用少量分层色面表达，负形关系清楚，不出现像素毛边、写实纹理、复杂渐变或伪三维体积",
+      "enPrompt": "clean vector-illustration rendering built from closed Bezier contours a limited set of flat color shapes and scalable geometry; edges stay crisp nodes economical and shadows use only a few layered planes, with clear negative-space relationships and no pixel fringing photoreal texture excessive gradients or pseudo-3D volume"
     },
     {
       "id": "render-line-art",
@@ -12183,8 +13229,8 @@
       "zhName": "次表面散射",
       "enName": "Subsurface Scattering",
       "image": "/assets/parameters/render-subsurface-scattering.jpg?v=20260827-purpose-crop-fix",
-      "zhPrompt": "次表面散射效果，皮肤、蜡或半透明材质呈现柔和透光",
-      "enPrompt": "subsurface scattering effect, soft light transmission through skin, wax, or translucent materials"
+      "zhPrompt": "次表面散射渲染让光线进入皮肤、蜡、玉石或乳白塑料后在内部扩散，再从相邻位置柔和逸出；薄边和逆光处呈暖色透亮，厚处仍保留材质密度，表面高光与内部辉光分离，避免整物体发光、塑料蜡感或失去纹理",
+      "enPrompt": "subsurface-scattering rendering lets light enter skin wax jade or milky polymer, diffuse through the interior and exit softly at nearby points; thin rims and backlit edges glow warmer while thick regions retain density, separating surface specular reflection from internal transport and avoiding uniformly emissive objects waxy plastic skin or erased texture"
     },
     {
       "id": "render-procedural-texture",
@@ -12403,8 +13449,8 @@
       "zhName": "木刻版画",
       "enName": "Woodcut Print",
       "image": "/assets/parameters/style-woodcut-print.jpg?v=20260827-purpose-crop-fix",
-      "zhPrompt": "木刻版画风格，粗粝刀痕、黑白高反差和木纹印刷质感",
-      "enPrompt": "woodcut print style, rough carved marks, black-and-white contrast, visible woodgrain print texture"
+      "zhPrompt": "木刻版画以沿木纹推进的三角刀、圆刀和宽刀留下锥形刻痕、粗壮轮廓与大片实黑，明暗依靠刻线疏密和留白形成；油墨在凸版边缘略有堆积和缺印，纸纤维与木纹压力可见，避免数字阈值化照片或均匀钢笔排线",
+      "enPrompt": "woodcut print language using V-gouges rounded tools and broad cuts along the grain to leave tapered marks heavy contours and solid black masses, with light built from cut density and untouched paper; relief ink gathers or skips at edges and paper fiber and grain pressure remain visible, avoiding a digitally thresholded photograph or uniform pen hatching"
     },
     {
       "id": "style-copperplate-engraving",
@@ -12413,8 +13459,8 @@
       "zhName": "铜版雕刻",
       "enName": "Copperplate Engraving",
       "image": "/assets/parameters/style-copperplate-engraving.jpg?v=20260827-purpose-crop-fix",
-      "zhPrompt": "铜版雕刻风格，精密平行排线、复古纸张和古典插图质感",
-      "enPrompt": "copperplate engraving style, precise parallel hatching, antique paper, classical illustration texture"
+      "zhPrompt": "铜版雕刻以推刀在金属版上切出起止尖细、深浅受控的平行线和交叉排线，曲面通过线距而非灰色涂抹塑形；凹线盛墨后压印到棉纸，边缘有细微版痕和纸面压凹，避免蚀刻式松散线条或普通复古滤镜",
+      "enPrompt": "copperplate engraving cutting controlled parallel and crosshatched furrows with a burin so every line tapers cleanly at its start and end, modeling curvature through spacing rather than gray wash; recessed ink is pressed into cotton paper with a faint plate mark and embossed bite, distinct from loose etched drawing or a generic vintage filter"
     },
     {
       "id": "style-etching-print",
@@ -12443,8 +13489,8 @@
       "zhName": "黑刮板",
       "enName": "Scratchboard",
       "image": "/assets/parameters/style-scratchboard.jpg?v=20260827-purpose-crop-fix",
-      "zhPrompt": "黑刮板插画，黑底白色刮痕线条、高反差和精细纹理",
-      "enPrompt": "scratchboard illustration, white scratched lines on black, high contrast, fine etched texture"
+      "zhPrompt": "黑刮板插画从黑色墨层中用尖针刮出白线，以线条疏密、交叉排线和刀口宽窄塑造光线与体积；高光由露出的白底形成，边缘带细小断裂和手工阻力，整体黑白高反差但不变成数字反相照片或普通钢笔线描",
+      "enPrompt": "scratchboard illustration removing black ink with a pointed blade to expose white marks, using line density crosshatching and varied cut width to model light and volume; highlights come from the revealed ground and edges retain small breaks and tool resistance, creating strong black-white contrast without becoming an inverted photograph or ordinary pen drawing"
     },
     {
       "id": "style-stipple-engraving",
@@ -12463,8 +13509,8 @@
       "zhName": "刺绣插画",
       "enName": "Embroidered Illustration",
       "image": "/assets/parameters/style-embroidered-illustration.jpg?v=20260827-purpose-crop-fix",
-      "zhPrompt": "刺绣插画风格，可见彩色线迹、布面纹理和手工针脚质感",
-      "enPrompt": "embroidered illustration style, visible colored thread stitches, fabric texture, handcrafted needlework"
+      "zhPrompt": "刺绣插画用轮廓绣、长短针、缎面针和结粒针分别承担边缘、色面、明暗与细点，所有形状受布面经纬和线迹方向影响；彩线有纤维、张力和轻微浮起，底布在空隙中可见，避免把数字插画简单覆盖统一线纹",
+      "enPrompt": "embroidered illustration assigning outline stitch long-and-short fill satin stitch and knots to edges color masses shading and small accents, with every shape responding to fabric weave and thread direction; colored floss keeps fiber tension and slight relief while ground cloth shows through gaps, avoiding a digital illustration merely covered by a uniform stitch texture"
     },
     {
       "id": "style-cross-stitch",
@@ -12473,8 +13519,8 @@
       "zhName": "十字绣",
       "enName": "Cross-Stitch",
       "image": "/assets/parameters/style-cross-stitch.jpg?v=20260827-purpose-crop-fix",
-      "zhPrompt": "十字绣风格，网格布面、像素化针脚和手工图案感",
-      "enPrompt": "cross-stitch embroidery style, visible fabric grid, pixel-like stitches, handmade pattern look"
+      "zhPrompt": "十字绣风格以可见埃达布网格为坐标，每个色块由两条方向一致的斜线交叉成完整 X 针；棉线有纤维、张力与轻微高低差，有限色盘通过针数形成像素化轮廓，避免直接套用马赛克像素滤镜或印刷格纹",
+      "enPrompt": "cross-stitch style mapped to a visible Aida-cloth grid, every colored unit formed by two consistently oriented diagonal strands crossing as a complete X; cotton floss shows fiber tension and slight relief while a limited palette builds pixel-like contours by stitch count, avoiding a mosaic pixel filter or printed checker pattern"
     },
     {
       "id": "style-tapestry-woven",
@@ -12493,8 +13539,8 @@
       "zhName": "提花织锦",
       "enName": "Jacquard Brocade",
       "image": "/assets/parameters/style-jacquard-brocade.jpg?v=20260827-purpose-crop-fix",
-      "zhPrompt": "提花织锦风格，复杂织纹、华丽花卉纹样和厚重纺织质感",
-      "enPrompt": "jacquard brocade style, complex woven patterns, ornate floral motifs, rich textile surface"
+      "zhPrompt": "提花织锦由经纬组织变化直接织出多层花卉、卷草或几何纹，纹样不是印在表面，而通过浮长线、缎纹与背景组织产生厚度和综合色差；侧光下纱线方向与轻微浮雕清楚，重复精准但保留织物张力，避免平面壁纸或刺绣贴花",
+      "enPrompt": "jacquard brocade weaving layered floral scroll or geometric motifs directly through changing warp-weft structures rather than surface printing, using floats satin areas and ground weave to create relief and color mixing; side light reveals yarn direction and subtle depth with precise repeat and textile tension, distinct from flat wallpaper or embroidered applique"
     },
     {
       "id": "style-quilted-applique",
@@ -12513,8 +13559,8 @@
       "zhName": "金线刺绣",
       "enName": "Gold-Thread Embroidery",
       "image": "/assets/parameters/style-gold-thread-embroidery.jpg?v=20260827-purpose-crop-fix",
-      "zhPrompt": "金线刺绣风格，凸起金属线迹、深色布底和奢华装饰感",
-      "enPrompt": "gold-thread embroidery style, raised metallic stitches, dark fabric ground, luxurious ornament"
+      "zhPrompt": "金线刺绣以金属绕线沿图案表面盘铺，再用细小固定针压住，形成凸起轮廓、密集回转和局部垫高；深色丝绒或缎面吸收背景光，金线随方向产生细碎高光，保留针脚与纤维，不表现为平面金色描边或塑料金属贴膜",
+      "enPrompt": "gold-thread embroidery couching metal-wrapped cords across the surface and fastening them with tiny stitches, creating raised contours dense turns and selectively padded relief; dark velvet or satin absorbs surrounding light while strand direction breaks highlights into fine glints, preserving stitches and fiber instead of flat gold outlines or plastic metallic foil"
     },
     {
       "id": "style-beadwork-illustration",
@@ -12523,8 +13569,8 @@
       "zhName": "珠绣",
       "enName": "Beadwork Illustration",
       "image": "/assets/parameters/style-beadwork-illustration.jpg?v=20260827-purpose-crop-fix",
-      "zhPrompt": "珠绣插画风格，小颗粒珠子反光、密集排列和手工装饰质感",
-      "enPrompt": "beadwork illustration style, tiny reflective beads, dense arrangement, handcrafted decorative texture"
+      "zhPrompt": "珠绣插画由玻璃米珠、切面珠与少量管珠沿图形轮廓逐针固定，珠孔、线迹、行列间距和底布纤维清晰可见；不同珠面产生细碎定向反光，密度随明暗和轮廓变化，保留手工轻微错位，不表现为亮片贴图、塑料圆点或无缝数字颗粒",
+      "enPrompt": "beadwork illustration constructed from seed beads faceted beads and restrained bugle beads stitched along the form, with bead holes thread paths row spacing and ground-cloth fibers clearly visible; varied surfaces create fine directional glints and density changes with value and contour, preserving slight handmade misalignment rather than sequin texture plastic dots or seamless digital particles"
     },
     {
       "id": "style-macrame-fiber-art",
@@ -13713,8 +14759,8 @@
       "zhName": "日系糖水片",
       "enName": "Japanese Airy Bright",
       "image": "/assets/parameters/grading-japanese-airy.jpg",
-      "zhPrompt": "后期调色为日系糖水片，明亮通透，肤色柔和，阴影轻",
-      "enPrompt": "airy bright Japanese-style portrait color grade, soft skin tones, gentle shadows, clean highlights",
+      "zhPrompt": "后期调色为日系明亮糖水片，抬高整体中间调并保持白位洁净，肤色偏桃粉但不过红，阴影轻柔略带青蓝，背景绿色降低杂色；高光有空气感而不溢出，保留发丝与衣料细节，避免奶白蒙层和过度磨皮",
+      "enPrompt": "airy bright Japanese-style portrait grade lifting overall midtones while keeping whites clean, nudging skin toward gentle peach without excess red and giving soft shadows a faint cyan-blue cast while simplifying greens; highlights feel luminous without clipping and hair and fabric detail remain, avoiding a milky veil or excessive skin smoothing",
       "negative": [
         "color banding",
         "muddy colors",
@@ -13761,8 +14807,8 @@
       "zhName": "柔和粉彩",
       "enName": "Soft Pastel",
       "image": "/assets/parameters/grading-soft-pastel.jpg",
-      "zhPrompt": "柔和粉彩调色，低对比，浅粉、浅蓝、奶油色自然融合",
-      "enPrompt": "soft pastel color grade, low contrast, pale pink, light blue, and cream tones blended naturally",
+      "zhPrompt": "柔和粉彩调色，抬高黑位并压低整体反差，以浅粉、雾蓝和奶油色重组中高光；肤色保持自然血色，白色不偏灰，饱和度集中在少量柔和色面，避免全片泛白或糖果色溢出",
+      "enPrompt": "soft pastel color grade with lifted blacks and restrained global contrast, reorganizing midtones and highlights through pale pink mist blue and cream; preserve believable warmth in skin and clean whites while concentrating saturation in a few gentle color fields, avoiding a washed-out veil or uncontrolled candy-color clipping",
       "negative": [
         "color banding",
         "muddy colors",
@@ -13777,8 +14823,8 @@
       "zhName": "韩系清透",
       "enName": "Korean Clean",
       "image": "/assets/parameters/grading-korean-clean.jpg",
-      "zhPrompt": "韩系清透人像调色，肤色细腻，背景明亮，整体干净",
-      "enPrompt": "clean Korean-style portrait color grade, delicate skin tone, bright background, polished clarity",
+      "zhPrompt": "韩系清透人像调色，以明亮中间调、干净白位和轻柔阴影构成通透层次；肤色偏中性暖、红黄分离准确，背景低杂色但保留材质，局部对比集中在眼睛与发丝，避免过度磨皮或高曝光吞掉五官",
+      "enPrompt": "clean Korean-style portrait grade built from bright midtones clean whites and softly open shadows; skin stays neutral-warm with controlled red-yellow separation, backgrounds lose color noise without losing material detail, and local contrast remains around eyes and hair, avoiding waxy smoothing or facial features erased by excessive exposure",
       "negative": [
         "color banding",
         "muddy colors",
@@ -13921,8 +14967,8 @@
       "zhName": "莱卡感",
       "enName": "Rangefinder Premium",
       "image": "/assets/parameters/grading-leica-like.jpg",
-      "zhPrompt": "莱卡感纪实调色，微反差清晰，红色温润，黑位扎实",
-      "enPrompt": "premium rangefinder documentary color grade, crisp microcontrast, warm reds, solid black levels",
+      "zhPrompt": "高级旁轴纪实调色，以扎实但不死黑的暗部、清楚微反差和温润红色形成紧凑色阶；绿色略收敛，肤色保持自然，边缘锐度克制并带细微胶片颗粒，避免套用品牌色偏或夸张高锐化",
+      "enPrompt": "premium rangefinder documentary grade with firm but uncrushed blacks, articulate microcontrast and restrained warm reds forming a compact tonal scale; greens are slightly subdued, skin remains believable, edge acuity stays controlled and fine grain is subtle, avoiding a branded preset caricature or aggressive digital sharpening",
       "negative": [
         "color banding",
         "muddy colors",
@@ -14017,8 +15063,8 @@
       "zhName": "大疆航拍调色",
       "enName": "Clean Drone Aerial",
       "image": "/assets/parameters/grading-dji-aerial.jpg",
-      "zhPrompt": "大疆航拍感调色，天空和地景清晰，高动态范围，色彩干净",
-      "enPrompt": "clean drone aerial color grade, crisp sky and terrain, high dynamic range, clean landscape colors",
+      "zhPrompt": "现代消费级无人机航拍调色，校正远距离空气雾霾并分离天空、山体、建筑和地表层次，蓝天与植被鲜明但不过饱和；保护云层高光和深色屋顶，锐度随景深自然衰减，避免全局强去雾、荧光绿色与边缘光晕",
+      "enPrompt": "modern consumer-drone aerial grade correcting atmospheric haze while separating sky mountains buildings and terrain, with vivid yet controlled blues and foliage; preserve cloud highlights and dark rooftops, let sharpness fall naturally with distance, and avoid global over-dehaze fluorescent greens or edge halos",
       "negative": [
         "color banding",
         "muddy colors",
@@ -14177,8 +15223,8 @@
       "zhName": "日拍夜",
       "enName": "Day For Night",
       "image": "/assets/parameters/grading-day-for-night.jpg",
-      "zhPrompt": "日拍夜后期，蓝色夜感，压低环境亮度，保留轮廓",
-      "enPrompt": "day-for-night color grade, blue night mood, lowered ambient brightness, readable silhouettes",
+      "zhPrompt": "日拍夜后期调色，整体压低一至两档曝光并把环境中间调推向深蓝青色，天空和远景降低饱和度；人物轮廓、窗灯与局部反光仍可辨，阴影有层次而非纯黑，避免白昼高光、暖阳方向或统一蓝色蒙版暴露伪夜感",
+      "enPrompt": "day-for-night grade lowering ambient exposure by roughly one to two stops and shifting environmental midtones toward deep blue-cyan while muting sky and distance; silhouettes window light and small reflections remain readable and shadows retain separation, avoiding obvious daylight highlights warm sun direction or a uniform blue overlay that reveals the conversion",
       "negative": [
         "color banding",
         "muddy colors",
@@ -14289,8 +15335,8 @@
       "zhName": "妆面精修",
       "enName": "Beauty Retouch Grade",
       "image": "/assets/parameters/grading-beauty-retouch.jpg",
-      "zhPrompt": "妆面精修调色，肤色均匀，五官立体，妆容颜色准确",
-      "enPrompt": "beauty retouch color grade, even skin tone, dimensional facial features, accurate makeup colors",
+      "zhPrompt": "商业妆面精修调色，校正肤色不均与局部泛红，同时保留毛孔、细小绒毛和真实高光；通过轻微明暗塑形强化眼眶、鼻梁与唇形，口红和眼影颜色准确，避免磨皮蜡感、过度液化或改变本人五官",
+      "enPrompt": "commercial beauty-retouch grade correcting uneven skin color and localized redness while preserving pores fine facial hair and authentic specular highlights; subtle dodge-and-burn shapes eyes nose and lips while lipstick and eye-shadow hues stay accurate, avoiding waxy smoothing excessive liquify or alteration of the person's facial identity",
       "negative": [
         "color banding",
         "muddy colors",
@@ -14353,8 +15399,8 @@
       "zhName": "社媒鲜艳",
       "enName": "Social Vivid",
       "image": "/assets/parameters/grading-social-vivid.jpg",
-      "zhPrompt": "社媒鲜艳调色，明亮高饱和，适合封面和短视频缩略图",
-      "enPrompt": "vivid social-media color grade, bright high saturation, suitable for covers and thumbnails",
+      "zhPrompt": "社媒鲜艳调色，以明亮中间调、清楚主体对比和有选择的高饱和色吸引缩略图视线；肤色与白色保持稳定，背景杂色被归并，亮部不过曝、红蓝不过饱和，适合封面但不产生廉价荧光滤镜感",
+      "enPrompt": "vivid social-media grade using bright midtones decisive subject contrast and selective high-saturation accents for thumbnail readability; skin and whites remain stable, background color clutter is consolidated, highlights do not clip and reds or blues do not bleed, giving cover impact without a cheap fluorescent-filter appearance",
       "negative": [
         "color banding",
         "muddy colors",
@@ -14577,8 +15623,8 @@
       "zhName": "夏日大片暖调",
       "enName": "Summer Blockbuster",
       "image": "/assets/parameters/grading-summer-blockbuster.jpg",
-      "zhPrompt": "夏日大片暖调，强阳光、青蓝天空、暖肤色和清爽高对比",
-      "enPrompt": "summer blockbuster color grade, strong sunlight, cyan-blue sky, warm skin, crisp high contrast",
+      "zhPrompt": "夏日商业大片暖调，以强烈日照和清晰空气透视建立高反差，天空保持青蓝，阳光高光偏金黄，肤色温暖但不橙；阴影略冷并保留细节，白云和浅色衣物不爆亮，避免统一橙青滤镜或饱和度压坏自然色",
+      "enPrompt": "summer blockbuster grade using strong sunlight and clear aerial perspective for crisp contrast, retaining cyan-blue sky golden sunlit highlights and warm but non-orange skin; shadows stay slightly cool with detail and white clouds or clothing remain unclipped, avoiding a blanket teal-orange preset or saturation that damages natural color",
       "negative": [
         "color banding",
         "muddy colors",
@@ -14593,8 +15639,8 @@
       "zhName": "墨绿悬疑调",
       "enName": "Dark Green Thriller",
       "image": "/assets/parameters/grading-dark-green-thriller.jpg",
-      "zhPrompt": "墨绿悬疑调色，暗部偏绿、低饱和、环境压迫感和冷硬高光",
-      "enPrompt": "dark green thriller grade, green-tinted shadows, low saturation, oppressive atmosphere, cold hard highlights",
+      "zhPrompt": "墨绿悬疑电影调色，将阴影与低中间调推向深苔绿，亮部保持冷灰并压低整体饱和度，以局部硬光和受控黑位制造压迫感；人物肤色与关键线索保留可辨色相，避免整幅绿色罩染、暗部糊死或恐怖片式廉价荧光绿",
+      "enPrompt": "dark-green thriller grade steering shadows and lower midtones toward deep moss while highlights remain cold gray and overall saturation stays restrained, using selective hard light and controlled blacks for tension; keep skin and narrative clues chromatically legible, avoiding a blanket green cast crushed shadows or cheap fluorescent horror green",
       "negative": [
         "color banding",
         "muddy colors",
@@ -14673,8 +15719,8 @@
       "zhName": "黑眼圈减淡",
       "enName": "Dark Circle Softening",
       "image": "/assets/parameters/retouch-dark-circle.jpg",
-      "zhPrompt": "人物修图减淡黑眼圈和眼下疲态，眼神保持真实清晰",
-      "enPrompt": "portrait retouch to soften dark circles and under-eye fatigue while keeping eyes realistic and clear",
+      "zhPrompt": "人物修图中自然减淡眼下青紫、暗沉与疲态，只调整综合色和局部明度，不抹平卧蚕、眼袋结构、细纹与皮肤纹理；双眼受光和锐度保持一致，避免眼下发灰、塑料平面或改变原有年龄特征",
+      "enPrompt": "portrait retouch that naturally reduces blue-purple discoloration and tired darkness beneath the eyes through local color and luminance correction only; preserve the natural lower-lid roll bag structure fine lines and skin texture, keep light and acuity consistent between both eyes, and avoid gray patches plastic flattening or erasing age-defining features",
       "negative": [
         "color banding",
         "muddy colors",
@@ -14705,8 +15751,8 @@
       "zhName": "自然毛孔细化",
       "enName": "Natural Pore Refinement",
       "image": "/assets/parameters/retouch-pore-natural.jpg",
-      "zhPrompt": "自然毛孔细化，降低粗糙颗粒但保留皮肤微纹理和真实光泽",
-      "enPrompt": "natural pore refinement, reduce coarse texture while keeping micro skin detail and realistic sheen",
+      "zhPrompt": "自然毛孔细化仅压低局部粗大毛孔、干燥起皮和不均匀颗粒，保留毛孔方向、绒毛、细纹与真实皮脂微光；额头、鼻翼和面颊按原有光线分别处理，不磨平面部体积，不产生蜡像皮、塑料高光或重复纹理",
+      "enPrompt": "natural pore refinement selectively reducing enlarged pores dry flakes and uneven coarse texture while preserving pore direction peach fuzz fine lines and realistic sebaceous micro-sheen; treat forehead nose and cheeks according to their original light, without flattening facial volume or creating waxy skin plastic highlights or repeated texture",
       "negative": [
         "color banding",
         "muddy colors",
@@ -14721,8 +15767,8 @@
       "zhName": "面部油光控制",
       "enName": "Oil Shine Control",
       "image": "/assets/parameters/retouch-oil-shine-control.jpg",
-      "zhPrompt": "人物修图控制额头、鼻梁和脸颊油光，保留适度健康高光",
-      "enPrompt": "portrait retouch to control oily shine on forehead nose and cheeks while keeping healthy highlights",
+      "zhPrompt": "人物修图选择性压低额头、鼻梁、鼻翼和脸颊的过曝油光，只收窄高光面积并恢复附近肤色，不抹除皮肤微光、毛孔和面部立体度；保留眼下与唇部合理反射，避免全脸哑光、灰斑或塑料粉底感",
+      "enPrompt": "portrait retouch selectively reducing blown oily highlights on forehead bridge and sides of the nose and cheeks by narrowing specular areas and restoring nearby skin color, while preserving healthy micro-sheen pores and facial volume; keep believable reflection around eyes and lips and avoid an all-matte face gray patches or plastic foundation texture",
       "negative": [
         "color banding",
         "muddy colors",
@@ -14737,8 +15783,8 @@
       "zhName": "细纹柔化",
       "enName": "Fine Line Softening",
       "image": "/assets/parameters/retouch-fine-lines-soften.jpg",
-      "zhPrompt": "人物修图柔化明显细纹和法令纹，保持年龄真实和表情自然",
-      "enPrompt": "portrait retouch to soften visible fine lines and nasolabial folds while preserving realistic age and expression",
+      "zhPrompt": "人物修图选择性减淡眼角、额头、口周与法令纹中的过深阴影，只降低突兀对比而保留皮肤折叠方向、年龄特征和表情运动；不抹去全部纹路，不改变脸型，不产生模糊补丁、液化边缘或年轻化失真",
+      "enPrompt": "portrait retouch selectively softening overly deep shadows in crow's feet forehead lines mouth area and nasolabial folds, reducing abrupt contrast while preserving fold direction age identity and expressive movement; do not erase every line alter face shape or create blurred patches liquified edges or implausible de-aging",
       "negative": [
         "color banding",
         "muddy colors",
@@ -14785,8 +15831,8 @@
       "zhName": "双下巴修复",
       "enName": "Double Chin Reduction",
       "image": "/assets/parameters/retouch-double-chin.jpg",
-      "zhPrompt": "人物修图减轻双下巴和下颌线堆积，保持脖颈与脸型自然",
-      "enPrompt": "portrait retouch to reduce double chin and jawline heaviness while keeping neck and face natural",
+      "zhPrompt": "人物修图适度减轻下颌下方的软组织堆积，通过局部明暗和极小形变恢复自然下颌转折；保持颈部宽度、头部姿态、衣领和背景直线连续，不把脸型强行削尖，也不消除真实皮肤褶皱或改变本人身份特征",
+      "enPrompt": "portrait retouch moderately reducing soft-tissue fullness beneath the jaw through local tonal shaping and minimal geometric adjustment, restoring a natural jaw-neck transition; preserve neck width head pose collar and straight background lines, without forcing a pointed face erasing all natural folds or altering the person's identity",
       "negative": [
         "color banding",
         "muddy colors",
@@ -14945,8 +15991,8 @@
       "zhName": "奶油米色调",
       "enName": "Cream Beige",
       "image": "/assets/parameters/grading-cream-beige.jpg",
-      "zhPrompt": "奶油米色调，暖白背景、柔和肤色、低对比和干净生活感",
-      "enPrompt": "cream beige color grade, warm white background, soft skin, low contrast, clean lifestyle mood",
+      "zhPrompt": "奶油米色调以暖象牙白、燕麦色和浅杏色统一背景与中间调，黑位略抬、对比柔和但主体边缘仍清楚；肤色保持红黄平衡，白物不染成脏黄，木材和织物保留天然层次，避免全片米黄罩染或灰雾低反差",
+      "enPrompt": "cream-beige grade unifying backgrounds and midtones through warm ivory oatmeal and pale apricot, with slightly lifted blacks and gentle contrast while subject edges remain legible; skin keeps balanced red and yellow, white objects do not turn dirty cream and wood or fabric retain natural separation, avoiding an all-over beige cast or hazy flatness",
       "negative": [
         "color banding",
         "muddy colors",
@@ -14977,8 +16023,8 @@
       "zhName": "橄榄绿胶片",
       "enName": "Olive Film",
       "image": "/assets/parameters/grading-olive-film.jpg",
-      "zhPrompt": "橄榄绿胶片调色，暗部偏绿，肤色温和，复古纪实氛围",
-      "enPrompt": "olive-green film grade, greenish shadows, gentle skin tone, vintage documentary atmosphere",
+      "zhPrompt": "橄榄绿胶片调色，将暗部与低中间调轻推向苔绿和黄绿，高光保持暖灰，红色降饱和但肤色不过绿；黑位略抬并加入细颗粒与柔和高光滚降，形成旧纪实气息，避免全局绿色罩染或军绿色脏片",
+      "enPrompt": "olive-film grade nudging shadows and lower midtones toward moss and yellow-green while keeping highlights warm gray; reds are restrained without contaminating skin, blacks lift slightly with fine grain and a gentle highlight roll-off for aged documentary character, avoiding a global green cast or muddy military-green treatment",
       "negative": [
         "color banding",
         "muddy colors",
@@ -14993,8 +16039,8 @@
       "zhName": "法式电影柔调",
       "enName": "French Film Soft",
       "image": "/assets/parameters/grading-french-movie.jpg",
-      "zhPrompt": "法式电影柔调，低对比、自然窗光、浅暖肤色和松弛叙事感",
-      "enPrompt": "French film soft grade, low contrast, natural window light, lightly warm skin, relaxed narrative mood",
+      "zhPrompt": "法式生活电影柔调，以自然窗光、柔和肩部高光和略抬黑位形成松弛灰阶，肤色浅暖而环境偏中性冷，红蓝等生活色保留克制辨识度；加入细颗粒与轻微曝光呼吸感，避免奶油滤镜、统一黄调或过度复古褪色",
+      "enPrompt": "soft French slice-of-life film grade shaped by natural window light gentle highlight shoulders and slightly lifted blacks, with lightly warm skin against a neutral-cool environment and restrained recognizable everyday reds and blues; add fine grain and subtle exposure breathing, avoiding creamy presets uniform yellow casts or excessive vintage fading",
       "negative": [
         "color banding",
         "muddy colors",
@@ -15009,8 +16055,8 @@
       "zhName": "柔黑白纪实",
       "enName": "Soft Documentary B&W",
       "image": "/assets/parameters/grading-noir-soft-bw.jpg",
-      "zhPrompt": "柔黑白纪实调色，灰阶丰富，暗部柔和，适合人文街拍",
-      "enPrompt": "soft documentary black-and-white grade, rich grayscale, gentle shadows, humanistic street mood",
+      "zhPrompt": "柔黑白纪实调色，以完整灰阶和缓慢高光过渡保留街景、皮肤与织物细节；黑位深但不封死，中间调略有银盐般柔软分离，局部对比服务人物视线并配细颗粒，避免硬朗黑白剪影或低反差灰雾",
+      "enPrompt": "soft documentary black-and-white grade preserving street skin and fabric detail through a full grayscale and gradual highlight transition; blacks remain deep without blocking up, midtones separate with a gentle silver-gelatin feel, and local contrast follows the human subject with fine grain, avoiding hard graphic silhouettes or low-contrast gray haze",
       "negative": [
         "color banding",
         "muddy colors",
@@ -15073,8 +16119,8 @@
       "zhName": "雪景清蓝调",
       "enName": "Clean Snow Blue",
       "image": "/assets/parameters/grading-snow-clean-blue.jpg",
-      "zhPrompt": "雪景清蓝调色，白雪不过曝，阴影微蓝，冷空气质感清晰",
-      "enPrompt": "clean snow-blue grade, protected snow highlights, subtle blue shadows, crisp cold-air texture",
+      "zhPrompt": "雪景清蓝调色保护雪面高光层次，让阳面保持中性白，阴影转为清澈淡蓝并随坡度加深；天空和远山降低杂色，树木与建筑暗部仍有细节，整体空气冷而不偏青紫，避免雪地灰脏、纯白剪切或统一蓝色滤镜",
+      "enPrompt": "clean snow-blue grade protecting highlight texture across snow so sunlit planes stay neutral white while shadows shift to clear pale blue and deepen with slope; sky and distant mountains lose color noise while trees and buildings retain dark detail, creating cold air without cyan-purple contamination, dirty gray snow clipped whites or a uniform blue filter",
       "negative": [
         "color banding",
         "muddy colors",
@@ -15089,8 +16135,8 @@
       "zhName": "城市夜景干净调",
       "enName": "Clean City Night",
       "image": "/assets/parameters/grading-city-night-clean.jpg",
-      "zhPrompt": "城市夜景干净调色，霓虹不过曝，黑位干净，街灯层次清楚",
-      "enPrompt": "clean city-night grade, controlled neon highlights, clean blacks, clear streetlight layers",
+      "zhPrompt": "城市夜景干净调色分离招牌霓虹、路灯、车灯和室内窗光，压回发光字高光同时保留灯芯与色彩，黑位深净但暗部建筑仍有轮廓；控制高感噪点和综合色污染，避免霓虹溢色、天空发紫、阴影涂黑或过度锐化",
+      "enPrompt": "clean city-night grade separating signage neon streetlights headlights and interior windows, recovering luminous-letter highlights while retaining light cores and hue, with deep clean blacks that still reveal building contours; control high-ISO noise and mixed-light contamination, avoiding neon bleed purple skies crushed shadows or oversharpening",
       "negative": [
         "color banding",
         "muddy colors",
@@ -15153,8 +16199,8 @@
       "zhName": "婚礼柔光调",
       "enName": "Wedding Soft Light",
       "image": "/assets/parameters/grading-wedding-soft.jpg",
-      "zhPrompt": "婚礼柔光调色，白纱高光保留，肤色柔和，整体浪漫通透",
-      "enPrompt": "soft wedding color grade, preserved white-dress highlights, gentle skin tones, romantic airy finish",
+      "zhPrompt": "婚礼柔光调色以明亮中高调和柔和高光滚降保护婚纱蕾丝、白花与肤色细节，阴影略抬但保留礼服层次；肤色温润中性，绿色和宴会杂色适度收敛，可有轻微柔光晕而不降低对焦清晰度，避免过曝白纱和粉色蒙层",
+      "enPrompt": "soft wedding grade using bright high-key midtones and gentle highlight roll-off to protect lace white flowers and skin detail while slightly opening shadows without flattening formalwear; skin remains warm-neutral and distracting greens or venue colors are restrained, with a faint bloom that does not reduce focus, avoiding blown bridal whites or a pink veil",
       "negative": [
         "color banding",
         "muddy colors",
@@ -15169,8 +16215,8 @@
       "zhName": "宝宝柔和修图",
       "enName": "Baby Soft Retouch",
       "image": "/assets/parameters/grading-baby-soft.jpg",
-      "zhPrompt": "宝宝照片柔和修图，肤色干净，阴影轻，保留可爱自然细节",
-      "enPrompt": "baby photo soft retouch grade, clean skin tone, light shadows, preserved cute natural detail",
+      "zhPrompt": "宝宝照片柔和修图以明亮自然光和低对比中间调呈现柔嫩肤色，轻度均匀泛红、奶渍和临时小瑕疵，保留胎发、睫毛、皮肤细纹与手脚褶皱；白色织物不过曝，阴影轻而有体积，避免瓷娃娃磨皮、放大眼睛或改变面部特征",
+      "enPrompt": "soft baby-photo retouch using bright natural light and low-contrast midtones for delicate skin, gently evening temporary redness milk marks and minor blemishes while preserving fine hair lashes skin texture and hand or foot creases; keep white fabrics below clipping and shadows light yet dimensional, avoiding porcelain-skin smoothing enlarged eyes or altered facial features",
       "negative": [
         "color banding",
         "muddy colors",
@@ -15249,8 +16295,8 @@
       "zhName": "颈纹柔化",
       "enName": "Neck Line Softening",
       "image": "/assets/parameters/retouch-neck-lines.jpg",
-      "zhPrompt": "人物修图柔化明显颈纹，保持颈部自然结构和皮肤纹理",
-      "enPrompt": "portrait retouch to soften visible neck lines while keeping natural neck structure and skin texture",
+      "zhPrompt": "人物修图自然减淡过深颈纹的阴影和局部色差，只降低突兀对比，不抹平正常转头褶皱、颈部肌理、锁骨与受光结构；纹理频率与面部保持一致，避免横向涂抹、重复修补纹路或把颈部变成无结构塑料表面",
+      "enPrompt": "portrait retouch naturally softening excessive shadow and discoloration in prominent neck lines by reducing abrupt contrast only; preserve pose-related folds skin texture collarbones and lighting structure with texture frequency matching the face, avoiding horizontal smears repeated healing patterns or a structureless plastic neck",
       "negative": [
         "color banding",
         "muddy colors",
@@ -15281,8 +16327,8 @@
       "zhName": "疤痕淡化",
       "enName": "Scar Softening",
       "image": "/assets/parameters/retouch-scar-soften.jpg",
-      "zhPrompt": "人物修图淡化明显疤痕和临时印记，保留真实皮肤光泽",
-      "enPrompt": "portrait retouch to soften visible scars and temporary marks while preserving real skin sheen",
+      "zhPrompt": "人物修图中选择性减淡临时印记或突兀疤痕的色差与边缘反差，不直接复制无纹理皮肤覆盖；保留毛孔、皮沟、受光方向和自然光泽，并根据需求保留可辨识特征，避免整片模糊、重复纹理或改变身体结构",
+      "enPrompt": "portrait retouch selectively reducing color difference and edge contrast in temporary marks or distracting scars without pasting textureless skin over them; preserve pores skin furrows lighting direction and natural sheen, retaining identity-defining features when appropriate, and avoid broad blur repeated texture or any change to body structure",
       "negative": [
         "color banding",
         "muddy colors",
@@ -16187,8 +17233,8 @@
       "zhName": "蓝图技术渲染",
       "enName": "Blueprint Technical Render",
       "image": "/assets/parameters/render-blueprint-technical.jpg",
-      "zhPrompt": "蓝图技术渲染，白色线框、测量线和工程图纸质感",
-      "enPrompt": "blueprint technical render, white wireframe lines, measurement marks, engineering drawing texture",
+      "zhPrompt": "蓝图技术渲染以深蓝底和高对比白线表达正投影、剖面、轴测结构与隐藏线，线宽按轮廓、构造和尺寸分级；测量线、节点和网格服从真实几何关系，纸面有轻微复制颗粒，但不生成乱码尺寸、装饰性假公式或透视互相矛盾的结构",
+      "enPrompt": "blueprint technical rendering using a deep blue ground and high-contrast white lines for orthographic sections axonometric structure and hidden edges, with line weights graded by outline construction and dimension roles; measurements nodes and grid follow coherent geometry with subtle reproduction grain, avoiding garbled dimensions decorative fake equations or mutually inconsistent perspective",
       "negative": [
         "low detail texture",
         "messy material",
@@ -16423,8 +17469,8 @@
       "zhName": "动作残影",
       "enName": "Motion Afterimage",
       "image": "/assets/parameters/effect-motion-afterimage.png?v=20260827-purpose-crop-fix",
-      "zhPrompt": "动作残影特效，半透明连续身影表现运动轨迹和速度变化",
-      "enPrompt": "motion afterimage effect, repeated translucent silhouettes showing movement path and speed change",
+      "zhPrompt": "动作残影特效沿真实运动方向排列少量连续轮廓，起始影像较淡、当前主体最清楚，间距随速度变化并保持肢体动作顺序；残影透明但边缘可辨，不重复背景或静止部位，避免整画面拖影、随机复制人物和方向矛盾",
+      "enPrompt": "motion-afterimage effect placing a limited sequence of readable silhouettes along the true movement path, with earlier phases fainter and the current subject sharpest, spacing changing with speed while limb order remains coherent; echoes stay translucent without duplicating background or stationary parts, avoiding full-frame smear random clones or contradictory direction",
       "negative": [
         "messy motion blur",
         "visual noise",

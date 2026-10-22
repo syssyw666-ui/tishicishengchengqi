@@ -98,7 +98,7 @@ export const finalSupplementParameters: PromptParameter[] = [
   param("scene", "scene-modern-classroom", "interior", "现代教室", "Modern Classroom", "场景为现代教室，课桌、白板、投影屏和学习环境清晰", "modern classroom scene with desks, board, projection screen, and learning environment", sceneNegative),
 
 
-  param("render", "render-blueprint-technical", "technical", "蓝图技术渲染", "Blueprint Technical Render", "蓝图技术渲染，白色线框、测量线和工程图纸质感", "blueprint technical render, white wireframe lines, measurement marks, engineering drawing texture", renderNegative),
+  param("render", "render-blueprint-technical", "technical", "蓝图技术渲染", "Blueprint Technical Render", "蓝图技术渲染以深蓝底和高对比白线表达正投影、剖面、轴测结构与隐藏线，线宽按轮廓、构造和尺寸分级；测量线、节点和网格服从真实几何关系，纸面有轻微复制颗粒，但不生成乱码尺寸、装饰性假公式或透视互相矛盾的结构", "blueprint technical rendering using a deep blue ground and high-contrast white lines for orthographic sections axonometric structure and hidden edges, with line weights graded by outline construction and dimension roles; measurements nodes and grid follow coherent geometry with subtle reproduction grain, avoiding garbled dimensions decorative fake equations or mutually inconsistent perspective", renderNegative),
   param("render", "render-clay-material", "stylized", "陶土材质渲染", "Clay Material Render", "陶土材质渲染，表面保留手捏凹痕、指纹、细砂颗粒和略不均匀的哑光吸光特性，转折处体积柔和厚实；不同部件像真实泥料连接而非塑料模型，避免镜面高光与过分锋利边缘", "clay-material rendering with hand-pinched dents fingerprints fine grit and subtly uneven matte light absorption, soft substantial volume through turns; components join like real clay rather than molded plastic, avoiding mirror highlights and overly sharp edges", renderNegative)
 ];
 
