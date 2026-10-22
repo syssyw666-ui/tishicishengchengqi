@@ -6444,6 +6444,331 @@
       ]
     },
     {
+      "id": "artist-synchromism",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "同步主义色彩抽象",
+      "enName": "Synchromism",
+      "image": "/assets/parameters/artist-synchromism.jpg?v=20261021-style-expansion-i",
+      "zhPrompt": "同步主义视觉语言，以色相环关系代替具象描绘，饱和红橙黄绿蓝紫被组织成相互穿插的弧带、圆盘与旋转体；冷暖、明度和邻近色推动空间前后，笔触保持绘画感，避免退化为彩虹渐变或普通几何装饰",
+      "enPrompt": "Synchromist visual language replacing depiction with color-harmony structure, saturated spectral hues organized as interlocking arcs discs and rotating volumes; warm-cool contrast value and adjacent-color progression create spatial advance and recession, with painterly surfaces rather than a generic rainbow gradient or decorative geometry",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-transavantgarde",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "意大利跨先锋绘画",
+      "enName": "Italian Transavantgarde",
+      "image": "/assets/parameters/artist-transavantgarde.jpg?v=20261021-style-expansion-i",
+      "zhPrompt": "意大利跨先锋绘画语言，让神话、废墟、动物或原始符号回到表现性画布中，以粗粝宽笔、刮擦底层和不稳定透视叠加历史记忆；土红、夜蓝、墨黑与旧金彼此碰撞，保留手工情绪而不落入精致超现实插画",
+      "enPrompt": "Italian Transavantgarde painting language returning myth ruins animals and primal signs to an expressive canvas through rough broad strokes scratched underlayers and unstable perspective; earth red nocturnal blue black and aged gold collide with historical memory, retaining handmade emotion without becoming polished surreal illustration",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-bay-area-figurative",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "湾区具象绘画",
+      "enName": "Bay Area Figurative",
+      "image": "/assets/parameters/artist-bay-area-figurative.jpg?v=20261021-style-expansion-i",
+      "zhPrompt": "湾区具象绘画语言，在可辨认的人物、椅子或室内静物中保留抽象表现主义的宽阔色面，轮廓由相邻色块相遇自然形成；明亮粉橙、钴蓝与草绿在湿润笔触中保持空气感，空间简化但不扁平成为海报",
+      "enPrompt": "Bay Area Figurative language keeping recognizable figures chairs or interior still life within broad Abstract-Expressionist color fields, contours emerging where adjacent painted masses meet; luminous coral cobalt and green remain atmospheric through wet brushwork, with simplified space that does not collapse into flat poster graphics",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-chicago-imagists",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "芝加哥意象派",
+      "enName": "Chicago Imagists",
+      "image": "/assets/parameters/artist-chicago-imagists.jpg?v=20261021-style-expansion-i",
+      "zhPrompt": "芝加哥意象派视觉语言，以漫画般清晰轮廓描绘古怪玩具、身体碎片或家庭物件，造型滑稽、尖锐且带民间招牌感；荧光粉、酸绿、亮蓝与黑色在珐琅般平滑表面上强烈分区，构图密集却保持单体辨识",
+      "enPrompt": "Chicago Imagist visual language rendering eccentric toys fragmented forms or domestic objects with comic-sharp contours and a humorous abrasive sign-painting character; hot pink acid green bright blue and black divide enamel-smooth surfaces, densely composed while each peculiar object remains legible",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-neo-concrete",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "巴西新具体主义",
+      "enName": "Brazilian Neo-Concrete",
+      "image": "/assets/parameters/artist-neo-concrete.jpg?v=20261021-style-expansion-i",
+      "zhPrompt": "巴西新具体主义语言，把几何从僵硬平面释放成可折叠、可绕行或可触摸的空间构件，薄板、铰接面和色块与观看者尺度发生关系；结构简洁但保留材料重量、弯折与阴影，避免成为纯数学图表或企业标志",
+      "enPrompt": "Brazilian Neo-Concrete language releasing geometry from a rigid picture plane into foldable walk-around or tactile spatial elements, hinged sheets planes and color fields relating to bodily scale; simple structure retains material weight bends and cast shadow, avoiding a purely mathematical diagram or corporate logo",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-madi",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "马迪几何艺术",
+      "enName": "MADI Art",
+      "image": "/assets/parameters/artist-madi.jpg?v=20261021-style-expansion-i",
+      "zhPrompt": "马迪艺术以不规则外轮廓、开孔、拼接板和独立几何体突破矩形画框，红黄蓝黑白色块保持硬边和平整表面；形状关系轻快、可移动且带游戏性，不依赖错视渐变，也不模仿包豪斯式规整网格",
+      "enPrompt": "MADI art breaking the rectangular frame through irregular outer contours cutouts joined panels and autonomous geometric objects, using flat hard-edged red yellow blue black and white; relationships feel playful movable and constructive without optical gradients or a regular Bauhaus grid",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-supports-surfaces",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "支撑/表面艺术",
+      "enName": "Supports/Surfaces",
+      "image": "/assets/parameters/artist-supports-surfaces.jpg?v=20261021-style-expansion-i",
+      "zhPrompt": "支撑/表面艺术拆解画布与框架，使用未绷紧棉布、悬挂布条、折叠网格和直接渗染，让经纬纤维、毛边、接缝与重力成为画面；重复色带服从材料长度和吸收差异，避免看似完整装裱的普通抽象画",
+      "enPrompt": "Supports/Surfaces language dismantling canvas and stretcher through loose cotton hanging strips folded grids and direct staining, making weave frayed edges seams and gravity part of the image; repeated color bands follow material length and absorption variation, avoiding the appearance of a conventionally framed abstract painting",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-superflat",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "超扁平流行艺术",
+      "enName": "Superflat Pop Art",
+      "image": "/assets/parameters/artist-superflat.jpg?v=20261021-style-expansion-i",
+      "zhPrompt": "超扁平流行视觉语言，取消前后景体积，把原创花朵、云团、商品化符号与卡通形态压缩到同一高光洁平面；糖果色块由极细轮廓分隔并高密度重复，表面像丝网印刷般均匀，避免使用现成角色或单纯儿童插画",
+      "enPrompt": "superflat pop visual language collapsing foreground and background volume so original flowers clouds commodity-like signs and cartoon forms share one immaculate plane; candy color fields divided by very fine outlines and densely repeated with screenprint-like uniformity, avoiding recognizable characters or generic children's illustration",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-sgraffito",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "刻划灰泥装饰",
+      "enName": "Sgraffito Plaster",
+      "image": "/assets/parameters/style-sgraffito.jpg?v=20261021-style-expansion-i",
+      "zhPrompt": "刻划灰泥工艺在深浅两层湿灰泥或陶土色浆上刮去表层，使底色沿刀痕显露并构成花叶、动物或几何纹；线槽深浅、粉化边缘和矿物颗粒真实可见，图案依附墙面而非像印刷贴纸",
+      "enPrompt": "sgraffito craft made by scratching through a light or dark wet plaster layer to expose the contrasting ground as botanical animal or geometric motifs; groove depth chalky cut edges and mineral granules remain visible, with ornament belonging to the wall surface rather than appearing as a printed decal",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-scagliola",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "仿石膏嵌饰",
+      "enName": "Scagliola",
+      "image": "/assets/parameters/style-scagliola.jpg?v=20261021-style-expansion-i",
+      "zhPrompt": "仿石膏嵌饰以着色石膏、胶与矿物粉填入刻槽，抛磨后形成类似大理石和硬石镶嵌的平整表面；彩色脉络、细小气孔与手工接缝共同构成花饰或建筑面板，避免真实宝石反射和数码大理石贴图",
+      "enPrompt": "scagliola craft filling incised channels with pigmented plaster binder and mineral powder, then polishing them into a flat imitation-marble or inlaid-stone surface; colored veining tiny pores and handmade joins form ornamental panels, avoiding real gemstone reflections or a generic digital marble texture",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-micromosaic",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "微型玻璃马赛克",
+      "enName": "Micromosaic",
+      "image": "/assets/parameters/style-micromosaic.jpg?v=20261021-style-expansion-i",
+      "zhPrompt": "微型玻璃马赛克由极细长方或不规则玻璃嵌片密集拼成花鸟、景物与渐变色，单颗嵌片方向顺应羽毛、叶脉和轮廓，缝隙极窄但仍可辨；表面有玻璃色泽和轻微高低差，不像像素画或普通瓷砖拼贴",
+      "enPrompt": "micromosaic assembled from extremely small rectangular or irregular glass tesserae forming flowers birds landscapes and optical gradients, each piece aligned with feather leaf or contour direction and separated by very narrow visible joints; glass color and slight relief remain tactile, distinct from pixel art or ordinary tile mosaic",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-kumiko",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "日本组子细工",
+      "enName": "Japanese Kumiko",
+      "image": "/assets/parameters/style-kumiko.jpg?v=20261021-style-expansion-i",
+      "zhPrompt": "日本组子细工以无钉榫接的细木条构成稳定格框，再将短小斜木片逐级嵌入形成麻叶、菱格或非具象星形；木条截面、接点和纤维方向精确，浅色桧木在侧光下产生细腻层次，避免激光切割薄板感",
+      "enPrompt": "Japanese kumiko joinery building a stable lattice from slender nail-free interlocking strips, then inserting short diagonal pieces into hemp-leaf diamonds or nonfigurative stars; precise cross sections joints and grain direction in pale wood gain subtle side-lit depth, avoiding the look of a single laser-cut sheet",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol"
+      ]
+    },
+    {
+      "id": "style-yosegi",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "日本寄木细工",
+      "enName": "Japanese Yosegi",
+      "image": "/assets/parameters/style-yosegi.jpg?v=20261021-style-expansion-i",
+      "zhPrompt": "日本寄木细工将不同天然色木条胶合成截面纹样，再切成薄片贴覆器物，形成连续六角、箭羽、棋盘与星形马赛克；色差完全来自木材，接缝精密、表面温润抛光，避免染色塑料感和随机木纹贴图",
+      "enPrompt": "Japanese yosegi marquetry laminating naturally colored wood rods into patterned blocks then slicing them as veneers over objects, producing continuous hexagon arrow-feather checker and star mosaics; color comes entirely from wood with precise joins and warm polish, avoiding dyed plastic or random woodgrain overlays",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol"
+      ]
+    },
+    {
+      "id": "style-temari",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "日本手鞠线绣",
+      "enName": "Japanese Temari",
+      "image": "/assets/parameters/style-temari.jpg?v=20261021-style-expansion-i",
+      "zhPrompt": "日本手鞠工艺以多层缠线形成坚实球体，再按经纬定位用彩线绣出放射星花、交错菱形和环带；针线沿球面曲率连续包裹，层次与张力清楚，保留线纤维和手工微差，不画成平面曼陀罗",
+      "enPrompt": "Japanese temari craft wrapping a firm sphere in layered thread then using measured guide divisions to embroider radial flowers interlocking diamonds and bands; stitches follow the curvature continuously with visible tension fiber and handmade variation, never flattening into a two-dimensional mandala",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol"
+      ]
+    },
+    {
+      "id": "style-mizuhiki",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "日本水引结艺",
+      "enName": "Japanese Mizuhiki",
+      "image": "/assets/parameters/style-mizuhiki.jpg?v=20261021-style-expansion-i",
+      "zhPrompt": "日本水引结艺使用带纸芯的细绳并排弯折、盘绕和穿结，形成鹤、梅花或抽象祝结般的立体轮廓；红白金绳的平行间距、回弹弧度和交叠顺序清楚，背景留白克制，避免柔软毛线或随意蝴蝶结",
+      "enPrompt": "Japanese mizuhiki cord craft bending looping and interlacing parallel paper-cored cords into crane plum-blossom or abstract ceremonial knot silhouettes; red white and gold strands keep clear spacing spring tension and crossing order against restrained negative space, avoiding soft yarn or casual ribbon bows",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol"
+      ]
+    },
+    {
+      "id": "style-bingata",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "琉球红型染",
+      "enName": "Okinawan Bingata",
+      "image": "/assets/parameters/style-bingata.jpg?v=20261021-style-expansion-i",
+      "zhPrompt": "琉球红型染以型纸和防染糊在织物上分层套印花卉、流水、鸟与云形，朱红、亮黄、群青和靛蓝色块饱满，边缘带手工渗化和刷染深浅；图案连续但不机械复制，保留布纹与留白",
+      "enPrompt": "Okinawan bingata stencil-resist textile using carved paper stencils and rice-paste barriers to layer flowers flowing water birds and cloud forms, with saturated vermilion yellow ultramarine and indigo; brushed tonal variation and softly feathered handmade edges remain continuous without mechanical repetition",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol"
+      ]
+    },
+    {
+      "id": "style-carbon-transfer-print",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "碳素转印摄影",
+      "enName": "Carbon Transfer Print",
+      "image": "/assets/parameters/style-carbon-transfer-print.jpg?v=20261021-style-expansion-i",
+      "zhPrompt": "碳素转印摄影由含颜料明胶组织影像，呈现哑光炭黑、深棕或冷灰的宽广连续灰阶，暗部浓厚却不银化，高光细节稳定；颜料层微微浮于高质量纸纤维之上，边缘清楚而无数码锐化",
+      "enPrompt": "carbon-transfer photographic print formed from pigmented gelatin, producing a broad continuous scale in matte charcoal black deep brown or cool gray, dense shadows without silvering and stable highlight detail; the pigment layer sits with subtle relief on fine paper, crisp yet free of digital sharpening",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-chrysotype",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "金盐印相",
+      "enName": "Chrysotype Gold Print",
+      "image": "/assets/parameters/style-chrysotype.jpg?v=20261021-style-expansion-i",
+      "zhPrompt": "金盐印相以金纳米颗粒在手工涂布纸上形成影像，综合色调从中性灰、紫褐到轻微酒红变化，高光清澈、暗部透明，纸纤维穿过薄薄金属影像层；整体安静细腻，不等同于金色滤镜或褐色旧照片",
+      "enPrompt": "chrysotype gold print formed by colloidal gold on hand-coated paper, its image tone shifting from neutral gray and violet-brown toward restrained wine red, with luminous highlights transparent shadows and paper fibers visible through the thin metallic image; subtle and quiet rather than a gold filter or generic sepia photograph",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-daguerreotype",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "银版摄影",
+      "enName": "Daguerreotype",
+      "image": "/assets/parameters/style-daguerreotype.jpg?v=20261021-style-expansion-i",
+      "zhPrompt": "银版摄影呈现在镜面抛光镀银铜板上，细节极高、亮部冷银发光，暗部随观看角度在深黑与反射之间变化；板面可见轻微擦痕、边缘氧化和彩虹色晕，影像像悬浮于金属之中而非印在纸上",
+      "enPrompt": "daguerreotype image on a mirror-polished silvered copper plate, exceptionally fine detail and cool luminous silver highlights while shadows shift between deep black and reflection with viewing angle; faint polishing marks edge tarnish and iridescent oxidation remain, the image seeming suspended in metal rather than printed on paper",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-mordancage",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "腐蚀浮膜摄影",
+      "enName": "Mordancage",
+      "image": "/assets/parameters/style-mordancage.jpg?v=20261021-style-expansion-i",
+      "zhPrompt": "腐蚀浮膜暗房工艺在黑白银盐照片上漂白并软化深色乳剂，局部乳剂被抬起、折叠成薄纱般黑色帷幕和枝状边缘；主体仍可辨认，化学侵蚀、纸白与深黑共同构图，避免普通墨水飞溅或数码撕裂滤镜",
+      "enPrompt": "mordancage darkroom process bleaching and softening the darkest emulsion of a silver-gelatin print so selected areas lift and fold into veil-like black drapery and branching edges; the subject remains recognizable while chemical erosion paper white and dense black compose the image, distinct from ink splatter or a digital tear filter",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
       "id": "clothing-long-sleeve",
       "category": "clothing",
       "styleGroup": "tops-sleeves",

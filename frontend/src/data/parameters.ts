@@ -20,6 +20,7 @@ import { styleExpansionParameters5 } from "./styleExpansionParameters5";
 import { styleExpansionParameters6 } from "./styleExpansionParameters6";
 import { styleExpansionParameters7 } from "./styleExpansionParameters7";
 import { styleExpansionParameters8 } from "./styleExpansionParameters8";
+import { styleExpansionParameters9 } from "./styleExpansionParameters9";
 
 export const categories: Category[] = [
   { id: "style", zhName: "画面风格", enName: "Style", mode: "multi", description: "决定整体视觉语言，可混选。" },
@@ -463,6 +464,7 @@ parameters.push(
   ...styleExpansionParameters6,
   ...styleExpansionParameters7,
   ...styleExpansionParameters8,
+  ...styleExpansionParameters9,
   ...clothingParameters,
   ...poseParameters,
   ...expandedParameters,

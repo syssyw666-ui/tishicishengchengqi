@@ -74,3 +74,11 @@ The prompts describe visible construction, material, palette, edge behavior, and
 - 补充独立历史摄影工艺：化学显影绘画、重铬酸盐树胶印相、盐纸印相、蛋白印相、奥托克罗姆、溴油印相、卡罗式纸负片和范戴克棕印相。各项按感光材料、承印纸、颗粒与综合色调明确区分，避免全部退化成同一种棕色旧照片滤镜。
 - 扩写 20 个原本过短的动画、东方绘画、渲染、调色、民族织纹和纤维工艺提示词，明确可观察的线条、色阶、反射、温度映射、织造结构与失败边界。
 - 20 张新增参考图均为独立生成内容，依据拼图实际分隔边界裁切为 960 × 540；完成尺寸、哈希唯一性和相邻画面串入检查。
+
+## 第九轮补充
+
+- 参考 GitHub 的 [illustration-style reference](https://github.com/wuyoscar/GPT-Image2-Skill/blob/main/skills/get-prompt-from-image/references/illustration-style.md)、[image-generation-enhanced](https://github.com/skillatlas/skills/blob/main/skills/image-generation-enhanced/SKILL.md)、[image-prompt](https://github.com/veryCoolTimo/imagegen-skills/blob/main/skills/image-prompt/SKILL.md) 与 [prompt-images](https://github.com/replicate/skills/blob/main/skills/prompt-images/SKILL.md)，继续按可观察的色彩结构、材料工序和成像机理筛选候选项，不把近义风格名称重复入库。
+- 补充现代与战后艺术断层：同步主义、意大利跨先锋、湾区具象、芝加哥意象派、巴西新具体主义、MADI 几何艺术、Supports/Surfaces 与超扁平流行艺术。
+- 补充材料与地域工艺：刻划灰泥、仿石膏嵌饰、微型玻璃马赛克、日本组子、寄木、手鞠、水引和琉球红型染。提示词描述实际构造、接缝、纤维与表面响应，不复制特定神圣符号。
+- 补充历史摄影工艺：碳素转印、金盐印相、银版摄影和腐蚀浮膜摄影，并通过承印材料、综合色调、乳剂状态和观看方式区分，避免统一退化为旧照片滤镜。
+- 20 张参考图均重新生成。裁切时测量拼图实际分隔线，按内容边界逐格取样并输出为 960 × 540；随后检查尺寸、文件哈希和相邻画面串入，避免等分裁切造成白边或错位。
