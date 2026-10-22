@@ -108,3 +108,12 @@ The prompts describe visible construction, material, palette, edge behavior, and
 - 各项按承载物、落色方式、织造结构和边缘行为与现有蓝白陶瓷、蜡染、刺绣、伊卡特和地毯条目区分；涉及地域传统时只描述可见工艺，不复制神圣或身份专属图式。
 - 同步扩写 20 个旧条目，覆盖城市夜景、航拍、电影调色、宝宝与肤质修图、珠绣和中国民族视觉，使提示词明确材质构造、色彩层级、适用边界与常见失败结果。
 - 20 张新增参考图采用批量拼图生成，裁切时向分隔线内缩 3 像素，再把完整内容等比缩放到 16:9；余量使用同图模糊延展填充。最终完成目视审查、960 × 540 尺寸检查、哈希唯一性和相邻画面串入检查。
+
+## 第十三轮补充
+
+- 继续参考 GitHub 的 [image-prompt style menu](https://github.com/veryCoolTimo/imagegen-skills/blob/main/skills/image-prompt/references/styles.md)、[GPT-Image2 illustration analysis](https://github.com/wuyoscar/GPT-Image2-Skill/blob/main/skills/get-prompt-from-image/references/illustration-style.md) 与 [hand-drawn-styles](https://github.com/threerocks/hand-drawn-styles)，沿用“媒介、线条、形状、明暗、色彩、表面证据”的拆解方法；现有手绘、海报、像素、水墨和纸张大理石纹方向不按新名称重复增加。
+- 新增材料工艺：金属锤揲浮雕、千花玻璃棒切片、乐烧陶艺、绞胎陶瓷、灰阶画珐琅、鲨革珍珠纹饰面、克鲁尔羊毛刺绣、缩褶刺绣、灰泥堆塑墙饰、立体浮雕刺绣与贝壳浮雕卡梅奥。
+- 新增地域视觉：芬兰稻草几何吊饰、芬兰长绒壁毯、瑞典库比茨花绘、亚美尼亚十字石刻、突尼斯塞伊南手塑陶绘、阿尔及利亚卡比利彩绘陶器、墨西哥纸塑彩绘、中国建盏兔毫釉与钧窑窑变釉。
+- 去重时放弃新建土耳其浮水染、捷克蓝印与韩国螺钿：它们与现有纸张大理石纹、蓝印花布和螺钿镶嵌的生成作用过近。蛋壳漆也已包含在越南漆画中，因此改为后续扩写原条目而非重复建卡。
+- 同步扩写 20 个原本过短的视觉特效、3D、海报、民族工艺、胶片调色和人物修图提示词，明确运动矢量、投影逻辑、织造结构、胶片综合色与身份保护边界。
+- 20 张图由严格 4 × 4 和 2 × 2 拼图生成，逐格内缩 3 像素裁切；完整主体等比缩放至 960 × 540，余量使用同图模糊延展。目视审查确认没有白边、串格、文字或主体截断。

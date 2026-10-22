@@ -21,6 +21,7 @@ SNAPSHOT_PATH_I = BACKEND_ROOT / "content" / "data" / "style_expansion_20261021_
 SNAPSHOT_PATH_J = BACKEND_ROOT / "content" / "data" / "style_expansion_20261022_j.json"
 SNAPSHOT_PATH_K = BACKEND_ROOT / "content" / "data" / "style_expansion_20261022_k.json"
 SNAPSHOT_PATH_L = BACKEND_ROOT / "content" / "data" / "style_expansion_20261022_l.json"
+SNAPSHOT_PATH_M = BACKEND_ROOT / "content" / "data" / "style_expansion_20261022_m.json"
 
 
 class StyleExpansionTests(SimpleTestCase):
@@ -40,6 +41,7 @@ class StyleExpansionTests(SimpleTestCase):
         cls.snapshot_j = json.loads(SNAPSHOT_PATH_J.read_text(encoding="utf-8"))
         cls.snapshot_k = json.loads(SNAPSHOT_PATH_K.read_text(encoding="utf-8"))
         cls.snapshot_l = json.loads(SNAPSHOT_PATH_L.read_text(encoding="utf-8"))
+        cls.snapshot_m = json.loads(SNAPSHOT_PATH_M.read_text(encoding="utf-8"))
         cls.parameters = cls.seed["parameters"]
 
     def test_parameter_ids_and_names_are_unique(self):
@@ -320,5 +322,27 @@ class StyleExpansionTests(SimpleTestCase):
     def test_twelfth_expansion_prompts_are_specific(self):
         self.assertEqual(len(self.snapshot_l["parameters"]), 40)
         for row in self.snapshot_l["parameters"]:
+            self.assertGreaterEqual(len(row["zhPrompt"]), 45, row["id"])
+            self.assertGreaterEqual(len(row["enPrompt"]), 100, row["id"])
+
+    def test_thirteenth_expansion_assets_are_unique_widescreen_images(self):
+        asset_root = PROJECT_ROOT / "public"
+        if not asset_root.is_dir():
+            self.skipTest("Frontend assets are not included in the standalone backend repository.")
+        new_rows = [row for row in self.snapshot_m["parameters"] if "20261022-style-expansion-m" in row["image"]]
+        self.assertEqual(len(new_rows), 20)
+        hashes = set()
+        for row in new_rows:
+            asset = asset_root / row["image"].split("?", 1)[0].lstrip("/")
+            self.assertTrue(asset.is_file(), row["id"])
+            with Image.open(asset) as image:
+                self.assertEqual(image.size, (960, 540), row["id"])
+            digest = __import__("hashlib").sha256(asset.read_bytes()).hexdigest()
+            self.assertNotIn(digest, hashes, row["id"])
+            hashes.add(digest)
+
+    def test_thirteenth_expansion_prompts_are_specific(self):
+        self.assertEqual(len(self.snapshot_m["parameters"]), 40)
+        for row in self.snapshot_m["parameters"]:
             self.assertGreaterEqual(len(row["zhPrompt"]), 45, row["id"])
             self.assertGreaterEqual(len(row["enPrompt"]), 100, row["id"])
