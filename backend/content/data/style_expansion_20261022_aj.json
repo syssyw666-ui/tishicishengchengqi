@@ -1,0 +1,347 @@
+{
+  "parameters": [
+    {
+      "id": "feature-broad-nose-bridge",
+      "category": "ethnicity",
+      "styleGroup": "facial-feature",
+      "zhName": "宽鼻梁",
+      "enName": "Broad Nose Bridge",
+      "image": "/assets/parameters/feature-broad-nose-bridge.png?v=20260827-character-crop-fix",
+      "zhPrompt": "宽鼻梁通过鼻骨与软骨形成较宽但连续的鼻背、自然鼻翼和与面颊协调的鼻基底，正侧面比例都服从完整面部结构，光线沿鼻梁和鼻翼产生柔和转折而非硬直高光；保留左右轻微差异与真实毛孔，避免夸大鼻孔、压扁鼻尖、卡通化增宽、改变其他五官或据此推断族群和性格",
+      "enPrompt": "broad nose bridge formed by a wider yet continuous bony and cartilaginous dorsum natural alae and a base proportionate to the cheeks, remaining coherent in front and profile while light turns softly across bridge and wings rather than creating a hard stripe; preserve subtle asymmetry and pores, avoiding exaggerated nostrils a flattened tip cartoon widening changes to unrelated features or inference of ethnicity and personality",
+      "negative": [
+        "stereotype",
+        "caricature",
+        "offensive depiction",
+        "exaggerated ethnic features"
+      ]
+    },
+    {
+      "id": "feature-deep-set-eyes",
+      "category": "ethnicity",
+      "styleGroup": "facial-feature",
+      "zhName": "深邃眼窝",
+      "enName": "Deep-Set Eyes",
+      "image": "/assets/parameters/feature-deep-set-eyes.png?v=20260827-character-crop-fix",
+      "zhPrompt": "深邃眼窝由眉骨、眶缘和眼球相对位置形成自然凹深，眼睑、泪阜和眼白仍清楚，侧上方光在眉骨下产生受控阴影但不会把眼睛涂黑，视线与高光方向一致；保留年龄和个体差异，避免骷髅化凹陷、双眼黑洞、夸张眉骨、眼球后缩错位或用阴暗性格替代解剖描述",
+      "enPrompt": "deep-set eyes created by the natural relationship among brow ridge orbital rim and globe, with lids tear ducts and sclera still legible and upper-side light casting controlled shadow below the brow without blacking out the eyes while gaze and catchlights remain aligned; retain age and individual variation, avoiding skeletal hollows black-hole sockets exaggerated brow bone displaced recessed globes or substituting a dark personality for anatomy",
+      "negative": [
+        "stereotype",
+        "caricature",
+        "offensive depiction",
+        "exaggerated ethnic features"
+      ]
+    },
+    {
+      "id": "feature-square-jaw",
+      "category": "ethnicity",
+      "styleGroup": "facial-feature",
+      "zhName": "方下颌",
+      "enName": "Square Jaw",
+      "image": "/assets/parameters/feature-square-jaw.png?v=20260827-character-crop-fix",
+      "zhPrompt": "方下颌具有清楚但不过度锐利的下颌角、较平直的下缘和与颏部连续的骨骼转折，咬肌与软组织覆盖保持自然，正面宽度和侧面深度与头骨、颈部及体态协调；不同年龄和性别均保留个体差异，避免立方体脸、刀切直角、无限加宽、颈部断开或把方下颌自动等同于强壮和攻击性",
+      "enPrompt": "square jaw with readable yet not razor-sharp mandibular angles a comparatively straight lower edge and continuous transition into the chin, covered by natural masseter and soft tissue while frontal width and profile depth remain proportionate to skull neck and body; preserve individual variation across age and gender, avoiding a cube face cut-metal corners unlimited widening a disconnected neck or equating jaw shape with strength and aggression",
+      "negative": [
+        "stereotype",
+        "caricature",
+        "offensive depiction",
+        "exaggerated ethnic features"
+      ]
+    },
+    {
+      "id": "feature-high-cheekbones",
+      "category": "ethnicity",
+      "styleGroup": "facial-feature",
+      "zhName": "高颧骨",
+      "enName": "High Cheekbones",
+      "image": "/assets/parameters/feature-high-cheekbones.png?v=20260827-character-crop-fix",
+      "zhPrompt": "高颧骨由颧弓位置、面颊软组织和太阳穴过渡共同表现，侧光在颧部形成清楚高光并向眼下与面颊平滑衰减，正面和四分之三角度均保持连续面部体积；高低只描述骨相而不自动削瘦脸部，避免尖锐突刺、塌陷脸颊、左右高度错位、过度阴影修容或把特征绑定某一族群",
+      "enPrompt": "high cheekbones expressed through zygomatic arch placement cheek soft tissue and transition toward temples, with side light creating a readable highlight that falls smoothly beneath the eyes and across the cheek while frontal and three-quarter views preserve continuous facial volume; describe bone placement without automatically hollowing the face, avoiding sharp spikes collapsed cheeks mismatched heights excessive contour makeup or tying the feature to one ethnicity",
+      "negative": [
+        "stereotype",
+        "caricature",
+        "offensive depiction",
+        "exaggerated ethnic features"
+      ]
+    },
+    {
+      "id": "feature-narrow-nose-bridge",
+      "category": "ethnicity",
+      "styleGroup": "facial-feature",
+      "zhName": "窄鼻梁",
+      "enName": "Narrow Nose Bridge",
+      "image": "/assets/parameters/feature-narrow-nose-bridge.png?v=20260827-character-crop-fix",
+      "zhPrompt": "窄鼻梁以较细但有真实骨骼宽度的鼻背连接眉间与鼻尖，鼻翼、鼻孔和鼻基底仍保持呼吸所需的自然体积，正侧面透视一致，窄高光随光源渐变而非画成一条白线；避免夹捏感、鼻翼消失、鼻尖过细、整鼻像塑料刀片、过度医美化或通过改变眼距来强行制造窄鼻",
+      "enPrompt": "narrow nose bridge using a slender yet anatomically plausible dorsum connecting glabella and tip while alae nostrils and base retain natural breathing volume, with coherent front-profile perspective and a narrow highlight graded by the light source rather than painted as a white line; avoid a pinched appearance missing wings needle tip plastic blade excessive cosmetic-surgery polish or forcing narrowness by changing eye spacing",
+      "negative": [
+        "stereotype",
+        "caricature",
+        "offensive depiction",
+        "exaggerated ethnic features"
+      ]
+    },
+    {
+      "id": "skin-olive",
+      "category": "ethnicity",
+      "styleGroup": "skin-tone",
+      "zhName": "橄榄肤色",
+      "enName": "Olive Skin",
+      "image": "/assets/parameters/skin-olive.png?v=20260827-character-crop-fix",
+      "zhPrompt": "橄榄肤色以中性至暖棕基底结合克制的黄绿或金色底调，在日光、阴影和室内光下分别呈现不同色彩偏移但仍像真实皮肤，面颊与嘴唇保留自然血色，高光不过分泛黄；保留毛孔和局部色素，避免军绿色滤镜、灰病感、通体棕黄、脸颈不一致或用橄榄底调推断地域身份",
+      "enPrompt": "olive skin using a neutral-to-warm brown base with restrained yellow-green or golden undertones that shift plausibly across daylight shade and interior light while remaining living skin, with natural circulation in cheeks and lips and highlights not turning excessively yellow; preserve pores and localized pigmentation, avoiding an army-green filter sickly gray cast uniform ochre-brown face-neck mismatch or regional inference from undertone",
+      "negative": [
+        "stereotype",
+        "caricature",
+        "offensive depiction",
+        "exaggerated ethnic features"
+      ]
+    },
+    {
+      "id": "skin-deep-brown",
+      "category": "ethnicity",
+      "styleGroup": "skin-tone",
+      "zhName": "深棕肤色",
+      "enName": "Deep Brown Skin",
+      "image": "/assets/parameters/skin-deep-brown.png?v=20260827-character-crop-fix",
+      "zhPrompt": "深棕肤色具有高黑色素但层次丰富的棕红、冷棕或金色底调，额头、颧骨、鼻梁和肩部以宽柔高光塑造体积，暗部保持肤色和毛孔而非压成纯黑，嘴唇、手掌与关节存在自然差异；曝光依据皮肤测光并保护高光，避免过度提亮、灰化降饱和、油亮塑料、边缘融入背景或把所有深色皮肤画成同一种颜色",
+      "enPrompt": "deep brown skin with melanin-rich yet layered red-brown cool-brown or golden undertones, broad soft highlights shaping forehead cheekbones nose and shoulders while shadows retain skin color and pores rather than crushing to black and lips palms and joints show natural variation; meter exposure for the skin and protect highlights, avoiding over-lightening gray desaturation oily plastic edges disappearing into the background or rendering all deep skin as one flat color",
+      "negative": [
+        "stereotype",
+        "caricature",
+        "offensive depiction",
+        "exaggerated ethnic features"
+      ]
+    },
+    {
+      "id": "hair-straight-natural",
+      "category": "hair-makeup",
+      "styleGroup": "hair-texture",
+      "zhName": "自然直发质",
+      "enName": "Natural Straight Hair",
+      "image": "/assets/parameters/hair-straight-natural.png?v=20260827-character-crop-fix",
+      "zhPrompt": "自然直发由头皮分区连续生长，发束整体顺直但保留细微弯曲、不同粗细和少量碎发，光泽沿发束与头骨曲面形成窄而连续的高光，发尾受重力和剪裁自然收束；直发不等于贴头皮或无体积，避免整片塑料板、每根完全平行、镜面反射、发根悬浮或发丝穿过耳朵与衣物",
+      "enPrompt": "natural straight hair growing continuously from scalp sections, broadly straight yet retaining minute bends varied strand thickness and limited flyaways, with narrow continuous sheen following strand direction and skull curvature and ends settling by gravity and haircut; straightness does not mean flat or volumeless, avoiding plastic sheets every strand perfectly parallel mirror reflection floating roots or hair intersecting ears and clothing",
+      "negative": []
+    },
+    {
+      "id": "hair-wavy-natural",
+      "category": "hair-makeup",
+      "styleGroup": "hair-texture",
+      "zhName": "自然波浪发质",
+      "enName": "Natural Wavy Hair",
+      "image": "/assets/parameters/hair-wavy-natural.png?v=20260827-character-crop-fix",
+      "zhPrompt": "自然波浪发质由宽缓的 S 形发束组成，波峰、波谷和卷度随头骨、层次、湿度与重力逐渐变化，发根通常较松、发中至发尾更明显，整体有空气感但脸部轮廓仍可读；高光沿弧线断续移动，避免所有波纹同频复制、海浪贴图、过度蓬胀、突然变成紧卷或发束互相穿透",
+      "enPrompt": "natural wavy hair built from broad relaxed S-shaped groups whose peaks troughs and curvature vary with skull layering humidity and gravity, often looser at the roots and clearer through mid-lengths and ends while preserving airy volume and a readable face; highlights move intermittently along curves, avoiding identically repeated waves an ocean-wave texture excessive inflation abrupt conversion into tight curls or intersecting locks",
+      "negative": []
+    },
+    {
+      "id": "hair-curly-natural",
+      "category": "hair-makeup",
+      "styleGroup": "hair-texture",
+      "zhName": "自然卷发质",
+      "enName": "Natural Curly Hair",
+      "image": "/assets/parameters/hair-curly-natural.png?v=20260827-character-crop-fix",
+      "zhPrompt": "自然卷发由不同直径与方向的螺旋、环卷和松散卷束共同形成，发根有真实支撑，内部密度与外轮廓层次清楚，卷束在重力、湿度和接触衣物处产生拉长或压缩，碎发适量；保持卷型连续但不复制，避免方便面纹理、头盔球体、无发根体积、每卷同大或用模糊块面掩盖穿模",
+      "enPrompt": "natural curly hair combining spirals ringlets and looser curl groups of varied diameter and direction, with credible root lift readable internal density and layered silhouette while curls lengthen or compress under gravity humidity and clothing contact plus restrained flyaways; keep curl pattern continuous without cloning, avoiding noodle texture a helmet sphere rootless volume identical curls or blurred masses hiding intersections",
+      "negative": []
+    },
+    {
+      "id": "hair-coily-natural",
+      "category": "hair-makeup",
+      "styleGroup": "hair-texture",
+      "zhName": "自然紧卷发质",
+      "enName": "Natural Coily Hair",
+      "image": "/assets/parameters/hair-coily-natural.png?v=20260827-character-crop-fix",
+      "zhPrompt": "自然紧卷发质由细密弹性的小螺旋、Z 形或折角卷束构成，收缩率、发根密度和发尾长度变化真实，整体轮廓饱满但仍能看见分区、局部卷束与光线层次，可表现自然蓬松、辫前状态或有意识造型；避免压成纯黑块、钢丝刷纹理、所有卷束同形、边缘无细节或把紧卷发错误拉直和异化",
+      "enPrompt": "natural coily hair built from dense elastic small spirals Z-patterns or angled coils with believable shrinkage root density and varied visible length, forming a full silhouette while retaining sectioning local coil groups and light hierarchy whether worn loose pre-braided or intentionally styled; avoid a solid black mass wire-brush texture identical coils detail-free edges or involuntary straightening and exoticization of coily texture",
+      "negative": []
+    },
+    {
+      "id": "makeup-cyber",
+      "category": "hair-makeup",
+      "styleGroup": "makeup-stylized",
+      "zhName": "赛博妆容",
+      "enName": "Cyber Makeup",
+      "image": "/assets/parameters/makeup-cyber.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "赛博妆容以少量几何眼线、金属箔、冷色珠光或电路式细线围绕眼部、颧骨和太阳穴建立未来感，图形服从面部曲率与左右设计逻辑，底妆仍保留皮肤纹理，发光效果只在有光源或反射材质处出现；避免满脸随机线路、真实品牌标志、霓虹贴纸悬浮、眼线穿过眼球、皮肤塑料化或把科技感等同于蓝紫滤镜",
+      "enPrompt": "cyber makeup using a restrained set of geometric liner metallic foil cool pearlescence or circuit-like fine marks around eyes cheekbones and temples, with graphics following facial curvature and a coherent bilateral design while base makeup preserves skin texture and glow appears only from a source or reflective material; avoid random circuitry covering the face real brand marks floating neon stickers liner through eyeballs plastic skin or reducing futurism to a blue-violet filter",
+      "negative": [
+        "messy unintended hair",
+        "distorted hairline",
+        "unclear makeup"
+      ]
+    },
+    {
+      "id": "hair-wet-look",
+      "category": "hair-makeup",
+      "styleGroup": "hair-styling",
+      "zhName": "湿发",
+      "enName": "Wet Look Hair",
+      "image": "/assets/parameters/hair-wet-look.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "湿发造型让发束因水分或造型品聚合成粗细不同的清晰组块，发根贴合但头骨体积仍存在，局部水光沿发丝方向移动，发尾和鬓角可有小水滴或黏附皮肤的真实接触；明确是刚淋湿还是时尚定型，避免整头油亮塑料、无重力尖刺、每根等宽、脸部像浸水、滴水方向错误或湿发穿过衣领",
+      "enPrompt": "wet-look hair grouping strands into clearly separated locks of varied width through water or styling product, roots lying closer while skull volume remains and localized sheen follows strand direction with optional small droplets or believable adhesion at tips and temples; distinguish freshly wet from editorial styling, avoiding uniformly greasy plastic hair weightless spikes identical locks a soaked-looking face incorrect droplet direction or hair intersecting the collar",
+      "negative": [
+        "messy unintended hair",
+        "distorted hairline",
+        "unclear makeup"
+      ]
+    },
+    {
+      "id": "hair-box-braids",
+      "category": "hair-makeup",
+      "styleGroup": "hair-styling",
+      "zhName": "盒子辫",
+      "enName": "Box Braids",
+      "image": "/assets/parameters/hair-box-braids.png?v=20260827-character-crop-fix",
+      "zhPrompt": "盒子辫从头皮上规则但不机械的方形或几何分区起辫，每股由一致数量发束连续编至末端，粗细、长度和张力符合发量，辫根、边缘碎发与固定方式清楚，运动时各辫有独立但受重力一致的摆动；避免分区漂移、辫子从皮肤凭空长出、长度无限、每股复制粘贴、穿过肩颈或挪用不相干文化饰物",
+      "enPrompt": "box braids beginning from orderly yet non-mechanical square or geometric scalp sections, each braid maintaining a coherent strand count to the end with thickness length and tension proportional to available hair plus readable roots edge hairs and fastening while individual braids swing separately under one gravity direction; avoid drifting parts braids emerging from skin infinite length copy-pasted strands intersections through shoulders or neck or unrelated cultural ornaments",
+      "negative": []
+    },
+    {
+      "id": "makeup-dewy-skin",
+      "category": "hair-makeup",
+      "styleGroup": "makeup-natural",
+      "zhName": "水光肌妆感",
+      "enName": "Dewy Skin Makeup",
+      "image": "/assets/parameters/makeup-dewy-skin.png?v=20260827-character-crop-fix",
+      "zhPrompt": "水光肌妆感以轻薄保湿底妆均匀肤色，在颧骨、鼻梁、眉骨和唇峰放置服从主光源的柔和湿润高光，毛孔、细纹和面部起伏仍可见，额头鼻翼等易出油区域控制反射范围；肤色不被漂白，避免全脸镜面油光、玻璃皮、磨皮蜡像、没有光源的白色亮斑或将汗水与妆面混为一体",
+      "enPrompt": "dewy-skin makeup using a thin hydrating base to even tone while placing soft moist highlights on cheekbones nose bridge brow bone and cupid's bow according to the key light, retaining pores fine lines and facial relief and controlling reflection in naturally oily forehead and nose areas; preserve original complexion, avoiding mirror shine across the whole face glass skin waxy smoothing source-free white spots or confusing sweat with intentional makeup finish",
+      "negative": []
+    },
+    {
+      "id": "makeup-stage",
+      "category": "hair-makeup",
+      "styleGroup": "makeup-stylized",
+      "zhName": "舞台妆",
+      "enName": "Stage Makeup",
+      "image": "/assets/parameters/makeup-stage.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "舞台妆根据舞台距离、灯光颜色和角色设定强化眉眼、轮廓、腮红与唇部，使远景仍能读取表情，但近看保持清楚边缘、分层晕染和真实皮肤，不遮盖眼口动作；色彩与服装、布景统一，避免日常妆容简单加深、左右失衡、亮片落入眼睛、整脸白底、文化脸谱误用或在摄影近景中显得脏厚",
+      "enPrompt": "stage makeup calibrated to viewing distance lighting color and character, strengthening eyes brows facial planes blush and lips so expression reads from afar while close inspection retains clean edges layered blending and real skin without blocking eye or mouth movement; coordinate palette with costume and set, avoiding ordinary makeup merely darkened bilateral imbalance glitter in the eyes an all-white face misuse of cultural face-paint traditions or muddy thickness in photographic close-up",
+      "negative": [
+        "messy unintended hair",
+        "distorted hairline",
+        "unclear makeup"
+      ]
+    },
+    {
+      "id": "story-celebrating",
+      "category": "story-action",
+      "styleGroup": "relationship",
+      "zhName": "庆祝",
+      "enName": "Celebrating",
+      "image": "/assets/parameters/story-celebrating.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "庆祝事件先明确所庆祝的成果、节日或关系，再通过拥抱、举杯、掌声、分享礼物或共同观看成果等一致动作建立群体焦点，人物反应强弱和时间阶段有所差异，道具与场所符合语境；避免所有人同时张嘴举手、无缘由彩纸爆炸、杯具穿手、文化仪式混搭、品牌文字或只有装饰却没有可辨事件核心",
+      "enPrompt": "celebration event first defining the achievement festival or relationship being honored, then creating a shared focal point through coherent actions such as embracing toasting applauding exchanging a gift or viewing the result, with varied reaction intensity and timing and context-appropriate setting and objects; avoid everyone shouting with raised hands simultaneously unexplained confetti explosions glasses through fingers mixed cultural rituals brand text or decoration without an identifiable cause",
+      "negative": [
+        "unclear action",
+        "confusing narrative",
+        "stiff body language"
+      ]
+    },
+    {
+      "id": "story-painting",
+      "category": "story-action",
+      "styleGroup": "creation",
+      "zhName": "绘画创作",
+      "enName": "Painting",
+      "image": "/assets/parameters/story-painting.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "绘画创作事件明确使用油画、水彩、国画、壁画或数字绘画等媒介，人物一手控制笔刷、画刀或触控笔，另一手支撑调色盘、纸面或快捷设备，画面、颜料和工具状态对应同一创作阶段，视线落在实际落笔处；避免画笔反握、笔尖离画面却出现笔迹、颜料颜色不对应、画布正反混乱、乱码成品或只在旁边摆满未使用画具",
+      "enPrompt": "painting event specifying a medium such as oil watercolor ink mural or digital work, with one hand controlling brush knife or stylus and the other supporting palette paper or shortcut device while artwork pigment and tools correspond to one stage and gaze follows the actual mark; avoid reversed brush grip marks appearing away from the tip mismatched paint colors confused canvas front and back gibberish finished art or unused supplies merely piled around the person",
+      "negative": [
+        "unclear action",
+        "confusing narrative",
+        "stiff body language"
+      ]
+    },
+    {
+      "id": "story-repairing",
+      "category": "story-action",
+      "styleGroup": "work",
+      "zhName": "维修",
+      "enName": "Repairing",
+      "image": "/assets/parameters/story-repairing.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "维修事件围绕一个有明确故障位置的物件或设备展开，人物先检查、拆卸、校准或更换具体部件，手部、工具和固定件在同一受力点，已拆零件有顺序放置，电气、机械或家具维修遵循各自安全条件；避免万能扳手随意碰触、工具穿模、设备带电裸修、零件悬浮、故障与动作无关或把维修场景堆成杂乱废品站",
+      "enPrompt": "repair event centered on an object or machine with a readable fault location, showing inspection disassembly calibration or replacement of a specific component while hands tools and fasteners meet at one load point and removed parts remain ordered, with electrical mechanical or furniture work following its own safety conditions; avoid a generic wrench touching anything tool intersections exposed live repair floating parts actions unrelated to the fault or a workshop reduced to a junk pile",
+      "negative": [
+        "unclear action",
+        "confusing narrative",
+        "stiff body language"
+      ]
+    },
+    {
+      "id": "story-investigating",
+      "category": "story-action",
+      "styleGroup": "adventure",
+      "zhName": "调查",
+      "enName": "Investigating",
+      "image": "/assets/parameters/story-investigating.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "调查事件以一个可观察问题和有限线索构成推理链，人物测量、记录、比对、询问或检查现场，视线与手势依次连接证据而不是面向镜头摆姿势，证物位置和现场边界保持完整，可通过同伴分工形成次级动线；避免随意踩踏证据、满墙红线模板、无意义放大镜、乱码档案、所有线索发光或直接展示结论而没有调查过程",
+      "enPrompt": "investigation event built around an observable question and a limited chain of clues, with people measuring recording comparing interviewing or examining while gaze and gesture connect evidence sequentially instead of posing to camera, evidence positions and scene boundaries remaining intact and collaborators creating secondary paths through divided tasks; avoid trampling evidence a stock red-string wall a purposeless magnifier gibberish files every clue glowing or displaying the answer without an investigative process",
+      "negative": [
+        "unclear action",
+        "confusing narrative",
+        "stiff body language"
+      ]
+    },
+    {
+      "id": "story-farewell",
+      "category": "story-action",
+      "styleGroup": "relationship",
+      "zhName": "告别",
+      "enName": "Farewell",
+      "image": "/assets/parameters/story-farewell.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "告别事件通过即将分开的空间方向、逐渐松开的拥抱或握手、回望、挥手和行李等少量线索呈现，离开者与留下者的重心、视线和距离形成不对称情绪，车站、门口或道路提供明确去向；情感可温暖或克制，避免所有人同时哭泣、夸张跪地、人物面向错误方向、行李悬浮或用夕阳滤镜替代真实关系",
+      "enPrompt": "farewell event expressed through diverging spatial directions a slowly released embrace or handshake a backward glance wave and limited luggage cues, with leaver and stayer showing asymmetric weight gaze and distance while a station doorway or road establishes destination; emotion may be warm or restrained, avoiding everyone crying simultaneously theatrical kneeling figures facing the wrong direction floating luggage or a sunset filter replacing the actual relationship",
+      "negative": [
+        "unclear action",
+        "confusing narrative",
+        "stiff body language"
+      ]
+    },
+    {
+      "id": "story-rescue",
+      "category": "story-action",
+      "styleGroup": "dramatic",
+      "zhName": "救援",
+      "enName": "Rescue",
+      "image": "/assets/parameters/story-rescue.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "救援事件先明确危险来源、受困者状态和安全出口，救援者以支撑、拖拽、固定绳索、急救或引导撤离等适合场景的动作介入，手部接触、受力方向和装备连接真实，其他人员维持安全距离与分工；表现紧迫但不过度猎奇，避免单手无支点举人、绳索无锚点、错误急救、装备穿模、围观堵塞通道或血腥伤口成为焦点",
+      "enPrompt": "rescue event first establishing the hazard casualty condition and safe exit, then using context-appropriate support dragging rope securing first aid or guided evacuation with believable hand contact force direction and equipment connection while others maintain distance and roles; convey urgency without spectacle, avoiding one-handed unsupported lifting unanchored ropes incorrect first aid intersecting gear bystanders blocking access or graphic wounds becoming the focus",
+      "negative": [
+        "unclear action",
+        "confusing narrative",
+        "stiff body language"
+      ]
+    },
+    {
+      "id": "story-negotiation",
+      "category": "story-action",
+      "styleGroup": "work",
+      "zhName": "谈判",
+      "enName": "Negotiation",
+      "image": "/assets/parameters/story-negotiation.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "谈判事件由两个或多个立场不同的参与方围绕一项明确议题展开，座位距离、身体前倾或后撤、手势、文件与物件交换呈现权力和让步变化，视线在发言者、对方和材料之间自然转移，旁听者反应克制；避免双方机械对称怒视、手指乱指、乱码合同占满画面、所有人同时发言、文化刻板动作或把谈判简化为握手成交照",
+      "enPrompt": "negotiation event involving two or more parties with distinct positions around one clear issue, where seating distance forward or backward lean gestures and exchange of documents or objects reveal shifts in leverage and compromise and gaze moves naturally among speaker counterpart and material while observers react with restraint; avoid mechanically symmetrical glaring random pointing gibberish contracts dominating the image everyone speaking at once cultural stereotypes or reducing negotiation to a closing-handshake photo",
+      "negative": [
+        "unclear action",
+        "confusing narrative",
+        "stiff body language"
+      ]
+    },
+    {
+      "id": "story-chase",
+      "category": "story-action",
+      "styleGroup": "dramatic",
+      "zhName": "追逐",
+      "enName": "Chase",
+      "image": "/assets/parameters/story-chase.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "追逐事件需要明确追赶者、被追者、移动方向和可达路线，奔跑、骑行或载具姿态对应速度阶段，衣物、尘土、雨水和背景视差沿同一运动轴响应，前后距离与障碍物安排产生即将变化的张力；避免双方并排像合影、腿部循环错位、无路径穿墙、运动模糊掩盖人体、多个速度方向冲突或只用倾斜画面制造紧张",
+      "enPrompt": "chase event defining pursuer pursued subject travel direction and a traversable route, with running riding or vehicle posture matching the phase of speed and clothing dust rain and background parallax responding along one motion axis while spacing and obstacles create tension about the next change; avoid subjects side by side like a portrait cyclically broken legs wall-crossing paths blur hiding anatomy conflicting speed directions or a tilted frame used as the sole source of urgency",
+      "negative": [
+        "unclear action",
+        "confusing narrative",
+        "stiff body language"
+      ]
+    }
+  ]
+}

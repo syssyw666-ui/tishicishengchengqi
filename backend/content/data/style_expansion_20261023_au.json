@@ -1,0 +1,64 @@
+{
+  "parameters": [
+    {
+      "id": "framing-extreme-wide",
+      "category": "framing",
+      "styleGroup": "shot-size",
+      "zhName": "远景",
+      "enName": "Extreme Wide",
+      "image": "/assets/parameters/framing-extreme-wide.jpg",
+      "zhPrompt": "远景让主体只占画面很小比例，完整交代地貌、建筑或群体所在的大环境，并用前中后景和明确地平线建立尺度；主体仍保留可辨轮廓和落脚关系，避免缩成无意义黑点或被环境完全吞没；先确定最终横竖画幅，再明确主要对象占画面高度的比例、边缘裁切意图与视线或运动方向的留空。人物裁切避开关节和五官中段，物体保留决定身份与功能的结构，多人场景维持前后尺度、遮挡和焦点连续；景别改变时同步调整环境信息量、透视和景深，而不是仅把同一画面放大缩小。避免头顶或脚底意外贴边、主体悬浮、关键手势出框、多人比例跳变、背景与主体清晰度矛盾、横竖版机械裁切或后期数码放大导致的低清细节",
+      "enPrompt": "extreme wide shot keeping the subject small while clearly establishing the surrounding terrain architecture or crowd context, using foreground midground background and a legible horizon to communicate scale; retain a recognizable silhouette and grounded placement instead of reducing the subject to a meaningless speck or losing it entirely; establish the final horizontal or vertical aspect ratio first, then specify the principal subject height within the frame, intentional edge crops and breathing room in the gaze or movement direction. For people avoid cuts through joints and central facial features, for objects retain structures that establish identity and function, and in group scenes preserve depth scale occlusion and focus continuity. When shot size changes, adjust contextual information perspective and depth of field rather than merely scaling the same composition. Avoid accidental contact with the top or bottom edge floating subjects clipped key gestures inconsistent group scale contradictory subject-background sharpness mechanical portrait-to-landscape cropping or low-resolution detail caused by digital enlargement"
+    },
+    {
+      "id": "framing-wide",
+      "category": "framing",
+      "styleGroup": "shot-size",
+      "zhName": "全景",
+      "enName": "Wide Shot",
+      "image": "/assets/parameters/framing-wide.jpg",
+      "zhPrompt": "全景完整呈现人物或物体从顶部到落脚点，并保留足够环境说明位置、行动方向和空间关系；主体比例适中、边缘不被切断，避免只剩半身、脚部出框或背景空泛无信息；先确定最终横竖画幅，再明确主要对象占画面高度的比例、边缘裁切意图与视线或运动方向的留空。人物裁切避开关节和五官中段，物体保留决定身份与功能的结构，多人场景维持前后尺度、遮挡和焦点连续；景别改变时同步调整环境信息量、透视和景深，而不是仅把同一画面放大缩小。避免头顶或脚底意外贴边、主体悬浮、关键手势出框、多人比例跳变、背景与主体清晰度矛盾、横竖版机械裁切或后期数码放大导致的低清细节",
+      "enPrompt": "wide full-body shot showing the complete subject from top to point of contact while retaining enough environment to explain location movement direction and spatial relationships; keep a moderate subject scale and intact edges, avoiding accidental half-body framing cropped feet or an empty contextless background; establish the final horizontal or vertical aspect ratio first, then specify the principal subject height within the frame, intentional edge crops and breathing room in the gaze or movement direction. For people avoid cuts through joints and central facial features, for objects retain structures that establish identity and function, and in group scenes preserve depth scale occlusion and focus continuity. When shot size changes, adjust contextual information perspective and depth of field rather than merely scaling the same composition. Avoid accidental contact with the top or bottom edge floating subjects clipped key gestures inconsistent group scale contradictory subject-background sharpness mechanical portrait-to-landscape cropping or low-resolution detail caused by digital enlargement"
+    },
+    {
+      "id": "framing-medium",
+      "category": "framing",
+      "styleGroup": "shot-size",
+      "zhName": "中景",
+      "enName": "Medium Shot",
+      "image": "/assets/parameters/framing-medium.jpg",
+      "zhPrompt": "中景通常从腰部或膝部以上取景，使表情、手势与上半身动作同时清楚，并保留少量环境交代情境；裁切位置避开关节，主体与背景层级明确，避免误切手腕膝盖或变成拥挤近景；先确定最终横竖画幅，再明确主要对象占画面高度的比例、边缘裁切意图与视线或运动方向的留空。人物裁切避开关节和五官中段，物体保留决定身份与功能的结构，多人场景维持前后尺度、遮挡和焦点连续；景别改变时同步调整环境信息量、透视和景深，而不是仅把同一画面放大缩小。避免头顶或脚底意外贴边、主体悬浮、关键手势出框、多人比例跳变、背景与主体清晰度矛盾、横竖版机械裁切或后期数码放大导致的低清细节",
+      "enPrompt": "medium shot generally framing from the waist or knees upward so facial expression hand gesture and upper-body action remain readable together with a small amount of situational context; crop between joints and separate subject from background, avoiding cuts through wrists or knees and avoiding an unintentionally crowded close-up; establish the final horizontal or vertical aspect ratio first, then specify the principal subject height within the frame, intentional edge crops and breathing room in the gaze or movement direction. For people avoid cuts through joints and central facial features, for objects retain structures that establish identity and function, and in group scenes preserve depth scale occlusion and focus continuity. When shot size changes, adjust contextual information perspective and depth of field rather than merely scaling the same composition. Avoid accidental contact with the top or bottom edge floating subjects clipped key gestures inconsistent group scale contradictory subject-background sharpness mechanical portrait-to-landscape cropping or low-resolution detail caused by digital enlargement"
+    },
+    {
+      "id": "framing-close-up",
+      "category": "framing",
+      "styleGroup": "shot-size",
+      "zhName": "近景",
+      "enName": "Close-Up",
+      "image": "/assets/parameters/framing-close-up.jpg",
+      "zhPrompt": "近景让面部、手部或关键物件占据主要画面，集中展示表情、材质与细节，同时留下少量方向空间；焦点准确落在最重要部位，边缘裁切有意且稳定，避免鼻尖耳朵或功能结构被随意切断；先确定最终横竖画幅，再明确主要对象占画面高度的比例、边缘裁切意图与视线或运动方向的留空。人物裁切避开关节和五官中段，物体保留决定身份与功能的结构，多人场景维持前后尺度、遮挡和焦点连续；景别改变时同步调整环境信息量、透视和景深，而不是仅把同一画面放大缩小。避免头顶或脚底意外贴边、主体悬浮、关键手势出框、多人比例跳变、背景与主体清晰度矛盾、横竖版机械裁切或后期数码放大导致的低清细节",
+      "enPrompt": "close-up framing letting a face hands or key object occupy most of the image to reveal expression material and fine detail while preserving a little directional space; place focus precisely on the essential area and make edge crops deliberate, avoiding arbitrary cuts through the nose ears or functional structure; establish the final horizontal or vertical aspect ratio first, then specify the principal subject height within the frame, intentional edge crops and breathing room in the gaze or movement direction. For people avoid cuts through joints and central facial features, for objects retain structures that establish identity and function, and in group scenes preserve depth scale occlusion and focus continuity. When shot size changes, adjust contextual information perspective and depth of field rather than merely scaling the same composition. Avoid accidental contact with the top or bottom edge floating subjects clipped key gestures inconsistent group scale contradictory subject-background sharpness mechanical portrait-to-landscape cropping or low-resolution detail caused by digital enlargement"
+    },
+    {
+      "id": "framing-extreme-close-up",
+      "category": "framing",
+      "styleGroup": "shot-size",
+      "zhName": "特写",
+      "enName": "Extreme Close-Up",
+      "image": "/assets/parameters/framing-extreme-close-up.jpg",
+      "zhPrompt": "极近特写只选取眼睛、嘴唇、指尖、纹理或机械节点等一个关键局部，以极浅景深和精确焦点强调微小变化；构图必须让局部身份仍可判断，避免无依据裁切、焦点漂移或把细节放大成不可识别的抽象噪声；先确定最终横竖画幅，再明确主要对象占画面高度的比例、边缘裁切意图与视线或运动方向的留空。人物裁切避开关节和五官中段，物体保留决定身份与功能的结构，多人场景维持前后尺度、遮挡和焦点连续；景别改变时同步调整环境信息量、透视和景深，而不是仅把同一画面放大缩小。避免头顶或脚底意外贴边、主体悬浮、关键手势出框、多人比例跳变、背景与主体清晰度矛盾、横竖版机械裁切或后期数码放大导致的低清细节",
+      "enPrompt": "extreme close-up isolating one decisive detail such as an eye lips fingertips surface texture or mechanical joint, with precise focus and very shallow depth emphasizing minute variation; preserve enough context to identify the detail, avoiding arbitrary cropping focus drift or magnification into unrecognizable visual noise; establish the final horizontal or vertical aspect ratio first, then specify the principal subject height within the frame, intentional edge crops and breathing room in the gaze or movement direction. For people avoid cuts through joints and central facial features, for objects retain structures that establish identity and function, and in group scenes preserve depth scale occlusion and focus continuity. When shot size changes, adjust contextual information perspective and depth of field rather than merely scaling the same composition. Avoid accidental contact with the top or bottom edge floating subjects clipped key gestures inconsistent group scale contradictory subject-background sharpness mechanical portrait-to-landscape cropping or low-resolution detail caused by digital enlargement"
+    },
+    {
+      "id": "framing-panoramic",
+      "category": "framing",
+      "styleGroup": "shot-size",
+      "zhName": "极远景",
+      "enName": "Panoramic",
+      "image": "/assets/parameters/framing-panoramic.jpg",
+      "zhPrompt": "极远景以宽阔横向视野展示大尺度地貌、城市或事件全貌，主体作为空间中的尺度参照而非唯一焦点；通过多层远近、连续地平线和清楚路线组织视线，避免把多个不连续视点硬拼接或产生弯曲断裂建筑；先确定最终横竖画幅，再明确主要对象占画面高度的比例、边缘裁切意图与视线或运动方向的留空。人物裁切避开关节和五官中段，物体保留决定身份与功能的结构，多人场景维持前后尺度、遮挡和焦点连续；景别改变时同步调整环境信息量、透视和景深，而不是仅把同一画面放大缩小。避免头顶或脚底意外贴边、主体悬浮、关键手势出框、多人比例跳变、背景与主体清晰度矛盾、横竖版机械裁切或后期数码放大导致的低清细节",
+      "enPrompt": "panoramic establishing view spanning a broad landscape city or event, with the subject functioning as a scale reference rather than the sole focal point; organize attention through layered distance a continuous horizon and readable routes, avoiding stitched incompatible viewpoints or warped broken architecture; establish the final horizontal or vertical aspect ratio first, then specify the principal subject height within the frame, intentional edge crops and breathing room in the gaze or movement direction. For people avoid cuts through joints and central facial features, for objects retain structures that establish identity and function, and in group scenes preserve depth scale occlusion and focus continuity. When shot size changes, adjust contextual information perspective and depth of field rather than merely scaling the same composition. Avoid accidental contact with the top or bottom edge floating subjects clipped key gestures inconsistent group scale contradictory subject-background sharpness mechanical portrait-to-landscape cropping or low-resolution detail caused by digital enlargement"
+    }
+  ]
+}

@@ -1,0 +1,296 @@
+{
+  "parameters": [
+    {
+      "id": "lighting-golden-hour",
+      "category": "lighting",
+      "styleGroup": "natural",
+      "zhName": "黄金时刻",
+      "enName": "Golden Hour",
+      "image": "/assets/parameters/lighting-golden-hour.jpg",
+      "zhPrompt": "黄金时刻光来自接近地平线的低角度太阳，形成温暖主光、较长投影和被天空冷光轻填的阴影，空气中可有克制金色散射；高光柔和滚降并保留肤色与白色，避免整幅橙滤镜、太阳位置与影子矛盾、过曝轮廓或虚假镜头光斑",
+      "enPrompt": "golden-hour illumination from a low sun near the horizon creating a warm key long cast shadows and shadows gently filled by cooler sky light with restrained golden atmospheric scatter; highlights roll off softly while skin and whites remain distinct, avoiding a uniform orange filter contradictory sun and shadow directions clipped rim light or artificial lens flares"
+    },
+    {
+      "id": "purpose-turnaround",
+      "category": "purpose",
+      "styleGroup": "design",
+      "zhName": "三视图",
+      "enName": "Turnaround Sheet",
+      "image": "/assets/parameters/purpose-turnaround.jpg",
+      "zhPrompt": "三视图用途在同一基线和比例尺下展示正面、严格侧面与背面，角色保持中立站姿、统一头身比例、五官、发型和服装结构，四肢不遮挡关键轮廓；背景与光线一致，避免透视角度混入、视图高度不齐、左右细节矛盾或每幅生成不同角色",
+      "enPrompt": "turnaround sheet showing front strict side and back views on one baseline and scale with a neutral stance and consistent proportions identity hairstyle and costume construction, limbs positioned to reveal key silhouettes; keep background and lighting uniform, avoiding perspective three-quarter views mismatched heights contradictory left-right details or a different character in each panel"
+    },
+    {
+      "id": "purpose-exploded-view",
+      "category": "purpose",
+      "styleGroup": "design",
+      "zhName": "物品拆分视图",
+      "enName": "Exploded View",
+      "image": "/assets/parameters/purpose-exploded-view.jpg",
+      "zhPrompt": "物品拆分视图沿清楚中心轴或装配方向依次分离零件，所有部件保持原比例、朝向与对应位置，间距足以看清连接关系但不改变结构；可用细引导线辅助对齐，避免遗漏部件、重复零件、连接顺序错误、无依据内部结构或爆炸式随机飞散",
+      "enPrompt": "exploded product view separating components sequentially along a clear central axis or assembly direction while preserving original scale orientation and corresponding position, with spacing sufficient to read connections without redesigning the object; fine guide lines may support alignment, avoiding missing or duplicated parts incorrect assembly order invented internals or random explosive scattering"
+    },
+    {
+      "id": "purpose-character-sheet",
+      "category": "purpose",
+      "styleGroup": "design",
+      "zhName": "角色设定图",
+      "enName": "Character Sheet",
+      "image": "/assets/parameters/purpose-character-sheet.jpg",
+      "zhPrompt": "角色设定图在统一网格中展示同一角色的主全身形象、必要角度、表情或局部细节，所有视图保持五官、体型、服装和配色一致；背景简洁并留有注释区但不生成乱码，避免不同视图变成不同人物、姿势遮挡设计、比例漂移或重复无意义小图",
+      "enPrompt": "character design sheet arranging one primary full-body figure and necessary angle expression or detail callouts on a consistent grid, with facial identity body type costume and palette matching across every view; keep the background clean with annotation space but no gibberish, avoiding different people across views poses hiding the design drifting proportions or redundant meaningless thumbnails"
+    },
+    {
+      "id": "purpose-product-shot",
+      "category": "purpose",
+      "styleGroup": "commercial",
+      "zhName": "产品图",
+      "enName": "Product Shot",
+      "image": "/assets/parameters/purpose-product-shot.jpg",
+      "zhPrompt": "商业产品图以准确外形、材质和色彩为首要目标，主体完整可见并与背景清楚分离，棚拍主光、补光与轮廓光共同控制高光和接触阴影；预留版式空间但不生成文字，避免透视变形、包装信息乱码、材质塑料化、悬浮无落点或装饰抢过产品",
+      "enPrompt": "commercial product image prioritizing accurate shape material and color, with the complete object clearly separated from the background and studio key fill and rim lights controlling highlights and contact shadow; reserve layout space without generating text, avoiding perspective distortion gibberish packaging plasticized materials unsupported floating or decoration overpowering the product"
+    },
+    {
+      "id": "purpose-portrait",
+      "category": "purpose",
+      "styleGroup": "photography",
+      "zhName": "写真",
+      "enName": "Portrait",
+      "image": "/assets/parameters/purpose-portrait.jpg",
+      "zhPrompt": "写真用途以人物身份、神态和姿态为核心，面部焦点准确、肤质真实，环境与服装共同支持叙事而不抢主体；构图保留头顶、关节和身体裁切的合理位置，光线塑造五官但不过度美颜，避免肢体截断失当、背景穿头、塑料皮肤或五官改变",
+      "enPrompt": "portrait-purpose image centered on identity expression and pose with precise facial focus and believable skin, while environment and wardrobe support the story without competing; crop head joints and body at intentional locations and use light to model features without excessive beautification, avoiding awkward limb cuts background tangencies plastic skin or altered facial identity"
+    },
+    {
+      "id": "purpose-social-cover",
+      "category": "purpose",
+      "styleGroup": "social",
+      "zhName": "社媒封面",
+      "enName": "Social Cover",
+      "image": "/assets/parameters/purpose-social-cover.jpg",
+      "zhPrompt": "社媒封面按照横向安全区组织主体，在桌面端和移动端不同裁切下仍保留核心信息，焦点偏离头像或界面遮挡区域，并预留简洁标题空间；轮廓在缩略尺寸可辨，避免主体贴边、重要内容只在极侧、生成乱码文字或细节密度过高",
+      "enPrompt": "social-media cover composed for a wide safe area so the core subject survives desktop and mobile crops, with focus kept away from avatar or interface overlays and clean room reserved for a headline; silhouette stays legible at thumbnail size, avoiding edge-hugging subjects essential content placed only at extremes generated gibberish or excessive detail density"
+    },
+    {
+      "id": "purpose-icon",
+      "category": "purpose",
+      "styleGroup": "social",
+      "zhName": "图标",
+      "enName": "Icon",
+      "image": "/assets/parameters/purpose-icon.jpg",
+      "zhPrompt": "图标用途要求主体在小尺寸下仍能一眼识别，以单一核心轮廓、有限内部细节和稳定边距居中组织，背景与主体明度对比分明；形状适应方形或圆角裁切，避免细碎纹理、可读文字、多个竞争物体、贴边元素或缩小后消失的弱对比",
+      "enPrompt": "icon-purpose image remaining instantly recognizable at small size through one central silhouette limited internal detail stable padding and clear value contrast between subject and background; shape must survive square or rounded-square cropping, avoiding fine texture readable text multiple competing objects edge-touching elements or weak contrast that disappears when reduced"
+    },
+    {
+      "id": "purpose-environment-concept",
+      "category": "purpose",
+      "styleGroup": "design",
+      "zhName": "场景概念图",
+      "enName": "Environment Concept",
+      "image": "/assets/parameters/purpose-environment-concept.jpg",
+      "zhPrompt": "场景概念图清楚说明空间功能、行走路径、地标、尺度和前中后景关系，光线与天气服务世界观并突出一个主要视觉焦点；材质和建筑细节集中在关键区域，其余概括，避免只画氛围而无法施工、尺度混乱、道路无出口或全景细节同等密集",
+      "enPrompt": "environment concept image clearly communicating spatial function circulation landmarks scale and foreground-middle-distance-background relationships, with light and weather supporting the world and one primary focal point; concentrate material and architectural detail in key areas while simplifying the rest, avoiding mood-only scenery impossible to build inconsistent scale roads with no destination or equal detail everywhere"
+    },
+    {
+      "id": "clothing-tank-top",
+      "category": "clothing",
+      "styleGroup": "tops-sleeves",
+      "zhName": "背心",
+      "enName": "Tank Top",
+      "image": "/assets/parameters/clothing-tank-top.png",
+      "zhPrompt": "背心具有较宽肩带、清楚领口和完整袖窿，衣身围绕胸背与腰部形成合理贴合或垂坠，肩带受力点与侧缝位置稳定；边缘厚度随面料变化，避免肩带变成细吊带、袖窿穿透腋下、领口贴图化或左右结构不一致",
+      "enPrompt": "tank top with broad shoulder straps a readable neckline and complete armholes, the body fitting or draping plausibly around chest back and waist with stable strap anchors and side seams; edge thickness follows fabric type, avoiding conversion into thin camisole straps underarm intersections a texture-only neckline or contradictory left-right construction",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-sweatshirt",
+      "category": "clothing",
+      "styleGroup": "tops-sleeves",
+      "zhName": "卫衣",
+      "enName": "Sweatshirt",
+      "image": "/assets/parameters/clothing-sweatshirt.png",
+      "zhPrompt": "卫衣具有柔软针织面料、罗纹领口或连帽结构、落肩或常规肩线以及收口袖口和下摆，布料在肘部与腹部形成松弛褶皱；厚度与内层空气感真实，避免像硬塑料外套、袖口消失、帽子与头部融合或误生成薄T恤",
+      "enPrompt": "sweatshirt with soft knit fabric a ribbed neck or hood structure dropped or regular shoulders and gathered cuffs and hem, forming relaxed folds at elbows and torso; thickness and trapped-air volume remain believable, avoiding a rigid plastic jacket missing cuffs a hood fused to the head or conversion into a thin T-shirt",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-cape",
+      "category": "clothing",
+      "styleGroup": "outerwear",
+      "zhName": "披肩",
+      "enName": "Capelet",
+      "image": "/assets/parameters/clothing-cape.png",
+      "zhPrompt": "披肩从肩颈或明确扣点悬垂，覆盖背部与上臂但保留前方开口，边缘、里衬和重量随转身或风向产生连续弧面；固定方式必须可见且不勒住颈部，避免布料无支点悬浮、变成长袖外套、穿过手臂或形成不合理巨大翼片",
+      "enPrompt": "cape or shoulder mantle suspended from the neck-shoulder line or visible fastening points, covering back and upper arms while retaining a front opening, with edge lining and weight forming continuous arcs during turns or wind; attachment must be readable without choking the neck, avoiding unsupported floating cloth conversion into a sleeved coat arm intersections or implausibly huge wings",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-cargo-pants",
+      "category": "clothing",
+      "styleGroup": "pants",
+      "zhName": "工装裤",
+      "enName": "Cargo Pants",
+      "image": "/assets/parameters/clothing-cargo-pants.png",
+      "zhPrompt": "工装裤以耐磨面料、宽松裤管、加固膝部和位于大腿外侧的立体袋构成，袋盖、缝线与容量符合实际使用，腰胯和膝部褶皱支持蹲走动作；控制口袋数量与对称性，避免满腿随机小包、袋体悬浮、裤管粘连或误生成战术装甲",
+      "enPrompt": "cargo trousers built from durable fabric relaxed legs reinforced knees and dimensional thigh pockets whose flaps stitching and capacity are functional, with hip and knee folds supporting crouching and walking; control pocket count and symmetry, avoiding random pouches covering the legs floating pockets fused trouser tubes or conversion into tactical armor",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-pleated-skirt",
+      "category": "clothing",
+      "styleGroup": "skirts-dresses",
+      "zhName": "百褶裙",
+      "enName": "Pleated Skirt",
+      "image": "/assets/parameters/clothing-pleated-skirt.png",
+      "zhPrompt": "百褶裙由规律但不完全僵硬的连续褶片构成，褶线从腰头向下展开，转身或行走时内外褶依次张合并保持裙摆厚度；面料决定褶皱锐度，避免褶数随机变化、纹理贴图代替立体折叠、裙摆穿腿或每条褶完全平行无运动",
+      "enPrompt": "pleated skirt formed from regular yet non-rigid repeated folds descending from the waistband, inner and outer pleats opening in sequence during turning or walking while retaining hem thickness; fabric controls fold sharpness, avoiding random pleat counts printed texture replacing dimensional folds a hem intersecting legs or perfectly parallel pleats with no motion",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-mermaid-skirt",
+      "category": "clothing",
+      "styleGroup": "skirts-dresses",
+      "zhName": "鱼尾裙",
+      "enName": "Mermaid Skirt",
+      "image": "/assets/parameters/clothing-mermaid-skirt.png",
+      "zhPrompt": "鱼尾裙从腰胯至膝部贴合并在小腿下方有结构地展开，扩摆起点、裁片接缝和裙摆重量清楚，行走时褶皱与拖尾服从重力；保留双腿活动空间，避免膝部以下突然爆开、裙摆悬浮、身体与裙身融合或误生成普通长裙",
+      "enPrompt": "mermaid skirt fitted from waist and hips through the knees then structurally flaring below the calves, with a readable flare point panel seams and weighted hem whose folds and train obey gravity during movement; preserve leg mobility, avoiding an abrupt explosion below the knees a floating hem body-skirt fusion or conversion into an ordinary long skirt",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-kimono",
+      "category": "clothing",
+      "styleGroup": "traditional",
+      "zhName": "和服",
+      "enName": "Kimono",
+      "image": "/assets/parameters/clothing-kimono.png",
+      "zhPrompt": "和服以左襟压右襟的交叠前片、直线裁片、宽袖和腰带构成，领口、袖付与下摆比例遵循真实穿着逻辑，纹样随布片连续但不过度堆满；布料垂直下落且动作受袖幅约束，避免左右襟反置、腰带悬浮、混入其他服饰结构或挪用特定家纹",
+      "enPrompt": "kimono constructed from straight panels with the left front crossing over the right broad sleeves and an obi, keeping plausible collar sleeve attachment and hem proportions while patterns flow across cloth pieces without filling every area; fabric falls vertically and movement respects sleeve width, avoiding reversed overlap a floating obi mixed unrelated costume structures or copied family crests",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-neckerchief",
+      "category": "clothing",
+      "styleGroup": "accessories-shoes",
+      "zhName": "领巾",
+      "enName": "Neckerchief",
+      "image": "/assets/parameters/clothing-neckerchief.png",
+      "zhPrompt": "领巾围绕颈部或衣领自然折叠，结点、两端长度和布料厚度清楚，松紧留出呼吸空间并随风或动作产生轻微摆动；领巾配色与服装协调但保持辨识度，避免结点悬空、布条穿过下巴、变成领带或产生多余重复尾端",
+      "enPrompt": "neckerchief folded naturally around the neck or collar with a readable knot two controlled ends and believable fabric thickness, leaving breathing room and moving subtly with wind or action; color coordinates with the outfit while remaining distinct, avoiding a floating knot cloth intersecting the chin conversion into a tie or duplicated extra tails",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "lighting-underwater-caustics",
+      "category": "lighting",
+      "styleGroup": "natural",
+      "zhName": "水下焦散光",
+      "enName": "Underwater Caustics",
+      "image": "/assets/parameters/lighting-underwater-caustics.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "水下焦散光由水面波纹折射阳光，在主体和水底形成缓慢移动的弯曲亮纹，光纹尺度随深度增大、对比随浑浊度降低，并伴随整体蓝绿吸收；保留水体悬浮颗粒与方向性，避免静态白色贴图、陆地场景无水焦散、亮纹过曝或全画面同一密度",
+      "enPrompt": "underwater caustic light created by surface ripples refracting sunlight into slowly moving curved highlights across subjects and the floor, with pattern scale increasing with depth contrast falling with turbidity and overall blue-green absorption; retain suspended particles and directionality, avoiding a static white texture caustics in a dry scene clipped highlights or identical density across the frame"
+    },
+    {
+      "id": "lighting-projector-beam",
+      "category": "lighting",
+      "styleGroup": "dramatic",
+      "zhName": "投影机光束",
+      "enName": "Projector Beam",
+      "image": "/assets/parameters/lighting-projector-beam.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "投影机光束从可见镜头投向屏幕或墙面，在空气微尘中形成逐渐扩展的光锥，投影区域亮度高于环境但仍保留墙面纹理和边缘失焦；人物遮挡时产生符合位置的影子，避免无设备光柱、投影穿过身体、图像漂浮离墙或屏幕过曝纯白",
+      "enPrompt": "projector beam expanding from a visible lens toward a screen or wall as a widening cone revealed by fine airborne dust, with the projected area brighter than the room yet retaining wall texture and edge defocus; people crossing it cast positionally correct shadows, avoiding a beam with no device projection passing through bodies imagery floating off the wall or a clipped white screen"
+    },
+    {
+      "id": "lighting-laser-beams",
+      "category": "lighting",
+      "styleGroup": "sci-fi",
+      "zhName": "激光束",
+      "enName": "Laser Beams",
+      "image": "/assets/parameters/lighting-laser-beams.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "激光束从可见发射器沿笔直光路穿过烟雾或微粒，仅在散射介质中显示细窄光柱，并在接触表面形成小而明亮的落点；颜色和反射受环境控制，避免光束无来源、在清洁空气中像实体棍棒、随意弯曲、穿透不透明物体或满屏交叉遮挡主体",
+      "enPrompt": "laser beams originating from visible emitters and traveling along straight paths through haze or particles, appearing as narrow shafts only where scattering medium exists and ending in small bright contact points on surfaces; color and reflection respond to the environment, avoiding source-free beams solid rods in clean air arbitrary curves passage through opaque objects or a screen-filling lattice obscuring the subject"
+    },
+    {
+      "id": "light-red-blue-strobe",
+      "category": "lighting",
+      "styleGroup": "dramatic",
+      "zhName": "红蓝警示光",
+      "enName": "Red Blue Strobe Light",
+      "image": "/assets/parameters/light-red-blue-strobe.jpg",
+      "zhPrompt": "红蓝警示光由两侧或交替闪烁的真实警灯提供，在人物、车辆和湿润表面形成方向明确的红蓝交替反射，中性暗部仍保留结构；可有轻微曝光差但不覆盖全部色彩，避免红蓝均匀劈脸、无光源霓虹、肤色完全丢失或两组影子方向混乱",
+      "enPrompt": "red-blue emergency strobe motivated by real alternating beacons from distinct directions, creating directional red and blue reflections on people vehicles and wet surfaces while neutral shadows retain structure; slight exposure variation is acceptable without replacing all local color, avoiding an even split-color face source-free neon lost skin tone or conflicting shadow directions",
+      "negative": [
+        "muddy lighting",
+        "overexposed highlights",
+        "uncontrolled shadows"
+      ]
+    },
+    {
+      "id": "light-stained-glass",
+      "category": "lighting",
+      "styleGroup": "interior",
+      "zhName": "彩窗投影光",
+      "enName": "Stained Glass Light",
+      "image": "/assets/parameters/light-stained-glass.jpg",
+      "zhPrompt": "彩窗投影光让阳光穿过有铅条分隔的彩色玻璃，在墙面、地面或人物上形成带透视的彩色投影，色块边缘随距离适度柔化并保留窗格结构；颜色叠加服从光学混合，避免贴纸般平涂、无窗来源彩斑、霓虹辉光或投影方向与窗户冲突",
+      "enPrompt": "stained-glass light passing sunlight through colored panes divided by lead cames to cast perspective-aware color shapes across walls floor or subject, with edges softening appropriately over distance while window structure remains recognizable; overlaps follow optical mixing, avoiding sticker-like flat fills color patches with no window source neon glow or projection direction contradicting the window",
+      "negative": [
+        "muddy lighting",
+        "overexposed highlights",
+        "uncontrolled shadows"
+      ]
+    },
+    {
+      "id": "lighting-lantern",
+      "category": "lighting",
+      "styleGroup": "interior",
+      "zhName": "灯笼光",
+      "enName": "Lantern Light",
+      "image": "/assets/parameters/lighting-lantern.png?v=20260827-character-crop-fix",
+      "zhPrompt": "灯笼光来自半透明罩体内部的暖色小光源，纸、纱或玻璃将亮度柔化并在近处人物与墙面形成渐弱暖光，远处仍保留环境冷色；灯笼自身高光不过曝且结构可见，避免像发光球、整间空间均匀橙化、无接触阴影或火焰穿出罩体",
+      "enPrompt": "lantern light motivated by a small warm source inside a translucent paper fabric or glass enclosure, diffusing onto nearby faces and walls with natural falloff while distant ambient color remains cooler; preserve the lantern structure without clipping, avoiding a featureless glowing orb uniform orange illumination across the whole room missing contact shadows or flame protruding through the shade",
+      "negative": []
+    },
+    {
+      "id": "lighting-stage-spotlight",
+      "category": "lighting",
+      "styleGroup": "dramatic",
+      "zhName": "舞台追光",
+      "enName": "Stage Spotlight",
+      "image": "/assets/parameters/lighting-stage-spotlight.png?v=20260827-character-crop-fix",
+      "zhPrompt": "舞台追光以单一可追踪光束锁定表演者，光斑边缘由灯具焦距形成适度软硬变化，主体明亮而舞台其余区域逐渐落入暗部；空气微粒可显示有限光路，避免多个无来源光圈、脸部过曝、背景全黑无层次或追光偏离人物",
+      "enPrompt": "stage follow-spot using one traceable beam locked onto the performer, with beam-edge softness controlled by fixture focus and the subject bright while the rest of the stage falls gradually into darkness; limited haze may reveal the path, avoiding multiple source-free circles clipped facial highlights a featureless black background or a spotlight missing the performer",
+      "negative": []
+    }
+  ]
+}

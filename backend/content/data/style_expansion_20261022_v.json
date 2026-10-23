@@ -1,0 +1,403 @@
+{
+  "parameters": [
+    {
+      "id": "grading-fresh-natural",
+      "category": "color-grading",
+      "styleGroup": "clean-bright",
+      "zhName": "清透自然",
+      "enName": "Fresh Natural",
+      "image": "/assets/parameters/grading-fresh-natural.jpg",
+      "zhPrompt": "清透自然后期，先校正白平衡与曝光，再轻提阴影、压住刺眼高光并清除色偏；植物、天空和肤色各自保持真实分离，黑位不漂灰，饱和度克制，像光线良好的原生照片而不是滤镜",
+      "enPrompt": "fresh natural color grade with corrected white balance and exposure, gently opened shadows, controlled highlights and removed color cast; foliage sky and skin stay naturally separated, blacks remain anchored and saturation restrained, resembling a well-lit original rather than a filter",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-rangefinder-documentary",
+      "category": "color-grading",
+      "styleGroup": "camera-look",
+      "zhName": "旁轴纪实",
+      "enName": "Rangefinder Documentary",
+      "image": "/assets/parameters/grading-rangefinder-documentary.jpg",
+      "zhPrompt": "旁轴纪实后期保留自然环境光与现场色偏，以扎实黑位、细腻中间调和适度微反差呈现街头瞬间；肤色、招牌与建筑材质不过度提纯，颗粒轻微，避免商业棚拍般的洁净与夸张锐化",
+      "enPrompt": "rangefinder documentary grade preserving available light and believable ambient color casts, with anchored blacks, nuanced midtones and restrained microcontrast for candid street moments; skin signs and architecture remain naturally imperfect, with fine grain and no studio-clean polish or aggressive sharpening",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-filmic-low-contrast",
+      "category": "color-grading",
+      "styleGroup": "cinematic",
+      "zhName": "电影低反差",
+      "enName": "Filmic Low Contrast",
+      "image": "/assets/parameters/grading-filmic-low-contrast.jpg",
+      "zhPrompt": "电影低反差曲线，黑位略抬但仍有锚点，高光平缓滚降，中间调层层分离；色彩彩轻微去饱和，肤色和关键道具保持局部纯度，画面柔和却不雾白，不用统一灰滤镜掩盖材质",
+      "enPrompt": "filmic low-contrast curve with gently raised yet anchored blacks, smooth highlight roll-off and separated midtone layers; overall color is slightly muted while skin and key props retain local purity, soft without milky haze or a blanket gray filter that erases materials",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-travel-postcard",
+      "category": "color-grading",
+      "styleGroup": "commercial",
+      "zhName": "旅行明信片",
+      "enName": "Travel Postcard",
+      "image": "/assets/parameters/grading-travel-postcard.jpg",
+      "zhPrompt": "旅行明信片式后期，校正地标垂直线与天空色偏，适度提升蓝天、植被和暖色建筑的分离度，以清晰局部对比突出天气与地点特征；保持自然阴影和空气透视，避免 HDR 光晕与旅游宣传式过饱和",
+      "enPrompt": "travel-postcard grade correcting landmark verticals and sky cast, moderately separating blue sky vegetation and warm architecture with clear local contrast that communicates place and weather; preserve natural shadows and aerial perspective, avoiding HDR halos and tourist-brochure oversaturation",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-fuji-400h",
+      "category": "color-grading",
+      "styleGroup": "film-vintage",
+      "zhName": "富士400H清新",
+      "enName": "Fuji 400H Fresh",
+      "image": "/assets/parameters/grading-fuji-400h.jpg",
+      "zhPrompt": "清新 400H 彩色负片倾向调色，以明亮低对比中间调、偏青薄荷的绿色和柔和粉暖肤色建立通透日光感，高光呈奶白并平缓滚降，阴影略带青灰且保留细节；加入细颗粒与轻微色彩漂移，避免荧光草绿、粉色蒙层或数码 HDR 锐感",
+      "enPrompt": "fresh 400H-like color-negative grade using bright low-contrast midtones mint-cyan greens and gently pink-warm skin for airy daylight, with milky highlights rolling off smoothly and cyan-gray shadows retaining detail; add fine grain and slight color drift, avoiding fluorescent grass pink veils or sharp digital HDR character",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-editorial-neutral",
+      "category": "color-grading",
+      "styleGroup": "commercial",
+      "zhName": "杂志中性高级",
+      "enName": "Editorial Neutral",
+      "image": "/assets/parameters/grading-editorial-neutral.jpg",
+      "zhPrompt": "杂志中性高级调色以准确白平衡、柔和 S 曲线和低饱和灰米环境建立克制层次，肤色、黑发和白衣保持真实色彩；局部对比集中于眼神、衣料与轮廓，背景层次细腻但不抢主体，避免通篇暖灰、过度磨皮或廉价褪色滤镜",
+      "enPrompt": "neutral editorial grade built on accurate white balance a gentle S-curve and subdued gray-beige surroundings, preserving truthful skin black hair and white clothing; concentrate local contrast on gaze fabric and silhouette while background layers stay refined and secondary, avoiding a blanket warm-gray cast plastic skin or a cheap faded filter",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-clean-ecommerce-skin",
+      "category": "color-grading",
+      "styleGroup": "commercial",
+      "zhName": "电商服装干净色",
+      "enName": "Clean Fashion Ecommerce",
+      "image": "/assets/parameters/grading-clean-ecommerce-skin.jpg",
+      "zhPrompt": "电商服装干净修图把背景校正为中性白或指定浅色，服装色彩、纹理和边缘保持商品真实，人物肤色均匀但保留毛孔与关节起伏；接触阴影柔和稳定，白衣与背景仍有轮廓分离，避免漂白肤色、改变服装颜色或抹掉织物结构",
+      "enPrompt": "clean fashion-ecommerce retouch correcting the backdrop to neutral white or the specified pale tone while preserving true garment color weave and edges, evening skin without erasing pores or joint form; keep a soft stable contact shadow and separation between white clothing and background, avoiding bleached skin altered product color or smoothed-away textile structure",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "retouch-dark-circle",
+      "category": "color-grading",
+      "styleGroup": "skin-detail",
+      "zhName": "黑眼圈减淡",
+      "enName": "Dark Circle Softening",
+      "image": "/assets/parameters/retouch-dark-circle.jpg",
+      "zhPrompt": "人物修图中自然减淡眼下青紫、暗沉与疲态，只调整色彩和局部明度，不抹平卧蚕、眼袋结构、细纹与皮肤纹理；双眼受光和锐度保持一致，避免眼下发灰、塑料平面或改变原有年龄特征",
+      "enPrompt": "portrait retouch that naturally reduces blue-purple discoloration and tired darkness beneath the eyes through local color and luminance correction only; preserve the natural lower-lid roll bag structure fine lines and skin texture, keep light and acuity consistent between both eyes, and avoid gray patches plastic flattening or erasing age-defining features",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "retouch-jawline-define",
+      "category": "color-grading",
+      "styleGroup": "portrait-retouch",
+      "zhName": "下颌线增强",
+      "enName": "Jawline Definition",
+      "image": "/assets/parameters/retouch-jawline-define.jpg",
+      "zhPrompt": "人物修图通过轻微局部明暗、色彩和极小范围轮廓整理增强下颌到颈部的自然转折，保留原始骨相、软组织、头部角度和左右差异；衣领、头发与背景直线保持连续，不强行削尖脸型，不加黑色描边，也不出现液化凹陷或过锐边缘",
+      "enPrompt": "portrait retouch defining the natural jaw-to-neck transition through subtle local tone color and minimal contour cleanup while preserving original bone structure soft tissue head angle and side-to-side differences; keep collar hair and background lines continuous without forcing a pointed face adding dark outlines or creating liquified dents and oversharpened edges",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "retouch-teeth-whiten",
+      "category": "color-grading",
+      "styleGroup": "portrait-retouch",
+      "zhName": "牙齿自然美白",
+      "enName": "Natural Teeth Whitening",
+      "image": "/assets/parameters/retouch-teeth-whiten.jpg",
+      "zhPrompt": "牙齿自然美白通过降低局部黄橙色彩并轻微提升明度改善色泽，保留牙缝、釉质半透明、齿龈边缘和口腔阴影；不同牙齿仍有细微色差异，嘴唇与皮肤不受影响，避免荧光纯白、整排糊成一块或改变牙齿形状",
+      "enPrompt": "natural teeth whitening by selectively reducing yellow-orange cast and gently lifting tooth value while preserving gaps enamel translucency gum edges and mouth shadow; retain slight color variation among teeth and protect lips and skin, avoiding fluorescent white a fused single tooth strip or altered tooth shape",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-morandi-muted",
+      "category": "color-grading",
+      "styleGroup": "mood",
+      "zhName": "莫兰迪低饱和",
+      "enName": "Morandi Muted",
+      "image": "/assets/parameters/grading-morandi-muted.jpg",
+      "zhPrompt": "莫兰迪低饱和调色将高纯度颜色压入带灰色彩的粉、绿、蓝与赭色体系，同时保留不同色彩之间的明度区分；黑位微抬、白位柔和，中间调成为主导，肤色与关键商品色仍可辨，避免所有颜色混成同一层灰雾或简单整体降饱和",
+      "enPrompt": "Morandi muted grading compressing vivid hues into dusty pink green blue and ochre families while preserving value separation between them; use slightly lifted blacks soft whites and dominant midtones, keeping skin and essential product colors identifiable, avoiding one uniform gray haze or a simple global saturation reduction",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-earth-tone",
+      "category": "color-grading",
+      "styleGroup": "mood",
+      "zhName": "大地色调",
+      "enName": "Earth Tone",
+      "image": "/assets/parameters/grading-earth-tone.jpg",
+      "zhPrompt": "大地色调把土壤、木材和植被归纳为赭石、陶土、焦糖褐与橄榄绿，色彩温暖但天空和中性物仍保持区分；高光呈浅米色、阴影略偏冷褐，肤色不过度橙化，材质纹理清楚，避免棕色蒙版、脏黄白平衡或绿色全部变灰",
+      "enPrompt": "earth-tone grade organizing soil wood and vegetation into ochre terracotta caramel brown and olive while keeping sky and neutral objects distinct; use pale beige highlights slightly cooler brown shadows protected non-orange skin and clear material texture, avoiding a blanket brown overlay dirty yellow white balance or uniformly gray foliage",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-silver-bw-portrait",
+      "category": "color-grading",
+      "styleGroup": "film-vintage",
+      "zhName": "银盐黑白肖像",
+      "enName": "Silver Gelatin Portrait",
+      "image": "/assets/parameters/grading-silver-bw-portrait.jpg",
+      "zhPrompt": "银盐黑白肖像调色依据原色彩明度重新分配肤色、头发与衣物灰阶，亮部具有银盐相纸般柔和肩部，黑位深但不堵塞；细颗粒在中暗部更明显，局部加深减淡引导眼神和面部结构，避免简单去饱和、HDR 灰边或过硬数码锐化",
+      "enPrompt": "silver-gelatin portrait conversion remapping original colors into separated skin hair and clothing values, with a gentle photographic-paper highlight shoulder and deep but open blacks; fine grain becomes more visible in mid-shadows and restrained dodge-and-burn guides the eyes and facial structure, avoiding plain desaturation HDR halos or harsh digital sharpening",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-city-night-clean",
+      "category": "color-grading",
+      "styleGroup": "cinematic",
+      "zhName": "城市夜景干净调",
+      "enName": "Clean City Night",
+      "image": "/assets/parameters/grading-city-night-clean.jpg",
+      "zhPrompt": "城市夜景干净调色分离招牌霓虹、路灯、车灯和室内窗光，压回发光字高光同时保留灯芯与色彩，黑位深净但暗部建筑仍有轮廓；控制高感噪点和色彩污染，避免霓虹溢色、天空发紫、阴影涂黑或过度锐化",
+      "enPrompt": "clean city-night grade separating signage neon streetlights headlights and interior windows, recovering luminous-letter highlights while retaining light cores and hue, with deep clean blacks that still reveal building contours; control high-ISO noise and mixed-light contamination, avoiding neon bleed purple skies crushed shadows or oversharpening",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-rainy-street-film",
+      "category": "color-grading",
+      "styleGroup": "cinematic",
+      "zhName": "雨街胶片感",
+      "enName": "Rainy Street Film",
+      "image": "/assets/parameters/grading-rainy-street-film.jpg",
+      "zhPrompt": "雨街胶片调色，以湿地倒影承接琥珀、青蓝和少量洋红霓虹，环境色偏冷但人物肤色不被污染；高光在雨雾中柔和扩散，暗部保留颗粒与路面纹理，避免荧光色溢出和纯黑死角",
+      "enPrompt": "rainy-street film grade using wet reflections to carry amber cyan-blue and restrained magenta neon, with a cool environment that does not contaminate skin; highlights bloom softly through rain haze and shadows retain grain and pavement texture, avoiding fluorescent spill and dead black corners",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-interior-warm-window",
+      "category": "color-grading",
+      "styleGroup": "camera-look",
+      "zhName": "室内暖窗光",
+      "enName": "Warm Interior Window Light",
+      "image": "/assets/parameters/grading-interior-warm-window.jpg",
+      "zhPrompt": "室内暖窗光调色保留窗外日光的中性或微冷色彩，并让室内木材、墙面和灯具呈柔和琥珀色彩，形成可信冷暖过渡；窗框高光平滑不过曝，远离窗户的阴影仍有色彩和家具细节，人物肤色随光向自然变化，避免整屋橙黄或窗户变成纯白洞口",
+      "enPrompt": "warm interior window-light grade preserving neutral or slightly cool daylight outside while interior wood walls and fixtures carry soft amber warmth for a believable temperature transition; roll window highlights smoothly without clipping, retain color and furniture detail away from the window and let skin change naturally across the light, avoiding an all-orange room or blank white window holes",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-cafe-latte",
+      "category": "color-grading",
+      "styleGroup": "commercial",
+      "zhName": "咖啡馆拿铁调",
+      "enName": "Cafe Latte Grade",
+      "image": "/assets/parameters/grading-cafe-latte.jpg",
+      "zhPrompt": "咖啡馆拿铁调色以浓咖褐暗部、奶油高光和焦糖中间调统一木质、饮品与人物，色彩温暖松弛但白杯、金属和绿色植物仍保持真实；对比柔和、颗粒极轻，肤色不偏橙，避免单一棕色滤镜、奶油高光发黄或社媒式过度褪色",
+      "enPrompt": "cafe-latte grade unifying wood drinks and people through espresso-brown shadows creamy highlights and caramel midtones while white cups metal and green plants remain truthful; keep contrast soft and grain minimal with protected non-orange skin, avoiding a single brown overlay yellowed cream highlights or excessive social-media fading",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-jewelry-sparkle",
+      "category": "color-grading",
+      "styleGroup": "commercial",
+      "zhName": "珠宝闪耀修图",
+      "enName": "Jewelry Sparkle",
+      "image": "/assets/parameters/grading-jewelry-sparkle.jpg",
+      "zhPrompt": "珠宝商业修图分别控制金属镜面、磨砂面和宝石切面的反射，高光沿真实棱线清晰但不过曝，暗部保留镶爪、刻面和色彩；清除环境杂反射而不抹平材质，背景色彩中性，避免虚假星芒、塑料宝石或用锐化制造廉价闪烁",
+      "enPrompt": "jewelry commercial retouch controlling reflections separately across polished metal satin surfaces and gemstone facets, with crisp geometry-following highlights that do not clip and shadows retaining prongs cuts and body color; remove distracting environmental reflections without flattening material on a neutral background, avoiding fake starbursts plastic stones or cheap sharpening sparkle",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-cosmetics-glossy",
+      "category": "color-grading",
+      "styleGroup": "commercial",
+      "zhName": "美妆产品光泽",
+      "enName": "Glossy Cosmetics",
+      "image": "/assets/parameters/grading-cosmetics-glossy.jpg",
+      "zhPrompt": "美妆产品光泽修图让玻璃、亚克力、金属盖和膏体分别呈现正确粗糙度，瓶身高光连续、标签区域平整、产品色彩准确；清理灰尘和杂反射但保留接触阴影与边缘折射，背景简洁且与产品分离，避免过曝白边、塑料化表面或擅自改变包装文字",
+      "enPrompt": "glossy cosmetics retouch giving glass acrylic metal caps and product cream their correct roughness, continuous bottle highlights flat label planes and accurate product color; remove dust and stray reflections while preserving contact shadow and edge refraction on a clean separated background, avoiding clipped white rims plastic surfaces or altered packaging text",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-furniture-natural",
+      "category": "color-grading",
+      "styleGroup": "commercial",
+      "zhName": "家居自然质感",
+      "enName": "Natural Furniture",
+      "image": "/assets/parameters/grading-furniture-natural.jpg",
+      "zhPrompt": "家居产品自然质感调色准确还原木种色彩、织物纤维、皮革光泽和石材孔隙，窗光或棚光柔和地描述体积，垂直线与色彩保持稳定；阴影中仍能分辨结构接缝与面料层次，避免木材过橙、布料过度锐化或室内 HDR 光晕",
+      "enPrompt": "natural furniture product grade accurately preserving wood-species color textile fiber leather sheen and stone pores, with soft window or studio light describing volume and stable verticals and neutrals; keep joints and fabric layers readable in shadow, avoiding orange wood oversharpened upholstery or interior HDR halos",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "retouch-redness-reduction",
+      "category": "color-grading",
+      "styleGroup": "skin-detail",
+      "zhName": "面部泛红减轻",
+      "enName": "Redness Reduction",
+      "image": "/assets/parameters/retouch-redness-reduction.jpg",
+      "zhPrompt": "面部泛红减轻只针对鼻翼、脸颊或敏感区中过量红色彩降低饱和并平衡色彩，保留嘴唇、自然腮红、血色和皮肤冷暖变化；修正边缘柔和且不影响毛孔、雀斑与光影，避免全脸变黄变灰、抹掉健康气色或形成局部色彩断层",
+      "enPrompt": "facial redness reduction selectively lowering excessive red saturation around nostrils cheeks or sensitive patches while preserving lips natural blush circulation and skin temperature variation; blend corrections softly without affecting pores freckles or lighting, avoiding a yellow-gray face erased healthy color or visible chromatic patches",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "effect-prism-refraction",
+      "category": "visual-effect",
+      "styleGroup": "light-particle",
+      "zhName": "棱镜折射",
+      "enName": "Prism Refraction",
+      "image": "/assets/parameters/effect-prism-refraction.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "棱镜折射让一束方向明确的白光穿过玻璃棱面，在符合入射角的位置分离为连续红橙黄绿蓝紫光谱，并在附近表面形成锐利几何色彩；透明介质保留厚度、焦散和双重边缘，效果局部克制，避免整屏彩虹滤镜、无光源色带或霓虹烟雾",
+      "enPrompt": "prism refraction sends one directionally coherent white beam through faceted glass, separating a continuous red-to-violet spectrum at a physically plausible angle and casting sharp geometric color onto nearby surfaces; preserve medium thickness caustics and doubled edges in a localized effect, avoiding a frame-wide rainbow filter source-less bands or neon fog",
+      "negative": [
+        "messy motion blur",
+        "visual noise",
+        "overcrowded effects"
+      ]
+    },
+    {
+      "id": "style-gouache-illustration",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "水粉插画",
+      "enName": "Gouache Illustration",
+      "image": "/assets/parameters/style-gouache-illustration.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "水粉插画以不透明颜料叠加成哑光色块，笔刷方向在形体内部清楚可读，边缘兼有湿润覆盖、干刷露纸和局部刮擦；色彩可直接覆盖下层但不产生油亮厚膜，纸张齿纹在薄处显现，避免水彩透明晕染、喷枪渐变和无媒介感的数字平涂",
+      "enPrompt": "gouache illustration built from opaque matte color masses whose brush direction remains legible inside forms, combining wet covering edges with dry-brush paper breaks and selective scraping; color may cover lower layers without glossy impasto while paper tooth reappears in thin areas, avoiding transparent watercolor blooms airbrushed gradients or mediumless digital flat fill",
+      "negative": [
+        "unclear medium",
+        "generic digital look",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "style-acrylic-painting",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "丙烯画",
+      "enName": "Acrylic Painting",
+      "image": "/assets/parameters/style-acrylic-painting.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "丙烯画以快速干燥的不透明色层、清楚覆盖边缘和可叠加的干刷笔触塑造形体，局部使用刮刀厚涂、透明媒介薄罩或底层颜色露边；色彩保持明快稳定，画布纹理与聚合物膜只在合适角度可见，避免油画缓慢湿混、水彩渗化或塑料般统一高光",
+      "enPrompt": "acrylic painting using fast-drying opaque color layers crisp covering edges and stackable dry-brush marks, with selective palette-knife body transparent-medium glaze or undercolor peeking at boundaries; color stays bright and stable while canvas tooth and polymer film appear only where appropriate, avoiding slow oil wet-blending watercolor diffusion or uniformly plastic highlights",
+      "negative": [
+        "unclear medium",
+        "generic digital look",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "style-soft-pastel",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "粉彩画",
+      "enName": "Soft Pastel Drawing",
+      "image": "/assets/parameters/style-soft-pastel.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "粉彩画让松软颜料棒在有齿纸面留下天鹅绒般粉末色彩，叠色区可轻柔擦融，轮廓处则保留断裂短划、侧锋宽痕和纸白颗粒；亮部通过浅色粉层叠加而非发光，高浓区域可见粉尘与固定剂变化，避免油画棒蜡质、喷枪柔焦和完全抹平的数字渐变",
+      "enPrompt": "soft pastel drawing depositing velvety powder color into toothed paper, allowing selected layers to blend gently while contours retain broken short strokes broad side marks and exposed paper grain; highlights arise from pale pigment layering rather than glow and dense areas reveal dust plus fixative shifts, avoiding waxy oil-pastel texture airbrush blur or completely smoothed digital gradients",
+      "negative": [
+        "unclear medium",
+        "generic digital look",
+        "readable text",
+        "watermark"
+      ]
+    }
+  ]
+}

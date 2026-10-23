@@ -1,0 +1,630 @@
+{
+  "parameters": [
+    {
+      "id": "artist-stickfigure-explainer",
+      "category": "artist-style",
+      "styleGroup": "comic-sequential",
+      "zhName": "极简火柴人讲解漫画",
+      "enName": "Minimal Stick-Figure Explainer",
+      "image": "/assets/parameters/artist-stickfigure-explainer.jpg?v=20261022-style-expansion-n",
+      "zhPrompt": "极简讲解漫画以细而略有手抖的黑色单线描绘圆头火柴人和必要道具，角色靠姿态、距离与简单动作表达逻辑；画面保持暖白纸底、大量留白、零灰阶和零体积，只在关键物件使用一个克制强调色，避免实心剪影、复杂场景或商业图标感",
+      "enPrompt": "minimal explainer-comic language using thin slightly wobbly black contour lines for circle-headed stick figures and only essential props, with logic conveyed through gesture distance and simple action; keep a warm-white paper field, abundant negative space, no grayscale or volume, and at most one restrained accent color on the key object, avoiding solid silhouettes complex scenery or stock-icon polish",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-blob-doodle-infographic",
+      "category": "artist-style",
+      "styleGroup": "editorial-graphic",
+      "zhName": "黑豆人涂鸦信息图",
+      "enName": "Black-Blob Doodle Infographic",
+      "image": "/assets/parameters/artist-blob-doodle-infographic.jpg?v=20261022-style-expansion-n",
+      "zhPrompt": "黑豆人涂鸦语言以一个圆润纯黑小角色、白色点眼和细线四肢作为重复视觉锚点，周围物件保持黑色空心线描，并只给一个关键物使用橙色强调；线条轻微歪斜但闭合清楚，综合色黑白分明、留白充足，避免多色卡通、立体阴影或复杂表情",
+      "enPrompt": "black-blob doodle infographic language anchored by a rounded solid-black character with tiny white eyes and thin line limbs, while surrounding objects remain hollow black outlines and a single key item receives one orange accent; contours are mildly wobbly yet clearly closed with crisp black-white separation and generous whitespace, avoiding multicolor cartoons volumetric shading or elaborate facial detail",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-clumsy-bitmap-doodle",
+      "category": "style",
+      "styleGroup": "design-retro",
+      "zhName": "笨拙像素鼠绘",
+      "enName": "Clumsy Bitmap Doodle",
+      "image": "/assets/parameters/style-clumsy-bitmap-doodle.jpg?v=20261022-style-expansion-n",
+      "zhPrompt": "笨拙像素鼠绘模拟早期画图软件用鼠标生硬描出的业余涂鸦：轮廓锯齿、曲线不圆、比例故意失准，纯色色块漏涂或越界，并保留低分辨率像素边；整体有认真却画不好的幽默感，但主体仍清楚可辨，避免专业像素画、平滑矢量线和精致光影",
+      "enPrompt": "deliberately clumsy bitmap doodle resembling an amateur drawing made with a mouse in early paint software: jagged pixel edges, awkward non-circular curves, intentionally wrong proportions and crude flat fills that miss or cross the outline; preserve a sincere badly-drawn humor while keeping the subject readable, avoiding skilled pixel art smooth vector paths polished lighting or decorative detail",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-ballpoint-scribble",
+      "category": "artist-style",
+      "styleGroup": "editorial-graphic",
+      "zhName": "圆珠笔缠绕线速写",
+      "enName": "Ballpoint Scribble Drawing",
+      "image": "/assets/parameters/artist-ballpoint-scribble.jpg?v=20261022-style-expansion-n",
+      "zhPrompt": "圆珠笔缠绕线速写以单一蓝黑墨色和大量不断回返、交叉、松紧变化的细线寻找轮廓，靠线团密度而非涂黑塑造明暗与体积；局部线条越出外轮廓并保留犹豫痕迹，纸面大部分仍为空白，避免整齐排线、封闭矢量轮廓或数字噪点滤镜",
+      "enPrompt": "ballpoint scribble drawing built from one blue-black ink color and many returning crossing lines whose tension and density search for the contour, modeling value and volume through tangled line concentration rather than filled black shapes; selected strokes escape the silhouette and retain hesitation while most paper stays open, avoiding orderly hatching closed vector outlines or a procedural digital-noise filter",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-scandinavian-gouache-storybook",
+      "category": "artist-style",
+      "styleGroup": "childrens-picturebook",
+      "zhName": "北欧水粉绘本",
+      "enName": "Scandinavian Gouache Storybook",
+      "image": "/assets/parameters/artist-scandinavian-gouache-storybook.jpg?v=20261022-style-expansion-n",
+      "zhPrompt": "北欧水粉绘本以细长略笨拙的人物比例、小椭圆眼、明显鼻形和克制表情构成安静叙事，综合色限定为丹宁蓝、芥末黄、奶油白与珊瑚腮红；哑光平涂中保留干刷颗粒，浅色纸纹贯穿背景，大量留白且只保留极轻接触影，避免圆脸萌系、厚描边和光滑数字渐变",
+      "enPrompt": "Scandinavian gouache picture-book language using elongated slightly awkward figures, tiny oval eyes, a prominent simple nose and restrained expression for quiet storytelling; limit the palette to denim blue mustard yellow cream and coral blush, preserve granular dry-brush texture inside matte color masses and fine paper tooth across a pale open background, with abundant negative space and only a faint contact shadow, avoiding round mainstream cute faces thick outlines or smooth digital gradients",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-ink-line-watercolor-storybook",
+      "category": "artist-style",
+      "styleGroup": "childrens-picturebook",
+      "zhName": "墨线淡彩绘本",
+      "enName": "Ink-Line Watercolor Storybook",
+      "image": "/assets/parameters/artist-ink-line-watercolor-storybook.jpg?v=20261022-style-expansion-n",
+      "zhPrompt": "墨线淡彩绘本以粗细变化的深褐或藏青速写线作为骨架，保留少量起稿重线、顺势发丝和局部排线，再在其下铺透明明亮的水彩综合色；背景仅以低细节刷痕建立气氛，边缘可自然露出奶白纸面，综合色清透而不灰脏，避免彩铅填色、满幅交叉排线和动漫式硬轮廓",
+      "enPrompt": "ink-line watercolor storybook illustration led by loose dark-sepia or navy sketch lines of varied weight, retaining a few searching construction strokes flowing hair lines and selective hatching over transparent luminous color washes; the background is only a low-detail atmospheric brush field with natural warm-paper margins, keeping color fresh and clear rather than muddy, and avoiding colored-pencil fill all-over crosshatching or hard anime contours",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-warm-flat-storybook",
+      "category": "artist-style",
+      "styleGroup": "childrens-picturebook",
+      "zhName": "暖色几何扁平绘本",
+      "enName": "Warm Geometric Flat Storybook",
+      "image": "/assets/parameters/artist-warm-flat-storybook.jpg?v=20261022-style-expansion-n",
+      "zhPrompt": "暖色几何扁平绘本把人物与物件概括成圆角大色块和清晰动作弧线，依靠综合色交界而非连续外描边区分结构；深藏青、雾蓝、珊瑚橙、金橙和暖米白构成有限色板，每个大色块至多一层硬边同色阴影，主体集中于中下部并留出大片安静空间，避免企业矢量人、渐变体积和Q版大头",
+      "enPrompt": "warm geometric flat picture-book language simplifying figures and objects into rounded color masses with clear action arcs, separating structure through adjacent hues rather than continuous outer outlines; use a limited deep-navy mist-blue coral golden-orange and warm near-white palette with at most one hard-edged same-hue shadow per major shape, place the subject low with calm open space, and avoid corporate vector people gradient volume or chibi proportions",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-graphite-coral-minimal",
+      "category": "artist-style",
+      "styleGroup": "childrens-picturebook",
+      "zhName": "石墨珊瑚红极简童画",
+      "enName": "Graphite and Coral Minimal Drawing",
+      "image": "/assets/parameters/artist-graphite-coral-minimal.jpg?v=20261022-style-expansion-n",
+      "zhPrompt": "石墨珊瑚红极简童画以略不规则的大圆头、小躯干和极细弹性四肢构成平面动作，面部只保留两道不齐的竖眼与极短嘴线；石墨轮廓随压力深浅断续，珊瑚红仅作为一个服装或道具焦点，暖白纸面占据大部分画面，避免标准化Q版骨架、光滑线条和场景填满",
+      "enPrompt": "minimal graphite-and-coral children's drawing built from a slightly irregular large round head, much smaller torso and extremely thin elastic limbs whose gesture stays flat and expressive; the face uses only two uneven vertical eye marks and a tiny mouth line, graphite contours breathe with pressure and paper breaks, and coral red appears on one garment or prop focal point across a mostly warm-white field, avoiding standardized chibi anatomy smooth digital lines or filled scenery",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-mustard-ink-vignette",
+      "category": "artist-style",
+      "styleGroup": "childrens-picturebook",
+      "zhName": "暖黄墨线情绪小剧场",
+      "enName": "Mustard-Ink Story Vignette",
+      "image": "/assets/parameters/artist-mustard-ink-vignette.jpg?v=20261022-style-expansion-n",
+      "zhPrompt": "暖黄墨线小剧场以圆方头、短躯干和松弛短肢讲述一个清楚的关系动作，五官压缩为小点眼、短弯嘴和淡珊瑚腮红；近黑干墨线保留压力、断笔与方向性排线，芥末黄只用于一至两个焦点，主体放在暖白纸面中下部并留出大面积空白，避免多彩背景、光滑黑块和无关装饰",
+      "enPrompt": "warm mustard-ink story vignette using compact rounded-square heads blunt torsos and relaxed short limbs to tell one clear relational action, with dot eyes a tiny curved mouth and faint coral cheek marks; near-black dry ink retains pressure breaks and directional strokes while muted mustard yellow marks only one or two focal areas, placing the action low on a broad warm-white field and avoiding multicolor backgrounds smooth black fills or unrelated decoration",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-heta-uma",
+      "category": "artist-style",
+      "styleGroup": "east-asian",
+      "zhName": "日式拙趣插画",
+      "enName": "Japanese Heta-Uma Illustration",
+      "image": "/assets/parameters/artist-heta-uma.jpg?v=20261022-style-expansion-n",
+      "zhPrompt": "日式拙趣插画以故意不稳的手绘线、失衡比例、直觉色块和生硬却有表现力的造型追求“拙中有味”，画面看似业余但节奏与综合色经过控制；轮廓可重复、断裂或轻微错位，情绪直接而幽默，避免精修萌系、儿童蜡笔纹理、纯粹随机乱画或复制具体作者角色",
+      "enPrompt": "Japanese heta-uma visual language embracing intentionally unstable handmade lines, off-balance proportions, intuitive flat color and awkward yet expressive forms whose apparent amateurism still carries controlled rhythm and palette; contours may repeat break or misregister slightly for direct offbeat humor, avoiding polished cute illustration child-crayon texture purely random mess or replication of a specific artist's characters",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-cultural ornament"
+      ]
+    },
+    {
+      "id": "artist-emakimono-scroll",
+      "category": "artist-style",
+      "styleGroup": "east-asian",
+      "zhName": "绘卷物连续叙事",
+      "enName": "Emakimono Narrative Scroll",
+      "image": "/assets/parameters/artist-emakimono-scroll.jpg?v=20261022-style-expansion-n",
+      "zhPrompt": "绘卷物连续叙事让山水、建筑、道路和人物事件沿横向卷轴逐段展开，通过吹拔屋台式俯视、移动视点与重复人物连接时间，不依赖单一透视中心；墨线纤细流动，矿物色和淡墨保持平面层次，纸张留白参与节奏，避免现代分镜框、摄影景深或泛浮世绘波纹",
+      "enPrompt": "emakimono handscroll narrative unfolding landscape architecture roads and human events continuously across a horizontal field, linking time through shifting viewpoints roofless interior views and repeated figures rather than one perspective center; use flowing fine ink contours flat mineral color and light ink with paper openings shaping the rhythm, avoiding modern comic panels photographic depth of field or generic ukiyo-e wave motifs",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-cultural ornament"
+      ]
+    },
+    {
+      "id": "artist-kibyoshi-comic",
+      "category": "artist-style",
+      "styleGroup": "comic-sequential",
+      "zhName": "黄表纸木版漫画",
+      "enName": "Kibyoshi Woodblock Comic",
+      "image": "/assets/parameters/artist-kibyoshi-comic.jpg?v=20261022-style-expansion-n",
+      "zhPrompt": "黄表纸木版漫画以粗细变化的黑色木版轮廓、夸张姿态和紧凑群像推进世俗喜剧叙事，综合色采用少量赭黄、靛青、朱红与纸本色，套色略有偏移并保留刀口与墨压变化；动作连续清楚但不嵌入可读文字，避免现代动漫阴影、写实体积或普通浮世绘风景复制",
+      "enPrompt": "kibyoshi woodblock-comic language advancing lively social comedy through varied black carved contours exaggerated posture and compact figure groups, using a limited ochre indigo vermilion and paper-tone palette with slight registration drift visible knife edges and uneven ink pressure; keep sequential action legible without readable writing, avoiding modern anime shading realistic volume or generic copied ukiyo-e landscapes",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-cultural ornament"
+      ]
+    },
+    {
+      "id": "artist-lianhuanhua",
+      "category": "artist-style",
+      "styleGroup": "comic-sequential",
+      "zhName": "中国连环画线描",
+      "enName": "Chinese Lianhuanhua Drawing",
+      "image": "/assets/parameters/artist-lianhuanhua.jpg?v=20261022-style-expansion-n",
+      "zhPrompt": "中国连环画线描以准确而有弹性的墨线组织人物、服装、建筑和动作关系，重点场景用疏密排线和少量擦染建立黑白层次，叙事瞬间清楚、人物姿态可信、背景服务事件而不过满；保留纸本印刷与轻微套墨质感，避免武侠海报夸张光效、照片描摹或日式漫画网点",
+      "enPrompt": "Chinese lianhuanhua narrative drawing using accurate elastic ink contours to organize figures clothing architecture and action, with selective crosshatching and restrained washes building black-white depth in key scenes; keep the story moment clear, gestures credible and background subordinate, retaining modest paper-print and ink-pressure variation while avoiding wuxia-poster glow traced photography or Japanese screentone conventions",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-cultural ornament"
+      ]
+    },
+    {
+      "id": "artist-shanghai-calendar-poster",
+      "category": "artist-style",
+      "styleGroup": "east-asian",
+      "zhName": "海派月份牌画",
+      "enName": "Shanghai Calendar-Poster Illustration",
+      "image": "/assets/parameters/artist-shanghai-calendar-poster.jpg?v=20261022-style-expansion-n",
+      "zhPrompt": "海派月份牌画融合细致水彩、柔和喷绘过渡与装饰性商业插画，人物面部明净、发丝与织物精细，花卉和近代城市背景形成层叠边框；综合色以玉绿、胭脂、奶油与柔蓝为主，印刷网点和旧纸感克制存在，避免真实品牌、可读广告字样或塑料般数码磨皮",
+      "enPrompt": "Shanghai calendar-poster illustration language combining delicate watercolor, soft airbrushed modeling and decorative commercial art, with luminous faces fine hair and textiles framed by layered flowers and an early-modern city setting; favor jade green rouge cream and soft blue with restrained print dots and aged paper, avoiding real brands readable advertising copy or plasticky digital skin smoothing",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-cultural ornament"
+      ]
+    },
+    {
+      "id": "artist-kamishibai-gouache",
+      "category": "artist-style",
+      "styleGroup": "childrens-picturebook",
+      "zhName": "纸芝居舞台水粉",
+      "enName": "Kamishibai Storyboard Gouache",
+      "image": "/assets/parameters/artist-kamishibai-gouache.jpg?v=20261022-style-expansion-n",
+      "zhPrompt": "纸芝居舞台水粉以远处也能辨认的强轮廓、夸张动作和清楚前中后景组织单幅故事高潮，人物与道具像舞台表演般朝向观众，哑光水粉综合色集中且对比明确；笔刷边缘、纸板纤维和手绘修补可见，避免电影写实光影、复杂小细节或动漫式连续特效",
+      "enPrompt": "kamishibai storytelling-board gouache using bold distance-readable silhouettes exaggerated action and clearly separated foreground middle ground and background to stage one narrative climax, with figures and props oriented toward an audience and a concentrated high-contrast matte palette; retain brush edges board fibers and hand-painted corrections, avoiding cinematic photoreal lighting tiny clutter or continuous anime effects",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork",
+        "copied sacred symbol",
+        "generic pan-cultural ornament"
+      ]
+    },
+    {
+      "id": "artist-soviet-constructivist-childrens",
+      "category": "artist-style",
+      "styleGroup": "childrens-picturebook",
+      "zhName": "构成主义儿童书插画",
+      "enName": "Constructivist Children's Book",
+      "image": "/assets/parameters/artist-soviet-constructivist-childrens.jpg?v=20261022-style-expansion-n",
+      "zhPrompt": "构成主义儿童书插画以红、黑、奶油白和少量灰蓝几何切片组合人物、机械、城市与运动轨迹，斜向轴线、比例跳跃和摄影蒙太奇式裁切制造速度；形体简化但动作可读，粗糙印刷与套色偏差保留手工感，避免政治标识、可读口号、现代企业信息图或立体渲染",
+      "enPrompt": "constructivist children's-book illustration assembling people machines city forms and motion paths from red black cream and restrained blue-gray geometry, using diagonal axes scale jumps and photomontage-like cropping to create speed; keep simplified forms action-readable and retain rough printing plus slight registration drift, avoiding political insignia readable slogans contemporary corporate infographics or 3D rendering",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-czech-collage-storybook",
+      "category": "artist-style",
+      "styleGroup": "childrens-picturebook",
+      "zhName": "捷克纸拼贴绘本",
+      "enName": "Czech Paper-Collage Storybook",
+      "image": "/assets/parameters/artist-czech-collage-storybook.jpg?v=20261022-style-expansion-n",
+      "zhPrompt": "捷克纸拼贴绘本以手工涂色纸、旧印刷纸和半透明薄纸切成几何人物、动物与植物，形体比例俏皮但轮廓清楚；撕切边、胶贴重叠、纸纤维与综合色磨损真实存在，综合色偏土红、孔雀蓝、芥末黄和灰绿，避免数字矢量剪影、照片拼贴杂乱或商品贴纸白边",
+      "enPrompt": "Czech mid-century paper-collage storybook language cutting hand-painted paper old printed stock and translucent tissue into geometric figures animals and plants with playful proportions yet clear silhouettes; preserve torn and scissor-cut edges glued overlaps paper fibers and worn color in earthy red peacock blue mustard and gray-green, avoiding digital vector silhouettes chaotic photo collage or commercial sticker borders",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-pochoir-fashion",
+      "category": "artist-style",
+      "styleGroup": "international-illustration",
+      "zhName": "孔版套色时装画",
+      "enName": "Pochoir Fashion Illustration",
+      "image": "/assets/parameters/artist-pochoir-fashion.jpg?v=20261022-style-expansion-n",
+      "zhPrompt": "孔版套色时装画以细长优雅的人体、简洁墨线和逐层手工漏版综合色表现衣装，综合色边缘清脆却带轻微刷痕与套版偏移，局部金属粉或浓黑形成装饰重点；背景保持大面积素纸和少量几何环境，避免喷墨渐变、现代时尚摄影或复杂可读排版",
+      "enPrompt": "pochoir fashion illustration using elongated elegant figures, economical ink contours and successive hand-stenciled color layers for garments, with crisp edges carrying subtle brush drag and slight registration shift plus occasional metallic pigment or dense black accents; retain broad plain paper and minimal geometric setting, avoiding inkjet gradients modern fashion photography or complex readable typography",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-sunday-color-comic",
+      "category": "artist-style",
+      "styleGroup": "comic-sequential",
+      "zhName": "周日报纸彩色漫画",
+      "enName": "Sunday Newspaper Color Comic",
+      "image": "/assets/parameters/artist-sunday-color-comic.jpg?v=20261022-style-expansion-n",
+      "zhPrompt": "周日报纸彩色漫画以活泼粗细墨线、清楚动作剪影和夸张表情组织轻喜剧场景，综合色由少量平涂原色与可见网点构成，套色轻微偏移并透出廉价新闻纸纤维；背景只保留支持笑点的元素，避免现代数字渐变、超级英雄爆炸特效、可读对白或整洁矢量描边",
+      "enPrompt": "vintage Sunday-newspaper color-comic language using lively varied ink contours clear action silhouettes and exaggerated expressions for light comic scenes, with a small flat primary palette visible halftone and slight registration drift over inexpensive newsprint fiber; backgrounds include only what supports the visual joke, avoiding modern digital gradients superhero spectacle readable dialogue or perfectly clean vector outlines",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-conceptual-spot-illustration",
+      "category": "artist-style",
+      "styleGroup": "editorial-graphic",
+      "zhName": "概念隐喻点题插画",
+      "enName": "Conceptual Metaphor Spot Illustration",
+      "image": "/assets/parameters/artist-conceptual-spot-illustration.jpg?v=20261022-style-expansion-n",
+      "zhPrompt": "概念隐喻点题插画把两个日常物件通过共享轮廓、负形、尺度替换或材质转译合并成一个立即可读的视觉双关，主体小而集中，背景保持纯净；综合色限制在两至四种，边缘清楚并保留轻微纸感，强调一个观点而非完整叙事，避免装饰堆砌、库存图标组合或文字解释",
+      "enPrompt": "conceptual editorial spot illustration merging two everyday objects through a shared silhouette negative space scale substitution or material transformation into one immediately legible visual metaphor; keep the subject compact on a clean field with two to four controlled colors, crisp edges and slight paper softness, expressing one idea rather than a full narrative and avoiding decorative clutter stock-icon assemblage or explanatory text",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-botticelli",
+      "category": "artist-style",
+      "styleGroup": "renaissance-baroque",
+      "zhName": "波提切利式线性优雅",
+      "enName": "Botticelli",
+      "image": "/assets/parameters/artist-botticelli.png",
+      "zhPrompt": "波提切利式线性优雅以连续柔韧的轮廓塑造细长人物、飘动发丝和衣褶，面部宁静克制，植物与神话人物沿浅景深平面形成节奏；综合色偏象牙、浅金、柔红和清冷蓝绿，蛋彩般哑光清透，避免油画厚涂、强烈透视或戏剧性明暗",
+      "enPrompt": "Botticelli-inspired linear elegance using continuous supple contours for elongated figures flowing hair and ribbon-like drapery, with restrained serene faces and plants plus mythic figures arranged across a shallow rhythmic plane; favor ivory pale gold soft rose and cool blue-green in a clear matte tempera finish, avoiding heavy oil impasto forceful perspective or dramatic chiaroscuro",
+      "negative": [
+        "artist signature",
+        "exact copy of existing artwork",
+        "readable text"
+      ]
+    },
+    {
+      "id": "artist-renoir",
+      "category": "artist-style",
+      "styleGroup": "impression-post",
+      "zhName": "雷诺阿式柔暖人物",
+      "enName": "Pierre-Auguste Renoir",
+      "image": "/assets/parameters/artist-renoir.png",
+      "zhPrompt": "雷诺阿式柔暖人物画以短而轻快的综合色笔触融化边缘，玫瑰、杏黄与蓝紫反光共同塑造肌肤和衣料，人物在花园、舞会或亲密社交场景中自然交叠；光线从叶隙或空气中散开，阴影仍有综合色，避免塑料磨皮、硬轮廓和冷峻高反差",
+      "enPrompt": "Renoir-inspired figure painting with short buoyant color strokes dissolving hard edges, rosy peach and blue-violet reflections modeling skin and fabric as figures overlap naturally in gardens dances or intimate social settings; light scatters through foliage and air while shadows remain chromatic, avoiding plastic skin smoothing rigid contours or cold high contrast",
+      "negative": [
+        "artist signature",
+        "exact copy of existing artwork",
+        "readable text"
+      ]
+    },
+    {
+      "id": "artist-degas",
+      "category": "artist-style",
+      "styleGroup": "impression-post",
+      "zhName": "德加式动态剪裁",
+      "enName": "Edgar Degas",
+      "image": "/assets/parameters/artist-degas.png",
+      "zhPrompt": "德加式动态剪裁采用偏移视点、被画框截断的人物和大面积空地板捕捉排练、梳洗或候场的瞬间，姿态重心准确但不摆拍；粉彩层通过擦拭、叠线和纸纹表现肌肉与薄纱，舞台光形成局部综合色偏移，避免对称肖像、静止正面站姿和摄影般锐利边缘",
+      "enPrompt": "Degas-inspired dynamic cropping uses offset viewpoints, figures cut by the frame and broad empty floor planes to capture rehearsal grooming or backstage moments with accurate weight but no posed stiffness; pastel layers model muscle and tulle through rubbing overdrawn lines and paper tooth while stage light shifts local color, avoiding symmetrical portraiture static frontal poses or photographic sharpness",
+      "negative": [
+        "artist signature",
+        "exact copy of existing artwork",
+        "readable text"
+      ]
+    },
+    {
+      "id": "artist-gauguin",
+      "category": "artist-style",
+      "styleGroup": "impression-post",
+      "zhName": "高更式平面异域色",
+      "enName": "Paul Gauguin",
+      "image": "/assets/parameters/artist-gauguin.png",
+      "zhPrompt": "高更式综合主义以深色简化轮廓围合大面积非写实综合色，人物、植物和土地压缩在浅平面中，尺度与空间服从象征而非透视；综合色使用赭黄、朱红、钴蓝、深绿与紫色形成装饰节奏，表面保持哑光平整，避免旅游明信片式异域猎奇、写实光影和数字渐变",
+      "enPrompt": "Gauguin-inspired synthetist language enclosing broad non-natural color fields with simplified dark contours, compressing figures plants and land into a shallow plane where scale and space serve symbolism rather than perspective; use ochre vermilion cobalt deep green and violet in a matte decorative rhythm, avoiding postcard exoticism realistic light modeling or digital gradients",
+      "negative": [
+        "artist signature",
+        "exact copy of existing artwork",
+        "readable text"
+      ]
+    },
+    {
+      "id": "artist-seurat",
+      "category": "artist-style",
+      "styleGroup": "impression-post",
+      "zhName": "修拉式点彩",
+      "enName": "Georges Seurat",
+      "image": "/assets/parameters/artist-seurat.png",
+      "zhPrompt": "修拉式点彩以大小相近而非随机噪点的纯综合色笔触并置，让互补色在观看距离中发生光学混合，阴影不加黑而由冷暖点群组成；人物与景物保持稳定轮廓、缓慢节奏和近似壁画的秩序，综合色明亮但不过饱和，避免喷枪颗粒、照片半调和模糊印象派笔刷",
+      "enPrompt": "Seurat-inspired pointillism placing similarly scaled discrete pure-color touches rather than random noise so complementary hues mix optically at viewing distance, with shadows built from cool and warm dot clusters instead of black; figures and landscape retain stable contours slow rhythm and mural-like order in luminous restrained color, avoiding airbrush speckles photographic halftone or blurry Impressionist brushing",
+      "negative": [
+        "artist signature",
+        "exact copy of existing artwork",
+        "readable text"
+      ]
+    },
+    {
+      "id": "artist-kandinsky",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "康定斯基式抽象音乐感",
+      "enName": "Wassily Kandinsky",
+      "image": "/assets/parameters/artist-kandinsky.png",
+      "zhPrompt": "康定斯基式抽象构成把点、细线、弧线、圆与不规则综合色面当作不同音色，在不对称空间中通过密度、方向和综合色冷暖建立节拍与张力；局部几何清脆，局部水彩边缘柔软，空白承担停顿，避免装饰性孟菲斯拼贴、随机几何堆砌或文字图标",
+      "enPrompt": "Kandinsky-inspired abstraction treats points fine lines arcs circles and irregular color planes as distinct timbres, building rhythm and tension through density direction and warm-cool relationships in an asymmetric field; some geometry stays crisp while selected watercolor edges remain soft and open space acts as silence, avoiding decorative Memphis collage random shape accumulation or textual icons",
+      "negative": [
+        "artist signature",
+        "exact copy of existing artwork",
+        "readable text"
+      ]
+    },
+    {
+      "id": "artist-matisse",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "马蒂斯式野兽派色彩",
+      "enName": "Henri Matisse",
+      "image": "/assets/parameters/artist-matisse.png",
+      "zhPrompt": "马蒂斯式野兽派语言用自由而肯定的深色轮廓围合高纯度平面综合色，室内、人物与植物通过图案相互穿透而非依赖透视体积；综合色常以朱红、群青、翠绿、粉红与黑白形成轻快对位，形体可进一步简化为剪纸般有机轮廓，避免荧光撞色、矢量完美边缘和复杂明暗塑造",
+      "enPrompt": "Matisse-inspired Fauvist language uses free decisive dark contours around saturated flat color fields, allowing interiors figures and plants to interpenetrate through pattern rather than perspective volume; vermilion ultramarine green pink and black-white create buoyant counterpoint while forms may simplify into organic cut-paper silhouettes, avoiding neon clash mathematically perfect vector edges or elaborate tonal modeling",
+      "negative": [
+        "artist signature",
+        "exact copy of existing artwork",
+        "readable text"
+      ]
+    },
+    {
+      "id": "artist-modigliani",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "莫迪里阿尼式长颈肖像",
+      "enName": "Amedeo Modigliani",
+      "image": "/assets/parameters/artist-modigliani.png",
+      "zhPrompt": "莫迪里阿尼式肖像把头颈与躯干纵向拉长，以轻微倾斜的椭圆脸、细长鼻梁、杏仁形眼和不对称肩线形成安静距离感；背景和衣着由赭石、灰蓝、砖红与暗绿的大色面构成，轮廓柔韧但清楚，避免Q版夸张、时尚插画磨皮和真实解剖纠正",
+      "enPrompt": "Modigliani-inspired portrait language elongates head neck and torso, using a gently tilted oval face long narrow nose almond eyes and asymmetric shoulders to create quiet emotional distance; background and clothing form broad ochre gray-blue brick-red and dark-green planes under supple clear contours, avoiding chibi exaggeration fashion-illustration smoothing or correction toward realistic anatomy",
+      "negative": [
+        "artist signature",
+        "exact copy of existing artwork",
+        "readable text"
+      ]
+    },
+    {
+      "id": "artist-chagall",
+      "category": "artist-style",
+      "styleGroup": "surreal-symbolic",
+      "zhName": "夏加尔式诗意漂浮",
+      "enName": "Marc Chagall",
+      "image": "/assets/parameters/artist-chagall.png",
+      "zhPrompt": "夏加尔式诗意空间让人物、动物、乐器和村庄以记忆逻辑悬浮、倒置或相互穿透，尺度随情感改变而不服从重力；透明蓝绿、紫红、乳白与局部暖综合色像彩窗般叠映，轮廓柔软且梦境连贯，避免太空失重写实、随机物件拼贴或恐怖超现实",
+      "enPrompt": "Chagall-inspired poetic space lets figures animals instruments and village forms float invert or interpenetrate according to memory, with scale changing for emotion rather than gravity; transparent blue-green violet-red milky white and warm accents overlap like stained light under soft connected contours, avoiding realistic outer-space weightlessness random object collage or horror surrealism",
+      "negative": [
+        "artist signature",
+        "exact copy of existing artwork",
+        "readable text"
+      ]
+    },
+    {
+      "id": "artist-hokusai",
+      "category": "artist-style",
+      "styleGroup": "east-asian",
+      "zhName": "葛饰北斋式浮世绘",
+      "enName": "Katsushika Hokusai",
+      "image": "/assets/parameters/artist-hokusai.png",
+      "zhPrompt": "北斋式木版视觉以富有弹性的深色轮廓组织波浪、山体、人物和风势，重复弧线与泡沫爪形建立强烈运动，远近通过综合色层与尺度递减而非空气透视；普鲁士蓝、靛青、米白和赭色平涂并保留木纹与套色偏移，避免数字海浪滤镜、摄影喷溅或复制既有名作构图",
+      "enPrompt": "Hokusai-inspired woodblock language uses elastic dark contours to organize waves mountains figures and wind, with repeated arcs and claw-like foam creating force while distance comes from layered flat color and scale reduction rather than atmospheric blur; Prussian blue indigo paper white and ochre retain wood grain and registration drift, avoiding digital wave filters photographic splashes or replication of an existing famous composition",
+      "negative": [
+        "artist signature",
+        "exact copy of existing artwork",
+        "readable text"
+      ]
+    },
+    {
+      "id": "artist-diego-rivera",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "里维拉式壁画叙事",
+      "enName": "Diego Rivera",
+      "image": "/assets/parameters/artist-diego-rivera.png",
+      "zhPrompt": "里维拉式公共壁画叙事以稳重大块人物、明确手势和连续空间组织劳动、技术与群体生活，前后事件像历史长卷般相接；综合色以土红、玉米黄、矿绿、蓝灰和深褐构成，湿壁画表面哑光坚实，人物具有雕塑重量，避免宣传口号、英雄光环、个人品牌符号或摄影写实",
+      "enPrompt": "Diego Rivera-inspired public mural narrative organizes labor technology and collective life through weighty broad figures explicit gestures and continuous space where episodes connect like a historical frieze; earth red maize yellow mineral green blue-gray and deep brown sit in a solid matte fresco surface with sculptural figure mass, avoiding slogans heroic halos personal symbols or photographic realism",
+      "negative": [
+        "artist signature",
+        "exact copy of existing artwork",
+        "readable text"
+      ]
+    },
+    {
+      "id": "artist-mezzotint",
+      "category": "artist-style",
+      "styleGroup": "poster-print",
+      "zhName": "美柔汀暗调版画",
+      "enName": "Mezzotint",
+      "image": "/assets/parameters/artist-mezzotint.png",
+      "zhPrompt": "美柔汀版画从整块摇点形成的深黑底中逐步刮磨出亮部，综合色过渡像天鹅绒般连续，烛光、面部和金属高光从暗场缓慢浮现；纸面压痕、铜版颗粒与边缘墨迹清楚，黑位深而不堵塞，避免照片灰度滤镜、炭笔涂抹或数字柔焦",
+      "enPrompt": "mezzotint print built by scraping and burnishing light back out of a fully rocked dark plate, producing velvety continuous tonal transitions as candlelight faces and metal highlights emerge slowly from the field; retain plate grain paper embossing and ink at the edges with deep open blacks, avoiding monochrome photo filters charcoal smudging or digital soft focus",
+      "negative": [
+        "artist signature",
+        "exact copy of existing artwork",
+        "readable text"
+      ]
+    },
+    {
+      "id": "artist-lithograph-stone",
+      "category": "artist-style",
+      "styleGroup": "poster-print",
+      "zhName": "石版画",
+      "enName": "Stone Lithograph",
+      "image": "/assets/parameters/artist-lithograph-stone.png",
+      "zhPrompt": "石版画以油性蜡笔、墨液和刮擦在石面形成从颗粒线到浓黑洗墨的多种痕迹，印到纸上后保留蜡笔砂目、墨色边缘和压力不均；多色版本由少量独立版层叠并带轻微套色偏差，纸张吸墨温润，避免普通铅笔素描、喷墨复古滤镜或完全一致的数字颗粒",
+      "enPrompt": "stone lithograph language ranges from greasy crayon grain through tusche washes and scraped marks on the plate, preserving sandy line texture ink edges and uneven pressure when transferred to paper; color versions use a few separate stones with subtle registration drift and warm absorbent stock, avoiding ordinary pencil drawing inkjet retro filters or perfectly uniform procedural grain",
+      "negative": [
+        "artist signature",
+        "exact copy of existing artwork",
+        "readable text"
+      ]
+    },
+    {
+      "id": "artist-sumi-e-minimal",
+      "category": "artist-style",
+      "styleGroup": "east-asian",
+      "zhName": "禅意水墨一笔画",
+      "enName": "Minimal Sumi-e",
+      "image": "/assets/parameters/artist-sumi-e-minimal.png",
+      "zhPrompt": "禅意水墨一笔画以极少数不可反复修补的毛笔动作抓住主体气韵，同一笔内同时出现焦浓淡清、按提粗细和飞白断续；构图依赖大片未画宣纸与偏置重心，湿墨只在关键处自然渗化，避免均匀灰度滤镜、工整描边、密集题字或把水墨等同于黑白照片",
+      "enPrompt": "minimal sumi-e language captures the subject's living gesture through very few irreversible brush actions, each stroke carrying dark-to-pale ink, pressure changes and dry flying-white breaks; composition depends on vast untouched xuan paper and an offset center of gravity with wet diffusion only at key points, avoiding uniform grayscale filters tidy outlining dense calligraphy or monochrome photography disguised as ink",
+      "negative": [
+        "artist signature",
+        "exact copy of existing artwork",
+        "readable text"
+      ]
+    },
+    {
+      "id": "style-warm-fantasy-animation",
+      "category": "style",
+      "styleGroup": "anime",
+      "zhName": "温暖奇幻手绘动画",
+      "enName": "Warm Fantasy Animation",
+      "image": "/assets/parameters/style-warm-fantasy-animation.jpg",
+      "zhPrompt": "温暖奇幻手绘动画以清楚手绘轮廓、分层赛璐璐阴影和水粉般自然背景构成可信童话世界，角色动作轻盈且表情克制，树木、云与建筑归纳成连贯大形；综合色明亮柔和，暖光穿过空气但不形成刺眼光效，避免复制版权角色、碎片化细节和塑料3D表面",
+      "enPrompt": "warm hand-drawn fantasy animation combining clear expressive contours, layered cel shadows and gouache-like natural backgrounds into a believable fairy-tale world, with light character motion restrained expressions and scenery simplified into cohesive trees clouds and architecture; keep a bright gentle palette with diffuse warm light, avoiding copyrighted character replicas fragmented microdetail or plastic 3D surfaces"
+    },
+    {
+      "id": "style-bauhaus-poster",
+      "category": "style",
+      "styleGroup": "design-retro",
+      "zhName": "包豪斯海报",
+      "enName": "Bauhaus Poster",
+      "image": "/assets/parameters/style-bauhaus-poster.jpg",
+      "zhPrompt": "包豪斯海报以圆、方、三角、轴线和比例网格建立功能优先的非对称秩序，红、黄、蓝、黑与暖白作为有限综合色，通过尺度跳跃、重叠和负形形成视觉层级；纸面保持平整、边缘清脆，不生成可读文字，避免孟菲斯装饰、渐变立体和随意几何堆砌",
+      "enPrompt": "Bauhaus poster language builds functional asymmetric order from circles squares triangles axes and proportional grids, using a limited red yellow blue black and warm-white palette with scale shifts overlaps and negative space establishing hierarchy; keep the paper flat and edges crisp with no readable text, avoiding Memphis decoration gradient volume or arbitrary geometric clutter"
+    },
+    {
+      "id": "style-gouache-illustration",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "水粉插画",
+      "enName": "Gouache Illustration",
+      "image": "/assets/parameters/style-gouache-illustration.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "水粉插画以不透明颜料叠加成哑光综合色块，笔刷方向在形体内部清楚可读，边缘兼有湿润覆盖、干刷露纸和局部刮擦；综合色可直接覆盖下层但不产生油亮厚膜，纸张齿纹在薄处显现，避免水彩透明晕染、喷枪渐变和无媒介感的数字平涂",
+      "enPrompt": "gouache illustration built from opaque matte color masses whose brush direction remains legible inside forms, combining wet covering edges with dry-brush paper breaks and selective scraping; color may cover lower layers without glossy impasto while paper tooth reappears in thin areas, avoiding transparent watercolor blooms airbrushed gradients or mediumless digital flat fill",
+      "negative": [
+        "unclear medium",
+        "generic digital look",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "style-charcoal-drawing",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "炭笔素描",
+      "enName": "Charcoal Drawing",
+      "image": "/assets/parameters/style-charcoal-drawing.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "炭笔素描以侧锋铺出天鹅绒般深黑和宽灰面，再用尖端线、揉擦、纸笔与橡皮提亮建立结构；炭粉在纸纹中沉积，边缘可松散扩散但焦点处线面有力，深色不堵死且保留粉末痕迹，避免铅笔细排线、数字灰度滤镜和均匀喷雾阴影",
+      "enPrompt": "charcoal drawing laying velvety blacks and broad gray masses with the side of the stick, then defining structure through pointed marks blending stumps lifted eraser light and selective sharp accents; charcoal dust settles into paper tooth with loose edges yet forceful focal planes and open dark values, avoiding fine graphite hatching digital grayscale filters or uniformly sprayed shading",
+      "negative": [
+        "unclear medium",
+        "generic digital look",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "style-acrylic-painting",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "丙烯画",
+      "enName": "Acrylic Painting",
+      "image": "/assets/parameters/style-acrylic-painting.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "丙烯画以快速干燥的不透明综合色层、清楚覆盖边缘和可叠加的干刷笔触塑造形体，局部使用刮刀厚涂、透明媒介薄罩或底层颜色露边；综合色保持明快稳定，画布纹理与聚合物膜只在合适角度可见，避免油画缓慢湿混、水彩渗化或塑料般统一高光",
+      "enPrompt": "acrylic painting using fast-drying opaque color layers crisp covering edges and stackable dry-brush marks, with selective palette-knife body transparent-medium glaze or undercolor peeking at boundaries; color stays bright and stable while canvas tooth and polymer film appear only where appropriate, avoiding slow oil wet-blending watercolor diffusion or uniformly plastic highlights",
+      "negative": [
+        "unclear medium",
+        "generic digital look",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "style-soft-pastel",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "粉彩画",
+      "enName": "Soft Pastel Drawing",
+      "image": "/assets/parameters/style-soft-pastel.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "粉彩画让松软颜料棒在有齿纸面留下天鹅绒般粉末综合色，叠色区可轻柔擦融，轮廓处则保留断裂短划、侧锋宽痕和纸白颗粒；亮部通过浅色粉层叠加而非发光，高浓区域可见粉尘与固定剂变化，避免油画棒蜡质、喷枪柔焦和完全抹平的数字渐变",
+      "enPrompt": "soft pastel drawing depositing velvety powder color into toothed paper, allowing selected layers to blend gently while contours retain broken short strokes broad side marks and exposed paper grain; highlights arise from pale pigment layering rather than glow and dense areas reveal dust plus fixative shifts, avoiding waxy oil-pastel texture airbrush blur or completely smoothed digital gradients",
+      "negative": [
+        "unclear medium",
+        "generic digital look",
+        "readable text",
+        "watermark"
+      ]
+    }
+  ]
+}

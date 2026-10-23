@@ -1,0 +1,241 @@
+{
+  "parameters": [
+    {
+      "id": "camera-macro",
+      "category": "camera",
+      "styleGroup": "focal-length",
+      "zhName": "微距镜头",
+      "enName": "Macro Lens",
+      "image": "/assets/parameters/camera-macro.jpg",
+      "zhPrompt": "微距镜头以接近一比一的放大率呈现微小主体，焦点精确落在关键纹理或眼部，景深极浅并沿真实焦平面渐进衰减；控制工作距离、反光与背景散景，避免整幅同时锐利、无尺度参照、数字裁切伪微距或主体边缘抠图化",
+      "enPrompt": "macro-lens view approaching life-size reproduction of a small subject, with focus precisely placed on the key texture or eye and extremely shallow depth falling gradually along a real focus plane; control working distance reflection and background bokeh, avoiding edge-to-edge sharpness no scale cue a digitally cropped pseudo-macro or cutout-looking subject edges"
+    },
+    {
+      "id": "clothing-long-sleeve",
+      "category": "clothing",
+      "styleGroup": "tops-sleeves",
+      "zhName": "长袖上衣",
+      "enName": "Long Sleeve Top",
+      "image": "/assets/parameters/clothing-long-sleeve.png",
+      "zhPrompt": "长袖上衣的袖山、肩缝、肘部和袖口结构完整，袖长覆盖至手腕附近，手臂弯曲时褶皱沿肘窝和受力方向聚集；面料厚薄影响垂坠与轮廓，避免袖子与手臂粘连、袖口消失、左右长度矛盾或误生成短袖",
+      "enPrompt": "long-sleeve top with complete sleeve cap shoulder seam elbow shaping and cuff, extending naturally to the wrist and gathering folds along the inner elbow and force direction when the arm bends; fabric weight controls drape and silhouette, avoiding sleeves fused to arms missing cuffs contradictory lengths or accidental short sleeves",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-camisole",
+      "category": "clothing",
+      "styleGroup": "tops-sleeves",
+      "zhName": "吊带上衣",
+      "enName": "Camisole",
+      "image": "/assets/parameters/clothing-camisole.png",
+      "zhPrompt": "吊带上衣由两条有固定点和合理宽度的肩带支撑，领口、胸省或弹性结构解释贴合方式，衣身与腰线随动作自然垂落；肩带不能悬空或穿过头发，避免左右连接点错位、领口贴图化、腋下穿模或误生成无袖背心",
+      "enPrompt": "camisole supported by two straps with believable width and attachment points, with neckline darts or elastic structure explaining the fit and the body falling naturally around waist movement; straps must not float or pass through hair, avoiding mismatched anchors a texture-only neckline underarm intersections or conversion into a broad-shouldered tank top",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-straight-pants",
+      "category": "clothing",
+      "styleGroup": "pants",
+      "zhName": "直筒裤",
+      "enName": "Straight Pants",
+      "image": "/assets/parameters/clothing-straight-pants.png",
+      "zhPrompt": "直筒裤从臀部到裤脚保持近似稳定的裤管宽度，腰头、门襟、侧缝和裤线结构清楚，坐立行走时褶皱集中在胯部、膝部与脚背；布料垂坠符合材质重量，避免裤腿忽宽忽窄、两腿粘连、裤脚穿鞋或误生成紧身裤",
+      "enPrompt": "straight-leg trousers maintaining a nearly consistent width from hip to hem, with readable waistband fly side seams and crease lines and folds concentrating naturally at the crotch knees and shoe break during movement; drape follows fabric weight, avoiding legs that randomly taper or flare fused trouser tubes hems intersecting shoes or accidental skinny pants",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-shorts",
+      "category": "clothing",
+      "styleGroup": "pants",
+      "zhName": "短裤",
+      "enName": "Shorts",
+      "image": "/assets/parameters/clothing-shorts.png",
+      "zhPrompt": "短裤清楚呈现腰头、裆部、左右裤管和裤脚厚度，长度与版型一致，坐下或抬腿时布料在胯部形成合理拉伸与褶皱；保持腿部遮挡关系和口袋位置，避免左右裤管融合、裆线缺失、裤脚穿透大腿或误生成短裙",
+      "enPrompt": "shorts with readable waistband crotch construction two separate legs and hem thickness, consistent length and cut, and plausible tension and folds at the hips when sitting or lifting a leg; preserve leg occlusion and pocket placement, avoiding fused openings a missing crotch seam hems intersecting thighs or conversion into a short skirt",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-leather-pants",
+      "category": "clothing",
+      "styleGroup": "pants",
+      "zhName": "皮裤",
+      "enName": "Leather Pants",
+      "image": "/assets/parameters/clothing-leather-pants.png",
+      "zhPrompt": "皮裤以裁片、侧缝、腰头和膝部活动量构成真实版型，皮革在拉伸区呈连续高光、弯折处形成细密皱纹，厚度和摩擦感可见；控制反射方向并保留腿部结构，避免乳胶般镜面、塑料贴膜、无裆部结构或褶皱随机覆盖",
+      "enPrompt": "leather trousers built from believable panels side seams waistband and knee articulation, with smoother highlights across stretched zones and fine creasing at bends plus visible thickness and friction; control reflection direction while preserving leg structure, avoiding latex mirror shine plastic wrap a missing crotch construction or random wrinkles covering every surface",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-pencil-skirt",
+      "category": "clothing",
+      "styleGroup": "skirts-dresses",
+      "zhName": "铅笔裙",
+      "enName": "Pencil Skirt",
+      "image": "/assets/parameters/clothing-pencil-skirt.png",
+      "zhPrompt": "铅笔裙从腰胯贴合后沿大腿收窄至膝部附近，腰省、侧缝和后开衩或活动褶保证行走空间，坐姿时前摆产生合理横向张力；轮廓利落但不束缚人体结构，避免裙摆粘腿、双腿融合、开衩位置错误或误生成鱼尾裙",
+      "enPrompt": "pencil skirt fitted through waist and hips then narrowing along the thighs toward the knee, with darts side seams and a back vent or movement pleat allowing walking and plausible horizontal tension when seated; keep a clean silhouette without erasing anatomy, avoiding fabric glued to legs fused limbs misplaced vents or conversion into a mermaid skirt",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-shirt-tie-set",
+      "category": "clothing",
+      "styleGroup": "formal-uniform",
+      "zhName": "衬衫领带套装",
+      "enName": "Shirt and Tie",
+      "image": "/assets/parameters/clothing-shirt-tie-set.png",
+      "zhPrompt": "衬衫领带套装包含结构正确的领座、翻领、门襟、袖口与领带结，领带沿胸前中线自然垂落并与领口尺寸匹配；布料褶皱服从肩臂动作，保持正式整洁但不过分僵硬，避免领带穿透领子、结位偏移、扣子错位或袖口消失",
+      "enPrompt": "formal shirt-and-tie set with correctly built collar stand points placket cuffs and knot, the tie falling along the chest centerline at a scale matching the collar; fabric folds respond to shoulder and arm movement while remaining neat but not rigid, avoiding a tie intersecting the collar displaced knots misaligned buttons or missing cuffs",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "scene-desert-dunes",
+      "category": "scene",
+      "styleGroup": "nature",
+      "zhName": "沙漠沙丘",
+      "enName": "Desert Dunes",
+      "image": "/assets/parameters/scene-desert-dunes.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "沙漠沙丘由主风向塑造连续迎风坡、锐利沙脊和较陡背风坡，前中远景通过尺度、空气透视与色温变化展开，少量足迹或植被提供尺度；光线强调细沙纹而不过锐，避免每座沙丘形状相同、海浪质感、随机岩石堆或无依据绿洲",
+      "enPrompt": "desert dunes shaped by one prevailing wind into continuous windward slopes sharp crests and steeper slip faces, with foreground middle distance and horizon separated by scale atmospheric perspective and temperature shifts plus sparse tracks or vegetation for scale; reveal fine sand ripples without oversharpening, avoiding identical dunes ocean-wave texture random rock piles or an unmotivated oasis"
+    },
+    {
+      "id": "scene-river-valley",
+      "category": "scene",
+      "styleGroup": "nature",
+      "zhName": "河谷",
+      "enName": "River Valley",
+      "image": "/assets/parameters/scene-river-valley.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "河谷场景让河道沿地势最低处蜿蜒，阶地、冲积岸线与两侧山坡共同指向纵深，水面反射受天空、流速和岸边遮挡控制；植被密度随水源变化并提供尺度，避免河流爬坡、两岸镜像对称、水面像玻璃贴片或山谷没有出口",
+      "enPrompt": "river valley with the channel winding along the lowest terrain, terraces alluvial banks and flanking slopes guiding depth, while reflections respond to sky current and bank occlusion; vegetation density changes with access to water and supplies scale, avoiding a river flowing uphill mirrored banks a glass-sheet surface or a valley with no geographic outlet"
+    },
+    {
+      "id": "scene-grassland",
+      "category": "scene",
+      "styleGroup": "nature",
+      "zhName": "草原",
+      "enName": "Grassland",
+      "image": "/assets/parameters/scene-grassland.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "草原场景以连续地形起伏、不同高度草层和远处低矮地平线表现开阔尺度，风向通过草浪和云影统一可见，近景保留少量花草与土壤细节；色彩随距离降低饱和度，避免均匀绿色地毯、重复草贴图、森林密度或缺乏落脚面的漂浮人物",
+      "enPrompt": "grassland scene conveying open scale through rolling terrain layered grasses of varied height and a low distant horizon, with one wind direction visible in grass waves and cloud shadows and limited flowers and soil detail in the foreground; reduce saturation with distance, avoiding a uniform green carpet tiled grass texture forest density or figures floating without grounded contact"
+    },
+    {
+      "id": "scene-spring-rain",
+      "category": "scene",
+      "styleGroup": "weather",
+      "zhName": "春日细雨",
+      "enName": "Spring Rain",
+      "image": "/assets/parameters/scene-spring-rain.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "春日细雨由细密短雨丝、湿润空气和新生植被上的水珠表现，雨量轻且方向统一，地面只形成浅薄反光与零散小水洼；柔和阴天光保留嫩绿、花色与肤色，避免暴雨瀑布、夸张闪电、整幅蓝灰滤镜或地面完全干燥",
+      "enPrompt": "gentle spring rain shown through fine short streaks moist air and droplets on new foliage, with light volume and one coherent direction plus thin pavement sheen and scattered shallow puddles; soft overcast light preserves fresh greens blossoms and skin, avoiding torrential curtains dramatic lightning a uniform blue-gray filter or completely dry ground"
+    },
+    {
+      "id": "scene-monsoon-jungle",
+      "category": "scene",
+      "styleGroup": "weather",
+      "zhName": "季风雨林",
+      "enName": "Monsoon Jungle",
+      "image": "/assets/parameters/scene-monsoon-jungle.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "季风雨林具有多层阔叶植被、藤蔓、湿润树干和被雨雾削弱的远景，降雨在叶面形成水珠、滴流与深浅不同的湿痕，林下光线柔暗但仍有空间通道；避免热带植物随机堆满、统一绿色滤镜、无来源体积光或地面干燥无积水",
+      "enPrompt": "monsoon jungle with layered broadleaf canopy vines wet trunks and distance softened by rain haze, rainfall producing droplets runoff and varied wet marks across leaves while the forest floor remains dim yet spatially navigable; avoid random tropical foliage filling every gap a uniform green filter source-free god rays or a dry ground with no pooled water"
+    },
+    {
+      "id": "scene-starry-clear-night",
+      "category": "scene",
+      "styleGroup": "weather",
+      "zhName": "晴朗星夜",
+      "enName": "Starry Clear Night",
+      "image": "/assets/parameters/scene-starry-clear-night.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "晴朗星夜具有低湿度透明天空、由地平线到天顶逐渐加深的夜色和符合曝光的星点密度，月光或微弱环境光只勾勒地景轮廓；星座分布自然且远离城市强光，避免满天等大白点、银河与月亮同时过曝、白昼地景或梦幻粒子替代真实星空",
+      "enPrompt": "clear starry night with low-humidity transparency a sky that deepens from horizon to zenith and star density appropriate to exposure, while moonlight or faint ambient light only outlines the landscape; keep stellar distribution natural and away from strong city glow, avoiding equal-sized white dots everywhere an overexposed moon and Milky Way daylight terrain or fantasy particles standing in for stars"
+    },
+    {
+      "id": "camera-birds-eye",
+      "category": "camera",
+      "styleGroup": "angle",
+      "zhName": "鸟瞰俯拍",
+      "enName": "Bird's-Eye View",
+      "image": "/assets/parameters/camera-birds-eye.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "鸟瞰俯拍从主体正上方或高空近垂直向下观察，地面成为主要构图平面，道路、屋顶、人群和影子按真实尺度组织图案；透视压缩但高度关系仍可辨，避免把普通高机位误作垂直鸟瞰、建筑侧面同时完整可见或人物方向混乱",
+      "enPrompt": "bird's-eye overhead view looking nearly straight down from above so the ground becomes the primary compositional plane and roads roofs crowds and shadows form patterns at believable scale; perspective is compressed but height relationships remain readable, avoiding a merely high oblique angle full facades visible at once or people with contradictory orientations"
+    },
+    {
+      "id": "camera-tracking-motion",
+      "category": "camera",
+      "styleGroup": "motion",
+      "zhName": "跟拍动感",
+      "enName": "Tracking Motion",
+      "image": "/assets/parameters/camera-tracking-motion.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "跟拍动感让镜头与移动主体保持近似同步，主体关键部位相对清晰，背景沿运动反方向形成连续方向性拖影，前景掠过可加强速度；快门效果与步态或载具速度一致，避免主体整体糊掉、拖影方向冲突、静止姿势配高速背景或数字径向模糊",
+      "enPrompt": "tracking-motion shot with the camera moving approximately alongside the subject so key body or vehicle features stay relatively sharp while the background streaks continuously opposite the travel direction and passing foreground may strengthen speed; shutter behavior matches gait or vehicle velocity, avoiding a fully blurred subject conflicting streak directions a static pose against a racing background or generic radial blur"
+    },
+    {
+      "id": "camera-golden-spiral",
+      "category": "camera",
+      "styleGroup": "composition-rule",
+      "zhName": "黄金螺旋构图",
+      "enName": "Golden Spiral",
+      "image": "/assets/parameters/camera-golden-spiral.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "黄金螺旋构图让主体焦点落在螺旋收束区，环境轮廓、道路、肢体或光线沿渐进弧线引导视线由大到小进入核心；元素密度随曲线收紧且边缘留有呼吸空间，避免机械绘制可见螺旋、所有物体排成圆圈或焦点落在无关空白",
+      "enPrompt": "golden-spiral composition placing the focal subject near the spiral's convergence while environmental contours roads limbs or light guide the eye through a progressively tightening curve from broad field to detail; density increases toward the focus with breathing room at edges, avoiding a visibly drawn spiral every object arranged in a circle or convergence on irrelevant empty space"
+    },
+    {
+      "id": "camera-radial-composition",
+      "category": "camera",
+      "styleGroup": "composition-rule",
+      "zhName": "放射构图",
+      "enName": "Radial Composition",
+      "image": "/assets/parameters/camera-radial-composition.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "放射构图以一个明确核心为起点，让建筑线、物体排列、光束或动作方向向外扩散或向内汇聚，形成强烈聚焦与节奏；放射线来源必须属于场景并保持透视一致，避免无意义装饰射线、多个竞争中心、边缘过密或中心被主体遮死",
+      "enPrompt": "radial composition organized around one explicit center with architecture object placement light or action expanding outward or converging inward to create focus and rhythm; radiating directions must arise from the scene and obey one perspective, avoiding decorative rays with no source multiple competing centers overcrowded edges or a center completely blocked by the subject"
+    },
+    {
+      "id": "scene-underground-station",
+      "category": "scene",
+      "styleGroup": "city",
+      "zhName": "地下车站",
+      "enName": "Underground Station",
+      "image": "/assets/parameters/scene-underground-station.png?v=20260827-character-crop-fix",
+      "zhPrompt": "地下车站场景以站台边缘、轨道、顶棚结构、立柱和连续导向灯建立深度，消失点与列车运行方向一致，人物尺度服从真实站台宽度；材质包含磨损地面、金属与玻璃反射，避免轨道穿过站台、无出口封闭空间、乱码标牌或结构比例失真",
+      "enPrompt": "underground station scene using platform edge tracks ceiling systems columns and repeated wayfinding lights to establish depth, with vanishing point aligned to train direction and people scaled to a believable platform width; include worn flooring metal and glass response, avoiding tracks crossing the platform sealed spaces with no exits gibberish signage or impossible structural proportions",
+      "negative": []
+    },
+    {
+      "id": "camera-profile-view",
+      "category": "camera",
+      "styleGroup": "camera-angle",
+      "zhName": "侧面视角",
+      "enName": "Profile View",
+      "image": "/assets/parameters/camera-profile-view.png?v=20260827-character-crop-fix",
+      "zhPrompt": "侧面视角让主体主要结构与镜头光轴近似垂直，人物鼻梁、唇线、下颌与耳部形成清楚单侧轮廓，身体朝向和视线保持一致；保留少量空间深度而非完全扁平，避免同时出现两只正面眼睛、面部扭转、肩膀正对镜头或剪影失去关键特征",
+      "enPrompt": "profile view placing the subject's primary plane nearly perpendicular to the optical axis, with a readable single-side contour of nose lips jaw and ear and consistent body and gaze direction; retain some spatial depth rather than flattening completely, avoiding two frontal eyes a twisted face shoulders square to camera or a silhouette losing identifying features",
+      "negative": []
+    }
+  ]
+}

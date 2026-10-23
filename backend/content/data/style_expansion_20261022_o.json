@@ -1,0 +1,644 @@
+{
+  "parameters": [
+    {
+      "id": "artist-victorian-crosshatch-cartoon",
+      "category": "artist-style",
+      "styleGroup": "comic-sequential",
+      "zhName": "维多利亚哥特排线漫画",
+      "enName": "Victorian Crosshatched Gothic Cartoon",
+      "image": "/assets/parameters/artist-victorian-crosshatch-cartoon.jpg?v=20261022-style-expansion-o",
+      "zhPrompt": "维多利亚哥特排线漫画以精细黑色钢笔轮廓和方向严谨的交叉排线塑造苍白人物、旧家具与幽暗室内，人物姿态端正却略显不安；综合色只保留墨黑、纸本灰和少量褐色，阴影密集但轮廓仍清楚，幽默来自冷静表情与诡异日常的反差，避免血腥、现代动漫五官或普通恐怖照片滤镜",
+      "enPrompt": "Victorian gothic cartoon language built from fine black-pen contours and disciplined directional crosshatching across pale figures worn furniture and dim interiors, with formal yet subtly uneasy posture; keep an ink-black paper-gray and restrained brown range, dense shadow that never loses the silhouette, and deadpan humor arising from strange ordinary situations, avoiding gore modern anime faces or a generic horror-photo filter",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-frenetic-scratch-ink-caricature",
+      "category": "artist-style",
+      "styleGroup": "editorial-graphic",
+      "zhName": "狂躁刮线讽刺画",
+      "enName": "Frenetic Scratch-Ink Caricature",
+      "image": "/assets/parameters/artist-frenetic-scratch-ink-caricature.jpg?v=20261022-style-expansion-o",
+      "zhPrompt": "狂躁刮线讽刺画用断裂、尖锐、反复回扫的钢笔线塑造细长失衡的人物，头发、衣摆与四肢沿动作方向爆开，局部墨团和飞白只集中于受力点；纸面保留大量空白，线条越出轮廓却不掩盖动作重心，形成神经质速度与尖锐幽默，避免圆润卡通描边、整齐排线或数字运动模糊",
+      "enPrompt": "frenetic scratch-ink caricature using broken spiky repeatedly swept pen marks to construct elongated off-balance figures, with hair garments and limbs exploding along the force direction and dark ink knots concentrated only at stress points; preserve broad white paper, let strokes escape the contour without obscuring the center of gravity, and create nervous speed with cutting humor, avoiding rounded cartoon outlines orderly hatching or digital motion blur",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-raw-zine-diary-cartoon",
+      "category": "artist-style",
+      "styleGroup": "comic-sequential",
+      "zhName": "低保真 Zine 日记漫画",
+      "enName": "Raw Zine Diary Cartoon",
+      "image": "/assets/parameters/artist-raw-zine-diary-cartoon.jpg?v=20261022-style-expansion-o",
+      "zhPrompt": "低保真 Zine 日记漫画以粗糙黑笔、复印机压黑、胶带或纸片接缝和不均匀网点记录直接情绪，人物比例随心理状态轻微变形，背景只保留生活线索；套印、折痕与边缘缺墨真实可见，但主体眼神和动作仍能读懂，整体像手工装订的私人小刊，避免精修线稿、商业拼贴模板或可读长文字",
+      "enPrompt": "raw low-fidelity zine diary cartoon combining rough black pen, crushed photocopy blacks, taped paper seams and uneven halftone to record immediate emotion, with proportions subtly distorted by the character's mental state and only essential domestic clues behind them; retain misregistration folds and missing ink while keeping gaze and gesture legible, like a hand-bound personal booklet rather than polished line art a commercial collage template or long readable copy",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-geometric-literary-deadpan",
+      "category": "artist-style",
+      "styleGroup": "editorial-graphic",
+      "zhName": "几何文学冷面插画",
+      "enName": "Geometric Literary Deadpan",
+      "image": "/assets/parameters/artist-geometric-literary-deadpan.jpg?v=20261022-style-expansion-o",
+      "zhPrompt": "几何文学冷面插画把极小人物置于巨大拱门、阶梯或网格空间中，人物由矩形躯干、短线四肢和几乎无表情的面孔构成，空间比例本身承担幽默与隐喻；综合色限制为炭黑、奶油、暗红和一项灰色，边缘精确、阴影扁平、留白充足，避免企业信息图、宏大写实建筑或堆叠装饰",
+      "enPrompt": "geometric literary deadpan illustration placing a very small figure inside oversized arches stairs or grid-like space, with a rectangular torso short linear limbs and nearly expressionless face while scale itself carries the humor and metaphor; restrict color to charcoal cream muted red and one gray, using precise edges flat shadows and abundant open field, avoiding corporate infographics monumental photoreal architecture or decorative clutter",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-one-panel-absurd-cartoon",
+      "category": "artist-style",
+      "styleGroup": "comic-sequential",
+      "zhName": "单格荒诞社会漫画",
+      "enName": "One-Panel Absurd Social Cartoon",
+      "image": "/assets/parameters/artist-one-panel-absurd-cartoon.jpg?v=20261022-style-expansion-o",
+      "zhPrompt": "单格荒诞社会漫画在一个完整场景中让普通人物、动物或日常物件形成一本正经却违反常理的关系，笑点依赖位置、视线和动作而不是文字说明；使用节省的钢笔轮廓、少量灰绿或赭色淡彩和清楚空间层次，表情克制且道具可辨，避免连环分镜、夸张网络表情或无焦点的随机怪诞",
+      "enPrompt": "one-panel absurd social cartoon staging an ordinary person animal or household object in a calmly impossible relationship, with the joke carried by placement gaze and action rather than explanatory words; use economical pen contours restrained gray-green or ochre wash and clear spatial staging, keeping expressions deadpan and props readable while avoiding sequential panels explosive webcomic faces or unfocused randomness",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-underground-crosshatched-comic",
+      "category": "artist-style",
+      "styleGroup": "comic-sequential",
+      "zhName": "地下漫画粗排线",
+      "enName": "Underground Crosshatched Comic",
+      "image": "/assets/parameters/artist-underground-crosshatched-comic.jpg?v=20261022-style-expansion-o",
+      "zhPrompt": "地下漫画粗排线以沉重外轮廓、密集交叉排线和不加修饰的夸张人体表现城市生活与反主流情绪，皮肤、旧衣和杂乱室内都由手工线密度塑造；廉价新闻纸泛黄、墨压不匀和局部套色偏移保留出版触感，人物可怪诞但结构可信，避免精致超级英雄肌肉、亮丽渐变或复制具体漫画角色",
+      "enPrompt": "underground-comic language using heavy outer contours dense crosshatching and unapologetically exaggerated yet structurally credible bodies to depict urban life and countercultural tension, with skin worn clothing and clutter modeled by handmade line density; retain yellowed newsprint uneven ink pressure and slight color misregistration, avoiding polished superhero anatomy glossy gradients or replication of an existing comic character",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-wimmelbook-story-scene",
+      "category": "artist-style",
+      "styleGroup": "childrens-picturebook",
+      "zhName": "密集找物绘本",
+      "enName": "Bustling Wimmelbook Story Scene",
+      "image": "/assets/parameters/artist-wimmelbook-story-scene.jpg?v=20261022-style-expansion-o",
+      "zhPrompt": "密集找物绘本用一个连续的城镇、车站或室内剖面容纳大量小人物与同步发生的微型事件，每组动作都清楚完整，并通过道路、楼梯与视线形成可追踪路线；细钢笔轮廓配透明淡彩，综合色丰富但按区域归纳，远近不依赖虚化，避免重复克隆人物、无逻辑拥挤或让单一主角占满画面",
+      "enPrompt": "bustling wimmelbook scene fitting many tiny characters and simultaneous micro-stories into one continuous town station or cutaway interior, with each action complete and routes traceable through roads stairs and gaze; use fine pen contours with transparent wash, organize a rich palette by zone and keep every depth plane readable without blur, avoiding cloned figures chaotic crowding or one oversized protagonist",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-crosshatched-monster-storybook",
+      "category": "artist-style",
+      "styleGroup": "childrens-picturebook",
+      "zhName": "细排线怪物绘本",
+      "enName": "Crosshatched Monster Storybook",
+      "image": "/assets/parameters/artist-crosshatched-monster-storybook.jpg?v=20261022-style-expansion-o",
+      "zhPrompt": "细排线怪物绘本以柔软毛团、角、爪和不对称五官组合原创怪物，再用细密弧形排线表现毛流、体积与亲切触感；旧书综合色偏赭黄、橄榄和烟蓝，人物与怪物之间保持可信尺度和温柔互动，背景细节克制，避免恐怖血腥、塑料 3D 毛发或通用萌宠大眼",
+      "enPrompt": "crosshatched monster picture-book language combining fur masses horns claws and asymmetric features into an original creature, then using fine curved hatching to describe hair flow volume and tactile warmth; favor aged ochre olive and smoky blue, maintain believable scale and gentle interaction between creature and person, and keep the setting restrained, avoiding gore plastic 3D fur or generic cute-pet eyes",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-bendy-absurd-storybook",
+      "category": "artist-style",
+      "styleGroup": "childrens-picturebook",
+      "zhName": "弯曲荒诞绘本",
+      "enName": "Bendy Absurd Storybook",
+      "image": "/assets/parameters/artist-bendy-absurd-storybook.jpg?v=20261022-style-expansion-o",
+      "zhPrompt": "弯曲荒诞绘本让建筑、植物、器物和幻想生物沿连续 S 形与螺旋线弯折，真实直角被有节奏的弹性曲线替代，动作因此轻快而失重；综合色使用少量高纯度蓝、橙、黄与粉，墨线粗细变化明显，局部透明水彩露出纸面，避免复制知名角色、机械鱼眼畸变或杂乱无章的随机变形",
+      "enPrompt": "bendy absurd picture-book language making architecture plants objects and imaginary creatures flex along continuous S-curves and spirals, replacing rigid right angles with rhythmic elastic lines for buoyant weightless motion; use a limited bright blue orange yellow and pink palette, strongly varied ink weight and selective transparent watercolor that leaves paper visible, avoiding famous character imitation mechanical fisheye distortion or shapeless random warping",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-naturalist-animal-watercolor",
+      "category": "artist-style",
+      "styleGroup": "childrens-picturebook",
+      "zhName": "自然主义动物水彩绘本",
+      "enName": "Naturalist Animal Watercolor Storybook",
+      "image": "/assets/parameters/artist-naturalist-animal-watercolor.jpg?v=20261022-style-expansion-o",
+      "zhPrompt": "自然主义动物水彩绘本保留动物准确骨骼、毛色分区与物种特征，只加入一件结构简单的小衣物或生活动作形成叙事；透明水彩按湿画与干笔分层，毛缘由细笔自然散开，环境植物依据真实尺度但细节逐渐减弱，纸张保持柔和暖白，避免人脸化五官、过度服装化或照片贴图感",
+      "enPrompt": "naturalist animal watercolor storybook preserving correct skeletal structure coat pattern and species traits while adding only one simply constructed garment or everyday action for narrative; layer transparent wet washes with dry-brush accents, let fine strokes break naturally along fur edges and reduce botanical detail with distance on warm paper, avoiding humanized facial anatomy overcostuming or photographic texture pasted into a painting",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-muted-deadpan-animal-storybook",
+      "category": "artist-style",
+      "styleGroup": "childrens-picturebook",
+      "zhName": "低饱和冷面动物绘本",
+      "enName": "Muted Deadpan Animal Storybook",
+      "image": "/assets/parameters/artist-muted-deadpan-animal-storybook.jpg?v=20261022-style-expansion-o",
+      "zhPrompt": "低饱和冷面动物绘本以简化动物轮廓、半闭眼和几乎静止的姿态制造安静冷幽默，动作幅度小却关系明确；综合色限定为橄榄灰、泥褐、雾蓝与旧纸白，哑光色块中保留干刷颗粒，背景只放一个支持情节的物件或地景，避免鲜艳萌系、夸张表情包或密集装饰",
+      "enPrompt": "muted deadpan animal picture-book style using simplified silhouettes half-closed eyes and nearly motionless posture for quiet dry humor, with small gestures that still make the relationship clear; limit the palette to olive gray earth brown mist blue and aged paper white, retain dry-brush grain in matte shapes and include only one narrative prop or landscape cue, avoiding bright cute styling reaction-meme expressions or dense decoration",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-folk-line-decorative-storybook",
+      "category": "artist-style",
+      "styleGroup": "childrens-picturebook",
+      "zhName": "民俗线描装饰绘本",
+      "enName": "Folk-Line Decorative Storybook",
+      "image": "/assets/parameters/artist-folk-line-decorative-storybook.jpg?v=20261022-style-expansion-o",
+      "zhPrompt": "民俗线描装饰绘本把人物或动物置于对称但略有手工偏差的花枝、鸟兽与果实边框中，主体动作承担故事，纹样负责节奏而不吞没人物；轮廓使用细黑墨线，综合色限制为砖红、草绿、芥末与奶油纸色，局部填色不完全贴边，避免混用具体民族神圣纹样、机械镜像或纯装饰壁纸感",
+      "enPrompt": "folk-line decorative storybook placing a narrative figure or animal inside a broadly symmetrical yet handmade botanical border of branches birds and fruit, with action carrying the story while ornament supplies rhythm without swallowing the subject; use fine black ink and a limited brick red grass green mustard and cream-paper palette with slightly imperfect fills, avoiding copied sacred ethnic motifs mechanical mirroring or wallpaper-only decoration",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-stippled-map-fantasy",
+      "category": "artist-style",
+      "styleGroup": "childrens-picturebook",
+      "zhName": "点描地图幻想绘本",
+      "enName": "Stippled Map Fantasy Storybook",
+      "image": "/assets/parameters/artist-stippled-map-fantasy.jpg?v=20261022-style-expansion-o",
+      "zhPrompt": "点描地图幻想绘本以俯视岛屿、路径、水系与微缩地标构成可探索世界，山体、树林和海浪主要靠细小点群、短线和密度变化塑形；综合色以旧纸黄、海蓝、森林绿和砖红为主，路线清楚但不嵌入文字标签，边缘留出纸张呼吸区，避免卫星写实、游戏 UI 图标或随意堆满装饰",
+      "enPrompt": "stippled map-fantasy picture-book language constructing an explorable overhead world from islands routes waterways and miniature landmarks, with mountains forests and waves modeled primarily through tiny dots short marks and density shifts; use aged paper yellow sea blue forest green and brick red, keep routes clear without text labels and leave a breathing paper margin, avoiding satellite realism game-interface icons or indiscriminate decorative filling",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-philosophical-collage-chalk",
+      "category": "artist-style",
+      "styleGroup": "childrens-picturebook",
+      "zhName": "哲思拼贴粉笔绘本",
+      "enName": "Philosophical Collage-and-Chalk Storybook",
+      "image": "/assets/parameters/artist-philosophical-collage-chalk.jpg?v=20261022-style-expansion-o",
+      "zhPrompt": "哲思拼贴粉笔绘本把旧纸、半透明薄纸、铅笔、木炭和粉笔组合成一个克制的人物与象征物关系，撕边、胶痕和擦除痕迹保留真实手作层次；综合色接近米白、炭灰、土褐与一处暗金，构图留白多，隐喻通过尺度与负形产生，避免照片拼贴杂乱、儿童贴纸感或用文字直接解释",
+      "enPrompt": "philosophical collage-and-chalk storybook assembling aged paper translucent tissue pencil charcoal and chalk into one restrained relationship between a figure and symbolic object, preserving torn edges adhesive traces and erased marks as real handmade layers; keep near-white charcoal earth brown and one muted gold accent with broad negative space, letting scale and void create the metaphor, avoiding chaotic photo collage childish stickers or explanatory writing",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-ornate-gothic-gouache-storybook",
+      "category": "artist-style",
+      "styleGroup": "childrens-picturebook",
+      "zhName": "华饰哥特水粉绘本",
+      "enName": "Ornate Gothic Gouache Storybook",
+      "image": "/assets/parameters/artist-ornate-gothic-gouache-storybook.jpg?v=20261022-style-expansion-o",
+      "zhPrompt": "华饰哥特水粉绘本以细长人物、尖拱室内、深色植物与少量象征物构成舞台式叙事，哑光水粉综合色浓郁但保持轮廓分离；酒红、孔雀蓝、墨绿与旧金沿前中后景重复，烛光仅在关键面部和手势形成小面积亮点，避免照片写实、华丽元素无序堆叠或复制既有角色服装",
+      "enPrompt": "ornate gothic gouache storybook staging elongated figures within pointed-arch interiors dark botanicals and a few symbolic props, using rich matte paint while preserving clear silhouette separation; repeat wine red peacock blue deep green and aged gold through foreground middle and distance, allowing candlelight to touch only key faces and gestures, avoiding photorealism indiscriminate ornate clutter or copied character costume",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-cinematic-grain-flat-shape",
+      "category": "artist-style",
+      "styleGroup": "international-illustration",
+      "zhName": "电影颗粒平面叙事插画",
+      "enName": "Cinematic Grainy Flat-Shape Illustration",
+      "image": "/assets/parameters/artist-cinematic-grain-flat-shape.jpg?v=20261022-style-expansion-o",
+      "zhPrompt": "电影颗粒平面叙事插画以少量硬边大色块概括人物、地形与光源，前景深色剪影、中景综合色与远景高明度形成清楚景深，镜头感来自尺度和遮挡而非写实细节；细密印刷颗粒只覆盖色块内部，综合色围绕一组冷暖对照展开，避免柔滑渐变、厚重写实渲染或无目的复古噪点",
+      "enPrompt": "cinematic grainy flat-shape illustration reducing figures terrain and light into a few hard-edged masses, with dark foreground silhouette colored middle ground and high-value distance creating depth through scale and overlap rather than realistic detail; confine fine print grain inside the color shapes and build the palette around one warm-cool contrast, avoiding smooth gradients heavy photoreal rendering or purposeless retro noise",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-flat-geometric-airbrush-grain",
+      "category": "artist-style",
+      "styleGroup": "international-illustration",
+      "zhName": "几何气刷颗粒插画",
+      "enName": "Geometric Airbrush-Grain Illustration",
+      "image": "/assets/parameters/artist-flat-geometric-airbrush-grain.jpg?v=20261022-style-expansion-o",
+      "zhPrompt": "几何气刷颗粒插画用超大圆形、楔形和不对称块面重组人物，使道具直接参与身体轮廓；每个平涂形状边缘清脆，重叠处才出现短距离气刷阴影，细点颗粒主要位于深色墨层而非全画面，五官简化为小型黑色剪纸符号，避免通用企业扁平人、连续 3D 渐变或全屏噪点",
+      "enPrompt": "geometric airbrush-grain illustration rebuilding the figure from oversized circles wedges and asymmetric masses so props actively alter the body silhouette; keep each flat shape crisp, use short soft airbrushed shadows only where forms overlap, concentrate fine stipple inside darker ink areas rather than across the whole canvas, and reduce facial features to small black cut-paper marks, avoiding generic corporate vector people continuous 3D gradients or full-frame noise",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-punk-ink-editorial",
+      "category": "artist-style",
+      "styleGroup": "editorial-graphic",
+      "zhName": "朋克墨线复印社论",
+      "enName": "Punk Ink Photocopy Editorial",
+      "image": "/assets/parameters/artist-punk-ink-editorial.jpg?v=20261022-style-expansion-o",
+      "zhPrompt": "朋克墨线复印社论以急促黑刷、尖锐刮线、撕裂复印块和一个高纯度红色焦点组织人物，综合色黑白反差强且局部过曝或压黑；构图斜切、边缘粗粝，人物动作比五官更重要，保留纸张裂痕但不依赖可读文字，避免干净矢量朋克图标、彩虹涂鸦或普通黑白照片滤镜",
+      "enPrompt": "punk ink photocopy editorial built from urgent black brush marks jagged scratched lines torn copy blocks and one saturated red focal shape, with severe black-white contrast and selective blown or crushed areas; use diagonal rough-edged composition where gesture matters more than facial detail, retain paper cracks without relying on readable text, and avoid clean vector punk icons rainbow graffiti or a generic monochrome photo filter",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-toy-theatre-storybook",
+      "category": "artist-style",
+      "styleGroup": "childrens-picturebook",
+      "zhName": "纸偶剧场绘本",
+      "enName": "Toy-Theatre Storybook",
+      "image": "/assets/parameters/artist-toy-theatre-storybook.jpg?v=20261022-style-expansion-o",
+      "zhPrompt": "纸偶剧场绘本把故事压缩在浅景深的手工舞台中，前景拱门、侧翼布景、背景画片和插槽纸偶形成可见层级，角色边缘保留剪切毛边、折页与支撑片；综合色采用旧水粉和褪色金色，舞台灯投下简洁平面阴影，避免真实演员、光滑 3D 模型或把所有层粘成一张平面插画",
+      "enPrompt": "toy-theatre storybook compressing the narrative into a shallow handcrafted stage with a foreground proscenium side wings painted backdrop and slot-mounted paper figures as visibly separate planes, retaining cut fibers folds and support tabs; use aged gouache and faded gold with simple stage-light shadows, avoiding live actors polished 3D models or flattening every layer into one seamless illustration",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "artist-cutaway-explainer-storybook",
+      "category": "artist-style",
+      "styleGroup": "childrens-picturebook",
+      "zhName": "剖面科普绘本",
+      "enName": "Cutaway Explainer Storybook",
+      "image": "/assets/parameters/artist-cutaway-explainer-storybook.jpg?v=20261022-style-expansion-o",
+      "zhPrompt": "剖面科普绘本以移除一侧墙面的建筑、载具或大型物件展示内部层级，每个房间或舱室拥有清楚边界、合理结构和一个可读的小动作，楼梯、管线与通道保持连贯；综合色用彩铅轮廓配哑光水粉，细节丰富但按区域分组，不依赖文字标签，避免爆炸分解图、任意透视拼接或房间结构无法连接",
+      "enPrompt": "cutaway explainer storybook removing one wall from a building vehicle or large object to reveal internal levels, giving each room or compartment a clear boundary plausible structure and one readable small action while stairs pipes and passages remain continuous; combine colored-pencil contours with matte gouache and group rich detail by zone without text labels, avoiding exploded-view separation arbitrary perspective collage or disconnected impossible rooms",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "grading-cinestill-night",
+      "category": "color-grading",
+      "styleGroup": "film-vintage",
+      "zhName": "Cinestill夜景红晕",
+      "enName": "Cinestill Night Glow",
+      "image": "/assets/parameters/grading-cinestill-night.jpg",
+      "zhPrompt": "夜景电影胶片调色，让钨丝灯、车灯和霓虹高光沿亮暗边界形成有限红橙光晕，暗部偏青蓝但保留街道材质；中间调不染红，颗粒随曝光变化且肤色维持自然，避免把所有物体描成红边或形成数字锐化噪点",
+      "enPrompt": "night-film color grade with restrained red-orange halation blooming only around tungsten lamps headlights and neon highlight boundaries, cyan-blue shadows that retain street texture, neutral midtones, exposure-responsive grain and protected natural skin, avoiding red outlines around every object or sharpened digital noise",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-polaroid-faded",
+      "category": "color-grading",
+      "styleGroup": "film-vintage",
+      "zhName": "宝丽来褪色",
+      "enName": "Faded Polaroid",
+      "image": "/assets/parameters/grading-polaroid-faded.jpg",
+      "zhPrompt": "即时相纸褪色调色以奶油白高光、略偏青或洋红的中间调和浅灰黑位模拟老化乳剂，清晰度在边缘轻微下降而主体焦点仍可读；加入细小不均匀染料云和克制暗角，避免整张发黄、厚重漏光或把低清晰度误作失焦",
+      "enPrompt": "faded instant-print grade with creamy highlights, subtly cyan- or magenta-shifted midtones and lifted gray blacks suggesting aged emulsion, slight edge softness while the focal subject remains readable, plus small uneven dye clouds and a restrained vignette, avoiding uniform yellow cast heavy light leaks or global defocus",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-nordic-cold-film",
+      "category": "color-grading",
+      "styleGroup": "cinematic",
+      "zhName": "北欧冷电影",
+      "enName": "Nordic Cold Film",
+      "image": "/assets/parameters/grading-nordic-cold-film.jpg",
+      "zhPrompt": "北欧冷电影调色以阴天蓝灰环境光、低饱和自然色和略抬黑位建立安静空气感，白墙与雪地保持中性而不发青；肤色只轻微降温，木材和暖灯保留小面积温度对照，暗部柔和但仍有结构，避免钢蓝滤镜、死白高光或全面去饱和",
+      "enPrompt": "Nordic cold-film grade using overcast blue-gray ambient light, muted natural color and gently lifted blacks for quiet atmosphere while white walls and snow stay neutral; cool skin only slightly, preserve small warm counterpoints in wood and practical lamps, and keep soft shadow structure, avoiding a steel-blue overlay clipped whites or total desaturation",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-editorial-neutral",
+      "category": "color-grading",
+      "styleGroup": "commercial",
+      "zhName": "杂志中性高级",
+      "enName": "Editorial Neutral",
+      "image": "/assets/parameters/grading-editorial-neutral.jpg",
+      "zhPrompt": "杂志中性高级调色以准确白平衡、柔和 S 曲线和低饱和灰米环境建立克制层次，肤色、黑发和白衣保持真实综合色；局部对比集中于眼神、衣料与轮廓，背景层次细腻但不抢主体，避免通篇暖灰、过度磨皮或廉价褪色滤镜",
+      "enPrompt": "neutral editorial grade built on accurate white balance a gentle S-curve and subdued gray-beige surroundings, preserving truthful skin black hair and white clothing; concentrate local contrast on gaze fabric and silhouette while background layers stay refined and secondary, avoiding a blanket warm-gray cast plastic skin or a cheap faded filter",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-clean-ecommerce-skin",
+      "category": "color-grading",
+      "styleGroup": "commercial",
+      "zhName": "电商服装干净色",
+      "enName": "Clean Fashion Ecommerce",
+      "image": "/assets/parameters/grading-clean-ecommerce-skin.jpg",
+      "zhPrompt": "电商服装干净修图把背景校正为中性白或指定浅色，服装综合色、纹理和边缘保持商品真实，人物肤色均匀但保留毛孔与关节起伏；接触阴影柔和稳定，白衣与背景仍有轮廓分离，避免漂白肤色、改变服装颜色或抹掉织物结构",
+      "enPrompt": "clean fashion-ecommerce retouch correcting the backdrop to neutral white or the specified pale tone while preserving true garment color weave and edges, evening skin without erasing pores or joint form; keep a soft stable contact shadow and separation between white clothing and background, avoiding bleached skin altered product color or smoothed-away textile structure",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "retouch-face-slim-natural",
+      "category": "color-grading",
+      "styleGroup": "portrait-retouch",
+      "zhName": "自然瘦脸",
+      "enName": "Natural Face Slimming",
+      "image": "/assets/parameters/retouch-face-slim-natural.jpg",
+      "zhPrompt": "自然瘦脸仅对下颌外缘、脸颊宽度和镜头造成的轻微膨胀做小幅对称修整，保持颧骨、下巴长度、耳位、发际线与原本人脸身份；同步检查背景直线和头发边缘不被拉弯，保留真实皮肤与面部体积，避免尖下巴、过窄头型或五官位移",
+      "enPrompt": "natural face-slimming retouch making only small balanced corrections to jaw edge cheek width and lens-induced facial expansion while preserving cheekbones chin length ear position hairline and identity; keep background lines and hair edges undistorted with real skin volume, avoiding a pointed chin unnaturally narrow head or shifted facial features",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "retouch-eye-brighten",
+      "category": "color-grading",
+      "styleGroup": "portrait-retouch",
+      "zhName": "眼神提亮",
+      "enName": "Eye Brightening",
+      "image": "/assets/parameters/retouch-eye-brighten.jpg",
+      "zhPrompt": "眼神提亮只增强瞳孔周围虹膜纹理、真实眼神光和轻微眼白洁净度，保留上眼睑阴影、血丝和左右眼自然差异；锐度过渡与原照片一致，不改变虹膜颜色、瞳孔大小或眼型，避免发光眼、纯白眼球和过度锐化睫毛",
+      "enPrompt": "eye-brightening retouch enhancing only iris texture around the pupil authentic catchlights and modest sclera cleanliness while preserving upper-lid shadow subtle veins and natural asymmetry; match original sharpness without changing iris color pupil size or eye shape, avoiding glowing eyes pure-white sclera or oversharpened lashes",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "retouch-teeth-whiten",
+      "category": "color-grading",
+      "styleGroup": "portrait-retouch",
+      "zhName": "牙齿自然美白",
+      "enName": "Natural Teeth Whitening",
+      "image": "/assets/parameters/retouch-teeth-whiten.jpg",
+      "zhPrompt": "牙齿自然美白通过降低局部黄橙综合色并轻微提升明度改善色泽，保留牙缝、釉质半透明、齿龈边缘和口腔阴影；不同牙齿仍有细微综合色差异，嘴唇与皮肤不受影响，避免荧光纯白、整排糊成一块或改变牙齿形状",
+      "enPrompt": "natural teeth whitening by selectively reducing yellow-orange cast and gently lifting tooth value while preserving gaps enamel translucency gum edges and mouth shadow; retain slight color variation among teeth and protect lips and skin, avoiding fluorescent white a fused single tooth strip or altered tooth shape",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "retouch-hair-flyaway-clean",
+      "category": "color-grading",
+      "styleGroup": "portrait-retouch",
+      "zhName": "碎发清理",
+      "enName": "Flyaway Hair Cleanup",
+      "image": "/assets/parameters/retouch-hair-flyaway-clean.jpg",
+      "zhPrompt": "碎发清理移除穿过眼睛、嘴部或背景边界的少量干扰发丝，并整理明显翘起的孤立碎发，主体发际线、鬓角、卷曲方向和总体发量保持不变；在逆光处保留自然透明细发与层次，修复背景纹理连续，避免塑料头盔边缘或把蓬松感全部抹平",
+      "enPrompt": "flyaway-hair cleanup removing only distracting strands crossing eyes mouth or clean background edges and taming isolated protrusions while preserving hairline temples curl direction and overall volume; retain translucent rim-lit wisps and layered texture with continuous repaired background, avoiding a plastic helmet edge or flattening all natural softness",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-morandi-muted",
+      "category": "color-grading",
+      "styleGroup": "mood",
+      "zhName": "莫兰迪低饱和",
+      "enName": "Morandi Muted",
+      "image": "/assets/parameters/grading-morandi-muted.jpg",
+      "zhPrompt": "莫兰迪低饱和调色将高纯度颜色压入带灰综合色的粉、绿、蓝与赭色体系，同时保留不同综合色之间的明度区分；黑位微抬、白位柔和，中间调成为主导，肤色与关键商品色仍可辨，避免所有颜色混成同一层灰雾或简单整体降饱和",
+      "enPrompt": "Morandi muted grading compressing vivid hues into dusty pink green blue and ochre families while preserving value separation between them; use slightly lifted blacks soft whites and dominant midtones, keeping skin and essential product colors identifiable, avoiding one uniform gray haze or a simple global saturation reduction",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-earth-tone",
+      "category": "color-grading",
+      "styleGroup": "mood",
+      "zhName": "大地色调",
+      "enName": "Earth Tone",
+      "image": "/assets/parameters/grading-earth-tone.jpg",
+      "zhPrompt": "大地色调把土壤、木材和植被归纳为赭石、陶土、焦糖褐与橄榄绿，综合色温暖但天空和中性物仍保持区分；高光呈浅米色、阴影略偏冷褐，肤色不过度橙化，材质纹理清楚，避免棕色蒙版、脏黄白平衡或绿色全部变灰",
+      "enPrompt": "earth-tone grade organizing soil wood and vegetation into ochre terracotta caramel brown and olive while keeping sky and neutral objects distinct; use pale beige highlights slightly cooler brown shadows protected non-orange skin and clear material texture, avoiding a blanket brown overlay dirty yellow white balance or uniformly gray foliage",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-silver-bw-portrait",
+      "category": "color-grading",
+      "styleGroup": "film-vintage",
+      "zhName": "银盐黑白肖像",
+      "enName": "Silver Gelatin Portrait",
+      "image": "/assets/parameters/grading-silver-bw-portrait.jpg",
+      "zhPrompt": "银盐黑白肖像调色依据原综合色明度重新分配肤色、头发与衣物灰阶，亮部具有银盐相纸般柔和肩部，黑位深但不堵塞；细颗粒在中暗部更明显，局部加深减淡引导眼神和面部结构，避免简单去饱和、HDR 灰边或过硬数码锐化",
+      "enPrompt": "silver-gelatin portrait conversion remapping original colors into separated skin hair and clothing values, with a gentle photographic-paper highlight shoulder and deep but open blacks; fine grain becomes more visible in mid-shadows and restrained dodge-and-burn guides the eyes and facial structure, avoiding plain desaturation HDR halos or harsh digital sharpening",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-interior-warm-window",
+      "category": "color-grading",
+      "styleGroup": "camera-look",
+      "zhName": "室内暖窗光",
+      "enName": "Warm Interior Window Light",
+      "image": "/assets/parameters/grading-interior-warm-window.jpg",
+      "zhPrompt": "室内暖窗光调色保留窗外日光的中性或微冷综合色，并让室内木材、墙面和灯具呈柔和琥珀综合色，形成可信冷暖过渡；窗框高光平滑不过曝，远离窗户的阴影仍有综合色和家具细节，人物肤色随光向自然变化，避免整屋橙黄或窗户变成纯白洞口",
+      "enPrompt": "warm interior window-light grade preserving neutral or slightly cool daylight outside while interior wood walls and fixtures carry soft amber warmth for a believable temperature transition; roll window highlights smoothly without clipping, retain color and furniture detail away from the window and let skin change naturally across the light, avoiding an all-orange room or blank white window holes",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-cafe-latte",
+      "category": "color-grading",
+      "styleGroup": "commercial",
+      "zhName": "咖啡馆拿铁调",
+      "enName": "Cafe Latte Grade",
+      "image": "/assets/parameters/grading-cafe-latte.jpg",
+      "zhPrompt": "咖啡馆拿铁调色以浓咖褐暗部、奶油高光和焦糖中间调统一木质、饮品与人物，综合色温暖松弛但白杯、金属和绿色植物仍保持真实；对比柔和、颗粒极轻，肤色不偏橙，避免单一棕色滤镜、奶油高光发黄或社媒式过度褪色",
+      "enPrompt": "cafe-latte grade unifying wood drinks and people through espresso-brown shadows creamy highlights and caramel midtones while white cups metal and green plants remain truthful; keep contrast soft and grain minimal with protected non-orange skin, avoiding a single brown overlay yellowed cream highlights or excessive social-media fading",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-jewelry-sparkle",
+      "category": "color-grading",
+      "styleGroup": "commercial",
+      "zhName": "珠宝闪耀修图",
+      "enName": "Jewelry Sparkle",
+      "image": "/assets/parameters/grading-jewelry-sparkle.jpg",
+      "zhPrompt": "珠宝商业修图分别控制金属镜面、磨砂面和宝石切面的反射，高光沿真实棱线清晰但不过曝，暗部保留镶爪、刻面和综合色；清除环境杂反射而不抹平材质，背景综合色中性，避免虚假星芒、塑料宝石或用锐化制造廉价闪烁",
+      "enPrompt": "jewelry commercial retouch controlling reflections separately across polished metal satin surfaces and gemstone facets, with crisp geometry-following highlights that do not clip and shadows retaining prongs cuts and body color; remove distracting environmental reflections without flattening material on a neutral background, avoiding fake starbursts plastic stones or cheap sharpening sparkle",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-cosmetics-glossy",
+      "category": "color-grading",
+      "styleGroup": "commercial",
+      "zhName": "美妆产品光泽",
+      "enName": "Glossy Cosmetics",
+      "image": "/assets/parameters/grading-cosmetics-glossy.jpg",
+      "zhPrompt": "美妆产品光泽修图让玻璃、亚克力、金属盖和膏体分别呈现正确粗糙度，瓶身高光连续、标签区域平整、产品综合色准确；清理灰尘和杂反射但保留接触阴影与边缘折射，背景简洁且与产品分离，避免过曝白边、塑料化表面或擅自改变包装文字",
+      "enPrompt": "glossy cosmetics retouch giving glass acrylic metal caps and product cream their correct roughness, continuous bottle highlights flat label planes and accurate product color; remove dust and stray reflections while preserving contact shadow and edge refraction on a clean separated background, avoiding clipped white rims plastic surfaces or altered packaging text",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "grading-furniture-natural",
+      "category": "color-grading",
+      "styleGroup": "commercial",
+      "zhName": "家居自然质感",
+      "enName": "Natural Furniture",
+      "image": "/assets/parameters/grading-furniture-natural.jpg",
+      "zhPrompt": "家居产品自然质感调色准确还原木种综合色、织物纤维、皮革光泽和石材孔隙，窗光或棚光柔和地描述体积，垂直线与综合色保持稳定；阴影中仍能分辨结构接缝与面料层次，避免木材过橙、布料过度锐化或室内 HDR 光晕",
+      "enPrompt": "natural furniture product grade accurately preserving wood-species color textile fiber leather sheen and stone pores, with soft window or studio light describing volume and stable verticals and neutrals; keep joints and fabric layers readable in shadow, avoiding orange wood oversharpened upholstery or interior HDR halos",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "retouch-arm-leg-smooth",
+      "category": "color-grading",
+      "styleGroup": "portrait-retouch",
+      "zhName": "四肢线条整理",
+      "enName": "Arm Leg Line Refinement",
+      "image": "/assets/parameters/retouch-arm-leg-smooth.jpg",
+      "zhPrompt": "四肢线条整理仅修正镜头、衣物挤压或姿势造成的少量不规则轮廓，保持肩肘腕、髋膝踝的真实关节位置、肌肉体积和左右差异；背景边缘与衣物花纹不能弯曲，皮肤纹理和光影连续，避免把肢体拉长、削成直线或改变真实体型",
+      "enPrompt": "arm-and-leg contour refinement correcting only minor irregularities from lens pose or garment pressure while preserving true shoulder elbow wrist hip knee and ankle placement, muscle volume and natural asymmetry; keep background edges and clothing patterns straight with continuous skin texture and light, avoiding elongated limbs ruler-straight contours or altered body type",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "retouch-redness-reduction",
+      "category": "color-grading",
+      "styleGroup": "skin-detail",
+      "zhName": "面部泛红减轻",
+      "enName": "Redness Reduction",
+      "image": "/assets/parameters/retouch-redness-reduction.jpg",
+      "zhPrompt": "面部泛红减轻只针对鼻翼、脸颊或敏感区中过量红综合色降低饱和并平衡综合色，保留嘴唇、自然腮红、血色和皮肤冷暖变化；修正边缘柔和且不影响毛孔、雀斑与光影，避免全脸变黄变灰、抹掉健康气色或形成局部综合色断层",
+      "enPrompt": "facial redness reduction selectively lowering excessive red saturation around nostrils cheeks or sensitive patches while preserving lips natural blush circulation and skin temperature variation; blend corrections softly without affecting pores freckles or lighting, avoiding a yellow-gray face erased healthy color or visible chromatic patches",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "craft-longquan-celadon",
+      "category": "ethnic-style",
+      "styleGroup": "traditional-craft",
+      "zhName": "龙泉青瓷",
+      "enName": "Longquan Celadon",
+      "image": "/assets/parameters/craft-longquan-celadon.png",
+      "zhPrompt": "龙泉青瓷工艺以厚润粉青或梅子青釉覆盖端正含蓄的器型，釉层在口沿和棱线处略薄透出胎体，腹部呈水色般深浅积釉；表面光泽柔和如玉，可带自然开片但不满布机械裂纹，足缘与烧成痕迹克制可见，避免荧光绿、玻璃塑料感或繁复彩绘",
+      "enPrompt": "Longquan celadon craft using a thick jade-like blue-green or plum-green glaze over restrained balanced vessel forms, thinning subtly at rims and ridges to reveal the body while pooling into watery depth across broader surfaces; keep the luster soft and nephrite-like with optional natural crackle and modest foot-ring firing evidence, avoiding neon green glassy plastic shine mechanical all-over cracks or elaborate painted decoration",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "wrong cultural symbol"
+      ]
+    }
+  ]
+}

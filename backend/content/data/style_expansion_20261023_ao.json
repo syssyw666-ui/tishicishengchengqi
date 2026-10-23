@@ -1,0 +1,244 @@
+{
+  "parameters": [
+    {
+      "id": "artist-keith-haring",
+      "category": "artist-style",
+      "styleGroup": "american-pop",
+      "zhName": "凯斯哈林式线条符号",
+      "enName": "Keith Haring",
+      "image": "/assets/parameters/artist-keith-haring.png",
+      "zhPrompt": "以公共壁画式粗黑连续线组织简化人形、动物与日常符号，轮廓厚度稳定，动作通过弯曲肢体、放射短线和重复节奏表达，红黄蓝绿等高纯度平涂色被黑线清楚分隔；构图可密集但负形仍可读，强调参与感与城市公共艺术能量，避免复制具体作品、加入签名或商标、把人物画成写实解剖、使用三维渐变、细碎纹理或无规律填满所有空隙",
+      "enPrompt": "public-mural graphic language built from bold continuous black contours that organize simplified people animals and everyday symbols, with stable line weight and movement communicated through bent limbs radiating action marks and repeated rhythm; use a small set of high-chroma flat red yellow blue or green areas clearly separated by black while keeping negative space readable even in a busy composition, creating participatory urban energy rather than polished branding; avoid copying a specific artwork adding signatures or trademarks realistic anatomy three-dimensional gradients fine surface texture random filler marks or confusing this vocabulary with generic emoji and clip-art icons"
+    },
+    {
+      "id": "artist-gekiga",
+      "category": "artist-style",
+      "styleGroup": "comic-sequential",
+      "zhName": "剧画硬派漫画",
+      "enName": "Gekiga",
+      "image": "/assets/parameters/artist-gekiga.png",
+      "zhPrompt": "剧画硬派漫画以较写实的人体比例、克制表情和沉重都市空间承载心理叙事，黑白墨线结合密集排线、机械网点与大片黑影，镜头在特写、斜角和狭窄环境间制造压迫；人物动作符合重量和时代生活细节，画面像严肃成人向连环叙事，避免可爱大眼、轻松少年漫画速度线、纯照片灰度、无意义血腥、网点覆盖五官或把每格都做成同一高反差海报",
+      "enPrompt": "gekiga-inspired hard-boiled sequential art using relatively realistic anatomy restrained expressions and weighty urban environments for psychological narrative, combining black ink contour dense hatching mechanical screentone and large controlled shadow masses; alternate close observation oblique framing and compressed interiors to create pressure, while gestures props clothing and architecture retain believable weight and period detail like serious adult graphic storytelling; avoid cute enlarged eyes cheerful youth-manga motion vocabulary plain grayscale photography gratuitous gore screentone obscuring faces identical poster contrast in every panel or melodrama unsupported by character action and environment"
+    },
+    {
+      "id": "artist-japanese-nihonga",
+      "category": "artist-style",
+      "styleGroup": "east-asian",
+      "zhName": "日本画矿物色",
+      "enName": "Nihonga Mineral Color",
+      "image": "/assets/parameters/artist-japanese-nihonga.png",
+      "zhPrompt": "日本画矿物色以和纸或绢本为底，使用岩绘具颗粒、胡粉白、墨线和克制金箔分层塑造花鸟、人物或自然景物；色面哑光而细腻，轮廓简洁，空间通过留白、屏风式分区和季节性节奏展开，矿物颗粒在侧光下微微闪烁，避免把它做成普通水彩、浮世绘木版、金色商业包装、油画厚涂、满屏樱花或混入不相关的东亚符号",
+      "enPrompt": "Nihonga mineral-pigment painting on washi or silk, layering granular iwa-enogu color shell-white gofun restrained ink contour and limited gold leaf to shape birds flowers figures or natural motifs; surfaces remain matte and finely particulate, outlines economical, and space unfolds through reserved ground folding-screen-like divisions and seasonal rhythm, with mineral grains catching side light subtly rather than glittering; avoid ordinary transparent watercolor ukiyo-e woodblock conventions commercial gold packaging oil impasto universal cherry-blossom decoration synthetic airbrush gradients or an indiscriminate mixture of unrelated East Asian symbols"
+    },
+    {
+      "id": "artist-monet",
+      "category": "artist-style",
+      "styleGroup": "impression-post",
+      "zhName": "莫奈式印象派光色",
+      "enName": "Claude Monet",
+      "image": "/assets/parameters/artist-monet.png",
+      "zhPrompt": "印象派户外光色以短小分离笔触记录同一景物在特定时刻的空气、反射和色温变化，阴影由蓝紫、绿灰等多种色层构成而非黑色，水面、雾气和树影在相邻色并置中颤动；形体从整体光色关系中显现，近看笔触独立、远看融合，避免复制具体名画、硬线勾边、摄影级细节、数码柔焦、全画面同一碎笔或把蓝紫滤镜当作印象派",
+      "enPrompt": "Impressionist plein-air light language using short separated strokes to record atmosphere reflections and temperature at one specific time of day, building shadows from mixed blue violet green and neutral color rather than black and allowing water mist foliage and architecture to vibrate through adjacent hues; forms emerge from the overall light relationship so strokes remain distinct nearby but optically unite at viewing distance; avoid copying a specific historical painting hard contour drawing photographic microdetail digital blur identical daubs across every surface a universal blue-violet filter or decorative water lilies inserted when the subject does not contain them"
+    },
+    {
+      "id": "artist-mondrian",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "蒙德里安式几何格",
+      "enName": "Piet Mondrian",
+      "image": "/assets/parameters/artist-mondrian.png",
+      "zhPrompt": "新造型主义几何抽象以垂直和水平黑线划分不等比例矩形，大片白或浅灰留白与少量红、黄、蓝原色块形成动态平衡；线宽、色块面积和边缘张力经过控制，不使用斜线、透视和物体写实轮廓，视觉重点来自非对称秩序而非随机方格，避免复制具体画作、均匀棋盘格、三维阴影、圆形装饰、过多颜色或把任何网格界面都误标为该风格",
+      "enPrompt": "De Stijl neoplastic geometric abstraction dividing the field with vertical and horizontal black lines into unequal rectangles, balancing broad white or pale-gray negative space against a limited number of primary red yellow and blue blocks; control line weight area proportion and edge tension so asymmetry feels deliberate, deriving visual energy from relational order without diagonal perspective or representational contour; avoid reproducing a specific painting uniform checkerboards three-dimensional shadows circular decoration too many colors centered symmetry random UI grids or filling every compartment and thereby losing the essential breathing space"
+    },
+    {
+      "id": "artist-pollock",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "波洛克式滴洒抽象",
+      "enName": "Jackson Pollock",
+      "image": "/assets/parameters/artist-pollock.png",
+      "zhPrompt": "行动绘画以画布作为全幅连续场域，颜料由滴落、甩动、倾倒和细线轨迹形成多层线网，粗细、速度、方向与干湿状态可辨，局部交叠产生空间密度但没有传统中心主体；底层、中层和新鲜表层保留时间顺序与重力痕迹，避免复制具体作品、电脑随机粒子、均匀意面线、单层喷溅、对称构图、可识别人物轮廓或把普通泼墨等同于西方行动绘画",
+      "enPrompt": "action-painting language treating the canvas as a continuous all-over field, with pigment dripped flung poured and trailed into multiple interlocking networks whose thickness speed direction viscosity and wetness remain distinguishable; overlaps create changing spatial density without a conventional central subject, and lower middle and fresh upper layers retain a readable sequence of bodily movement gravity and drying; avoid copying a specific artwork computer-random particles uniform spaghetti lines a single splash layer symmetrical composition hidden figurative silhouettes spray-paint decoration or confusing every spontaneous ink splash with this physically layered paint process"
+    },
+    {
+      "id": "artist-munch",
+      "category": "artist-style",
+      "styleGroup": "surreal-symbolic",
+      "zhName": "蒙克式表现主义焦虑",
+      "enName": "Edvard Munch",
+      "image": "/assets/parameters/artist-munch.png",
+      "zhPrompt": "表现主义心理绘画通过波动的天空、弯曲地平线、拉长人物和压缩透视把主观焦虑投射到环境，颜色使用不自然但有情绪逻辑的红橙、病绿与深蓝，笔触和轮廓随心理压力起伏；人物仍保持可读姿态与叙事关系，重点是内在体验而非恐怖妆效，避免复刻具体名作姿势、无依据尖叫脸、随机扭曲所有物体、霓虹高饱和或把普通鱼眼畸变当作表现主义",
+      "enPrompt": "expressionist psychological painting projecting subjective anxiety into a wavering sky curved horizon elongated figure and compressed perspective, with emotionally coherent yet non-natural red-orange sickly green and deep blue color and contours that rise and fall with mental pressure; figures retain readable posture and narrative relationship so the environment carries inner experience rather than functioning as horror makeup; avoid reproducing an iconic pose arbitrary screaming faces distorting every object equally fluorescent saturation photographic fisheye warping generic dark fantasy or decorative swirls unsupported by the emotional structure"
+    },
+    {
+      "id": "artist-bada-shanren",
+      "category": "artist-style",
+      "styleGroup": "east-asian",
+      "zhName": "八大山人式写意",
+      "enName": "Bada Shanren",
+      "image": "/assets/parameters/artist-bada-shanren.png",
+      "zhPrompt": "八大山人式写意以极少墨线、枯湿并置和大片留白描绘鱼、鸟、荷、石等对象，形体简到近乎符号却保留骨法与生命感，鸟眼、鱼眼和倾斜姿态形成孤峭含蓄的情绪；题跋区域只保留抽象印章或空白，不生成伪文字，避免工笔填色、满纸山水、可爱卡通表情、均匀黑线、复制具体作品或用大面积灰雾取代有结构的留白",
+      "enPrompt": "Bada Shanren-inspired freehand ink language using very few strokes dry-wet contrast and expansive untouched paper to depict fish birds lotus rock or branches, simplifying forms almost to signs while retaining calligraphic bone and living tension; an upward glance tilted posture or isolated placement may carry austere restrained emotion, with seal or inscription zones kept abstract rather than producing false readable writing; avoid meticulous gongbi coloring a fully occupied landscape cute cartoon expressions uniform marker outlines copies of a known painting decorative gray fog replacing structured blank paper or arbitrary symbols detached from brush rhythm"
+    },
+    {
+      "id": "artist-charley-harper",
+      "category": "artist-style",
+      "styleGroup": "editorial-graphic",
+      "zhName": "哈珀式几何自然",
+      "enName": "Charley Harper",
+      "image": "/assets/parameters/artist-charley-harper.png",
+      "zhPrompt": "几何自然插画把鸟兽、昆虫和植物拆解为圆、三角、弧线与整洁负形，在保留物种关键轮廓和行为特征的同时减少写实纹理；有限平涂色盘通过尺寸、重复和方向建立生态节奏，边缘锐利但不僵硬，画面兼具观察性与装饰秩序，避免复制具体插画、通用企业矢量、拟真毛发、复杂渐变、对称徽章化或将动物简化到失去物种识别度",
+      "enPrompt": "geometric natural-history illustration reducing birds mammals insects and plants into circles triangles arcs and carefully shaped negative space while retaining the decisive silhouette markings and behavior that identify each species; use a limited flat palette and organize ecological rhythm through scale repetition direction and overlap, keeping edges crisp but not mechanically sterile so observation and decorative order coexist; avoid copying a specific illustration generic corporate vectors photoreal fur complex gradients symmetrical badge layouts arbitrary cute faces or simplification so extreme that every animal becomes the same anonymous icon"
+    },
+    {
+      "id": "artist-midcentury-editorial",
+      "category": "artist-style",
+      "styleGroup": "editorial-graphic",
+      "zhName": "中世纪社论插画",
+      "enName": "Mid-Century Editorial",
+      "image": "/assets/parameters/artist-midcentury-editorial.png",
+      "zhPrompt": "中世纪现代社论插画以剪纸般不规则平面形、少量墨线和两到五种专色概括人物、产品或社会议题，套印轻微偏移、纸张颗粒和干刷边缘保留印刷年代感；构图强调聪明隐喻、非对称留白与文字安全区，人物比例可简化但动作清楚，避免把“中世纪”误作欧洲古代、现代矢量无纹理、怀旧杂物堆砌、仿旧过脏或随机添加不可读标题",
+      "enPrompt": "mid-century modern editorial illustration using irregular cut-paper-like flat shapes a few economical ink lines and roughly two to five spot colors to summarize people products or social ideas, with slight registration drift paper grain and dry printed edges preserving period production character; composition relies on an intelligent visual metaphor asymmetric whitespace and a clear copy-safe zone, while simplified figures retain readable action; avoid confusing mid-century with medieval Europe textureless contemporary vectors piles of nostalgic props excessive dirty aging random illegible headlines corporate stock icons or a literal scene that leaves no editorial concept"
+    },
+    {
+      "id": "artist-moebius-comic",
+      "category": "artist-style",
+      "styleGroup": "comic-sequential",
+      "zhName": "欧漫清线分镜",
+      "enName": "Clear-Line Euro Comic",
+      "image": "/assets/parameters/artist-moebius-comic.png",
+      "zhPrompt": "欧漫清线分镜使用均匀而灵活的细墨线描绘人物、建筑与奇异地貌，轮廓闭合清楚，内部细节丰富但按空间层级减弱；平涂色明亮克制，阴影少而准确，广阔环境与人物尺度共同建立清晰叙事动线，分镜可奇幻却保持透视可信，避免复制具体角色、日漫速度线、粗重美漫阴影、照片贴图、无层次密线或用赛博霓虹替代宁静科幻感",
+      "enPrompt": "European clear-line sequential-art language using even yet responsive fine ink contours for figures architecture and unfamiliar terrain, keeping silhouettes closed and readable while interior detail decreases by spatial depth; apply bright restrained flat color with sparse accurate shadows, and use broad environments plus human scale to establish a lucid narrative path even when the setting is surreal and speculative; avoid copying recognizable characters Japanese speed-line grammar heavy American-comic black masses photographic texture pasted into drawings undifferentiated dense linework cyber-neon substituted for atmosphere or impossible perspective hidden beneath ornament"
+    },
+    {
+      "id": "artist-raphael",
+      "category": "artist-style",
+      "styleGroup": "renaissance-baroque",
+      "zhName": "拉斐尔式古典和谐",
+      "enName": "Raphael",
+      "image": "/assets/parameters/artist-raphael.png",
+      "zhPrompt": "文艺复兴古典和谐以稳定三角或弧形群像组织人物，视线、手势与身体转向构成清楚关系，解剖理想化但自然，衣褶和建筑透视服从统一空间；柔和明暗塑造圆润体积，红蓝、肤色与中性背景保持平衡，整体宁静庄重而不僵硬，避免复制具体圣像、现代时装混入、巴洛克式极端黑暗、蜡像皮肤、人物等距排队或加入不可读宗教文字",
+      "enPrompt": "High Renaissance classical harmony arranging figures through a stable triangular or gently arcing group, with gaze gesture and body orientation creating explicit relationships, anatomy idealized yet natural and drapery architecture and linear perspective belonging to one coherent space; soft modeling gives rounded volume while red blue flesh and neutral surroundings remain balanced, producing calm dignity without stiffness; avoid reproducing a specific devotional painting inserting modern fashion extreme Baroque darkness waxy skin evenly spaced figures disconnected expressions impossible hands or illegible sacred text used as decoration"
+    },
+    {
+      "id": "ethnic-hezhe",
+      "category": "ethnic-style",
+      "styleGroup": "northeast",
+      "zhName": "赫哲族鱼皮工艺",
+      "enName": "Hezhe Fish-Skin Craft",
+      "image": "/assets/parameters/ethnic-hezhe.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "赫哲族鱼皮工艺条目聚焦传统鱼皮材料处理与江河生活视觉：鱼皮经刮治、鞣制和拼缝后保留细密鳞纹与半哑光纤维，衣饰或器物上的云水、鱼形和几何边饰沿接缝有序展开；配色取银灰、河蓝、桦木白与少量暖棕，并用船具或江岸环境说明材料来源，避免把单一工艺等同整个族群、混入海洋热带符号、塑料鱼鳞、奇装异服或伪文字图腾",
+      "enPrompt": "Hezhe fish-skin craft reference focused on the visual process and river culture of the material: scraped cured and stitched fish skin retains fine scale pattern and semi-matte fiber, while water fish and geometric border motifs follow garment or object seams in an orderly way; draw the palette from silver gray river blue birch white and limited warm brown, with restrained boat tools or riverside context explaining material origin; do not treat one craft as a complete representation of the people, and avoid tropical marine symbols plastic mermaid scales fantasy costume invented sacred glyphs random fur or unrelated motifs from other northern cultures"
+    },
+    {
+      "id": "ethnic-gaoshan",
+      "category": "ethnic-style",
+      "styleGroup": "island",
+      "zhName": "高山族海岛织纹",
+      "enName": "Gaoshan Island Weaving",
+      "image": "/assets/parameters/ethnic-gaoshan.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "高山族海岛织纹条目以台湾原住民族群中具体社区的织造、串珠或几何服饰语言为参考，先注明地域与资料来源，再使用菱形、阶梯、人物或山海节奏形成经纬清楚的边带；色彩从黑白、红、蓝绿等有限组合中选择并保留纱线厚度，背景可提示山地与海风但不替代纹样研究，避免把多个族群混成一种“高山风”、复制祭仪服饰作日常装饰、泛热带羽毛、伪图腾或无依据的神秘化",
+      "enPrompt": "Gaoshan island textile reference should begin from a specified Indigenous community and documented weaving beadwork or geometric clothing vocabulary rather than collapsing distinct Taiwan peoples into one style; build clear warp-and-weft borders from diamonds steps human figures or mountain-sea rhythm, selecting a limited black white red blue or green palette with visible yarn thickness and using mountain or coastal context only as support; avoid mixing multiple communities into a generic exotic look copying ceremonial dress as casual decoration pan-tropical feathers invented totems pseudo-script mystical stereotyping or patterns whose structure ignores actual weaving constraints"
+    },
+    {
+      "id": "craft-filigree-inlay",
+      "category": "ethnic-style",
+      "styleGroup": "traditional-craft",
+      "zhName": "花丝镶嵌",
+      "enName": "Filigree Inlay",
+      "image": "/assets/parameters/craft-filigree-inlay.png",
+      "zhPrompt": "花丝镶嵌以拉制均匀的金银细丝为骨架，通过掐、填、攒、焊形成卷草、云纹和几何镂空，再在可靠爪镶或包镶结构中嵌入宝石；丝线交点、焊点、厚度和受力均可解释，金属表面有细微手工痕迹与克制高光，避免把花丝画成印刷金线、宝石悬浮、纹样无支撑、所有区域同样密集、塑料黄金或将普通蕾丝纹直接贴在首饰表面",
+      "enPrompt": "Chinese filigree inlay constructed from evenly drawn gold or silver wires shaped coiled filled assembled and soldered into scroll cloud and geometric openwork, then set with stones using believable prongs or bezels; wire intersections solder points thickness and load paths should be physically understandable, with subtle hand-tool evidence and restrained metallic highlights revealing scale; avoid printed gold lines floating gems unsupported ornament equal density everywhere plastic yellow metal lace texture pasted onto a solid surface impossible zero-thickness wire or decorative complexity that would collapse if fabricated"
+    },
+    {
+      "id": "craft-chinese-paper-cut",
+      "category": "ethnic-style",
+      "styleGroup": "traditional-craft",
+      "zhName": "中国剪纸",
+      "enName": "Chinese Paper Cut",
+      "image": "/assets/parameters/craft-chinese-paper-cut.png",
+      "zhPrompt": "中国剪纸工艺以一张或少量叠纸通过折剪、刻刀和连续镂空形成花鸟、人物或吉祥叙事，正负形互相支撑，细线必须与主体连接，刀口有轻微毛边而轮廓整体清楚；红纸可见纤维和折痕，投影只说明纸张厚度，不把平面剪纸变成立体场景，避免无支撑碎片、激光般完美边缘、普通矢量图加红色、复杂渐变、伪文字窗花或与波兰剪纸及动画纸偶混为一谈",
+      "enPrompt": "Chinese paper-cut craft made from one sheet or a small folded stack through scissor and knife cuts, forming birds flowers people or auspicious narrative through continuous openwork where positive and negative shapes structurally support one another and every fine bridge remains connected; red paper may show fiber fold memory and minute cut fuzz, with only a short shadow explaining thickness rather than turning the flat cut into a 3D scene; avoid unsupported floating fragments laser-perfect edges a generic vector recolored red gradients false written characters decorative window patterns with no structural logic or confusion with Polish layered cut paper and articulated animation puppets"
+    },
+    {
+      "id": "craft-wheat-straw-painting",
+      "category": "ethnic-style",
+      "styleGroup": "traditional-craft",
+      "zhName": "麦秆画",
+      "enName": "Wheat Straw Painting",
+      "image": "/assets/parameters/craft-wheat-straw-painting.png",
+      "zhPrompt": "麦秆画以经过选料、劈分、熨平和染色的真实麦秆薄片拼贴成主体，纤维方向随羽毛、衣褶、叶脉或建筑面转折，天然金黄至棕色光泽随观察角度变化；接缝、层叠和局部烙色建立细节但不遮住材料身份，底面保持平整，避免把麦秆画成木片马赛克、金属箔、均匀黄色滤镜、立体稻草束、纤维方向随机或加入无法切割的微小悬浮线",
+      "enPrompt": "wheat-straw painting assembled from real stalk material that has been selected split flattened pressed and selectively dyed, with fiber direction following feathers drapery leaf veins or architectural planes and natural gold-to-brown sheen shifting subtly with viewing angle; seams overlaps and limited scorching supply detail while preserving the identity of thin straw veneer on a flat support; avoid wooden mosaic metal foil a uniform yellow filter three-dimensional bundles of hay random fiber direction synthetic glitter or microscopic floating lines and unsupported fragments that could not be cut and adhered by hand"
+    },
+    {
+      "id": "ethnic-pattern-dong-drum-tower",
+      "category": "ethnic-style",
+      "styleGroup": "pattern-craft",
+      "zhName": "侗锦鼓楼风雨桥纹",
+      "enName": "Dong Drum Tower Brocade",
+      "image": "/assets/parameters/ethnic-pattern-dong-drum-tower.png",
+      "zhPrompt": "侗锦鼓楼风雨桥纹样从鼓楼层檐、风雨桥廊架和织锦经纬中提取可重复的阶梯、菱形与木构剪影，先将建筑比例简化为边带单元，再以青蓝、黑白和少量暖红形成有节拍的连续纹；纹样应符合织造网格而非直接贴照片，建筑元素保持可辨但不过度写实，避免把真实鼓楼当背景插图、混入铜鼓太阳纹、伪文字、任意苗绣符号或将一种纹样代表全部侗族文化",
+      "enPrompt": "Dong brocade pattern derived specifically from the tiered eaves of drum towers the covered rhythm of wind-and-rain bridges and the warp-weft logic of weaving, simplifying architectural proportion into repeatable steps diamonds and timber silhouettes before arranging a measured blue black white and limited warm-red border; motifs should obey a textile grid rather than paste photographs into cloth, remaining identifiable without architectural realism; avoid using a full drum tower as background scenery mixing in bronze-drum sun emblems invented script unrelated Miao embroidery symbols or claiming one decorative band represents all Dong culture"
+    },
+    {
+      "id": "ethnic-pattern-tibetan-cloud-jewel",
+      "category": "ethnic-style",
+      "styleGroup": "pattern-craft",
+      "zhName": "藏式云纹宝相花",
+      "enName": "Tibetan Cloud Lotus",
+      "image": "/assets/parameters/ethnic-pattern-tibetan-cloud-jewel.png",
+      "zhPrompt": "藏式云纹宝相花以卷云、莲瓣、宝珠和对称团花建立中心与边框层级，线条转折圆润连续，矿物红、石青、石绿与克制金线按内外圈分配，色面具有手绘或织绘质感而非数码渐变；图案可用于器物、墙面或织物时应匹配载体尺度，并注明装饰语境，避免随意拼接宗教符号、生成伪经文、把法器当普通装饰、霓虹宝石色或将所有藏地视觉归结为单一花纹",
+      "enPrompt": "Tibetan cloud-and-jewel floral ornament organizing curling clouds lotus petals wish-granting jewel forms and symmetrical medallions into a clear center-border hierarchy, with rounded continuous turns and mineral red azurite blue malachite green plus restrained gold assigned by concentric structure; surfaces should feel painted woven or carved according to the chosen support rather than digitally gradient-filled, and scale must fit an object wall or textile context; avoid arbitrary mixtures of sacred symbols pseudo-script decorative use of ritual implements neon gemstone color unrelated East Asian clouds or presenting one floral vocabulary as the totality of Tibetan visual culture"
+    },
+    {
+      "id": "ethnic-pattern-hui-geometric-arabesque",
+      "category": "ethnic-style",
+      "styleGroup": "pattern-craft",
+      "zhName": "回族几何缠枝纹",
+      "enName": "Hui Geometric Arabesque",
+      "image": "/assets/parameters/ethnic-pattern-hui-geometric-arabesque.png",
+      "zhPrompt": "回族几何缠枝纹以连续几何网格、拱券比例和抽象植物卷草构成可无限延展但接点严谨的装饰面，蓝白、青绿或土红色块服从重复单元，线宽和旋转对称保持一致；若用于建筑、瓷砖或织物，应分别体现釉面、拼砖或纤维边界，避免伪造阿拉伯文字、随意加入人物神像、无闭合的几何结、不同网格硬拼、泛化为任意“伊斯兰风”或忽略中国本土建筑语境",
+      "enPrompt": "Hui geometric arabesque using continuous grids arch-derived proportion and abstract botanical scrolls to form an extensible ornamental field with exact junctions, consistent line weight and rotational symmetry, while blue-white turquoise or earth-red color stays subordinate to the repeat unit; when applied to architecture tile or textile, express glaze masonry joints or fiber boundaries accordingly and retain the Chinese regional building context; avoid fabricated Arabic writing figurative sacred imagery open broken knots incompatible grids forced together generic pan-Islamic styling with no local grounding or a decorative pattern that cannot repeat cleanly at its edges"
+    },
+    {
+      "id": "ethnic-pattern-hani-terrace-line",
+      "category": "ethnic-style",
+      "styleGroup": "pattern-craft",
+      "zhName": "哈尼梯田线纹",
+      "enName": "Hani Terrace Lines",
+      "image": "/assets/parameters/ethnic-pattern-hani-terrace-line.png",
+      "zhPrompt": "哈尼梯田线纹从山地水田随等高线弯曲的层层田埂、水面反光与引水关系中提炼连续曲线和阶梯边带，低饱和绿、泥褐、雾蓝与少量日落暖色按季节分配；纹样应保持水系由高到低的方向和织造可行性，可搭配有限山形轮廓，避免把卫星照片直接描边、随机同心波纹、所有梯田等宽、无水源逻辑、混入无关民族符号或将农业景观浪漫化为脱离劳动的纯装饰",
+      "enPrompt": "Hani terrace-line pattern abstracted from contour-following rice embankments reflected water and gravity-fed irrigation across mountain slopes, turning them into continuous curves and stepped borders with muted green soil brown mist blue and limited sunset warmth selected by season; preserve the high-to-low direction of water and the feasibility of weaving or printing the repeat, with only restrained mountain silhouettes as support; avoid tracing a satellite photo literally random concentric waves terraces of identical width no water-source logic unrelated ethnic emblems or romantic decoration that erases the agricultural structure and labor embedded in the landscape"
+    },
+    {
+      "id": "craft-carved-lacquer",
+      "category": "ethnic-style",
+      "styleGroup": "traditional-craft",
+      "zhName": "雕漆",
+      "enName": "Carved Lacquer",
+      "image": "/assets/parameters/craft-carved-lacquer.png",
+      "zhPrompt": "雕漆以数十层朱红、黑或黄漆反复髹涂形成足够厚度，再从表层向下雕出圆润深浮雕、斜坡刀口和清楚层间色线；卷草、花卉或云纹沿器物曲率连续展开，凹处哑暗、凸处经打磨呈温润高光，边缘不露木胎，避免普通木雕涂红、塑料注塑纹、金属锐角、薄漆无法雕深、纹样穿透器壁或把大漆光泽做成镜面汽车漆",
+      "enPrompt": "carved lacquer built from dozens of repeatedly applied cinnabar red black or yellow lacquer layers thick enough to cut, revealing rounded high-relief forms sloped knife walls and fine color strata as carving descends; scroll foliage flower or cloud motifs follow the curvature of the vessel, recesses remain softly matte and raised areas gain a warm hand-polished sheen without exposing the wood core; avoid ordinary wood carving painted red injection-molded plastic texture sharp metallic edges impossibly deep cuts in a thin coating motifs piercing through the object or automotive mirror gloss replacing the dense mellow lacquer surface"
+    },
+    {
+      "id": "craft-mother-of-pearl-inlay",
+      "category": "ethnic-style",
+      "styleGroup": "traditional-craft",
+      "zhName": "螺钿镶嵌",
+      "enName": "Mother-of-Pearl Inlay",
+      "image": "/assets/parameters/craft-mother-of-pearl-inlay.png",
+      "zhPrompt": "螺钿镶嵌在黑漆、深木或其他稳定胎体上嵌入按纹样切割的贝壳薄片，虹彩随角度在青绿、蓝紫和粉金之间变化，片与片之间保留极细拼缝并与底面齐平；花鸟、山水或几何纹由贝壳天然纹理共同构成，局部缺口与手工磨边克制可见，避免彩虹贴纸、整面珍珠光滤镜、厚壳悬浮、无缝塑料印刷、过度霓虹或把配色方案当作真实工艺结构",
+      "enPrompt": "mother-of-pearl inlay setting motif-cut shell veneer into black lacquer dark wood or another stable ground, with iridescence shifting by angle among green blue violet and soft pink-gold while hairline seams remain visible and the polished shell sits flush with its support; flowers birds landscapes or geometry should use the shell's natural growth pattern as part of the design, allowing restrained hand-ground edges and minute variation; avoid rainbow stickers a full-surface pearlescent filter thick shell floating above the object seamless plastic printing uniform neon glow or treating a black-and-iridescent color palette alone as evidence of actual inlay construction"
+    },
+    {
+      "id": "craft-zisha-teapot",
+      "category": "ethnic-style",
+      "styleGroup": "traditional-craft",
+      "zhName": "紫砂陶艺",
+      "enName": "Zisha Pottery",
+      "image": "/assets/parameters/craft-zisha-teapot.png",
+      "zhPrompt": "紫砂陶艺以含砂颗粒的紫褐、朱泥或段泥手工拍打、围片和精修成型，壶身、流、把、盖与钮在比例、接合和出水功能上完整可信，表面哑光细腻并保留极轻工具痕；刻绘或贴花顺应器形且不过密，使用后的温润包浆集中于触摸区，避免普通陶瓷喷成棕色、镜面釉、壶嘴堵塞、盖口悬浮、对称穿模、伪造名家印款或把所有紫砂器都做成同一标准壶型",
+      "enPrompt": "zisha pottery formed from granular purple-brown zhuni or duanni clay through hand beating slab joining and careful trimming, with body spout handle lid and knob proportionally and functionally connected for believable pouring; the surface remains finely matte with minute tool evidence, restrained incising or applied ornament follows the vessel form, and gentle use patina concentrates where hands actually touch; avoid ordinary glazed ceramic recolored brown mirror finish a blocked spout floating lid impossible handle joints perfect plastic symmetry forged maker seals or reducing the entire craft to one generic teapot silhouette regardless of clay and intended use"
+    }
+  ]
+}

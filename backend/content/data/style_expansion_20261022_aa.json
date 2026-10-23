@@ -1,0 +1,249 @@
+{
+  "parameters": [
+    {
+      "id": "mood-tense",
+      "category": "mood",
+      "styleGroup": "dramatic",
+      "zhName": "紧张危险",
+      "enName": "Tense",
+      "image": "/assets/parameters/mood-tense.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "紧张危险氛围通过被压缩的空间、即将发生的动作、偏离中心的重心、有限视野和具有方向的硬光建立，人物目光与身体预备动作指向明确威胁，但仍保留逃生路径和叙事线索；避免只用红色滤镜、无来源风暴、血腥堆砌、所有人夸张尖叫或画面暗到无法判断风险",
+      "enPrompt": "tense dangerous mood built through compressed space imminent action off-center balance limited visibility and directional hard light, with gaze and preparatory body language pointing toward a specific threat while escape route and narrative clues remain readable; avoid relying only on a red filter source-free storms gore piles everyone screaming theatrically or darkness that hides the actual risk"
+    },
+    {
+      "id": "mood-sacred",
+      "category": "mood",
+      "styleGroup": "dramatic",
+      "zhName": "神圣庄严",
+      "enName": "Sacred",
+      "image": "/assets/parameters/mood-sacred.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "神圣庄严氛围以清楚轴线、垂直尺度、克制对称、缓慢仪式动作和有真实入口的高位光建立，材质回声、烟尘或空间留白强化敬畏但不绑定单一宗教；符号应与设定一致，避免混搭信仰标志、廉价金色辉光、人物悬浮、过度装饰或把庄严等同于漆黑压抑",
+      "enPrompt": "sacred solemn atmosphere built from a clear axis vertical scale restrained symmetry deliberate ritual movement and elevated light with a believable architectural source, using material resonance dust or spatial pause to create awe without assuming one religion; keep symbols coherent with the setting, avoiding mixed faith emblems cheap golden glow levitating figures decorative overload or confusing solemnity with featureless darkness"
+    },
+    {
+      "id": "mood-whimsical",
+      "category": "mood",
+      "styleGroup": "positive",
+      "zhName": "童趣奇想",
+      "enName": "Whimsical",
+      "image": "/assets/parameters/mood-whimsical.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "童趣奇想氛围让一个日常规则发生清楚而温和的变化，例如尺度、重力或物件用途被重新想象，并用圆润形态、轻快节奏和有限明快配色维持可读叙事；奇想应围绕主体展开，避免随机堆放气球彩虹、所有物体长出笑脸、糖果色过饱和或元素虽可爱却没有互动关系",
+      "enPrompt": "whimsical playful mood changing one everyday rule in a clear gentle way such as scale gravity or object function, then supporting the readable story with rounded forms lively rhythm and a limited bright palette; let the invention revolve around the subject, avoiding random balloons and rainbows faces placed on every object oversaturated candy color or cute elements with no interaction"
+    },
+    {
+      "id": "mood-nostalgic",
+      "category": "mood",
+      "styleGroup": "quiet",
+      "zhName": "怀旧温暖",
+      "enName": "Nostalgic",
+      "image": "/assets/parameters/mood-nostalgic.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "怀旧温暖氛围由具有年代依据的生活物件、被使用过的材质、柔和侧逆光和略微褪色但仍区分肤色与环境的色彩建立，人物动作像真实记忆片段而非复古摆拍；保留具体时代细节，避免统一棕黄滤镜、随意胶片划痕、跨年代道具混搭或只靠旧相框表达怀旧",
+      "enPrompt": "warm nostalgic mood grounded in period-specific everyday objects used material surfaces soft side or back light and gently faded color that still separates skin from environment, with action feeling like an observed memory rather than retro posing; preserve coherent era detail, avoiding a blanket sepia filter arbitrary film scratches mixed-period props or nostalgia communicated only by an old frame"
+    },
+    {
+      "id": "mood-hopeful",
+      "category": "mood",
+      "styleGroup": "positive",
+      "zhName": "希望黎明",
+      "enName": "Hopeful Dawn",
+      "image": "/assets/parameters/mood-hopeful.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "希望重启的氛围通过由暗到亮的空间路径、人物朝向开放区域的姿态、低处冷色向远处暖光的渐进和一个具体的新行动建立，光线提供方向而不是神迹；保持困难后的真实余韵，避免俗套胜利手势、满屏金光、无原因彩虹、夸张励志文字或把所有阴影完全抹除",
+      "enPrompt": "hopeful new-beginning mood built through a spatial path from shadow toward openness, a figure oriented toward available space, gradual movement from cooler near tones to distant warmth and one specific initiating action, with light providing direction rather than a miracle; retain traces of prior difficulty, avoiding clichéd victory poses floods of gold source-free rainbows motivational text or erasing every shadow"
+    },
+    {
+      "id": "camera-over-shoulder",
+      "category": "camera",
+      "styleGroup": "composition",
+      "zhName": "过肩镜头",
+      "enName": "Over The Shoulder",
+      "image": "/assets/parameters/camera-over-shoulder.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "过肩镜头从近处人物肩后观察对话对象或行动目标，前景头肩只占画面一侧并保持柔焦，远处主体眼线与空间方向连续，双方距离和镜头高度符合场景；避免前景肩膀遮住主角、两人视线错位、左右轴线跳变、头部被异常裁切或把背影全景误作过肩镜头",
+      "enPrompt": "over-the-shoulder shot viewing a conversation partner or action target past one nearby figure, with the foreground head and shoulder softly focused on one side while the distant subject's eye line and screen direction remain continuous and spacing and camera height fit the scene; avoid the shoulder hiding the main face mismatched gazes crossing the axis awkward head crops or a full back view mislabeled as OTS"
+    },
+    {
+      "id": "camera-first-person-pov",
+      "category": "camera",
+      "styleGroup": "angle",
+      "zhName": "第一人称视角",
+      "enName": "First-Person POV",
+      "image": "/assets/parameters/camera-first-person-pov.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "第一人称视角把镜头置于角色眼位，前景仅出现与当前动作有关的手、手臂、工具或身体边缘，视线高度、手臂透视和交互目标形成同一动作链；环境仍应清楚可读，避免看到角色自己的完整脸部、漂浮双手、超长手臂、游戏界面元素或没有交互目的的前景遮挡",
+      "enPrompt": "first-person point of view positioning the camera at the character's eye line, showing only hands arms tools or body edges relevant to the present action so eye height arm perspective and interaction target form one coherent chain; keep the environment readable, avoiding the character's own full face floating hands elongated arms game HUD elements or foreground obstruction with no interactive purpose"
+    },
+    {
+      "id": "camera-worms-eye",
+      "category": "camera",
+      "styleGroup": "angle",
+      "zhName": "虫视仰拍",
+      "enName": "Worm's-Eye View",
+      "image": "/assets/parameters/camera-worms-eye.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "虫视仰拍把镜头放在接近地面的位置并明确向上倾斜，近处地面或脚部适度放大，垂直线向高处汇聚以强化主体高度和压迫感，同时保留可判断的落脚面与天空比例；避免人物脚部无限膨胀、建筑线条弯折、镜头埋入地面或主体看似悬浮",
+      "enPrompt": "worm's-eye view placing the camera very near the ground and tilting clearly upward, allowing nearby ground or feet to enlarge moderately while verticals converge above to emphasize height and pressure, yet preserving a readable support plane and controlled amount of sky; avoid infinitely enlarged feet bent architecture a lens buried below the surface or a subject that appears to float"
+    },
+    {
+      "id": "camera-anamorphic-lens",
+      "category": "camera",
+      "styleGroup": "lens-effect",
+      "zhName": "变形宽银幕",
+      "enName": "Anamorphic Lens",
+      "image": "/assets/parameters/camera-anamorphic-lens.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "变形宽银幕镜头以较宽水平视野、受压缩后恢复的画面和椭圆焦外建立电影感，横向炫光只在强点光源经过镜头时出现，人物比例与建筑垂直线仍保持可信；边缘畸变和呼吸效应适度，避免无光源蓝色光条、所有高光拉丝、极端拉宽面部或把普通裁切误作变形镜头",
+      "enPrompt": "anamorphic widescreen cinematography using a broad horizontal field of view desqueezed geometry and oval out-of-focus highlights, with horizontal flare appearing only when a strong point source enters the lens while faces and architectural verticals remain credible; keep edge distortion and focus breathing restrained, avoiding source-free blue streaks every highlight stretched facial widening or a simple wide crop mistaken for anamorphic optics"
+    },
+    {
+      "id": "camera-tilt-shift",
+      "category": "camera",
+      "styleGroup": "lens-effect",
+      "zhName": "移轴微缩",
+      "enName": "Tilt-Shift",
+      "image": "/assets/parameters/camera-tilt-shift.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "移轴微缩效果从较高视点观察真实城市或场景，以一条窄而有方向的清晰带穿过主要活动区，前后景逐渐虚化并配合压缩尺度、均匀日光和模型般色彩产生微缩错觉；避免径向模糊滤镜、主体本身失焦、建筑垂直线倾倒或把真实玩具模型误当移轴摄影",
+      "enPrompt": "tilt-shift miniature photography viewing a real city or scene from an elevated position, with one narrow directional plane of focus crossing the main activity while foreground and distance soften gradually and compressed scale even daylight and model-like color support the illusion; avoid a radial blur filter an unfocused subject falling architectural verticals or an actual toy model presented as tilt-shift photography"
+    },
+    {
+      "id": "camera-telephoto-compression",
+      "category": "camera",
+      "styleGroup": "lens-effect",
+      "zhName": "长焦压缩",
+      "enName": "Telephoto Compression",
+      "image": "/assets/parameters/camera-telephoto-compression.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "长焦压缩使用较远机位和长焦视角把前景主体与远处山体、建筑或人群在画面中拉近，背景尺度明显增大但各物体自身透视保持自然，景深依据光圈和距离合理变化；避免简单放大裁切、主体边缘抠图感、背景真实距离矛盾或把广角畸变混入画面",
+      "enPrompt": "telephoto compression using a distant camera position and long focal length to bring a foreground subject visually close to mountains architecture or crowds behind it, enlarging the background while each object's internal perspective stays natural and depth of field follows aperture and distance; avoid mere digital cropping cutout edges impossible spatial distance or wide-angle distortion mixed into the frame"
+    },
+    {
+      "id": "camera-split-diopter",
+      "category": "camera",
+      "styleGroup": "lens-effect",
+      "zhName": "分焦镜头",
+      "enName": "Split Diopter",
+      "image": "/assets/parameters/camera-split-diopter.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "分焦镜头让紧邻镜头的前景主体与远处主体同时清晰，二者由同一叙事关系连接，中间景深过渡可见轻微分界但不形成拼接画面；焦平面、透视和光线保持统一，避免整幅普通深景深、左右两张图硬拼、人物边缘重影或中景异常扭曲",
+      "enPrompt": "split-diopter shot keeping a very near foreground subject and a distant subject simultaneously sharp because they share one narrative relationship, with a subtle focus transition through the middle rather than a composite seam; preserve one perspective exposure and lighting setup, avoiding ordinary deep focus two images pasted side by side doubled figure edges or unnaturally warped midground"
+    },
+    {
+      "id": "camera-leading-lines",
+      "category": "camera",
+      "styleGroup": "visual-guide",
+      "zhName": "引导线构图",
+      "enName": "Leading Lines",
+      "image": "/assets/parameters/camera-leading-lines.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "引导线构图利用道路、栏杆、轨道、光影边界或建筑接缝从画面入口连续指向唯一主焦点，线条宽度与间距随透视递减，途中次要节点只辅助视线节奏；避免线条在主体前突然中断、多个方向互相争抢、画出装饰箭头或让引导线直接穿过人物面部",
+      "enPrompt": "leading-lines composition using roads rails tracks light-shadow boundaries or architectural joints to travel continuously from a frame entry toward one primary focal point, with spacing and width diminishing in perspective and secondary nodes only pacing the eye; avoid lines stopping before the subject competing directions drawn decorative arrows or a guide line cutting directly through a face"
+    },
+    {
+      "id": "camera-eye-level",
+      "category": "camera",
+      "styleGroup": "camera-angle",
+      "zhName": "平视角度",
+      "enName": "Eye-Level Angle",
+      "image": "/assets/parameters/camera-eye-level.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "平视角度让镜头高度与主要主体眼线或物体中心近似齐平，地平线和垂直关系自然，观众与主体形成中性、平等且可接近的观看关系；焦距与距离应避免夸张透视，除非场景要求不刻意俯仰，避免把平视误作证件式正面、地平线穿脸或儿童与成人共用错误机位",
+      "enPrompt": "eye-level camera placing the lens approximately at the main subject's eye line or the object's visual center, with natural horizon and vertical relationships creating a neutral equal and approachable viewpoint; focal length and distance avoid exaggerated perspective and the camera does not tilt without purpose, avoiding a passport-like frontal pose horizon crossing the face or one incorrect height used for both children and adults"
+    },
+    {
+      "id": "character-teenager",
+      "category": "character",
+      "styleGroup": "age-stage",
+      "zhName": "少年少女",
+      "enName": "Teenager",
+      "image": "/assets/parameters/character-teenager.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "青少年角色采用符合具体年龄阶段的骨相、身高与肢体比例，以自然姿态、学习或社交情境和个人化服装表现青春状态，表情可活泼或内向但保持真实；避免儿童大头配成人身体、成熟浓妆、性化姿势、统一校服模板或仅用潮流配饰判断年龄",
+      "enPrompt": "teenage character using age-appropriate bone structure height and limb proportion, with natural posture an identifiable school social or everyday context and individualized clothing conveying youth without caricature; expression may be lively or reserved, avoiding a childlike oversized head on an adult body mature heavy makeup sexualized posing a single uniform template or age indicated only by trendy accessories",
+      "negative": [
+        "unclear identity",
+        "inconsistent character design",
+        "distorted body"
+      ]
+    },
+    {
+      "id": "character-craftsman",
+      "category": "character",
+      "styleGroup": "profession",
+      "zhName": "手艺人",
+      "enName": "Craftsperson",
+      "image": "/assets/parameters/character-craftsman.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "手艺人角色通过与具体工艺相符的工具、材料、工作台和手部动作建立身份，视线落在加工位置，手指握持、材料受力、碎屑与磨损呈现真实制作过程；尊重工艺逻辑和安全规范，避免把不同工种工具混用、手部穿过材料、只做摆拍或用泛化古装代替专业细节",
+      "enPrompt": "craftsperson defined by tools materials bench and hand actions specific to one craft, gaze fixed on the working point with credible grip material resistance debris and wear revealing an actual making process; respect technical sequence and safety, avoiding mixed tools from unrelated trades hands intersecting material posed inactivity or generic historical costume replacing professional detail",
+      "negative": [
+        "unclear identity",
+        "inconsistent character design",
+        "distorted body"
+      ]
+    },
+    {
+      "id": "character-chef",
+      "category": "character",
+      "styleGroup": "profession",
+      "zhName": "厨师",
+      "enName": "Chef",
+      "image": "/assets/parameters/character-chef.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "厨师角色的围裙、工作服、鞋帽和工具符合具体厨房与菜系，双手执行清楚的备料、烹饪或装盘动作，蒸汽、油光和台面使用痕迹真实但卫生；避免刀具握法错误、食材悬浮、制服过度洁净如戏服、火焰无来源或用刻板体型和夸张表情表现职业",
+      "enPrompt": "chef character with apron uniform footwear headwear and tools appropriate to a specific kitchen and cuisine, hands carrying out a clear preparation cooking or plating task amid believable steam sheen and sanitary work-surface wear; avoid incorrect knife grip floating ingredients costume-like spotless clothing source-free flames or occupational stereotypes based on body shape and exaggerated expression",
+      "negative": [
+        "unclear identity",
+        "inconsistent character design",
+        "distorted body"
+      ]
+    },
+    {
+      "id": "character-medical-worker",
+      "category": "character",
+      "styleGroup": "profession",
+      "zhName": "医护人员",
+      "enName": "Medical Worker",
+      "image": "/assets/parameters/character-medical-worker.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "医护人员角色以符合岗位的洁净工作服、防护用品、身份牌位置与专业工具建立可信身份，动作体现规范操作、沟通或照护而非摆拍，环境保持卫生且功能清楚；避免品牌标志、错误佩戴防护装备、把所有岗位都画成医生、血腥猎奇或用夸张圣洁光环替代专业性",
+      "enPrompt": "healthcare worker identified through role-appropriate clean workwear protective equipment badge placement and professional tools, performing a credible care communication or clinical task rather than posing in a functional hygienic setting; avoid brand marks incorrectly worn protection treating every role as a physician sensational gore or replacing professional competence with a saintly glow",
+      "negative": [
+        "unclear identity",
+        "inconsistent character design",
+        "distorted body"
+      ]
+    },
+    {
+      "id": "character-explorer",
+      "category": "character",
+      "styleGroup": "social-role",
+      "zhName": "探险家",
+      "enName": "Explorer",
+      "image": "/assets/parameters/character-explorer.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "探险家角色的服装、鞋靴、背负系统、地图与工具应匹配具体气候和任务，装备重量通过肩带受力、磨损与姿态真实体现，视线和动作指向正在观察或穿越的环境；避免无用途装备堆砌、崭新制服、危险地形中无保护、道具穿模或只靠宽檐帽表达身份",
+      "enPrompt": "explorer character whose clothing footwear load-bearing system map and tools match a specific climate and objective, with equipment weight shown through strap tension wear and posture while gaze and action engage the terrain being studied or crossed; avoid purposeless gear piles pristine costume missing protection in hazardous terrain intersecting props or identity conveyed only by a wide-brim hat",
+      "negative": [
+        "unclear identity",
+        "inconsistent character design",
+        "distorted body"
+      ]
+    },
+    {
+      "id": "character-monk",
+      "category": "character",
+      "styleGroup": "social-role",
+      "zhName": "修行者",
+      "enName": "Monastic Figure",
+      "image": "/assets/parameters/character-monk.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "修行者角色以朴素合身的服装、克制随身物和长期生活留下的真实使用痕迹建立身份，姿态稳定、呼吸放松、眼神专注，环境与文化背景保持一致；尊重具体传统但不混杂宗教符号，避免神秘化刻板印象、悬浮打坐、华丽奇幻盔甲或复制现实宗教人物",
+      "enPrompt": "monastic or contemplative practitioner defined by modest well-fitted clothing restrained personal objects and believable traces of daily use, with grounded posture relaxed breathing and attentive gaze in a culturally coherent setting; respect the chosen tradition without mixing symbols, avoiding exotic stereotypes levitating meditation ornate fantasy armor or copying a real religious figure",
+      "negative": [
+        "unclear identity",
+        "inconsistent character design",
+        "distorted body"
+      ]
+    },
+    {
+      "id": "character-warrior",
+      "category": "character",
+      "styleGroup": "fantasy",
+      "zhName": "战士",
+      "enName": "Warrior",
+      "image": "/assets/parameters/character-warrior.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "战士角色的护甲覆盖、武器尺寸、携行方式与战斗传统彼此一致，关节活动区保留真实可动空间，磨损集中在接触和受击位置，站姿与目光体现训练经验；保持原创文化设计，避免无支撑超大武器、盔甲穿入身体、左右装备矛盾、满身尖刺或复制知名角色",
+      "enPrompt": "warrior character with armor coverage weapon scale carry method and martial tradition designed as one coherent system, preserving articulation at joints and placing wear at believable contact and impact zones while stance and gaze suggest training; keep the culture original, avoiding unsupported oversized weapons armor intersecting the body contradictory left-right equipment gratuitous spikes or copied famous characters",
+      "negative": [
+        "unclear identity",
+        "inconsistent character design",
+        "distorted body"
+      ]
+    }
+  ]
+}

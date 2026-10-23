@@ -1,0 +1,760 @@
+{
+  "parameters": [
+    {
+      "id": "expression-focused-concentration",
+      "category": "expression",
+      "styleGroup": "calm",
+      "zhName": "专注思考",
+      "enName": "Focused Concentration",
+      "image": "/assets/parameters/expression-focused-concentration.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "人物神态专注思考，目光稳定、眉间轻微收紧、嘴部自然闭合，情绪克制而清晰；保持人物身份、年龄、五官比例和头部结构不变，通过眉毛内外端、上下面睑、眼神方向、鼻翼、面颊、嘴角、唇部张力、下颌、颈肩和头部姿态的协调变化表达所选状态；表情强度与事件阶段、观看对象和人物性格相符，并保留自然左右不对称。眼泪、泛红、汗液或笑纹只在生理上合理时出现，嘴内牙齿和舌头结构保持可信。多人场景让表情彼此回应而非统一摆拍。避免只改嘴型、眉眼与嘴矛盾、笑时眼睛无变化、哭泣像贴水滴、惊讶嘴巴过大、愤怒自动暴力化、害怕变恐怖脸、神秘等同黑脸、眼球方向不一致、表情改变身份、面部融化、多余牙齿、伪文字或夸张到遮盖叙事；自然无表情保持放松肌肉与清醒眼神，严肃增加眉眼和下颌控制但不等同愤怒，平静降低动作幅度并保持均匀呼吸，专注通过焦点、轻微眉眼收束和身体朝向体现。避免面具脸、空洞凝视、严肃皱眉过度、专注变斜视或把平静处理成无生命",
+      "enPrompt": "focused concentration expression, steady gaze, subtly tightened brows, naturally closed mouth, restrained readable emotion; preserve identity age facial proportion and head structure, expressing the selected state through coordinated changes in inner and outer brow upper and lower eyelid gaze direction nostril cheek mouth corner lip tension jaw neck shoulder and head posture. Intensity matches event stage observed object and personality while retaining natural bilateral asymmetry. Tears flushing sweat and smile lines appear only when physiologically justified, with credible teeth tongue and oral anatomy. In group scenes expressions respond to one another rather than forming one posed mask. Avoid changing only the mouth contradictory brow eye and lip signals smiling eyes that do not engage sticker-like tears oversized surprise mouths anger automatically becoming violence fear becoming a horror face mystery equated with a darkened face misaligned gaze identity changes melting features extra teeth pseudo-writing or exaggeration that replaces narrative; neutral expression keeps relaxed muscles and an alert gaze, seriousness increases brow-eye and jaw control without becoming anger, calm reduces movement with even breathing, and concentration is shown through focus subtle narrowing and body orientation. Avoid mask faces vacant staring excessive frowning for seriousness cross-eyed concentration or calm rendered as lifelessness",
+      "negative": [
+        "stiff expression",
+        "exaggerated facial distortion",
+        "asymmetrical eyes",
+        "unclear emotion"
+      ]
+    },
+    {
+      "id": "expression-relieved",
+      "category": "expression",
+      "styleGroup": "positive",
+      "zhName": "如释重负",
+      "enName": "Relieved",
+      "image": "/assets/parameters/expression-relieved.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "人物呈现如释重负的神态，眼神与肩颈放松，轻轻呼气，保留自然细微表情；保持人物身份、年龄、五官比例和头部结构不变，通过眉毛内外端、上下面睑、眼神方向、鼻翼、面颊、嘴角、唇部张力、下颌、颈肩和头部姿态的协调变化表达所选状态；表情强度与事件阶段、观看对象和人物性格相符，并保留自然左右不对称。眼泪、泛红、汗液或笑纹只在生理上合理时出现，嘴内牙齿和舌头结构保持可信。多人场景让表情彼此回应而非统一摆拍。避免只改嘴型、眉眼与嘴矛盾、笑时眼睛无变化、哭泣像贴水滴、惊讶嘴巴过大、愤怒自动暴力化、害怕变恐怖脸、神秘等同黑脸、眼球方向不一致、表情改变身份、面部融化、多余牙齿、伪文字或夸张到遮盖叙事；如释重负由呼气、肩颈放松和微弱笑意体现，浅笑只轻提嘴角，灿烂微笑增加眼周与面颊参与，大笑允许张口但保持牙列与下颌真实；积极不等于所有人同样露齿。避免过度拉嘴、牙齿荧白、笑纹贴图、眼睛被挤成线或无事件原因的夸张欢乐",
+      "enPrompt": "relieved expression with softened eyes, relaxed shoulders and neck, a gentle exhale, subtle natural emotion; preserve identity age facial proportion and head structure, expressing the selected state through coordinated changes in inner and outer brow upper and lower eyelid gaze direction nostril cheek mouth corner lip tension jaw neck shoulder and head posture. Intensity matches event stage observed object and personality while retaining natural bilateral asymmetry. Tears flushing sweat and smile lines appear only when physiologically justified, with credible teeth tongue and oral anatomy. In group scenes expressions respond to one another rather than forming one posed mask. Avoid changing only the mouth contradictory brow eye and lip signals smiling eyes that do not engage sticker-like tears oversized surprise mouths anger automatically becoming violence fear becoming a horror face mystery equated with a darkened face misaligned gaze identity changes melting features extra teeth pseudo-writing or exaggeration that replaces narrative; relief appears through exhalation relaxed shoulders and slight warmth, a small smile lifts corners minimally, a bright smile engages cheeks and eyes, and laughter may open the mouth while keeping teeth and jaw credible. Positive expression does not require every person to show teeth. Avoid stretched mouths fluorescent teeth pasted smile lines eyes squeezed into symbols or exaggerated joy without an event basis",
+      "negative": [
+        "stiff expression",
+        "exaggerated facial distortion",
+        "asymmetrical eyes",
+        "unclear emotion"
+      ]
+    },
+    {
+      "id": "expression-skeptical-side-eye",
+      "category": "expression",
+      "styleGroup": "personality",
+      "zhName": "怀疑侧目",
+      "enName": "Skeptical Side Eye",
+      "image": "/assets/parameters/expression-skeptical-side-eye.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "人物怀疑地侧目观察，一侧眉毛微抬，视线偏向侧方，表现审慎与不完全认同；保持人物身份、年龄、五官比例和头部结构不变，通过眉毛内外端、上下面睑、眼神方向、鼻翼、面颊、嘴角、唇部张力、下颌、颈肩和头部姿态的协调变化表达所选状态；表情强度与事件阶段、观看对象和人物性格相符，并保留自然左右不对称。眼泪、泛红、汗液或笑纹只在生理上合理时出现，嘴内牙齿和舌头结构保持可信。多人场景让表情彼此回应而非统一摆拍。避免只改嘴型、眉眼与嘴矛盾、笑时眼睛无变化、哭泣像贴水滴、惊讶嘴巴过大、愤怒自动暴力化、害怕变恐怖脸、神秘等同黑脸、眼球方向不一致、表情改变身份、面部融化、多余牙齿、伪文字或夸张到遮盖叙事；怀疑侧目、尴尬、害羞、自信、骄傲与神秘通过短暂表情和姿态表达，不把它们固化为人物永久性格；自信保持开放重心，骄傲增加自我肯定但不自动傲慢，神秘来自信息保留而非遮黑面部。避免害羞幼态化、尴尬全脸通红、自信等同强势、骄傲仰头过度或侧目导致眼球错位",
+      "enPrompt": "skeptical side-eye expression, one brow slightly raised, gaze turned sideways, cautious unconvinced attitude; preserve identity age facial proportion and head structure, expressing the selected state through coordinated changes in inner and outer brow upper and lower eyelid gaze direction nostril cheek mouth corner lip tension jaw neck shoulder and head posture. Intensity matches event stage observed object and personality while retaining natural bilateral asymmetry. Tears flushing sweat and smile lines appear only when physiologically justified, with credible teeth tongue and oral anatomy. In group scenes expressions respond to one another rather than forming one posed mask. Avoid changing only the mouth contradictory brow eye and lip signals smiling eyes that do not engage sticker-like tears oversized surprise mouths anger automatically becoming violence fear becoming a horror face mystery equated with a darkened face misaligned gaze identity changes melting features extra teeth pseudo-writing or exaggeration that replaces narrative; skeptical side-eye embarrassment shyness confidence pride and mystery are expressed as temporary facial and postural states rather than permanent personality labels. Confidence keeps an open center of balance, pride adds self-assurance without automatic arrogance, and mystery comes from withheld information rather than a blackened face. Avoid infantilized shyness an entirely red embarrassed face confidence equated with dominance excessive chin elevation for pride or side-eye with displaced pupils",
+      "negative": [
+        "stiff expression",
+        "exaggerated facial distortion",
+        "asymmetrical eyes",
+        "unclear emotion"
+      ]
+    },
+    {
+      "id": "expression-embarrassed",
+      "category": "expression",
+      "styleGroup": "personality",
+      "zhName": "尴尬羞涩",
+      "enName": "Embarrassed",
+      "image": "/assets/parameters/expression-embarrassed.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "人物呈现尴尬羞涩神态，克制浅笑、面颊轻微泛红、视线略微回避，避免夸张喜剧表情；保持人物身份、年龄、五官比例和头部结构不变，通过眉毛内外端、上下面睑、眼神方向、鼻翼、面颊、嘴角、唇部张力、下颌、颈肩和头部姿态的协调变化表达所选状态；表情强度与事件阶段、观看对象和人物性格相符，并保留自然左右不对称。眼泪、泛红、汗液或笑纹只在生理上合理时出现，嘴内牙齿和舌头结构保持可信。多人场景让表情彼此回应而非统一摆拍。避免只改嘴型、眉眼与嘴矛盾、笑时眼睛无变化、哭泣像贴水滴、惊讶嘴巴过大、愤怒自动暴力化、害怕变恐怖脸、神秘等同黑脸、眼球方向不一致、表情改变身份、面部融化、多余牙齿、伪文字或夸张到遮盖叙事；怀疑侧目、尴尬、害羞、自信、骄傲与神秘通过短暂表情和姿态表达，不把它们固化为人物永久性格；自信保持开放重心，骄傲增加自我肯定但不自动傲慢，神秘来自信息保留而非遮黑面部。避免害羞幼态化、尴尬全脸通红、自信等同强势、骄傲仰头过度或侧目导致眼球错位",
+      "enPrompt": "embarrassed shy expression, restrained smile, subtly flushed cheeks, slightly averted gaze, no exaggerated comic face; preserve identity age facial proportion and head structure, expressing the selected state through coordinated changes in inner and outer brow upper and lower eyelid gaze direction nostril cheek mouth corner lip tension jaw neck shoulder and head posture. Intensity matches event stage observed object and personality while retaining natural bilateral asymmetry. Tears flushing sweat and smile lines appear only when physiologically justified, with credible teeth tongue and oral anatomy. In group scenes expressions respond to one another rather than forming one posed mask. Avoid changing only the mouth contradictory brow eye and lip signals smiling eyes that do not engage sticker-like tears oversized surprise mouths anger automatically becoming violence fear becoming a horror face mystery equated with a darkened face misaligned gaze identity changes melting features extra teeth pseudo-writing or exaggeration that replaces narrative; skeptical side-eye embarrassment shyness confidence pride and mystery are expressed as temporary facial and postural states rather than permanent personality labels. Confidence keeps an open center of balance, pride adds self-assurance without automatic arrogance, and mystery comes from withheld information rather than a blackened face. Avoid infantilized shyness an entirely red embarrassed face confidence equated with dominance excessive chin elevation for pride or side-eye with displaced pupils",
+      "negative": [
+        "stiff expression",
+        "exaggerated facial distortion",
+        "asymmetrical eyes",
+        "unclear emotion"
+      ]
+    },
+    {
+      "id": "makeup-soft-matte",
+      "category": "hair-makeup",
+      "styleGroup": "makeup-natural",
+      "zhName": "柔雾哑光妆",
+      "enName": "Soft Matte Makeup",
+      "image": "/assets/parameters/makeup-soft-matte.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "柔雾哑光妆面，底妆低光泽且均匀，保留真实皮肤纹理，五官修饰自然克制；保持人物身份、脸型、发际线、头骨体积、耳朵位置、肤色、年龄和原有皮肤特征不变，只修改所选发长、发质、发型、发色或妆容变量。头发从真实发根和分缝生长，发束数量、粗细、卷曲、垂坠、飞丝和高光服从发质、重力、湿度、风向与动作；前后层次和遮挡关系清楚，不穿过脸、耳、肩和服装。妆容沿真实面部曲率、毛孔与皮肤纹理附着，眼、唇、腮和高光边界与光源一致，左右允许自然差异。保持同一人物跨视图的颜色、长度和造型连续。避免假发头盔感、发根悬浮、发束复制、发丝融入背景、银发变金属、湿发像塑料、眉睫消失、眼线漂浮、唇色越界、整脸滤镜、肤色漂白、磨皮抹除纹理、改变骨相、伪文字、水印或以妆容自动推断性格和身份；自然妆容以轻薄底妆、局部遮瑕、眉睫整理和克制唇颊色保持本人特征；柔雾哑光控制油光但保留皮肤体积，水光肌只在受光高点产生湿润反射，裸妆仍可见真实毛孔、细纹与自然血色。避免整脸高光、粉底面具、鼻梁过度提亮、肤色统一漂白、卧蚕消失或把水光做成油腻塑料表面",
+      "enPrompt": "soft matte makeup, even low-shine base, preserved real skin texture, restrained natural facial definition; preserve identity face shape hairline cranial volume ear position skin tone age and existing skin features, changing only the selected length texture hairstyle color or makeup variable. Hair grows from credible roots and parting, with lock count thickness curl drape flyaways and highlights responding to texture gravity humidity wind and action. Front-back layering and occlusion remain clear without passing through face ears shoulders or clothing. Makeup adheres to facial curvature pores and real skin texture, with eye lip cheek and highlight boundaries responding to the same light and allowing natural bilateral variation. Preserve color length and styling continuity for the same person across views. Avoid wig-like helmet hair floating roots cloned locks hair merging into background metallic silver hair plastic wet hair missing brows or lashes floating eyeliner lipstick outside the lip full-face filters skin bleaching texture-erasing smoothing altered bone structure pseudo-writing watermarks or makeup used to infer personality and identity; natural makeup uses thin base local concealing groomed brows and lashes and restrained lip and cheek color while preserving identity. Soft matte finish controls oil without flattening volume, dewy skin creates moist reflection only on illuminated high points, and no-makeup makeup retains pores fine lines and natural circulation. Avoid highlight over the entire face foundation masks overbrightened nasal bridges uniformly bleached skin erased lower-eye structure or dewy finish turned into oily plastic",
+      "negative": [
+        "messy hairline",
+        "plastic skin",
+        "uneven makeup",
+        "distorted facial features"
+      ]
+    },
+    {
+      "id": "makeup-graphic-eyeliner",
+      "category": "hair-makeup",
+      "styleGroup": "makeup-stylized",
+      "zhName": "图形眼线妆",
+      "enName": "Graphic Eyeliner",
+      "image": "/assets/parameters/makeup-graphic-eyeliner.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "图形眼线妆，以清晰几何黑色眼线作为视觉重点，其余妆面简洁干净；保持人物身份、脸型、发际线、头骨体积、耳朵位置、肤色、年龄和原有皮肤特征不变，只修改所选发长、发质、发型、发色或妆容变量。头发从真实发根和分缝生长，发束数量、粗细、卷曲、垂坠、飞丝和高光服从发质、重力、湿度、风向与动作；前后层次和遮挡关系清楚，不穿过脸、耳、肩和服装。妆容沿真实面部曲率、毛孔与皮肤纹理附着，眼、唇、腮和高光边界与光源一致，左右允许自然差异。保持同一人物跨视图的颜色、长度和造型连续。避免假发头盔感、发根悬浮、发束复制、发丝融入背景、银发变金属、湿发像塑料、眉睫消失、眼线漂浮、唇色越界、整脸滤镜、肤色漂白、磨皮抹除纹理、改变骨相、伪文字、水印或以妆容自动推断性格和身份；图形眼线、单色妆、红唇、烟熏、舞台、幻想和赛博妆先确定使用场景、色盘、覆盖区域与观看距离，再让线条、颜料、亮片或贴饰随面部曲率和表情变形；舞台妆适配远距离，幻想与赛博元素仍有材料和固定方式。避免眼线左右断裂、烟熏遮住眼球、红唇溢出、舞台妆用于证件照、幻想纹样复制文化神圣符号或赛博妆只靠随机霓虹线",
+      "enPrompt": "graphic eyeliner makeup with clean geometric black liner as the focal point and otherwise minimal clean makeup; preserve identity face shape hairline cranial volume ear position skin tone age and existing skin features, changing only the selected length texture hairstyle color or makeup variable. Hair grows from credible roots and parting, with lock count thickness curl drape flyaways and highlights responding to texture gravity humidity wind and action. Front-back layering and occlusion remain clear without passing through face ears shoulders or clothing. Makeup adheres to facial curvature pores and real skin texture, with eye lip cheek and highlight boundaries responding to the same light and allowing natural bilateral variation. Preserve color length and styling continuity for the same person across views. Avoid wig-like helmet hair floating roots cloned locks hair merging into background metallic silver hair plastic wet hair missing brows or lashes floating eyeliner lipstick outside the lip full-face filters skin bleaching texture-erasing smoothing altered bone structure pseudo-writing watermarks or makeup used to infer personality and identity; graphic liner monochrome red-lip smoky stage fantasy and cyber makeup define context palette coverage and viewing distance before allowing line pigment glitter or appliqué to follow facial curvature and expression. Stage makeup reads at distance, while fantasy and cyber elements retain real material and attachment. Avoid broken bilateral eyeliner smoke covering the eyes lipstick bleeding outside the mouth stage makeup in an ID-photo context sacred cultural motifs copied as fantasy decoration or cyber makeup made only of random neon lines",
+      "negative": [
+        "messy hairline",
+        "plastic skin",
+        "uneven makeup",
+        "distorted facial features"
+      ]
+    },
+    {
+      "id": "hair-slicked-back",
+      "category": "hair-makeup",
+      "styleGroup": "hair-shape",
+      "zhName": "利落背头",
+      "enName": "Slicked-Back Hair",
+      "image": "/assets/parameters/hair-slicked-back.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "头发利落向后梳理，完整露出额头与面部轮廓，发束方向清晰，造型干净有控制力；保持人物身份、脸型、发际线、头骨体积、耳朵位置、肤色、年龄和原有皮肤特征不变，只修改所选发长、发质、发型、发色或妆容变量。头发从真实发根和分缝生长，发束数量、粗细、卷曲、垂坠、飞丝和高光服从发质、重力、湿度、风向与动作；前后层次和遮挡关系清楚，不穿过脸、耳、肩和服装。妆容沿真实面部曲率、毛孔与皮肤纹理附着，眼、唇、腮和高光边界与光源一致，左右允许自然差异。保持同一人物跨视图的颜色、长度和造型连续。避免假发头盔感、发根悬浮、发束复制、发丝融入背景、银发变金属、湿发像塑料、眉睫消失、眼线漂浮、唇色越界、整脸滤镜、肤色漂白、磨皮抹除纹理、改变骨相、伪文字、水印或以妆容自动推断性格和身份；发型轮廓由剪裁、刘海、侧区、后脑和整体体积定义；波波头、寸头、背头、眉上刘海与普通刘海保持不同边界。“卷发”在此表示经过造型形成的整体卷发轮廓，与天然卷曲发质独立。避免刘海粘成整片、寸头像绘制纹理、波波头左右长度跳变、背头无固定方向或造型轮廓改变头骨",
+      "enPrompt": "slicked-back hairstyle, hair combed cleanly away from the face, exposed forehead, clear strand direction, controlled shape; preserve identity face shape hairline cranial volume ear position skin tone age and existing skin features, changing only the selected length texture hairstyle color or makeup variable. Hair grows from credible roots and parting, with lock count thickness curl drape flyaways and highlights responding to texture gravity humidity wind and action. Front-back layering and occlusion remain clear without passing through face ears shoulders or clothing. Makeup adheres to facial curvature pores and real skin texture, with eye lip cheek and highlight boundaries responding to the same light and allowing natural bilateral variation. Preserve color length and styling continuity for the same person across views. Avoid wig-like helmet hair floating roots cloned locks hair merging into background metallic silver hair plastic wet hair missing brows or lashes floating eyeliner lipstick outside the lip full-face filters skin bleaching texture-erasing smoothing altered bone structure pseudo-writing watermarks or makeup used to infer personality and identity; define hairstyle silhouette through cut fringe side zones occipital shape and overall volume, keeping bob buzz slick-back micro fringe and general bangs structurally distinct. Curly hair in this group means an intentionally styled overall curl silhouette independent of natural curl texture. Avoid fringe fused into one slab buzz cuts as painted noise uneven bob length slick-back hair with no set direction or a hairstyle silhouette deforming the skull",
+      "negative": [
+        "messy hairline",
+        "plastic skin",
+        "uneven makeup",
+        "distorted facial features"
+      ]
+    },
+    {
+      "id": "hair-half-up",
+      "category": "hair-makeup",
+      "styleGroup": "hair-styling",
+      "zhName": "半扎发",
+      "enName": "Half-Up Hair",
+      "image": "/assets/parameters/hair-half-up.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "半扎发造型，上半部分头发束起固定，下半部分自然垂落，层次和发量关系清楚；保持人物身份、脸型、发际线、头骨体积、耳朵位置、肤色、年龄和原有皮肤特征不变，只修改所选发长、发质、发型、发色或妆容变量。头发从真实发根和分缝生长，发束数量、粗细、卷曲、垂坠、飞丝和高光服从发质、重力、湿度、风向与动作；前后层次和遮挡关系清楚，不穿过脸、耳、肩和服装。妆容沿真实面部曲率、毛孔与皮肤纹理附着，眼、唇、腮和高光边界与光源一致，左右允许自然差异。保持同一人物跨视图的颜色、长度和造型连续。避免假发头盔感、发根悬浮、发束复制、发丝融入背景、银发变金属、湿发像塑料、眉睫消失、眼线漂浮、唇色越界、整脸滤镜、肤色漂白、磨皮抹除纹理、改变骨相、伪文字、水印或以妆容自动推断性格和身份；马尾、盘发、半扎、编发、盒子辫、湿发与风吹发丝需说明束缚点、发绳或发夹、编织路径、张力、松散发丝和运动方向；银灰发色只改变色素与高光，不改变发质和年龄。避免辫子起止不明、发束穿插错误、马尾无连接、盘发悬空、风向冲突、湿发全头镜面或银灰发自动变成老年特征",
+      "enPrompt": "half-up hairstyle, upper section gathered and secured while lower hair falls naturally, clear layered volume; preserve identity face shape hairline cranial volume ear position skin tone age and existing skin features, changing only the selected length texture hairstyle color or makeup variable. Hair grows from credible roots and parting, with lock count thickness curl drape flyaways and highlights responding to texture gravity humidity wind and action. Front-back layering and occlusion remain clear without passing through face ears shoulders or clothing. Makeup adheres to facial curvature pores and real skin texture, with eye lip cheek and highlight boundaries responding to the same light and allowing natural bilateral variation. Preserve color length and styling continuity for the same person across views. Avoid wig-like helmet hair floating roots cloned locks hair merging into background metallic silver hair plastic wet hair missing brows or lashes floating eyeliner lipstick outside the lip full-face filters skin bleaching texture-erasing smoothing altered bone structure pseudo-writing watermarks or makeup used to infer personality and identity; ponytail updo half-up braid box braid wet styling and windblown hair specify anchor tie or pin braid path tension loose strands and movement direction. Silver-gray color changes pigment and highlight response only, not texture or age. Avoid braids with no origin or endpoint impossible interweaving ponytails without connection floating updos conflicting wind direction fully mirrored wet hair or silver-gray hair automatically aging the character",
+      "negative": [
+        "messy hairline",
+        "plastic skin",
+        "uneven makeup",
+        "distorted facial features"
+      ]
+    },
+    {
+      "id": "expression-contained-anger",
+      "category": "expression",
+      "styleGroup": "dramatic",
+      "zhName": "克制愤怒",
+      "enName": "Contained Anger",
+      "image": "/assets/parameters/expression-contained-anger.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "人物呈现克制愤怒，目光稳定、下颌收紧、眉部轻微压低，不喊叫、不做夸张扭曲；保持人物身份、年龄、五官比例和头部结构不变，通过眉毛内外端、上下面睑、眼神方向、鼻翼、面颊、嘴角、唇部张力、下颌、颈肩和头部姿态的协调变化表达所选状态；表情强度与事件阶段、观看对象和人物性格相符，并保留自然左右不对称。眼泪、泛红、汗液或笑纹只在生理上合理时出现，嘴内牙齿和舌头结构保持可信。多人场景让表情彼此回应而非统一摆拍。避免只改嘴型、眉眼与嘴矛盾、笑时眼睛无变化、哭泣像贴水滴、惊讶嘴巴过大、愤怒自动暴力化、害怕变恐怖脸、神秘等同黑脸、眼球方向不一致、表情改变身份、面部融化、多余牙齿、伪文字或夸张到遮盖叙事；克制愤怒保留压抑张力而非爆发，含泪微笑同时呈现湿润眼眶与真实笑意，落泪有泪线和原因，愤怒、惊讶与害怕按刺激方向和事件强度逐级表现。避免所有戏剧情绪张口瞪眼、眼泪双侧完全对称、愤怒肌肉过度变形、惊讶下颌脱位或害怕自动加入血腥恐怖元素",
+      "enPrompt": "contained anger expression, steady gaze, tightened jaw, subtly lowered brow, no shouting or exaggerated distortion; preserve identity age facial proportion and head structure, expressing the selected state through coordinated changes in inner and outer brow upper and lower eyelid gaze direction nostril cheek mouth corner lip tension jaw neck shoulder and head posture. Intensity matches event stage observed object and personality while retaining natural bilateral asymmetry. Tears flushing sweat and smile lines appear only when physiologically justified, with credible teeth tongue and oral anatomy. In group scenes expressions respond to one another rather than forming one posed mask. Avoid changing only the mouth contradictory brow eye and lip signals smiling eyes that do not engage sticker-like tears oversized surprise mouths anger automatically becoming violence fear becoming a horror face mystery equated with a darkened face misaligned gaze identity changes melting features extra teeth pseudo-writing or exaggeration that replaces narrative; contained anger retains suppressed tension rather than eruption, a teary smile combines moist eyes with a genuine smile, crying has a tear path and cause, and anger surprise and fear scale with stimulus direction and event intensity. Avoid every dramatic emotion using an open mouth and wide eyes perfectly symmetric tears muscular distortion in anger dislocated jaws in surprise or fear automatically adding graphic horror",
+      "negative": [
+        "stiff expression",
+        "exaggerated facial distortion",
+        "asymmetrical eyes",
+        "unclear emotion"
+      ]
+    },
+    {
+      "id": "expression-teary-smile",
+      "category": "expression",
+      "styleGroup": "dramatic",
+      "zhName": "含泪微笑",
+      "enName": "Teary Smile",
+      "image": "/assets/parameters/expression-teary-smile.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "人物眼中含泪但露出真实轻微笑意，表现释然、感动或苦甜交织的复合情绪，保留自然皮肤细节；保持人物身份、年龄、五官比例和头部结构不变，通过眉毛内外端、上下面睑、眼神方向、鼻翼、面颊、嘴角、唇部张力、下颌、颈肩和头部姿态的协调变化表达所选状态；表情强度与事件阶段、观看对象和人物性格相符，并保留自然左右不对称。眼泪、泛红、汗液或笑纹只在生理上合理时出现，嘴内牙齿和舌头结构保持可信。多人场景让表情彼此回应而非统一摆拍。避免只改嘴型、眉眼与嘴矛盾、笑时眼睛无变化、哭泣像贴水滴、惊讶嘴巴过大、愤怒自动暴力化、害怕变恐怖脸、神秘等同黑脸、眼球方向不一致、表情改变身份、面部融化、多余牙齿、伪文字或夸张到遮盖叙事；克制愤怒保留压抑张力而非爆发，含泪微笑同时呈现湿润眼眶与真实笑意，落泪有泪线和原因，愤怒、惊讶与害怕按刺激方向和事件强度逐级表现。避免所有戏剧情绪张口瞪眼、眼泪双侧完全对称、愤怒肌肉过度变形、惊讶下颌脱位或害怕自动加入血腥恐怖元素",
+      "enPrompt": "teary smile expression, moist eyes with a small genuine smile, conveying relief, gratitude, or bittersweet mixed emotion with natural skin detail; preserve identity age facial proportion and head structure, expressing the selected state through coordinated changes in inner and outer brow upper and lower eyelid gaze direction nostril cheek mouth corner lip tension jaw neck shoulder and head posture. Intensity matches event stage observed object and personality while retaining natural bilateral asymmetry. Tears flushing sweat and smile lines appear only when physiologically justified, with credible teeth tongue and oral anatomy. In group scenes expressions respond to one another rather than forming one posed mask. Avoid changing only the mouth contradictory brow eye and lip signals smiling eyes that do not engage sticker-like tears oversized surprise mouths anger automatically becoming violence fear becoming a horror face mystery equated with a darkened face misaligned gaze identity changes melting features extra teeth pseudo-writing or exaggeration that replaces narrative; contained anger retains suppressed tension rather than eruption, a teary smile combines moist eyes with a genuine smile, crying has a tear path and cause, and anger surprise and fear scale with stimulus direction and event intensity. Avoid every dramatic emotion using an open mouth and wide eyes perfectly symmetric tears muscular distortion in anger dislocated jaws in surprise or fear automatically adding graphic horror",
+      "negative": [
+        "stiff expression",
+        "exaggerated facial distortion",
+        "asymmetrical eyes",
+        "unclear emotion"
+      ]
+    },
+    {
+      "id": "hair-micro-bangs",
+      "category": "hair-makeup",
+      "styleGroup": "hair-shape",
+      "zhName": "眉上短刘海",
+      "enName": "Micro Bangs",
+      "image": "/assets/parameters/hair-micro-bangs.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "眉上短刘海造型，短而整齐的刘海清楚停在眉毛上方，额头与面部比例明确，其余发型保持简洁；保持人物身份、脸型、发际线、头骨体积、耳朵位置、肤色、年龄和原有皮肤特征不变，只修改所选发长、发质、发型、发色或妆容变量。头发从真实发根和分缝生长，发束数量、粗细、卷曲、垂坠、飞丝和高光服从发质、重力、湿度、风向与动作；前后层次和遮挡关系清楚，不穿过脸、耳、肩和服装。妆容沿真实面部曲率、毛孔与皮肤纹理附着，眼、唇、腮和高光边界与光源一致，左右允许自然差异。保持同一人物跨视图的颜色、长度和造型连续。避免假发头盔感、发根悬浮、发束复制、发丝融入背景、银发变金属、湿发像塑料、眉睫消失、眼线漂浮、唇色越界、整脸滤镜、肤色漂白、磨皮抹除纹理、改变骨相、伪文字、水印或以妆容自动推断性格和身份；发型轮廓由剪裁、刘海、侧区、后脑和整体体积定义；波波头、寸头、背头、眉上刘海与普通刘海保持不同边界。“卷发”在此表示经过造型形成的整体卷发轮廓，与天然卷曲发质独立。避免刘海粘成整片、寸头像绘制纹理、波波头左右长度跳变、背头无固定方向或造型轮廓改变头骨",
+      "enPrompt": "micro-bangs hairstyle, short precise fringe ending clearly above the eyebrows, visible forehead proportion, otherwise simple controlled hair; preserve identity face shape hairline cranial volume ear position skin tone age and existing skin features, changing only the selected length texture hairstyle color or makeup variable. Hair grows from credible roots and parting, with lock count thickness curl drape flyaways and highlights responding to texture gravity humidity wind and action. Front-back layering and occlusion remain clear without passing through face ears shoulders or clothing. Makeup adheres to facial curvature pores and real skin texture, with eye lip cheek and highlight boundaries responding to the same light and allowing natural bilateral variation. Preserve color length and styling continuity for the same person across views. Avoid wig-like helmet hair floating roots cloned locks hair merging into background metallic silver hair plastic wet hair missing brows or lashes floating eyeliner lipstick outside the lip full-face filters skin bleaching texture-erasing smoothing altered bone structure pseudo-writing watermarks or makeup used to infer personality and identity; define hairstyle silhouette through cut fringe side zones occipital shape and overall volume, keeping bob buzz slick-back micro fringe and general bangs structurally distinct. Curly hair in this group means an intentionally styled overall curl silhouette independent of natural curl texture. Avoid fringe fused into one slab buzz cuts as painted noise uneven bob length slick-back hair with no set direction or a hairstyle silhouette deforming the skull",
+      "negative": [
+        "messy hairline",
+        "plastic skin",
+        "uneven makeup",
+        "distorted facial features"
+      ]
+    },
+    {
+      "id": "makeup-monochrome",
+      "category": "hair-makeup",
+      "styleGroup": "makeup-stylized",
+      "zhName": "单色妆",
+      "enName": "Monochrome Makeup",
+      "image": "/assets/parameters/makeup-monochrome.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "单色妆容，眼妆、腮红和唇色统一在同一低饱和色相中，以明度层次塑造精致整体感；保持人物身份、脸型、发际线、头骨体积、耳朵位置、肤色、年龄和原有皮肤特征不变，只修改所选发长、发质、发型、发色或妆容变量。头发从真实发根和分缝生长，发束数量、粗细、卷曲、垂坠、飞丝和高光服从发质、重力、湿度、风向与动作；前后层次和遮挡关系清楚，不穿过脸、耳、肩和服装。妆容沿真实面部曲率、毛孔与皮肤纹理附着，眼、唇、腮和高光边界与光源一致，左右允许自然差异。保持同一人物跨视图的颜色、长度和造型连续。避免假发头盔感、发根悬浮、发束复制、发丝融入背景、银发变金属、湿发像塑料、眉睫消失、眼线漂浮、唇色越界、整脸滤镜、肤色漂白、磨皮抹除纹理、改变骨相、伪文字、水印或以妆容自动推断性格和身份；图形眼线、单色妆、红唇、烟熏、舞台、幻想和赛博妆先确定使用场景、色盘、覆盖区域与观看距离，再让线条、颜料、亮片或贴饰随面部曲率和表情变形；舞台妆适配远距离，幻想与赛博元素仍有材料和固定方式。避免眼线左右断裂、烟熏遮住眼球、红唇溢出、舞台妆用于证件照、幻想纹样复制文化神圣符号或赛博妆只靠随机霓虹线",
+      "enPrompt": "monochrome makeup, eyes cheeks and lips harmonized within one muted hue, using tonal value differences for a refined unified look; preserve identity face shape hairline cranial volume ear position skin tone age and existing skin features, changing only the selected length texture hairstyle color or makeup variable. Hair grows from credible roots and parting, with lock count thickness curl drape flyaways and highlights responding to texture gravity humidity wind and action. Front-back layering and occlusion remain clear without passing through face ears shoulders or clothing. Makeup adheres to facial curvature pores and real skin texture, with eye lip cheek and highlight boundaries responding to the same light and allowing natural bilateral variation. Preserve color length and styling continuity for the same person across views. Avoid wig-like helmet hair floating roots cloned locks hair merging into background metallic silver hair plastic wet hair missing brows or lashes floating eyeliner lipstick outside the lip full-face filters skin bleaching texture-erasing smoothing altered bone structure pseudo-writing watermarks or makeup used to infer personality and identity; graphic liner monochrome red-lip smoky stage fantasy and cyber makeup define context palette coverage and viewing distance before allowing line pigment glitter or appliqué to follow facial curvature and expression. Stage makeup reads at distance, while fantasy and cyber elements retain real material and attachment. Avoid broken bilateral eyeliner smoke covering the eyes lipstick bleeding outside the mouth stage makeup in an ID-photo context sacred cultural motifs copied as fantasy decoration or cyber makeup made only of random neon lines",
+      "negative": [
+        "messy hairline",
+        "plastic skin",
+        "uneven makeup",
+        "distorted facial features"
+      ]
+    },
+    {
+      "id": "expression-neutral",
+      "category": "expression",
+      "styleGroup": "calm",
+      "zhName": "自然无表情",
+      "enName": "Neutral",
+      "image": "/assets/parameters/expression-neutral.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "自然中性表情，眉眼与嘴角保持放松，视线稳定但不过度直瞪，面部肌肉没有明显喜怒张力；保留真实眨眼、唇线与左右轻微差异，避免僵硬证件照、空洞眼神或假笑残留；保持人物身份、年龄、五官比例和头部结构不变，通过眉毛内外端、上下面睑、眼神方向、鼻翼、面颊、嘴角、唇部张力、下颌、颈肩和头部姿态的协调变化表达所选状态；表情强度与事件阶段、观看对象和人物性格相符，并保留自然左右不对称。眼泪、泛红、汗液或笑纹只在生理上合理时出现，嘴内牙齿和舌头结构保持可信。多人场景让表情彼此回应而非统一摆拍。避免只改嘴型、眉眼与嘴矛盾、笑时眼睛无变化、哭泣像贴水滴、惊讶嘴巴过大、愤怒自动暴力化、害怕变恐怖脸、神秘等同黑脸、眼球方向不一致、表情改变身份、面部融化、多余牙齿、伪文字或夸张到遮盖叙事；自然无表情保持放松肌肉与清醒眼神，严肃增加眉眼和下颌控制但不等同愤怒，平静降低动作幅度并保持均匀呼吸，专注通过焦点、轻微眉眼收束和身体朝向体现。避免面具脸、空洞凝视、严肃皱眉过度、专注变斜视或把平静处理成无生命",
+      "enPrompt": "natural neutral expression with relaxed brows eyes and mouth corners, a steady gaze without staring, and no obvious emotional tension in the facial muscles; retain believable blinking lip shape and slight left-right asymmetry, avoiding a rigid passport-photo face vacant eyes or traces of a forced smile; preserve identity age facial proportion and head structure, expressing the selected state through coordinated changes in inner and outer brow upper and lower eyelid gaze direction nostril cheek mouth corner lip tension jaw neck shoulder and head posture. Intensity matches event stage observed object and personality while retaining natural bilateral asymmetry. Tears flushing sweat and smile lines appear only when physiologically justified, with credible teeth tongue and oral anatomy. In group scenes expressions respond to one another rather than forming one posed mask. Avoid changing only the mouth contradictory brow eye and lip signals smiling eyes that do not engage sticker-like tears oversized surprise mouths anger automatically becoming violence fear becoming a horror face mystery equated with a darkened face misaligned gaze identity changes melting features extra teeth pseudo-writing or exaggeration that replaces narrative; neutral expression keeps relaxed muscles and an alert gaze, seriousness increases brow-eye and jaw control without becoming anger, calm reduces movement with even breathing, and concentration is shown through focus subtle narrowing and body orientation. Avoid mask faces vacant staring excessive frowning for seriousness cross-eyed concentration or calm rendered as lifelessness",
+      "negative": [
+        "blank dead eyes",
+        "asymmetric expression",
+        "distorted face"
+      ]
+    },
+    {
+      "id": "expression-slight-smile",
+      "category": "expression",
+      "styleGroup": "positive",
+      "zhName": "浅笑",
+      "enName": "Slight Smile",
+      "image": "/assets/parameters/expression-slight-smile.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "浅笑由嘴角轻微上扬和眼周细小放松共同形成，牙齿通常不露或仅微露，面颊变化克制且符合人物气质；保持左右自然差异，避免夸张咧嘴、僵硬商业笑容或只改变嘴唇而眼神无反应；保持人物身份、年龄、五官比例和头部结构不变，通过眉毛内外端、上下面睑、眼神方向、鼻翼、面颊、嘴角、唇部张力、下颌、颈肩和头部姿态的协调变化表达所选状态；表情强度与事件阶段、观看对象和人物性格相符，并保留自然左右不对称。眼泪、泛红、汗液或笑纹只在生理上合理时出现，嘴内牙齿和舌头结构保持可信。多人场景让表情彼此回应而非统一摆拍。避免只改嘴型、眉眼与嘴矛盾、笑时眼睛无变化、哭泣像贴水滴、惊讶嘴巴过大、愤怒自动暴力化、害怕变恐怖脸、神秘等同黑脸、眼球方向不一致、表情改变身份、面部融化、多余牙齿、伪文字或夸张到遮盖叙事；如释重负由呼气、肩颈放松和微弱笑意体现，浅笑只轻提嘴角，灿烂微笑增加眼周与面颊参与，大笑允许张口但保持牙列与下颌真实；积极不等于所有人同样露齿。避免过度拉嘴、牙齿荧白、笑纹贴图、眼睛被挤成线或无事件原因的夸张欢乐",
+      "enPrompt": "subtle smile formed by a gentle lift at the mouth corners and a small softening around the eyes, usually with no teeth or only a slight glimpse and restrained cheek movement suited to the character; preserve natural asymmetry, avoiding a broad grin a rigid commercial smile or lips changing while the eyes remain emotionally blank; preserve identity age facial proportion and head structure, expressing the selected state through coordinated changes in inner and outer brow upper and lower eyelid gaze direction nostril cheek mouth corner lip tension jaw neck shoulder and head posture. Intensity matches event stage observed object and personality while retaining natural bilateral asymmetry. Tears flushing sweat and smile lines appear only when physiologically justified, with credible teeth tongue and oral anatomy. In group scenes expressions respond to one another rather than forming one posed mask. Avoid changing only the mouth contradictory brow eye and lip signals smiling eyes that do not engage sticker-like tears oversized surprise mouths anger automatically becoming violence fear becoming a horror face mystery equated with a darkened face misaligned gaze identity changes melting features extra teeth pseudo-writing or exaggeration that replaces narrative; relief appears through exhalation relaxed shoulders and slight warmth, a small smile lifts corners minimally, a bright smile engages cheeks and eyes, and laughter may open the mouth while keeping teeth and jaw credible. Positive expression does not require every person to show teeth. Avoid stretched mouths fluorescent teeth pasted smile lines eyes squeezed into symbols or exaggerated joy without an event basis",
+      "negative": [
+        "blank dead eyes",
+        "asymmetric expression",
+        "distorted face"
+      ]
+    },
+    {
+      "id": "expression-bright-smile",
+      "category": "expression",
+      "styleGroup": "positive",
+      "zhName": "灿烂微笑",
+      "enName": "Bright Smile",
+      "image": "/assets/parameters/expression-bright-smile.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "灿烂微笑让嘴角充分展开、面颊抬起并带动眼周收紧，牙齿露出程度自然，眼神明亮且与头部姿态协调；保留嘴唇、牙列和面部比例，避免过度拉伸、重复牙齿、闭眼变形或塑料般统一笑脸；保持人物身份、年龄、五官比例和头部结构不变，通过眉毛内外端、上下面睑、眼神方向、鼻翼、面颊、嘴角、唇部张力、下颌、颈肩和头部姿态的协调变化表达所选状态；表情强度与事件阶段、观看对象和人物性格相符，并保留自然左右不对称。眼泪、泛红、汗液或笑纹只在生理上合理时出现，嘴内牙齿和舌头结构保持可信。多人场景让表情彼此回应而非统一摆拍。避免只改嘴型、眉眼与嘴矛盾、笑时眼睛无变化、哭泣像贴水滴、惊讶嘴巴过大、愤怒自动暴力化、害怕变恐怖脸、神秘等同黑脸、眼球方向不一致、表情改变身份、面部融化、多余牙齿、伪文字或夸张到遮盖叙事；如释重负由呼气、肩颈放松和微弱笑意体现，浅笑只轻提嘴角，灿烂微笑增加眼周与面颊参与，大笑允许张口但保持牙列与下颌真实；积极不等于所有人同样露齿。避免过度拉嘴、牙齿荧白、笑纹贴图、眼睛被挤成线或无事件原因的夸张欢乐",
+      "enPrompt": "bright genuine smile with fully lifted mouth corners raised cheeks and corresponding eye crinkles, naturally visible teeth and lively eyes coordinated with the head pose; preserve lip dentition and facial proportions, avoiding overstretching duplicated teeth distorted closed eyes or a uniform plastic grin; preserve identity age facial proportion and head structure, expressing the selected state through coordinated changes in inner and outer brow upper and lower eyelid gaze direction nostril cheek mouth corner lip tension jaw neck shoulder and head posture. Intensity matches event stage observed object and personality while retaining natural bilateral asymmetry. Tears flushing sweat and smile lines appear only when physiologically justified, with credible teeth tongue and oral anatomy. In group scenes expressions respond to one another rather than forming one posed mask. Avoid changing only the mouth contradictory brow eye and lip signals smiling eyes that do not engage sticker-like tears oversized surprise mouths anger automatically becoming violence fear becoming a horror face mystery equated with a darkened face misaligned gaze identity changes melting features extra teeth pseudo-writing or exaggeration that replaces narrative; relief appears through exhalation relaxed shoulders and slight warmth, a small smile lifts corners minimally, a bright smile engages cheeks and eyes, and laughter may open the mouth while keeping teeth and jaw credible. Positive expression does not require every person to show teeth. Avoid stretched mouths fluorescent teeth pasted smile lines eyes squeezed into symbols or exaggerated joy without an event basis",
+      "negative": [
+        "blank dead eyes",
+        "asymmetric expression",
+        "distorted face"
+      ]
+    },
+    {
+      "id": "expression-laughing",
+      "category": "expression",
+      "styleGroup": "positive",
+      "zhName": "大笑",
+      "enName": "Laughing",
+      "image": "/assets/parameters/expression-laughing.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "自然大笑由张开的嘴形、抬起的面颊、眼周收紧和呼吸带动的头肩动作共同构成，牙齿、舌头与口腔暗部结构正确；笑容强烈但仍保留人物身份，避免复制牙齿、嘴角撕裂、双眼完全消失或只张嘴而面部其他区域静止；保持人物身份、年龄、五官比例和头部结构不变，通过眉毛内外端、上下面睑、眼神方向、鼻翼、面颊、嘴角、唇部张力、下颌、颈肩和头部姿态的协调变化表达所选状态；表情强度与事件阶段、观看对象和人物性格相符，并保留自然左右不对称。眼泪、泛红、汗液或笑纹只在生理上合理时出现，嘴内牙齿和舌头结构保持可信。多人场景让表情彼此回应而非统一摆拍。避免只改嘴型、眉眼与嘴矛盾、笑时眼睛无变化、哭泣像贴水滴、惊讶嘴巴过大、愤怒自动暴力化、害怕变恐怖脸、神秘等同黑脸、眼球方向不一致、表情改变身份、面部融化、多余牙齿、伪文字或夸张到遮盖叙事；如释重负由呼气、肩颈放松和微弱笑意体现，浅笑只轻提嘴角，灿烂微笑增加眼周与面颊参与，大笑允许张口但保持牙列与下颌真实；积极不等于所有人同样露齿。避免过度拉嘴、牙齿荧白、笑纹贴图、眼睛被挤成线或无事件原因的夸张欢乐",
+      "enPrompt": "natural laughter combining an open mouth raised cheeks eye crinkles and head-shoulder movement driven by breath, with correct teeth tongue and oral cavity structure; keep the expression strong while preserving identity, avoiding duplicated teeth torn mouth corners vanished eyes or an open mouth with the rest of the face frozen; preserve identity age facial proportion and head structure, expressing the selected state through coordinated changes in inner and outer brow upper and lower eyelid gaze direction nostril cheek mouth corner lip tension jaw neck shoulder and head posture. Intensity matches event stage observed object and personality while retaining natural bilateral asymmetry. Tears flushing sweat and smile lines appear only when physiologically justified, with credible teeth tongue and oral anatomy. In group scenes expressions respond to one another rather than forming one posed mask. Avoid changing only the mouth contradictory brow eye and lip signals smiling eyes that do not engage sticker-like tears oversized surprise mouths anger automatically becoming violence fear becoming a horror face mystery equated with a darkened face misaligned gaze identity changes melting features extra teeth pseudo-writing or exaggeration that replaces narrative; relief appears through exhalation relaxed shoulders and slight warmth, a small smile lifts corners minimally, a bright smile engages cheeks and eyes, and laughter may open the mouth while keeping teeth and jaw credible. Positive expression does not require every person to show teeth. Avoid stretched mouths fluorescent teeth pasted smile lines eyes squeezed into symbols or exaggerated joy without an event basis",
+      "negative": [
+        "blank dead eyes",
+        "asymmetric expression",
+        "distorted face"
+      ]
+    },
+    {
+      "id": "expression-serious",
+      "category": "expression",
+      "styleGroup": "calm",
+      "zhName": "严肃",
+      "enName": "Serious",
+      "image": "/assets/parameters/expression-serious.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "严肃神态以稳定直视、轻收眉间和闭合唇线表达专注与分量，头颈姿态端正但不僵硬；控制皱眉强度并保留真实肤质，避免误成愤怒、威胁性瞪视、夸张下压眉毛或完全无生气；保持人物身份、年龄、五官比例和头部结构不变，通过眉毛内外端、上下面睑、眼神方向、鼻翼、面颊、嘴角、唇部张力、下颌、颈肩和头部姿态的协调变化表达所选状态；表情强度与事件阶段、观看对象和人物性格相符，并保留自然左右不对称。眼泪、泛红、汗液或笑纹只在生理上合理时出现，嘴内牙齿和舌头结构保持可信。多人场景让表情彼此回应而非统一摆拍。避免只改嘴型、眉眼与嘴矛盾、笑时眼睛无变化、哭泣像贴水滴、惊讶嘴巴过大、愤怒自动暴力化、害怕变恐怖脸、神秘等同黑脸、眼球方向不一致、表情改变身份、面部融化、多余牙齿、伪文字或夸张到遮盖叙事；自然无表情保持放松肌肉与清醒眼神，严肃增加眉眼和下颌控制但不等同愤怒，平静降低动作幅度并保持均匀呼吸，专注通过焦点、轻微眉眼收束和身体朝向体现。避免面具脸、空洞凝视、严肃皱眉过度、专注变斜视或把平静处理成无生命",
+      "enPrompt": "serious expression conveyed through a steady gaze slight brow engagement and a closed relaxed lip line, with upright but not rigid head and neck posture; control the frown intensity and preserve real skin texture, avoiding an angry glare threatening stare exaggerated lowered brows or a lifeless face; preserve identity age facial proportion and head structure, expressing the selected state through coordinated changes in inner and outer brow upper and lower eyelid gaze direction nostril cheek mouth corner lip tension jaw neck shoulder and head posture. Intensity matches event stage observed object and personality while retaining natural bilateral asymmetry. Tears flushing sweat and smile lines appear only when physiologically justified, with credible teeth tongue and oral anatomy. In group scenes expressions respond to one another rather than forming one posed mask. Avoid changing only the mouth contradictory brow eye and lip signals smiling eyes that do not engage sticker-like tears oversized surprise mouths anger automatically becoming violence fear becoming a horror face mystery equated with a darkened face misaligned gaze identity changes melting features extra teeth pseudo-writing or exaggeration that replaces narrative; neutral expression keeps relaxed muscles and an alert gaze, seriousness increases brow-eye and jaw control without becoming anger, calm reduces movement with even breathing, and concentration is shown through focus subtle narrowing and body orientation. Avoid mask faces vacant staring excessive frowning for seriousness cross-eyed concentration or calm rendered as lifelessness",
+      "negative": [
+        "blank dead eyes",
+        "asymmetric expression",
+        "distorted face"
+      ]
+    },
+    {
+      "id": "expression-calm",
+      "category": "expression",
+      "styleGroup": "calm",
+      "zhName": "平静",
+      "enName": "Calm",
+      "image": "/assets/parameters/expression-calm.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "平静神态保持眉眼舒展、呼吸均匀和嘴唇自然闭合，视线有落点但没有紧张追踪，头颈与肩部处于稳定放松状态；以细微眼神和姿态传达安定感，避免空洞无表情、困倦垂头、僵硬凝视或强行添加微笑；保持人物身份、年龄、五官比例和头部结构不变，通过眉毛内外端、上下面睑、眼神方向、鼻翼、面颊、嘴角、唇部张力、下颌、颈肩和头部姿态的协调变化表达所选状态；表情强度与事件阶段、观看对象和人物性格相符，并保留自然左右不对称。眼泪、泛红、汗液或笑纹只在生理上合理时出现，嘴内牙齿和舌头结构保持可信。多人场景让表情彼此回应而非统一摆拍。避免只改嘴型、眉眼与嘴矛盾、笑时眼睛无变化、哭泣像贴水滴、惊讶嘴巴过大、愤怒自动暴力化、害怕变恐怖脸、神秘等同黑脸、眼球方向不一致、表情改变身份、面部融化、多余牙齿、伪文字或夸张到遮盖叙事；自然无表情保持放松肌肉与清醒眼神，严肃增加眉眼和下颌控制但不等同愤怒，平静降低动作幅度并保持均匀呼吸，专注通过焦点、轻微眉眼收束和身体朝向体现。避免面具脸、空洞凝视、严肃皱眉过度、专注变斜视或把平静处理成无生命",
+      "enPrompt": "calm expression with open relaxed brows even breathing naturally closed lips and a gaze that has a clear resting point without tense tracking, supported by stable relaxed neck and shoulders; communicate composure through subtle eyes and posture, avoiding a vacant neutral face drooping sleepiness rigid staring or an imposed smile; preserve identity age facial proportion and head structure, expressing the selected state through coordinated changes in inner and outer brow upper and lower eyelid gaze direction nostril cheek mouth corner lip tension jaw neck shoulder and head posture. Intensity matches event stage observed object and personality while retaining natural bilateral asymmetry. Tears flushing sweat and smile lines appear only when physiologically justified, with credible teeth tongue and oral anatomy. In group scenes expressions respond to one another rather than forming one posed mask. Avoid changing only the mouth contradictory brow eye and lip signals smiling eyes that do not engage sticker-like tears oversized surprise mouths anger automatically becoming violence fear becoming a horror face mystery equated with a darkened face misaligned gaze identity changes melting features extra teeth pseudo-writing or exaggeration that replaces narrative; neutral expression keeps relaxed muscles and an alert gaze, seriousness increases brow-eye and jaw control without becoming anger, calm reduces movement with even breathing, and concentration is shown through focus subtle narrowing and body orientation. Avoid mask faces vacant staring excessive frowning for seriousness cross-eyed concentration or calm rendered as lifelessness",
+      "negative": [
+        "blank dead eyes",
+        "asymmetric expression",
+        "distorted face"
+      ]
+    },
+    {
+      "id": "expression-sad",
+      "category": "expression",
+      "styleGroup": "negative",
+      "zhName": "悲伤",
+      "enName": "Sad",
+      "image": "/assets/parameters/expression-sad.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "悲伤神态通过内眉轻抬、眼神下沉、眼睑略重与嘴角微垂共同呈现，情绪内敛并保留人物尊严；眼眶可有轻微湿润但不必落泪，避免夸张哭脸、整张脸扭曲或仅靠蓝色滤镜代替表情；保持人物身份、年龄、五官比例和头部结构不变，通过眉毛内外端、上下面睑、眼神方向、鼻翼、面颊、嘴角、唇部张力、下颌、颈肩和头部姿态的协调变化表达所选状态；表情强度与事件阶段、观看对象和人物性格相符，并保留自然左右不对称。眼泪、泛红、汗液或笑纹只在生理上合理时出现，嘴内牙齿和舌头结构保持可信。多人场景让表情彼此回应而非统一摆拍。避免只改嘴型、眉眼与嘴矛盾、笑时眼睛无变化、哭泣像贴水滴、惊讶嘴巴过大、愤怒自动暴力化、害怕变恐怖脸、神秘等同黑脸、眼球方向不一致、表情改变身份、面部融化、多余牙齿、伪文字或夸张到遮盖叙事；悲伤通过眼神下降、眉内端变化、嘴角与姿势收拢体现，疲惫通过眼睑重量、肩颈和动作迟缓体现，但人物仍保持尊严和可辨身份；原因与强度由场景决定。避免默认流泪、黑眼圈夸大、疲惫等同病弱、悲伤全脸发黑或用雨景替代真实表情",
+      "enPrompt": "sad expression shown through subtly raised inner brows a lowered gaze slightly heavy eyelids and gently downturned mouth corners, restrained and dignified; the eyes may appear faintly moist without active tears, avoiding an exaggerated crying face full facial distortion or a blue color filter standing in for emotion; preserve identity age facial proportion and head structure, expressing the selected state through coordinated changes in inner and outer brow upper and lower eyelid gaze direction nostril cheek mouth corner lip tension jaw neck shoulder and head posture. Intensity matches event stage observed object and personality while retaining natural bilateral asymmetry. Tears flushing sweat and smile lines appear only when physiologically justified, with credible teeth tongue and oral anatomy. In group scenes expressions respond to one another rather than forming one posed mask. Avoid changing only the mouth contradictory brow eye and lip signals smiling eyes that do not engage sticker-like tears oversized surprise mouths anger automatically becoming violence fear becoming a horror face mystery equated with a darkened face misaligned gaze identity changes melting features extra teeth pseudo-writing or exaggeration that replaces narrative; sadness appears through lowered gaze inner-brow change mouth corners and contracted posture, while fatigue appears through eyelid weight shoulders neck and slowed action, preserving dignity and identity. Cause and intensity come from the scene. Avoid mandatory tears exaggerated dark circles fatigue equated with illness a sad face uniformly darkened or rain substituted for an actual expression",
+      "negative": [
+        "blank dead eyes",
+        "asymmetric expression",
+        "distorted face"
+      ]
+    },
+    {
+      "id": "expression-crying",
+      "category": "expression",
+      "styleGroup": "dramatic",
+      "zhName": "落泪",
+      "enName": "Crying",
+      "image": "/assets/parameters/expression-crying.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "真实落泪状态包含湿润眼眶、沿重力方向滑落的少量泪痕、鼻翼与唇部轻微紧张，表情强度与情境一致；保持泪水透明反光和皮肤接触关系，避免对称瀑布泪、黑色泪线、过度扭曲五官或戏剧面具式哭喊；保持人物身份、年龄、五官比例和头部结构不变，通过眉毛内外端、上下面睑、眼神方向、鼻翼、面颊、嘴角、唇部张力、下颌、颈肩和头部姿态的协调变化表达所选状态；表情强度与事件阶段、观看对象和人物性格相符，并保留自然左右不对称。眼泪、泛红、汗液或笑纹只在生理上合理时出现，嘴内牙齿和舌头结构保持可信。多人场景让表情彼此回应而非统一摆拍。避免只改嘴型、眉眼与嘴矛盾、笑时眼睛无变化、哭泣像贴水滴、惊讶嘴巴过大、愤怒自动暴力化、害怕变恐怖脸、神秘等同黑脸、眼球方向不一致、表情改变身份、面部融化、多余牙齿、伪文字或夸张到遮盖叙事；克制愤怒保留压抑张力而非爆发，含泪微笑同时呈现湿润眼眶与真实笑意，落泪有泪线和原因，愤怒、惊讶与害怕按刺激方向和事件强度逐级表现。避免所有戏剧情绪张口瞪眼、眼泪双侧完全对称、愤怒肌肉过度变形、惊讶下颌脱位或害怕自动加入血腥恐怖元素",
+      "enPrompt": "believable crying with moist eyes a limited number of tears following gravity and subtle tension around the nose and lips, with intensity appropriate to the scene; preserve transparent tear reflections and contact with the skin, avoiding symmetrical waterfalls black tear streaks distorted features or a theatrical mask-like wail; preserve identity age facial proportion and head structure, expressing the selected state through coordinated changes in inner and outer brow upper and lower eyelid gaze direction nostril cheek mouth corner lip tension jaw neck shoulder and head posture. Intensity matches event stage observed object and personality while retaining natural bilateral asymmetry. Tears flushing sweat and smile lines appear only when physiologically justified, with credible teeth tongue and oral anatomy. In group scenes expressions respond to one another rather than forming one posed mask. Avoid changing only the mouth contradictory brow eye and lip signals smiling eyes that do not engage sticker-like tears oversized surprise mouths anger automatically becoming violence fear becoming a horror face mystery equated with a darkened face misaligned gaze identity changes melting features extra teeth pseudo-writing or exaggeration that replaces narrative; contained anger retains suppressed tension rather than eruption, a teary smile combines moist eyes with a genuine smile, crying has a tear path and cause, and anger surprise and fear scale with stimulus direction and event intensity. Avoid every dramatic emotion using an open mouth and wide eyes perfectly symmetric tears muscular distortion in anger dislocated jaws in surprise or fear automatically adding graphic horror",
+      "negative": [
+        "blank dead eyes",
+        "asymmetric expression",
+        "distorted face"
+      ]
+    },
+    {
+      "id": "expression-angry",
+      "category": "expression",
+      "styleGroup": "dramatic",
+      "zhName": "愤怒",
+      "enName": "Angry",
+      "image": "/assets/parameters/expression-angry.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "愤怒神态由眉间收紧、目光集中、下颌与唇部张力构成，强度可读但面部结构仍稳定；让颈肩姿态回应情绪并保留个体特征，避免眼球凸出、整脸通红、牙齿畸变或把愤怒误做成怪物表情；保持人物身份、年龄、五官比例和头部结构不变，通过眉毛内外端、上下面睑、眼神方向、鼻翼、面颊、嘴角、唇部张力、下颌、颈肩和头部姿态的协调变化表达所选状态；表情强度与事件阶段、观看对象和人物性格相符，并保留自然左右不对称。眼泪、泛红、汗液或笑纹只在生理上合理时出现，嘴内牙齿和舌头结构保持可信。多人场景让表情彼此回应而非统一摆拍。避免只改嘴型、眉眼与嘴矛盾、笑时眼睛无变化、哭泣像贴水滴、惊讶嘴巴过大、愤怒自动暴力化、害怕变恐怖脸、神秘等同黑脸、眼球方向不一致、表情改变身份、面部融化、多余牙齿、伪文字或夸张到遮盖叙事；克制愤怒保留压抑张力而非爆发，含泪微笑同时呈现湿润眼眶与真实笑意，落泪有泪线和原因，愤怒、惊讶与害怕按刺激方向和事件强度逐级表现。避免所有戏剧情绪张口瞪眼、眼泪双侧完全对称、愤怒肌肉过度变形、惊讶下颌脱位或害怕自动加入血腥恐怖元素",
+      "enPrompt": "angry expression built from contracted brows concentrated eyes and controlled tension in the jaw and lips, clearly readable while facial structure remains stable; let the neck and shoulders support the emotion while retaining identity, avoiding bulging eyes an entirely red face malformed teeth or a monster-like grimace; preserve identity age facial proportion and head structure, expressing the selected state through coordinated changes in inner and outer brow upper and lower eyelid gaze direction nostril cheek mouth corner lip tension jaw neck shoulder and head posture. Intensity matches event stage observed object and personality while retaining natural bilateral asymmetry. Tears flushing sweat and smile lines appear only when physiologically justified, with credible teeth tongue and oral anatomy. In group scenes expressions respond to one another rather than forming one posed mask. Avoid changing only the mouth contradictory brow eye and lip signals smiling eyes that do not engage sticker-like tears oversized surprise mouths anger automatically becoming violence fear becoming a horror face mystery equated with a darkened face misaligned gaze identity changes melting features extra teeth pseudo-writing or exaggeration that replaces narrative; contained anger retains suppressed tension rather than eruption, a teary smile combines moist eyes with a genuine smile, crying has a tear path and cause, and anger surprise and fear scale with stimulus direction and event intensity. Avoid every dramatic emotion using an open mouth and wide eyes perfectly symmetric tears muscular distortion in anger dislocated jaws in surprise or fear automatically adding graphic horror",
+      "negative": [
+        "blank dead eyes",
+        "asymmetric expression",
+        "distorted face"
+      ]
+    },
+    {
+      "id": "expression-surprised",
+      "category": "expression",
+      "styleGroup": "dramatic",
+      "zhName": "惊讶",
+      "enName": "Surprised",
+      "image": "/assets/parameters/expression-surprised.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "惊讶神态以眉毛抬起、眼睑打开和嘴唇自然微张形成瞬间反应，程度与事件相符且五官比例不变；面部方向和视线指向惊讶来源，避免眼睛巨大化、下巴脱臼、重复牙齿或卡通化尖叫；保持人物身份、年龄、五官比例和头部结构不变，通过眉毛内外端、上下面睑、眼神方向、鼻翼、面颊、嘴角、唇部张力、下颌、颈肩和头部姿态的协调变化表达所选状态；表情强度与事件阶段、观看对象和人物性格相符，并保留自然左右不对称。眼泪、泛红、汗液或笑纹只在生理上合理时出现，嘴内牙齿和舌头结构保持可信。多人场景让表情彼此回应而非统一摆拍。避免只改嘴型、眉眼与嘴矛盾、笑时眼睛无变化、哭泣像贴水滴、惊讶嘴巴过大、愤怒自动暴力化、害怕变恐怖脸、神秘等同黑脸、眼球方向不一致、表情改变身份、面部融化、多余牙齿、伪文字或夸张到遮盖叙事；克制愤怒保留压抑张力而非爆发，含泪微笑同时呈现湿润眼眶与真实笑意，落泪有泪线和原因，愤怒、惊讶与害怕按刺激方向和事件强度逐级表现。避免所有戏剧情绪张口瞪眼、眼泪双侧完全对称、愤怒肌肉过度变形、惊讶下颌脱位或害怕自动加入血腥恐怖元素",
+      "enPrompt": "surprised expression formed by lifted brows opened eyelids and naturally parted lips as an immediate reaction, with intensity matching the event and facial proportions preserved; direct the face and gaze toward the cause, avoiding oversized eyes a dislocated jaw duplicated teeth or a cartoon scream; preserve identity age facial proportion and head structure, expressing the selected state through coordinated changes in inner and outer brow upper and lower eyelid gaze direction nostril cheek mouth corner lip tension jaw neck shoulder and head posture. Intensity matches event stage observed object and personality while retaining natural bilateral asymmetry. Tears flushing sweat and smile lines appear only when physiologically justified, with credible teeth tongue and oral anatomy. In group scenes expressions respond to one another rather than forming one posed mask. Avoid changing only the mouth contradictory brow eye and lip signals smiling eyes that do not engage sticker-like tears oversized surprise mouths anger automatically becoming violence fear becoming a horror face mystery equated with a darkened face misaligned gaze identity changes melting features extra teeth pseudo-writing or exaggeration that replaces narrative; contained anger retains suppressed tension rather than eruption, a teary smile combines moist eyes with a genuine smile, crying has a tear path and cause, and anger surprise and fear scale with stimulus direction and event intensity. Avoid every dramatic emotion using an open mouth and wide eyes perfectly symmetric tears muscular distortion in anger dislocated jaws in surprise or fear automatically adding graphic horror",
+      "negative": [
+        "blank dead eyes",
+        "asymmetric expression",
+        "distorted face"
+      ]
+    },
+    {
+      "id": "expression-scared",
+      "category": "expression",
+      "styleGroup": "dramatic",
+      "zhName": "害怕",
+      "enName": "Scared",
+      "image": "/assets/parameters/expression-scared.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "害怕神态由内眉抬起、眼睑紧张、瞳孔聚焦威胁方向和嘴唇轻张共同形成，呼吸、颈肩收缩与身体退让相互呼应；保留人物身份与五官比例，避免夸张凸眼、无缘由尖叫、整脸扭曲或仅用黑暗滤镜代替恐惧；保持人物身份、年龄、五官比例和头部结构不变，通过眉毛内外端、上下面睑、眼神方向、鼻翼、面颊、嘴角、唇部张力、下颌、颈肩和头部姿态的协调变化表达所选状态；表情强度与事件阶段、观看对象和人物性格相符，并保留自然左右不对称。眼泪、泛红、汗液或笑纹只在生理上合理时出现，嘴内牙齿和舌头结构保持可信。多人场景让表情彼此回应而非统一摆拍。避免只改嘴型、眉眼与嘴矛盾、笑时眼睛无变化、哭泣像贴水滴、惊讶嘴巴过大、愤怒自动暴力化、害怕变恐怖脸、神秘等同黑脸、眼球方向不一致、表情改变身份、面部融化、多余牙齿、伪文字或夸张到遮盖叙事；克制愤怒保留压抑张力而非爆发，含泪微笑同时呈现湿润眼眶与真实笑意，落泪有泪线和原因，愤怒、惊讶与害怕按刺激方向和事件强度逐级表现。避免所有戏剧情绪张口瞪眼、眼泪双侧完全对称、愤怒肌肉过度变形、惊讶下颌脱位或害怕自动加入血腥恐怖元素",
+      "enPrompt": "fearful expression built from raised inner brows tense eyelids pupils focused toward the threat and slightly parted lips, with breathing contracted shoulders and a subtle backward body response working together; preserve identity and facial proportions, avoiding bulging eyes an unmotivated scream full-face distortion or darkness used as a substitute for fear; preserve identity age facial proportion and head structure, expressing the selected state through coordinated changes in inner and outer brow upper and lower eyelid gaze direction nostril cheek mouth corner lip tension jaw neck shoulder and head posture. Intensity matches event stage observed object and personality while retaining natural bilateral asymmetry. Tears flushing sweat and smile lines appear only when physiologically justified, with credible teeth tongue and oral anatomy. In group scenes expressions respond to one another rather than forming one posed mask. Avoid changing only the mouth contradictory brow eye and lip signals smiling eyes that do not engage sticker-like tears oversized surprise mouths anger automatically becoming violence fear becoming a horror face mystery equated with a darkened face misaligned gaze identity changes melting features extra teeth pseudo-writing or exaggeration that replaces narrative; contained anger retains suppressed tension rather than eruption, a teary smile combines moist eyes with a genuine smile, crying has a tear path and cause, and anger surprise and fear scale with stimulus direction and event intensity. Avoid every dramatic emotion using an open mouth and wide eyes perfectly symmetric tears muscular distortion in anger dislocated jaws in surprise or fear automatically adding graphic horror",
+      "negative": [
+        "blank dead eyes",
+        "asymmetric expression",
+        "distorted face"
+      ]
+    },
+    {
+      "id": "expression-shy",
+      "category": "expression",
+      "styleGroup": "personality",
+      "zhName": "害羞",
+      "enName": "Shy",
+      "image": "/assets/parameters/expression-shy.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "害羞神态通过短暂移开的视线、轻收下巴、克制浅笑和略向内的肩臂姿态表达，面颊可有自然轻微泛红但不覆盖整脸；动作细小且符合情境，避免低头到看不见脸、夸张双手捂脸、动漫腮红条或把害羞误成恐惧；保持人物身份、年龄、五官比例和头部结构不变，通过眉毛内外端、上下面睑、眼神方向、鼻翼、面颊、嘴角、唇部张力、下颌、颈肩和头部姿态的协调变化表达所选状态；表情强度与事件阶段、观看对象和人物性格相符，并保留自然左右不对称。眼泪、泛红、汗液或笑纹只在生理上合理时出现，嘴内牙齿和舌头结构保持可信。多人场景让表情彼此回应而非统一摆拍。避免只改嘴型、眉眼与嘴矛盾、笑时眼睛无变化、哭泣像贴水滴、惊讶嘴巴过大、愤怒自动暴力化、害怕变恐怖脸、神秘等同黑脸、眼球方向不一致、表情改变身份、面部融化、多余牙齿、伪文字或夸张到遮盖叙事；怀疑侧目、尴尬、害羞、自信、骄傲与神秘通过短暂表情和姿态表达，不把它们固化为人物永久性格；自信保持开放重心，骄傲增加自我肯定但不自动傲慢，神秘来自信息保留而非遮黑面部。避免害羞幼态化、尴尬全脸通红、自信等同强势、骄傲仰头过度或侧目导致眼球错位",
+      "enPrompt": "shy expression communicated through a briefly averted gaze slightly tucked chin restrained smile and subtly inward shoulder or arm posture, with only a faint natural cheek flush; keep gestures small and contextually believable, avoiding a face hidden completely downward exaggerated hands covering the face anime blush marks or confusion with fear; preserve identity age facial proportion and head structure, expressing the selected state through coordinated changes in inner and outer brow upper and lower eyelid gaze direction nostril cheek mouth corner lip tension jaw neck shoulder and head posture. Intensity matches event stage observed object and personality while retaining natural bilateral asymmetry. Tears flushing sweat and smile lines appear only when physiologically justified, with credible teeth tongue and oral anatomy. In group scenes expressions respond to one another rather than forming one posed mask. Avoid changing only the mouth contradictory brow eye and lip signals smiling eyes that do not engage sticker-like tears oversized surprise mouths anger automatically becoming violence fear becoming a horror face mystery equated with a darkened face misaligned gaze identity changes melting features extra teeth pseudo-writing or exaggeration that replaces narrative; skeptical side-eye embarrassment shyness confidence pride and mystery are expressed as temporary facial and postural states rather than permanent personality labels. Confidence keeps an open center of balance, pride adds self-assurance without automatic arrogance, and mystery comes from withheld information rather than a blackened face. Avoid infantilized shyness an entirely red embarrassed face confidence equated with dominance excessive chin elevation for pride or side-eye with displaced pupils",
+      "negative": [
+        "blank dead eyes",
+        "asymmetric expression",
+        "distorted face"
+      ]
+    },
+    {
+      "id": "expression-confident",
+      "category": "expression",
+      "styleGroup": "personality",
+      "zhName": "自信",
+      "enName": "Confident",
+      "image": "/assets/parameters/expression-confident.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "自信神态由稳定直接或有明确目标的视线、放松眉间、自然闭合或轻扬的嘴角、抬起但不过仰的下巴和开放肩颈共同形成，面部肌肉没有紧张防御，姿势重心可靠；允许安静或外向两种表达，避免把自信等同于怒视、夸张叉腰、下巴过高、僵硬假笑或压迫他人的傲慢表情；保持人物身份、年龄、五官比例和头部结构不变，通过眉毛内外端、上下面睑、眼神方向、鼻翼、面颊、嘴角、唇部张力、下颌、颈肩和头部姿态的协调变化表达所选状态；表情强度与事件阶段、观看对象和人物性格相符，并保留自然左右不对称。眼泪、泛红、汗液或笑纹只在生理上合理时出现，嘴内牙齿和舌头结构保持可信。多人场景让表情彼此回应而非统一摆拍。避免只改嘴型、眉眼与嘴矛盾、笑时眼睛无变化、哭泣像贴水滴、惊讶嘴巴过大、愤怒自动暴力化、害怕变恐怖脸、神秘等同黑脸、眼球方向不一致、表情改变身份、面部融化、多余牙齿、伪文字或夸张到遮盖叙事；怀疑侧目、尴尬、害羞、自信、骄傲与神秘通过短暂表情和姿态表达，不把它们固化为人物永久性格；自信保持开放重心，骄傲增加自我肯定但不自动傲慢，神秘来自信息保留而非遮黑面部。避免害羞幼态化、尴尬全脸通红、自信等同强势、骄傲仰头过度或侧目导致眼球错位",
+      "enPrompt": "confident expression formed by steady direct or purposefully aimed gaze a relaxed brow naturally closed or slightly lifted mouth corners a raised but not overtilted chin and open shoulders and neck, with no defensive facial tension and a reliable body center; allow quiet or outgoing confidence, avoiding angry staring exaggerated hands-on-hips posture an excessively high chin a rigid promotional smile or contempt toward others; preserve identity age facial proportion and head structure, expressing the selected state through coordinated changes in inner and outer brow upper and lower eyelid gaze direction nostril cheek mouth corner lip tension jaw neck shoulder and head posture. Intensity matches event stage observed object and personality while retaining natural bilateral asymmetry. Tears flushing sweat and smile lines appear only when physiologically justified, with credible teeth tongue and oral anatomy. In group scenes expressions respond to one another rather than forming one posed mask. Avoid changing only the mouth contradictory brow eye and lip signals smiling eyes that do not engage sticker-like tears oversized surprise mouths anger automatically becoming violence fear becoming a horror face mystery equated with a darkened face misaligned gaze identity changes melting features extra teeth pseudo-writing or exaggeration that replaces narrative; skeptical side-eye embarrassment shyness confidence pride and mystery are expressed as temporary facial and postural states rather than permanent personality labels. Confidence keeps an open center of balance, pride adds self-assurance without automatic arrogance, and mystery comes from withheld information rather than a blackened face. Avoid infantilized shyness an entirely red embarrassed face confidence equated with dominance excessive chin elevation for pride or side-eye with displaced pupils",
+      "negative": [
+        "blank dead eyes",
+        "asymmetric expression",
+        "distorted face"
+      ]
+    },
+    {
+      "id": "expression-proud",
+      "category": "expression",
+      "styleGroup": "personality",
+      "zhName": "骄傲",
+      "enName": "Proud",
+      "image": "/assets/parameters/expression-proud.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "骄傲神态通过下巴微抬、胸肩舒展、目光稳定和克制嘴角表达自信与成就感，姿态挺拔但不傲慢僵硬；保留人物亲和度与自然呼吸，避免夸张仰头、蔑视斜眼、双手无故叉腰或权力符号堆砌；保持人物身份、年龄、五官比例和头部结构不变，通过眉毛内外端、上下面睑、眼神方向、鼻翼、面颊、嘴角、唇部张力、下颌、颈肩和头部姿态的协调变化表达所选状态；表情强度与事件阶段、观看对象和人物性格相符，并保留自然左右不对称。眼泪、泛红、汗液或笑纹只在生理上合理时出现，嘴内牙齿和舌头结构保持可信。多人场景让表情彼此回应而非统一摆拍。避免只改嘴型、眉眼与嘴矛盾、笑时眼睛无变化、哭泣像贴水滴、惊讶嘴巴过大、愤怒自动暴力化、害怕变恐怖脸、神秘等同黑脸、眼球方向不一致、表情改变身份、面部融化、多余牙齿、伪文字或夸张到遮盖叙事；怀疑侧目、尴尬、害羞、自信、骄傲与神秘通过短暂表情和姿态表达，不把它们固化为人物永久性格；自信保持开放重心，骄傲增加自我肯定但不自动傲慢，神秘来自信息保留而非遮黑面部。避免害羞幼态化、尴尬全脸通红、自信等同强势、骄傲仰头过度或侧目导致眼球错位",
+      "enPrompt": "proud expression conveyed by a slightly raised chin open shoulders a steady gaze and restrained mouth corners, suggesting confidence and achievement without rigid arrogance; retain warmth and natural breathing, avoiding an extreme head tilt contemptuous side-eye arbitrary hands-on-hips posing or piled-up status symbols; preserve identity age facial proportion and head structure, expressing the selected state through coordinated changes in inner and outer brow upper and lower eyelid gaze direction nostril cheek mouth corner lip tension jaw neck shoulder and head posture. Intensity matches event stage observed object and personality while retaining natural bilateral asymmetry. Tears flushing sweat and smile lines appear only when physiologically justified, with credible teeth tongue and oral anatomy. In group scenes expressions respond to one another rather than forming one posed mask. Avoid changing only the mouth contradictory brow eye and lip signals smiling eyes that do not engage sticker-like tears oversized surprise mouths anger automatically becoming violence fear becoming a horror face mystery equated with a darkened face misaligned gaze identity changes melting features extra teeth pseudo-writing or exaggeration that replaces narrative; skeptical side-eye embarrassment shyness confidence pride and mystery are expressed as temporary facial and postural states rather than permanent personality labels. Confidence keeps an open center of balance, pride adds self-assurance without automatic arrogance, and mystery comes from withheld information rather than a blackened face. Avoid infantilized shyness an entirely red embarrassed face confidence equated with dominance excessive chin elevation for pride or side-eye with displaced pupils",
+      "negative": [
+        "blank dead eyes",
+        "asymmetric expression",
+        "distorted face"
+      ]
+    },
+    {
+      "id": "expression-tired",
+      "category": "expression",
+      "styleGroup": "negative",
+      "zhName": "疲惫",
+      "enName": "Tired",
+      "image": "/assets/parameters/expression-tired.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "疲惫神态通过略下垂但不闭合的眼睑、减弱的聚焦、轻微眼下阴影、放松嘴角和较低头位表现，肩颈与呼吸节奏也显得沉重，但人物仍保持可辨认意识与自然肌肉张力；避免用夸张黑眼圈、病态惨白、双眼方向不一、面部融化或昏迷姿势代替日常疲劳；保持人物身份、年龄、五官比例和头部结构不变，通过眉毛内外端、上下面睑、眼神方向、鼻翼、面颊、嘴角、唇部张力、下颌、颈肩和头部姿态的协调变化表达所选状态；表情强度与事件阶段、观看对象和人物性格相符，并保留自然左右不对称。眼泪、泛红、汗液或笑纹只在生理上合理时出现，嘴内牙齿和舌头结构保持可信。多人场景让表情彼此回应而非统一摆拍。避免只改嘴型、眉眼与嘴矛盾、笑时眼睛无变化、哭泣像贴水滴、惊讶嘴巴过大、愤怒自动暴力化、害怕变恐怖脸、神秘等同黑脸、眼球方向不一致、表情改变身份、面部融化、多余牙齿、伪文字或夸张到遮盖叙事；悲伤通过眼神下降、眉内端变化、嘴角与姿势收拢体现，疲惫通过眼睑重量、肩颈和动作迟缓体现，但人物仍保持尊严和可辨身份；原因与强度由场景决定。避免默认流泪、黑眼圈夸大、疲惫等同病弱、悲伤全脸发黑或用雨景替代真实表情",
+      "enPrompt": "tired expression conveyed through slightly lowered yet open lids softened focus restrained under-eye shadow relaxed mouth corners and a modestly lowered head, with heavier shoulder-neck posture and breathing while the person remains alert and facial muscles anatomically coherent; avoid replacing ordinary fatigue with exaggerated black circles sickly pallor divergent gaze melting features or an unconscious pose; preserve identity age facial proportion and head structure, expressing the selected state through coordinated changes in inner and outer brow upper and lower eyelid gaze direction nostril cheek mouth corner lip tension jaw neck shoulder and head posture. Intensity matches event stage observed object and personality while retaining natural bilateral asymmetry. Tears flushing sweat and smile lines appear only when physiologically justified, with credible teeth tongue and oral anatomy. In group scenes expressions respond to one another rather than forming one posed mask. Avoid changing only the mouth contradictory brow eye and lip signals smiling eyes that do not engage sticker-like tears oversized surprise mouths anger automatically becoming violence fear becoming a horror face mystery equated with a darkened face misaligned gaze identity changes melting features extra teeth pseudo-writing or exaggeration that replaces narrative; sadness appears through lowered gaze inner-brow change mouth corners and contracted posture, while fatigue appears through eyelid weight shoulders neck and slowed action, preserving dignity and identity. Cause and intensity come from the scene. Avoid mandatory tears exaggerated dark circles fatigue equated with illness a sad face uniformly darkened or rain substituted for an actual expression",
+      "negative": [
+        "blank dead eyes",
+        "asymmetric expression",
+        "distorted face"
+      ]
+    },
+    {
+      "id": "expression-mysterious",
+      "category": "expression",
+      "styleGroup": "personality",
+      "zhName": "神秘",
+      "enName": "Enigmatic Expression",
+      "image": "/assets/parameters/expression-mysterious.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "神秘神态以部分隐藏的信息建立：视线略偏离镜头或停留在画外，嘴角只有细微未定变化，眉眼被克制侧光、前景或姿态轻度遮挡，但五官仍清楚且情绪不可被简单归为喜怒；避免固定邪笑、整脸藏黑、遮住全部眼睛、夸张挑眉、恐怖化或用烟雾面具等道具直接替代表情；保持人物身份、年龄、五官比例和头部结构不变，通过眉毛内外端、上下面睑、眼神方向、鼻翼、面颊、嘴角、唇部张力、下颌、颈肩和头部姿态的协调变化表达所选状态；表情强度与事件阶段、观看对象和人物性格相符，并保留自然左右不对称。眼泪、泛红、汗液或笑纹只在生理上合理时出现，嘴内牙齿和舌头结构保持可信。多人场景让表情彼此回应而非统一摆拍。避免只改嘴型、眉眼与嘴矛盾、笑时眼睛无变化、哭泣像贴水滴、惊讶嘴巴过大、愤怒自动暴力化、害怕变恐怖脸、神秘等同黑脸、眼球方向不一致、表情改变身份、面部融化、多余牙齿、伪文字或夸张到遮盖叙事；怀疑侧目、尴尬、害羞、自信、骄傲与神秘通过短暂表情和姿态表达，不把它们固化为人物永久性格；自信保持开放重心，骄傲增加自我肯定但不自动傲慢，神秘来自信息保留而非遮黑面部。避免害羞幼态化、尴尬全脸通红、自信等同强势、骄傲仰头过度或侧目导致眼球错位",
+      "enPrompt": "mysterious expression built from partial information: gaze resting just off camera or beyond the frame, mouth corners carrying an unresolved micro-change and eyes or brows lightly screened by restrained side light foreground or pose while features remain legible and emotion resists a simple happy-angry reading; avoid a stock villain smirk a fully blacked-out face both eyes hidden exaggerated brows horror coding or props such as smoke and masks replacing expression; preserve identity age facial proportion and head structure, expressing the selected state through coordinated changes in inner and outer brow upper and lower eyelid gaze direction nostril cheek mouth corner lip tension jaw neck shoulder and head posture. Intensity matches event stage observed object and personality while retaining natural bilateral asymmetry. Tears flushing sweat and smile lines appear only when physiologically justified, with credible teeth tongue and oral anatomy. In group scenes expressions respond to one another rather than forming one posed mask. Avoid changing only the mouth contradictory brow eye and lip signals smiling eyes that do not engage sticker-like tears oversized surprise mouths anger automatically becoming violence fear becoming a horror face mystery equated with a darkened face misaligned gaze identity changes melting features extra teeth pseudo-writing or exaggeration that replaces narrative; skeptical side-eye embarrassment shyness confidence pride and mystery are expressed as temporary facial and postural states rather than permanent personality labels. Confidence keeps an open center of balance, pride adds self-assurance without automatic arrogance, and mystery comes from withheld information rather than a blackened face. Avoid infantilized shyness an entirely red embarrassed face confidence equated with dominance excessive chin elevation for pride or side-eye with displaced pupils",
+      "negative": [
+        "blank dead eyes",
+        "asymmetric expression",
+        "distorted face"
+      ]
+    },
+    {
+      "id": "hair-short",
+      "category": "hair-makeup",
+      "styleGroup": "hair-length",
+      "zhName": "短发",
+      "enName": "Short Hair",
+      "image": "/assets/parameters/hair-short.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "短发贴合头骨并通过顶部、侧区和后颈的长度差塑造轮廓，发旋、分缝与生长方向连续，耳际和鬓角边缘干净但保留自然碎发；避免头皮贴图感、每根发丝直立、左右完全复制或短发变成无结构毛球；保持人物身份、脸型、发际线、头骨体积、耳朵位置、肤色、年龄和原有皮肤特征不变，只修改所选发长、发质、发型、发色或妆容变量。头发从真实发根和分缝生长，发束数量、粗细、卷曲、垂坠、飞丝和高光服从发质、重力、湿度、风向与动作；前后层次和遮挡关系清楚，不穿过脸、耳、肩和服装。妆容沿真实面部曲率、毛孔与皮肤纹理附着，眼、唇、腮和高光边界与光源一致，左右允许自然差异。保持同一人物跨视图的颜色、长度和造型连续。避免假发头盔感、发根悬浮、发束复制、发丝融入背景、银发变金属、湿发像塑料、眉睫消失、眼线漂浮、唇色越界、整脸滤镜、肤色漂白、磨皮抹除纹理、改变骨相、伪文字、水印或以妆容自动推断性格和身份；发长以发际线到耳、下颌、肩、胸或背部的实际落点定义，并随头部转角和姿势保持一致；短发保留耳颈边界，长发有重量、层次和与衣物接触。避免只缩放同一发片、后脑长度与正面不一致、长发无重力、短发覆盖整张脸或发尾被画幅随意截断",
+      "enPrompt": "short hair following the skull with controlled length differences across crown sides and nape, continuous whorl parting and growth direction and clean ear and temple edges retaining a few natural flyaways; avoid a painted scalp every strand standing upright perfect bilateral duplication or an unstructured fuzzy sphere; preserve identity face shape hairline cranial volume ear position skin tone age and existing skin features, changing only the selected length texture hairstyle color or makeup variable. Hair grows from credible roots and parting, with lock count thickness curl drape flyaways and highlights responding to texture gravity humidity wind and action. Front-back layering and occlusion remain clear without passing through face ears shoulders or clothing. Makeup adheres to facial curvature pores and real skin texture, with eye lip cheek and highlight boundaries responding to the same light and allowing natural bilateral variation. Preserve color length and styling continuity for the same person across views. Avoid wig-like helmet hair floating roots cloned locks hair merging into background metallic silver hair plastic wet hair missing brows or lashes floating eyeliner lipstick outside the lip full-face filters skin bleaching texture-erasing smoothing altered bone structure pseudo-writing watermarks or makeup used to infer personality and identity; define length by the real endpoint from hairline to ear jaw shoulder chest or back and keep it consistent through head rotation and pose. Short hair preserves ear and neck boundaries, while long hair carries weight layering and contact with clothing. Avoid scaling one hair sheet inconsistent rear and frontal length gravity-free long hair short hair covering the whole face or ends accidentally cut by the frame",
+      "negative": [
+        "messy unintended hair",
+        "distorted hairline",
+        "unclear makeup"
+      ]
+    },
+    {
+      "id": "hair-long",
+      "category": "hair-makeup",
+      "styleGroup": "hair-length",
+      "zhName": "长发",
+      "enName": "Long Hair",
+      "image": "/assets/parameters/hair-long.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "长发从头皮分区连续生长，主发束沿肩背和重力方向垂落，前后层次、长度变化和与衣物的接触关系清楚；高光顺着发束而非整片涂亮，保留少量碎发，避免发量无限增殖、穿透身体、瀑布般平板或每根发丝同样清晰；保持人物身份、脸型、发际线、头骨体积、耳朵位置、肤色、年龄和原有皮肤特征不变，只修改所选发长、发质、发型、发色或妆容变量。头发从真实发根和分缝生长，发束数量、粗细、卷曲、垂坠、飞丝和高光服从发质、重力、湿度、风向与动作；前后层次和遮挡关系清楚，不穿过脸、耳、肩和服装。妆容沿真实面部曲率、毛孔与皮肤纹理附着，眼、唇、腮和高光边界与光源一致，左右允许自然差异。保持同一人物跨视图的颜色、长度和造型连续。避免假发头盔感、发根悬浮、发束复制、发丝融入背景、银发变金属、湿发像塑料、眉睫消失、眼线漂浮、唇色越界、整脸滤镜、肤色漂白、磨皮抹除纹理、改变骨相、伪文字、水印或以妆容自动推断性格和身份；发长以发际线到耳、下颌、肩、胸或背部的实际落点定义，并随头部转角和姿势保持一致；短发保留耳颈边界，长发有重量、层次和与衣物接触。避免只缩放同一发片、后脑长度与正面不一致、长发无重力、短发覆盖整张脸或发尾被画幅随意截断",
+      "enPrompt": "long hair growing continuously from readable scalp sections, primary masses falling along shoulders back and gravity with clear front-back layering length variation and contact with clothing; highlights follow strand groups rather than coating one sheet, with a few flyaways, avoiding infinite volume body intersections waterfall-flat slabs or every strand rendered equally sharp; preserve identity face shape hairline cranial volume ear position skin tone age and existing skin features, changing only the selected length texture hairstyle color or makeup variable. Hair grows from credible roots and parting, with lock count thickness curl drape flyaways and highlights responding to texture gravity humidity wind and action. Front-back layering and occlusion remain clear without passing through face ears shoulders or clothing. Makeup adheres to facial curvature pores and real skin texture, with eye lip cheek and highlight boundaries responding to the same light and allowing natural bilateral variation. Preserve color length and styling continuity for the same person across views. Avoid wig-like helmet hair floating roots cloned locks hair merging into background metallic silver hair plastic wet hair missing brows or lashes floating eyeliner lipstick outside the lip full-face filters skin bleaching texture-erasing smoothing altered bone structure pseudo-writing watermarks or makeup used to infer personality and identity; define length by the real endpoint from hairline to ear jaw shoulder chest or back and keep it consistent through head rotation and pose. Short hair preserves ear and neck boundaries, while long hair carries weight layering and contact with clothing. Avoid scaling one hair sheet inconsistent rear and frontal length gravity-free long hair short hair covering the whole face or ends accidentally cut by the frame",
+      "negative": [
+        "messy unintended hair",
+        "distorted hairline",
+        "unclear makeup"
+      ]
+    },
+    {
+      "id": "hair-bob",
+      "category": "hair-makeup",
+      "styleGroup": "hair-shape",
+      "zhName": "波波头",
+      "enName": "Bob Cut",
+      "image": "/assets/parameters/hair-bob.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "波波头以颌线至肩上的整齐长度包裹头骨，内外层次、后颈收束和发尾弧度清楚，左右可有轻微自然差异；发丝高光随曲面连续变化并保留少量碎发，避免头盔般硬壳、完全镜像、发尾齐切成平板或穿过脸颊；保持人物身份、脸型、发际线、头骨体积、耳朵位置、肤色、年龄和原有皮肤特征不变，只修改所选发长、发质、发型、发色或妆容变量。头发从真实发根和分缝生长，发束数量、粗细、卷曲、垂坠、飞丝和高光服从发质、重力、湿度、风向与动作；前后层次和遮挡关系清楚，不穿过脸、耳、肩和服装。妆容沿真实面部曲率、毛孔与皮肤纹理附着，眼、唇、腮和高光边界与光源一致，左右允许自然差异。保持同一人物跨视图的颜色、长度和造型连续。避免假发头盔感、发根悬浮、发束复制、发丝融入背景、银发变金属、湿发像塑料、眉睫消失、眼线漂浮、唇色越界、整脸滤镜、肤色漂白、磨皮抹除纹理、改变骨相、伪文字、水印或以妆容自动推断性格和身份；发型轮廓由剪裁、刘海、侧区、后脑和整体体积定义；波波头、寸头、背头、眉上刘海与普通刘海保持不同边界。“卷发”在此表示经过造型形成的整体卷发轮廓，与天然卷曲发质独立。避免刘海粘成整片、寸头像绘制纹理、波波头左右长度跳变、背头无固定方向或造型轮廓改变头骨",
+      "enPrompt": "bob haircut wrapping the skull at jaw-to-shoulder length with readable inner and outer layers a shaped nape and coherent curved ends, allowing slight natural asymmetry; strand highlights follow the rounded mass with a few flyaways, avoiding a helmet shell perfect mirroring ends cut into a flat board or hair intersecting the cheeks; preserve identity face shape hairline cranial volume ear position skin tone age and existing skin features, changing only the selected length texture hairstyle color or makeup variable. Hair grows from credible roots and parting, with lock count thickness curl drape flyaways and highlights responding to texture gravity humidity wind and action. Front-back layering and occlusion remain clear without passing through face ears shoulders or clothing. Makeup adheres to facial curvature pores and real skin texture, with eye lip cheek and highlight boundaries responding to the same light and allowing natural bilateral variation. Preserve color length and styling continuity for the same person across views. Avoid wig-like helmet hair floating roots cloned locks hair merging into background metallic silver hair plastic wet hair missing brows or lashes floating eyeliner lipstick outside the lip full-face filters skin bleaching texture-erasing smoothing altered bone structure pseudo-writing watermarks or makeup used to infer personality and identity; define hairstyle silhouette through cut fringe side zones occipital shape and overall volume, keeping bob buzz slick-back micro fringe and general bangs structurally distinct. Curly hair in this group means an intentionally styled overall curl silhouette independent of natural curl texture. Avoid fringe fused into one slab buzz cuts as painted noise uneven bob length slick-back hair with no set direction or a hairstyle silhouette deforming the skull",
+      "negative": [
+        "messy unintended hair",
+        "distorted hairline",
+        "unclear makeup"
+      ]
+    },
+    {
+      "id": "hair-curly",
+      "category": "hair-makeup",
+      "styleGroup": "hair-shape",
+      "zhName": "卷发",
+      "enName": "Curly Hair",
+      "image": "/assets/parameters/hair-curly.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "卷发造型由大小一致但不过度复制的卷束构成，发根有支撑、卷曲方向随头骨和重力变化，外轮廓蓬松而面部边缘清楚；保留零散碎发与真实层次，避免方便面式重复卷、整块头盔感或卷发穿过耳朵和衣物；保持人物身份、脸型、发际线、头骨体积、耳朵位置、肤色、年龄和原有皮肤特征不变，只修改所选发长、发质、发型、发色或妆容变量。头发从真实发根和分缝生长，发束数量、粗细、卷曲、垂坠、飞丝和高光服从发质、重力、湿度、风向与动作；前后层次和遮挡关系清楚，不穿过脸、耳、肩和服装。妆容沿真实面部曲率、毛孔与皮肤纹理附着，眼、唇、腮和高光边界与光源一致，左右允许自然差异。保持同一人物跨视图的颜色、长度和造型连续。避免假发头盔感、发根悬浮、发束复制、发丝融入背景、银发变金属、湿发像塑料、眉睫消失、眼线漂浮、唇色越界、整脸滤镜、肤色漂白、磨皮抹除纹理、改变骨相、伪文字、水印或以妆容自动推断性格和身份；发型轮廓由剪裁、刘海、侧区、后脑和整体体积定义；波波头、寸头、背头、眉上刘海与普通刘海保持不同边界。“卷发”在此表示经过造型形成的整体卷发轮廓，与天然卷曲发质独立。避免刘海粘成整片、寸头像绘制纹理、波波头左右长度跳变、背头无固定方向或造型轮廓改变头骨",
+      "enPrompt": "curly hairstyle built from coherent but non-repeating curl clusters, with root lift and curl direction responding to the skull and gravity, a voluminous silhouette and a clear facial edge; retain flyaways and believable layering, avoiding instant-noodle repetition helmet-like mass or curls intersecting ears and clothing; preserve identity face shape hairline cranial volume ear position skin tone age and existing skin features, changing only the selected length texture hairstyle color or makeup variable. Hair grows from credible roots and parting, with lock count thickness curl drape flyaways and highlights responding to texture gravity humidity wind and action. Front-back layering and occlusion remain clear without passing through face ears shoulders or clothing. Makeup adheres to facial curvature pores and real skin texture, with eye lip cheek and highlight boundaries responding to the same light and allowing natural bilateral variation. Preserve color length and styling continuity for the same person across views. Avoid wig-like helmet hair floating roots cloned locks hair merging into background metallic silver hair plastic wet hair missing brows or lashes floating eyeliner lipstick outside the lip full-face filters skin bleaching texture-erasing smoothing altered bone structure pseudo-writing watermarks or makeup used to infer personality and identity; define hairstyle silhouette through cut fringe side zones occipital shape and overall volume, keeping bob buzz slick-back micro fringe and general bangs structurally distinct. Curly hair in this group means an intentionally styled overall curl silhouette independent of natural curl texture. Avoid fringe fused into one slab buzz cuts as painted noise uneven bob length slick-back hair with no set direction or a hairstyle silhouette deforming the skull",
+      "negative": [
+        "messy unintended hair",
+        "distorted hairline",
+        "unclear makeup"
+      ]
+    },
+    {
+      "id": "hair-ponytail",
+      "category": "hair-makeup",
+      "styleGroup": "hair-styling",
+      "zhName": "马尾",
+      "enName": "Ponytail",
+      "image": "/assets/parameters/hair-ponytail.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "马尾由发根向真实扎点汇聚，皮筋附近具有收束张力，尾部重量、弧线和摆动方向随动作与重力变化，头顶仍保留头骨体积；碎发适量且不遮挡五官，避免马尾悬空、扎点缺失、发束穿透背部或形状像固定塑料管；保持人物身份、脸型、发际线、头骨体积、耳朵位置、肤色、年龄和原有皮肤特征不变，只修改所选发长、发质、发型、发色或妆容变量。头发从真实发根和分缝生长，发束数量、粗细、卷曲、垂坠、飞丝和高光服从发质、重力、湿度、风向与动作；前后层次和遮挡关系清楚，不穿过脸、耳、肩和服装。妆容沿真实面部曲率、毛孔与皮肤纹理附着，眼、唇、腮和高光边界与光源一致，左右允许自然差异。保持同一人物跨视图的颜色、长度和造型连续。避免假发头盔感、发根悬浮、发束复制、发丝融入背景、银发变金属、湿发像塑料、眉睫消失、眼线漂浮、唇色越界、整脸滤镜、肤色漂白、磨皮抹除纹理、改变骨相、伪文字、水印或以妆容自动推断性格和身份；马尾、盘发、半扎、编发、盒子辫、湿发与风吹发丝需说明束缚点、发绳或发夹、编织路径、张力、松散发丝和运动方向；银灰发色只改变色素与高光，不改变发质和年龄。避免辫子起止不明、发束穿插错误、马尾无连接、盘发悬空、风向冲突、湿发全头镜面或银灰发自动变成老年特征",
+      "enPrompt": "ponytail gathering hair roots toward a believable tie point with visible tension near the band, while tail weight curvature and swing respond to movement and gravity and the crown retains skull volume; keep flyaways restrained and facial features clear, avoiding a floating tail missing anchor hair intersecting the back or a rigid plastic-tube shape; preserve identity face shape hairline cranial volume ear position skin tone age and existing skin features, changing only the selected length texture hairstyle color or makeup variable. Hair grows from credible roots and parting, with lock count thickness curl drape flyaways and highlights responding to texture gravity humidity wind and action. Front-back layering and occlusion remain clear without passing through face ears shoulders or clothing. Makeup adheres to facial curvature pores and real skin texture, with eye lip cheek and highlight boundaries responding to the same light and allowing natural bilateral variation. Preserve color length and styling continuity for the same person across views. Avoid wig-like helmet hair floating roots cloned locks hair merging into background metallic silver hair plastic wet hair missing brows or lashes floating eyeliner lipstick outside the lip full-face filters skin bleaching texture-erasing smoothing altered bone structure pseudo-writing watermarks or makeup used to infer personality and identity; ponytail updo half-up braid box braid wet styling and windblown hair specify anchor tie or pin braid path tension loose strands and movement direction. Silver-gray color changes pigment and highlight response only, not texture or age. Avoid braids with no origin or endpoint impossible interweaving ponytails without connection floating updos conflicting wind direction fully mirrored wet hair or silver-gray hair automatically aging the character",
+      "negative": [
+        "messy unintended hair",
+        "distorted hairline",
+        "unclear makeup"
+      ]
+    },
+    {
+      "id": "hair-bun",
+      "category": "hair-makeup",
+      "styleGroup": "hair-styling",
+      "zhName": "盘发",
+      "enName": "Hair Bun",
+      "image": "/assets/parameters/hair-bun.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "盘发将发束沿真实梳理方向收拢至发髻，发髻体积、固定点与头骨比例合理，鬓角和后颈保留少量自然碎发；轮廓整洁但不过分光滑，避免悬空发髻、无来源发量、塑料表面或发簪穿透头部；保持人物身份、脸型、发际线、头骨体积、耳朵位置、肤色、年龄和原有皮肤特征不变，只修改所选发长、发质、发型、发色或妆容变量。头发从真实发根和分缝生长，发束数量、粗细、卷曲、垂坠、飞丝和高光服从发质、重力、湿度、风向与动作；前后层次和遮挡关系清楚，不穿过脸、耳、肩和服装。妆容沿真实面部曲率、毛孔与皮肤纹理附着，眼、唇、腮和高光边界与光源一致，左右允许自然差异。保持同一人物跨视图的颜色、长度和造型连续。避免假发头盔感、发根悬浮、发束复制、发丝融入背景、银发变金属、湿发像塑料、眉睫消失、眼线漂浮、唇色越界、整脸滤镜、肤色漂白、磨皮抹除纹理、改变骨相、伪文字、水印或以妆容自动推断性格和身份；马尾、盘发、半扎、编发、盒子辫、湿发与风吹发丝需说明束缚点、发绳或发夹、编织路径、张力、松散发丝和运动方向；银灰发色只改变色素与高光，不改变发质和年龄。避免辫子起止不明、发束穿插错误、马尾无连接、盘发悬空、风向冲突、湿发全头镜面或银灰发自动变成老年特征",
+      "enPrompt": "hair bun gathering strands along believable combing directions into an updo with plausible volume anchoring and proportion to the skull, retaining a few natural wisps at the temples and nape; keep the silhouette tidy but not unnaturally slick, avoiding a floating bun impossible hair volume plastic surfaces or pins intersecting the head; preserve identity face shape hairline cranial volume ear position skin tone age and existing skin features, changing only the selected length texture hairstyle color or makeup variable. Hair grows from credible roots and parting, with lock count thickness curl drape flyaways and highlights responding to texture gravity humidity wind and action. Front-back layering and occlusion remain clear without passing through face ears shoulders or clothing. Makeup adheres to facial curvature pores and real skin texture, with eye lip cheek and highlight boundaries responding to the same light and allowing natural bilateral variation. Preserve color length and styling continuity for the same person across views. Avoid wig-like helmet hair floating roots cloned locks hair merging into background metallic silver hair plastic wet hair missing brows or lashes floating eyeliner lipstick outside the lip full-face filters skin bleaching texture-erasing smoothing altered bone structure pseudo-writing watermarks or makeup used to infer personality and identity; ponytail updo half-up braid box braid wet styling and windblown hair specify anchor tie or pin braid path tension loose strands and movement direction. Silver-gray color changes pigment and highlight response only, not texture or age. Avoid braids with no origin or endpoint impossible interweaving ponytails without connection floating updos conflicting wind direction fully mirrored wet hair or silver-gray hair automatically aging the character",
+      "negative": [
+        "messy unintended hair",
+        "distorted hairline",
+        "unclear makeup"
+      ]
+    },
+    {
+      "id": "hair-bangs",
+      "category": "hair-makeup",
+      "styleGroup": "hair-shape",
+      "zhName": "刘海",
+      "enName": "Bangs",
+      "image": "/assets/parameters/hair-bangs.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "刘海从可辨认的前额发际与分区自然生长，依据直刘海、空气刘海或侧刘海形成不同束宽与间隙，发梢落在额头并受重力、风向和头部转动影响，仍露出合理眉眼区域；避免整片塑料帘、无发根悬浮、每根等距、左右机械镜像、穿过眼球或刘海与后发完全不同材质；保持人物身份、脸型、发际线、头骨体积、耳朵位置、肤色、年龄和原有皮肤特征不变，只修改所选发长、发质、发型、发色或妆容变量。头发从真实发根和分缝生长，发束数量、粗细、卷曲、垂坠、飞丝和高光服从发质、重力、湿度、风向与动作；前后层次和遮挡关系清楚，不穿过脸、耳、肩和服装。妆容沿真实面部曲率、毛孔与皮肤纹理附着，眼、唇、腮和高光边界与光源一致，左右允许自然差异。保持同一人物跨视图的颜色、长度和造型连续。避免假发头盔感、发根悬浮、发束复制、发丝融入背景、银发变金属、湿发像塑料、眉睫消失、眼线漂浮、唇色越界、整脸滤镜、肤色漂白、磨皮抹除纹理、改变骨相、伪文字、水印或以妆容自动推断性格和身份；发型轮廓由剪裁、刘海、侧区、后脑和整体体积定义；波波头、寸头、背头、眉上刘海与普通刘海保持不同边界。“卷发”在此表示经过造型形成的整体卷发轮廓，与天然卷曲发质独立。避免刘海粘成整片、寸头像绘制纹理、波波头左右长度跳变、背头无固定方向或造型轮廓改变头骨",
+      "enPrompt": "bangs growing naturally from a readable frontal hairline and sectioning, using strand-group width and gaps appropriate to blunt airy or side-swept fringe, tips resting against the forehead and responding to gravity wind and head turn while preserving a plausible view of brows and eyes; avoid a solid plastic curtain rootless floating hair equally spaced strands mechanical symmetry intersections through eyeballs or fringe rendered as a different material from the rest of the hair; preserve identity face shape hairline cranial volume ear position skin tone age and existing skin features, changing only the selected length texture hairstyle color or makeup variable. Hair grows from credible roots and parting, with lock count thickness curl drape flyaways and highlights responding to texture gravity humidity wind and action. Front-back layering and occlusion remain clear without passing through face ears shoulders or clothing. Makeup adheres to facial curvature pores and real skin texture, with eye lip cheek and highlight boundaries responding to the same light and allowing natural bilateral variation. Preserve color length and styling continuity for the same person across views. Avoid wig-like helmet hair floating roots cloned locks hair merging into background metallic silver hair plastic wet hair missing brows or lashes floating eyeliner lipstick outside the lip full-face filters skin bleaching texture-erasing smoothing altered bone structure pseudo-writing watermarks or makeup used to infer personality and identity; define hairstyle silhouette through cut fringe side zones occipital shape and overall volume, keeping bob buzz slick-back micro fringe and general bangs structurally distinct. Curly hair in this group means an intentionally styled overall curl silhouette independent of natural curl texture. Avoid fringe fused into one slab buzz cuts as painted noise uneven bob length slick-back hair with no set direction or a hairstyle silhouette deforming the skull",
+      "negative": [
+        "messy unintended hair",
+        "distorted hairline",
+        "unclear makeup"
+      ]
+    },
+    {
+      "id": "hair-braided",
+      "category": "hair-makeup",
+      "styleGroup": "hair-styling",
+      "zhName": "编发",
+      "enName": "Braided Hair",
+      "image": "/assets/parameters/hair-braided.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "编发由连续分区的发束按明确交叉顺序编织，辫节从发根到末端逐渐收窄，松紧、毛躁和发量保持一致，固定带或发簪位于真实受力点，动作中辫子作为有重量的整体延迟摆动；避免辫股数量中途改变、无限复制纹理、辫子穿过肩背、发根无分区、末端突然消失或每节像金属链条；保持人物身份、脸型、发际线、头骨体积、耳朵位置、肤色、年龄和原有皮肤特征不变，只修改所选发长、发质、发型、发色或妆容变量。头发从真实发根和分缝生长，发束数量、粗细、卷曲、垂坠、飞丝和高光服从发质、重力、湿度、风向与动作；前后层次和遮挡关系清楚，不穿过脸、耳、肩和服装。妆容沿真实面部曲率、毛孔与皮肤纹理附着，眼、唇、腮和高光边界与光源一致，左右允许自然差异。保持同一人物跨视图的颜色、长度和造型连续。避免假发头盔感、发根悬浮、发束复制、发丝融入背景、银发变金属、湿发像塑料、眉睫消失、眼线漂浮、唇色越界、整脸滤镜、肤色漂白、磨皮抹除纹理、改变骨相、伪文字、水印或以妆容自动推断性格和身份；马尾、盘发、半扎、编发、盒子辫、湿发与风吹发丝需说明束缚点、发绳或发夹、编织路径、张力、松散发丝和运动方向；银灰发色只改变色素与高光，不改变发质和年龄。避免辫子起止不明、发束穿插错误、马尾无连接、盘发悬空、风向冲突、湿发全头镜面或银灰发自动变成老年特征",
+      "enPrompt": "braided hair constructed from continuously sectioned locks crossing in a readable sequence, braid units narrowing from root toward the end with coherent tension volume and flyaways, ties or pins placed at real load points and the braid moving as a weighted form with delayed swing; avoid strand counts changing mid-braid endlessly tiled texture intersections through shoulders or back unsectioned roots vanishing ends or every segment appearing like a metal chain; preserve identity face shape hairline cranial volume ear position skin tone age and existing skin features, changing only the selected length texture hairstyle color or makeup variable. Hair grows from credible roots and parting, with lock count thickness curl drape flyaways and highlights responding to texture gravity humidity wind and action. Front-back layering and occlusion remain clear without passing through face ears shoulders or clothing. Makeup adheres to facial curvature pores and real skin texture, with eye lip cheek and highlight boundaries responding to the same light and allowing natural bilateral variation. Preserve color length and styling continuity for the same person across views. Avoid wig-like helmet hair floating roots cloned locks hair merging into background metallic silver hair plastic wet hair missing brows or lashes floating eyeliner lipstick outside the lip full-face filters skin bleaching texture-erasing smoothing altered bone structure pseudo-writing watermarks or makeup used to infer personality and identity; ponytail updo half-up braid box braid wet styling and windblown hair specify anchor tie or pin braid path tension loose strands and movement direction. Silver-gray color changes pigment and highlight response only, not texture or age. Avoid braids with no origin or endpoint impossible interweaving ponytails without connection floating updos conflicting wind direction fully mirrored wet hair or silver-gray hair automatically aging the character",
+      "negative": [
+        "messy unintended hair",
+        "distorted hairline",
+        "unclear makeup"
+      ]
+    },
+    {
+      "id": "hair-wet-look",
+      "category": "hair-makeup",
+      "styleGroup": "hair-styling",
+      "zhName": "湿发",
+      "enName": "Wet Look Hair",
+      "image": "/assets/parameters/hair-wet-look.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "湿发造型让发束因水分或造型品聚合成粗细不同的清晰组块，发根贴合但头骨体积仍存在，局部水光沿发丝方向移动，发尾和鬓角可有小水滴或黏附皮肤的真实接触；明确是刚淋湿还是时尚定型，避免整头油亮塑料、无重力尖刺、每根等宽、脸部像浸水、滴水方向错误或湿发穿过衣领；保持人物身份、脸型、发际线、头骨体积、耳朵位置、肤色、年龄和原有皮肤特征不变，只修改所选发长、发质、发型、发色或妆容变量。头发从真实发根和分缝生长，发束数量、粗细、卷曲、垂坠、飞丝和高光服从发质、重力、湿度、风向与动作；前后层次和遮挡关系清楚，不穿过脸、耳、肩和服装。妆容沿真实面部曲率、毛孔与皮肤纹理附着，眼、唇、腮和高光边界与光源一致，左右允许自然差异。保持同一人物跨视图的颜色、长度和造型连续。避免假发头盔感、发根悬浮、发束复制、发丝融入背景、银发变金属、湿发像塑料、眉睫消失、眼线漂浮、唇色越界、整脸滤镜、肤色漂白、磨皮抹除纹理、改变骨相、伪文字、水印或以妆容自动推断性格和身份；马尾、盘发、半扎、编发、盒子辫、湿发与风吹发丝需说明束缚点、发绳或发夹、编织路径、张力、松散发丝和运动方向；银灰发色只改变色素与高光，不改变发质和年龄。避免辫子起止不明、发束穿插错误、马尾无连接、盘发悬空、风向冲突、湿发全头镜面或银灰发自动变成老年特征",
+      "enPrompt": "wet-look hair grouping strands into clearly separated locks of varied width through water or styling product, roots lying closer while skull volume remains and localized sheen follows strand direction with optional small droplets or believable adhesion at tips and temples; distinguish freshly wet from editorial styling, avoiding uniformly greasy plastic hair weightless spikes identical locks a soaked-looking face incorrect droplet direction or hair intersecting the collar; preserve identity face shape hairline cranial volume ear position skin tone age and existing skin features, changing only the selected length texture hairstyle color or makeup variable. Hair grows from credible roots and parting, with lock count thickness curl drape flyaways and highlights responding to texture gravity humidity wind and action. Front-back layering and occlusion remain clear without passing through face ears shoulders or clothing. Makeup adheres to facial curvature pores and real skin texture, with eye lip cheek and highlight boundaries responding to the same light and allowing natural bilateral variation. Preserve color length and styling continuity for the same person across views. Avoid wig-like helmet hair floating roots cloned locks hair merging into background metallic silver hair plastic wet hair missing brows or lashes floating eyeliner lipstick outside the lip full-face filters skin bleaching texture-erasing smoothing altered bone structure pseudo-writing watermarks or makeup used to infer personality and identity; ponytail updo half-up braid box braid wet styling and windblown hair specify anchor tie or pin braid path tension loose strands and movement direction. Silver-gray color changes pigment and highlight response only, not texture or age. Avoid braids with no origin or endpoint impossible interweaving ponytails without connection floating updos conflicting wind direction fully mirrored wet hair or silver-gray hair automatically aging the character",
+      "negative": [
+        "messy unintended hair",
+        "distorted hairline",
+        "unclear makeup"
+      ]
+    },
+    {
+      "id": "hair-windblown",
+      "category": "hair-makeup",
+      "styleGroup": "hair-styling",
+      "zhName": "风吹发丝",
+      "enName": "Windblown Hair",
+      "image": "/assets/parameters/hair-windblown.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "风吹发丝具有统一来风方向，主发束先产生整体偏移，细碎发丝再以不同长度和弧度响应速度；发根仍连接头皮并避开眼口关键区域，避免所有发丝平行、无重力漂浮、穿模或用运动模糊掩盖结构；保持人物身份、脸型、发际线、头骨体积、耳朵位置、肤色、年龄和原有皮肤特征不变，只修改所选发长、发质、发型、发色或妆容变量。头发从真实发根和分缝生长，发束数量、粗细、卷曲、垂坠、飞丝和高光服从发质、重力、湿度、风向与动作；前后层次和遮挡关系清楚，不穿过脸、耳、肩和服装。妆容沿真实面部曲率、毛孔与皮肤纹理附着，眼、唇、腮和高光边界与光源一致，左右允许自然差异。保持同一人物跨视图的颜色、长度和造型连续。避免假发头盔感、发根悬浮、发束复制、发丝融入背景、银发变金属、湿发像塑料、眉睫消失、眼线漂浮、唇色越界、整脸滤镜、肤色漂白、磨皮抹除纹理、改变骨相、伪文字、水印或以妆容自动推断性格和身份；马尾、盘发、半扎、编发、盒子辫、湿发与风吹发丝需说明束缚点、发绳或发夹、编织路径、张力、松散发丝和运动方向；银灰发色只改变色素与高光，不改变发质和年龄。避免辫子起止不明、发束穿插错误、马尾无连接、盘发悬空、风向冲突、湿发全头镜面或银灰发自动变成老年特征",
+      "enPrompt": "windblown hair with one coherent wind direction, primary masses shifting first and finer strands responding with varied length and curvature according to speed; roots remain attached to the scalp and key eyes and mouth stay readable, avoiding perfectly parallel strands weightless floating intersections or motion blur hiding broken structure; preserve identity face shape hairline cranial volume ear position skin tone age and existing skin features, changing only the selected length texture hairstyle color or makeup variable. Hair grows from credible roots and parting, with lock count thickness curl drape flyaways and highlights responding to texture gravity humidity wind and action. Front-back layering and occlusion remain clear without passing through face ears shoulders or clothing. Makeup adheres to facial curvature pores and real skin texture, with eye lip cheek and highlight boundaries responding to the same light and allowing natural bilateral variation. Preserve color length and styling continuity for the same person across views. Avoid wig-like helmet hair floating roots cloned locks hair merging into background metallic silver hair plastic wet hair missing brows or lashes floating eyeliner lipstick outside the lip full-face filters skin bleaching texture-erasing smoothing altered bone structure pseudo-writing watermarks or makeup used to infer personality and identity; ponytail updo half-up braid box braid wet styling and windblown hair specify anchor tie or pin braid path tension loose strands and movement direction. Silver-gray color changes pigment and highlight response only, not texture or age. Avoid braids with no origin or endpoint impossible interweaving ponytails without connection floating updos conflicting wind direction fully mirrored wet hair or silver-gray hair automatically aging the character",
+      "negative": [
+        "messy unintended hair",
+        "distorted hairline",
+        "unclear makeup"
+      ]
+    },
+    {
+      "id": "makeup-natural",
+      "category": "hair-makeup",
+      "styleGroup": "makeup-natural",
+      "zhName": "裸妆",
+      "enName": "Natural Makeup",
+      "image": "/assets/parameters/makeup-natural.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "自然裸妆以轻薄底妆均匀肤色而不遮盖毛孔、细纹和面部起伏，眉毛、睫毛与唇色仅做接近本色的精细整理；高光服从真实光源，边界充分晕开，避免假面厚粉、过白肤色、玻璃皮或明显彩妆色块；保持人物身份、脸型、发际线、头骨体积、耳朵位置、肤色、年龄和原有皮肤特征不变，只修改所选发长、发质、发型、发色或妆容变量。头发从真实发根和分缝生长，发束数量、粗细、卷曲、垂坠、飞丝和高光服从发质、重力、湿度、风向与动作；前后层次和遮挡关系清楚，不穿过脸、耳、肩和服装。妆容沿真实面部曲率、毛孔与皮肤纹理附着，眼、唇、腮和高光边界与光源一致，左右允许自然差异。保持同一人物跨视图的颜色、长度和造型连续。避免假发头盔感、发根悬浮、发束复制、发丝融入背景、银发变金属、湿发像塑料、眉睫消失、眼线漂浮、唇色越界、整脸滤镜、肤色漂白、磨皮抹除纹理、改变骨相、伪文字、水印或以妆容自动推断性格和身份；自然妆容以轻薄底妆、局部遮瑕、眉睫整理和克制唇颊色保持本人特征；柔雾哑光控制油光但保留皮肤体积，水光肌只在受光高点产生湿润反射，裸妆仍可见真实毛孔、细纹与自然血色。避免整脸高光、粉底面具、鼻梁过度提亮、肤色统一漂白、卧蚕消失或把水光做成油腻塑料表面",
+      "enPrompt": "natural barely-there makeup using a light base to even skin tone without hiding pores fine lines or facial relief, with brows lashes and lips refined close to their natural color; highlights follow the real light source and edges are fully blended, avoiding mask-like foundation over-whitened skin glassy plastic texture or obvious cosmetic color blocks; preserve identity face shape hairline cranial volume ear position skin tone age and existing skin features, changing only the selected length texture hairstyle color or makeup variable. Hair grows from credible roots and parting, with lock count thickness curl drape flyaways and highlights responding to texture gravity humidity wind and action. Front-back layering and occlusion remain clear without passing through face ears shoulders or clothing. Makeup adheres to facial curvature pores and real skin texture, with eye lip cheek and highlight boundaries responding to the same light and allowing natural bilateral variation. Preserve color length and styling continuity for the same person across views. Avoid wig-like helmet hair floating roots cloned locks hair merging into background metallic silver hair plastic wet hair missing brows or lashes floating eyeliner lipstick outside the lip full-face filters skin bleaching texture-erasing smoothing altered bone structure pseudo-writing watermarks or makeup used to infer personality and identity; natural makeup uses thin base local concealing groomed brows and lashes and restrained lip and cheek color while preserving identity. Soft matte finish controls oil without flattening volume, dewy skin creates moist reflection only on illuminated high points, and no-makeup makeup retains pores fine lines and natural circulation. Avoid highlight over the entire face foundation masks overbrightened nasal bridges uniformly bleached skin erased lower-eye structure or dewy finish turned into oily plastic",
+      "negative": [
+        "messy unintended hair",
+        "distorted hairline",
+        "unclear makeup"
+      ]
+    },
+    {
+      "id": "makeup-red-lip",
+      "category": "hair-makeup",
+      "styleGroup": "makeup-stylized",
+      "zhName": "红唇妆",
+      "enName": "Red Lip Makeup",
+      "image": "/assets/parameters/makeup-red-lip.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "红唇妆沿真实唇形精确上色，唇峰、嘴角与上下唇厚度保持自然，唇色可在正红、砖红或莓红中选择并与肤色协调；质地可哑光或缎光但不越界，避免荧光红、牙齿染色、嘴唇膨胀变形或整张脸同步泛红；保持人物身份、脸型、发际线、头骨体积、耳朵位置、肤色、年龄和原有皮肤特征不变，只修改所选发长、发质、发型、发色或妆容变量。头发从真实发根和分缝生长，发束数量、粗细、卷曲、垂坠、飞丝和高光服从发质、重力、湿度、风向与动作；前后层次和遮挡关系清楚，不穿过脸、耳、肩和服装。妆容沿真实面部曲率、毛孔与皮肤纹理附着，眼、唇、腮和高光边界与光源一致，左右允许自然差异。保持同一人物跨视图的颜色、长度和造型连续。避免假发头盔感、发根悬浮、发束复制、发丝融入背景、银发变金属、湿发像塑料、眉睫消失、眼线漂浮、唇色越界、整脸滤镜、肤色漂白、磨皮抹除纹理、改变骨相、伪文字、水印或以妆容自动推断性格和身份；图形眼线、单色妆、红唇、烟熏、舞台、幻想和赛博妆先确定使用场景、色盘、覆盖区域与观看距离，再让线条、颜料、亮片或贴饰随面部曲率和表情变形；舞台妆适配远距离，幻想与赛博元素仍有材料和固定方式。避免眼线左右断裂、烟熏遮住眼球、红唇溢出、舞台妆用于证件照、幻想纹样复制文化神圣符号或赛博妆只靠随机霓虹线",
+      "enPrompt": "red-lip makeup applied precisely to the natural lip contour with believable cupid's bow corners and upper-lower volume, choosing true red brick red or berry red to harmonize with skin; finish may be matte or satin but stays within the lip edge, avoiding fluorescent red stained teeth inflated distorted lips or red contamination across the entire face; preserve identity face shape hairline cranial volume ear position skin tone age and existing skin features, changing only the selected length texture hairstyle color or makeup variable. Hair grows from credible roots and parting, with lock count thickness curl drape flyaways and highlights responding to texture gravity humidity wind and action. Front-back layering and occlusion remain clear without passing through face ears shoulders or clothing. Makeup adheres to facial curvature pores and real skin texture, with eye lip cheek and highlight boundaries responding to the same light and allowing natural bilateral variation. Preserve color length and styling continuity for the same person across views. Avoid wig-like helmet hair floating roots cloned locks hair merging into background metallic silver hair plastic wet hair missing brows or lashes floating eyeliner lipstick outside the lip full-face filters skin bleaching texture-erasing smoothing altered bone structure pseudo-writing watermarks or makeup used to infer personality and identity; graphic liner monochrome red-lip smoky stage fantasy and cyber makeup define context palette coverage and viewing distance before allowing line pigment glitter or appliqué to follow facial curvature and expression. Stage makeup reads at distance, while fantasy and cyber elements retain real material and attachment. Avoid broken bilateral eyeliner smoke covering the eyes lipstick bleeding outside the mouth stage makeup in an ID-photo context sacred cultural motifs copied as fantasy decoration or cyber makeup made only of random neon lines",
+      "negative": [
+        "messy unintended hair",
+        "distorted hairline",
+        "unclear makeup"
+      ]
+    },
+    {
+      "id": "makeup-fantasy",
+      "category": "hair-makeup",
+      "styleGroup": "makeup-stylized",
+      "zhName": "幻想妆容",
+      "enName": "Fantasy Makeup",
+      "image": "/assets/parameters/makeup-fantasy.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "幻想妆容围绕一个明确主题设计眼部、颧骨或额头的彩色图形，并让珠光、金属、鳞片或发光效果服从面部起伏和真实光源；保留眼口可读性与皮肤纹理，控制装饰数量，避免随机彩绘铺满整脸、左右结构冲突、贴片悬浮或遮盖人物身份；保持人物身份、脸型、发际线、头骨体积、耳朵位置、肤色、年龄和原有皮肤特征不变，只修改所选发长、发质、发型、发色或妆容变量。头发从真实发根和分缝生长，发束数量、粗细、卷曲、垂坠、飞丝和高光服从发质、重力、湿度、风向与动作；前后层次和遮挡关系清楚，不穿过脸、耳、肩和服装。妆容沿真实面部曲率、毛孔与皮肤纹理附着，眼、唇、腮和高光边界与光源一致，左右允许自然差异。保持同一人物跨视图的颜色、长度和造型连续。避免假发头盔感、发根悬浮、发束复制、发丝融入背景、银发变金属、湿发像塑料、眉睫消失、眼线漂浮、唇色越界、整脸滤镜、肤色漂白、磨皮抹除纹理、改变骨相、伪文字、水印或以妆容自动推断性格和身份；图形眼线、单色妆、红唇、烟熏、舞台、幻想和赛博妆先确定使用场景、色盘、覆盖区域与观看距离，再让线条、颜料、亮片或贴饰随面部曲率和表情变形；舞台妆适配远距离，幻想与赛博元素仍有材料和固定方式。避免眼线左右断裂、烟熏遮住眼球、红唇溢出、舞台妆用于证件照、幻想纹样复制文化神圣符号或赛博妆只靠随机霓虹线",
+      "enPrompt": "fantasy makeup organized around one clear concept across eyes cheekbones or forehead, with color graphics pearlescence metallic accents scales or glow conforming to facial relief and the real light source; preserve readable eyes mouth and skin texture while limiting ornament count, avoiding random full-face paint conflicting bilateral structure floating appliques or loss of character identity; preserve identity face shape hairline cranial volume ear position skin tone age and existing skin features, changing only the selected length texture hairstyle color or makeup variable. Hair grows from credible roots and parting, with lock count thickness curl drape flyaways and highlights responding to texture gravity humidity wind and action. Front-back layering and occlusion remain clear without passing through face ears shoulders or clothing. Makeup adheres to facial curvature pores and real skin texture, with eye lip cheek and highlight boundaries responding to the same light and allowing natural bilateral variation. Preserve color length and styling continuity for the same person across views. Avoid wig-like helmet hair floating roots cloned locks hair merging into background metallic silver hair plastic wet hair missing brows or lashes floating eyeliner lipstick outside the lip full-face filters skin bleaching texture-erasing smoothing altered bone structure pseudo-writing watermarks or makeup used to infer personality and identity; graphic liner monochrome red-lip smoky stage fantasy and cyber makeup define context palette coverage and viewing distance before allowing line pigment glitter or appliqué to follow facial curvature and expression. Stage makeup reads at distance, while fantasy and cyber elements retain real material and attachment. Avoid broken bilateral eyeliner smoke covering the eyes lipstick bleeding outside the mouth stage makeup in an ID-photo context sacred cultural motifs copied as fantasy decoration or cyber makeup made only of random neon lines",
+      "negative": [
+        "messy unintended hair",
+        "distorted hairline",
+        "unclear makeup"
+      ]
+    },
+    {
+      "id": "makeup-cyber",
+      "category": "hair-makeup",
+      "styleGroup": "makeup-stylized",
+      "zhName": "赛博妆容",
+      "enName": "Cyber Makeup",
+      "image": "/assets/parameters/makeup-cyber.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "赛博妆容以少量几何眼线、金属箔、冷色珠光或电路式细线围绕眼部、颧骨和太阳穴建立未来感，图形服从面部曲率与左右设计逻辑，底妆仍保留皮肤纹理，发光效果只在有光源或反射材质处出现；避免满脸随机线路、真实品牌标志、霓虹贴纸悬浮、眼线穿过眼球、皮肤塑料化或把科技感等同于蓝紫滤镜；保持人物身份、脸型、发际线、头骨体积、耳朵位置、肤色、年龄和原有皮肤特征不变，只修改所选发长、发质、发型、发色或妆容变量。头发从真实发根和分缝生长，发束数量、粗细、卷曲、垂坠、飞丝和高光服从发质、重力、湿度、风向与动作；前后层次和遮挡关系清楚，不穿过脸、耳、肩和服装。妆容沿真实面部曲率、毛孔与皮肤纹理附着，眼、唇、腮和高光边界与光源一致，左右允许自然差异。保持同一人物跨视图的颜色、长度和造型连续。避免假发头盔感、发根悬浮、发束复制、发丝融入背景、银发变金属、湿发像塑料、眉睫消失、眼线漂浮、唇色越界、整脸滤镜、肤色漂白、磨皮抹除纹理、改变骨相、伪文字、水印或以妆容自动推断性格和身份；图形眼线、单色妆、红唇、烟熏、舞台、幻想和赛博妆先确定使用场景、色盘、覆盖区域与观看距离，再让线条、颜料、亮片或贴饰随面部曲率和表情变形；舞台妆适配远距离，幻想与赛博元素仍有材料和固定方式。避免眼线左右断裂、烟熏遮住眼球、红唇溢出、舞台妆用于证件照、幻想纹样复制文化神圣符号或赛博妆只靠随机霓虹线",
+      "enPrompt": "cyber makeup using a restrained set of geometric liner metallic foil cool pearlescence or circuit-like fine marks around eyes cheekbones and temples, with graphics following facial curvature and a coherent bilateral design while base makeup preserves skin texture and glow appears only from a source or reflective material; avoid random circuitry covering the face real brand marks floating neon stickers liner through eyeballs plastic skin or reducing futurism to a blue-violet filter; preserve identity face shape hairline cranial volume ear position skin tone age and existing skin features, changing only the selected length texture hairstyle color or makeup variable. Hair grows from credible roots and parting, with lock count thickness curl drape flyaways and highlights responding to texture gravity humidity wind and action. Front-back layering and occlusion remain clear without passing through face ears shoulders or clothing. Makeup adheres to facial curvature pores and real skin texture, with eye lip cheek and highlight boundaries responding to the same light and allowing natural bilateral variation. Preserve color length and styling continuity for the same person across views. Avoid wig-like helmet hair floating roots cloned locks hair merging into background metallic silver hair plastic wet hair missing brows or lashes floating eyeliner lipstick outside the lip full-face filters skin bleaching texture-erasing smoothing altered bone structure pseudo-writing watermarks or makeup used to infer personality and identity; graphic liner monochrome red-lip smoky stage fantasy and cyber makeup define context palette coverage and viewing distance before allowing line pigment glitter or appliqué to follow facial curvature and expression. Stage makeup reads at distance, while fantasy and cyber elements retain real material and attachment. Avoid broken bilateral eyeliner smoke covering the eyes lipstick bleeding outside the mouth stage makeup in an ID-photo context sacred cultural motifs copied as fantasy decoration or cyber makeup made only of random neon lines",
+      "negative": [
+        "messy unintended hair",
+        "distorted hairline",
+        "unclear makeup"
+      ]
+    },
+    {
+      "id": "makeup-stage",
+      "category": "hair-makeup",
+      "styleGroup": "makeup-stylized",
+      "zhName": "舞台妆",
+      "enName": "Stage Makeup",
+      "image": "/assets/parameters/makeup-stage.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "舞台妆根据舞台距离、灯光颜色和角色设定强化眉眼、轮廓、腮红与唇部，使远景仍能读取表情，但近看保持清楚边缘、分层晕染和真实皮肤，不遮盖眼口动作；色彩与服装、布景统一，避免日常妆容简单加深、左右失衡、亮片落入眼睛、整脸白底、文化脸谱误用或在摄影近景中显得脏厚；保持人物身份、脸型、发际线、头骨体积、耳朵位置、肤色、年龄和原有皮肤特征不变，只修改所选发长、发质、发型、发色或妆容变量。头发从真实发根和分缝生长，发束数量、粗细、卷曲、垂坠、飞丝和高光服从发质、重力、湿度、风向与动作；前后层次和遮挡关系清楚，不穿过脸、耳、肩和服装。妆容沿真实面部曲率、毛孔与皮肤纹理附着，眼、唇、腮和高光边界与光源一致，左右允许自然差异。保持同一人物跨视图的颜色、长度和造型连续。避免假发头盔感、发根悬浮、发束复制、发丝融入背景、银发变金属、湿发像塑料、眉睫消失、眼线漂浮、唇色越界、整脸滤镜、肤色漂白、磨皮抹除纹理、改变骨相、伪文字、水印或以妆容自动推断性格和身份；图形眼线、单色妆、红唇、烟熏、舞台、幻想和赛博妆先确定使用场景、色盘、覆盖区域与观看距离，再让线条、颜料、亮片或贴饰随面部曲率和表情变形；舞台妆适配远距离，幻想与赛博元素仍有材料和固定方式。避免眼线左右断裂、烟熏遮住眼球、红唇溢出、舞台妆用于证件照、幻想纹样复制文化神圣符号或赛博妆只靠随机霓虹线",
+      "enPrompt": "stage makeup calibrated to viewing distance lighting color and character, strengthening eyes brows facial planes blush and lips so expression reads from afar while close inspection retains clean edges layered blending and real skin without blocking eye or mouth movement; coordinate palette with costume and set, avoiding ordinary makeup merely darkened bilateral imbalance glitter in the eyes an all-white face misuse of cultural face-paint traditions or muddy thickness in photographic close-up; preserve identity face shape hairline cranial volume ear position skin tone age and existing skin features, changing only the selected length texture hairstyle color or makeup variable. Hair grows from credible roots and parting, with lock count thickness curl drape flyaways and highlights responding to texture gravity humidity wind and action. Front-back layering and occlusion remain clear without passing through face ears shoulders or clothing. Makeup adheres to facial curvature pores and real skin texture, with eye lip cheek and highlight boundaries responding to the same light and allowing natural bilateral variation. Preserve color length and styling continuity for the same person across views. Avoid wig-like helmet hair floating roots cloned locks hair merging into background metallic silver hair plastic wet hair missing brows or lashes floating eyeliner lipstick outside the lip full-face filters skin bleaching texture-erasing smoothing altered bone structure pseudo-writing watermarks or makeup used to infer personality and identity; graphic liner monochrome red-lip smoky stage fantasy and cyber makeup define context palette coverage and viewing distance before allowing line pigment glitter or appliqué to follow facial curvature and expression. Stage makeup reads at distance, while fantasy and cyber elements retain real material and attachment. Avoid broken bilateral eyeliner smoke covering the eyes lipstick bleeding outside the mouth stage makeup in an ID-photo context sacred cultural motifs copied as fantasy decoration or cyber makeup made only of random neon lines",
+      "negative": [
+        "messy unintended hair",
+        "distorted hairline",
+        "unclear makeup"
+      ]
+    },
+    {
+      "id": "hair-straight-natural",
+      "category": "hair-makeup",
+      "styleGroup": "hair-texture",
+      "zhName": "自然直发质",
+      "enName": "Natural Straight Hair",
+      "image": "/assets/parameters/hair-straight-natural.png?v=20260827-character-crop-fix",
+      "zhPrompt": "自然直发由头皮分区连续生长，发束整体顺直但保留细微弯曲、不同粗细和少量碎发，光泽沿发束与头骨曲面形成窄而连续的高光，发尾受重力和剪裁自然收束；直发不等于贴头皮或无体积，避免整片塑料板、每根完全平行、镜面反射、发根悬浮或发丝穿过耳朵与衣物；保持人物身份、脸型、发际线、头骨体积、耳朵位置、肤色、年龄和原有皮肤特征不变，只修改所选发长、发质、发型、发色或妆容变量。头发从真实发根和分缝生长，发束数量、粗细、卷曲、垂坠、飞丝和高光服从发质、重力、湿度、风向与动作；前后层次和遮挡关系清楚，不穿过脸、耳、肩和服装。妆容沿真实面部曲率、毛孔与皮肤纹理附着，眼、唇、腮和高光边界与光源一致，左右允许自然差异。保持同一人物跨视图的颜色、长度和造型连续。避免假发头盔感、发根悬浮、发束复制、发丝融入背景、银发变金属、湿发像塑料、眉睫消失、眼线漂浮、唇色越界、整脸滤镜、肤色漂白、磨皮抹除纹理、改变骨相、伪文字、水印或以妆容自动推断性格和身份；自然直、波浪、卷曲和紧卷通过毛囊方向、曲率半径、收缩率、发束密度与环境湿度表现，同一头发可有自然不规则但整体纹理连续；紧卷发保留真实体积和边缘。避免把发质绑定族裔、所有发束相同波形、卷曲像弹簧塑料、直发像刚性丝带、紧卷被拉直或用噪点代替真实发丝",
+      "enPrompt": "natural straight hair growing continuously from scalp sections, broadly straight yet retaining minute bends varied strand thickness and limited flyaways, with narrow continuous sheen following strand direction and skull curvature and ends settling by gravity and haircut; straightness does not mean flat or volumeless, avoiding plastic sheets every strand perfectly parallel mirror reflection floating roots or hair intersecting ears and clothing; preserve identity face shape hairline cranial volume ear position skin tone age and existing skin features, changing only the selected length texture hairstyle color or makeup variable. Hair grows from credible roots and parting, with lock count thickness curl drape flyaways and highlights responding to texture gravity humidity wind and action. Front-back layering and occlusion remain clear without passing through face ears shoulders or clothing. Makeup adheres to facial curvature pores and real skin texture, with eye lip cheek and highlight boundaries responding to the same light and allowing natural bilateral variation. Preserve color length and styling continuity for the same person across views. Avoid wig-like helmet hair floating roots cloned locks hair merging into background metallic silver hair plastic wet hair missing brows or lashes floating eyeliner lipstick outside the lip full-face filters skin bleaching texture-erasing smoothing altered bone structure pseudo-writing watermarks or makeup used to infer personality and identity; describe straight wavy curly and coily natural textures through follicle direction curvature radius shrinkage lock density and humidity, allowing natural irregularity within one coherent texture and preserving real volume and edges for coily hair. Avoid binding texture to ethnicity identical wave patterns plastic spring curls rigid ribbon-like straight hair unwanted straightening of coils or noise substituted for actual strands",
+      "negative": []
+    },
+    {
+      "id": "hair-wavy-natural",
+      "category": "hair-makeup",
+      "styleGroup": "hair-texture",
+      "zhName": "自然波浪发质",
+      "enName": "Natural Wavy Hair",
+      "image": "/assets/parameters/hair-wavy-natural.png?v=20260827-character-crop-fix",
+      "zhPrompt": "自然波浪发质由宽缓的 S 形发束组成，波峰、波谷和卷度随头骨、层次、湿度与重力逐渐变化，发根通常较松、发中至发尾更明显，整体有空气感但脸部轮廓仍可读；高光沿弧线断续移动，避免所有波纹同频复制、海浪贴图、过度蓬胀、突然变成紧卷或发束互相穿透；保持人物身份、脸型、发际线、头骨体积、耳朵位置、肤色、年龄和原有皮肤特征不变，只修改所选发长、发质、发型、发色或妆容变量。头发从真实发根和分缝生长，发束数量、粗细、卷曲、垂坠、飞丝和高光服从发质、重力、湿度、风向与动作；前后层次和遮挡关系清楚，不穿过脸、耳、肩和服装。妆容沿真实面部曲率、毛孔与皮肤纹理附着，眼、唇、腮和高光边界与光源一致，左右允许自然差异。保持同一人物跨视图的颜色、长度和造型连续。避免假发头盔感、发根悬浮、发束复制、发丝融入背景、银发变金属、湿发像塑料、眉睫消失、眼线漂浮、唇色越界、整脸滤镜、肤色漂白、磨皮抹除纹理、改变骨相、伪文字、水印或以妆容自动推断性格和身份；自然直、波浪、卷曲和紧卷通过毛囊方向、曲率半径、收缩率、发束密度与环境湿度表现，同一头发可有自然不规则但整体纹理连续；紧卷发保留真实体积和边缘。避免把发质绑定族裔、所有发束相同波形、卷曲像弹簧塑料、直发像刚性丝带、紧卷被拉直或用噪点代替真实发丝",
+      "enPrompt": "natural wavy hair built from broad relaxed S-shaped groups whose peaks troughs and curvature vary with skull layering humidity and gravity, often looser at the roots and clearer through mid-lengths and ends while preserving airy volume and a readable face; highlights move intermittently along curves, avoiding identically repeated waves an ocean-wave texture excessive inflation abrupt conversion into tight curls or intersecting locks; preserve identity face shape hairline cranial volume ear position skin tone age and existing skin features, changing only the selected length texture hairstyle color or makeup variable. Hair grows from credible roots and parting, with lock count thickness curl drape flyaways and highlights responding to texture gravity humidity wind and action. Front-back layering and occlusion remain clear without passing through face ears shoulders or clothing. Makeup adheres to facial curvature pores and real skin texture, with eye lip cheek and highlight boundaries responding to the same light and allowing natural bilateral variation. Preserve color length and styling continuity for the same person across views. Avoid wig-like helmet hair floating roots cloned locks hair merging into background metallic silver hair plastic wet hair missing brows or lashes floating eyeliner lipstick outside the lip full-face filters skin bleaching texture-erasing smoothing altered bone structure pseudo-writing watermarks or makeup used to infer personality and identity; describe straight wavy curly and coily natural textures through follicle direction curvature radius shrinkage lock density and humidity, allowing natural irregularity within one coherent texture and preserving real volume and edges for coily hair. Avoid binding texture to ethnicity identical wave patterns plastic spring curls rigid ribbon-like straight hair unwanted straightening of coils or noise substituted for actual strands",
+      "negative": []
+    },
+    {
+      "id": "hair-curly-natural",
+      "category": "hair-makeup",
+      "styleGroup": "hair-texture",
+      "zhName": "自然卷发质",
+      "enName": "Natural Curly Hair",
+      "image": "/assets/parameters/hair-curly-natural.png?v=20260827-character-crop-fix",
+      "zhPrompt": "自然卷发由不同直径与方向的螺旋、环卷和松散卷束共同形成，发根有真实支撑，内部密度与外轮廓层次清楚，卷束在重力、湿度和接触衣物处产生拉长或压缩，碎发适量；保持卷型连续但不复制，避免方便面纹理、头盔球体、无发根体积、每卷同大或用模糊块面掩盖穿模；保持人物身份、脸型、发际线、头骨体积、耳朵位置、肤色、年龄和原有皮肤特征不变，只修改所选发长、发质、发型、发色或妆容变量。头发从真实发根和分缝生长，发束数量、粗细、卷曲、垂坠、飞丝和高光服从发质、重力、湿度、风向与动作；前后层次和遮挡关系清楚，不穿过脸、耳、肩和服装。妆容沿真实面部曲率、毛孔与皮肤纹理附着，眼、唇、腮和高光边界与光源一致，左右允许自然差异。保持同一人物跨视图的颜色、长度和造型连续。避免假发头盔感、发根悬浮、发束复制、发丝融入背景、银发变金属、湿发像塑料、眉睫消失、眼线漂浮、唇色越界、整脸滤镜、肤色漂白、磨皮抹除纹理、改变骨相、伪文字、水印或以妆容自动推断性格和身份；自然直、波浪、卷曲和紧卷通过毛囊方向、曲率半径、收缩率、发束密度与环境湿度表现，同一头发可有自然不规则但整体纹理连续；紧卷发保留真实体积和边缘。避免把发质绑定族裔、所有发束相同波形、卷曲像弹簧塑料、直发像刚性丝带、紧卷被拉直或用噪点代替真实发丝",
+      "enPrompt": "natural curly hair combining spirals ringlets and looser curl groups of varied diameter and direction, with credible root lift readable internal density and layered silhouette while curls lengthen or compress under gravity humidity and clothing contact plus restrained flyaways; keep curl pattern continuous without cloning, avoiding noodle texture a helmet sphere rootless volume identical curls or blurred masses hiding intersections; preserve identity face shape hairline cranial volume ear position skin tone age and existing skin features, changing only the selected length texture hairstyle color or makeup variable. Hair grows from credible roots and parting, with lock count thickness curl drape flyaways and highlights responding to texture gravity humidity wind and action. Front-back layering and occlusion remain clear without passing through face ears shoulders or clothing. Makeup adheres to facial curvature pores and real skin texture, with eye lip cheek and highlight boundaries responding to the same light and allowing natural bilateral variation. Preserve color length and styling continuity for the same person across views. Avoid wig-like helmet hair floating roots cloned locks hair merging into background metallic silver hair plastic wet hair missing brows or lashes floating eyeliner lipstick outside the lip full-face filters skin bleaching texture-erasing smoothing altered bone structure pseudo-writing watermarks or makeup used to infer personality and identity; describe straight wavy curly and coily natural textures through follicle direction curvature radius shrinkage lock density and humidity, allowing natural irregularity within one coherent texture and preserving real volume and edges for coily hair. Avoid binding texture to ethnicity identical wave patterns plastic spring curls rigid ribbon-like straight hair unwanted straightening of coils or noise substituted for actual strands",
+      "negative": []
+    },
+    {
+      "id": "hair-coily-natural",
+      "category": "hair-makeup",
+      "styleGroup": "hair-texture",
+      "zhName": "自然紧卷发质",
+      "enName": "Natural Coily Hair",
+      "image": "/assets/parameters/hair-coily-natural.png?v=20260827-character-crop-fix",
+      "zhPrompt": "自然紧卷发质由细密弹性的小螺旋、Z 形或折角卷束构成，收缩率、发根密度和发尾长度变化真实，整体轮廓饱满但仍能看见分区、局部卷束与光线层次，可表现自然蓬松、辫前状态或有意识造型；避免压成纯黑块、钢丝刷纹理、所有卷束同形、边缘无细节或把紧卷发错误拉直和异化；保持人物身份、脸型、发际线、头骨体积、耳朵位置、肤色、年龄和原有皮肤特征不变，只修改所选发长、发质、发型、发色或妆容变量。头发从真实发根和分缝生长，发束数量、粗细、卷曲、垂坠、飞丝和高光服从发质、重力、湿度、风向与动作；前后层次和遮挡关系清楚，不穿过脸、耳、肩和服装。妆容沿真实面部曲率、毛孔与皮肤纹理附着，眼、唇、腮和高光边界与光源一致，左右允许自然差异。保持同一人物跨视图的颜色、长度和造型连续。避免假发头盔感、发根悬浮、发束复制、发丝融入背景、银发变金属、湿发像塑料、眉睫消失、眼线漂浮、唇色越界、整脸滤镜、肤色漂白、磨皮抹除纹理、改变骨相、伪文字、水印或以妆容自动推断性格和身份；自然直、波浪、卷曲和紧卷通过毛囊方向、曲率半径、收缩率、发束密度与环境湿度表现，同一头发可有自然不规则但整体纹理连续；紧卷发保留真实体积和边缘。避免把发质绑定族裔、所有发束相同波形、卷曲像弹簧塑料、直发像刚性丝带、紧卷被拉直或用噪点代替真实发丝",
+      "enPrompt": "natural coily hair built from dense elastic small spirals Z-patterns or angled coils with believable shrinkage root density and varied visible length, forming a full silhouette while retaining sectioning local coil groups and light hierarchy whether worn loose pre-braided or intentionally styled; avoid a solid black mass wire-brush texture identical coils detail-free edges or involuntary straightening and exoticization of coily texture; preserve identity face shape hairline cranial volume ear position skin tone age and existing skin features, changing only the selected length texture hairstyle color or makeup variable. Hair grows from credible roots and parting, with lock count thickness curl drape flyaways and highlights responding to texture gravity humidity wind and action. Front-back layering and occlusion remain clear without passing through face ears shoulders or clothing. Makeup adheres to facial curvature pores and real skin texture, with eye lip cheek and highlight boundaries responding to the same light and allowing natural bilateral variation. Preserve color length and styling continuity for the same person across views. Avoid wig-like helmet hair floating roots cloned locks hair merging into background metallic silver hair plastic wet hair missing brows or lashes floating eyeliner lipstick outside the lip full-face filters skin bleaching texture-erasing smoothing altered bone structure pseudo-writing watermarks or makeup used to infer personality and identity; describe straight wavy curly and coily natural textures through follicle direction curvature radius shrinkage lock density and humidity, allowing natural irregularity within one coherent texture and preserving real volume and edges for coily hair. Avoid binding texture to ethnicity identical wave patterns plastic spring curls rigid ribbon-like straight hair unwanted straightening of coils or noise substituted for actual strands",
+      "negative": []
+    },
+    {
+      "id": "hair-buzz-cut",
+      "category": "hair-makeup",
+      "styleGroup": "hair-shape",
+      "zhName": "寸头",
+      "enName": "Buzz Cut",
+      "image": "/assets/parameters/hair-buzz-cut.png?v=20260827-character-crop-fix",
+      "zhPrompt": "寸头沿头骨曲面呈均匀但非贴图化的短发长度，头顶、鬓角与后颈可按理发渐变自然过渡，发旋、生长方向和发际线清楚，掠射光显示细小发茬而不暴露成光滑头皮；避免黑色帽壳、毛绒球、随机秃斑、发际线画笔描边、每根直立同长或把短发错误渲染为皮肤纹理；保持人物身份、脸型、发际线、头骨体积、耳朵位置、肤色、年龄和原有皮肤特征不变，只修改所选发长、发质、发型、发色或妆容变量。头发从真实发根和分缝生长，发束数量、粗细、卷曲、垂坠、飞丝和高光服从发质、重力、湿度、风向与动作；前后层次和遮挡关系清楚，不穿过脸、耳、肩和服装。妆容沿真实面部曲率、毛孔与皮肤纹理附着，眼、唇、腮和高光边界与光源一致，左右允许自然差异。保持同一人物跨视图的颜色、长度和造型连续。避免假发头盔感、发根悬浮、发束复制、发丝融入背景、银发变金属、湿发像塑料、眉睫消失、眼线漂浮、唇色越界、整脸滤镜、肤色漂白、磨皮抹除纹理、改变骨相、伪文字、水印或以妆容自动推断性格和身份；发型轮廓由剪裁、刘海、侧区、后脑和整体体积定义；波波头、寸头、背头、眉上刘海与普通刘海保持不同边界。“卷发”在此表示经过造型形成的整体卷发轮廓，与天然卷曲发质独立。避免刘海粘成整片、寸头像绘制纹理、波波头左右长度跳变、背头无固定方向或造型轮廓改变头骨",
+      "enPrompt": "buzz cut following skull curvature with short even yet non-textured hair, optionally transitioning through a believable clipper fade across crown temples and nape while whorl growth direction and hairline remain readable and grazing light reveals fine stubble without turning the scalp smooth; avoid a black cap shell fuzzy sphere random bald patches painted hairline every strand equally upright or short hair mistaken for skin texture; preserve identity face shape hairline cranial volume ear position skin tone age and existing skin features, changing only the selected length texture hairstyle color or makeup variable. Hair grows from credible roots and parting, with lock count thickness curl drape flyaways and highlights responding to texture gravity humidity wind and action. Front-back layering and occlusion remain clear without passing through face ears shoulders or clothing. Makeup adheres to facial curvature pores and real skin texture, with eye lip cheek and highlight boundaries responding to the same light and allowing natural bilateral variation. Preserve color length and styling continuity for the same person across views. Avoid wig-like helmet hair floating roots cloned locks hair merging into background metallic silver hair plastic wet hair missing brows or lashes floating eyeliner lipstick outside the lip full-face filters skin bleaching texture-erasing smoothing altered bone structure pseudo-writing watermarks or makeup used to infer personality and identity; define hairstyle silhouette through cut fringe side zones occipital shape and overall volume, keeping bob buzz slick-back micro fringe and general bangs structurally distinct. Curly hair in this group means an intentionally styled overall curl silhouette independent of natural curl texture. Avoid fringe fused into one slab buzz cuts as painted noise uneven bob length slick-back hair with no set direction or a hairstyle silhouette deforming the skull",
+      "negative": []
+    },
+    {
+      "id": "hair-box-braids",
+      "category": "hair-makeup",
+      "styleGroup": "hair-styling",
+      "zhName": "盒子辫",
+      "enName": "Box Braids",
+      "image": "/assets/parameters/hair-box-braids.png?v=20260827-character-crop-fix",
+      "zhPrompt": "盒子辫从头皮上规则但不机械的方形或几何分区起辫，每股由一致数量发束连续编至末端，粗细、长度和张力符合发量，辫根、边缘碎发与固定方式清楚，运动时各辫有独立但受重力一致的摆动；避免分区漂移、辫子从皮肤凭空长出、长度无限、每股复制粘贴、穿过肩颈或挪用不相干文化饰物；保持人物身份、脸型、发际线、头骨体积、耳朵位置、肤色、年龄和原有皮肤特征不变，只修改所选发长、发质、发型、发色或妆容变量。头发从真实发根和分缝生长，发束数量、粗细、卷曲、垂坠、飞丝和高光服从发质、重力、湿度、风向与动作；前后层次和遮挡关系清楚，不穿过脸、耳、肩和服装。妆容沿真实面部曲率、毛孔与皮肤纹理附着，眼、唇、腮和高光边界与光源一致，左右允许自然差异。保持同一人物跨视图的颜色、长度和造型连续。避免假发头盔感、发根悬浮、发束复制、发丝融入背景、银发变金属、湿发像塑料、眉睫消失、眼线漂浮、唇色越界、整脸滤镜、肤色漂白、磨皮抹除纹理、改变骨相、伪文字、水印或以妆容自动推断性格和身份；马尾、盘发、半扎、编发、盒子辫、湿发与风吹发丝需说明束缚点、发绳或发夹、编织路径、张力、松散发丝和运动方向；银灰发色只改变色素与高光，不改变发质和年龄。避免辫子起止不明、发束穿插错误、马尾无连接、盘发悬空、风向冲突、湿发全头镜面或银灰发自动变成老年特征",
+      "enPrompt": "box braids beginning from orderly yet non-mechanical square or geometric scalp sections, each braid maintaining a coherent strand count to the end with thickness length and tension proportional to available hair plus readable roots edge hairs and fastening while individual braids swing separately under one gravity direction; avoid drifting parts braids emerging from skin infinite length copy-pasted strands intersections through shoulders or neck or unrelated cultural ornaments; preserve identity face shape hairline cranial volume ear position skin tone age and existing skin features, changing only the selected length texture hairstyle color or makeup variable. Hair grows from credible roots and parting, with lock count thickness curl drape flyaways and highlights responding to texture gravity humidity wind and action. Front-back layering and occlusion remain clear without passing through face ears shoulders or clothing. Makeup adheres to facial curvature pores and real skin texture, with eye lip cheek and highlight boundaries responding to the same light and allowing natural bilateral variation. Preserve color length and styling continuity for the same person across views. Avoid wig-like helmet hair floating roots cloned locks hair merging into background metallic silver hair plastic wet hair missing brows or lashes floating eyeliner lipstick outside the lip full-face filters skin bleaching texture-erasing smoothing altered bone structure pseudo-writing watermarks or makeup used to infer personality and identity; ponytail updo half-up braid box braid wet styling and windblown hair specify anchor tie or pin braid path tension loose strands and movement direction. Silver-gray color changes pigment and highlight response only, not texture or age. Avoid braids with no origin or endpoint impossible interweaving ponytails without connection floating updos conflicting wind direction fully mirrored wet hair or silver-gray hair automatically aging the character",
+      "negative": []
+    },
+    {
+      "id": "hair-silver-gray",
+      "category": "hair-makeup",
+      "styleGroup": "hair-styling",
+      "zhName": "银灰发色",
+      "enName": "Silver Gray Hair",
+      "image": "/assets/parameters/hair-silver-gray.png?v=20260827-character-crop-fix",
+      "zhPrompt": "银灰发色由冷灰、柔和银白和少量原生深色发根组成，颜色沿真实发束与光线变化而非整片金属涂层，高光偏冷但保持角蛋白柔光，暗部仍可区分层次；年轻染发与自然白发可按主体设定区分，避免纯白过曝、蓝紫金属丝、脸部同步变灰、发根发梢随机换色或把银灰误作发光材质；保持人物身份、脸型、发际线、头骨体积、耳朵位置、肤色、年龄和原有皮肤特征不变，只修改所选发长、发质、发型、发色或妆容变量。头发从真实发根和分缝生长，发束数量、粗细、卷曲、垂坠、飞丝和高光服从发质、重力、湿度、风向与动作；前后层次和遮挡关系清楚，不穿过脸、耳、肩和服装。妆容沿真实面部曲率、毛孔与皮肤纹理附着，眼、唇、腮和高光边界与光源一致，左右允许自然差异。保持同一人物跨视图的颜色、长度和造型连续。避免假发头盔感、发根悬浮、发束复制、发丝融入背景、银发变金属、湿发像塑料、眉睫消失、眼线漂浮、唇色越界、整脸滤镜、肤色漂白、磨皮抹除纹理、改变骨相、伪文字、水印或以妆容自动推断性格和身份；马尾、盘发、半扎、编发、盒子辫、湿发与风吹发丝需说明束缚点、发绳或发夹、编织路径、张力、松散发丝和运动方向；银灰发色只改变色素与高光，不改变发质和年龄。避免辫子起止不明、发束穿插错误、马尾无连接、盘发悬空、风向冲突、湿发全头镜面或银灰发自动变成老年特征",
+      "enPrompt": "silver-gray hair color built from cool gray soft silver-white and optionally a restrained darker natural root, changing along real strand groups and illumination rather than becoming a metallic coating, with cool highlights retaining keratin softness and shadows preserving depth; distinguish intentional dye from natural graying according to the subject, avoiding clipped pure white blue-violet wire a face turned gray random root-tip swaps or luminous hair material; preserve identity face shape hairline cranial volume ear position skin tone age and existing skin features, changing only the selected length texture hairstyle color or makeup variable. Hair grows from credible roots and parting, with lock count thickness curl drape flyaways and highlights responding to texture gravity humidity wind and action. Front-back layering and occlusion remain clear without passing through face ears shoulders or clothing. Makeup adheres to facial curvature pores and real skin texture, with eye lip cheek and highlight boundaries responding to the same light and allowing natural bilateral variation. Preserve color length and styling continuity for the same person across views. Avoid wig-like helmet hair floating roots cloned locks hair merging into background metallic silver hair plastic wet hair missing brows or lashes floating eyeliner lipstick outside the lip full-face filters skin bleaching texture-erasing smoothing altered bone structure pseudo-writing watermarks or makeup used to infer personality and identity; ponytail updo half-up braid box braid wet styling and windblown hair specify anchor tie or pin braid path tension loose strands and movement direction. Silver-gray color changes pigment and highlight response only, not texture or age. Avoid braids with no origin or endpoint impossible interweaving ponytails without connection floating updos conflicting wind direction fully mirrored wet hair or silver-gray hair automatically aging the character",
+      "negative": []
+    },
+    {
+      "id": "makeup-dewy-skin",
+      "category": "hair-makeup",
+      "styleGroup": "makeup-natural",
+      "zhName": "水光肌妆感",
+      "enName": "Dewy Skin Makeup",
+      "image": "/assets/parameters/makeup-dewy-skin.png?v=20260827-character-crop-fix",
+      "zhPrompt": "水光肌妆感以轻薄保湿底妆均匀肤色，在颧骨、鼻梁、眉骨和唇峰放置服从主光源的柔和湿润高光，毛孔、细纹和面部起伏仍可见，额头鼻翼等易出油区域控制反射范围；肤色不被漂白，避免全脸镜面油光、玻璃皮、磨皮蜡像、没有光源的白色亮斑或将汗水与妆面混为一体；保持人物身份、脸型、发际线、头骨体积、耳朵位置、肤色、年龄和原有皮肤特征不变，只修改所选发长、发质、发型、发色或妆容变量。头发从真实发根和分缝生长，发束数量、粗细、卷曲、垂坠、飞丝和高光服从发质、重力、湿度、风向与动作；前后层次和遮挡关系清楚，不穿过脸、耳、肩和服装。妆容沿真实面部曲率、毛孔与皮肤纹理附着，眼、唇、腮和高光边界与光源一致，左右允许自然差异。保持同一人物跨视图的颜色、长度和造型连续。避免假发头盔感、发根悬浮、发束复制、发丝融入背景、银发变金属、湿发像塑料、眉睫消失、眼线漂浮、唇色越界、整脸滤镜、肤色漂白、磨皮抹除纹理、改变骨相、伪文字、水印或以妆容自动推断性格和身份；自然妆容以轻薄底妆、局部遮瑕、眉睫整理和克制唇颊色保持本人特征；柔雾哑光控制油光但保留皮肤体积，水光肌只在受光高点产生湿润反射，裸妆仍可见真实毛孔、细纹与自然血色。避免整脸高光、粉底面具、鼻梁过度提亮、肤色统一漂白、卧蚕消失或把水光做成油腻塑料表面",
+      "enPrompt": "dewy-skin makeup using a thin hydrating base to even tone while placing soft moist highlights on cheekbones nose bridge brow bone and cupid's bow according to the key light, retaining pores fine lines and facial relief and controlling reflection in naturally oily forehead and nose areas; preserve original complexion, avoiding mirror shine across the whole face glass skin waxy smoothing source-free white spots or confusing sweat with intentional makeup finish; preserve identity face shape hairline cranial volume ear position skin tone age and existing skin features, changing only the selected length texture hairstyle color or makeup variable. Hair grows from credible roots and parting, with lock count thickness curl drape flyaways and highlights responding to texture gravity humidity wind and action. Front-back layering and occlusion remain clear without passing through face ears shoulders or clothing. Makeup adheres to facial curvature pores and real skin texture, with eye lip cheek and highlight boundaries responding to the same light and allowing natural bilateral variation. Preserve color length and styling continuity for the same person across views. Avoid wig-like helmet hair floating roots cloned locks hair merging into background metallic silver hair plastic wet hair missing brows or lashes floating eyeliner lipstick outside the lip full-face filters skin bleaching texture-erasing smoothing altered bone structure pseudo-writing watermarks or makeup used to infer personality and identity; natural makeup uses thin base local concealing groomed brows and lashes and restrained lip and cheek color while preserving identity. Soft matte finish controls oil without flattening volume, dewy skin creates moist reflection only on illuminated high points, and no-makeup makeup retains pores fine lines and natural circulation. Avoid highlight over the entire face foundation masks overbrightened nasal bridges uniformly bleached skin erased lower-eye structure or dewy finish turned into oily plastic",
+      "negative": []
+    },
+    {
+      "id": "makeup-smoky-eye",
+      "category": "hair-makeup",
+      "styleGroup": "makeup-stylized",
+      "zhName": "烟熏眼妆",
+      "enName": "Smoky Eye Makeup",
+      "image": "/assets/parameters/makeup-smoky-eye.png?v=20260827-character-crop-fix",
+      "zhPrompt": "烟熏眼妆以眼睑、睫毛根部和外眼角为中心分层晕染深色眼影，边缘向眉骨和下眼睑逐渐减淡，左右形状适配真实眼型，内眼角与眼球高光保持干净；整体色彩可为黑灰、棕或低饱和色但不遮盖皮肤结构，避免熊猫眼硬圈、整片纯黑、眼影越过鼻梁、双眼不对称失控或把疲惫黑眼圈当妆容；保持人物身份、脸型、发际线、头骨体积、耳朵位置、肤色、年龄和原有皮肤特征不变，只修改所选发长、发质、发型、发色或妆容变量。头发从真实发根和分缝生长，发束数量、粗细、卷曲、垂坠、飞丝和高光服从发质、重力、湿度、风向与动作；前后层次和遮挡关系清楚，不穿过脸、耳、肩和服装。妆容沿真实面部曲率、毛孔与皮肤纹理附着，眼、唇、腮和高光边界与光源一致，左右允许自然差异。保持同一人物跨视图的颜色、长度和造型连续。避免假发头盔感、发根悬浮、发束复制、发丝融入背景、银发变金属、湿发像塑料、眉睫消失、眼线漂浮、唇色越界、整脸滤镜、肤色漂白、磨皮抹除纹理、改变骨相、伪文字、水印或以妆容自动推断性格和身份；图形眼线、单色妆、红唇、烟熏、舞台、幻想和赛博妆先确定使用场景、色盘、覆盖区域与观看距离，再让线条、颜料、亮片或贴饰随面部曲率和表情变形；舞台妆适配远距离，幻想与赛博元素仍有材料和固定方式。避免眼线左右断裂、烟熏遮住眼球、红唇溢出、舞台妆用于证件照、幻想纹样复制文化神圣符号或赛博妆只靠随机霓虹线",
+      "enPrompt": "smoky eye makeup layered around lids lash lines and outer corners with dark pigment diffusing gradually toward brow bone and lower lid, each side adapted to real eye shape while inner corners and ocular highlights stay clean; use charcoal brown or restrained color without hiding skin structure, avoiding hard panda-eye rings solid black blocks shadow crossing the nose uncontrolled bilateral mismatch or ordinary fatigue circles mistaken for makeup; preserve identity face shape hairline cranial volume ear position skin tone age and existing skin features, changing only the selected length texture hairstyle color or makeup variable. Hair grows from credible roots and parting, with lock count thickness curl drape flyaways and highlights responding to texture gravity humidity wind and action. Front-back layering and occlusion remain clear without passing through face ears shoulders or clothing. Makeup adheres to facial curvature pores and real skin texture, with eye lip cheek and highlight boundaries responding to the same light and allowing natural bilateral variation. Preserve color length and styling continuity for the same person across views. Avoid wig-like helmet hair floating roots cloned locks hair merging into background metallic silver hair plastic wet hair missing brows or lashes floating eyeliner lipstick outside the lip full-face filters skin bleaching texture-erasing smoothing altered bone structure pseudo-writing watermarks or makeup used to infer personality and identity; graphic liner monochrome red-lip smoky stage fantasy and cyber makeup define context palette coverage and viewing distance before allowing line pigment glitter or appliqué to follow facial curvature and expression. Stage makeup reads at distance, while fantasy and cyber elements retain real material and attachment. Avoid broken bilateral eyeliner smoke covering the eyes lipstick bleeding outside the mouth stage makeup in an ID-photo context sacred cultural motifs copied as fantasy decoration or cyber makeup made only of random neon lines",
+      "negative": []
+    }
+  ]
+}

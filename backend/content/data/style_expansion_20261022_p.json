@@ -1,0 +1,550 @@
+{
+  "parameters": [
+    {
+      "id": "style-slow-living-natural-photo",
+      "category": "style",
+      "styleGroup": "photo-film-3d",
+      "zhName": "自然光慢生活摄影",
+      "enName": "Slow-Living Natural-Light Photography",
+      "image": "/assets/parameters/style-slow-living-natural-photo.jpg?v=20261022-style-expansion-p",
+      "zhPrompt": "自然光慢生活摄影以清晨或阴天窗光照亮亚麻、陶器、木材和简单餐食，构图保留大面积安静空间与真实生活痕迹；综合色低饱和偏暖，高光柔和、阴影通透，物件摆放松弛但有视觉秩序，避免样板间般完美、浓重滤镜、过曝白色或刻意制造的杂乱",
+      "enPrompt": "slow-living natural-light photography using morning or overcast window light across linen ceramics wood and simple food, with generous quiet space and believable traces of use; keep color gently warm and muted, highlights soft and shadows open, arranging objects with relaxed visual order while avoiding showroom perfection heavy filters clipped whites or staged clutter",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "copied campaign"
+      ]
+    },
+    {
+      "id": "style-modernist-interior-photo",
+      "category": "style",
+      "styleGroup": "photo-film-3d",
+      "zhName": "现代主义几何空间摄影",
+      "enName": "Modernist Geometric Interior Photography",
+      "image": "/assets/parameters/style-modernist-interior-photo.jpg?v=20261022-style-expansion-p",
+      "zhPrompt": "现代主义几何空间摄影以校正垂直线、正交轴线和清楚比例记录建筑，混凝土、玻璃、木材与一件雕塑家具形成材质对照；自然侧光塑造平面和深度，构图冷静且留白充足，避免超广角拉伸、豪宅广告式金光、杂乱软装或不可信的消失点",
+      "enPrompt": "modernist geometric interior photography recording architecture with corrected verticals orthogonal axes and exact proportion, contrasting concrete glass timber and one sculptural furnishing; natural side light reveals planes and depth in a calm open composition, avoiding ultra-wide stretching luxury-ad gold light decorative clutter or impossible vanishing points",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "copied campaign"
+      ]
+    },
+    {
+      "id": "style-youth-direct-flash-photo",
+      "category": "style",
+      "styleGroup": "photo-film-3d",
+      "zhName": "青年亚文化直闪摄影",
+      "enName": "Youth Subculture Direct-Flash Photography",
+      "image": "/assets/parameters/style-youth-direct-flash-photo.jpg?v=20261022-style-expansion-p",
+      "zhPrompt": "青年亚文化直闪摄影用近距离机顶闪光形成清楚皮肤纹理、硬边鼻影和迅速衰减的深色环境，人物表情直接、不摆拍，衣着与发型保留个性但无品牌；综合色略偏冷并带细颗粒，背景现场灯只留下少量综合色点，避免美容磨皮、影棚轮廓光或把闪光误作全面过曝",
+      "enPrompt": "youth-subculture direct-flash photography using close on-camera flash for explicit skin texture hard-edged facial shadow and rapid falloff into a dark ambient setting, with candid attitude and individual unbranded styling; keep a slightly cool fine-grained palette with sparse practical-light color behind, avoiding beauty smoothing studio rim light or mistaking flash for total overexposure",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "copied campaign"
+      ]
+    },
+    {
+      "id": "style-avant-garde-fashion-photo",
+      "category": "style",
+      "styleGroup": "photo-film-3d",
+      "zhName": "先锋实验时尚摄影",
+      "enName": "Avant-Garde Experimental Fashion Photography",
+      "image": "/assets/parameters/style-avant-garde-fashion-photo.jpg?v=20261022-style-expansion-p",
+      "zhPrompt": "先锋实验时尚摄影以原创非对称服装、反常但可实现的姿态和强几何布景制造视觉张力，光线可形成锐利投影、局部综合色或不均匀曝光，但服装轮廓和人体受力仍清楚；综合色限制在两三种主色，避免复制品牌秀场、无法穿着的随机布料、身体畸变或特效堆砌",
+      "enPrompt": "avant-garde experimental fashion photography creating tension through an original asymmetric garment unconventional yet physically possible pose and strong geometric set, allowing sharp cast shadow selective color or uneven exposure while garment silhouette and body mechanics stay clear; limit the palette to two or three dominant hues and avoid copied runway campaigns random unwearable fabric anatomical distortion or effect overload",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "copied campaign"
+      ]
+    },
+    {
+      "id": "style-stark-white-monochrome-portrait",
+      "category": "style",
+      "styleGroup": "photo-film-3d",
+      "zhName": "极白棚拍黑白肖像",
+      "enName": "Stark White Studio Monochrome Portrait",
+      "image": "/assets/parameters/style-stark-white-monochrome-portrait.jpg?v=20261022-style-expansion-p",
+      "zhPrompt": "极白棚拍黑白肖像让人物正面直视镜头，纯白无缝背景与深色眼神、发丝和服装建立简洁分离，柔硬适中的正面光保留毛孔、骨相和微表情；灰阶跨度完整而不靠环境叙事，构图精确克制，避免证件照呆板、过度美容、背景发灰或黑位堵塞",
+      "enPrompt": "stark white studio monochrome portrait with a direct camera gaze, seamless pure-white field separated cleanly from dark eyes hair and clothing, and moderately crisp frontal light preserving pores bone structure and micro-expression; use a complete grayscale without environmental storytelling in an exact restrained frame, avoiding rigid ID-photo affect beauty retouch gray background or blocked blacks",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "copied campaign"
+      ]
+    },
+    {
+      "id": "style-windblown-monochrome-fashion",
+      "category": "style",
+      "styleGroup": "photo-film-3d",
+      "zhName": "风吹黑白时尚摄影",
+      "enName": "Windblown Raw Monochrome Fashion",
+      "image": "/assets/parameters/style-windblown-monochrome-fashion.jpg?v=20261022-style-expansion-p",
+      "zhPrompt": "风吹黑白时尚摄影在户外自然光中捕捉发丝和衣料被风带动的瞬间，人物面部真实、姿态松弛，运动轨迹围绕清楚眼神或轮廓展开；黑白灰偏粗粝，亮部不过曝、颗粒细而有机，避免机械鼓风造型、塑料磨皮、假发状发丝或戏剧棚拍背景",
+      "enPrompt": "windblown raw monochrome fashion photography capturing hair and fabric moved by real outdoor wind around a clear gaze or silhouette, with an authentic face and relaxed posture; keep the grayscale tactile, highlights open and grain fine and organic, avoiding mechanically fan-styled motion plastic skin wig-like strands or theatrical studio scenery",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "copied campaign"
+      ]
+    },
+    {
+      "id": "style-environmental-cultural-portrait",
+      "category": "style",
+      "styleGroup": "photo-film-3d",
+      "zhName": "环境人文肖像",
+      "enName": "Environmental Cultural Portrait",
+      "image": "/assets/parameters/style-environmental-cultural-portrait.jpg?v=20261022-style-expansion-p",
+      "zhPrompt": "环境人文肖像以平视、尊重且不过度摆布的方式记录人物与其真实工作或生活空间，手、工具、材料和背景共同说明身份，人物仍是清楚焦点；使用可用光与自然综合色，细节丰富但不异域化，不擅自添加仪式服饰或符号，避免旅游凝视、过度戏剧灯光和杂乱背景吞没人物",
+      "enPrompt": "environmental cultural portraiture recording a person at eye level with respectful minimal direction in their real work or living space, allowing hands tools materials and setting to explain context while the person remains the clear focus; use available light and truthful color without exoticizing or inventing ceremonial dress or symbols, avoiding tourist gaze theatrical lighting or background clutter that overwhelms identity",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "copied campaign"
+      ]
+    },
+    {
+      "id": "style-rugged-expedition-documentary",
+      "category": "style",
+      "styleGroup": "photo-film-3d",
+      "zhName": "荒野远征纪实摄影",
+      "enName": "Rugged Expedition Documentary",
+      "image": "/assets/parameters/style-rugged-expedition-documentary.jpg?v=20261022-style-expansion-p",
+      "zhPrompt": "荒野远征纪实摄影在风雪、雨雾或高海拔环境中保留真实天气压力，衣物湿痕、呼吸、泥雪和动作重心都符合现场状态；构图允许边缘切入与轻微手持感，综合色冷静但肤色和安全装备可辨，避免旅游明信片晴空、虚假英雄姿势、过度 HDR 或品牌露出",
+      "enPrompt": "rugged expedition documentary photography preserving genuine weather pressure in snow rain mist or altitude, with wet clothing breath mud and body weight matching field conditions; allow edge intrusion and slight handheld immediacy while keeping cool color truthful enough for skin and safety gear, avoiding postcard skies false heroic posing excessive HDR or visible branding",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "copied campaign"
+      ]
+    },
+    {
+      "id": "style-epic-wildlife-documentary",
+      "category": "style",
+      "styleGroup": "photo-film-3d",
+      "zhName": "史诗野生动物纪实",
+      "enName": "Epic Wildlife Documentary Photography",
+      "image": "/assets/parameters/style-epic-wildlife-documentary.jpg?v=20261022-style-expansion-p",
+      "zhPrompt": "史诗野生动物纪实以真实生态距离和行为为前提，让动物与广阔栖息地共同构成画面，长焦压缩或环境广角都服务于尺度与时机；黎明或黄昏光线自然塑造毛发和地貌，焦点精确但不把背景抹成纯色，避免摆拍动物、错误物种环境、过度锐化或奇幻综合色",
+      "enPrompt": "epic wildlife documentary photography grounded in authentic distance habitat and behavior, composing the animal together with its broader ecosystem while telephoto compression or environmental wide framing serves scale and timing; natural dawn or dusk light shapes fur and terrain with precise focus but a still-informative background, avoiding staged animals wrong habitat oversharpening or fantasy color",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "copied campaign"
+      ]
+    },
+    {
+      "id": "style-athletic-action-photo",
+      "category": "style",
+      "styleGroup": "photo-film-3d",
+      "zhName": "运动高速抓拍",
+      "enName": "Athletic High-Speed Action Photography",
+      "image": "/assets/parameters/style-athletic-action-photo.jpg?v=20261022-style-expansion-p",
+      "zhPrompt": "运动高速抓拍在爆发、转向或腾空的决定瞬间冻结清楚脸部、关节与器材，同时让汗滴、尘土或布料方向说明速度；光线高对比但肤色真实，背景通过镜头运动或景深简化而非抠图，避免重复肢体、错误受力、过度肌肉强化或全画面运动模糊",
+      "enPrompt": "athletic high-speed action photography freezing the decisive instant of acceleration turning or flight with clear face joints and equipment while sweat dust or fabric direction communicates velocity; use high-contrast light with truthful skin and simplify the background through panning or depth rather than cutout isolation, avoiding duplicated limbs impossible mechanics exaggerated musculature or frame-wide motion blur",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "copied campaign"
+      ]
+    },
+    {
+      "id": "style-riviera-minimal-fashion",
+      "category": "style",
+      "styleGroup": "photo-film-3d",
+      "zhName": "地中海极简时尚摄影",
+      "enName": "Sun-Drenched Riviera Minimal Fashion",
+      "image": "/assets/parameters/style-riviera-minimal-fashion.jpg?v=20261022-style-expansion-p",
+      "zhPrompt": "地中海极简时尚摄影以强烈正午阳光、白色几何建筑和钴蓝海面形成大块综合色，人物服装造型简洁，姿态与台阶、墙线和负空间精确呼应；硬影边缘清楚，高光保留白色层次，避免旅游婚纱感、综合色杂乱、建筑倾斜或复制特定品牌广告",
+      "enPrompt": "sun-drenched Riviera minimal fashion photography using hard midday sun white geometric architecture and cobalt sea as broad color fields, with a simply shaped garment and pose aligned precisely to steps walls and negative space; keep shadows crisp and white highlights differentiated, avoiding destination-wedding imagery scattered color leaning architecture or imitation of a branded campaign",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "copied campaign"
+      ]
+    },
+    {
+      "id": "style-1970s-opulent-fashion",
+      "category": "style",
+      "styleGroup": "photo-film-3d",
+      "zhName": "七十年代华丽时尚摄影",
+      "enName": "1970s Opulent Fashion Editorial",
+      "image": "/assets/parameters/style-1970s-opulent-fashion.jpg?v=20261022-style-expansion-p",
+      "zhPrompt": "七十年代华丽时尚摄影以提花、丝绒、暖木和图案室内营造层叠综合色，钨丝灯与柔闪共同形成金褐高光、深红阴影和轻微镜头雾化；人物姿态松弛而有戏剧性，胶片颗粒和综合色漂移克制存在，避免现代品牌标识、廉价橙色滤镜或过度堆满道具",
+      "enPrompt": "1970s opulent fashion editorial layering brocade velvet warm wood and patterned interiors, with tungsten practicals plus soft flash producing golden-brown highlights deep red shadows and slight lens haze; keep the pose relaxed yet theatrical with restrained film grain and color drift, avoiding modern brand marks a cheap orange filter or indiscriminate prop overload",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "copied campaign"
+      ]
+    },
+    {
+      "id": "style-staged-narrative-portrait",
+      "category": "style",
+      "styleGroup": "photo-film-3d",
+      "zhName": "电影布景叙事肖像",
+      "enName": "Cinematic Staged Narrative Portrait",
+      "image": "/assets/parameters/style-staged-narrative-portrait.jpg?v=20261022-style-expansion-p",
+      "zhPrompt": "电影布景叙事肖像让人物处于经过设计但可信的完整空间，书籍、家具、窗景或个人物件沿前中后景提供线索，姿态像故事暂停而非时尚摆拍；主光、实景灯和环境暗部形成层次，综合色统一且皮肤真实，避免角色扮演堆砌、虚假道具、海报式过度调色或背景与人物无关",
+      "enPrompt": "cinematic staged narrative portrait placing a person in a designed yet believable complete environment where books furniture window view or personal objects provide clues across foreground middle and distance, with posture resembling a paused story rather than a fashion pose; layer key light practicals and ambient shadow in a cohesive palette with real skin, avoiding costume-play clutter fake props poster-grade color excess or an unrelated background",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "copied campaign"
+      ]
+    },
+    {
+      "id": "style-new-topographics-landscape",
+      "category": "style",
+      "styleGroup": "photo-film-3d",
+      "zhName": "新地形冷静景观摄影",
+      "enName": "New Topographics Landscape Photography",
+      "image": "/assets/parameters/style-new-topographics-landscape.jpg?v=20261022-style-expansion-p",
+      "zhPrompt": "新地形冷静景观摄影正面记录工业边缘、停车场、仓库、郊区道路或被改造土地，使用平直视角、均匀阴天光和克制综合色，让电线、围栏和建筑比例成为客观结构；画面拒绝浪漫日落和英雄叙事，细节清楚却情绪疏离，避免废墟美化、广角夸张或赛博朋克综合色",
+      "enPrompt": "new-topographics landscape photography observing industrial fringes parking lots warehouses suburban roads or altered land frontally under even overcast light and restrained color, allowing wires fences and building proportions to become detached objective structure; reject romantic sunset and heroic narrative while retaining precise detail, avoiding ruin glamour ultra-wide exaggeration or cyberpunk color",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "copied campaign"
+      ]
+    },
+    {
+      "id": "style-earthy-botanical-interior",
+      "category": "style",
+      "styleGroup": "photo-film-3d",
+      "zhName": "大地植物药剂空间摄影",
+      "enName": "Earthy Botanical Apothecary Interior",
+      "image": "/assets/parameters/style-earthy-botanical-interior.jpg?v=20261022-style-expansion-p",
+      "zhPrompt": "大地植物药剂空间摄影以水磨石、粗石、灰泥、深木和无标签琥珀玻璃建立触觉层次，少量绿植打破土褐与灰米综合色；低调窗光在玻璃边缘和研钵表面形成温润微光，构图极简但材料丰富，避免复制商业店铺、满架商品、黄褐滤镜或过度暗黑神秘",
+      "enPrompt": "earthy botanical apothecary interior photography building tactile layers from terrazzo rough stone plaster dark wood and unlabeled amber glass, with sparse plants interrupting earth brown and gray-beige; subdued window light gives warm edge glow to glass and mortar surfaces in a minimal but materially rich frame, avoiding copied retail interiors packed merchandise a brown overlay or excessive occult darkness",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "copied campaign"
+      ]
+    },
+    {
+      "id": "style-lived-in-small-space-photo",
+      "category": "style",
+      "styleGroup": "photo-film-3d",
+      "zhName": "真实小户型生活摄影",
+      "enName": "Lived-In Small-Space Lifestyle Photography",
+      "image": "/assets/parameters/style-lived-in-small-space-photo.jpg?v=20261022-style-expansion-p",
+      "zhPrompt": "真实小户型生活摄影记录紧凑住宅中床、餐桌、厨房与收纳的实际关系，日常衣物、书本和植物保留适量使用痕迹但不失清楚动线；自然窗光与暖色实景灯共存，综合色准确、透视可信，避免样板房清空、无意义脏乱、超广角扩容或家具比例错误",
+      "enPrompt": "lived-in small-space lifestyle photography showing the real relationship between bed table kitchen and storage in a compact home, with clothing books and plants leaving moderate traces of use while circulation remains clear; balance window daylight with warm practicals and truthful perspective, avoiding empty showroom staging meaningless mess ultra-wide artificial enlargement or incorrect furniture scale",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "copied campaign"
+      ]
+    },
+    {
+      "id": "style-noir-high-contrast-fashion",
+      "category": "style",
+      "styleGroup": "photo-film-3d",
+      "zhName": "高反差黑白时尚肖像",
+      "enName": "High-Contrast Noir Fashion Portrait",
+      "image": "/assets/parameters/style-noir-high-contrast-fashion.jpg?v=20261022-style-expansion-p",
+      "zhPrompt": "高反差黑白时尚肖像用硬光和建筑投影切割人物轮廓，深黑服装、明亮肤色与灰色墙面形成简洁三段灰阶，姿态强势但结构自然；高光清楚不过曝，暗部仍保留衣料边缘，构图依靠剪影而非性感化姿势，避免百叶窗俗套、黑位全堵或塑料锐化",
+      "enPrompt": "high-contrast noir fashion portrait using hard light and architectural shadow to cut the figure into a concise three-value relationship of black clothing bright skin and gray wall, with a strong but physically natural pose; keep highlights open and garment edges present in shadow, building the frame through silhouette rather than sexualized posing, avoiding clichéd blinds blocked blacks or plastic sharpening",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "copied campaign"
+      ]
+    },
+    {
+      "id": "style-backstage-documentary-photo",
+      "category": "style",
+      "styleGroup": "photo-film-3d",
+      "zhName": "后台准备纪实摄影",
+      "enName": "Backstage Documentary Photography",
+      "image": "/assets/parameters/style-backstage-documentary-photo.jpg?v=20261022-style-expansion-p",
+      "zhPrompt": "后台准备纪实摄影捕捉演出前化妆、更衣、系鞋或安静等待的非摆拍瞬间，镜子、灯泡、幕布、线缆与服装架构成真实工作环境；混合色温和局部遮挡被保留，焦点落在动作而非舞台光鲜结果，避免明星红毯感、整齐影棚布光或清除所有现场杂物",
+      "enPrompt": "backstage documentary photography capturing unposed moments of makeup dressing shoe fastening or quiet waiting before a performance, with mirrors bulbs curtains cables and clothing racks forming a real working environment; retain mixed color temperature and partial obstruction with focus on the action rather than polished stage result, avoiding celebrity red-carpet glamour orderly studio light or removal of every production trace",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "copied campaign"
+      ]
+    },
+    {
+      "id": "style-editorial-food-documentary",
+      "category": "style",
+      "styleGroup": "photo-film-3d",
+      "zhName": "厨房人文美食纪实",
+      "enName": "Editorial Food Documentary Photography",
+      "image": "/assets/parameters/style-editorial-food-documentary.jpg?v=20261022-style-expansion-p",
+      "zhPrompt": "厨房人文美食纪实把烹饪者的手、动作、蒸汽、旧器具和真实食材放在同一叙事中，以可用光记录过程而不是只展示成品；综合色自然，油、水和火焰有真实物理质感，构图允许前景遮挡与瞬间混乱，避免电商摆盘、假蒸汽、过饱和食物或厨房无菌化",
+      "enPrompt": "editorial food documentary photography keeping the cook's hands action steam worn utensils and real ingredients within one process narrative, using available light rather than presenting only a finished dish; preserve natural color and physical oil water and flame with momentary foreground obstruction, avoiding ecommerce plating fake steam oversaturated food or a sterile kitchen",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "copied campaign"
+      ]
+    },
+    {
+      "id": "style-brutalist-architectural-photo",
+      "category": "style",
+      "styleGroup": "photo-film-3d",
+      "zhName": "粗野主义建筑摄影",
+      "enName": "Brutalist Architectural Photography",
+      "image": "/assets/parameters/style-brutalist-architectural-photo.jpg?v=20261022-style-expansion-p",
+      "zhPrompt": "粗野主义建筑摄影以精确透视记录大尺度清水混凝土、重复模数、悬挑和深切阴影，保留模板接缝、气孔与天气痕迹；一个小人物或门洞提供尺度参照，冷漫射光控制综合色，避免倾斜线条、夸张末日氛围、光滑 CG 混凝土或用广角把体量拉坏",
+      "enPrompt": "brutalist architectural photography recording monumental raw concrete repeated modules cantilevers and carved shadow with exact perspective, preserving formwork seams pores and weathering; use one small person or doorway for scale under cool diffuse light, avoiding leaning lines exaggerated apocalypse mood smooth CGI concrete or wide-angle deformation of the mass",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "copied campaign"
+      ]
+    },
+    {
+      "id": "ethnic-mongolian",
+      "category": "ethnic-style",
+      "styleGroup": "northwest",
+      "zhName": "蒙古草原纹样",
+      "enName": "Mongolian Grassland",
+      "image": "/assets/parameters/ethnic-mongolian.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "蒙古草原视觉以开阔地平线、白色毡房、皮革与厚毡材料建立空间，连续卷草、云纹和角形几何沿地毯、鞍具与服饰边缘展开；蓝白、皮革棕和少量金红综合色层级清楚，避免复制具体神圣符号、家族标记或把草原做成旅游纪念品拼贴",
+      "enPrompt": "Mongolian grassland visual language built from an open horizon white felt dwellings leather and dense wool felt, with continuous scroll cloud and horn-like geometry following carpet tack and garment borders; organize blue white hide brown and restrained gold-red in a clear hierarchy, avoiding sacred symbols clan marks or a tourist-souvenir collage"
+    },
+    {
+      "id": "ethnic-han",
+      "category": "ethnic-style",
+      "styleGroup": "major",
+      "zhName": "汉族丝绸庭院",
+      "enName": "Han Silk Courtyard",
+      "image": "/assets/parameters/ethnic-han.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "汉族传统庭院视觉以中轴院落、亭台廊庑、漏窗、水面与植物层次形成含蓄秩序，丝绸和刺绣纹样只出现在服饰、屏风或窄幅边饰；暖白、墨青、赭石与少量朱红克制分配，保持建筑时代一致，避免混杂朝代构件或泛化的龙凤堆砌",
+      "enPrompt": "Han courtyard visual language arranging axial courtyards pavilions corridors lattice openings water and plants in restrained depth, with silk and embroidery confined to garments screens or narrow borders; distribute warm white ink blue ochre and sparse vermilion carefully, keeping architectural periods coherent and avoiding mixed-dynasty details or generic dragon-phoenix overload"
+    },
+    {
+      "id": "ethnic-hui",
+      "category": "ethnic-style",
+      "styleGroup": "northwest",
+      "zhName": "回族几何花砖",
+      "enName": "Hui Geometric Tile",
+      "image": "/assets/parameters/ethnic-hui.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "回族几何花砖与庭院建筑视觉以蓝白釉面单元、星形、花瓣和连续交织纹构成有尺度的装饰带，纹样服从拱券、墙裙与窗格结构；综合色清洁宁静、砖缝和釉面变化可见，不生成经文、可读宗教文字或虚构神圣徽记",
+      "enPrompt": "Hui geometric-tile and courtyard architecture language using blue-white glazed units stars petals and continuous interlace at a believable scale, with pattern following arches wall dados and window grids; keep color clean and quiet with visible joints and glaze variation, without scripture readable religious text or invented sacred emblems"
+    },
+    {
+      "id": "ethnic-kazakh",
+      "category": "ethnic-style",
+      "styleGroup": "northwest",
+      "zhName": "哈萨克毡毯",
+      "enName": "Kazakh Felt Carpet",
+      "image": "/assets/parameters/ethnic-kazakh.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "哈萨克毡艺视觉以厚实羊毛毡、对称卷草与角形纹构成毡房内饰、壁挂和鞍毯，纹样沿圆形空间和织物边界连续展开；蓝、深红、金黄与象牙白综合色鲜明但不过量，保留纤维压毡和缝合痕迹，不复制家族标记或泛中亚花纹拼盘",
+      "enPrompt": "Kazakh felt-art visual language using dense wool felt symmetrical scrolling and horn-derived motifs across yurt interiors hangings and saddle blankets, with ornament following circular space and textile boundaries; keep blue deep red golden yellow and ivory vivid but controlled, showing compressed fiber and seams without copying clan emblems or mixing generic Central Asian patterns"
+    },
+    {
+      "id": "ethnic-she",
+      "category": "ethnic-style",
+      "styleGroup": "south",
+      "zhName": "畲族彩带刺绣",
+      "enName": "She Ribbon Embroidery",
+      "image": "/assets/parameters/ethnic-she.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "畲族服饰视觉以靛蓝或黑色布面为主体，窄幅亮色织带、细密花叶刺绣和克制银饰沿领口、袖口与衣襟集中出现，综合色可呼应湿润山地与木石村落；保留针脚、布纹和服装结构，避免泛化成彩虹条纹或混用其他民族头饰",
+      "enPrompt": "She clothing visual language centered on indigo or black cloth, with narrow bright woven ribbons fine floral embroidery and restrained silver concentrated at collars cuffs and front openings, set against humid mountains and timber-stone villages; preserve stitch texture and garment construction, avoiding generic rainbow striping or borrowed ethnic headwear"
+    },
+    {
+      "id": "ethnic-lahu",
+      "category": "ethnic-style",
+      "styleGroup": "southwest",
+      "zhName": "拉祜族暗色织物",
+      "enName": "Lahu Dark Textile",
+      "image": "/assets/parameters/ethnic-lahu.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "拉祜族服饰视觉以深黑或靛蓝布面承托红、黄、绿窄带、局部拼布和少量银饰，彩色集中在领襟、袖边与衣摆形成清楚节奏；综合色沉稳并与山林木寨呼应，避免把黑衣处理成无细节暗块或堆满通用银饰",
+      "enPrompt": "Lahu clothing language using deep black or indigo cloth to support narrow red yellow and green bands localized patchwork and sparse silver, concentrating color at front openings sleeve edges and hems; keep the palette grounded in forest villages, avoiding featureless black garments or generic silver overload"
+    },
+    {
+      "id": "ethnic-dongxiang",
+      "category": "ethnic-style",
+      "styleGroup": "northwest",
+      "zhName": "东乡族花巾",
+      "enName": "Dongxiang Floral Scarf",
+      "image": "/assets/parameters/ethnic-dongxiang.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "东乡族花巾与织物视觉以柔和小花、连续几何和细窄边饰顺着真实褶皱展开，综合色取自西北黄土、灰砖院落与低饱和蓝绿红；人物衣着朴实、建筑尺度可信，不生成经文、虚构宗教徽记或移植宏大异域穹顶",
+      "enPrompt": "Dongxiang scarf and textile language using small florals continuous geometry and narrow borders that follow real folds, drawing muted blue green and red from loess land and gray-brick courtyards; keep clothing modest and architecture believable, without scripture invented religious emblems or imported monumental domes"
+    },
+    {
+      "id": "ethnic-xibe",
+      "category": "ethnic-style",
+      "styleGroup": "northwest",
+      "zhName": "锡伯族弓马刺绣",
+      "enName": "Xibe Archery Textile",
+      "image": "/assets/parameters/ethnic-xibe.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "锡伯族弓马视觉以弓身曲线、箭羽、鞍具和边疆植物纹构成叙事边饰，器具结构与持握方式保持可用，刺绣和织纹只沿服饰或装备边界出现；综合色冷暖分明但不过度戏剧化，避免奇幻兵器、错误骑射姿势或通用武侠造型",
+      "enPrompt": "Xibe archery visual language using bow curves fletching tack and frontier botanical motifs as narrative borders, keeping equipment construction and handling functional while embroidery stays on garment or gear boundaries; balance cool and warm color without theatrical excess, avoiding fantasy weapons impossible riding posture or generic martial-arts styling"
+    },
+    {
+      "id": "ethnic-salar",
+      "category": "ethnic-style",
+      "styleGroup": "northwest",
+      "zhName": "撒拉族绿洲花纹",
+      "enName": "Salar Oasis Textile",
+      "image": "/assets/parameters/ethnic-salar.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "撒拉族河谷绿洲视觉以果树枝叶、小型花卉和几何边饰组织织物，靛蓝、湖绿、石榴红与乳白综合色呼应土木院落、木构和克制拱券；保持生活尺度与材料真实性，不生成经文、虚构宗教标志或宫殿化蓝色穹顶",
+      "enPrompt": "Salar river-oasis visual language organizing orchard branches small florals and geometric borders across textiles, with indigo lake green pomegranate red and cream echoing earthen courtyards timber and restrained arches; preserve domestic scale and material truth without scripture invented religious signs or palace-like blue domes"
+    },
+    {
+      "id": "ethnic-pumi",
+      "category": "ethnic-style",
+      "styleGroup": "southwest",
+      "zhName": "普米族高原织物",
+      "enName": "Pumi Highland Weaving",
+      "image": "/assets/parameters/ethnic-pumi.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "普米族高原织物视觉以天然羊毛、麻布的棕灰本色为主体，红、蓝、白窄带沿腰带、包边和局部织片出现，厚实纤维与手工接缝清楚；综合色融入木石山村而不铺满全身彩条，避免泛藏式符号或旅游服装化",
+      "enPrompt": "Pumi highland textile language led by natural brown-gray wool and hemp, with narrow red blue and white bands confined to belts bindings and localized woven panels, showing dense fiber and hand seams; integrate with timber-stone mountain villages without covering the whole garment in stripes or defaulting to generic Tibetan symbols and tourist costume"
+    },
+    {
+      "id": "ethnic-ewenki",
+      "category": "ethnic-style",
+      "styleGroup": "northeast",
+      "zhName": "鄂温克驯鹿森林",
+      "enName": "Ewenki Reindeer Forest",
+      "image": "/assets/parameters/ethnic-ewenki.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "鄂温克森林生活视觉以针叶林、苔藓、桦木、皮革和木制工具建立寒地材料层次，驯鹿解剖、角形和群体行为真实；松绿、雪灰、皮革棕配少量红蓝织带，避免奇幻坐骑、错误鹿角、舞台化民族服饰或无关图腾",
+      "enPrompt": "Ewenki forest-life visual language layering conifers moss birch leather and wooden tools, with anatomically correct reindeer antlers and believable herd behavior; use pine green snow gray hide brown and sparse red-blue textile accents, avoiding fantasy mounts incorrect antlers theatrical ethnic costume or unrelated totems"
+    },
+    {
+      "id": "ethnic-jino",
+      "category": "ethnic-style",
+      "styleGroup": "southwest",
+      "zhName": "基诺族彩条织物",
+      "enName": "Jino Woven Stripe",
+      "image": "/assets/parameters/ethnic-jino.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "基诺族织物视觉以红、蓝、黑、白窄条按经纬结构交替，保留手织纱线厚薄、轻微错位和衣片拼接；条纹只服务于服装结构，并与雨林、竹木村寨的综合色形成对照，避免数字化均匀彩虹条或图案覆盖环境",
+      "enPrompt": "Jino woven-textile language alternating narrow red blue black and white bands according to warp-and-weft structure, retaining variable yarn thickness slight misregistration and garment-panel joins; stripes serve clothing construction against rainforest and bamboo-timber village color, avoiding mechanically even rainbow bands or patterns spread across the environment"
+    },
+    {
+      "id": "ethnic-yugur",
+      "category": "ethnic-style",
+      "styleGroup": "northwest",
+      "zhName": "裕固族草原佛饰",
+      "enName": "Yugur Grassland Ornament",
+      "image": "/assets/parameters/ethnic-yugur.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "裕固族高原视觉以厚实羊毛、红黄蓝窄幅织边和开阔草地天空形成清晰综合色，白塔仅作为真实远景建筑线索，服装纹样跟随领口、袖边与腰带结构；不生成经文、具体神像或把宗教构件当作随意装饰",
+      "enPrompt": "Yugur highland visual language combining dense wool narrow red yellow and blue woven borders with broad grassland and sky, using a white stupa only as a truthful distant architectural cue while ornament follows collars cuffs and belts; do not generate scripture specific sacred figures or use religious structures as casual decoration"
+    },
+    {
+      "id": "ethnic-uzbek",
+      "category": "ethnic-style",
+      "styleGroup": "northwest",
+      "zhName": "乌孜别克艾德莱斯",
+      "enName": "Uzbek Atlas Courtyard",
+      "image": "/assets/parameters/ethnic-uzbek.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "乌孜别克艾德莱斯丝绸视觉以经向扎染形成羽化边缘的火焰、椭圆和纵向色带，综合色随丝线光泽流动，并与庭院花砖、木柱保持材质区分；纹样沿布料垂坠，不做锐利数码锯齿或把花砖与丝纹混成同一表面",
+      "enPrompt": "Uzbek atlas-silk visual language using warp-resist dye to form feather-edged flames ovals and vertical bands whose color shifts with silk luster, kept materially distinct from courtyard tiles and timber columns; motifs follow fabric drape rather than sharp digital zigzags or tiles and silk merged into one surface"
+    },
+    {
+      "id": "ethnic-tatar",
+      "category": "ethnic-style",
+      "styleGroup": "northwest",
+      "zhName": "塔塔尔花布庭院",
+      "enName": "Tatar Floral Courtyard",
+      "image": "/assets/parameters/ethnic-tatar.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "塔塔尔花布与木构庭院视觉以小型花束、叶蔓、圆点和窄边纹组织生活织物，综合色明快但保持适量留白；雕花木檐、院落和乐器作为真实节庆线索，避免宫殿化场景、满版花纹或泛化的欧亚民俗拼贴",
+      "enPrompt": "Tatar floral-textile and timber-courtyard language arranging small bouquets leaf scrolls dots and narrow borders across domestic fabrics with bright color and breathing room; use carved wooden eaves courtyards and instruments as truthful celebration cues, avoiding palace fantasy all-over pattern or a generic Eurasian folk collage"
+    },
+    {
+      "id": "ethnic-menba",
+      "category": "ethnic-style",
+      "styleGroup": "southwest",
+      "zhName": "门巴族山谷木寨",
+      "enName": "Menba Valley Weaving",
+      "image": "/assets/parameters/ethnic-menba.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "门巴族山谷视觉以厚羊毛、红蓝黄窄带、木石房屋和湿润喜马拉雅植被建立材料层次，织带沿衣缘与包袋结构出现，空气清亮而综合色自然；避免虚构寺院法器、泛藏式套装或把条纹铺满建筑与山谷",
+      "enPrompt": "Menba valley visual language layering dense wool narrow red blue and yellow bands timber-stone homes and humid Himalayan vegetation, with woven strips following garment edges and bags in clear natural air; avoid invented monastic objects generic Tibetanized costume or stripes covering buildings and landscape"
+    },
+    {
+      "id": "ethnic-daur",
+      "category": "ethnic-style",
+      "styleGroup": "northeast",
+      "zhName": "达斡尔河谷草原",
+      "enName": "Daur River Grassland",
+      "image": "/assets/parameters/ethnic-daur.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "达斡尔河谷草原视觉以河湾、湿地草甸、木院和真实马群活动建立生活叙事，蓝白几何纹只沿服饰、毯面或器物结构出现；马具与动作符合功能，综合色清爽朴实，避免奇幻骑兵、图案漂浮在风景上或无关游牧符号",
+      "enPrompt": "Daur river-grassland visual language building daily narrative from bends wetlands meadows timber yards and authentic horse activity, with blue-white geometry confined to garments blankets or object construction; keep tack and motion functional and color plain and fresh, avoiding fantasy cavalry patterns floating across scenery or unrelated nomadic symbols"
+    },
+    {
+      "id": "ethnic-kirgiz",
+      "category": "ethnic-style",
+      "styleGroup": "northwest",
+      "zhName": "柯尔克孜毡毯雪山",
+      "enName": "Kirgiz Felt Mountain",
+      "image": "/assets/parameters/ethnic-kirgiz.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "柯尔克孜毡毯视觉以厚羊毛毡、对称卷草、角形纹和连续边框形成强烈手工秩序，贴布层次、缝线与纤维厚度真实；综合色呼应雪山牧场与毡房，但不复制家族标记，也不让纹样跨越人物、天空和地面随意延展",
+      "enPrompt": "Kirgiz felt-carpet language using thick wool felt symmetrical scrolls horn-derived motifs and continuous borders in a strong handmade order, with believable appliqué depth seams and fiber thickness; let color echo snowy pasture and felt dwellings without copying family marks or allowing pattern to spread arbitrarily across people sky and ground"
+    },
+    {
+      "id": "ethnic-jing",
+      "category": "ethnic-style",
+      "styleGroup": "south",
+      "zhName": "京族海洋渔村",
+      "enName": "Jing Coastal Village",
+      "image": "/assets/parameters/ethnic-jing.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "京族滨海生活视觉以潮滩、木船、渔网、竹编和海边聚落构成清楚层次，海蓝、沙灰、竹黄配少量节庆红色，材料受盐雾和湿气影响真实；避免度假村滤镜、宏大帆船、热带海岛套景或将海浪纹铺满所有物体",
+      "enPrompt": "Jing coastal-life visual language layering tidal flats wooden boats fishing nets bamboo weaving and shoreline settlements, using sea blue sand gray bamboo yellow and sparse festive red with truthful salt-air weathering; avoid resort filters grand sailing ships tropical-island staging or wave motifs covering every surface"
+    },
+    {
+      "id": "craft-dehua-white-porcelain",
+      "category": "ethnic-style",
+      "styleGroup": "traditional-craft",
+      "zhName": "德化白瓷",
+      "enName": "Dehua White Porcelain",
+      "image": "/assets/parameters/craft-dehua-white-porcelain.png",
+      "zhPrompt": "德化白瓷以温润象牙白瓷胎与同色釉层塑造含蓄体积，薄缘透光、厚釉处呈乳白综合色，衣褶、花瓣和修坯线条细净连贯；柔和侧光强调瓷质而非玻璃反射，避免冷白塑料、石膏感、金属高光或过度锐利的数字雕刻",
+      "enPrompt": "Dehua white porcelain using a warm ivory body and near-white glaze to shape restrained volume, with translucent thin edges milky thicker glaze and clean continuous folds petals and trimming lines; soft side light reveals porcelain rather than glass reflection, avoiding cold-white plastic plaster appearance metallic highlights or overly sharp digital carving",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "wrong cultural symbol"
+      ]
+    }
+  ]
+}

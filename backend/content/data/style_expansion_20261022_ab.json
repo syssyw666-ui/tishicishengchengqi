@@ -1,0 +1,304 @@
+{
+  "parameters": [
+    {
+      "id": "clothing-short-sleeve",
+      "category": "clothing",
+      "styleGroup": "tops-sleeves",
+      "zhName": "短袖上衣",
+      "enName": "Short Sleeve Top",
+      "image": "/assets/parameters/clothing-short-sleeve.png",
+      "zhPrompt": "短袖上衣的袖口结束在上臂中段并与肩线、袖山和腋下接缝自然连接，衣身松量与面料厚度决定垂坠和褶皱，抬臂时袖口与腋部产生合理牵拉；保持左右袖长一致，避免袖子粘住手臂、腋下破洞、肩缝错位或把短袖误画成无袖",
+      "enPrompt": "short-sleeve top with each sleeve ending around the mid upper arm and connecting naturally through shoulder seam sleeve cap and underarm, while garment ease and fabric weight determine drape and folds and raised arms create plausible tension around sleeve opening and armhole; keep sleeve lengths consistent, avoiding sleeves fused to skin missing underarms displaced shoulder seams or conversion into a sleeveless top",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-turtleneck",
+      "category": "clothing",
+      "styleGroup": "tops-sleeves",
+      "zhName": "高领上衣",
+      "enName": "Turtleneck",
+      "image": "/assets/parameters/clothing-turtleneck.png",
+      "zhPrompt": "高领上衣以连续领片包覆颈部并在下颌下保留舒适空间，领高、翻折方式和针织弹性清楚可见，肩颈转动时形成纵向或斜向软褶但不限制姿态；保持头颈从领口正确穿出，避免领子遮住嘴部、像硬筒悬浮、皮肤穿透布料或前后领结构混乱",
+      "enPrompt": "turtleneck top using a continuous collar piece around the neck with believable clearance below the jaw, clearly showing collar height fold method and knit elasticity while head movement produces soft vertical or diagonal folds without immobilizing the pose; ensure head and neck emerge correctly, avoiding a collar covering the mouth floating like a rigid tube skin intersecting fabric or confused front and back construction",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-v-neck",
+      "category": "clothing",
+      "styleGroup": "tops-sleeves",
+      "zhName": "V领上衣",
+      "enName": "V-Neck Top",
+      "image": "/assets/parameters/clothing-v-neck.png",
+      "zhPrompt": "V 领上衣由左右领边在胸前中心形成清楚尖点，领深与服装场合相符并由贴边或罗纹稳定，肩带宽度、胸部松量和面料垂坠共同保持领口贴合；避免领尖偏斜、领边悬空、左右不对称、胸部穿模或把 V 领画成开裂的圆领",
+      "enPrompt": "V-neck top whose left and right neckline edges meet at one clean center point, with depth appropriate to the garment context and stabilized by facing ribbing or binding while shoulder width bust ease and fabric drape keep the opening seated against the body; avoid an off-center point floating edges accidental asymmetry body intersection or a round neck that merely appears torn open",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-button-shirt",
+      "category": "clothing",
+      "styleGroup": "tops-sleeves",
+      "zhName": "衬衫",
+      "enName": "Button Shirt",
+      "image": "/assets/parameters/clothing-button-shirt.png",
+      "zhPrompt": "纽扣衬衫具有连续门襟、可辨纽扣间距、翻领、肩缝、袖窿和袖口结构，面料挺度与合体松量决定胸腰褶皱，坐姿或抬臂时门襟受力但仍闭合自然；避免纽扣数量随机、门襟断裂、领片左右不同、袖口消失或布料像贴在皮肤上",
+      "enPrompt": "button shirt with a continuous front placket evenly spaced buttons coherent collar shoulder seams armholes and cuffs, where fabric crispness and garment ease control chest and waist folds and sitting or raised arms tension the placket without breaking closure; avoid random button counts interrupted plackets mismatched collar points vanished cuffs or cloth shrink-wrapped onto the skin",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-t-shirt",
+      "category": "clothing",
+      "styleGroup": "tops-sleeves",
+      "zhName": "T恤",
+      "enName": "T-Shirt",
+      "image": "/assets/parameters/clothing-t-shirt.png",
+      "zhPrompt": "基础 T 恤以圆领罗纹、短袖、肩缝和简洁衣身构成，针织棉的厚薄决定领口回弹、下摆垂度与躯干褶皱，版型可合身或宽松但必须随姿势真实受力；避免领口拉成硬圆环、袖山缺失、衣摆粘腿、无来源图案文字或胸腰比例被布料扭曲",
+      "enPrompt": "plain T-shirt built from a ribbed crew neck short sleeves shoulder seams and simple body, with jersey weight controlling neckline recovery hem drape and torso folds; fit may be close or relaxed but must respond to posture and gravity, avoiding a rigid circular collar missing sleeve caps a hem stuck to the legs source-free graphics or fabric distorting chest and waist anatomy",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-knit-sweater",
+      "category": "clothing",
+      "styleGroup": "tops-sleeves",
+      "zhName": "针织毛衣",
+      "enName": "Knit Sweater",
+      "image": "/assets/parameters/clothing-knit-sweater.png",
+      "zhPrompt": "针织毛衣展示连续织目、罗纹领口袖口与下摆，纱线粗细、组织密度和蓬松度在不同区域保持一致，肘部、腋下和腰部褶皱随动作与重力形成；织纹遵循衣片方向和透视，避免随机网格贴图、针目尺寸突变、手指勾入错误孔洞或毛衣像硬壳",
+      "enPrompt": "knit sweater showing continuous stitches and ribbed neckline cuffs and hem, with yarn thickness stitch density and loft remaining coherent across panels while elbows underarms and waist form folds from movement and gravity; knit direction follows pattern pieces and perspective, avoiding a random grid texture changing stitch scale fingers caught in impossible holes or a sweater behaving like a rigid shell",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-crop-top",
+      "category": "clothing",
+      "styleGroup": "tops-sleeves",
+      "zhName": "短款上衣",
+      "enName": "Crop Top",
+      "image": "/assets/parameters/clothing-crop-top.png",
+      "zhPrompt": "短款上衣的下摆明确结束在肋骨下方或自然腰线附近，肩袖和领口结构保持完整，衣长、版型与下装腰高共同形成清楚比例；动作时下摆可轻微上移但仍遵循布料受力，避免衣服无故消失成内衣、胸腹穿模、边缘粘皮或把人物躯干比例压缩",
+      "enPrompt": "crop top with a deliberate hem ending below the ribs or near the natural waist while shoulder sleeve and neckline construction remain complete, using garment length fit and lower-garment rise to create a clear proportion; the hem may lift slightly with motion but follows fabric tension, avoiding unexplained conversion into underwear torso intersections edges glued to skin or shortening the character's anatomy",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-oversized-shirt",
+      "category": "clothing",
+      "styleGroup": "tops-sleeves",
+      "zhName": "宽松衬衫",
+      "enName": "Oversized Shirt",
+      "image": "/assets/parameters/clothing-oversized-shirt.png",
+      "zhPrompt": "宽松衬衫以落肩、加大胸围、较长衣身和宽袖形成松弛体积，轻薄或中等厚度面料从肩部自然下垂并在肘腰处形成大而少的褶皱，手腕与下摆仍有清楚边界；避免简单放大人物衣服、袖长左右失衡、身体完全消失、布料鼓成气球或门襟纽扣比例异常",
+      "enPrompt": "oversized shirt shaped by dropped shoulders added chest ease longer body and roomy sleeves, with light or medium fabric hanging from the shoulders and forming broad sparse folds at elbows and waist while cuffs and hem remain readable; avoid merely scaling up normal clothing uneven sleeve lengths erasing the body balloon-like inflation or placket and buttons enlarged out of proportion",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-blazer",
+      "category": "clothing",
+      "styleGroup": "outerwear",
+      "zhName": "西装外套",
+      "enName": "Blazer",
+      "image": "/assets/parameters/clothing-blazer.png",
+      "zhPrompt": "西装外套通过翻领、驳头折线、肩部结构、胸省、前片扣位和袖口建立剪裁，面料挺度保持轮廓同时在肘部与腰侧产生克制褶皱，内搭与外套层次清楚；避免翻领左右错接、扣子悬浮、肩垫过度方硬、袖子穿手或衣身贴皮失去立体余量",
+      "enPrompt": "tailored blazer defined by lapels roll line shoulder construction chest shaping front button stance and cuffs, with fabric structure preserving silhouette while allowing restrained folds at elbows and waist and keeping the inner layer distinct; avoid crossed or mismatched lapels floating buttons excessively boxy shoulder pads sleeves intersecting hands or a body painted flat onto the torso",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-trench-coat",
+      "category": "clothing",
+      "styleGroup": "outerwear",
+      "zhName": "风衣",
+      "enName": "Trench Coat",
+      "image": "/assets/parameters/clothing-trench-coat.png",
+      "zhPrompt": "风衣保留双排或单排门襟、宽翻领、肩章、风暴挡片、腰带和长下摆等明确结构，防风面料在行走和风力下形成方向一致的大褶皱，腰带必须穿过带袢并有真实垂端；避免结构元素随机增殖、腰带穿身、下摆像斗篷无开口、风向矛盾或衣长改变腿部比例",
+      "enPrompt": "trench coat retaining a coherent single or double front broad lapels epaulettes storm flap belt loops tied belt and long vented hem, with weather-resistant fabric forming broad directional folds during walking or wind and belt ends hanging from real loops; avoid multiplying details randomly a belt passing through the body a cloak-like sealed hem conflicting wind directions or coat length altering leg anatomy",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-wool-coat",
+      "category": "clothing",
+      "styleGroup": "outerwear",
+      "zhName": "羊毛大衣",
+      "enName": "Wool Coat",
+      "image": "/assets/parameters/clothing-wool-coat.png",
+      "zhPrompt": "羊毛大衣以厚实毛呢、清楚肩线、翻领或立领、袋口和长衣身塑造冬季轮廓，重量让下摆稳定下垂并在肘部与坐姿处形成圆钝褶皱，表面可见细密绒毛但不过度蓬松；避免像薄风衣飘动、毛绒玩具质感、领口穿插、口袋位置矛盾或厚衣下身体比例异常",
+      "enPrompt": "wool coat using dense heavy cloth clear shoulders lapel or stand collar pocket openings and a long body to create a winter silhouette, with weight keeping the hem grounded and producing rounded folds at elbows and seated areas plus a fine restrained nap; avoid movement like a thin trench plush-toy fuzz intersecting collars contradictory pocket placement or distorted anatomy beneath the coat",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-puffer-jacket",
+      "category": "clothing",
+      "styleGroup": "outerwear",
+      "zhName": "羽绒服",
+      "enName": "Puffer Jacket",
+      "image": "/assets/parameters/clothing-puffer-jacket.png",
+      "zhPrompt": "羽绒服由连续外壳、均匀充绒分仓、拉链、袖口和下摆构成，蓬松体积随肘肩弯曲被压缩并在放松区域回弹，面料高光表现轻质防风层而非塑料；保持缝线围绕身体透视连续，避免每格膨胀不同、人物像气球、手臂穿出分仓或拉链无法闭合",
+      "enPrompt": "puffer jacket constructed from one outer shell evenly filled baffles zipper cuffs and hem, with insulated volume compressing at bent elbows and shoulders and recovering in relaxed areas while highlights suggest a lightweight weather shell rather than plastic; keep quilting continuous in body perspective, avoiding random baffle inflation balloon anatomy arms breaking through chambers or a zipper that cannot meet",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "scene-snowy-mountain",
+      "category": "scene",
+      "styleGroup": "nature",
+      "zhName": "雪山垭口",
+      "enName": "Snowy Mountain Pass",
+      "image": "/assets/parameters/scene-snowy-mountain.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "雪山垭口场景由两侧岩壁或山脊夹出可通行鞍部，积雪随坡度、风向和日照形成迎风堆积与背风裸岩，远近山体通过冷色空气透视拉开尺度；保留安全落脚与路径线索，避免雪像均匀白布、山峰重复、人物比例失真或晴空下出现无来源暴雪",
+      "enPrompt": "snowy mountain pass formed by ridges or rock walls enclosing a traversable saddle, with snow accumulation and exposed lee rock responding to slope wind and sunlight while cool atmospheric perspective separates near and distant peaks; preserve footing and route clues, avoiding snow as a uniform white sheet repeated mountains mis-scaled people or a source-free blizzard beneath clear sky"
+    },
+    {
+      "id": "scene-primeval-forest",
+      "category": "scene",
+      "styleGroup": "nature",
+      "zhName": "原始森林",
+      "enName": "Primeval Forest",
+      "image": "/assets/parameters/scene-primeval-forest.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "原始森林以不同年龄和直径的巨树、倒木、蕨类、苔藓层与潮湿腐殖地面建立生态层次，树冠遮蔽使光线以有限斑驳光或雾中光束进入，前中后景密度逐渐变化；避免每棵树复制、满地装饰蘑菇、无来源绿色辉光、路径过度整齐或植被遮死全部尺度参照",
+      "enPrompt": "primeval forest built from ancient trees of varied age and diameter fallen logs ferns moss layers and damp humus, with canopy cover admitting limited dappled light or shafts through mist and vegetation density changing across foreground middle distance and background; avoid cloned trunks decorative mushrooms everywhere source-free green glow an overly tidy path or foliage hiding every scale reference"
+    },
+    {
+      "id": "scene-tropical-rainforest",
+      "category": "scene",
+      "styleGroup": "nature",
+      "zhName": "热带雨林",
+      "enName": "Tropical Rainforest",
+      "image": "/assets/parameters/scene-tropical-rainforest.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "热带雨林具有多层树冠、板根、藤本、阔叶植物、湿润岩面和真实排水地形，高温水汽降低远景反差，瀑布或溪流只在地形允许处出现并影响附近苔藓与反光；保持物种形态多样，避免温带松树混入、全景霓虹绿色、每片叶子同样清晰或水流悬空无源",
+      "enPrompt": "tropical rainforest with layered canopy buttress roots lianas broadleaf plants wet stone and believable drainage terrain, where humid heat reduces distant contrast and waterfalls or streams occur only where topography supports them while affecting nearby moss and reflections; maintain varied plant morphology, avoiding temperate conifers neon green everywhere identical sharpness on every leaf or water floating without a source"
+    },
+    {
+      "id": "scene-volcanic",
+      "category": "scene",
+      "styleGroup": "nature",
+      "zhName": "火山黑岩",
+      "enName": "Volcanic Black Rock",
+      "image": "/assets/parameters/scene-volcanic.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "火山黑岩场景以冷却熔岩形成的绳状、块状与多孔岩面为主体，灰烬、硫气和少量热裂隙遵循风向与地形分布，黑岩高光和远处火山轮廓说明材质与尺度；与活跃熔岩河区分，避免满地橙色火焰、岩石重复贴图、人物直接踩高温裂隙或烟雾无风乱散",
+      "enPrompt": "volcanic black-rock landscape dominated by cooled ropey blocky and vesicular lava surfaces, with ash sulfur vapor and limited hot fissures distributed according to wind and terrain and mineral highlights plus distant volcanic form establishing material and scale; distinguish it from an active lava river, avoiding orange flames everywhere tiled rocks people standing on hot cracks or smoke drifting against no coherent wind"
+    },
+    {
+      "id": "scene-polar-aurora",
+      "category": "scene",
+      "styleGroup": "nature",
+      "zhName": "极地极光",
+      "enName": "Polar Aurora",
+      "image": "/assets/parameters/scene-polar-aurora.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "极地极光场景包含有裂隙和风蚀纹理的冰原、低矮雪脊与深色夜空，极光沿地磁方向形成高空帘幕并在冰雪上留下柔和彩色反射，地平线和微小尺度物说明辽阔感；避免极光像实体丝带贴地、彩虹全色过饱和、星空重复噪点或冰面像玻璃室内地板",
+      "enPrompt": "polar aurora scene containing a wind-sculpted ice field with cracks low snow ridges and a dark night sky, where high-altitude auroral curtains follow geomagnetic arcs and cast restrained color onto snow and ice while horizon and small scale cues communicate vastness; avoid solid ribbons touching the ground oversaturated rainbow color repeated star noise or ice resembling an indoor glass floor"
+    },
+    {
+      "id": "scene-ancient-town",
+      "category": "scene",
+      "styleGroup": "city",
+      "zhName": "古镇街道",
+      "enName": "Ancient Town Street",
+      "image": "/assets/parameters/scene-ancient-town.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "古镇街道以连续青石路、尺度一致的木构或砖木沿街建筑、檐口、排水和门窗建立真实生活空间，时代相符的小摊、灯笼与使用痕迹适度出现，湿润表面反光服从光源；保持通行路径和远景出口，避免景区式装饰堆砌、乱码招牌、不同朝代建筑混搭或街道无限重复",
+      "enPrompt": "historic town street built from continuous stone paving consistently scaled timber or brick-timber shop houses eaves drainage doors and windows, with restrained period-coherent stalls lanterns and traces of use plus wet reflections tied to actual lights; preserve circulation and a visible destination, avoiding theme-park decoration gibberish signs mixed architectural eras or an endlessly tiled street"
+    },
+    {
+      "id": "scene-modern-rooftop",
+      "category": "scene",
+      "styleGroup": "city",
+      "zhName": "摩天楼观景露台",
+      "enName": "Skyscraper Observation Terrace",
+      "image": "/assets/parameters/scene-modern-rooftop.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "摩天楼观景露台位于现代高层顶部，以玻璃或金属安全栏、铺装地面、少量座椅和明确出入口形成可使用空间，近处楼顶与远处天际线呈现真实高度视差，暮色灯光逐层亮起；区别于设备屋顶，避免空中无支撑平台、护栏过低、城市背景贴图化或人物尺寸与楼群矛盾",
+      "enPrompt": "skyscraper observation terrace at the top of a modern tower, using safe glass or metal balustrades paved flooring restrained seating and a clear access point to create a usable public space, with credible height parallax between the nearby roof and distant skyline as evening lights emerge; distinguish it from a service rooftop, avoiding an unsupported platform low barriers a pasted city backdrop or people scaled inconsistently with the towers"
+    },
+    {
+      "id": "scene-cyberpunk-alley",
+      "category": "scene",
+      "styleGroup": "city",
+      "zhName": "赛博朋克小巷",
+      "enName": "Cyberpunk Alley",
+      "image": "/assets/parameters/scene-cyberpunk-alley.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "赛博朋克小巷由高密度建筑夹缝、外露管线、维修层、摊位和潮湿路面构成，霓虹与屏幕必须依附真实店面或设备并在金属、水面和雾气中产生方向明确的反射，人物尺度保持可读；避免随机中文乱码、满屏同色霓虹、无入口建筑、线缆穿人或只靠紫蓝滤镜表现未来",
+      "enPrompt": "cyberpunk alley formed by a dense gap between buildings exposed utilities maintenance levels stalls and wet pavement, with neon and displays attached to real shops or devices and casting directional reflections across metal water and haze while human scale remains readable; avoid random gibberish characters one-color neon everywhere buildings with no entrances cables through people or futurism reduced to a purple-blue filter"
+    },
+    {
+      "id": "scene-library",
+      "category": "scene",
+      "styleGroup": "interior",
+      "zhName": "现代公共图书馆",
+      "enName": "Modern Public Library",
+      "image": "/assets/parameters/scene-library.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "现代公共图书馆以开放书架、清楚分类动线、阅读桌、借阅区与自然采光形成安静而可使用的当代室内，吸音材料、木材和柔和工作灯控制回声与视觉密度；区别于宏伟古典图书馆，避免高耸宫殿书墙、书脊乱码特写、书架无通道、家具比例错误或统一暖黄滤镜",
+      "enPrompt": "modern public library organized by accessible open shelving clear circulation reading tables lending zones and daylight, with acoustic surfaces wood and gentle task lighting creating a quiet usable contemporary interior; distinguish it from a monumental classical library, avoiding palace-height book walls close-up gibberish spines shelves with no aisles incorrectly scaled furniture or a blanket warm-yellow filter"
+    },
+    {
+      "id": "scene-museum",
+      "category": "scene",
+      "styleGroup": "culture",
+      "zhName": "当代艺术画廊",
+      "enName": "Contemporary Art Gallery",
+      "image": "/assets/parameters/scene-museum.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "当代艺术画廊采用白盒子展墙、灵活隔断、轨道灯或天窗和少量现代作品建立开放观看路径，作品与观众保持合理距离并由受控照明形成清楚焦点，墙面保留呼吸空间；区别于历史博物馆陈列，避免密集古物展柜、乱码说明牌、作品贴满墙、灯光直射观众眼睛或空间没有出口",
+      "enPrompt": "contemporary art gallery using white-cube walls flexible partitions track lighting or skylights and a restrained set of modern works to create an open viewing route, with proper viewing distance controlled focal lighting and breathing room around each piece; distinguish it from a historical museum display, avoiding dense artifact cases gibberish labels salon-style wall clutter glare aimed at visitors or a space with no exit"
+    },
+    {
+      "id": "scene-industrial-factory",
+      "category": "scene",
+      "styleGroup": "interior",
+      "zhName": "工业厂房",
+      "enName": "Industrial Factory",
+      "image": "/assets/parameters/scene-industrial-factory.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "工业厂房以承重钢架、行车或设备平台、管线桥架、检修通道和符合生产流程的机械建立尺度，工作灯、安全色和局部潮湿反光服务真实操作而非装饰，空气中粉尘或蒸汽有明确来源；避免机器随机堆叠、管道无连接、平台无护栏、满地镜面水或人物与设备比例冲突",
+      "enPrompt": "industrial factory built from load-bearing steel frames cranes or equipment decks pipe and cable runs maintenance access and machinery arranged by a plausible production flow, with work lights safety colors and limited wet reflections serving operation while dust or steam has a traceable source; avoid random machine piles disconnected pipes unguarded platforms mirror-wet floors everywhere or people scaled incorrectly beside equipment"
+    },
+    {
+      "id": "scene-product-studio",
+      "category": "scene",
+      "styleGroup": "interior",
+      "zhName": "产品摄影棚",
+      "enName": "Product Studio",
+      "image": "/assets/parameters/scene-product-studio.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "产品摄影棚包含无缝背景纸或可控布景、主光补光与轮廓光、反光板、旗板和稳固产品台，灯位与反射面围绕材质特性布置并保留真实接触阴影，工作区边缘可见但不抢画面；避免设备反射进产品、背景折痕、主体悬浮、多个矛盾高光或把摄影棚误作最终纯背景产品图",
+      "enPrompt": "product photography studio containing a seamless sweep or controllable set key fill and rim lights reflectors flags and a stable product table, with light positions and reflective surfaces arranged for the object's material and a believable contact shadow while working-zone edges may remain visible without competing; avoid equipment reflected in the product creased backdrops floating objects contradictory highlights or confusing the studio environment with a finished isolated product image"
+    }
+  ]
+}

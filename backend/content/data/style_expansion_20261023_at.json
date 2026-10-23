@@ -1,0 +1,334 @@
+{
+  "parameters": [
+    {
+      "id": "era-prehistoric",
+      "category": "era",
+      "styleGroup": "ancient",
+      "zhName": "史前荒野",
+      "enName": "Prehistoric",
+      "image": "/assets/parameters/era-prehistoric.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "史前荒野时代，原始自然、兽皮、巨型动物痕迹和未开发地貌；先明确地域、世纪或文明阶段，再让建筑方法、交通、照明、工具、衣料与社会活动共同证明时代；自然环境与聚落规模应符合资源条件。避免把多个古代文明混成装饰拼贴、现代材料与电力设备、跨世纪服饰、无依据巨型建筑、伪文字或仅靠棕黄色滤镜制造历史感",
+      "enPrompt": "prehistoric wilderness, primitive nature, fur clothing, traces of megafauna, untouched landscape; specify a region century or civilization phase before generation, then make construction method transport illumination tools textile and social activity jointly prove the period while landscape and settlement scale reflect available resources. Avoid decorative mixtures of unrelated ancient cultures modern materials or electrical devices clothing from conflicting centuries unsupported monumental architecture pseudo-writing or a brown-yellow filter used as the only evidence of history"
+    },
+    {
+      "id": "era-ancient-china",
+      "category": "era",
+      "styleGroup": "ancient",
+      "zhName": "中国古代",
+      "enName": "Ancient China",
+      "image": "/assets/parameters/era-ancient-china.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "中国古代世界观，古城、亭台、江河、汉服气质和典雅秩序；先明确地域、世纪或文明阶段，再让建筑方法、交通、照明、工具、衣料与社会活动共同证明时代；自然环境与聚落规模应符合资源条件。避免把多个古代文明混成装饰拼贴、现代材料与电力设备、跨世纪服饰、无依据巨型建筑、伪文字或仅靠棕黄色滤镜制造历史感",
+      "enPrompt": "ancient China worldbuilding, old city, pavilions, rivers, historical clothing mood, elegant order; specify a region century or civilization phase before generation, then make construction method transport illumination tools textile and social activity jointly prove the period while landscape and settlement scale reflect available resources. Avoid decorative mixtures of unrelated ancient cultures modern materials or electrical devices clothing from conflicting centuries unsupported monumental architecture pseudo-writing or a brown-yellow filter used as the only evidence of history"
+    },
+    {
+      "id": "era-medieval-fantasy",
+      "category": "era",
+      "styleGroup": "ancient",
+      "zhName": "中世纪奇幻",
+      "enName": "Medieval Fantasy",
+      "image": "/assets/parameters/era-medieval-fantasy.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "中世纪奇幻世界观，城堡、披风、山谷王国和史诗冒险感；先明确地域、世纪或文明阶段，再让建筑方法、交通、照明、工具、衣料与社会活动共同证明时代；自然环境与聚落规模应符合资源条件。避免把多个古代文明混成装饰拼贴、现代材料与电力设备、跨世纪服饰、无依据巨型建筑、伪文字或仅靠棕黄色滤镜制造历史感",
+      "enPrompt": "medieval fantasy world, castles, cloaks, valley kingdoms, epic adventure mood; specify a region century or civilization phase before generation, then make construction method transport illumination tools textile and social activity jointly prove the period while landscape and settlement scale reflect available resources. Avoid decorative mixtures of unrelated ancient cultures modern materials or electrical devices clothing from conflicting centuries unsupported monumental architecture pseudo-writing or a brown-yellow filter used as the only evidence of history"
+    },
+    {
+      "id": "era-renaissance",
+      "category": "era",
+      "styleGroup": "ancient",
+      "zhName": "文艺复兴",
+      "enName": "Renaissance",
+      "image": "/assets/parameters/era-renaissance.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "文艺复兴城市时代，穹顶、石柱、广场和古典人文光线；先明确地域、世纪或文明阶段，再让建筑方法、交通、照明、工具、衣料与社会活动共同证明时代；自然环境与聚落规模应符合资源条件。避免把多个古代文明混成装饰拼贴、现代材料与电力设备、跨世纪服饰、无依据巨型建筑、伪文字或仅靠棕黄色滤镜制造历史感",
+      "enPrompt": "renaissance city era, domes, stone columns, plazas, classical humanist light; specify a region century or civilization phase before generation, then make construction method transport illumination tools textile and social activity jointly prove the period while landscape and settlement scale reflect available resources. Avoid decorative mixtures of unrelated ancient cultures modern materials or electrical devices clothing from conflicting centuries unsupported monumental architecture pseudo-writing or a brown-yellow filter used as the only evidence of history"
+    },
+    {
+      "id": "era-victorian",
+      "category": "era",
+      "styleGroup": "modern",
+      "zhName": "维多利亚时代",
+      "enName": "Victorian",
+      "image": "/assets/parameters/era-victorian.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "维多利亚时代氛围，煤气灯、雨街、马车和暗色绅士感；锁定具体十年、城市与社会场景，用当时真实的道路、交通、广告载体、通讯设备、室内设施和服装剪裁建立时代，人物仍按日常任务行动。避免相邻年代物件随意混用、现代智能手机穿帮、品牌与乱码海报、所有人穿礼服、过度怀旧滤镜或只靠一辆旧车说明整个时代",
+      "enPrompt": "Victorian era, gas lamps, rainy streets, carriages, dark refined atmosphere; lock the scene to a specific decade city and social setting, using period-correct roads transport advertising media communication devices interior fixtures and garment cuts while people perform ordinary tasks. Avoid casually mixing adjacent decades contemporary smartphones recognizable brands and gibberish posters everyone wearing formal costume excessive nostalgia filtering or relying on one old vehicle to establish an entire era"
+    },
+    {
+      "id": "era-republic-shanghai",
+      "category": "era",
+      "styleGroup": "modern",
+      "zhName": "民国旧上海",
+      "enName": "Republic-Era Shanghai",
+      "image": "/assets/parameters/era-republic-shanghai.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "民国旧上海氛围，江岸建筑、复古西装、雾气和历史城市感，无文字；锁定具体十年、城市与社会场景，用当时真实的道路、交通、广告载体、通讯设备、室内设施和服装剪裁建立时代，人物仍按日常任务行动。避免相邻年代物件随意混用、现代智能手机穿帮、品牌与乱码海报、所有人穿礼服、过度怀旧滤镜或只靠一辆旧车说明整个时代",
+      "enPrompt": "Republic-era old Shanghai mood without text, riverside architecture, vintage suits, haze, historical city atmosphere; lock the scene to a specific decade city and social setting, using period-correct roads transport advertising media communication devices interior fixtures and garment cuts while people perform ordinary tasks. Avoid casually mixing adjacent decades contemporary smartphones recognizable brands and gibberish posters everyone wearing formal costume excessive nostalgia filtering or relying on one old vehicle to establish an entire era"
+    },
+    {
+      "id": "era-1980s-retro",
+      "category": "era",
+      "styleGroup": "modern",
+      "zhName": "80年代复古",
+      "enName": "1980s Retro",
+      "image": "/assets/parameters/era-1980s-retro.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "80年代复古世界观，霓虹、复古汽车、胶片色彩和怀旧城市夜景；锁定具体十年、城市与社会场景，用当时真实的道路、交通、广告载体、通讯设备、室内设施和服装剪裁建立时代，人物仍按日常任务行动。避免相邻年代物件随意混用、现代智能手机穿帮、品牌与乱码海报、所有人穿礼服、过度怀旧滤镜或只靠一辆旧车说明整个时代",
+      "enPrompt": "1980s retro world, neon, vintage cars, film colors, nostalgic city night; lock the scene to a specific decade city and social setting, using period-correct roads transport advertising media communication devices interior fixtures and garment cuts while people perform ordinary tasks. Avoid casually mixing adjacent decades contemporary smartphones recognizable brands and gibberish posters everyone wearing formal costume excessive nostalgia filtering or relying on one old vehicle to establish an entire era"
+    },
+    {
+      "id": "era-contemporary",
+      "category": "era",
+      "styleGroup": "modern",
+      "zhName": "当代日常",
+      "enName": "Contemporary",
+      "image": "/assets/parameters/era-contemporary.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "当代日常城市，现代街区、真实人流、玻璃建筑和自然生活质感；锁定具体十年、城市与社会场景，用当时真实的道路、交通、广告载体、通讯设备、室内设施和服装剪裁建立时代，人物仍按日常任务行动。避免相邻年代物件随意混用、现代智能手机穿帮、品牌与乱码海报、所有人穿礼服、过度怀旧滤镜或只靠一辆旧车说明整个时代",
+      "enPrompt": "contemporary everyday city, modern streets, real crowds, glass buildings, natural life texture; lock the scene to a specific decade city and social setting, using period-correct roads transport advertising media communication devices interior fixtures and garment cuts while people perform ordinary tasks. Avoid casually mixing adjacent decades contemporary smartphones recognizable brands and gibberish posters everyone wearing formal costume excessive nostalgia filtering or relying on one old vehicle to establish an entire era"
+    },
+    {
+      "id": "era-near-future",
+      "category": "era",
+      "styleGroup": "future",
+      "zhName": "近未来科技",
+      "enName": "Near Future",
+      "image": "/assets/parameters/era-near-future.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "近未来科技世界观，洁净城市、飞行器、白色建筑和乐观科技感；说明能源、交通、通信、建筑维护和公共生活如何运作，让科技水平在同一体系内一致，并通过材料磨损、服务设施与普通人的使用体现真实世界。避免只堆悬浮屏和霓虹、所有表面洁白发光、能源无来源、技术互相矛盾、城市无人生活、可读品牌文字或把未来简单等同于赛博朋克",
+      "enPrompt": "near-future clean technology, bright city, flying vehicles, white architecture, optimistic tech mood; define how energy transport communication building maintenance and public life function, keeping technology within one coherent capability level and showing the world through wear service infrastructure and ordinary use. Avoid piles of floating screens and neon every surface white and glowing source-free energy contradictory technologies cities with no lived activity readable brand text or treating every future as interchangeable cyberpunk"
+    },
+    {
+      "id": "era-cyberpunk",
+      "category": "era",
+      "styleGroup": "future",
+      "zhName": "赛博未来",
+      "enName": "Cyberpunk Future",
+      "image": "/assets/parameters/era-cyberpunk.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "赛博未来世界观，高密度城市、霓虹广告感、雨夜和机械科技层次；说明能源、交通、通信、建筑维护和公共生活如何运作，让科技水平在同一体系内一致，并通过材料磨损、服务设施与普通人的使用体现真实世界。避免只堆悬浮屏和霓虹、所有表面洁白发光、能源无来源、技术互相矛盾、城市无人生活、可读品牌文字或把未来简单等同于赛博朋克",
+      "enPrompt": "cyberpunk future, dense city, neon advertising mood, rainy night, mechanical tech layers; define how energy transport communication building maintenance and public life function, keeping technology within one coherent capability level and showing the world through wear service infrastructure and ordinary use. Avoid piles of floating screens and neon every surface white and glowing source-free energy contradictory technologies cities with no lived activity readable brand text or treating every future as interchangeable cyberpunk"
+    },
+    {
+      "id": "era-solarpunk",
+      "category": "era",
+      "styleGroup": "future",
+      "zhName": "太阳能朋克",
+      "enName": "Solarpunk",
+      "image": "/assets/parameters/era-solarpunk.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "太阳能朋克未来，绿植建筑、清洁能源、明亮天空和生态乐观主义；说明能源、交通、通信、建筑维护和公共生活如何运作，让科技水平在同一体系内一致，并通过材料磨损、服务设施与普通人的使用体现真实世界。避免只堆悬浮屏和霓虹、所有表面洁白发光、能源无来源、技术互相矛盾、城市无人生活、可读品牌文字或把未来简单等同于赛博朋克",
+      "enPrompt": "solarpunk eco future, green architecture, clean energy, bright sky, ecological optimism; define how energy transport communication building maintenance and public life function, keeping technology within one coherent capability level and showing the world through wear service infrastructure and ordinary use. Avoid piles of floating screens and neon every surface white and glowing source-free energy contradictory technologies cities with no lived activity readable brand text or treating every future as interchangeable cyberpunk"
+    },
+    {
+      "id": "era-post-apocalyptic",
+      "category": "era",
+      "styleGroup": "future",
+      "zhName": "末日废土",
+      "enName": "Post-Apocalyptic",
+      "image": "/assets/parameters/era-post-apocalyptic.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "末日废土世界观，废墟城市、尘土、破损道路和生存感；说明能源、交通、通信、建筑维护和公共生活如何运作，让科技水平在同一体系内一致，并通过材料磨损、服务设施与普通人的使用体现真实世界。避免只堆悬浮屏和霓虹、所有表面洁白发光、能源无来源、技术互相矛盾、城市无人生活、可读品牌文字或把未来简单等同于赛博朋克",
+      "enPrompt": "post-apocalyptic wasteland, ruined city, dust, broken roads, survival atmosphere; define how energy transport communication building maintenance and public life function, keeping technology within one coherent capability level and showing the world through wear service infrastructure and ordinary use. Avoid piles of floating screens and neon every surface white and glowing source-free energy contradictory technologies cities with no lived activity readable brand text or treating every future as interchangeable cyberpunk"
+    },
+    {
+      "id": "era-bronze-age-city",
+      "category": "era",
+      "styleGroup": "ancient-china",
+      "zhName": "青铜时代城邦",
+      "enName": "Bronze Age City",
+      "image": "/assets/parameters/era-bronze-age-city.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "青铜时代古代城邦世界观，陶土城墙、青铜礼器、火光仪式和原始王权气质；锁定朝代、地域与具体城市或乡野场景，建筑屋顶、城防、道路、车马、器物、发式和服装形制均服从同一时代，市井活动体现真实生产与礼制。避免汉唐宋明清元素混穿、泛化影楼汉服、现代水泥玻璃、满街灯笼、伪书法、宫殿比例失真或把所有中国古代都做成同一种金红宫廷景象",
+      "enPrompt": "bronze age ancient city-state worldbuilding, earthen walls, bronze ritual vessels, firelit ceremony, archaic authority; lock the scene to one dynasty region and specific urban or rural setting, making roof construction fortification road cart vessel hairstyle and garment form belong to the same period while everyday activity reflects actual production and social order. Avoid mixing Han Tang Song Ming and Qing elements generic studio hanfu modern concrete or glass lanterns everywhere pseudo-calligraphy distorted palace scale or rendering all ancient China as one red-and-gold imperial spectacle"
+    },
+    {
+      "id": "era-warring-states",
+      "category": "era",
+      "styleGroup": "ancient-china",
+      "zhName": "战国城门",
+      "enName": "Warring States",
+      "image": "/assets/parameters/era-warring-states.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "战国时代世界观，高大城门、旗帜、车马和古代军事秩序感；锁定朝代、地域与具体城市或乡野场景，建筑屋顶、城防、道路、车马、器物、发式和服装形制均服从同一时代，市井活动体现真实生产与礼制。避免汉唐宋明清元素混穿、泛化影楼汉服、现代水泥玻璃、满街灯笼、伪书法、宫殿比例失真或把所有中国古代都做成同一种金红宫廷景象",
+      "enPrompt": "Warring States era worldbuilding, monumental city gate, banners, horses and chariots, ancient strategic order; lock the scene to one dynasty region and specific urban or rural setting, making roof construction fortification road cart vessel hairstyle and garment form belong to the same period while everyday activity reflects actual production and social order. Avoid mixing Han Tang Song Ming and Qing elements generic studio hanfu modern concrete or glass lanterns everywhere pseudo-calligraphy distorted palace scale or rendering all ancient China as one red-and-gold imperial spectacle"
+    },
+    {
+      "id": "era-tang-dynasty-street",
+      "category": "era",
+      "styleGroup": "ancient-china",
+      "zhName": "盛唐长街",
+      "enName": "Tang Dynasty Street",
+      "image": "/assets/parameters/era-tang-dynasty-street.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "盛唐都会世界观，灯火长街、丝绸市集、多元服饰和繁华开放气象；锁定朝代、地域与具体城市或乡野场景，建筑屋顶、城防、道路、车马、器物、发式和服装形制均服从同一时代，市井活动体现真实生产与礼制。避免汉唐宋明清元素混穿、泛化影楼汉服、现代水泥玻璃、满街灯笼、伪书法、宫殿比例失真或把所有中国古代都做成同一种金红宫廷景象",
+      "enPrompt": "Tang dynasty cosmopolitan street, lantern-lit market, silk trade, diverse clothing, prosperous open atmosphere; lock the scene to one dynasty region and specific urban or rural setting, making roof construction fortification road cart vessel hairstyle and garment form belong to the same period while everyday activity reflects actual production and social order. Avoid mixing Han Tang Song Ming and Qing elements generic studio hanfu modern concrete or glass lanterns everywhere pseudo-calligraphy distorted palace scale or rendering all ancient China as one red-and-gold imperial spectacle"
+    },
+    {
+      "id": "era-song-riverside-town",
+      "category": "era",
+      "styleGroup": "ancient-china",
+      "zhName": "宋代水岸市镇",
+      "enName": "Song Riverside Town",
+      "image": "/assets/parameters/era-song-riverside-town.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "宋代水岸市镇世界观，桥梁、园林、书卷气和雅致市井生活；锁定朝代、地域与具体城市或乡野场景，建筑屋顶、城防、道路、车马、器物、发式和服装形制均服从同一时代，市井活动体现真实生产与礼制。避免汉唐宋明清元素混穿、泛化影楼汉服、现代水泥玻璃、满街灯笼、伪书法、宫殿比例失真或把所有中国古代都做成同一种金红宫廷景象",
+      "enPrompt": "Song dynasty riverside town, bridges, scholar gardens, refined urban life, literati elegance; lock the scene to one dynasty region and specific urban or rural setting, making roof construction fortification road cart vessel hairstyle and garment form belong to the same period while everyday activity reflects actual production and social order. Avoid mixing Han Tang Song Ming and Qing elements generic studio hanfu modern concrete or glass lanterns everywhere pseudo-calligraphy distorted palace scale or rendering all ancient China as one red-and-gold imperial spectacle"
+    },
+    {
+      "id": "era-ming-qing-courtyard",
+      "category": "era",
+      "styleGroup": "ancient-china",
+      "zhName": "明清院落",
+      "enName": "Ming-Qing Courtyard",
+      "image": "/assets/parameters/era-ming-qing-courtyard.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "明清古典院落世界观，红墙、月洞门、雕花窗格和秩序严整的传统空间；锁定朝代、地域与具体城市或乡野场景，建筑屋顶、城防、道路、车马、器物、发式和服装形制均服从同一时代，市井活动体现真实生产与礼制。避免汉唐宋明清元素混穿、泛化影楼汉服、现代水泥玻璃、满街灯笼、伪书法、宫殿比例失真或把所有中国古代都做成同一种金红宫廷景象",
+      "enPrompt": "Ming-Qing classical courtyard world, red walls, moon gate, carved screens, ordered traditional space; lock the scene to one dynasty region and specific urban or rural setting, making roof construction fortification road cart vessel hairstyle and garment form belong to the same period while everyday activity reflects actual production and social order. Avoid mixing Han Tang Song Ming and Qing elements generic studio hanfu modern concrete or glass lanterns everywhere pseudo-calligraphy distorted palace scale or rendering all ancient China as one red-and-gold imperial spectacle"
+    },
+    {
+      "id": "era-silk-road-caravan",
+      "category": "era",
+      "styleGroup": "world-history",
+      "zhName": "丝路商队",
+      "enName": "Silk Road Caravan",
+      "image": "/assets/parameters/era-silk-road-caravan.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "丝绸之路商队世界观，绿洲城、骆驼队、黄昏尘土和跨文化贸易气息；明确地点、年代、贸易或生产关系，并让建筑工法、气候、运输、货物、工具和阶层服饰互相印证；跨文化接触应通过可信路线与物品来源表现。避免泛欧洲或泛异域拼贴、时代错置武器、现代机械、无来源奢华、伪文字、服装舞台化或将复杂历史简化为单一战争与贵族场景",
+      "enPrompt": "Silk Road caravan worldbuilding, oasis city, camel caravan, evening dust, cross-cultural trade atmosphere; specify place period and the trade or production relationship, making construction climate transport goods tools and class-specific clothing corroborate one another while cultural contact appears through credible routes and object origins. Avoid generic European or exotic collage anachronistic weapons modern machinery source-free luxury pseudo-writing theatrical costume or reducing a complex historical world to only war and aristocratic spectacle"
+    },
+    {
+      "id": "era-medieval-europe",
+      "category": "era",
+      "styleGroup": "world-history",
+      "zhName": "中世纪市镇",
+      "enName": "Medieval Europe",
+      "image": "/assets/parameters/era-medieval-europe.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "中世纪欧洲市镇世界观，石板街、木构房屋、市集和城堡远景；明确地点、年代、贸易或生产关系，并让建筑工法、气候、运输、货物、工具和阶层服饰互相印证；跨文化接触应通过可信路线与物品来源表现。避免泛欧洲或泛异域拼贴、时代错置武器、现代机械、无来源奢华、伪文字、服装舞台化或将复杂历史简化为单一战争与贵族场景",
+      "enPrompt": "medieval European market town, cobblestone streets, timber houses, market life, distant castle; specify place period and the trade or production relationship, making construction climate transport goods tools and class-specific clothing corroborate one another while cultural contact appears through credible routes and object origins. Avoid generic European or exotic collage anachronistic weapons modern machinery source-free luxury pseudo-writing theatrical costume or reducing a complex historical world to only war and aristocratic spectacle"
+    },
+    {
+      "id": "era-renaissance-workshop",
+      "category": "era",
+      "styleGroup": "world-history",
+      "zhName": "文艺复兴工坊",
+      "enName": "Renaissance Workshop",
+      "image": "/assets/parameters/era-renaissance-workshop.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "文艺复兴工坊世界观，画室、雕塑、暖窗光和科学艺术交汇感；明确地点、年代、贸易或生产关系，并让建筑工法、气候、运输、货物、工具和阶层服饰互相印证；跨文化接触应通过可信路线与物品来源表现。避免泛欧洲或泛异域拼贴、时代错置武器、现代机械、无来源奢华、伪文字、服装舞台化或将复杂历史简化为单一战争与贵族场景",
+      "enPrompt": "Renaissance workshop worldbuilding, atelier, sculptures, warm window light, art and science atmosphere; specify place period and the trade or production relationship, making construction climate transport goods tools and class-specific clothing corroborate one another while cultural contact appears through credible routes and object origins. Avoid generic European or exotic collage anachronistic weapons modern machinery source-free luxury pseudo-writing theatrical costume or reducing a complex historical world to only war and aristocratic spectacle"
+    },
+    {
+      "id": "era-industrial-revolution",
+      "category": "era",
+      "styleGroup": "modern",
+      "zhName": "工业革命",
+      "enName": "Industrial Revolution",
+      "image": "/assets/parameters/era-industrial-revolution.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "工业革命时代世界观，蒸汽、铁桥、烟囱、机械和厚重灰色城市空气；锁定具体十年、城市与社会场景，用当时真实的道路、交通、广告载体、通讯设备、室内设施和服装剪裁建立时代，人物仍按日常任务行动。避免相邻年代物件随意混用、现代智能手机穿帮、品牌与乱码海报、所有人穿礼服、过度怀旧滤镜或只靠一辆旧车说明整个时代",
+      "enPrompt": "industrial revolution worldbuilding, steam, iron bridges, smokestacks, machinery, heavy gray city air; lock the scene to a specific decade city and social setting, using period-correct roads transport advertising media communication devices interior fixtures and garment cuts while people perform ordinary tasks. Avoid casually mixing adjacent decades contemporary smartphones recognizable brands and gibberish posters everyone wearing formal costume excessive nostalgia filtering or relying on one old vehicle to establish an entire era"
+    },
+    {
+      "id": "era-art-deco-1920s",
+      "category": "era",
+      "styleGroup": "modern",
+      "zhName": "二十年代装饰艺术",
+      "enName": "1920s Art Deco",
+      "image": "/assets/parameters/era-art-deco-1920s.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "1920年代装饰艺术都会世界观，摩天楼、探照灯、金属线条和爵士时代气质，无文字；锁定具体十年、城市与社会场景，用当时真实的道路、交通、广告载体、通讯设备、室内设施和服装剪裁建立时代，人物仍按日常任务行动。避免相邻年代物件随意混用、现代智能手机穿帮、品牌与乱码海报、所有人穿礼服、过度怀旧滤镜或只靠一辆旧车说明整个时代",
+      "enPrompt": "1920s art deco metropolis, skyscrapers, searchlights, metallic geometry, jazz-age mood, no readable text; lock the scene to a specific decade city and social setting, using period-correct roads transport advertising media communication devices interior fixtures and garment cuts while people perform ordinary tasks. Avoid casually mixing adjacent decades contemporary smartphones recognizable brands and gibberish posters everyone wearing formal costume excessive nostalgia filtering or relying on one old vehicle to establish an entire era"
+    },
+    {
+      "id": "era-retro-1950s",
+      "category": "era",
+      "styleGroup": "modern",
+      "zhName": "五十年代复古",
+      "enName": "1950s Retro",
+      "image": "/assets/parameters/era-retro-1950s.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "1950年代复古世界观，粉彩街景、霓虹餐厅、老式汽车和怀旧商业灯光，无品牌；锁定具体十年、城市与社会场景，用当时真实的道路、交通、广告载体、通讯设备、室内设施和服装剪裁建立时代，人物仍按日常任务行动。避免相邻年代物件随意混用、现代智能手机穿帮、品牌与乱码海报、所有人穿礼服、过度怀旧滤镜或只靠一辆旧车说明整个时代",
+      "enPrompt": "1950s retro worldbuilding, pastel street, neon diner glow, vintage cars, nostalgic commercial lighting, no logos; lock the scene to a specific decade city and social setting, using period-correct roads transport advertising media communication devices interior fixtures and garment cuts while people perform ordinary tasks. Avoid casually mixing adjacent decades contemporary smartphones recognizable brands and gibberish posters everyone wearing formal costume excessive nostalgia filtering or relying on one old vehicle to establish an entire era"
+    },
+    {
+      "id": "era-early-2000s-digital",
+      "category": "era",
+      "styleGroup": "modern",
+      "zhName": "千禧数字时代",
+      "enName": "Early 2000s Digital",
+      "image": "/assets/parameters/era-early-2000s-digital.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "千禧年前后数字时代世界观，旧显示器、网吧蓝光、海报墙和早期互联网气息，无品牌；锁定具体十年、城市与社会场景，用当时真实的道路、交通、广告载体、通讯设备、室内设施和服装剪裁建立时代，人物仍按日常任务行动。避免相邻年代物件随意混用、现代智能手机穿帮、品牌与乱码海报、所有人穿礼服、过度怀旧滤镜或只靠一辆旧车说明整个时代",
+      "enPrompt": "early 2000s digital era, old monitors, cyber cafe blue glow, poster-covered room, early internet mood, no logos; lock the scene to a specific decade city and social setting, using period-correct roads transport advertising media communication devices interior fixtures and garment cuts while people perform ordinary tasks. Avoid casually mixing adjacent decades contemporary smartphones recognizable brands and gibberish posters everyone wearing formal costume excessive nostalgia filtering or relying on one old vehicle to establish an entire era"
+    },
+    {
+      "id": "era-near-future-smart-city",
+      "category": "era",
+      "styleGroup": "future",
+      "zhName": "近未来智慧城市",
+      "enName": "Near-Future Smart City",
+      "image": "/assets/parameters/era-near-future-smart-city.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "近未来智慧城市世界观，自动交通、玻璃建筑、城市绿化和清洁科技秩序；说明能源、交通、通信、建筑维护和公共生活如何运作，让科技水平在同一体系内一致，并通过材料磨损、服务设施与普通人的使用体现真实世界。避免只堆悬浮屏和霓虹、所有表面洁白发光、能源无来源、技术互相矛盾、城市无人生活、可读品牌文字或把未来简单等同于赛博朋克",
+      "enPrompt": "near-future smart city worldbuilding, autonomous transit, glass architecture, urban greenery, clean technology order; define how energy transport communication building maintenance and public life function, keeping technology within one coherent capability level and showing the world through wear service infrastructure and ordinary use. Avoid piles of floating screens and neon every surface white and glowing source-free energy contradictory technologies cities with no lived activity readable brand text or treating every future as interchangeable cyberpunk"
+    },
+    {
+      "id": "era-reclaimed-post-apocalypse",
+      "category": "era",
+      "styleGroup": "apocalypse",
+      "zhName": "末世重生城市",
+      "enName": "Reclaimed Post-Apocalypse",
+      "image": "/assets/parameters/era-reclaimed-post-apocalypse.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "末世后自然重生城市世界观，植物覆盖混凝土、破败高楼和希望感重建，无血腥；先说明灾变类型、发生后的时间长度与仍可用的基础设施，再表现水电、食物、交通、避难、修复和社区协作留下的可观察痕迹；破坏程度按地点变化，并保留因果。避免无原因万能废墟、每栋楼同样破损、随意血腥、装备拼贴、道路仍崭新、植物一夜覆盖全城或把生存者只画成武装摆拍",
+      "enPrompt": "post-apocalyptic reclaimed city, plants over concrete, broken towers, hopeful rebuilding atmosphere, no gore; define the disaster type elapsed time and surviving infrastructure before showing observable evidence of water power food transport shelter repair and community adaptation, with damage varying by location and preserving cause. Avoid unexplained universal ruins every building damaged identically gratuitous gore random survival-gear collage pristine roads vegetation covering a city overnight or survivors reduced to armed poses with no credible daily systems"
+    },
+    {
+      "id": "era-xianxia-realm",
+      "category": "era",
+      "styleGroup": "eastern-fantasy",
+      "zhName": "仙侠云海",
+      "enName": "Xianxia Realm",
+      "image": "/assets/parameters/era-xianxia-realm.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "仙侠世界观，云海仙山、浮空楼阁、灵气光雾和东方神话尺度；先建立武学、灵气或神话力量的来源、限制与社会用途，再让地形、建筑、交通、服饰、门派或市井生活遵守同一套世界规则；超自然现象必须影响光线、重力和人物行动。避免仙雾遮满画面、楼阁随意悬浮、不同朝代服饰混用、发光文字、无代价万能法术、著名角色复制或只靠灯笼竹林冒充东方幻想",
+      "enPrompt": "xianxia immortal realm, cloud sea mountains, floating temples, spiritual mist light, East Asian mythic scale; establish the source limits and social use of martial spiritual or mythic power, then make terrain architecture transport clothing institutions and everyday life obey the same world rules while supernatural phenomena affect light gravity and human action. Avoid mist covering everything arbitrary floating pavilions mixed-dynasty costume glowing writing consequence-free universal magic copies of famous characters or lanterns and bamboo used as the sole evidence of Eastern fantasy"
+    },
+    {
+      "id": "era-wuxia-jianghu-inn",
+      "category": "era",
+      "styleGroup": "eastern-fantasy",
+      "zhName": "武侠江湖客栈",
+      "enName": "Wuxia Jianghu Inn",
+      "image": "/assets/parameters/era-wuxia-jianghu-inn.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "武侠江湖世界观，竹林水岸客栈、灯笼、侠客剪影和克制动作气氛；先建立武学、灵气或神话力量的来源、限制与社会用途，再让地形、建筑、交通、服饰、门派或市井生活遵守同一套世界规则；超自然现象必须影响光线、重力和人物行动。避免仙雾遮满画面、楼阁随意悬浮、不同朝代服饰混用、发光文字、无代价万能法术、著名角色复制或只靠灯笼竹林冒充东方幻想",
+      "enPrompt": "wuxia jianghu worldbuilding, bamboo riverside inn, lanterns, wandering swordsman silhouettes, restrained action mood; establish the source limits and social use of martial spiritual or mythic power, then make terrain architecture transport clothing institutions and everyday life obey the same world rules while supernatural phenomena affect light gravity and human action. Avoid mist covering everything arbitrary floating pavilions mixed-dynasty costume glowing writing consequence-free universal magic copies of famous characters or lanterns and bamboo used as the sole evidence of Eastern fantasy"
+    },
+    {
+      "id": "era-climate-aftermath",
+      "category": "era",
+      "styleGroup": "apocalypse",
+      "zhName": "多灾种气候灾变世界",
+      "enName": "Multi-Hazard Climate Collapse",
+      "image": "/assets/parameters/era-climate-aftermath.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "多灾种气候灾变后的世界：洪水积水、极端高温、干旱荒漠化、超级风暴、山火烟霾与冰雪灾害留下不同区域痕迹，强调环境后果与人类适应、避难和重建，不限定为单一水灾；先说明灾变类型、发生后的时间长度与仍可用的基础设施，再表现水电、食物、交通、避难、修复和社区协作留下的可观察痕迹；破坏程度按地点变化，并保留因果。避免无原因万能废墟、每栋楼同样破损、随意血腥、装备拼贴、道路仍崭新、植物一夜覆盖全城或把生存者只画成武装摆拍",
+      "enPrompt": "multi-hazard climate collapse world after floods, extreme heat, drought and desertification, superstorms, wildfire smoke, and ice disasters, showing environmental consequences, human adaptation, shelters, and reconstruction rather than a single flood scenario; define the disaster type elapsed time and surviving infrastructure before showing observable evidence of water power food transport shelter repair and community adaptation, with damage varying by location and preserving cause. Avoid unexplained universal ruins every building damaged identically gratuitous gore random survival-gear collage pristine roads vegetation covering a city overnight or survivors reduced to armed poses with no credible daily systems"
+    },
+    {
+      "id": "era-biopunk",
+      "category": "era",
+      "styleGroup": "future",
+      "zhName": "生物朋克",
+      "enName": "Biopunk",
+      "image": "/assets/parameters/era-biopunk.png?v=20260827-character-crop-fix",
+      "zhPrompt": "世界观为生物朋克，生物科技、培养容器和有机机械结构；说明能源、交通、通信、建筑维护和公共生活如何运作，让科技水平在同一体系内一致，并通过材料磨损、服务设施与普通人的使用体现真实世界。避免只堆悬浮屏和霓虹、所有表面洁白发光、能源无来源、技术互相矛盾、城市无人生活、可读品牌文字或把未来简单等同于赛博朋克",
+      "enPrompt": "biopunk worldbuilding, biotechnology, growth chambers, organic-mechanical structures; define how energy transport communication building maintenance and public life function, keeping technology within one coherent capability level and showing the world through wear service infrastructure and ordinary use. Avoid piles of floating screens and neon every surface white and glowing source-free energy contradictory technologies cities with no lived activity readable brand text or treating every future as interchangeable cyberpunk"
+    },
+    {
+      "id": "era-dieselpunk",
+      "category": "era",
+      "styleGroup": "world-history",
+      "zhName": "柴油朋克",
+      "enName": "Dieselpunk",
+      "image": "/assets/parameters/era-dieselpunk.png?v=20260827-character-crop-fix",
+      "zhPrompt": "世界观为柴油朋克，铆钉机械、复古工业和烟尘战争年代质感；明确地点、年代、贸易或生产关系，并让建筑工法、气候、运输、货物、工具和阶层服饰互相印证；跨文化接触应通过可信路线与物品来源表现。避免泛欧洲或泛异域拼贴、时代错置武器、现代机械、无来源奢华、伪文字、服装舞台化或将复杂历史简化为单一战争与贵族场景",
+      "enPrompt": "dieselpunk worldbuilding, riveted machinery, retro industry, smoky wartime texture; specify place period and the trade or production relationship, making construction climate transport goods tools and class-specific clothing corroborate one another while cultural contact appears through credible routes and object origins. Avoid generic European or exotic collage anachronistic weapons modern machinery source-free luxury pseudo-writing theatrical costume or reducing a complex historical world to only war and aristocratic spectacle"
+    },
+    {
+      "id": "era-y2k-digital",
+      "category": "era",
+      "styleGroup": "modern",
+      "zhName": "Y2K 数码年代",
+      "enName": "Y2K Digital Era",
+      "image": "/assets/parameters/era-y2k-digital.png?v=20260827-character-crop-fix",
+      "zhPrompt": "时代氛围为 Y2K 数码年代，透明塑料、银色科技和早期互联网视觉；锁定具体十年、城市与社会场景，用当时真实的道路、交通、广告载体、通讯设备、室内设施和服装剪裁建立时代，人物仍按日常任务行动。避免相邻年代物件随意混用、现代智能手机穿帮、品牌与乱码海报、所有人穿礼服、过度怀旧滤镜或只靠一辆旧车说明整个时代",
+      "enPrompt": "Y2K digital era mood, translucent plastic, silver tech, early internet visual language; lock the scene to a specific decade city and social setting, using period-correct roads transport advertising media communication devices interior fixtures and garment cuts while people perform ordinary tasks. Avoid casually mixing adjacent decades contemporary smartphones recognizable brands and gibberish posters everyone wearing formal costume excessive nostalgia filtering or relying on one old vehicle to establish an entire era"
+    },
+    {
+      "id": "era-retro-futurism",
+      "category": "era",
+      "styleGroup": "future",
+      "zhName": "复古未来主义",
+      "enName": "Retro Futurism",
+      "image": "/assets/parameters/era-retro-futurism.png?v=20260827-character-crop-fix",
+      "zhPrompt": "世界观为复古未来主义，旧时代想象中的未来机器、圆润飞行器和怀旧科技感；说明能源、交通、通信、建筑维护和公共生活如何运作，让科技水平在同一体系内一致，并通过材料磨损、服务设施与普通人的使用体现真实世界。避免只堆悬浮屏和霓虹、所有表面洁白发光、能源无来源、技术互相矛盾、城市无人生活、可读品牌文字或把未来简单等同于赛博朋克",
+      "enPrompt": "retro-futurist worldbuilding, vintage imagined future machines, rounded vehicles, nostalgic technology; define how energy transport communication building maintenance and public life function, keeping technology within one coherent capability level and showing the world through wear service infrastructure and ordinary use. Avoid piles of floating screens and neon every surface white and glowing source-free energy contradictory technologies cities with no lived activity readable brand text or treating every future as interchangeable cyberpunk"
+    }
+  ]
+}

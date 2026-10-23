@@ -1,0 +1,244 @@
+{
+  "parameters": [
+    {
+      "id": "style-child-crayon",
+      "category": "style",
+      "styleGroup": "design-retro",
+      "zhName": "儿童蜡笔手绘",
+      "enName": "Children's Crayon Drawing",
+      "image": "/assets/parameters/style-child-crayon.jpg",
+      "zhPrompt": "儿童蜡笔手绘以粗短、压力不均的蜡质笔触和略微歪斜的轮廓概括主体，颜色允许越出边界、叠擦露出纸纹，并用高明度基础色表达直接童真；形体保持一眼可辨但不过分精确，背景只留少量太阳、云朵或地面线，避免成人商业插画式平滑描边、写实明暗、数字渐变、过密装饰或把稚拙误作脏乱涂鸦",
+      "enPrompt": "children's crayon drawing built from short broad waxy strokes with uneven pressure and slightly wandering outlines, simplifying the subject while keeping it immediately recognizable; allow color to cross contours, layered rubbing to reveal warm paper tooth, and bright primary or secondary colors to communicate direct childlike observation, with only a few supporting marks such as a sun cloud or ground line; preserve intentional naivety rather than polished illustration, avoiding smooth vector outlines realistic anatomy modeled shading digital gradients dense decoration random scribble or an adult commercial character style disguised with a crayon filter"
+    },
+    {
+      "id": "style-oil-pastel",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "油画棒",
+      "enName": "Oil Pastel",
+      "image": "/assets/parameters/style-oil-pastel.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "油画棒媒介以厚实不透明的蜡质色层塑造形体，笔触随结构方向堆叠，局部通过刮刻、擦拭、断色和互补色叠压露出底纸，边缘在坚实块面与松散毛边之间变化；高光可由浅色覆盖，暗部保留混合色层而非发黑，强调手工温度与颜料体积，避免水彩透明晕染、油画湿润反光、喷枪式无痕渐变或全画面同一种颗粒滤镜",
+      "enPrompt": "oil-pastel image using dense opaque wax color to build volume, with strokes following the direction of each form and local scratching wiping broken color and complementary layering revealing the paper beneath; vary edges between firm blocked shapes and loose granular drag, let pale sticks cover darker passages for highlights, and keep shadows chromatically mixed rather than simply black, so the surface carries physical pigment depth and handmade warmth; avoid transparent watercolor blooms glossy wet oil-paint reflections airbrushed seamless gradients uniform digital grain or thin colored-pencil hatching that loses the substantial wax character"
+    },
+    {
+      "id": "style-photo-abstract-editorial",
+      "category": "style",
+      "styleGroup": "design-retro",
+      "zhName": "照片抽象社论",
+      "enName": "Photo Abstract Editorial",
+      "image": "/assets/parameters/style-photo-abstract-editorial.jpg",
+      "zhPrompt": "照片抽象社论风格先保留一处可识别的真实摄影主体，再从其轮廓、运动线或色彩关系提炼少量几何切片、负形和淡色块，在大面积留白中形成杂志式视觉节奏；摄影与抽象元素共享轴线、透视或颜色来源，文字区保持克制可选，纸面带轻微印刷颗粒，避免把整张照片滤镜化、随机堆几何、密集拼贴、无关装饰、商业促销版式或让抽象层遮掉主体身份",
+      "enPrompt": "photo-abstract editorial style retaining one clearly recognizable photographic subject and extracting only a few contours motion paths or color relationships into geometric slices negative spaces and restrained pale blocks across generous whitespace; photographic and abstract parts must share an axis perspective rhythm or sampled palette so the transformation feels reasoned rather than decorative, with optional small editorial typography and subtle print grain; avoid filtering the entire photo into illustration random geometry dense scrapbook collage unrelated symbols advertising layout excessive text or abstract layers that conceal the subject's identity and original spatial logic"
+    },
+    {
+      "id": "style-fresh-whitespace-watercolor",
+      "category": "style",
+      "styleGroup": "design-retro",
+      "zhName": "清新留白水彩",
+      "enName": "Fresh White-Space Watercolor",
+      "image": "/assets/parameters/style-fresh-whitespace-watercolor.jpg",
+      "zhPrompt": "清新留白水彩以暖白冷压纸为底，用透明薄洗和少量湿画法概括主体色块，关键轮廓由干笔或负形留白控制，颜色在局部自然渗化但不铺满页面；主体集中在中部或偏下并保留充足呼吸空间，明度清亮、层次轻柔、纸纹可见，避免厚重不透明颜料、全幅背景、深黑描边、过度甜腻粉彩、数字柔焦或把留白误作缺失未完成",
+      "enPrompt": "fresh whitespace watercolor on warm cold-pressed paper, using transparent washes and limited wet-on-wet passages to summarize major color masses while dry-brush accents and reserved negative paper define essential contours; keep the painted subject concentrated around the center or lower area with generous breathing space, allow pigments to softly mingle only where form and atmosphere require it, and retain luminous values visible paper tooth and a few crisp focal details; avoid opaque gouache coverage a fully painted background heavy black outlines sugary pastel haze digital blur muddy repeated glazing or treating whitespace as an unfinished empty margin with no compositional purpose"
+    },
+    {
+      "id": "style-cyanotype",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "蓝晒印相",
+      "enName": "Cyanotype",
+      "image": "/assets/parameters/style-cyanotype.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "蓝晒印相以感光乳剂形成深浅不均的普鲁士蓝纸面，植物、织物或半透明物体因遮挡紫外光留下从纯白到浅蓝的接触影像，边缘清晰度随物体与纸面距离变化；保留刷涂边、药液浓淡、水洗痕和纸纤维，但主体结构仍可辨，避免普通照片简单套蓝色滤镜、黑色油墨线稿、蓝白反转错误、均匀数码噪点或添加不存在的多色颜料",
+      "enPrompt": "cyanotype print created through light-sensitive chemistry rather than a blue filter, with an uneven Prussian-blue coated field and botanical textile or translucent objects blocking ultraviolet exposure to leave contact silhouettes ranging from paper white to pale blue; edge sharpness should vary with object-to-paper distance while brushed emulsion borders wash marks concentration shifts and visible fibers reveal the handmade process, yet the chosen subject remains legible; avoid ordinary monochrome photography recolored blue black ink line art incorrect positive-negative logic uniform digital noise glossy photographic paper or added multicolor pigment that contradicts the historic process"
+    },
+    {
+      "id": "style-tempera-painting",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "蛋彩画",
+      "enName": "Egg Tempera Painting",
+      "image": "/assets/parameters/style-tempera-painting.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "蛋彩画以木板或细致石膏底为承载，用蛋黄结合颜料的细短笔触反复薄层叠加，形成干燥哑光、边缘精确且色彩清透的表面；人物、衣褶和装饰通过平行排线与微小色阶塑形，金色细节可用克制金箔表现，整体具有早期板画的静穆秩序，避免油画厚涂、湿润融合、现代喷绘渐变、塑料高光或把裂纹做成夸张老化滤镜",
+      "enPrompt": "egg-tempera painting on a prepared wood or fine gesso ground, building form through many thin layers of small controlled strokes bound in egg yolk to create a dry matte surface with precise edges and luminous color; model faces drapery and ornament through disciplined parallel hatching and minute value steps, with restrained gilded details when appropriate and the calm ordered presence of an early panel painting; avoid impasto oil texture wet blended transitions airbrushed modern gradients plastic highlights uncontrolled watercolor bleeding or exaggerated crackle applied as a generic antique filter across every surface"
+    },
+    {
+      "id": "style-photogravure",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "照相凹版",
+      "enName": "Photogravure",
+      "image": "/assets/parameters/style-photogravure.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "照相凹版以铜版蚀刻与油墨压印呈现连续而细腻的摄影灰阶，暗部浓厚如天鹅绒，亮部由纸白和稀薄墨层透出，颗粒细密且随明暗变化；边缘略带墨迹扩散和压版痕，适合安静肖像与景观，避免报纸半调网点、纯黑阈值木刻、现代喷墨锐化、均匀噪点或让所有中间调塌成同一灰色",
+      "enPrompt": "photogravure print translated through an etched copper plate and rich intaglio ink, preserving a continuous photographic tonal scale with velvety deep shadows, luminous paper-supported highlights and fine grain whose density changes with value; allow subtle ink spread at delicate edges and a restrained plate impression in the paper, especially suited to quiet portraiture and atmospheric landscape; avoid coarse newspaper halftone thresholded woodcut blacks modern inkjet sharpening uniform noise flat gray midtones glossy digital contrast or decorative scratches unrelated to the actual etched printing process"
+    },
+    {
+      "id": "style-starryear-monet-stamp",
+      "category": "style",
+      "styleGroup": "design-retro",
+      "zhName": "星年莫奈邮票",
+      "enName": "Starryear Monet Stamp",
+      "image": "/assets/parameters/style-starryear-monet-stamp.jpg",
+      "zhPrompt": "星年莫奈邮票风格把柔和花园、水面或季节天空概括为印象派碎笔触和相邻色闪烁，光色变化优先于精细线描；画面被克制地收纳进具有齿孔、窄边和轻微套印偏差的纸质邮票载体，色盘以雾蓝、叶绿、淡紫与暖光为主，避免复刻具体名作、生成可识别国家邮资文字、粗糙贴纸白边、现代矢量渐变或把邮票框压过核心景物",
+      "enPrompt": "Starryear Monet-inspired stamp aesthetic translating a soft garden water surface or seasonal sky into broken impressionistic strokes and vibrating adjacent colors, prioritizing changing light over precise contour; contain the scene within a restrained paper stamp object with believable perforations narrow margins slight registration drift and fine printed texture, favoring mist blue leaf green pale violet and warm reflected light without copying a specific historical painting; avoid readable national postage text oversized sticker borders modern vector gradients rigid line art photoreal detail or a decorative frame that overwhelms the landscape and turns the result into clip art"
+    },
+    {
+      "id": "render-wireframe-overlay",
+      "category": "render",
+      "styleGroup": "technical",
+      "zhName": "线框叠加渲染",
+      "enName": "Wireframe Overlay",
+      "image": "/assets/parameters/render-wireframe-overlay.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "线框叠加渲染在同一物体上同时显示实体材质与准确拓扑，线框沿真实多边形边、曲面流线和结构转折排列，可通过局部剖开或渐变遮罩从成品过渡到网格；边线粗细、密度与透视随距离变化，背景保持简洁以便读形，避免随机三角纹理、线条穿透前表面、网格与轮廓错位、所有区域同密度或把普通霓虹轮廓误作三维线框",
+      "enPrompt": "wireframe-overlay rendering showing a finished material and its actual topology on the same object, with edges following polygon boundaries surface flow and structural turns and a local cutaway or controlled mask transitioning from solid shading into mesh; vary line weight density and perspective with distance, preserve occlusion so hidden edges do not indiscriminately pass through front surfaces, and keep the setting quiet enough to read form; avoid random triangular texture mesh detached from silhouette equal density everywhere neon outline masquerading as topology impossible intersections or a decorative grid pasted over unrelated background regions"
+    },
+    {
+      "id": "render-photogrammetry-scan",
+      "category": "render",
+      "styleGroup": "technical",
+      "zhName": "摄影测量扫描",
+      "enName": "Photogrammetry Scan",
+      "image": "/assets/parameters/render-photogrammetry-scan.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "摄影测量扫描渲染表现真实物体由多角度照片重建为高密度彩色点云和三角网格的过程，扫描完整区保留可信纹理与几何，边缘和遮挡区出现有限缺口、噪点或稀疏采样；点云、网格和实体可分区过渡并严格贴合轮廓与尺度，避免随机粒子爆炸、完全光滑的程序模型、点位漂浮在物体外、纹理错投或把激光扫描绿色界面与摄影测量混为一谈",
+      "enPrompt": "photogrammetry-scan rendering depicting a real object reconstructed from overlapping photographs into a dense colored point cloud and triangulated mesh, with complete regions retaining believable texture and geometry while edges and occluded recesses show limited holes noise or sparse samples; transition spatially among point cloud wire mesh and textured solid while keeping all representations aligned to one silhouette scale and camera solution; avoid random particle explosions perfectly smooth procedural geometry points floating away from the surface smeared texture projection impossible topology or confusion with a generic green lidar interface unrelated to photographic reconstruction"
+    },
+    {
+      "id": "render-ambient-occlusion",
+      "category": "render",
+      "styleGroup": "technical",
+      "zhName": "环境光遮蔽",
+      "enName": "Ambient Occlusion",
+      "image": "/assets/parameters/render-ambient-occlusion.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "环境光遮蔽渲染使用中性哑光材质和柔和环境光，在缝隙、接触点、内角、叠压和物体靠近处产生距离相关的渐进阴影，从而清楚说明形体装配与空间深度；开阔表面保持明亮干净，阴影不取代主光或投影，避免所有边缘统一黑线、凹槽发脏、悬空物体出现接触影、远距离仍强烈遮蔽或把普通高反差灰模误作 AO",
+      "enPrompt": "ambient-occlusion rendering with neutral matte materials and soft environmental illumination, producing distance-dependent gradual darkening inside creases contact points concave corners overlaps and closely facing surfaces so assembly and depth become easy to read; broad exposed planes remain clean and bright, while occlusion supplements rather than replaces directional light and cast shadows; avoid uniform black outlines around every edge dirty cavities floating objects with false contact patches strong occlusion across wide gaps crushed global contrast or an ordinary dramatic grayscale clay render mislabeled as physically meaningful AO"
+    },
+    {
+      "id": "render-cinematic-texture",
+      "category": "render",
+      "styleGroup": "realism",
+      "zhName": "电影级质感",
+      "enName": "Cinematic Texture",
+      "image": "/assets/parameters/render-cinematic-texture.jpg",
+      "zhPrompt": "电影级质感以真实材质响应、受控高光、可读暗部和统一色彩科学建立可信画面，皮肤、织物、金属、潮湿表面各自具有不同粗糙度与微细节，灯光服务叙事焦点并保留摄影机动态范围；适度加入镜头柔化与有机颗粒但不掩盖结构，避免全局锐化、塑料皮肤、黑位死黑、HDR 光晕、所有材质同亮或把青橙滤镜直接等同电影质感",
+      "enPrompt": "cinematic surface rendering grounded in believable material response controlled highlights readable shadow detail and consistent color science, giving skin fabric metal wood and wet surfaces distinct roughness scale and microstructure while lighting supports a narrative focal point within camera-like dynamic range; allow restrained optical softness and organic grain without erasing structural detail, and keep production polish subordinate to physical coherence; avoid global oversharpening plastic skin crushed blacks HDR halos identical shine on every material gratuitous anamorphic flare or assuming that an orange-and-teal filter alone creates cinematic texture"
+    },
+    {
+      "id": "render-realistic-texture",
+      "category": "render",
+      "styleGroup": "realism",
+      "zhName": "写实纹理",
+      "enName": "Realistic Texture",
+      "image": "/assets/parameters/render-realistic-texture.jpg",
+      "zhPrompt": "写实纹理按真实尺度分层表现宏观结构、中尺度磨损和微观表面：皮肤有毛孔与细纹，织物有纤维方向，木石有孔隙与断面，使用痕迹集中在接触和受力区域；粗糙度、反射与法线细节彼此一致并受光线正确揭示，避免全表面均匀刮痕、超锐微纹、重复贴图、污垢随机铺满、材质尺度错乱或把增加噪点当成真实感",
+      "enPrompt": "realistic texture organized by physical scale, from macro construction through medium wear to micro surface response: skin retains pores and fine lines, fabric follows fiber direction, wood and stone show appropriate pores and fractures, and use marks accumulate only at contact load and weather-exposed areas; roughness reflection color and normal detail agree with one another and become visible through plausible lighting rather than artificial sharpness; avoid uniformly scattered scratches oversharpened microtexture obvious tiling random dirt everywhere mismatched material scale identical roughness across substances or generic noise mistaken for realism"
+    },
+    {
+      "id": "render-film-grain",
+      "category": "render",
+      "styleGroup": "technical",
+      "zhName": "胶片颗粒",
+      "enName": "Film Grain",
+      "image": "/assets/parameters/render-film-grain.jpg",
+      "zhPrompt": "胶片颗粒模拟感光乳剂中随机但有机的银盐或染料云结构，暗部颗粒更明显、亮部更细，尺寸与画幅及感光度相符，并随颜色通道呈轻微差异；颗粒覆盖连续影调但不破坏眼睛、文字或关键边缘，可伴随克制高光溢出，避免均匀数字噪点、彩色椒盐、压缩方块、全局锐化后加砂或把灰尘划痕与胶片颗粒混为一谈",
+      "enPrompt": "film grain modeled as stochastic yet organic silver or dye-cloud structure within a photosensitive emulsion, more apparent in shadows and finer in highlights with size appropriate to format and sensitivity and slight variation across color layers; grain rides through continuous tone without destroying eyes typography or essential edges and may accompany restrained highlight halation, but it should remain integrated with exposure rather than applied as a surface screen; avoid uniform digital noise colored salt-and-pepper pixels compression blocks sand added after global sharpening repeated grain tiles or confusion between emulsion grain and dust scratches"
+    },
+    {
+      "id": "effect-double-exposure",
+      "category": "visual-effect",
+      "styleGroup": "surreal",
+      "zhName": "双重曝光",
+      "enName": "Double Exposure",
+      "image": "/assets/parameters/effect-double-exposure.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "双重曝光将两个有叙事关联的影像通过同一曝光逻辑叠合，主轮廓保持清楚，第二场景主要填入剪影内部并在亮部自然透出，二者的明暗、方向和尺度共同形成新的负形与视觉焦点；边缘允许少量溢出但不变成普通透明图层，避免整屏五五混合、五官重影、多个无关景物堆叠、主体轮廓丢失或仅用低透明度复制照片",
+      "enPrompt": "double-exposure effect combining two narratively related images through one coherent exposure logic, keeping the primary silhouette readable while the secondary landscape texture or architecture develops mainly inside it and naturally opens through bright regions; align value direction scale and negative space so both exposures create a new focal structure, allowing only limited spill beyond the contour rather than a generic transparent overlay; avoid fifty-fifty blending across the whole frame doubled facial features piles of unrelated scenes a lost silhouette repeated copies at low opacity muddy midtones or masks with hard cutout edges"
+    },
+    {
+      "id": "effect-ink-diffusion",
+      "category": "visual-effect",
+      "styleGroup": "surreal",
+      "zhName": "墨迹扩散",
+      "enName": "Ink Diffusion",
+      "image": "/assets/parameters/effect-ink-diffusion.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "墨迹扩散表现浓墨进入清水或湿纸后的真实流体过程：核心保持深色密度，边缘分裂为羽状细丝、卷曲涡流和半透明灰阶，扩散方向受重力、毛细作用或水流统一控制；墨迹可围绕主体形成节奏但不遮没焦点，避免烟雾云贴图、随机黑团、每条边同样模糊、无水介质仍悬浮扩散或把水彩彩色晕染误作单色墨液运动",
+      "enPrompt": "ink-diffusion effect following a believable fluid process as dense black pigment enters clear water or damp paper, preserving a dark core while edges divide into feathered filaments curling vortices and translucent gray layers governed consistently by gravity capillary action or current; diffusion may frame or reveal the subject but must not bury the focal structure, and the medium should determine whether motion is volumetric or planar; avoid stock smoke clouds random black blobs equally blurred edges unsupported floating ink colored watercolor blooms mislabeled as monochrome ink or symmetrical decorative tendrils that ignore real flow"
+    },
+    {
+      "id": "effect-torn-paper-transition",
+      "category": "visual-effect",
+      "styleGroup": "surreal",
+      "zhName": "撕纸转场",
+      "enName": "Torn Paper Transition",
+      "image": "/assets/parameters/effect-torn-paper-transition.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "撕纸转场用一到两层真实纸张在画面中揭开另一场景，撕裂方向顺应主体轮廓或叙事动线，边缘可见纸纤维、厚度、卷曲和短小接触阴影，前后图像在空间上有明确层级；开口大小保留双方关键信息，避免规则矩形假撕边、贴纸白框、无限纸层、巨大阴影、纤维像毛发或仅给照片套一圈锯齿蒙版",
+      "enPrompt": "torn-paper transition using one or two physically believable paper layers to reveal another scene, with tear direction following subject contour or narrative movement and the edge showing fibers thickness slight curl and a short contact shadow that establishes front-to-back order; size and placement of the opening preserve essential information from both images and make the transition participate in composition; avoid a regular rectangular pseudo-tear sticker-like white border endless nested sheets oversized drop shadows hairlike fibers perfect mirrored rips or simply applying a jagged digital mask around an otherwise unchanged photograph"
+    },
+    {
+      "id": "effect-chromatic-aberration",
+      "category": "visual-effect",
+      "styleGroup": "digital",
+      "zhName": "色差边缘",
+      "enName": "Chromatic Aberration",
+      "image": "/assets/parameters/effect-chromatic-aberration.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "色差边缘模拟镜头在高反差区域无法让不同波长完全同焦的轻微误差，红青或蓝黄色边只出现在画面外围、逆光边缘和少量反差轮廓，中心主体与面部仍然清楚，偏移量随离轴距离渐增；整体保持摄影可读性，避免所有物体三色描边、中心严重分离、故障艺术块状错位、霓虹光环或把普通颜色阴影误认为镜头色差",
+      "enPrompt": "chromatic-aberration effect simulating a lens that cannot focus every wavelength at exactly the same point, producing subtle red-cyan or blue-yellow fringes only near frame edges backlit boundaries and selected high-contrast contours while the central subject and face remain clean; displacement increases gradually with off-axis distance and follows the optical edge rather than painting arbitrary color outlines; avoid triple-color borders on every object severe separation in the center blocky glitch displacement neon aura duplicated geometry or ordinary colored shadows mislabeled as lens aberration"
+    },
+    {
+      "id": "effect-heat-haze-distortion",
+      "category": "visual-effect",
+      "styleGroup": "atmosphere",
+      "zhName": "热浪空气扭曲",
+      "enName": "Heat-Haze Distortion",
+      "image": "/assets/parameters/effect-heat-haze-distortion.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "热浪空气扭曲由地面、发动机或火源上升的高温气流造成，远处道路、地平线和建筑边缘在局部产生连续细微折射波动，强度随离热源距离和空气层变化，前景热源及主体关键部位保持相对稳定；可伴随远景闪烁和轻度明度漂移，避免整张水波滤镜、垂直烟雾替代热扰动、物体融化变形、无热源区域同样扭曲或夸张成迷幻液化",
+      "enPrompt": "heat-haze distortion caused by rising hot air above sun-baked ground engines or flame, making distant road horizon and architectural edges locally shimmer through continuous small refractive waves whose strength changes with height distance and thermal layers while the immediate heat source and essential foreground subject remain comparatively stable; allow subtle mirage flicker and value displacement without altering object identity; avoid a full-frame water ripple vertical smoke substituted for refraction melting geometry equal distortion in cool regions source-free waves or exaggerated psychedelic liquefaction unrelated to atmospheric temperature"
+    },
+    {
+      "id": "grading-wong-kar-wai",
+      "category": "color-grading",
+      "styleGroup": "cinematic",
+      "zhName": "港片霓虹情绪",
+      "enName": "Hong Kong Neon Mood",
+      "image": "/assets/parameters/grading-wong-kar-wai.jpg",
+      "zhPrompt": "港片霓虹情绪调色以潮湿夜景中的深绿、暗红和琥珀灯光建立分离色域，肤色偏暖但不过橙，阴影浓郁仍保留环境细节，霓虹在玻璃与路面形成有限反射；可加入推片颗粒、轻微拖影和不均匀曝光强化孤独亲密感，避免直接模仿具体电影镜头、全屏红绿滤镜、肤色发灰、黑位堵死或无光源霓虹泛滥",
+      "enPrompt": "Hong Kong neon mood grade separating humid night color into deep green environments muted red accents and amber practical light, keeping skin warm without turning orange and preserving environmental information inside rich shadows while signs reflect selectively in glass and wet pavement; pushed-film grain limited motion smear and slight exposure inconsistency may support a lonely intimate atmosphere without copying a specific film frame; avoid a global red-green filter gray or radioactive skin crushed blacks neon without physical sources excessive bloom or assuming every daytime scene should become a saturated nightclub"
+    },
+    {
+      "id": "grading-y2k-flash",
+      "category": "color-grading",
+      "styleGroup": "camera-look",
+      "zhName": "Y2K闪光直拍",
+      "enName": "Y2K Flash",
+      "image": "/assets/parameters/grading-y2k-flash.jpg",
+      "zhPrompt": "Y2K 闪光直拍使用靠近镜头轴线的小型闪光灯直接照亮主体，形成快速亮度衰减、背景偏暗、墙面硬边投影和皮肤局部高光，整体保留早期消费级数码相机略冷白平衡、有限动态范围与轻微像素锐感；构图随性但主体清楚，避免影棚柔光、现代手机 HDR、整脸过曝、红眼泛滥、仿胶片重颗粒或把白色描边当作直闪效果",
+      "enPrompt": "Y2K direct-flash grade using a small near-axis camera flash to illuminate the subject with rapid falloff, a comparatively dark background, crisp wall shadow and local specular highlights on skin, combined with the slightly cool white balance limited dynamic range and modest pixel sharpness of an early consumer digital camera; framing may feel spontaneous while the person remains clearly exposed; avoid soft studio lighting modern phone HDR a completely clipped face excessive red-eye heavy analog film grain glamorous diffusion or a white cutout outline mistaken for direct flash"
+    },
+    {
+      "id": "grading-ccd-digital",
+      "category": "color-grading",
+      "styleGroup": "camera-look",
+      "zhName": "CCD数码复古",
+      "enName": "CCD Digital Retro",
+      "image": "/assets/parameters/grading-ccd-digital.jpg",
+      "zhPrompt": "CCD 数码复古调色模拟早期小型传感器相机的色彩与曝光特征：日光略偏青，高光较快进入纯白，暗部有细小彩色噪声，边缘带克制的数字锐化，直闪场景呈清楚硬影与暖肤色；保持真实照片结构而非低清破坏，避免统一蓝绿滤镜、过度 JPEG 马赛克、胶片漏光、夸张色差或把现代超清照片只降分辨率冒充 CCD",
+      "enPrompt": "CCD digital-retro grade recreating the color and exposure behavior of an early compact sensor camera: daylight leans slightly cyan, highlights reach clean white sooner, shadows carry fine chromatic noise, edges show restrained in-camera sharpening and direct-flash scenes combine crisp shadows with comparatively warm skin; preserve the photographic structure and recognizable detail instead of merely degrading resolution; avoid a global aqua filter severe JPEG blocks analog light leaks oversized film grain extreme chromatic splitting fake date stamps or a modern ultra-clean image simply blurred and labeled CCD"
+    },
+    {
+      "id": "grading-mobile-hdr-clean",
+      "category": "color-grading",
+      "styleGroup": "camera-look",
+      "zhName": "手机HDR清晰",
+      "enName": "Mobile HDR Clean",
+      "image": "/assets/parameters/grading-mobile-hdr-clean.jpg",
+      "zhPrompt": "手机 HDR 清晰调色通过多帧曝光逻辑恢复窗外、高光天空和室内暗部，同时保持主体面部自然对比与颜色，局部映射只作用于确有信息的区域，边缘和纹理适度清楚但不过锐；白平衡统一、天空不过饱和、阴影不发灰，避免每个物体都有光晕、云层戏剧化过度、皮肤塑料、暗部像白昼、微反差拉满或出现多帧合成鬼影",
+      "enPrompt": "clean mobile-HDR grade using a believable multi-exposure logic to recover bright windows sky and interior shadows while maintaining natural facial contrast and color, applying local tone mapping only where captured information exists and keeping edges and texture clear without brittle sharpening; white balance stays coherent, blue sky remains plausible and lifted shadows retain depth rather than gray haze; avoid halos around every object overdramatic clouds plastic skin night shadows turned into daylight maximum microcontrast duplicated moving subjects or the flat compressed look of indiscriminate automated HDR"
+    },
+    {
+      "id": "grading-kodak-portra",
+      "category": "color-grading",
+      "styleGroup": "film-vintage",
+      "zhName": "柯达Portra人像",
+      "enName": "Kodak Portra Portrait",
+      "image": "/assets/parameters/grading-kodak-portra.jpg",
+      "zhPrompt": "Portra 式人像负片调色以宽容高光、温暖而准确的肤色、柔和对比和细腻颗粒为核心，红橙色受控，绿色略显自然柔和，阴影可带轻微青灰但不污染皮肤；曝光偏亮时仍保留面部层次并呈奶油色高光，适合自然光肖像与生活记录，避免品牌包装文字、橙黄滤镜、黑位死黑、过度褪色、粗颗粒或让所有场景变成同一米黄色",
+      "enPrompt": "Portra-like portrait negative grade centered on forgiving highlights warm yet accurate skin soft contrast and fine organic grain, controlling red-orange saturation, rendering foliage in restrained natural green and allowing a slight cyan-gray bias in shadows without contaminating the face; a modestly bright exposure should retain facial transitions and produce creamy highlights suitable for daylight portraiture and everyday documentary work; avoid branded packaging or border text a blanket orange-yellow filter crushed blacks extreme fading coarse grain identical beige treatment across every scene or unrealistic skin whitening presented as film color"
+    }
+  ]
+}

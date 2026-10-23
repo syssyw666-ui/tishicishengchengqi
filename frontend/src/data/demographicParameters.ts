@@ -89,10 +89,10 @@ export const demographicParameters: PromptParameter[] = [
   ethnicity("feature-broad-nose-bridge", "facial-feature", "宽鼻梁", "Broad Nose Bridge", "宽鼻梁和自然鼻翼结构，真实人像比例", "broad nose bridge with natural nostril structure, realistic portrait proportions"),
   ethnicity("feature-narrow-nose-bridge", "facial-feature", "窄鼻梁", "Narrow Nose Bridge", "窄鼻梁和精细鼻部轮廓，真实自然不过度修饰", "narrow nose bridge with refined natural contour, realistic not over-retouched"),
 
-  ethnicity("hair-straight-natural", "hair-texture", "自然直发质", "Natural Straight Hair", "自然直发质，发丝顺滑、有真实发束和头发表面高光", "natural straight hair texture, smooth strands, realistic hair grouping and surface highlights"),
-  ethnicity("hair-wavy-natural", "hair-texture", "自然波浪发质", "Natural Wavy Hair", "自然波浪发质，柔和弧度和蓬松发量，发丝层次清楚", "natural wavy hair texture, soft curves, volume, clear strand layers"),
-  ethnicity("hair-curly-natural", "hair-texture", "自然卷发质", "Natural Curly Hair", "自然卷发质，卷曲形态清楚，发量蓬松但轮廓可读", "natural curly hair texture, clear curl pattern, voluminous yet readable silhouette"),
-  ethnicity("hair-coily-natural", "hair-texture", "自然紧卷发质", "Natural Coily Hair", "自然紧卷发质，细密卷曲结构和真实发量，不简化成块面", "natural coily hair texture, tight curl structure and real volume, not simplified into a flat mass"),
+  param("hair-makeup", "hair-straight-natural", "hair-texture", "自然直发质", "Natural Straight Hair", "自然直发质，发丝顺滑、有真实发束和头发表面高光", "natural straight hair texture, smooth strands, realistic hair grouping and surface highlights", portraitImage),
+  param("hair-makeup", "hair-wavy-natural", "hair-texture", "自然波浪发质", "Natural Wavy Hair", "自然波浪发质，柔和弧度和蓬松发量，发丝层次清楚", "natural wavy hair texture, soft curves, volume, clear strand layers", portraitImage),
+  param("hair-makeup", "hair-curly-natural", "hair-texture", "自然卷发质", "Natural Curly Hair", "自然卷发质，卷曲形态清楚，发量蓬松但轮廓可读", "natural curly hair texture, clear curl pattern, voluminous yet readable silhouette", portraitImage),
+  param("hair-makeup", "hair-coily-natural", "hair-texture", "自然紧卷发质", "Natural Coily Hair", "自然紧卷发质，细密卷曲结构和真实发量，不简化成块面", "natural coily hair texture, tight curl structure and real volume, not simplified into a flat mass", portraitImage),
 
   param("character", "character-mentor", "social-role", "导师", "Mentor", "角色身份为导师或引路人，姿态稳重，具有经验感和指导感", "mentor or guide character identity, steady pose, experienced and instructive presence", portraitImage),
   param("character", "character-apprentice", "social-role", "学徒", "Apprentice", "角色身份为学徒或新手，带学习状态、工具或观察动作", "apprentice or novice character identity, learning state, tools, or observing gesture", portraitImage),
@@ -125,7 +125,6 @@ export const demographicParameters: PromptParameter[] = [
   param("camera", "camera-dolly-zoom", "motion", "滑动变焦感", "Dolly Zoom", "滑动变焦感，主体尺度稳定，背景透视产生压缩或拉伸", "dolly-zoom feeling, stable subject scale with background perspective compression or expansion", cameraImage),
 
   param("lighting", "lighting-lantern", "interior", "灯笼光", "Lantern Light", "灯笼光照明，暖红或暖黄漫射光，带传统夜景氛围", "lantern lighting, warm red or yellow diffused glow, traditional night atmosphere", lightingImage),
-  param("lighting", "lighting-projector", "dramatic", "投影光", "Projector Light", "投影光照明，画面带投影图案、切割光斑和戏剧层次", "projector lighting, projected patterns, cut light patches, dramatic layers", lightingImage),
   param("lighting", "lighting-stage-spotlight", "dramatic", "舞台追光", "Stage Spotlight", "舞台追光，主体被强光圈定，背景进入暗部", "stage spotlight, subject isolated by strong cone of light, background falling into darkness", lightingImage),
 
   param("render", "render-resin-toy", "stylized", "树脂潮玩质感", "Resin Toy Texture", "树脂潮玩渲染呈现厚实浇注体、圆润倒角和半哑光涂装，局部高光沿曲面柔和移动，细小接缝与喷涂层次可见；五官和配件像真实收藏模型装配，避免空心塑料感、油腻镜面和皮肤毛孔写实化", "resin designer-toy rendering with substantial cast volume rounded bevels and semi-matte paint, soft highlights traveling across curves and subtle seams or sprayed layers remaining visible; face and accessories feel like assembled collectible parts, avoiding hollow plastic shine greasy mirrors or realistic skin pores", renderImage),

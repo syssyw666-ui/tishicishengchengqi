@@ -1,0 +1,830 @@
+{
+  "parameters": [
+    {
+      "id": "layout-bg-vermilion-paper",
+      "category": "background",
+      "styleGroup": "color",
+      "zhName": "朱红色背景",
+      "enName": "Vermilion Background",
+      "image": "/assets/parameters/layout-bg-vermilion-paper.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "朱红色哑光纸背景采用均匀但不过度纯平的传统暖红，近看可见细小纸纤维、轻微吸墨斑与压平痕迹，漫射光下几乎无镜面高光，适合节庆、国风或产品衬底并保留清楚主体分离；避免塑料红、渐变霓虹、金箔花纹、可读文字、折痕抢眼或整面无纹理色块；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；纯色底板以受控色值、低反光表面和轻微自然明度变化承托主体，可在地面接触处出现柔和阴影但不形成材质纹理；朱红、暖白、鼠尾草绿和钴蓝保持各自准确色相与明度。避免绝对无层次的数字填色、四角脏灰、中心光晕、色带、荧光溢色、背景反射改变产品颜色或把纯色板误做成布料和墙面",
+      "enPrompt": "vermilion matte paper background using a warm traditional red that is even without becoming digitally flat, with fine fibers subtle absorbent mottling and pressed traces visible at close range and almost no specular glare under diffuse light; suitable for festive East Asian or product presentation while separating the subject, avoiding plastic red neon gradients gold motifs readable text distracting creases or a textureless color fill; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; a solid backdrop supports the subject with controlled color value low reflection and slight natural luminance variation, allowing a soft contact shadow at the floor without becoming a textured material. Vermilion warm white sage and cobalt retain accurate hue and value. Avoid perfectly flat digital fill dirty gray corners central glow color banding fluorescent spill background reflection shifting product color or a solid panel accidentally rendered as fabric or plaster"
+    },
+    {
+      "id": "layout-bg-chinese-red-silk",
+      "category": "background",
+      "styleGroup": "fabric",
+      "zhName": "中国红丝绸背景",
+      "enName": "Chinese Red Silk",
+      "image": "/assets/parameters/layout-bg-chinese-red-silk.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "中国红丝绸背景由连续织物铺陈，细密经纬与柔亮丝光随褶皱曲率移动，宽缓垂褶从固定点自然下落，亮部呈温润红而暗部保留深红层次；光源方向与高光带一致，避免塑料缎面、每条褶皱同宽、无支撑悬浮、色彩溢出主体或擅自加入龙凤文字图案；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；说明纤维、织法、垂坠、张力、接缝和光泽：丝绸与缎面高光沿褶皱移动，天鹅绒吸光并有绒向，亚麻与画布显示经纬，防撕裂尼龙保留格纹与轻量皱折，欧根纱和纱帘具有透明叠层。避免布面像金属镜、所有褶皱等距、织纹比例过大、透明布无后景影响、天鹅绒纯黑死区或布料悬空无固定点",
+      "enPrompt": "Chinese red silk background made from one continuous textile with fine weave and soft luster moving across fold curvature, broad relaxed drapes falling naturally from visible support points and highlights remaining warm red while shadows deepen without turning black; align sheen with the light direction, avoiding plastic satin identical fold widths unsupported floating cloth color spill overwhelming the subject or invented dragons phoenixes and text; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; describe fiber weave drape tension seam and sheen: silk and satin highlights travel along folds, velvet absorbs light with a visible pile direction, linen and canvas reveal warp and weft, ripstop nylon retains a reinforcement grid and lightweight creasing, and organza or sheer curtains form translucent layers. Avoid fabric behaving like a metal mirror equally spaced folds oversized weave transparent cloth unaffected by what lies behind it featureless black velvet or cloth suspended without attachment"
+    },
+    {
+      "id": "layout-bg-xuan-paper",
+      "category": "background",
+      "styleGroup": "paper",
+      "zhName": "宣纸背景",
+      "enName": "Xuan Paper Background",
+      "image": "/assets/parameters/layout-bg-xuan-paper.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "宣纸背景呈温和米白或淡灰白，长短植物纤维随机交织，纸面薄而哑光，对墨或水有轻微吸收扩散但本身保持干净平整，边缘和厚度只在需要时可见；适合作为水墨、书画或极简设计底材，避免普通打印纸、强烈皱纹、陈旧污渍、规则网格纤维或把纸面画成云雾；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；明确纸浆来源、克重、纤维、压纹、毛边、吸墨和透光性；宣纸平整薄韧，皱褶宣纸有受力来源，水彩棉纸有冷压或粗纹，再生纸显示纤维与压痕，羊皮纸表现真实膜质或历史纸面但不过度做旧。障子纸依附木格，渐变纸的颜色进入纸纤维而非发光。避免纸像塑料、纤维规则重复、所有纸都泛黄、皱纹无方向、压纹穿透背面或墨水尚未使用却满面晕染",
+      "enPrompt": "xuan paper background in a gentle warm white or pale gray-white with randomly interwoven long and short plant fibers, a thin matte clean surface that allows restrained ink or water absorption when used while remaining mostly flat and showing edge thickness only where needed; suited to ink painting calligraphy or minimal design, avoiding printer paper heavy wrinkles antique stains regular fiber grids or paper rendered as atmospheric fog; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; specify pulp source weight fiber embossing deckle absorption and translucency. Xuan remains thin resilient and mostly flat, wrinkled xuan has a source of compression, watercolor cotton paper shows cold-press or rough tooth, recycled stock reveals inclusions and pressure, and parchment shows credible membrane or aged paper without excessive distress. Shoji paper attaches to a timber lattice and gradient color sits within fibers rather than glowing. Avoid paper resembling plastic regularly repeated fiber every stock yellowed directionless creases embossing passing through the sheet or ink bleeding everywhere before ink has been applied"
+    },
+    {
+      "id": "layout-bg-warm-ivory-studio",
+      "category": "background",
+      "styleGroup": "studio",
+      "zhName": "暖象牙影棚背景",
+      "enName": "Warm Ivory Studio",
+      "image": "/assets/parameters/layout-bg-warm-ivory-studio.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "暖象牙无缝影棚背景由垂直背板平滑过渡到地面形成无折角弧面，象牙白在主光和补光下产生轻柔明度渐变，主体脚下保留可信接触阴影但背景没有可见接缝；色温保持中性偏暖，避免纯白过曝、明显地平线、脏黄滤镜、中心光斑过强或渐变出现条带；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；影棚背景需说明无缝纸或墙面宽度、弧形地墙过渡、主体站位、接触阴影和灯光渐变；暖象牙、冷灰、炭黑、雾蓝与暖灰控制色温但不污染主体。博物馆灰墙保留实体墙面与展陈距离，云雾渐变影棚只是受控雾化层而非真实户外云海。避免可见折角、主体超出背景纸、脚下无接触、无缝纸像天空、雾层遮住边缘或渐变产生明显条带",
+      "enPrompt": "warm ivory seamless studio sweep curving smoothly from vertical backdrop into floor without a hard corner, with ivory white receiving a gentle value gradient from key and fill lights and retaining a believable contact shadow beneath the subject while no seam is visible; keep the tone neutral-warm, avoiding clipped pure white a hard horizon dirty yellow filtering an overpowering central hotspot or banded gradients; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; a studio background defines sweep or wall width curved wall-to-floor transition subject mark contact shadow and lighting gradient, with warm ivory cool gray charcoal mist blue and warm gray controlling environment temperature without contaminating the subject. A museum-gray wall retains physical surface and display distance, while a mist-cloud studio uses controlled haze rather than an outdoor cloudscape. Avoid visible hard corners subjects extending beyond the sweep feet without contact seamless paper resembling a sky haze erasing edges or obvious gradient banding"
+    },
+    {
+      "id": "layout-bg-cool-gray-studio",
+      "category": "background",
+      "styleGroup": "studio",
+      "zhName": "冷灰影棚背景",
+      "enName": "Cool Gray Studio",
+      "image": "/assets/parameters/layout-bg-cool-gray-studio.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "冷灰色影棚背景，中性克制，适合科技产品和专业肖像；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；影棚背景需说明无缝纸或墙面宽度、弧形地墙过渡、主体站位、接触阴影和灯光渐变；暖象牙、冷灰、炭黑、雾蓝与暖灰控制色温但不污染主体。博物馆灰墙保留实体墙面与展陈距离，云雾渐变影棚只是受控雾化层而非真实户外云海。避免可见折角、主体超出背景纸、脚下无接触、无缝纸像天空、雾层遮住边缘或渐变产生明显条带",
+      "enPrompt": "cool gray seamless studio background, restrained neutral surface for tech products and professional portraits; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; a studio background defines sweep or wall width curved wall-to-floor transition subject mark contact shadow and lighting gradient, with warm ivory cool gray charcoal mist blue and warm gray controlling environment temperature without contaminating the subject. A museum-gray wall retains physical surface and display distance, while a mist-cloud studio uses controlled haze rather than an outdoor cloudscape. Avoid visible hard corners subjects extending beyond the sweep feet without contact seamless paper resembling a sky haze erasing edges or obvious gradient banding"
+    },
+    {
+      "id": "layout-bg-black-velvet",
+      "category": "background",
+      "styleGroup": "fabric",
+      "zhName": "黑色天鹅绒背景",
+      "enName": "Black Velvet Background",
+      "image": "/assets/parameters/layout-bg-black-velvet.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "黑色天鹅绒背景利用密集短绒吸收大部分入射光，只在掠射角和褶皱边缘出现极细柔光，黑位深但仍能分辨绒向与少量层次，布料从固定点平稳垂落；适合珠宝或低调肖像，避免纯数字黑洞、闪亮缎面、灰尘满布、褶皱压过主体或背景边缘露出支架；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；说明纤维、织法、垂坠、张力、接缝和光泽：丝绸与缎面高光沿褶皱移动，天鹅绒吸光并有绒向，亚麻与画布显示经纬，防撕裂尼龙保留格纹与轻量皱折，欧根纱和纱帘具有透明叠层。避免布面像金属镜、所有褶皱等距、织纹比例过大、透明布无后景影响、天鹅绒纯黑死区或布料悬空无固定点",
+      "enPrompt": "black velvet background using dense short pile to absorb most incident light, revealing only a fine soft sheen at grazing angles and fold edges so blacks remain deep yet retain nap direction and limited depth while cloth hangs from a stable support; suited to jewelry or low-key portraits, avoiding a digital black void shiny satin dust everywhere folds overpowering the subject or exposed stands at the edges; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; describe fiber weave drape tension seam and sheen: silk and satin highlights travel along folds, velvet absorbs light with a visible pile direction, linen and canvas reveal warp and weft, ripstop nylon retains a reinforcement grid and lightweight creasing, and organza or sheer curtains form translucent layers. Avoid fabric behaving like a metal mirror equally spaced folds oversized weave transparent cloth unaffected by what lies behind it featureless black velvet or cloth suspended without attachment"
+    },
+    {
+      "id": "layout-bg-brushed-dark-metal",
+      "category": "background",
+      "styleGroup": "material",
+      "zhName": "深色拉丝金属背景",
+      "enName": "Brushed Dark Metal",
+      "image": "/assets/parameters/layout-bg-brushed-dark-metal.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "深色拉丝金属背景具有同一加工方向的细密线纹、冷灰基底和随视角移动的窄幅反射，高光被拉丝打散而非镜面复制环境，板材接缝与厚度克制可见；保持纹理尺度一致，避免随机交叉划痕、塑料灰渐变、满屏强反射、锈蚀污染或拉丝方向在各区域突然旋转；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；每种底板遵守真实密度、厚度、接缝、加工方向和反射：拉丝金属纹理方向连续，石材孔洞和脉络不重复，木纹沿板材生长，混凝土与石膏有合理抹压，陶砖有釉层和缝，软木与竹纤维保持植物结构，大漆有层积深度，氧化铜绿依附铜基。避免把照片纹理贴到任意平面、边缘不显厚度、木石金属同样光亮、氧化层无基材或尺度大到像地貌",
+      "enPrompt": "dark brushed-metal background with fine linear grain following one machining direction on a cool gray base and narrow view-dependent reflections, the brushing diffusing highlights rather than mirroring the environment while panel seams and thickness remain restrained; keep grain scale coherent, avoiding random cross scratches plastic gray gradients overwhelming reflections rust contamination or brushing direction rotating unpredictably across regions; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; each board obeys real density thickness join processing direction and reflection: brushed metal grain remains directional, stone pores and veins do not repeat, timber grain follows the board, concrete and plaster show plausible finishing, tile has glaze and grout, cork and bamboo retain plant structure, lacquer has layered optical depth, and verdigris remains attached to a copper base. Avoid photographic texture pasted onto any plane edges with no thickness wood stone and metal sharing one gloss oxidation without a substrate or texture scaled so large that it resembles terrain"
+    },
+    {
+      "id": "layout-bg-terrazzo",
+      "category": "background",
+      "styleGroup": "material",
+      "zhName": "水磨石背景",
+      "enName": "Terrazzo Background",
+      "image": "/assets/parameters/layout-bg-terrazzo.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "水磨石背景由浅色或中性色胶结基体包裹不同尺寸、形状和矿物色彩的石粒，切磨后的表面平整并带克制哑光或半光反射，颗粒在透视中尺度稳定且随机分布；适合现代产品和室内视觉，避免彩纸屑感、颗粒规则重复、所有石粒同色同形、镜面过亮或接缝穿过主体；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；每种底板遵守真实密度、厚度、接缝、加工方向和反射：拉丝金属纹理方向连续，石材孔洞和脉络不重复，木纹沿板材生长，混凝土与石膏有合理抹压，陶砖有釉层和缝，软木与竹纤维保持植物结构，大漆有层积深度，氧化铜绿依附铜基。避免把照片纹理贴到任意平面、边缘不显厚度、木石金属同样光亮、氧化层无基材或尺度大到像地貌",
+      "enPrompt": "terrazzo background made from a light or neutral cementitious matrix containing stone chips of varied size shape and mineral color, ground to a flat surface with restrained matte or semi-polished reflection while aggregate scale remains stable in perspective and distribution feels random; suited to modern product and interior visuals, avoiding confetti appearance tiled repetition identical chips mirror glare or seams cutting through the subject; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; each board obeys real density thickness join processing direction and reflection: brushed metal grain remains directional, stone pores and veins do not repeat, timber grain follows the board, concrete and plaster show plausible finishing, tile has glaze and grout, cork and bamboo retain plant structure, lacquer has layered optical depth, and verdigris remains attached to a copper base. Avoid photographic texture pasted onto any plane edges with no thickness wood stone and metal sharing one gloss oxidation without a substrate or texture scaled so large that it resembles terrain"
+    },
+    {
+      "id": "layout-bg-bamboo-fiber",
+      "category": "background",
+      "styleGroup": "material",
+      "zhName": "竹纤维背景",
+      "enName": "Bamboo Fiber Background",
+      "image": "/assets/parameters/layout-bg-bamboo-fiber.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "竹纤维背景呈淡麦黄或自然浅棕，压制植物纤维沿大致纵向交错分布，可见细长丝束、微小节点与哑光多孔表面，整体平整但保留轻微手工不均；强调环保自然材料而非竹竿图案，避免木纹年轮、草席编织、规则竖条贴图、强亮清漆或绿色滤镜；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；每种底板遵守真实密度、厚度、接缝、加工方向和反射：拉丝金属纹理方向连续，石材孔洞和脉络不重复，木纹沿板材生长，混凝土与石膏有合理抹压，陶砖有釉层和缝，软木与竹纤维保持植物结构，大漆有层积深度，氧化铜绿依附铜基。避免把照片纹理贴到任意平面、边缘不显厚度、木石金属同样光亮、氧化层无基材或尺度大到像地貌",
+      "enPrompt": "bamboo-fiber background in pale straw yellow or natural light brown, with pressed plant fibers crossing in a mostly vertical flow and showing slender bundles tiny nodes and a matte porous surface that stays flat with slight handmade variation; emphasize the sustainable material rather than bamboo-stalk imagery, avoiding wood growth rings woven mat patterns regular striped texture glossy varnish or a green filter; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; each board obeys real density thickness join processing direction and reflection: brushed metal grain remains directional, stone pores and veins do not repeat, timber grain follows the board, concrete and plaster show plausible finishing, tile has glaze and grout, cork and bamboo retain plant structure, lacquer has layered optical depth, and verdigris remains attached to a copper base. Avoid photographic texture pasted onto any plane edges with no thickness wood stone and metal sharing one gloss oxidation without a substrate or texture scaled so large that it resembles terrain"
+    },
+    {
+      "id": "layout-bg-holographic",
+      "category": "background",
+      "styleGroup": "special",
+      "zhName": "数码镭射渐变背景",
+      "enName": "Digital Holographic Gradient",
+      "image": "/assets/parameters/layout-bg-holographic.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "镭射虹彩背景，柔和虹色反射、梦幻渐变和潮流科技质感；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；先区分数字镭射渐变与实体虹彩膜：数字背景用受控色场和折射感，不出现真实褶皱；实体薄膜有厚度、折痕和角度依赖反射。磨砂、雨滴、波纹和彩窗玻璃各自遵循粗糙度、折射、液滴重力和结构纹路，亚克力有厚度与边缘，皱褶银箔保留金属反射。避免所有特殊背景统一彩虹、玻璃无后景折射、雨滴横向悬浮、烟熏材质纯黑、银箔像布或重复高光贴图",
+      "enPrompt": "holographic iridescent background, soft rainbow reflections, dreamy gradient and trendy tech texture; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; distinguish a digital holographic gradient from physical iridescent foil: the digital field uses controlled color and refractive suggestion without real creases, while foil has thickness folds and angle-dependent reflection. Frosted rainy ribbed and stained glass follow their own roughness refraction droplet gravity and structural pattern, acrylic has thickness and edges, and crumpled foil retains metallic reflection. Avoid every special surface turned rainbow glass with no refracted background droplets suspended sideways smoked material becoming featureless black foil behaving like cloth or repeated highlight textures"
+    },
+    {
+      "id": "layout-bg-cloud-sky",
+      "category": "background",
+      "styleGroup": "nature",
+      "zhName": "云朵天空背景",
+      "enName": "Cloud Sky Background",
+      "image": "/assets/parameters/layout-bg-cloud-sky.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "云朵天空背景采用具有明确光源和高度层次的真实天空，近云体积、远云尺度和蓝色空气透视自然递减，主体周围预留干净负空间并避免云边切入轮廓；可明朗但保留高光细节，避免重复棉花云、纯蓝色块、无方向白光、过度 HDR、地平线歪斜或幻想建筑混入；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；自然氛围背景仍需有明确空间层级：云天按高度和天气变化，水墨烟云按纸墨扩散和留白组织，树影石膏墙由真实叶片、太阳方向和墙面共同形成；主体周围保持安静。避免把天空当平面壁纸、水墨雾与摄影云混用、树影没有树叶结构、所有云同清晰度、自然元素穿过主体或背景季节与主体受光不一致",
+      "enPrompt": "cloud-sky background using a believable atmosphere with a clear light source and altitude layers, cloud volume nearby and scale and blue aerial perspective diminishing into distance while clean negative space surrounds the subject and cloud edges avoid tangencies; keep it bright without clipping detail, avoiding cloned cotton clouds a flat blue fill directionless white light excessive HDR a tilted horizon or unrelated fantasy architecture; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; an atmospheric natural background still requires depth: cloud sky changes with altitude and weather, ink mist follows paper absorption and negative space, and leafy plaster shadow arises jointly from real foliage sun direction and wall surface while remaining quiet around the subject. Avoid sky as a flat wallpaper mixed photographic cloud and ink fog leaf shadows without botanical structure every cloud equally sharp natural elements crossing the subject or a background season inconsistent with subject illumination"
+    },
+    {
+      "id": "layout-bg-ink-wash",
+      "category": "background",
+      "styleGroup": "nature",
+      "zhName": "水墨烟云背景",
+      "enName": "Ink-Wash Mist Background",
+      "image": "/assets/parameters/layout-bg-ink-wash.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "水墨烟云背景以吸水纸上的淡墨层、边缘回渗、水痕和少量干笔建立远近，墨色从留白到灰黑逐层过渡并在主体区域主动减弱，形态像山岚或云气但不描成完整景物；保持大面积呼吸感，避免数字烟雾滤镜、满屏黑墨、重复云纹、硬边矢量渐变或文字印章；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；自然氛围背景仍需有明确空间层级：云天按高度和天气变化，水墨烟云按纸墨扩散和留白组织，树影石膏墙由真实叶片、太阳方向和墙面共同形成；主体周围保持安静。避免把天空当平面壁纸、水墨雾与摄影云混用、树影没有树叶结构、所有云同清晰度、自然元素穿过主体或背景季节与主体受光不一致",
+      "enPrompt": "ink-wash mist background built from pale ink layers capillary backruns water edges and limited dry-brush marks on absorbent paper, transitioning from open white through gray to deep ink while deliberately fading around the subject and suggesting mountain haze or cloud without becoming a complete landscape; preserve broad breathing space, avoiding a digital smoke filter black ink everywhere repeating cloud motifs hard vector gradients or text and seals; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; an atmospheric natural background still requires depth: cloud sky changes with altitude and weather, ink mist follows paper absorption and negative space, and leafy plaster shadow arises jointly from real foliage sun direction and wall surface while remaining quiet around the subject. Avoid sky as a flat wallpaper mixed photographic cloud and ink fog leaf shadows without botanical structure every cloud equally sharp natural elements crossing the subject or a background season inconsistent with subject illumination"
+    },
+    {
+      "id": "bg-warm-ivory-plaster",
+      "category": "background",
+      "styleGroup": "material",
+      "zhName": "暖象牙白石膏墙",
+      "enName": "Warm Ivory Plaster",
+      "image": "/assets/parameters/bg-warm-ivory-plaster.png?v=20260827-bg-path-fix",
+      "zhPrompt": "暖象牙白石膏墙背景，细腻手工抹灰纹理、柔和中心亮度和安静高级留白；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；每种底板遵守真实密度、厚度、接缝、加工方向和反射：拉丝金属纹理方向连续，石材孔洞和脉络不重复，木纹沿板材生长，混凝土与石膏有合理抹压，陶砖有釉层和缝，软木与竹纤维保持植物结构，大漆有层积深度，氧化铜绿依附铜基。避免把照片纹理贴到任意平面、边缘不显厚度、木石金属同样光亮、氧化层无基材或尺度大到像地貌",
+      "enPrompt": "warm ivory plaster wall background, subtle hand-troweled texture, soft centered brightness, calm premium negative space; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; each board obeys real density thickness join processing direction and reflection: brushed metal grain remains directional, stone pores and veins do not repeat, timber grain follows the board, concrete and plaster show plausible finishing, tile has glaze and grout, cork and bamboo retain plant structure, lacquer has layered optical depth, and verdigris remains attached to a copper base. Avoid photographic texture pasted onto any plane edges with no thickness wood stone and metal sharing one gloss oxidation without a substrate or texture scaled so large that it resembles terrain",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-charcoal-studio-sweep",
+      "category": "background",
+      "styleGroup": "studio",
+      "zhName": "炭黑无缝影棚",
+      "enName": "Charcoal Studio Sweep",
+      "image": "/assets/parameters/bg-charcoal-studio-sweep.png?v=20260827-bg-path-fix",
+      "zhPrompt": "炭黑无缝影棚背景，墙地自然弧形衔接、低反光和沉稳商业质感；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；影棚背景需说明无缝纸或墙面宽度、弧形地墙过渡、主体站位、接触阴影和灯光渐变；暖象牙、冷灰、炭黑、雾蓝与暖灰控制色温但不污染主体。博物馆灰墙保留实体墙面与展陈距离，云雾渐变影棚只是受控雾化层而非真实户外云海。避免可见折角、主体超出背景纸、脚下无接触、无缝纸像天空、雾层遮住边缘或渐变产生明显条带",
+      "enPrompt": "charcoal seamless studio sweep, natural wall-to-floor curve, low reflection, refined commercial mood; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; a studio background defines sweep or wall width curved wall-to-floor transition subject mark contact shadow and lighting gradient, with warm ivory cool gray charcoal mist blue and warm gray controlling environment temperature without contaminating the subject. A museum-gray wall retains physical surface and display distance, while a mist-cloud studio uses controlled haze rather than an outdoor cloudscape. Avoid visible hard corners subjects extending beyond the sweep feet without contact seamless paper resembling a sky haze erasing edges or obvious gradient banding",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-misty-blue-studio-sweep",
+      "category": "background",
+      "styleGroup": "studio",
+      "zhName": "雾蓝无缝影棚",
+      "enName": "Misty Blue Studio Sweep",
+      "image": "/assets/parameters/bg-misty-blue-studio-sweep.png?v=20260827-bg-path-fix",
+      "zhPrompt": "雾蓝无缝影棚由蓝灰背板向地面连续弯曲，蓝灰色调低饱和并随柔光从中心到边缘缓慢变化，主体下方接触阴影和轻微地面反射说明空间但不出现墙地接缝；适合冷静科技或护肤产品，避免赛博霓虹、纯蓝抠图布、渐变条带、地面镜像过强或雾气遮住轮廓；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；影棚背景需说明无缝纸或墙面宽度、弧形地墙过渡、主体站位、接触阴影和灯光渐变；暖象牙、冷灰、炭黑、雾蓝与暖灰控制色温但不污染主体。博物馆灰墙保留实体墙面与展陈距离，云雾渐变影棚只是受控雾化层而非真实户外云海。避免可见折角、主体超出背景纸、脚下无接触、无缝纸像天空、雾层遮住边缘或渐变产生明显条带",
+      "enPrompt": "misty blue seamless studio sweep curving continuously from a blue-gray backdrop to the floor, with low saturation and a slow soft-light transition from center to edge plus a contact shadow and faint floor reflection establishing space without a wall-floor seam; suitable for calm technology or skincare products, avoiding cyber neon chroma-key blue gradient banding strong mirror reflection or haze obscuring the silhouette; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; a studio background defines sweep or wall width curved wall-to-floor transition subject mark contact shadow and lighting gradient, with warm ivory cool gray charcoal mist blue and warm gray controlling environment temperature without contaminating the subject. A museum-gray wall retains physical surface and display distance, while a mist-cloud studio uses controlled haze rather than an outdoor cloudscape. Avoid visible hard corners subjects extending beyond the sweep feet without contact seamless paper resembling a sky haze erasing edges or obvious gradient banding",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-frosted-glass",
+      "category": "background",
+      "styleGroup": "special",
+      "zhName": "磨砂玻璃背景",
+      "enName": "Frosted Glass Backdrop",
+      "image": "/assets/parameters/bg-frosted-glass.png?v=20260827-bg-path-fix",
+      "zhPrompt": "磨砂玻璃背景，半透明柔焦、克制漫反射和现代科技感；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；先区分数字镭射渐变与实体虹彩膜：数字背景用受控色场和折射感，不出现真实褶皱；实体薄膜有厚度、折痕和角度依赖反射。磨砂、雨滴、波纹和彩窗玻璃各自遵循粗糙度、折射、液滴重力和结构纹路，亚克力有厚度与边缘，皱褶银箔保留金属反射。避免所有特殊背景统一彩虹、玻璃无后景折射、雨滴横向悬浮、烟熏材质纯黑、银箔像布或重复高光贴图",
+      "enPrompt": "frosted glass background, translucent soft diffusion, restrained reflections, modern technology mood; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; distinguish a digital holographic gradient from physical iridescent foil: the digital field uses controlled color and refractive suggestion without real creases, while foil has thickness folds and angle-dependent reflection. Frosted rainy ribbed and stained glass follow their own roughness refraction droplet gravity and structural pattern, acrylic has thickness and edges, and crumpled foil retains metallic reflection. Avoid every special surface turned rainbow glass with no refracted background droplets suspended sideways smoked material becoming featureless black foil behaving like cloth or repeated highlight textures",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-natural-linen",
+      "category": "background",
+      "styleGroup": "fabric",
+      "zhName": "天然亚麻背景",
+      "enName": "Natural Linen",
+      "image": "/assets/parameters/bg-natural-linen.png?v=20260827-bg-path-fix",
+      "zhPrompt": "天然亚麻背景展示不完全均匀的经纬纱、细小纱结和温暖原麻色，布面哑光、透气且略有粗糙感，宽缓褶皱随悬挂或铺放方向自然形成，光线只产生柔和明暗；避免黄麻麻袋般过粗、规则网格、丝绸高光、污渍破洞、褶皱随机翻转或主体被织纹干扰；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；说明纤维、织法、垂坠、张力、接缝和光泽：丝绸与缎面高光沿褶皱移动，天鹅绒吸光并有绒向，亚麻与画布显示经纬，防撕裂尼龙保留格纹与轻量皱折，欧根纱和纱帘具有透明叠层。避免布面像金属镜、所有褶皱等距、织纹比例过大、透明布无后景影响、天鹅绒纯黑死区或布料悬空无固定点",
+      "enPrompt": "natural linen background showing slightly irregular warp and weft tiny slubs and a warm flax tone, with a matte breathable mildly coarse surface and broad relaxed folds following the hanging or laid direction under soft tonal light; avoid burlap-level coarseness a perfect grid silk sheen stains and holes folds reversing randomly or weave contrast competing with the subject; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; describe fiber weave drape tension seam and sheen: silk and satin highlights travel along folds, velvet absorbs light with a visible pile direction, linen and canvas reveal warp and weft, ripstop nylon retains a reinforcement grid and lightweight creasing, and organza or sheer curtains form translucent layers. Avoid fabric behaving like a metal mirror equally spaced folds oversized weave transparent cloth unaffected by what lies behind it featureless black velvet or cloth suspended without attachment",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-deep-navy-velvet",
+      "category": "background",
+      "styleGroup": "fabric",
+      "zhName": "深海军蓝天鹅绒",
+      "enName": "Deep Navy Velvet",
+      "image": "/assets/parameters/bg-deep-navy-velvet.png?v=20260827-bg-path-fix",
+      "zhPrompt": "深海军蓝天鹅绒背景保留接近黑色的蓝色底调，绒毛方向使掠射光形成窄而柔的深蓝高光，褶皱层次比纯黑天鹅绒更易分辨但仍保持吸光和庄重；适合金属、珠宝或正式人像，避免亮蓝缎面、紫色偏色、黑位堵死、褶皱过密或绒面像毛皮；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；说明纤维、织法、垂坠、张力、接缝和光泽：丝绸与缎面高光沿褶皱移动，天鹅绒吸光并有绒向，亚麻与画布显示经纬，防撕裂尼龙保留格纹与轻量皱折，欧根纱和纱帘具有透明叠层。避免布面像金属镜、所有褶皱等距、织纹比例过大、透明布无后景影响、天鹅绒纯黑死区或布料悬空无固定点",
+      "enPrompt": "deep navy velvet background retaining a blue undertone close to black, with pile direction creating narrow soft dark-blue highlights under grazing light so folds remain more legible than pure black velvet while preserving absorption and formality; suited to metal jewelry or formal portraits, avoiding bright blue satin purple color cast crushed blacks overly dense folds or velvet rendered as fur; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; describe fiber weave drape tension seam and sheen: silk and satin highlights travel along folds, velvet absorbs light with a visible pile direction, linen and canvas reveal warp and weft, ripstop nylon retains a reinforcement grid and lightweight creasing, and organza or sheer curtains form translucent layers. Avoid fabric behaving like a metal mirror equally spaced folds oversized weave transparent cloth unaffected by what lies behind it featureless black velvet or cloth suspended without attachment",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-recycled-kraft-paper",
+      "category": "background",
+      "styleGroup": "paper",
+      "zhName": "再生牛皮纸背景",
+      "enName": "Recycled Kraft Paper",
+      "image": "/assets/parameters/bg-recycled-kraft-paper.png?v=20260827-bg-path-fix",
+      "zhPrompt": "再生牛皮纸背景呈自然棕灰色，短纤维、回收纸屑和轻微色差随机嵌在哑光纸浆中，表面平整但不精制，边缘可见适度厚度和毛边；适合环保包装或手作设计，避免木板纹理、咖啡污渍做旧、规则彩点、瓦楞沟槽、印刷文字或纤维大到像草杆；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；明确纸浆来源、克重、纤维、压纹、毛边、吸墨和透光性；宣纸平整薄韧，皱褶宣纸有受力来源，水彩棉纸有冷压或粗纹，再生纸显示纤维与压痕，羊皮纸表现真实膜质或历史纸面但不过度做旧。障子纸依附木格，渐变纸的颜色进入纸纤维而非发光。避免纸像塑料、纤维规则重复、所有纸都泛黄、皱纹无方向、压纹穿透背面或墨水尚未使用却满面晕染",
+      "enPrompt": "recycled kraft-paper background in a natural brown-gray tone with short fibers reclaimed flecks and slight color variation embedded randomly in matte pulp, flat yet unrefined and showing modest edge thickness or deckle when visible; suited to sustainable packaging and handmade design, avoiding wood grain coffee-stain aging regular colored dots corrugation readable print or fibers enlarged into straw; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; specify pulp source weight fiber embossing deckle absorption and translucency. Xuan remains thin resilient and mostly flat, wrinkled xuan has a source of compression, watercolor cotton paper shows cold-press or rough tooth, recycled stock reveals inclusions and pressure, and parchment shows credible membrane or aged paper without excessive distress. Shoji paper attaches to a timber lattice and gradient color sits within fibers rather than glowing. Avoid paper resembling plastic regularly repeated fiber every stock yellowed directionless creases embossing passing through the sheet or ink bleeding everywhere before ink has been applied",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-antique-parchment",
+      "category": "background",
+      "styleGroup": "paper",
+      "zhName": "古典羊皮纸背景",
+      "enName": "Antique Parchment",
+      "image": "/assets/parameters/bg-antique-parchment.png?v=20260827-bg-path-fix",
+      "zhPrompt": "古典羊皮纸背景呈暖象牙至浅赭色，纤维与胶质表面因年代产生不均匀氧化、边缘暗化和少量自然波浪，中心仍保留可书写的干净区域，厚度与透光感符合真实皮纸或历史纸张；避免咖啡泼洒式做旧、烧焦破洞、藏宝图纹样、乱码文字、重复污点或整体棕黑看不清主体；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；明确纸浆来源、克重、纤维、压纹、毛边、吸墨和透光性；宣纸平整薄韧，皱褶宣纸有受力来源，水彩棉纸有冷压或粗纹，再生纸显示纤维与压痕，羊皮纸表现真实膜质或历史纸面但不过度做旧。障子纸依附木格，渐变纸的颜色进入纸纤维而非发光。避免纸像塑料、纤维规则重复、所有纸都泛黄、皱纹无方向、压纹穿透背面或墨水尚未使用却满面晕染",
+      "enPrompt": "antique parchment background ranging from warm ivory to pale ochre, with fibrous sized surface showing uneven oxidation edge darkening and limited natural waviness while the center remains clean enough for content and thickness and translucency feel like real vellum or historic paper; avoid coffee-spill aging burned holes treasure-map motifs gibberish text repeated stains or an overall dark brown field that obscures the subject; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; specify pulp source weight fiber embossing deckle absorption and translucency. Xuan remains thin resilient and mostly flat, wrinkled xuan has a source of compression, watercolor cotton paper shows cold-press or rough tooth, recycled stock reveals inclusions and pressure, and parchment shows credible membrane or aged paper without excessive distress. Shoji paper attaches to a timber lattice and gradient color sits within fibers rather than glowing. Avoid paper resembling plastic regularly repeated fiber every stock yellowed directionless creases embossing passing through the sheet or ink bleeding everywhere before ink has been applied",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-cotton-watercolor-paper",
+      "category": "background",
+      "styleGroup": "paper",
+      "zhName": "水彩棉纸背景",
+      "enName": "Cotton Watercolor Paper",
+      "image": "/assets/parameters/bg-cotton-watercolor-paper.png?v=20260827-bg-path-fix",
+      "zhPrompt": "水彩棉纸背景，白色细颗粒、吸水纸纤维和干净艺术留白；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；明确纸浆来源、克重、纤维、压纹、毛边、吸墨和透光性；宣纸平整薄韧，皱褶宣纸有受力来源，水彩棉纸有冷压或粗纹，再生纸显示纤维与压痕，羊皮纸表现真实膜质或历史纸面但不过度做旧。障子纸依附木格，渐变纸的颜色进入纸纤维而非发光。避免纸像塑料、纤维规则重复、所有纸都泛黄、皱纹无方向、压纹穿透背面或墨水尚未使用却满面晕染",
+      "enPrompt": "cotton watercolor paper background, white fine grain, absorbent paper fibers, clean artistic negative space; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; specify pulp source weight fiber embossing deckle absorption and translucency. Xuan remains thin resilient and mostly flat, wrinkled xuan has a source of compression, watercolor cotton paper shows cold-press or rough tooth, recycled stock reveals inclusions and pressure, and parchment shows credible membrane or aged paper without excessive distress. Shoji paper attaches to a timber lattice and gradient color sits within fibers rather than glowing. Avoid paper resembling plastic regularly repeated fiber every stock yellowed directionless creases embossing passing through the sheet or ink bleeding everywhere before ink has been applied",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-travertine-stone",
+      "category": "background",
+      "styleGroup": "material",
+      "zhName": "浅色洞石背景",
+      "enName": "Light Travertine",
+      "image": "/assets/parameters/bg-travertine-stone.png?v=20260827-bg-path-fix",
+      "zhPrompt": "浅色洞石背景，天然孔隙、米灰石材层次和轻奢建筑质感；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；每种底板遵守真实密度、厚度、接缝、加工方向和反射：拉丝金属纹理方向连续，石材孔洞和脉络不重复，木纹沿板材生长，混凝土与石膏有合理抹压，陶砖有釉层和缝，软木与竹纤维保持植物结构，大漆有层积深度，氧化铜绿依附铜基。避免把照片纹理贴到任意平面、边缘不显厚度、木石金属同样光亮、氧化层无基材或尺度大到像地貌",
+      "enPrompt": "light travertine stone background, natural pores, beige-gray stone layers, refined architectural texture; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; each board obeys real density thickness join processing direction and reflection: brushed metal grain remains directional, stone pores and veins do not repeat, timber grain follows the board, concrete and plaster show plausible finishing, tile has glaze and grout, cork and bamboo retain plant structure, lacquer has layered optical depth, and verdigris remains attached to a copper base. Avoid photographic texture pasted onto any plane edges with no thickness wood stone and metal sharing one gloss oxidation without a substrate or texture scaled so large that it resembles terrain",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-brushed-stainless-steel",
+      "category": "background",
+      "styleGroup": "material",
+      "zhName": "拉丝不锈钢背景",
+      "enName": "Brushed Stainless Steel",
+      "image": "/assets/parameters/bg-brushed-stainless-steel.png?v=20260827-bg-path-fix",
+      "zhPrompt": "拉丝不锈钢背景，水平拉丝纹、高级银灰反射和精密工业感；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；每种底板遵守真实密度、厚度、接缝、加工方向和反射：拉丝金属纹理方向连续，石材孔洞和脉络不重复，木纹沿板材生长，混凝土与石膏有合理抹压，陶砖有釉层和缝，软木与竹纤维保持植物结构，大漆有层积深度，氧化铜绿依附铜基。避免把照片纹理贴到任意平面、边缘不显厚度、木石金属同样光亮、氧化层无基材或尺度大到像地貌",
+      "enPrompt": "brushed stainless steel background, horizontal brushed grain, refined silver-gray reflections, precision industrial mood; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; each board obeys real density thickness join processing direction and reflection: brushed metal grain remains directional, stone pores and veins do not repeat, timber grain follows the board, concrete and plaster show plausible finishing, tile has glaze and grout, cork and bamboo retain plant structure, lacquer has layered optical depth, and verdigris remains attached to a copper base. Avoid photographic texture pasted onto any plane edges with no thickness wood stone and metal sharing one gloss oxidation without a substrate or texture scaled so large that it resembles terrain",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-rain-window-glass",
+      "category": "background",
+      "styleGroup": "special",
+      "zhName": "雨滴玻璃背景",
+      "enName": "Rainy Window Glass",
+      "image": "/assets/parameters/bg-rain-window-glass.png?v=20260827-bg-path-fix",
+      "zhPrompt": "雨滴玻璃背景，前景水珠清晰、远处城市灯光柔化成散景，安静雨夜气氛；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；先区分数字镭射渐变与实体虹彩膜：数字背景用受控色场和折射感，不出现真实褶皱；实体薄膜有厚度、折痕和角度依赖反射。磨砂、雨滴、波纹和彩窗玻璃各自遵循粗糙度、折射、液滴重力和结构纹路，亚克力有厚度与边缘，皱褶银箔保留金属反射。避免所有特殊背景统一彩虹、玻璃无后景折射、雨滴横向悬浮、烟熏材质纯黑、银箔像布或重复高光贴图",
+      "enPrompt": "rain-speckled window glass background, sharp foreground droplets, distant city lights softened into bokeh, quiet rainy-night atmosphere; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; distinguish a digital holographic gradient from physical iridescent foil: the digital field uses controlled color and refractive suggestion without real creases, while foil has thickness folds and angle-dependent reflection. Frosted rainy ribbed and stained glass follow their own roughness refraction droplet gravity and structural pattern, acrylic has thickness and edges, and crumpled foil retains metallic reflection. Avoid every special surface turned rainbow glass with no refracted background droplets suspended sideways smoked material becoming featureless black foil behaving like cloth or repeated highlight textures",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-matte-warm-white",
+      "category": "background",
+      "styleGroup": "color",
+      "zhName": "哑光暖白背景",
+      "enName": "Matte Warm White",
+      "image": "/assets/parameters/bg-matte-warm-white.png?v=20260827-bg-path-fix",
+      "zhPrompt": "哑光暖白无缝背景，干净柔和、低反光、适合产品和人像主体；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；纯色底板以受控色值、低反光表面和轻微自然明度变化承托主体，可在地面接触处出现柔和阴影但不形成材质纹理；朱红、暖白、鼠尾草绿和钴蓝保持各自准确色相与明度。避免绝对无层次的数字填色、四角脏灰、中心光晕、色带、荧光溢色、背景反射改变产品颜色或把纯色板误做成布料和墙面",
+      "enPrompt": "matte warm white seamless background, clean soft low-reflection surface for product and portrait subjects; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; a solid backdrop supports the subject with controlled color value low reflection and slight natural luminance variation, allowing a soft contact shadow at the floor without becoming a textured material. Vermilion warm white sage and cobalt retain accurate hue and value. Avoid perfectly flat digital fill dirty gray corners central glow color banding fluorescent spill background reflection shifting product color or a solid panel accidentally rendered as fabric or plaster",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-warm-gray-studio",
+      "category": "background",
+      "styleGroup": "studio",
+      "zhName": "暖灰人像影棚",
+      "enName": "Warm Gray Portrait Studio",
+      "image": "/assets/parameters/bg-warm-gray-studio.png?v=20260827-bg-path-fix",
+      "zhPrompt": "暖灰色无缝人像影棚背景，柔和墙地过渡、中性高级且不抢主体；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；影棚背景需说明无缝纸或墙面宽度、弧形地墙过渡、主体站位、接触阴影和灯光渐变；暖象牙、冷灰、炭黑、雾蓝与暖灰控制色温但不污染主体。博物馆灰墙保留实体墙面与展陈距离，云雾渐变影棚只是受控雾化层而非真实户外云海。避免可见折角、主体超出背景纸、脚下无接触、无缝纸像天空、雾层遮住边缘或渐变产生明显条带",
+      "enPrompt": "warm gray seamless portrait studio background, soft wall-to-floor transition, neutral and refined without distracting from the subject; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; a studio background defines sweep or wall width curved wall-to-floor transition subject mark contact shadow and lighting gradient, with warm ivory cool gray charcoal mist blue and warm gray controlling environment temperature without contaminating the subject. A museum-gray wall retains physical surface and display distance, while a mist-cloud studio uses controlled haze rather than an outdoor cloudscape. Avoid visible hard corners subjects extending beyond the sweep feet without contact seamless paper resembling a sky haze erasing edges or obvious gradient banding",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-sage-color-backdrop",
+      "category": "background",
+      "styleGroup": "color",
+      "zhName": "鼠尾草绿底板",
+      "enName": "Sage Green Backdrop",
+      "image": "/assets/parameters/bg-sage-color-backdrop.png?v=20260827-bg-path-fix",
+      "zhPrompt": "低饱和鼠尾草绿无缝底板，柔和自然、现代编辑感和克制色彩；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；纯色底板以受控色值、低反光表面和轻微自然明度变化承托主体，可在地面接触处出现柔和阴影但不形成材质纹理；朱红、暖白、鼠尾草绿和钴蓝保持各自准确色相与明度。避免绝对无层次的数字填色、四角脏灰、中心光晕、色带、荧光溢色、背景反射改变产品颜色或把纯色板误做成布料和墙面",
+      "enPrompt": "low-saturation sage green seamless backdrop, soft natural modern editorial feeling and restrained color; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; a solid backdrop supports the subject with controlled color value low reflection and slight natural luminance variation, allowing a soft contact shadow at the floor without becoming a textured material. Vermilion warm white sage and cobalt retain accurate hue and value. Avoid perfectly flat digital fill dirty gray corners central glow color banding fluorescent spill background reflection shifting product color or a solid panel accidentally rendered as fabric or plaster",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-cobalt-color-backdrop",
+      "category": "background",
+      "styleGroup": "color",
+      "zhName": "钴蓝色底板",
+      "enName": "Cobalt Blue Backdrop",
+      "image": "/assets/parameters/bg-cobalt-color-backdrop.png?v=20260827-bg-path-fix",
+      "zhPrompt": "饱和钴蓝色无缝底板，清晰干净、现代平面感和强视觉对比；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；纯色底板以受控色值、低反光表面和轻微自然明度变化承托主体，可在地面接触处出现柔和阴影但不形成材质纹理；朱红、暖白、鼠尾草绿和钴蓝保持各自准确色相与明度。避免绝对无层次的数字填色、四角脏灰、中心光晕、色带、荧光溢色、背景反射改变产品颜色或把纯色板误做成布料和墙面",
+      "enPrompt": "saturated cobalt blue seamless backdrop, crisp clean modern graphic feeling with strong visual contrast; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; a solid backdrop supports the subject with controlled color value low reflection and slight natural luminance variation, allowing a soft contact shadow at the floor without becoming a textured material. Vermilion warm white sage and cobalt retain accurate hue and value. Avoid perfectly flat digital fill dirty gray corners central glow color banding fluorescent spill background reflection shifting product color or a solid panel accidentally rendered as fabric or plaster",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-blush-handmade-paper",
+      "category": "background",
+      "styleGroup": "paper",
+      "zhName": "浅粉手工纸背景",
+      "enName": "Blush Handmade Paper",
+      "image": "/assets/parameters/bg-blush-handmade-paper.png?v=20260827-bg-path-fix",
+      "zhPrompt": "浅粉色手工纸背景，细腻纸纤维、温柔低饱和和贺卡艺术感；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；明确纸浆来源、克重、纤维、压纹、毛边、吸墨和透光性；宣纸平整薄韧，皱褶宣纸有受力来源，水彩棉纸有冷压或粗纹，再生纸显示纤维与压痕，羊皮纸表现真实膜质或历史纸面但不过度做旧。障子纸依附木格，渐变纸的颜色进入纸纤维而非发光。避免纸像塑料、纤维规则重复、所有纸都泛黄、皱纹无方向、压纹穿透背面或墨水尚未使用却满面晕染",
+      "enPrompt": "blush handmade paper background, delicate paper fibers, gentle low saturation, refined greeting-card art feeling; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; specify pulp source weight fiber embossing deckle absorption and translucency. Xuan remains thin resilient and mostly flat, wrinkled xuan has a source of compression, watercolor cotton paper shows cold-press or rough tooth, recycled stock reveals inclusions and pressure, and parchment shows credible membrane or aged paper without excessive distress. Shoji paper attaches to a timber lattice and gradient color sits within fibers rather than glowing. Avoid paper resembling plastic regularly repeated fiber every stock yellowed directionless creases embossing passing through the sheet or ink bleeding everywhere before ink has been applied",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-black-marble",
+      "category": "background",
+      "styleGroup": "material",
+      "zhName": "黑色大理石背景",
+      "enName": "Black Marble",
+      "image": "/assets/parameters/bg-black-marble.png?v=20260827-bg-path-fix",
+      "zhPrompt": "黑色大理石背景，克制白色矿物纹路、深邃石面和高端质感；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；每种底板遵守真实密度、厚度、接缝、加工方向和反射：拉丝金属纹理方向连续，石材孔洞和脉络不重复，木纹沿板材生长，混凝土与石膏有合理抹压，陶砖有釉层和缝，软木与竹纤维保持植物结构，大漆有层积深度，氧化铜绿依附铜基。避免把照片纹理贴到任意平面、边缘不显厚度、木石金属同样光亮、氧化层无基材或尺度大到像地貌",
+      "enPrompt": "black marble background, restrained white mineral veining, deep stone surface, premium material feel; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; each board obeys real density thickness join processing direction and reflection: brushed metal grain remains directional, stone pores and veins do not repeat, timber grain follows the board, concrete and plaster show plausible finishing, tile has glaze and grout, cork and bamboo retain plant structure, lacquer has layered optical depth, and verdigris remains attached to a copper base. Avoid photographic texture pasted onto any plane edges with no thickness wood stone and metal sharing one gloss oxidation without a substrate or texture scaled so large that it resembles terrain",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-white-marble",
+      "category": "background",
+      "styleGroup": "material",
+      "zhName": "白色大理石背景",
+      "enName": "White Marble",
+      "image": "/assets/parameters/bg-white-marble.png?v=20260827-bg-path-fix",
+      "zhPrompt": "白色大理石背景以乳白石基、少量连续灰色矿脉和半透明晶体深度构成，抛光程度决定柔和反射但仍可看到石材内部层次，纹脉跨越画面时方向连贯且不过密；适合高端产品衬底，避免随机闪电裂纹、纯白塑料、每块区域不同石种、镜面倒影或金色矿脉喧宾夺主；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；每种底板遵守真实密度、厚度、接缝、加工方向和反射：拉丝金属纹理方向连续，石材孔洞和脉络不重复，木纹沿板材生长，混凝土与石膏有合理抹压，陶砖有釉层和缝，软木与竹纤维保持植物结构，大漆有层积深度，氧化铜绿依附铜基。避免把照片纹理贴到任意平面、边缘不显厚度、木石金属同样光亮、氧化层无基材或尺度大到像地貌",
+      "enPrompt": "white marble background formed by a milky stone base a limited number of continuous gray mineral veins and subtle crystalline depth, with polish controlling gentle reflection while internal stone layers remain visible and veins travel coherently without crowding the frame; suited to premium product presentation, avoiding random lightning cracks plain white plastic mixed stone species across patches mirror reflections or dominant gold veining; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; each board obeys real density thickness join processing direction and reflection: brushed metal grain remains directional, stone pores and veins do not repeat, timber grain follows the board, concrete and plaster show plausible finishing, tile has glaze and grout, cork and bamboo retain plant structure, lacquer has layered optical depth, and verdigris remains attached to a copper base. Avoid photographic texture pasted onto any plane edges with no thickness wood stone and metal sharing one gloss oxidation without a substrate or texture scaled so large that it resembles terrain",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-natural-corkboard",
+      "category": "background",
+      "styleGroup": "material",
+      "zhName": "天然软木板背景",
+      "enName": "Natural Corkboard",
+      "image": "/assets/parameters/bg-natural-corkboard.png?v=20260827-bg-path-fix",
+      "zhPrompt": "天然软木板背景由压制树皮颗粒形成暖棕色多孔表面，颗粒大小、孔隙和深浅随机但密度均衡，哑光质地吸光并保留轻微厚度，适合便签、手作或自然产品；避免碎石墙感、重复贴图接缝、木纹年轮、过度锐利孔洞、满板图钉纸张或主体边缘被颗粒吞没；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；每种底板遵守真实密度、厚度、接缝、加工方向和反射：拉丝金属纹理方向连续，石材孔洞和脉络不重复，木纹沿板材生长，混凝土与石膏有合理抹压，陶砖有釉层和缝，软木与竹纤维保持植物结构，大漆有层积深度，氧化铜绿依附铜基。避免把照片纹理贴到任意平面、边缘不显厚度、木石金属同样光亮、氧化层无基材或尺度大到像地貌",
+      "enPrompt": "natural corkboard background made from compressed bark granules in a warm brown porous surface, with varied particle size cavities and tone distributed evenly and a matte light-absorbing finish plus slight visible thickness; useful for notes crafts or natural products, avoiding a stone-wall appearance repeating texture seams wood growth rings overly sharp holes a board already crowded with pins and papers or grain swallowing subject edges; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; each board obeys real density thickness join processing direction and reflection: brushed metal grain remains directional, stone pores and veins do not repeat, timber grain follows the board, concrete and plaster show plausible finishing, tile has glaze and grout, cork and bamboo retain plant structure, lacquer has layered optical depth, and verdigris remains attached to a copper base. Avoid photographic texture pasted onto any plane edges with no thickness wood stone and metal sharing one gloss oxidation without a substrate or texture scaled so large that it resembles terrain",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-glazed-ceramic-tile",
+      "category": "background",
+      "styleGroup": "material",
+      "zhName": "釉面陶瓷砖背景",
+      "enName": "Glazed Ceramic Tile",
+      "image": "/assets/parameters/bg-glazed-ceramic-tile.png?v=20260827-bg-path-fix",
+      "zhPrompt": "釉面陶瓷砖背景由尺寸一致的砖片、窄而连续的填缝和轻微烧成色差组成，釉面反射随光源和砖面曲率变化，边缘可有细微手工不齐但整体铺贴平整；明确透视与接缝比例，避免无限镜面、塑料方格、每块砖随机花色、填缝断裂或高光跨越多块砖不变化；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；每种底板遵守真实密度、厚度、接缝、加工方向和反射：拉丝金属纹理方向连续，石材孔洞和脉络不重复，木纹沿板材生长，混凝土与石膏有合理抹压，陶砖有釉层和缝，软木与竹纤维保持植物结构，大漆有层积深度，氧化铜绿依附铜基。避免把照片纹理贴到任意平面、边缘不显厚度、木石金属同样光亮、氧化层无基材或尺度大到像地貌",
+      "enPrompt": "glazed ceramic-tile background composed of consistently sized tiles narrow continuous grout and slight firing variation, with glaze reflections responding to light source and tile curvature and tiny handmade edge irregularity within an overall flat installation; preserve perspective and joint scale, avoiding an endless mirror plastic checkerboard random motifs on every tile broken grout or one highlight crossing many tiles unchanged; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; each board obeys real density thickness join processing direction and reflection: brushed metal grain remains directional, stone pores and veins do not repeat, timber grain follows the board, concrete and plaster show plausible finishing, tile has glaze and grout, cork and bamboo retain plant structure, lacquer has layered optical depth, and verdigris remains attached to a copper base. Avoid photographic texture pasted onto any plane edges with no thickness wood stone and metal sharing one gloss oxidation without a substrate or texture scaled so large that it resembles terrain",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-holographic-foil",
+      "category": "background",
+      "styleGroup": "special",
+      "zhName": "镭射虹彩膜背景",
+      "enName": "Holographic Foil Backdrop",
+      "image": "/assets/parameters/bg-holographic-foil.png?v=20260827-bg-path-fix",
+      "zhPrompt": "镭射虹彩膜背景，半透明彩虹反射、褶皱光线和潮流未来质感；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；先区分数字镭射渐变与实体虹彩膜：数字背景用受控色场和折射感，不出现真实褶皱；实体薄膜有厚度、折痕和角度依赖反射。磨砂、雨滴、波纹和彩窗玻璃各自遵循粗糙度、折射、液滴重力和结构纹路，亚克力有厚度与边缘，皱褶银箔保留金属反射。避免所有特殊背景统一彩虹、玻璃无后景折射、雨滴横向悬浮、烟熏材质纯黑、银箔像布或重复高光贴图",
+      "enPrompt": "holographic foil background, translucent rainbow reflections, folded light, fashion-forward futuristic texture; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; distinguish a digital holographic gradient from physical iridescent foil: the digital field uses controlled color and refractive suggestion without real creases, while foil has thickness folds and angle-dependent reflection. Frosted rainy ribbed and stained glass follow their own roughness refraction droplet gravity and structural pattern, acrylic has thickness and edges, and crumpled foil retains metallic reflection. Avoid every special surface turned rainbow glass with no refracted background droplets suspended sideways smoked material becoming featureless black foil behaving like cloth or repeated highlight textures",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-sheer-curtain-daylight",
+      "category": "background",
+      "styleGroup": "fabric",
+      "zhName": "日光纱帘背景",
+      "enName": "Sheer Curtain Daylight",
+      "image": "/assets/parameters/bg-sheer-curtain-daylight.png?v=20260827-bg-path-fix",
+      "zhPrompt": "日光纱帘背景，半透明白色薄纱、柔和窗光和轻盈室内氛围；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；说明纤维、织法、垂坠、张力、接缝和光泽：丝绸与缎面高光沿褶皱移动，天鹅绒吸光并有绒向，亚麻与画布显示经纬，防撕裂尼龙保留格纹与轻量皱折，欧根纱和纱帘具有透明叠层。避免布面像金属镜、所有褶皱等距、织纹比例过大、透明布无后景影响、天鹅绒纯黑死区或布料悬空无固定点",
+      "enPrompt": "daylight sheer curtain background, translucent white fabric, soft window light, airy interior atmosphere; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; describe fiber weave drape tension seam and sheen: silk and satin highlights travel along folds, velvet absorbs light with a visible pile direction, linen and canvas reveal warp and weft, ripstop nylon retains a reinforcement grid and lightweight creasing, and organza or sheer curtains form translucent layers. Avoid fabric behaving like a metal mirror equally spaced folds oversized weave transparent cloth unaffected by what lies behind it featureless black velvet or cloth suspended without attachment",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-leafy-shadow-plaster",
+      "category": "background",
+      "styleGroup": "nature",
+      "zhName": "树影石膏墙背景",
+      "enName": "Leafy Shadow Plaster",
+      "image": "/assets/parameters/bg-leafy-shadow-plaster.png?v=20260827-bg-path-fix",
+      "zhPrompt": "树影石膏墙背景以温和浅色矿物墙面承接真实枝叶投影，投影方向、软硬和尺度由窗外距离与阳光角度决定，叶影局部重叠并随墙面细孔和轻微抹痕变化，主体区域保持可读；避免直接贴上叶片图案、无来源多方向影子、纯黑硬边、墙面像纸张或叶影覆盖全部画面；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；自然氛围背景仍需有明确空间层级：云天按高度和天气变化，水墨烟云按纸墨扩散和留白组织，树影石膏墙由真实叶片、太阳方向和墙面共同形成；主体周围保持安静。避免把天空当平面壁纸、水墨雾与摄影云混用、树影没有树叶结构、所有云同清晰度、自然元素穿过主体或背景季节与主体受光不一致",
+      "enPrompt": "leaf-shadow plaster wall background using a pale mineral surface to receive real branch and foliage shadows whose direction softness and scale follow sunlight angle and distance outside the frame, with overlapping silhouettes responding subtly to pores and trowel marks while the subject zone remains readable; avoid pasted leaf graphics multiple source-free shadow directions pure black cutout edges a paper-like wall or foliage shadow covering the entire image; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; an atmospheric natural background still requires depth: cloud sky changes with altitude and weather, ink mist follows paper absorption and negative space, and leafy plaster shadow arises jointly from real foliage sun direction and wall surface while remaining quiet around the subject. Avoid sky as a flat wallpaper mixed photographic cloud and ink fog leaf shadows without botanical structure every cloud equally sharp natural elements crossing the subject or a background season inconsistent with subject illumination",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-deckle-cotton-paper",
+      "category": "background",
+      "styleGroup": "paper",
+      "zhName": "毛边棉纸背景",
+      "enName": "Deckle-Edge Cotton Paper",
+      "image": "/assets/parameters/bg-deckle-cotton-paper.png?v=20260827-bg-path-fix",
+      "zhPrompt": "手工毛边棉纸背景，暖白纸纤维、自然撕边和克制的艺术留白；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；明确纸浆来源、克重、纤维、压纹、毛边、吸墨和透光性；宣纸平整薄韧，皱褶宣纸有受力来源，水彩棉纸有冷压或粗纹，再生纸显示纤维与压痕，羊皮纸表现真实膜质或历史纸面但不过度做旧。障子纸依附木格，渐变纸的颜色进入纸纤维而非发光。避免纸像塑料、纤维规则重复、所有纸都泛黄、皱纹无方向、压纹穿透背面或墨水尚未使用却满面晕染",
+      "enPrompt": "handmade deckle-edge cotton paper background, warm white fibers, natural torn edge, restrained artistic negative space; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; specify pulp source weight fiber embossing deckle absorption and translucency. Xuan remains thin resilient and mostly flat, wrinkled xuan has a source of compression, watercolor cotton paper shows cold-press or rough tooth, recycled stock reveals inclusions and pressure, and parchment shows credible membrane or aged paper without excessive distress. Shoji paper attaches to a timber lattice and gradient color sits within fibers rather than glowing. Avoid paper resembling plastic regularly repeated fiber every stock yellowed directionless creases embossing passing through the sheet or ink bleeding everywhere before ink has been applied",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-sunlit-shoji-paper",
+      "category": "background",
+      "styleGroup": "paper",
+      "zhName": "日光障子纸背景",
+      "enName": "Sunlit Shoji Paper",
+      "image": "/assets/parameters/bg-sunlit-shoji-paper.png?v=20260827-bg-path-fix",
+      "zhPrompt": "日光障子纸背景，细木格、暖光投影和安静的日式室内氛围；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；明确纸浆来源、克重、纤维、压纹、毛边、吸墨和透光性；宣纸平整薄韧，皱褶宣纸有受力来源，水彩棉纸有冷压或粗纹，再生纸显示纤维与压痕，羊皮纸表现真实膜质或历史纸面但不过度做旧。障子纸依附木格，渐变纸的颜色进入纸纤维而非发光。避免纸像塑料、纤维规则重复、所有纸都泛黄、皱纹无方向、压纹穿透背面或墨水尚未使用却满面晕染",
+      "enPrompt": "sunlit shoji paper background, fine wooden lattice, warm light shadow, quiet Japanese interior atmosphere; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; specify pulp source weight fiber embossing deckle absorption and translucency. Xuan remains thin resilient and mostly flat, wrinkled xuan has a source of compression, watercolor cotton paper shows cold-press or rough tooth, recycled stock reveals inclusions and pressure, and parchment shows credible membrane or aged paper without excessive distress. Shoji paper attaches to a timber lattice and gradient color sits within fibers rather than glowing. Avoid paper resembling plastic regularly repeated fiber every stock yellowed directionless creases embossing passing through the sheet or ink bleeding everywhere before ink has been applied",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-aged-mineral-plaster",
+      "category": "background",
+      "styleGroup": "material",
+      "zhName": "矿物斑驳旧墙",
+      "enName": "Aged Mineral Plaster",
+      "image": "/assets/parameters/bg-aged-mineral-plaster.png?v=20260827-bg-path-fix",
+      "zhPrompt": "矿物色斑驳旧墙背景，褪色石膏层、蓝灰与土黄残留、时间感纹理；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；每种底板遵守真实密度、厚度、接缝、加工方向和反射：拉丝金属纹理方向连续，石材孔洞和脉络不重复，木纹沿板材生长，混凝土与石膏有合理抹压，陶砖有釉层和缝，软木与竹纤维保持植物结构，大漆有层积深度，氧化铜绿依附铜基。避免把照片纹理贴到任意平面、边缘不显厚度、木石金属同样光亮、氧化层无基材或尺度大到像地貌",
+      "enPrompt": "aged mineral plaster wall background, faded paint layers, blue-gray and ochre traces, timeworn texture; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; each board obeys real density thickness join processing direction and reflection: brushed metal grain remains directional, stone pores and veins do not repeat, timber grain follows the board, concrete and plaster show plausible finishing, tile has glaze and grout, cork and bamboo retain plant structure, lacquer has layered optical depth, and verdigris remains attached to a copper base. Avoid photographic texture pasted onto any plane edges with no thickness wood stone and metal sharing one gloss oxidation without a substrate or texture scaled so large that it resembles terrain",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-pale-oak-grain",
+      "category": "background",
+      "styleGroup": "material",
+      "zhName": "浅橡木纹背景",
+      "enName": "Pale Oak Grain",
+      "image": "/assets/parameters/bg-pale-oak-grain.png?v=20260827-bg-path-fix",
+      "zhPrompt": "浅橡木纹背景呈淡蜂蜜或米金色，长直纹理间穿插少量山形纹和细密导管，木板拼接方向一致、宽度合理，哑光透明涂层保留触感并产生柔和反射；适合北欧或自然产品，避免深胡桃色调、重复木纹贴图、板缝无透视、树结过多、亮漆镜面或木纹穿过接缝；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；每种底板遵守真实密度、厚度、接缝、加工方向和反射：拉丝金属纹理方向连续，石材孔洞和脉络不重复，木纹沿板材生长，混凝土与石膏有合理抹压，陶砖有釉层和缝，软木与竹纤维保持植物结构，大漆有层积深度，氧化铜绿依附铜基。避免把照片纹理贴到任意平面、边缘不显厚度、木石金属同样光亮、氧化层无基材或尺度大到像地貌",
+      "enPrompt": "pale oak-grain background in light honey or beige-gold, with mostly long straight grain plus limited cathedral patterns and fine pores, boards joined in one direction at plausible widths and protected by a matte clear finish that preserves touch with soft reflection; suited to Nordic or natural products, avoiding dark walnut color repeated grain tiles seams without perspective excessive knots mirror varnish or grain continuing through board joints; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; each board obeys real density thickness join processing direction and reflection: brushed metal grain remains directional, stone pores and veins do not repeat, timber grain follows the board, concrete and plaster show plausible finishing, tile has glaze and grout, cork and bamboo retain plant structure, lacquer has layered optical depth, and verdigris remains attached to a copper base. Avoid photographic texture pasted onto any plane edges with no thickness wood stone and metal sharing one gloss oxidation without a substrate or texture scaled so large that it resembles terrain",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-raw-artist-canvas",
+      "category": "background",
+      "styleGroup": "fabric",
+      "zhName": "原生画布背景",
+      "enName": "Raw Artist Canvas",
+      "image": "/assets/parameters/bg-raw-artist-canvas.png?v=20260827-bg-path-fix",
+      "zhPrompt": "原生艺术画布背景，细密经纬织纹、未上色米白底和手作媒介感；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；说明纤维、织法、垂坠、张力、接缝和光泽：丝绸与缎面高光沿褶皱移动，天鹅绒吸光并有绒向，亚麻与画布显示经纬，防撕裂尼龙保留格纹与轻量皱折，欧根纱和纱帘具有透明叠层。避免布面像金属镜、所有褶皱等距、织纹比例过大、透明布无后景影响、天鹅绒纯黑死区或布料悬空无固定点",
+      "enPrompt": "raw artist canvas background, fine warp-and-weft texture, unpainted ivory base, handmade art-medium feel; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; describe fiber weave drape tension seam and sheen: silk and satin highlights travel along folds, velvet absorbs light with a visible pile direction, linen and canvas reveal warp and weft, ripstop nylon retains a reinforcement grid and lightweight creasing, and organza or sheer curtains form translucent layers. Avoid fabric behaving like a metal mirror equally spaced folds oversized weave transparent cloth unaffected by what lies behind it featureless black velvet or cloth suspended without attachment",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-corrugated-galvanized-metal",
+      "category": "background",
+      "styleGroup": "material",
+      "zhName": "镀锌波纹板背景",
+      "enName": "Corrugated Galvanized Metal",
+      "image": "/assets/parameters/bg-corrugated-galvanized-metal.png?v=20260827-bg-path-fix",
+      "zhPrompt": "镀锌波纹金属板背景，规则纵向起伏、冷灰反光和粗粝工业感；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；每种底板遵守真实密度、厚度、接缝、加工方向和反射：拉丝金属纹理方向连续，石材孔洞和脉络不重复，木纹沿板材生长，混凝土与石膏有合理抹压，陶砖有釉层和缝，软木与竹纤维保持植物结构，大漆有层积深度，氧化铜绿依附铜基。避免把照片纹理贴到任意平面、边缘不显厚度、木石金属同样光亮、氧化层无基材或尺度大到像地貌",
+      "enPrompt": "corrugated galvanized metal background, regular vertical ridges, cool gray reflections, rugged industrial feel; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; each board obeys real density thickness join processing direction and reflection: brushed metal grain remains directional, stone pores and veins do not repeat, timber grain follows the board, concrete and plaster show plausible finishing, tile has glaze and grout, cork and bamboo retain plant structure, lacquer has layered optical depth, and verdigris remains attached to a copper base. Avoid photographic texture pasted onto any plane edges with no thickness wood stone and metal sharing one gloss oxidation without a substrate or texture scaled so large that it resembles terrain",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-smoked-acrylic",
+      "category": "background",
+      "styleGroup": "special",
+      "zhName": "烟熏亚克力背景",
+      "enName": "Smoked Acrylic",
+      "image": "/assets/parameters/bg-smoked-acrylic.png?v=20260827-bg-path-fix",
+      "zhPrompt": "烟熏半透明亚克力背景，深灰渐变、柔和折射和极简科技感；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；先区分数字镭射渐变与实体虹彩膜：数字背景用受控色场和折射感，不出现真实褶皱；实体薄膜有厚度、折痕和角度依赖反射。磨砂、雨滴、波纹和彩窗玻璃各自遵循粗糙度、折射、液滴重力和结构纹路，亚克力有厚度与边缘，皱褶银箔保留金属反射。避免所有特殊背景统一彩虹、玻璃无后景折射、雨滴横向悬浮、烟熏材质纯黑、银箔像布或重复高光贴图",
+      "enPrompt": "smoked translucent acrylic background, deep gray gradient, soft refraction, minimalist technology feel; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; distinguish a digital holographic gradient from physical iridescent foil: the digital field uses controlled color and refractive suggestion without real creases, while foil has thickness folds and angle-dependent reflection. Frosted rainy ribbed and stained glass follow their own roughness refraction droplet gravity and structural pattern, acrylic has thickness and edges, and crumpled foil retains metallic reflection. Avoid every special surface turned rainbow glass with no refracted background droplets suspended sideways smoked material becoming featureless black foil behaving like cloth or repeated highlight textures",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-amber-stained-glass",
+      "category": "background",
+      "styleGroup": "special",
+      "zhName": "琥珀彩窗背景",
+      "enName": "Amber Stained Glass",
+      "image": "/assets/parameters/bg-amber-stained-glass.png?v=20260827-bg-path-fix",
+      "zhPrompt": "琥珀色彩色玻璃背景，几何铅条分格、温暖透光和复古工艺质感；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；先区分数字镭射渐变与实体虹彩膜：数字背景用受控色场和折射感，不出现真实褶皱；实体薄膜有厚度、折痕和角度依赖反射。磨砂、雨滴、波纹和彩窗玻璃各自遵循粗糙度、折射、液滴重力和结构纹路，亚克力有厚度与边缘，皱褶银箔保留金属反射。避免所有特殊背景统一彩虹、玻璃无后景折射、雨滴横向悬浮、烟熏材质纯黑、银箔像布或重复高光贴图",
+      "enPrompt": "amber stained-glass background, geometric leaded divisions, warm transmitted light, vintage craft texture; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; distinguish a digital holographic gradient from physical iridescent foil: the digital field uses controlled color and refractive suggestion without real creases, while foil has thickness folds and angle-dependent reflection. Frosted rainy ribbed and stained glass follow their own roughness refraction droplet gravity and structural pattern, acrylic has thickness and edges, and crumpled foil retains metallic reflection. Avoid every special surface turned rainbow glass with no refracted background droplets suspended sideways smoked material becoming featureless black foil behaving like cloth or repeated highlight textures",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-raw-concrete",
+      "category": "background",
+      "styleGroup": "material",
+      "zhName": "清水混凝土墙",
+      "enName": "Raw Concrete Wall",
+      "image": "/assets/parameters/bg-raw-concrete.jpg",
+      "zhPrompt": "清水混凝土墙背景呈中性灰色，细小气孔、模板接缝、拉杆孔和轻微色差依据真实浇筑工艺分布，表面哑光坚实且大面积保持克制，侧光可揭示浅微起伏；适合工业极简视觉，避免破败裂墙、均匀噪点滤镜、砖纹、夸张水渍、重复孔洞或把混凝土画成粗糙岩石；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；每种底板遵守真实密度、厚度、接缝、加工方向和反射：拉丝金属纹理方向连续，石材孔洞和脉络不重复，木纹沿板材生长，混凝土与石膏有合理抹压，陶砖有釉层和缝，软木与竹纤维保持植物结构，大漆有层积深度，氧化铜绿依附铜基。避免把照片纹理贴到任意平面、边缘不显厚度、木石金属同样光亮、氧化层无基材或尺度大到像地貌",
+      "enPrompt": "raw architectural-concrete wall background in neutral gray with fine air pores formwork joints tie holes and slight tonal variation distributed according to real casting, the surface matte solid and restrained across broad areas while side light reveals shallow relief; suited to industrial minimal visuals, avoiding a ruined cracked wall uniform noise filter brick pattern exaggerated leaks repeating holes or concrete rendered as rough natural rock; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; each board obeys real density thickness join processing direction and reflection: brushed metal grain remains directional, stone pores and veins do not repeat, timber grain follows the board, concrete and plaster show plausible finishing, tile has glaze and grout, cork and bamboo retain plant structure, lacquer has layered optical depth, and verdigris remains attached to a copper base. Avoid photographic texture pasted onto any plane edges with no thickness wood stone and metal sharing one gloss oxidation without a substrate or texture scaled so large that it resembles terrain",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-translucent-acrylic",
+      "category": "background",
+      "styleGroup": "material",
+      "zhName": "半透明亚克力背景",
+      "enName": "Translucent Acrylic Background",
+      "image": "/assets/parameters/bg-translucent-acrylic.jpg",
+      "zhPrompt": "半透明亚克力背景由有清楚厚度和抛光边缘的板材组成，光线穿过后产生柔和扩散、轻微折射与边缘亮线，板后物体只形成朦胧色块而非完全透明，接触面和支架保持简洁；适合现代产品摄影，避免玻璃裂纹、塑料浑浊、无厚度色片、过强镜像或板材悬空无支撑；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；每种底板遵守真实密度、厚度、接缝、加工方向和反射：拉丝金属纹理方向连续，石材孔洞和脉络不重复，木纹沿板材生长，混凝土与石膏有合理抹压，陶砖有釉层和缝，软木与竹纤维保持植物结构，大漆有层积深度，氧化铜绿依附铜基。避免把照片纹理贴到任意平面、边缘不显厚度、木石金属同样光亮、氧化层无基材或尺度大到像地貌",
+      "enPrompt": "translucent acrylic background made from panels with readable thickness and polished edges, transmitting light as soft diffusion mild refraction and a bright edge line while objects behind become blurred color shapes rather than fully visible and contacts or supports remain clean; suited to modern product photography, avoiding glass cracks cloudy cheap plastic thicknessless color sheets strong mirror images or unsupported floating panels; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; each board obeys real density thickness join processing direction and reflection: brushed metal grain remains directional, stone pores and veins do not repeat, timber grain follows the board, concrete and plaster show plausible finishing, tile has glaze and grout, cork and bamboo retain plant structure, lacquer has layered optical depth, and verdigris remains attached to a copper base. Avoid photographic texture pasted onto any plane edges with no thickness wood stone and metal sharing one gloss oxidation without a substrate or texture scaled so large that it resembles terrain",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-wrinkled-rice-paper",
+      "category": "background",
+      "styleGroup": "paper",
+      "zhName": "皱褶宣纸背景",
+      "enName": "Wrinkled Rice Paper",
+      "image": "/assets/parameters/bg-wrinkled-rice-paper.jpg",
+      "zhPrompt": "皱褶宣纸背景保留米白植物纤维和薄纸透光性，非规则浅皱从受压或展开位置自然延伸，折峰捕捉柔光、凹处略暗但不形成硬折纸结构，纸面仍可承载水墨或极简主体；避免揉成团的剧烈褶皱、塑料膜高光、重复折线贴图、污渍做旧或皱纹穿过主体轮廓造成干扰；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；明确纸浆来源、克重、纤维、压纹、毛边、吸墨和透光性；宣纸平整薄韧，皱褶宣纸有受力来源，水彩棉纸有冷压或粗纹，再生纸显示纤维与压痕，羊皮纸表现真实膜质或历史纸面但不过度做旧。障子纸依附木格，渐变纸的颜色进入纸纤维而非发光。避免纸像塑料、纤维规则重复、所有纸都泛黄、皱纹无方向、压纹穿透背面或墨水尚未使用却满面晕染",
+      "enPrompt": "wrinkled xuan-paper background retaining warm-white plant fibers and thin-paper translucency, with irregular shallow wrinkles extending naturally from compressed or unfolded areas so ridges catch soft light and valleys darken gently without becoming origami structure; remain usable for ink or minimal subjects, avoiding violently crumpled paper plastic-film shine repeated crease textures antique stains or wrinkles cutting distractingly through the subject; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; specify pulp source weight fiber embossing deckle absorption and translucency. Xuan remains thin resilient and mostly flat, wrinkled xuan has a source of compression, watercolor cotton paper shows cold-press or rough tooth, recycled stock reveals inclusions and pressure, and parchment shows credible membrane or aged paper without excessive distress. Shoji paper attaches to a timber lattice and gradient color sits within fibers rather than glowing. Avoid paper resembling plastic regularly repeated fiber every stock yellowed directionless creases embossing passing through the sheet or ink bleeding everywhere before ink has been applied",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-dark-walnut",
+      "category": "background",
+      "styleGroup": "material",
+      "zhName": "深胡桃木背景",
+      "enName": "Dark Walnut Background",
+      "image": "/assets/parameters/bg-dark-walnut.jpg",
+      "zhPrompt": "深胡桃木背景以深棕至巧克力色心材、流动山形与直纹、细孔和偶发小结疤构成，板材拼接宽度与纹理方向一致，哑光油蜡处理让高光温润而不镜面；适合成熟高端产品，避免黑色塑料、重复木纹块、树结过密、板缝无透视、橙红色调过强或纹理跨板连续；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；每种底板遵守真实密度、厚度、接缝、加工方向和反射：拉丝金属纹理方向连续，石材孔洞和脉络不重复，木纹沿板材生长，混凝土与石膏有合理抹压，陶砖有釉层和缝，软木与竹纤维保持植物结构，大漆有层积深度，氧化铜绿依附铜基。避免把照片纹理贴到任意平面、边缘不显厚度、木石金属同样光亮、氧化层无基材或尺度大到像地貌",
+      "enPrompt": "dark walnut background formed from deep brown to chocolate heartwood with flowing cathedral and straight grain fine pores and occasional small knots, boards joined at plausible widths in consistent direction and finished with matte oil-wax for warm non-mirror highlights; suited to mature premium products, avoiding black plastic repeated grain tiles excessive knots seams without perspective overpowering orange-red color or grain continuing across separate boards; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; each board obeys real density thickness join processing direction and reflection: brushed metal grain remains directional, stone pores and veins do not repeat, timber grain follows the board, concrete and plaster show plausible finishing, tile has glaze and grout, cork and bamboo retain plant structure, lacquer has layered optical depth, and verdigris remains attached to a copper base. Avoid photographic texture pasted onto any plane edges with no thickness wood stone and metal sharing one gloss oxidation without a substrate or texture scaled so large that it resembles terrain",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-soft-gradient-paper",
+      "category": "background",
+      "styleGroup": "paper",
+      "zhName": "柔和渐变纸背景",
+      "enName": "Soft Gradient Paper",
+      "image": "/assets/parameters/bg-soft-gradient-paper.jpg",
+      "zhPrompt": "柔和渐变纸背景使用真实纸张或卡纸承载一到两种邻近色的缓慢过渡，纤维和细颗粒在全部色区连续可见，渐变由喷涂、染色或柔光形成且不改变纸面哑光属性，保留充足留白；避免数字色带、彩虹多色、中心发光洞、塑料高光、边缘突变或渐变污染主体轮廓；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；明确纸浆来源、克重、纤维、压纹、毛边、吸墨和透光性；宣纸平整薄韧，皱褶宣纸有受力来源，水彩棉纸有冷压或粗纹，再生纸显示纤维与压痕，羊皮纸表现真实膜质或历史纸面但不过度做旧。障子纸依附木格，渐变纸的颜色进入纸纤维而非发光。避免纸像塑料、纤维规则重复、所有纸都泛黄、皱纹无方向、压纹穿透背面或墨水尚未使用却满面晕染",
+      "enPrompt": "soft gradient-paper background using real paper or card to carry a slow transition between one or two neighboring colors, with fibers and fine grain remaining continuous through every color region and the blend created by spray dye or soft light without losing matte paper character and ample negative space; avoid digital banding rainbow palettes a glowing central hole plastic shine abrupt edges or muddy color contamination around the subject; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; specify pulp source weight fiber embossing deckle absorption and translucency. Xuan remains thin resilient and mostly flat, wrinkled xuan has a source of compression, watercolor cotton paper shows cold-press or rough tooth, recycled stock reveals inclusions and pressure, and parchment shows credible membrane or aged paper without excessive distress. Shoji paper attaches to a timber lattice and gradient color sits within fibers rather than glowing. Avoid paper resembling plastic regularly repeated fiber every stock yellowed directionless creases embossing passing through the sheet or ink bleeding everywhere before ink has been applied",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-pearl-satin",
+      "category": "background",
+      "styleGroup": "fabric",
+      "zhName": "珍珠缎面背景",
+      "enName": "Pearl Satin Background",
+      "image": "/assets/parameters/bg-pearl-satin.jpg",
+      "zhPrompt": "珍珠缎面背景以珠白或淡奶油织物形成宽缓褶皱，紧密织法产生沿曲率流动的柔亮高光，暗部仍保持中性乳白层次并可见细微经纬，不应像镜面或透明丝绸；适合珠宝、婚礼或护肤视觉，避免过曝纯白、塑料膜、每条褶同宽、彩虹珠光或褶皱遮没主体；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；说明纤维、织法、垂坠、张力、接缝和光泽：丝绸与缎面高光沿褶皱移动，天鹅绒吸光并有绒向，亚麻与画布显示经纬，防撕裂尼龙保留格纹与轻量皱折，欧根纱和纱帘具有透明叠层。避免布面像金属镜、所有褶皱等距、织纹比例过大、透明布无后景影响、天鹅绒纯黑死区或布料悬空无固定点",
+      "enPrompt": "pearl satin background in pearl white or pale cream forming broad relaxed folds, with a tight weave producing soft flowing highlights that follow curvature while shadows retain neutral creamy layers and subtle yarn structure rather than mirror or transparent silk; suited to jewelry bridal or skincare visuals, avoiding clipped white plastic film identical folds rainbow iridescence or drapery overwhelming the subject; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; describe fiber weave drape tension seam and sheen: silk and satin highlights travel along folds, velvet absorbs light with a visible pile direction, linen and canvas reveal warp and weft, ripstop nylon retains a reinforcement grid and lightweight creasing, and organza or sheer curtains form translucent layers. Avoid fabric behaving like a metal mirror equally spaced folds oversized weave transparent cloth unaffected by what lies behind it featureless black velvet or cloth suspended without attachment",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-red-lacquer",
+      "category": "background",
+      "styleGroup": "material",
+      "zhName": "朱红大漆背景",
+      "enName": "Red Lacquer Background",
+      "image": "/assets/parameters/bg-red-lacquer.jpg",
+      "zhPrompt": "朱红大漆背景由多层薄漆打磨叠加形成深浅红色内透感，表面平整温润、镜面度受控并在边缘或掠射光下显示漆层深度，细小手工波纹可见但不做破旧；强调大漆工艺而非红塑料，避免金色纹样自动出现、强烈镜面反射、橙色荧光、裂纹满布或主体倒影喧宾夺主；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；每种底板遵守真实密度、厚度、接缝、加工方向和反射：拉丝金属纹理方向连续，石材孔洞和脉络不重复，木纹沿板材生长，混凝土与石膏有合理抹压，陶砖有釉层和缝，软木与竹纤维保持植物结构，大漆有层积深度，氧化铜绿依附铜基。避免把照片纹理贴到任意平面、边缘不显厚度、木石金属同样光亮、氧化层无基材或尺度大到像地貌",
+      "enPrompt": "vermilion lacquer background built from multiple thin polished coats creating optical depth across dark and bright reds, with a smooth warm surface controlled gloss and layer depth visible at edges or grazing light plus restrained handmade waviness without distressing; emphasize true lacquer rather than red plastic, avoiding automatic gold motifs harsh mirror reflections fluorescent orange crackle everywhere or a subject reflection taking over; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; each board obeys real density thickness join processing direction and reflection: brushed metal grain remains directional, stone pores and veins do not repeat, timber grain follows the board, concrete and plaster show plausible finishing, tile has glaze and grout, cork and bamboo retain plant structure, lacquer has layered optical depth, and verdigris remains attached to a copper base. Avoid photographic texture pasted onto any plane edges with no thickness wood stone and metal sharing one gloss oxidation without a substrate or texture scaled so large that it resembles terrain",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-museum-gray-wall",
+      "category": "background",
+      "styleGroup": "studio",
+      "zhName": "博物馆灰墙",
+      "enName": "Museum Gray Wall",
+      "image": "/assets/parameters/bg-museum-gray-wall.jpg",
+      "zhPrompt": "博物馆灰墙背景采用中性偏暖或偏冷的低彩度灰色矿物涂层，墙面大幅平整、细孔克制，柔和轨道灯或洗墙光形成有边界但不过硬的展示亮区，地面接触和墙体转角保持真实；适合艺术品或雕塑陈列，避免水泥废墟感、纯数字灰、舞台光圈、乱码标牌或墙面纹理抢过主体；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；影棚背景需说明无缝纸或墙面宽度、弧形地墙过渡、主体站位、接触阴影和灯光渐变；暖象牙、冷灰、炭黑、雾蓝与暖灰控制色温但不污染主体。博物馆灰墙保留实体墙面与展陈距离，云雾渐变影棚只是受控雾化层而非真实户外云海。避免可见折角、主体超出背景纸、脚下无接触、无缝纸像天空、雾层遮住边缘或渐变产生明显条带",
+      "enPrompt": "museum gray-wall background using a low-chroma neutral mineral coating that may lean slightly warm or cool, broad and smooth with restrained pores while soft track or wall-wash lighting creates a bounded but gentle display zone and floor contact and wall corners remain real; suited to art or sculpture presentation, avoiding ruined concrete character flat digital gray a theatrical spotlight circle gibberish labels or texture competing with the subject; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; a studio background defines sweep or wall width curved wall-to-floor transition subject mark contact shadow and lighting gradient, with warm ivory cool gray charcoal mist blue and warm gray controlling environment temperature without contaminating the subject. A museum-gray wall retains physical surface and display distance, while a mist-cloud studio uses controlled haze rather than an outdoor cloudscape. Avoid visible hard corners subjects extending beyond the sweep feet without contact seamless paper resembling a sky haze erasing edges or obvious gradient banding",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-embossed-recycled-paper",
+      "category": "background",
+      "styleGroup": "paper",
+      "zhName": "压纹再生纸背景",
+      "enName": "Embossed Recycled Paper",
+      "image": "/assets/parameters/bg-embossed-recycled-paper.png?v=20260827-bg-path-fix",
+      "zhPrompt": "背景为暖象牙色压纹再生纸，细小纤维、轻微起伏压纹和温和的环保纸材质感；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；明确纸浆来源、克重、纤维、压纹、毛边、吸墨和透光性；宣纸平整薄韧，皱褶宣纸有受力来源，水彩棉纸有冷压或粗纹，再生纸显示纤维与压痕，羊皮纸表现真实膜质或历史纸面但不过度做旧。障子纸依附木格，渐变纸的颜色进入纸纤维而非发光。避免纸像塑料、纤维规则重复、所有纸都泛黄、皱纹无方向、压纹穿透背面或墨水尚未使用却满面晕染",
+      "enPrompt": "warm ivory embossed recycled paper background with fine fibers, subtle relief, and a gentle sustainable paper texture; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; specify pulp source weight fiber embossing deckle absorption and translucency. Xuan remains thin resilient and mostly flat, wrinkled xuan has a source of compression, watercolor cotton paper shows cold-press or rough tooth, recycled stock reveals inclusions and pressure, and parchment shows credible membrane or aged paper without excessive distress. Shoji paper attaches to a timber lattice and gradient color sits within fibers rather than glowing. Avoid paper resembling plastic regularly repeated fiber every stock yellowed directionless creases embossing passing through the sheet or ink bleeding everywhere before ink has been applied",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-ribbed-glass",
+      "category": "background",
+      "styleGroup": "special",
+      "zhName": "波纹玻璃背景",
+      "enName": "Ribbed Glass Background",
+      "image": "/assets/parameters/bg-ribbed-glass.png?v=20260827-bg-path-fix",
+      "zhPrompt": "背景为半透明波纹玻璃，纵向压花纹理柔化后方色彩与光线，明亮干净且有现代空间感；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；先区分数字镭射渐变与实体虹彩膜：数字背景用受控色场和折射感，不出现真实褶皱；实体薄膜有厚度、折痕和角度依赖反射。磨砂、雨滴、波纹和彩窗玻璃各自遵循粗糙度、折射、液滴重力和结构纹路，亚克力有厚度与边缘，皱褶银箔保留金属反射。避免所有特殊背景统一彩虹、玻璃无后景折射、雨滴横向悬浮、烟熏材质纯黑、银箔像布或重复高光贴图",
+      "enPrompt": "translucent ribbed glass background with vertical fluted texture that diffuses color and light, bright clean and modern; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; distinguish a digital holographic gradient from physical iridescent foil: the digital field uses controlled color and refractive suggestion without real creases, while foil has thickness folds and angle-dependent reflection. Frosted rainy ribbed and stained glass follow their own roughness refraction droplet gravity and structural pattern, acrylic has thickness and edges, and crumpled foil retains metallic reflection. Avoid every special surface turned rainbow glass with no refracted background droplets suspended sideways smoked material becoming featureless black foil behaving like cloth or repeated highlight textures",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-oxidized-copper",
+      "category": "background",
+      "styleGroup": "material",
+      "zhName": "氧化铜绿背景",
+      "enName": "Oxidized Copper Patina",
+      "image": "/assets/parameters/bg-oxidized-copper.png?v=20260827-bg-path-fix",
+      "zhPrompt": "背景为氧化铜绿表面，青绿矿物层与深褐金属底色自然交错，具有时间感和工艺质感；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；每种底板遵守真实密度、厚度、接缝、加工方向和反射：拉丝金属纹理方向连续，石材孔洞和脉络不重复，木纹沿板材生长，混凝土与石膏有合理抹压，陶砖有釉层和缝，软木与竹纤维保持植物结构，大漆有层积深度，氧化铜绿依附铜基。避免把照片纹理贴到任意平面、边缘不显厚度、木石金属同样光亮、氧化层无基材或尺度大到像地貌",
+      "enPrompt": "oxidized copper patina background with teal mineral layers and deep brown metal naturally interwoven, timeworn and crafted; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; each board obeys real density thickness join processing direction and reflection: brushed metal grain remains directional, stone pores and veins do not repeat, timber grain follows the board, concrete and plaster show plausible finishing, tile has glaze and grout, cork and bamboo retain plant structure, lacquer has layered optical depth, and verdigris remains attached to a copper base. Avoid photographic texture pasted onto any plane edges with no thickness wood stone and metal sharing one gloss oxidation without a substrate or texture scaled so large that it resembles terrain",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-crumpled-aluminum-foil",
+      "category": "background",
+      "styleGroup": "special",
+      "zhName": "皱褶银箔背景",
+      "enName": "Crumpled Aluminum Foil",
+      "image": "/assets/parameters/bg-crumpled-aluminum-foil.png?v=20260827-bg-path-fix",
+      "zhPrompt": "背景为哑光皱褶银箔，银灰色折面和受控反射形成冷静的实验感，不呈现彩虹镭射；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；先区分数字镭射渐变与实体虹彩膜：数字背景用受控色场和折射感，不出现真实褶皱；实体薄膜有厚度、折痕和角度依赖反射。磨砂、雨滴、波纹和彩窗玻璃各自遵循粗糙度、折射、液滴重力和结构纹路，亚克力有厚度与边缘，皱褶银箔保留金属反射。避免所有特殊背景统一彩虹、玻璃无后景折射、雨滴横向悬浮、烟熏材质纯黑、银箔像布或重复高光贴图",
+      "enPrompt": "matte crumpled aluminum foil background with silver-gray facets and controlled reflections for a cool experimental feel, without holographic rainbow color; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; distinguish a digital holographic gradient from physical iridescent foil: the digital field uses controlled color and refractive suggestion without real creases, while foil has thickness folds and angle-dependent reflection. Frosted rainy ribbed and stained glass follow their own roughness refraction droplet gravity and structural pattern, acrylic has thickness and edges, and crumpled foil retains metallic reflection. Avoid every special surface turned rainbow glass with no refracted background droplets suspended sideways smoked material becoming featureless black foil behaving like cloth or repeated highlight textures",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-black-ripstop-nylon",
+      "category": "background",
+      "styleGroup": "fabric",
+      "zhName": "黑色防撕裂尼龙背景",
+      "enName": "Black Ripstop Nylon",
+      "image": "/assets/parameters/bg-black-ripstop-nylon.png?v=20260827-bg-path-fix",
+      "zhPrompt": "背景为黑色防撕裂尼龙织物，细密方格织纹、轻微折痕和低调功能性质感清楚；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；说明纤维、织法、垂坠、张力、接缝和光泽：丝绸与缎面高光沿褶皱移动，天鹅绒吸光并有绒向，亚麻与画布显示经纬，防撕裂尼龙保留格纹与轻量皱折，欧根纱和纱帘具有透明叠层。避免布面像金属镜、所有褶皱等距、织纹比例过大、透明布无后景影响、天鹅绒纯黑死区或布料悬空无固定点",
+      "enPrompt": "black ripstop nylon fabric background with a fine grid weave, subtle folds, and a restrained functional texture; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; describe fiber weave drape tension seam and sheen: silk and satin highlights travel along folds, velvet absorbs light with a visible pile direction, linen and canvas reveal warp and weft, ripstop nylon retains a reinforcement grid and lightweight creasing, and organza or sheer curtains form translucent layers. Avoid fabric behaving like a metal mirror equally spaced folds oversized weave transparent cloth unaffected by what lies behind it featureless black velvet or cloth suspended without attachment",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-misty-cloud-studio",
+      "category": "background",
+      "styleGroup": "studio",
+      "zhName": "云雾渐变影棚",
+      "enName": "Misty Cloud Studio",
+      "image": "/assets/parameters/bg-misty-cloud-studio.png?v=20260827-bg-path-fix",
+      "zhPrompt": "背景为淡紫灰与冷雾蓝的无缝云雾渐变影棚，墙地柔和衔接，适合留白人像和产品展示；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；影棚背景需说明无缝纸或墙面宽度、弧形地墙过渡、主体站位、接触阴影和灯光渐变；暖象牙、冷灰、炭黑、雾蓝与暖灰控制色温但不污染主体。博物馆灰墙保留实体墙面与展陈距离，云雾渐变影棚只是受控雾化层而非真实户外云海。避免可见折角、主体超出背景纸、脚下无接触、无缝纸像天空、雾层遮住边缘或渐变产生明显条带",
+      "enPrompt": "seamless misty studio sweep in pale lavender gray and cool mist blue with a soft wall-to-floor transition, suitable for spacious portraits and product display; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; a studio background defines sweep or wall width curved wall-to-floor transition subject mark contact shadow and lighting gradient, with warm ivory cool gray charcoal mist blue and warm gray controlling environment temperature without contaminating the subject. A museum-gray wall retains physical surface and display distance, while a mist-cloud studio uses controlled haze rather than an outdoor cloudscape. Avoid visible hard corners subjects extending beyond the sweep feet without contact seamless paper resembling a sky haze erasing edges or obvious gradient banding",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "background-iridescent-organza",
+      "category": "background",
+      "styleGroup": "fabric",
+      "zhName": "虹彩欧根纱背景",
+      "enName": "Iridescent Organza Background",
+      "image": "/assets/parameters/background-iridescent-organza.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "虹彩欧根纱背景，透明细纱形成轻盈褶皱，并随角度呈现克制的青、粉、紫珠光变色；先把背景定义为一种具体可搭建、可铺设、可印刷或可数字生成的表面，说明成品画幅、主体与背景距离、地面或墙面交界、材质厚度、纹理尺度、光泽、颜色均匀度和受光方向。背景负责分离主体与建立语境，不得改变产品标准色、污染肤色、吞没透明或深色边缘；纹理密度在主体附近降低，重复单元避开明显平铺，接缝、褶皱、纤维、孔洞、反射和透光必须来自真实结构。需要留白或文字时保持对比与安全区。避免背景成为第二主体、纹理穿过人物或产品、所有材质使用相同反射、无来源中心光斑、渐变条带、无限重复贴图、边缘脏污、错误透视、悬浮地面、伪文字、水印或仅用颜色名称代替可观察表面；说明纤维、织法、垂坠、张力、接缝和光泽：丝绸与缎面高光沿褶皱移动，天鹅绒吸光并有绒向，亚麻与画布显示经纬，防撕裂尼龙保留格纹与轻量皱折，欧根纱和纱帘具有透明叠层。避免布面像金属镜、所有褶皱等距、织纹比例过大、透明布无后景影响、天鹅绒纯黑死区或布料悬空无固定点",
+      "enPrompt": "iridescent organza background, translucent fine weave in airy folds with restrained cyan, pink, and violet color shifts across viewing angles; define the background as a concrete surface that can be built laid printed or digitally generated, specifying final aspect ratio subject-to-background distance floor or wall transition material thickness texture scale gloss color uniformity and light direction. The background separates and contextualizes the subject without shifting product standard color contaminating skin or swallowing transparent or dark edges. Reduce texture density near the subject, conceal obvious tile repetition, and derive seams folds fibers pores reflection and translucency from real construction. When negative space or copy is needed preserve contrast and safe zones. Avoid the background becoming a second subject texture crossing people or products identical reflection for every material source-free central hotspots banded gradients infinitely repeated maps dirty edges incorrect perspective floating floors pseudo-writing watermarks or a color name substituted for an observable surface; describe fiber weave drape tension seam and sheen: silk and satin highlights travel along folds, velvet absorbs light with a visible pile direction, linen and canvas reveal warp and weft, ripstop nylon retains a reinforcement grid and lightweight creasing, and organza or sheer curtains form translucent layers. Avoid fabric behaving like a metal mirror equally spaced folds oversized weave transparent cloth unaffected by what lies behind it featureless black velvet or cloth suspended without attachment",
+      "negative": [
+        "busy subject",
+        "readable text",
+        "logo",
+        "uneven material texture"
+      ]
+    }
+  ]
+}

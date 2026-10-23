@@ -1,0 +1,214 @@
+{
+  "parameters": [
+    {
+      "id": "mood-joyful",
+      "category": "mood",
+      "styleGroup": "positive",
+      "zhName": "欢快明亮",
+      "enName": "Joyful",
+      "image": "/assets/parameters/mood-joyful.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "欢快明亮氛围通过开放姿态、轻快动作节奏、清晰高光和明度较高但有主次的色彩建立，环境留有呼吸空间并支持人物互动；快乐来自具体事件与表情而非装饰符号，避免强行大笑、满屏彩纸、所有颜色过饱和或亮到失去细节",
+      "enPrompt": "joyful bright mood built through open posture lively movement rhythm clear highlights and a high-value yet hierarchical palette, with breathing room supporting interaction; happiness arises from specific event and expression rather than decorative symbols, avoiding forced grins confetti everywhere maximum saturation in every color or brightness that erases detail"
+    },
+    {
+      "id": "mood-peaceful",
+      "category": "mood",
+      "styleGroup": "quiet",
+      "zhName": "平静安宁",
+      "enName": "Peaceful",
+      "image": "/assets/parameters/mood-peaceful.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "平静安宁氛围通过稳定水平线、舒展构图、缓慢动作、柔和但有方向的光线和适度留白建立，色彩关系协调且材质细节不过度刺激；环境具有可停留感，避免完全没有对比的灰雾、人物僵直无神、装饰性禅意符号堆砌或把安静误做成空白无内容",
+      "enPrompt": "peaceful calm mood built from stable horizontals spacious composition slow movement soft directional light and measured negative space, with harmonious color relationships and material detail that never becomes visually abrasive; make the environment feel inhabitable, avoiding contrastless gray haze lifeless rigid figures decorative zen symbols or emptiness with no meaningful content"
+    },
+    {
+      "id": "mood-lonely",
+      "category": "mood",
+      "styleGroup": "quiet",
+      "zhName": "孤独忧郁",
+      "enName": "Lonely",
+      "image": "/assets/parameters/mood-lonely.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "孤独忧郁氛围以单人和较大环境尺度差、具有方向的大面积留白、轻微背向姿态和低密度声音想象构成，光线与色彩克制但保留真实层次；孤独来自人与空间关系，避免只加蓝灰滤镜、人物永远低头、空场景无叙事线索或过度戏剧化哭泣",
+      "enPrompt": "lonely melancholic mood created through scale contrast between one figure and a larger environment directional negative space slightly withdrawn posture and an implied quiet soundscape, with restrained light and color retaining real layers; loneliness comes from the person-space relationship, avoiding only a blue-gray filter constant bowed heads empty scenery with no clue or melodramatic crying"
+    },
+    {
+      "id": "mood-mysterious",
+      "category": "mood",
+      "styleGroup": "dark",
+      "zhName": "神秘悬疑",
+      "enName": "Mysterious Atmosphere",
+      "image": "/assets/parameters/mood-mysterious.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "神秘悬疑氛围通过局部遮挡、有限线索、深浅分层和画外空间建立，关键物体只被一束有来源的光揭示，观众能感到未知但仍可理解场景；避免单纯压黑曝光、满地浓雾、随机恐怖符号、血腥元素或完全看不清主体",
+      "enPrompt": "mysterious suspenseful mood built through partial occlusion limited clues layered darkness and implied off-screen space, with one motivated light revealing a key object so the unknown remains intriguing while the scene stays understandable; avoid mere underexposure fog covering everything random horror symbols gore or a subject too dark to read"
+    },
+    {
+      "id": "mood-romantic",
+      "category": "mood",
+      "styleGroup": "positive",
+      "zhName": "浪漫梦幻",
+      "enName": "Romantic Dreamy",
+      "image": "/assets/parameters/mood-romantic.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "浪漫梦幻氛围由亲密但自然的空间距离、柔和目光与手势、细腻冷暖关系和克制高光辉光形成，环境元素服务双方关系而不抢戏；保留真实肤色与场景质感，避免粉色滤镜覆盖、爱心装饰堆砌、僵硬摆拍、过度磨皮或把浪漫等同于婚纱照",
+      "enPrompt": "romantic dreamlike mood formed by intimate yet natural spatial distance subtle gaze and gesture nuanced warm-cool relationships and restrained highlight bloom, with surroundings supporting the relationship rather than competing; preserve real skin and setting texture, avoiding a blanket pink filter heart decorations rigid posing excessive smoothing or reducing romance to wedding photography"
+    },
+    {
+      "id": "mood-melancholic-rain",
+      "category": "mood",
+      "styleGroup": "lonely",
+      "zhName": "雨窗忧郁",
+      "enName": "Melancholic Rain",
+      "image": "/assets/parameters/mood-melancholic-rain.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "雨窗忧郁氛围利用玻璃水痕、窗内外明度差、被雨模糊的远景和安静停顿表现内省，人物可被窗框局部分隔但面部或动作仍有信息；冷湿环境与少量室内暖光形成克制对照，避免雨滴贴图重复、整幅蓝滤镜、夸张哭泣或玻璃反射遮住主体",
+      "enPrompt": "melancholic rain-window mood using water trails on glass interior-exterior value separation softened distance and a quiet pause to suggest introspection, with framing that may partially divide the figure while face or action remains informative; contrast cool wet surroundings with restrained indoor warmth, avoiding tiled raindrop texture a global blue filter exaggerated crying or reflection obscuring the subject"
+    },
+    {
+      "id": "camera-dutch-angle",
+      "category": "camera",
+      "styleGroup": "angle",
+      "zhName": "倾斜构图",
+      "enName": "Dutch Angle",
+      "image": "/assets/parameters/camera-dutch-angle.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "倾斜构图让相机绕光轴有意旋转，使地平线和垂直线产生可读斜角，用于不安、失衡或高速叙事，同时主体重心与画框对角线形成呼应；倾斜幅度应有目的，避免只是画面歪斜、建筑透视崩坏、人物无法站立或每个场景都套用同一角度",
+      "enPrompt": "Dutch-angle composition intentionally rolling the camera around its optical axis so horizon and verticals form a readable slant for unease imbalance or speed, while subject weight relates to the frame diagonal; roll amount must serve the scene, avoiding accidental crookedness collapsed architectural perspective a person who cannot physically stand or the same tilt applied everywhere"
+    },
+    {
+      "id": "camera-handheld-documentary",
+      "category": "camera",
+      "styleGroup": "motion",
+      "zhName": "手持纪实",
+      "enName": "Handheld Documentary",
+      "image": "/assets/parameters/camera-handheld-documentary.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "手持纪实镜头保留轻微呼吸式晃动、瞬间倾斜和边缘切入，摄影者与事件距离可感知，但主体关键动作与环境关系仍清楚；快门速度允许少量真实运动模糊，曝光服从现场光，避免故意剧烈抖动、全片失焦、伪造监控噪点或把随意构图误当纪实",
+      "enPrompt": "handheld documentary camera retaining subtle breathing movement momentary tilt and imperfect edge entries so the photographer's distance to events is perceptible while key action and context remain readable; shutter allows limited real motion blur and exposure follows available light, avoiding violent artificial shake universal defocus fake surveillance noise or careless framing mistaken for documentary truth"
+    },
+    {
+      "id": "camera-rule-of-thirds",
+      "category": "camera",
+      "styleGroup": "composition-rule",
+      "zhName": "三分法构图",
+      "enName": "Rule of Thirds",
+      "image": "/assets/parameters/camera-rule-of-thirds.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "三分法构图把地平线或主要结构放在三分线上，并将关键焦点置于交叉点附近，另一侧保留与视线、动作或环境相关的空间；画面保持视觉重量平衡但不机械对齐，避免把所有物体塞进交叉点、主体贴边、留白无叙事作用或网格线直接出现",
+      "enPrompt": "rule-of-thirds composition placing horizon or major structure along a third line and the key focus near an intersection, leaving purposeful room in the direction of gaze motion or environment; maintain balanced visual weight without mechanical alignment, avoiding every object forced onto intersections a subject touching the edge meaningless empty space or visible grid lines"
+    },
+    {
+      "id": "camera-vanishing-point",
+      "category": "camera",
+      "styleGroup": "visual-guide",
+      "zhName": "单点透视",
+      "enName": "Vanishing Point",
+      "image": "/assets/parameters/camera-vanishing-point.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "单点透视让所有主要纵深线汇聚到地平线上的一个消失点，正对镜头的平面保持平行，走廊、街道或室内结构沿统一网格缩小；主体可放在汇聚区附近引导视线，避免多个互相冲突消失点、墙线弯曲、尺度不随距离变化或把放射装饰误作透视",
+      "enPrompt": "one-point perspective directing all major depth lines toward a single horizon vanishing point while frontal planes remain parallel and corridors streets or interiors recede on one coherent grid; place the subject near the convergence when useful, avoiding conflicting vanishing points bent walls scale that does not diminish with distance or decorative rays mistaken for perspective"
+    },
+    {
+      "id": "camera-triangular-composition",
+      "category": "camera",
+      "styleGroup": "composition-rule",
+      "zhName": "三角构图",
+      "enName": "Triangular Composition",
+      "image": "/assets/parameters/camera-triangular-composition.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "三角构图让三个主要视觉节点或人物群形成稳定或倾斜三角形，底边提供承托、顶点形成焦点，内部视线与动作方向共同维持层级；三角关系应由主体自然位置产生，避免画出可见三角线、三个元素等权僵硬摆放、顶点被裁或背景线条破坏结构",
+      "enPrompt": "triangular composition arranging three primary visual nodes or a figure group into a stable or dynamic triangle, with the base providing support the apex creating focus and internal gazes and gestures maintaining hierarchy; geometry should emerge from natural placement, avoiding a drawn triangle three equally weighted rigid objects a cropped apex or background lines that break the structure"
+    },
+    {
+      "id": "camera-freeze-motion",
+      "category": "camera",
+      "styleGroup": "motion",
+      "zhName": "高速凝固",
+      "enName": "Freeze Motion",
+      "image": "/assets/parameters/camera-freeze-motion.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "高速凝固使用足够快的快门把飞溅、跳跃、运动器材或飘动物体定格在受力最清楚的瞬间，主体边缘锐利而运动方向仍可由姿势和粒子轨迹判断；光量和曝光合理，避免所有物体像静态摆拍、漂浮无重力、快门过慢拖影或锐化光环",
+      "enPrompt": "high-speed freeze motion using a sufficiently fast shutter to arrest splashes jumps equipment or airborne material at the clearest force moment, with crisp subject edges while pose and particle trajectory still reveal direction; maintain plausible light and exposure, avoiding a staged static look unsupported weightlessness slow-shutter streaks or sharpening halos"
+    },
+    {
+      "id": "character-child",
+      "category": "character",
+      "styleGroup": "age-stage",
+      "zhName": "儿童",
+      "enName": "Child",
+      "image": "/assets/parameters/character-child.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "儿童人物采用符合具体年龄段的头身比例、较短四肢、柔和骨相和自然动作，服装、道具与环境符合儿童尺度并保持安全；表情活泼但不过度萌化，避免成人身体配大头、成熟妆容、性化姿势、危险场景无监护或手脚比例随意缩小",
+      "enPrompt": "child character using age-appropriate head-to-body proportion shorter limbs softer bone structure and natural movement, with clothing props and environment scaled safely for a child; expression may be lively without forced cuteness, avoiding an adult body with a large head mature makeup sexualized posing unsafe context without care or arbitrarily tiny hands and feet",
+      "negative": [
+        "unclear identity",
+        "inconsistent character design",
+        "distorted body"
+      ]
+    },
+    {
+      "id": "character-young-adult",
+      "category": "character",
+      "styleGroup": "age-stage",
+      "zhName": "青年",
+      "enName": "Young Adult",
+      "image": "/assets/parameters/character-young-adult.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "青年人物具有成熟但仍富活力的面部与身体比例，肤质、姿态和服装反映具体生活状态而非统一模板，年龄主要通过骨相稳定、动作节奏与少量真实细节表达；避免儿童化大眼、过度磨皮、固定潮流造型或把青年默认成单一性别与职业",
+      "enPrompt": "young adult character with mature yet energetic facial and body proportions, skin posture and wardrobe reflecting an individual life context rather than one template, with age conveyed through settled bone structure movement rhythm and restrained real detail; avoid childlike oversized eyes excessive smoothing mandatory trend styling or assuming one gender or occupation",
+      "negative": [
+        "unclear identity",
+        "inconsistent character design",
+        "distorted body"
+      ]
+    },
+    {
+      "id": "character-elderly",
+      "category": "character",
+      "styleGroup": "age-stage",
+      "zhName": "老年",
+      "enName": "Elderly",
+      "image": "/assets/parameters/character-elderly.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "老年人物通过符合个体经历的皱纹走向、皮肤厚薄、白发比例、手部细节与姿态变化表达年龄，同时保留清楚骨相、眼神和独立个性；体态可健康或需要支撑但不默认虚弱，避免夸张满脸裂纹、统一驼背、牙齿缺失刻板化或把所有老人画成同一面孔",
+      "enPrompt": "elderly character whose age appears through individually plausible wrinkle direction skin thickness gray-hair proportion hand detail and posture while retaining clear bone structure gaze and personality; the body may be vigorous or supported without assuming frailty, avoiding exaggerated cracked skin mandatory stooping stereotyped missing teeth or one generic old face",
+      "negative": [
+        "unclear identity",
+        "inconsistent character design",
+        "distorted body"
+      ]
+    },
+    {
+      "id": "character-athletic",
+      "category": "character",
+      "styleGroup": "body-type",
+      "zhName": "运动型体态",
+      "enName": "Athletic Build",
+      "image": "/assets/parameters/character-athletic.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "运动型体态具有与训练项目相符的肌肉分布、稳定关节和协调姿态，肩背、核心与腿部线条在放松状态下仍自然，不把所有肌肉同时夸张绷紧；动作体现力量与灵活性，避免健美赛式过度块状、极低体脂、解剖错位或仅靠运动服暗示体态",
+      "enPrompt": "athletic build with muscle distribution joint stability and coordination appropriate to the implied activity, shoulders back core and legs remaining natural even at rest rather than every muscle flexed at once; movement communicates strength and mobility, avoiding bodybuilding exaggeration extreme leanness anatomical displacement or sportswear used as the only evidence of fitness",
+      "negative": [
+        "unclear identity",
+        "inconsistent character design",
+        "distorted body"
+      ]
+    },
+    {
+      "id": "character-plus-size",
+      "category": "character",
+      "styleGroup": "body-type",
+      "zhName": "丰满体态",
+      "enName": "Plus-Size",
+      "image": "/assets/parameters/character-plus-size.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "丰满体态以真实骨架为基础呈现较充实的躯干、手臂与腿部体积，脂肪分布、关节活动和身体褶皱随姿势自然变化，服装尺寸与受力匹配；保持人物自信和个体差异，避免夸张球形、嘲讽表情、四肢异常变细、服装穿模或把体态等同于年龄和职业",
+      "enPrompt": "plus-size body built on a credible skeleton with fuller torso arms and legs, natural variation in soft-tissue distribution joint mobility and body folds according to pose, and clothing sized and tensioned appropriately; preserve confidence and individuality, avoiding spherical caricature mocking expression unnaturally thin limbs garment intersections or assumptions about age and occupation",
+      "negative": [
+        "unclear identity",
+        "inconsistent character design",
+        "distorted body"
+      ]
+    },
+    {
+      "id": "character-mage",
+      "category": "character",
+      "styleGroup": "fantasy",
+      "zhName": "法师",
+      "enName": "Mage",
+      "image": "/assets/parameters/character-mage.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "法师角色通过可解释的施法媒介、知识工具、服装层级和与世界观一致的符号建立身份，手势、法器与光效之间存在明确因果，材质磨损说明使用经历；保持原创造型，避免复制知名角色、随机星月符号堆砌、法术无来源、长袍遮住全部动作或道具悬浮穿模",
+      "enPrompt": "mage character established through an understandable casting medium knowledge tools layered costume and symbols coherent with the world, with clear cause between gesture focus object and magical response plus material wear suggesting use; keep the design original, avoiding copied famous characters random celestial symbols source-free effects robes hiding all action or floating intersecting props",
+      "negative": [
+        "unclear identity",
+        "inconsistent character design",
+        "distorted body"
+      ]
+    }
+  ]
+}

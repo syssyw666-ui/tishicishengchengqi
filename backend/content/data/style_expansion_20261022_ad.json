@@ -1,0 +1,316 @@
+{
+  "parameters": [
+    {
+      "id": "pose-side-lying",
+      "category": "pose",
+      "styleGroup": "lying",
+      "zhName": "侧躺",
+      "enName": "Side Lying",
+      "image": "/assets/parameters/pose-side-lying.jpg",
+      "zhPrompt": "侧躺姿势让一侧肩、胸廓、骨盆与腿部依次接触支撑面，下侧手臂放在身体前方或托头而不被压断，上侧腿可轻微前移维持平衡，脊柱和颈部保持连续；接触处有柔和压痕，避免双肩同时平躺、骨盆悬空、手臂穿身、双腿融合或头部无支撑漂浮",
+      "enPrompt": "side-lying pose with one shoulder rib cage pelvis and leg contacting the support in sequence, the lower arm placed forward or supporting the head without being crushed and the upper leg shifting slightly for balance while spine and neck remain continuous; show soft compression at contact, avoiding both shoulders lying flat a floating pelvis an arm through the torso fused legs or an unsupported hovering head",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-reclining",
+      "category": "pose",
+      "styleGroup": "lying",
+      "zhName": "半躺倚靠",
+      "enName": "Reclining",
+      "image": "/assets/parameters/pose-reclining.jpg",
+      "zhPrompt": "半躺倚靠由骨盆落在座面、背部或肘前臂接触靠垫形成斜向支撑，胸廓打开但腰椎不过度塌陷，双腿根据家具长度自然伸展或弯曲，手掌和脚部有明确落点；避免身体像悬浮斜板、肘部无接触承重、脊柱折断、家具穿身或双腿与座面透视矛盾",
+      "enPrompt": "reclining pose supported diagonally by pelvis on the seat and back elbow or forearm against a cushion, with rib cage open without collapsing the lower spine and legs extending or bending according to furniture length while hands and feet have clear placements; avoid a body hovering like a rigid plank an elbow bearing weight without contact a broken spine furniture through the torso or legs contradicting seat perspective",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-curling-up",
+      "category": "pose",
+      "styleGroup": "lying",
+      "zhName": "蜷缩姿势",
+      "enName": "Curled Up",
+      "image": "/assets/parameters/pose-curling-up.jpg",
+      "zhPrompt": "蜷缩姿势让髋膝向胸前屈曲、双臂环抱小腿或身体，脊柱形成连续圆弧并由肩颈顺势内收，重心完整落在座面或侧卧接触区，手指与腿部遮挡关系清楚；避免膝盖穿胸、手臂形成闭合圆环、颈部折叠、四肢数量混乱或身体缩成无骨球体",
+      "enPrompt": "curled-up pose flexing hips and knees toward the chest with arms wrapping the shins or torso, spine forming one continuous curve and shoulders and neck following inward while weight remains grounded on the seat or side contact area and hand-leg occlusion stays clear; avoid knees through the chest arms forming an impossible closed loop a folded neck confused limb count or a boneless spherical body",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-walking",
+      "category": "pose",
+      "styleGroup": "motion",
+      "zhName": "行走",
+      "enName": "Walking",
+      "image": "/assets/parameters/pose-walking.jpg",
+      "zhPrompt": "行走动作表现一脚承重、另一脚向前摆动的步态瞬间，骨盆随支撑腿轻微升降，肩部与手臂自然反向摆动，脚跟到脚尖的滚动和身体前移方向一致；衣摆和头发响应速度，避免双脚同时平贴、同侧手脚同步僵摆、迈步腿反折或人物在原地漂浮",
+      "enPrompt": "walking gait captured with one leg bearing weight and the other swinging forward, pelvis rising subtly over the support leg while shoulders and arms counter-swing naturally and heel-to-toe roll agrees with forward travel; clothing and hair respond to speed, avoiding both feet flat at once rigid same-side arm-leg motion a reversed stepping knee or a figure hovering in place",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-running",
+      "category": "pose",
+      "styleGroup": "motion",
+      "zhName": "奔跑",
+      "enName": "Running",
+      "image": "/assets/parameters/pose-running.jpg",
+      "zhPrompt": "奔跑动作以单脚短暂支撑或双脚腾空阶段表现，躯干略向前、髋膝快速屈伸、后腿蹬地并由对侧手臂前摆维持平衡，落脚点和运动方向清楚；衣物与发丝向后延迟，避免双脚并排站立却加拖影、膝盖反折、手臂同向摆动、步幅超出关节范围或没有地面受力",
+      "enPrompt": "running action shown in a single-support or brief airborne phase, torso leaning slightly forward hips and knees cycling rapidly rear leg pushing off and opposite arm driving ahead for balance with a clear landing point and travel direction; clothing and hair trail behind, avoiding two parallel planted feet with added blur reversed knees arms swinging together stride beyond joint range or motion with no ground force",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-jumping",
+      "category": "pose",
+      "styleGroup": "motion",
+      "zhName": "跳跃",
+      "enName": "Jumping",
+      "image": "/assets/parameters/pose-jumping.jpg",
+      "zhPrompt": "跳跃姿势明确起跳后的腾空阶段，髋膝根据跳跃方向收起或伸展，双臂用于提升、旋转或着陆平衡，身体重心与预期落点连成可信抛物线，衣物和松散物件稍后跟随；避免无起跳来源悬浮、双腿长度变化、脚尖穿地、所有肢体随机张开或运动模糊遮掉关节",
+      "enPrompt": "jumping pose clearly captured after takeoff, hips and knees tucking or extending according to travel direction and arms contributing lift rotation or landing balance while center of mass follows a credible arc toward an implied landing point and loose garments trail slightly; avoid source-free levitation changing leg length feet intersecting ground random star-shaped limbs or blur hiding all joints",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-reaching",
+      "category": "pose",
+      "styleGroup": "motion",
+      "zhName": "伸手触碰",
+      "enName": "Reaching Out",
+      "image": "/assets/parameters/pose-reaching.jpg",
+      "zhPrompt": "伸手触碰动作从肩胛、肩关节、肘和手腕形成连续方向链，身体会向目标轻微移重并由另一侧脚或手保持平衡，指尖与目标之间距离明确且视线同步；若已接触则出现轻微压感，避免手臂无限伸长、肩膀脱位、指头融合、手掌穿过目标或视线指向别处",
+      "enPrompt": "reaching action forming one directional chain through shoulder blade shoulder elbow wrist and fingers, with body weight shifting subtly toward the target and the opposite foot or hand maintaining balance while gaze follows the same destination and fingertip distance remains clear; if contact occurs show slight pressure, avoiding elongated arms dislocated shoulders fused fingers a palm through the object or gaze pointing elsewhere",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-turning-around",
+      "category": "pose",
+      "styleGroup": "motion",
+      "zhName": "转身动作",
+      "enName": "Turning Around",
+      "image": "/assets/parameters/pose-turning-around.jpg",
+      "zhPrompt": "转身动作捕捉双脚换向、骨盆先行或肩部先行的动态中间帧，躯干沿脊柱产生连续扭转，头部和视线随动作略有提前或滞后，衣摆与头发沿原运动方向延迟；区别于静态回眸，避免双脚固定却上身旋转一百八十度、腰部折断、左右肢体互穿或全身没有惯性",
+      "enPrompt": "turning-around action captured mid-transition as feet redirect and either pelvis or shoulders initiate the rotation, torso twisting continuously through the spine while head and gaze lead or lag slightly and garments and hair trail the previous direction; distinguish it from a static look-back pose, avoiding fixed feet with a 180-degree torso broken waist crossing limbs or a body with no inertia",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-hair-flip",
+      "category": "pose",
+      "styleGroup": "motion",
+      "zhName": "甩发动态",
+      "enName": "Hair Flip",
+      "image": "/assets/parameters/pose-hair-flip.jpg",
+      "zhPrompt": "甩发动作由头颈和上躯干的转动产生，发束从发根到发梢沿同一运动弧依次滞后，较重发束弧度更低、细碎发丝在边缘分离，面部仍保持可辨；避免头颈过度反折、全部头发像硬扇、发丝穿脸、左右风向矛盾或只加放射模糊代替真实运动",
+      "enPrompt": "hair-flip action generated by rotation of head neck and upper torso, with strands trailing sequentially from roots to ends along one motion arc, heavier locks following lower curves and fine flyaways separating at edges while the face remains readable; avoid an overextended neck all hair forming a rigid fan strands through the face conflicting directions or radial blur substituted for physical movement",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-ballet-dance",
+      "category": "pose",
+      "styleGroup": "dance",
+      "zhName": "芭蕾舞姿",
+      "enName": "Ballet Pose",
+      "image": "/assets/parameters/pose-ballet-dance.jpg",
+      "zhPrompt": "芭蕾舞姿以清楚支撑脚、外开髋位、延伸膝踝和有控制的躯干轴线建立，手臂从肩背柔和展开，颈部和视线延续动作方向，足尖或半脚尖必须与训练阶段和地面接触相符；避免脚踝反折、膝盖内扣、无支撑高抬腿、僵硬手指或把芭蕾误作普通跳跃摆拍",
+      "enPrompt": "ballet pose built from a clear supporting foot hip turnout extended knees and ankles and a controlled torso axis, with arms opening softly from the back and neck and gaze continuing the movement while pointe or demi-pointe use matches training and floor contact; avoid reversed ankles collapsed knees unsupported extreme leg height rigid fingers or a generic jump mislabeled as ballet",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-street-dance",
+      "category": "pose",
+      "styleGroup": "dance",
+      "zhName": "街舞动作",
+      "enName": "Street Dance",
+      "image": "/assets/parameters/pose-street-dance.jpg",
+      "zhPrompt": "街舞动作依据一个具体律动或定格瞬间组织重心、胸髋分离、膝部弹性和手臂节奏，鞋底与地面保持摩擦或腾空逻辑，宽松服装随急停产生方向明确的褶皱；姿态可不对称但受力清楚，避免随机关节扭曲、手脚同向僵摆、漂浮无落点或用涂鸦背景代替舞蹈动作",
+      "enPrompt": "street-dance pose organized around one specific groove or freeze with readable weight chest-hip isolation spring through knees and rhythmic arm accents, while shoe-floor friction or airborne logic remains credible and loose clothing forms directional folds at sudden stops; asymmetry is welcome when force is clear, avoiding random joint distortion rigid same-direction limbs unsupported floating or graffiti background used instead of actual dance movement",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-ballroom-dance",
+      "category": "pose",
+      "styleGroup": "dance",
+      "zhName": "双人舞姿",
+      "enName": "Ballroom Dance",
+      "image": "/assets/parameters/pose-ballroom-dance.jpg",
+      "zhPrompt": "双人舞姿让领舞与跟随者通过一只相握手和肩背或上臂接触形成稳定舞架，双方脚步沿同一节奏错开，身体间距、视线和旋转轴符合舞步，衣摆随共同运动展开；避免手掌融合、四条腿互穿、身高比例变化、双方各跳不同方向或拥抱过紧失去舞架结构",
+      "enPrompt": "ballroom dance pose connecting lead and follow through one joined hand and a controlled shoulder-back or upper-arm frame, with staggered steps sharing one rhythm and spacing gaze and rotation axis coherent with the dance while garments open around common movement; avoid fused hands four legs intersecting changing body scale partners moving in unrelated directions or a tight hug replacing the dance frame",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "scene-underwater-ruins",
+      "category": "scene",
+      "styleGroup": "fantasy",
+      "zhName": "海底遗迹",
+      "enName": "Underwater Ruins",
+      "image": "/assets/parameters/scene-underwater-ruins.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "海底遗迹以沉降倾斜的石柱、墙体和铺地建立原有建筑秩序，珊瑚、海草、沉积物和生物附着随水深与流向分布，蓝绿环境光、悬浮颗粒和水面焦散共同说明水体；保持遗迹尺度和可探索路径，避免干燥石材、鱼群穿墙、无水光束、所有表面同样长满珊瑚或泡泡满屏",
+      "enPrompt": "underwater ruins retaining the former architectural order through settled tilted columns walls and paving, with coral seagrass sediment and marine growth distributed by depth and current while blue-green ambient light suspended particles and surface caustics establish water; preserve monument scale and an explorable route, avoiding dry stone fish through walls light shafts without water identical coral coverage on every surface or bubbles filling the frame"
+    },
+    {
+      "id": "scene-space-station",
+      "category": "scene",
+      "styleGroup": "fantasy",
+      "zhName": "空间站观景台",
+      "enName": "Space Station",
+      "image": "/assets/parameters/scene-space-station.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "空间站观景台以承压舱壁、加固观察窗、扶手、座椅或工作台和密封通道形成可使用空间，窗外行星弧线、恒星与舱内尺度保持物理一致，冷暖实景灯沿结构布置并在玻璃上产生克制反射；避免开放式无舱壁平台、地球尺寸错误、窗外声音视觉化、玻璃反射遮满星空或无重力物件随意悬浮",
+      "enPrompt": "space-station observation deck built from pressure hull reinforced viewing windows handrails seating or consoles and sealed circulation, with planetary curvature stars and interior scale physically coherent and practical warm-cool lights attached to structure with restrained glass reflection; avoid an open unpressurized balcony incorrect planet size visualized sound outside windows reflections hiding the entire view or random objects floating without a zero-gravity context"
+    },
+    {
+      "id": "scene-alien-planet",
+      "category": "scene",
+      "styleGroup": "fantasy",
+      "zhName": "异星峡谷",
+      "enName": "Alien Planet",
+      "image": "/assets/parameters/scene-alien-planet.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "异星峡谷通过一种连贯地质机制塑造陌生岩柱、侵蚀层和谷底路径，天空颜色、多月亮位置、重力和奇异植被遵循同一生态逻辑，空气散射拉开远近尺度；保留可辨地平线和落脚面，避免随机混合所有科幻元素、每块岩石发光、月亮大小方向矛盾或植被像地球盆栽换色",
+      "enPrompt": "alien canyon shaped by one coherent geological process into unfamiliar spires erosion strata and a traversable valley floor, with sky color moon placement gravity and unusual vegetation following one shared ecology while atmospheric scattering separates distance; retain a readable horizon and support plane, avoiding every science-fiction motif mixed at random glowing rocks everywhere contradictory moon scale or direction and Earth houseplants merely recolored"
+    },
+    {
+      "id": "scene-magical-academy",
+      "category": "scene",
+      "styleGroup": "fantasy",
+      "zhName": "魔法学院",
+      "enName": "Magical Academy",
+      "image": "/assets/parameters/scene-magical-academy.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "魔法学院以可通行大厅、教室、楼梯、书架和训练设施建立真实教育空间，悬浮星仪、符号或法术只作为有规则的教学工具，并由烛光、天窗或法术光提供明确照明，建筑风格保持统一；避免复制知名影视学校、楼梯无连接、随机符号贴满墙、所有物品悬浮或学生与家具比例失衡",
+      "enPrompt": "magical academy designed as a functioning educational environment with navigable halls classrooms stairs libraries and training facilities, where floating instruments symbols or spells operate as rule-bound teaching tools and lighting comes from candles skylights or specific magic within one architectural language; avoid copying a famous fictional school disconnected stairs symbols covering every wall everything floating or students mis-scaled beside furniture"
+    },
+    {
+      "id": "scene-apocalyptic-ruins",
+      "category": "scene",
+      "styleGroup": "fantasy",
+      "zhName": "废土城市遗迹",
+      "enName": "Apocalyptic Ruins",
+      "image": "/assets/parameters/scene-apocalyptic-ruins.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "废土城市遗迹保留道路、楼体骨架和基础设施的原始城市逻辑，再通过坍塌方向、风化、植被回占和有限遗留物说明长期无人维护，光线与天气支持寂静尺度而非灾难瞬间；设置可行走路线，避免每栋楼同样破损、满屏火焰、无来源车辆残骸、乱码警示牌或把废墟做成杂物堆",
+      "enPrompt": "post-apocalyptic urban ruins preserving the original logic of streets structural frames and infrastructure, then showing long abandonment through directional collapse weathering ecological return and restrained remnants, with light and weather supporting quiet scale rather than an active disaster; retain a traversable route, avoiding identical damage on every building flames everywhere source-free wrecked vehicles gibberish warnings or ruins reduced to a random junk pile"
+    },
+    {
+      "id": "scene-steampunk-workshop",
+      "category": "scene",
+      "styleGroup": "fantasy",
+      "zhName": "蒸汽朋克工坊",
+      "enName": "Steampunk Workshop",
+      "image": "/assets/parameters/scene-steampunk-workshop.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "蒸汽朋克工坊由工作台、车床、锅炉、压力表、传动轴、铜管和检修通道构成，齿轮只出现在需要传递动力的位置，蒸汽从阀门或接头泄出并受光线照亮，金属磨损集中在操作区；避免把齿轮贴满墙、管道无连接、压力设备没有安全结构、蒸汽穿墙或用统一棕色滤镜代替机械逻辑",
+      "enPrompt": "steampunk workshop organized around benches lathes boilers gauges drive shafts brass pipes and maintenance access, with gears appearing only where power must transfer, steam escaping from valves or joints and becoming visible in light and metal wear concentrated at operating zones; avoid gears wallpapered everywhere disconnected pipes pressure vessels without safety structure steam through walls or a uniform brown filter replacing mechanical logic"
+    },
+    {
+      "id": "scene-dream-cloud-world",
+      "category": "scene",
+      "styleGroup": "fantasy",
+      "zhName": "梦境云端",
+      "enName": "Dream Cloud World",
+      "image": "/assets/parameters/scene-dream-cloud-world.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "梦境云端世界选择一种清楚的超现实规则，例如阶梯穿过云层或建筑倒置漂浮，并用柔和天光、有限粉蓝配色和大面积空气留白保持宁静，主体与云层仍有尺度和遮挡关系；避免随机堆叠独角兽和彩虹、云朵像棉花球复制、所有物体无重力散落或配色过甜失去层次",
+      "enPrompt": "dream cloud world governed by one clear surreal rule such as stairs passing through clouds or inverted architecture floating above them, using soft sky light a restrained pink-blue palette and broad atmospheric negative space while subjects retain scale and occlusion against cloud layers; avoid random unicorns and rainbows cloned cotton-ball clouds every object scattered without gravity or sugary color that erases depth"
+    },
+    {
+      "id": "scene-bamboo-forest-path",
+      "category": "scene",
+      "styleGroup": "nature",
+      "zhName": "竹林小径",
+      "enName": "Bamboo Forest Path",
+      "image": "/assets/parameters/scene-bamboo-forest-path.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "竹林小径以不同粗细和年龄的竹竿、节间、枝叶与落叶地面建立真实群落，道路随地形轻微弯曲并有远景出口，雾气和林间光随竹冠遮蔽形成前后层次；保持竹竿垂直生长但不过度平行，避免复制栅栏感、竹叶尺寸一致、路径悬空、满屏绿色辉光或加入无关热带植物",
+      "enPrompt": "bamboo forest path formed by culms of varied age and diameter visible nodes branches foliage and leaf-litter ground, with the trail bending gently through terrain toward a distant exit and canopy-filtered haze and light separating depth; keep bamboo generally upright without fence-like parallel cloning, avoiding identical leaf scale a floating path green glow everywhere or unrelated tropical vegetation"
+    },
+    {
+      "id": "scene-terraced-rice-fields",
+      "category": "scene",
+      "styleGroup": "nature",
+      "zhName": "梯田晨光",
+      "enName": "Terraced Rice Fields",
+      "image": "/assets/parameters/scene-terraced-rice-fields.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "梯田晨光场景让等高线田埂顺山势层层延伸，每级水田有合理宽度、灌排连接和水面反射，村落与劳作人物按山体尺度布置，低角度晨光与薄雾逐层衰减；避免梯田像规则楼梯、田埂断裂、水面在陡坡上垂直、人物巨大或每层反射同一片天空贴图",
+      "enPrompt": "terraced rice fields following mountain contours in successive bands, each paddy having plausible width connected irrigation and reflective water while village and workers match landscape scale and low morning light and mist diminish through layers; avoid terraces shaped like perfect stairs broken bunds water standing vertically on steep slopes giant people or the same sky reflection pasted into every level"
+    },
+    {
+      "id": "scene-karst-river-valley",
+      "category": "scene",
+      "styleGroup": "nature",
+      "zhName": "喀斯特河谷",
+      "enName": "Karst River Valley",
+      "image": "/assets/parameters/scene-karst-river-valley.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "喀斯特河谷由陡峭石灰岩峰丛、河流冲积平地和自然岸线构成，峰体溶蚀纹理与植被覆盖随坡度变化，水面倒影受流速和视角影响，湿润空气使远峰逐层变淡；保持河道去向与山体尺度，避免山峰复制成锯齿、镜面倒影完全对称、河流无入口出口或混入雪山地貌",
+      "enPrompt": "karst river valley built from steep limestone tower clusters an alluvial floor and natural banks, with dissolution texture and vegetation changing by slope while water reflection responds to current and viewpoint and humid air fades distant peaks progressively; preserve river direction and mountain scale, avoiding cloned sawtooth peaks perfectly mirrored water a river with no source or outlet or unrelated alpine snow geology"
+    },
+    {
+      "id": "scene-glacier-ice-cave",
+      "category": "scene",
+      "styleGroup": "nature",
+      "zhName": "冰川冰洞",
+      "enName": "Glacier Ice Cave",
+      "image": "/assets/parameters/scene-glacier-ice-cave.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "冰川冰洞以受压冰层、气泡带、裂隙和融水雕刻形成半透明蓝色洞壁，洞顶厚度、入口日光和内部反射共同说明空间，地面湿滑但保留可判断路径与尺度人物；颜色来自冰体吸收而非霓虹灯，避免玻璃宫殿般规则墙面、满洞水晶、无来源蓝光、尖冰穿人或洞顶没有承重厚度",
+      "enPrompt": "glacier ice cave shaped by compressed ice layers bubble bands fractures and meltwater into translucent blue walls, with roof thickness entrance daylight and internal reflection explaining depth plus a wet but readable route and scale figure; color comes from light absorption through ice rather than neon, avoiding regular glass-palace walls crystals everywhere source-free blue glow spikes through people or a roof with no structural mass"
+    },
+    {
+      "id": "scene-floating-island-city",
+      "category": "scene",
+      "styleGroup": "fantasy",
+      "zhName": "浮空岛城",
+      "enName": "Floating Island City",
+      "image": "/assets/parameters/scene-floating-island-city.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "浮空岛城由具有厚度的岩体岛基、可读的城市街区、桥梁、码头或升降设施组成，瀑布必须从岛上水源和排水系统落入云海，建筑尺度随距离递减并由雾层分隔，岛体悬浮机制在世界观中保持一致；避免多个相同岛屿复制、建筑贴在垂直岩壁、瀑布无水源、桥梁无落点或云层像实心地板",
+      "enPrompt": "floating-island city built on rock masses with visible thickness and readable districts bridges docks or lift infrastructure, with waterfalls fed by island water and drainage before falling into the cloud sea, architecture diminishing with distance through haze and one coherent in-world suspension logic; avoid cloned identical islands buildings pasted onto vertical cliffs source-free waterfalls bridges with no destination or clouds behaving like a solid floor"
+    }
+  ]
+}

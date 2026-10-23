@@ -1,0 +1,244 @@
+{
+  "parameters": [
+    {
+      "id": "artist-cezanne",
+      "category": "artist-style",
+      "styleGroup": "impression-post",
+      "zhName": "塞尚式结构色块",
+      "enName": "Paul Cezanne",
+      "image": "/assets/parameters/artist-cezanne.png",
+      "zhPrompt": "后印象派结构绘画以圆柱、球体和锥体般的体积关系组织静物、人物或山体，短而方向明确的笔触沿形面叠加，冷暖色交替塑造空间而不过分依赖明暗；桌面、果盘和建筑允许轻微多视点偏移，但整体重量和构图仍稳定，避免复制具体名画、硬性低多边形、摄影透视完全统一、物体悬浮、颜色平涂无笔触或把几何化误作立方体拼装",
+      "enPrompt": "post-impressionist structural painting organizing still life figures or landscape through volumes akin to cylinder sphere and cone, with short directional strokes accumulating along planes and warm-cool shifts constructing space without depending entirely on tonal modeling; tabletops vessels fruit and architecture may carry slight multi-view displacement while retaining weight balance and a stable overall composition, so observation and construction coexist; avoid copying a specific painting literal low-poly geometry perfectly unified photographic perspective floating objects textureless flat color cubist fragmentation or reducing every natural form to obvious assembled blocks"
+    },
+    {
+      "id": "artist-malevich",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "马列维奇式至上主义",
+      "enName": "Kazimir Malevich",
+      "image": "/assets/parameters/artist-malevich.png",
+      "zhPrompt": "至上主义抽象以方形、矩形、圆、十字和窄条等基础几何在浅色平面上漂浮、旋转并形成张力，大小、倾角、间距和红黑白等有限色彩共同控制视觉重心；形体保持绝对简洁且无透视阴影，空白是构图的一部分，避免复制具体画作、均匀随机散点、三维图标、装饰纹样、渐变发光、可辨物体剪影或用大量小几何填满整个画布",
+      "enPrompt": "Suprematist abstraction using elementary squares rectangles circles crosses and narrow bars that float and rotate across a light plane, with scale angle interval and a restrained red black white or limited-color system controlling visual gravity and tension; forms remain radically simple without perspective or cast shadow, and open ground functions as an active compositional field rather than leftover space; avoid reproducing a specific artwork uniformly random confetti three-dimensional icons decorative pattern repeats gradients glow recognizable object silhouettes centered logo design or filling every area with tiny geometry until the spatial tension disappears"
+    },
+    {
+      "id": "artist-rothko",
+      "category": "artist-style",
+      "styleGroup": "modern-avantgarde",
+      "zhName": "罗斯科式色域",
+      "enName": "Mark Rothko",
+      "image": "/assets/parameters/artist-rothko.png",
+      "zhPrompt": "色域绘画以两到四个大尺度柔边色块悬浮在有复合色层的底色上，边缘由薄层罩染、擦拭和颜料渗透形成呼吸般过渡，色块内部明度与色温有微妙不均；画幅强调沉浸、静默和观看距离，不出现传统主体或硬性几何边，避免复制具体画作、数码线性渐变、霓虹发光矩形、墙纸纹理、过多颜色、清晰描边或把普通模糊背景当作色域绘画",
+      "enPrompt": "color-field painting built from roughly two to four monumental soft-edged zones suspended over a chromatically layered ground, with boundaries produced by thin glazing wiping and pigment penetration so they breathe rather than follow a digital blur; each field contains minute shifts of value temperature and density, and the overall scale invites quiet immersive viewing without a conventional subject or precise geometric edge; avoid copying a specific canvas linear software gradients neon glowing rectangles wallpaper texture many competing colors crisp outlines photographic scenery hidden beneath blur or a generic background swatch with no layered optical depth"
+    },
+    {
+      "id": "artist-dali",
+      "category": "artist-style",
+      "styleGroup": "surreal-symbolic",
+      "zhName": "达利式超现实",
+      "enName": "Salvador Dali",
+      "image": "/assets/parameters/artist-dali.png",
+      "zhPrompt": "古典写实技术承载超现实梦境：清晰低地平线、深远荒漠或寂静建筑空间中，日常物体按梦的逻辑软化、拉长、错置或发生尺度矛盾，投影和材质仍以精确光线维持可信；象征物数量克制并围绕一个核心悖论，避免复制软钟等标志性作品元素、随机融化所有物体、堆满神秘符号、恐怖血腥、无透视拼贴或只用鱼眼畸变冒充超现实主义",
+      "enPrompt": "surreal dream construction rendered with controlled classical realism: beneath a clear low horizon or within a silent architectural space, familiar objects soften elongate relocate or contradict scale according to one dream logic while cast shadows material and directional light remain precisely credible; keep symbolic elements limited and organized around a central paradox so the impossible feels lucid rather than arbitrary; avoid copying iconic melting clocks or another recognizable composition melting every object at random piles of occult symbols gratuitous horror incoherent collage broken perspective or relying on fisheye distortion alone to claim surrealism"
+    },
+    {
+      "id": "artist-magritte",
+      "category": "artist-style",
+      "styleGroup": "surreal-symbolic",
+      "zhName": "马格利特式冷静悖论",
+      "enName": "Rene Magritte",
+      "image": "/assets/parameters/artist-magritte.png",
+      "zhPrompt": "冷静超现实以普通室内、街道、天空和清晰日常物件构成一个逻辑悖论，例如比例、遮挡、昼夜或物体身份发生单一而准确的矛盾；绘画表面平静、光线中性、边缘清楚，构图像理性陈述，使不可思议来自概念而非奇幻特效，避免复制礼帽男子等具体母题、密集象征、烟雾魔法、任意漂浮、戏剧霓虹或用说明文字替代视觉悖论",
+      "enPrompt": "calm conceptual surrealism staging an ordinary interior street clear sky and familiar objects around one exact logical contradiction involving scale occlusion day-night relation or object identity; paint handling remains quiet, illumination neutral and edges legible, with a matter-of-fact composition that makes the impossible emerge from thought rather than fantasy spectacle; avoid copying recognizable bowler-hat figures or another famous motif dense symbolic clutter magic smoke arbitrary floating objects dramatic neon dream filters explanatory text replacing the visual paradox or multiple unrelated impossibilities competing in the same frame"
+    },
+    {
+      "id": "artist-pan-tianshou",
+      "category": "artist-style",
+      "styleGroup": "east-asian",
+      "zhName": "潘天寿式强构成水墨",
+      "enName": "Pan Tianshou",
+      "image": "/assets/parameters/artist-pan-tianshou.png",
+      "zhPrompt": "强构成水墨以奇险取势，将山石、鹰鸟、花卉或枝干压在画面一角、边缘或对角线上，以方折硬朗的骨线、焦墨大块和枯笔飞白对抗大片留白；落墨讲究重心与气势，少量设色只强化结构，印章区域克制且不生成伪文字，避免柔媚小写意、平均铺满纸面、照片式山水、无支撑黑团、装饰金线或把所有中国画对象都做成同一构图",
+      "enPrompt": "forceful modern Chinese ink composition placing rock raptor flower or branch at a risky corner edge or diagonal, opposing angular bone-like contour dense dark ink masses and dry-brush flying white against expansive untouched paper; every heavy mark must carry visual weight and momentum, with limited color serving structure rather than decoration and seal or inscription zones kept abstract without false readable text; avoid delicate uniformly soft freehand painting evenly filling the sheet photographic landscape unsupported black blobs ornamental gold lines timid centered balance or forcing every subject into one repeated corner formula"
+    },
+    {
+      "id": "artist-roy-lichtenstein",
+      "category": "artist-style",
+      "styleGroup": "american-pop",
+      "zhName": "利希滕斯坦式漫画波普",
+      "enName": "Roy Lichtenstein",
+      "image": "/assets/parameters/artist-roy-lichtenstein.png",
+      "zhPrompt": "漫画波普将单一戏剧瞬间压缩为粗黑轮廓、有限原色和平整阴影，肤色或中间调由规则本戴点表现，网点大小与印刷色版一致；人物表情、裁切和对话关系具有漫画分格张力，但默认不生成文字，轻微套印偏差可见，避免复制具体画格、照片直接加网点、渐变塑料高光、全画面同密度圆点、过多颜色或加入可识别商标和台词",
+      "enPrompt": "comic-pop image compressing one dramatic instant into thick black contour a restricted primary palette and flat shadow shapes, with skin or midtones described by regular Ben-Day dots whose scale and registration follow a coherent print plate; expression cropping and implied dialogue carry panel tension even when no text is generated, and slight color misregistration may reveal the mechanical process; avoid reproducing a known panel applying dots over an unchanged photograph glossy gradients identical dot density everywhere too many colors random speech balloons readable trademarks or confusing halftone texture with painterly stippling"
+    },
+    {
+      "id": "artist-edmund-dulac",
+      "category": "artist-style",
+      "styleGroup": "international-illustration",
+      "zhName": "杜拉克式东方童话",
+      "enName": "Edmund Dulac",
+      "image": "/assets/parameters/artist-edmund-dulac.png",
+      "zhPrompt": "黄金时代幻想插图以透明水彩薄层、精细铅墨轮廓和深蓝、孔雀绿、紫罗兰与金色构建夜色童话，人物服饰和植物装饰华丽却保持层次，画面像嵌入书页的完整叙事场景；柔和暗部中保留宝石般局部色彩，边框可克制出现，避免复制具体插图、泛化异域符号、现代动漫五官、数码霓虹、金色覆盖全部细节或让装饰压倒故事动作",
+      "enPrompt": "Golden Age fantasy illustration using transparent watercolor glazing fine pencil-and-ink contour and a deep sapphire peacock green violet and limited gold palette to build a nocturnal tale, with richly observed costume and botanical ornament organized in readable layers like a complete narrative plate set into a book page; jewel-like accents remain visible within soft darkness and a restrained border may support the scene; avoid copying a specific illustration generic exotic symbols modern anime facial design digital neon gold covering every detail decorative framing that overwhelms action or an empty costume display with no story relationship"
+    },
+    {
+      "id": "artist-nc-wyeth",
+      "category": "artist-style",
+      "styleGroup": "international-illustration",
+      "zhName": "怀斯式冒险插画",
+      "enName": "N. C. Wyeth",
+      "image": "/assets/parameters/artist-nc-wyeth.png",
+      "zhPrompt": "经典冒险小说插画以清楚剪影、强烈日光和带重量的动作捕捉叙事高潮，人物身体、服装、船具或武器遵循真实受力，厚实油画笔触与宽阔色块快速建立海岸、荒野或历史环境；机位略低但不夸张，英雄感来自行动和尺度而非摆拍，避免复制具体书封、现代超级英雄姿势、无来源逆光、塑料服装、过度细碎背景或把冲突画成静态合影",
+      "enPrompt": "classic adventure-book illustration using a clear silhouette forceful sunlight and physically weighted action to capture a narrative climax, with bodies clothing rigging tools or weapons obeying real load and thick painterly strokes plus broad color masses rapidly establishing coast wilderness or historical setting; a modestly low viewpoint may add scale without distorting anatomy, and heroism should arise from consequential action rather than posing; avoid copying a known book cover modern superhero stances source-free rim light plastic costume excessive background trivia weightless props or turning conflict into a static group portrait"
+    },
+    {
+      "id": "artist-saul-steinberg",
+      "category": "artist-style",
+      "styleGroup": "editorial-graphic",
+      "zhName": "斯坦伯格式机智线画",
+      "enName": "Saul Steinberg",
+      "image": "/assets/parameters/artist-saul-steinberg.png",
+      "zhPrompt": "机智社论线画以少量敏捷墨线、符号化物件和大片纸面留白提出一个视觉概念，线条可在人物、文字形状、地图或建筑之间发生双关转换，但默认不生成可读长文；构图像思考草图，局部有轻微笔压、断线和克制色块，幽默来自关系而非卡通表情，避免复制具体作品、无意义涂鸦、复杂写实阴影、密集填满、公司图标或靠说明句解释笑点",
+      "enPrompt": "witty editorial line drawing using a small number of agile ink marks symbolic objects and expansive paper to articulate one visual idea, allowing a line to shift meaning among a figure letter-like form map or architecture without defaulting to readable long text; composition should feel like intelligent thinking on paper, retaining pen pressure broken marks and perhaps one restrained color block, with humor emerging from relationships rather than exaggerated faces; avoid copying a specific drawing meaningless doodle realistic modeled shadow dense filling corporate iconography random labels or explanatory sentences that state the joke instead of showing it"
+    },
+    {
+      "id": "artist-aaron-douglas",
+      "category": "artist-style",
+      "styleGroup": "editorial-graphic",
+      "zhName": "道格拉斯式剪影光束",
+      "enName": "Aaron Douglas",
+      "image": "/assets/parameters/artist-aaron-douglas.png",
+      "zhPrompt": "装饰现代主义壁画语言以层叠深色人物剪影、同心圆或放射光束、阶梯城市和音乐劳动场景组织历史叙事，人物姿态在侧面轮廓中保持节奏，色盘限于黑、棕、绿、紫或金黄的协调色阶；透明层叠形成时间与空间推进，避免复制具体壁画、把人物做成无身份图标、随意非洲纹样拼贴、三维光效、霓虹色或让射线遮断核心动作",
+      "enPrompt": "decorative modernist mural language organizing historical narrative through layered dark human silhouettes concentric discs or radiating beams stepped city forms and scenes of music labor or collective movement, with profile gestures carrying rhythm inside a limited black brown green violet or ochre tonal system; transparent overlaps should advance time and space rather than create generic glow, and each silhouette remains tied to an action; avoid copying a specific mural turning people into anonymous icons arbitrary pan-African pattern collage three-dimensional light effects neon color beams cutting through essential gestures or decorative spectacle detached from narrative context"
+    },
+    {
+      "id": "artist-tove-jansson",
+      "category": "artist-style",
+      "styleGroup": "childrens-picturebook",
+      "zhName": "杨松式北欧童话",
+      "enName": "Tove Jansson",
+      "image": "/assets/parameters/artist-tove-jansson.png",
+      "zhPrompt": "北欧童书气质以柔软而准确的墨线、少量排线和水彩灰蓝、苔绿、暖白描绘海岸、森林、岛屿与小型角色，环境细节具有自然观察，留白和天气共同制造安静、孤独又温柔的情绪；角色互动克制且有生活逻辑，避免复制具体角色造型、过分可爱大眼、糖果色、三维动画质感、密集装饰或把忧郁处理成阴森恐怖",
+      "enPrompt": "Nordic storybook atmosphere drawn with soft accurate ink contour sparse hatching and watercolor gray-blue moss green and warm paper, observing coast forest island weather and small figures with natural specificity while whitespace and climate create a mood that is quiet solitary yet kind; character interaction remains restrained and grounded in everyday logic, and the landscape carries as much narrative weight as the figures; avoid copying recognizable characters oversized cute eyes candy color glossy 3D animation dense decoration generic cottagecore or turning gentle melancholy into sinister horror and darkness"
+    },
+    {
+      "id": "ethnic-oroqen",
+      "category": "ethnic-style",
+      "styleGroup": "northeast",
+      "zhName": "鄂伦春桦皮森林",
+      "enName": "Oroqen Birchbark Forest",
+      "image": "/assets/parameters/ethnic-oroqen.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "鄂伦春桦皮森林条目聚焦寒地白桦材料、桦皮器具和具体生活环境：剥取后处理的桦树皮呈浅米色层片、深色皮孔与自然卷边，可通过刻划、缝接和压花形成几何或植物边饰；皮革、木构和针叶林只作为材料语境，色彩克制，避免把历史狩猎生活固定成当代族群唯一身份、随意添加羽毛头饰、混入其他北方民族纹样、奇幻兽皮或把桦皮画成普通木板",
+      "enPrompt": "Oroqen birch-bark forest reference focused on cold-region material culture and a specific lived environment: prepared bark shows pale layered sheets dark lenticel marks and natural curling edges, with scored stitched or embossed geometric and botanical borders on a believable vessel or object; leather timber and conifer forest provide material context in a restrained palette rather than costume spectacle; avoid freezing historic hunting life as the sole identity of contemporary people adding generic feather headdresses mixing motifs from unrelated northern cultures fantasy pelts invented sacred symbols or rendering flexible layered bark as ordinary solid lumber"
+    },
+    {
+      "id": "ethnic-pattern-yi-sun-fire",
+      "category": "ethnic-style",
+      "styleGroup": "pattern-craft",
+      "zhName": "彝族太阳火纹",
+      "enName": "Yi Sun Fire Pattern",
+      "image": "/assets/parameters/ethnic-pattern-yi-sun-fire.png",
+      "zhPrompt": "彝族太阳火纹以放射太阳、回旋火焰、三角和连续几何边带构成有中心层级的装饰系统，黑底承托红、黄与少量白色，纹样可根据漆器、刺绣或织物载体分别呈现光泽、针脚或经纬边界；节庆气质来自节奏与色彩而非堆火焰，避免伪造文字、混入无关图腾、所有表面同样高光、霓虹色、随机锯齿或将单一火纹概括为全部彝族文化",
+      "enPrompt": "Yi sun-and-fire ornament using a radiating solar center spiral flame forms triangles and continuous geometric borders in a clear hierarchy, with black supporting red yellow and limited white; adapt the same vocabulary to lacquer embroidery or weaving through appropriate gloss stitches or warp-weft boundaries rather than applying one flat texture everywhere, and derive festival energy from rhythm and color; avoid invented writing unrelated totems identical shine on every support fluorescent hues random zigzags literal flames covering the object or presenting one fire motif as a complete account of Yi culture"
+    },
+    {
+      "id": "ethnic-pattern-bai-tie-dye-flower",
+      "category": "ethnic-style",
+      "styleGroup": "pattern-craft",
+      "zhName": "白族扎染团花",
+      "enName": "Bai Tie-Dye Flower",
+      "image": "/assets/parameters/ethnic-pattern-bai-tie-dye-flower.png",
+      "zhPrompt": "白族扎染团花以棉布或麻布折叠、扎结、缝缀和靛蓝浸染形成白色防染团花，中心与外圈因压力和染液渗透产生自然深浅、毛边和微小不对称；重复纹样保持手工节奏，布纹、扎结痕和多次浸染层次可见，避免电脑完美同心花、蓝色印刷油墨、硬边矢量、无纤维塑料布、随意渐变或混同蜡染龟裂与普通水彩晕染",
+      "enPrompt": "Bai tie-dye medallion made by folding binding stitching and indigo-dipping cotton or hemp so reserved white flower forms emerge with natural tonal rings feathered seepage and slight asymmetry determined by pressure; repeats retain handmade rhythm, with fabric weave knot marks and multiple immersion depth visible in the blue rather than a printed surface; avoid computer-perfect concentric flowers blue ink printing hard vector edges plastic cloth without fiber arbitrary gradients wax-resist crackle from batik watercolor blooms or identical motifs that ignore the variable mechanics of binding and dye penetration"
+    },
+    {
+      "id": "ethnic-pattern-mongolian-cloud-knot",
+      "category": "ethnic-style",
+      "styleGroup": "pattern-craft",
+      "zhName": "蒙古云结毡毯纹",
+      "enName": "Mongolian Cloud Knot Felt",
+      "image": "/assets/parameters/ethnic-pattern-mongolian-cloud-knot.png",
+      "zhPrompt": "蒙古云结毡毯纹将连续回纹、卷云和结饰安排在厚实羊毛毡或编织毯的中心与边框，蓝、红、金黄和自然羊毛色按对称轴与边带节奏分配；图形边缘略受纤维绒毛软化，针脚或毡化厚度可见，纹样适应帐幕、坐垫或鞍毯尺度，避免把金属云纹直接贴在毡面、过度宫廷化、伪文字、混入藏式法器、无缝数码重复或将草原文化简化成马匹剪影",
+      "enPrompt": "Mongolian cloud-knot felt-rug pattern arranging continuous meanders curling clouds and knot motifs between a central field and structured borders on thick wool felt or woven carpet, with blue red golden yellow and natural fleece distributed through symmetry and border rhythm; fiber nap gently softens edges while stitching or felt thickness remains visible, and motif scale suits a yurt furnishing cushion or saddle rug; avoid metallic palace clouds pasted onto wool excessive court styling pseudo-script Tibetan ritual objects seamless digital repeats generic horse silhouettes or treating one furnishing pattern as the whole of steppe culture"
+    },
+    {
+      "id": "ethnic-pattern-yao-panwang",
+      "category": "ethnic-style",
+      "styleGroup": "pattern-craft",
+      "zhName": "瑶族盘王纹样",
+      "enName": "Yao Panwang Pattern",
+      "image": "/assets/parameters/ethnic-pattern-yao-panwang.png",
+      "zhPrompt": "瑶族盘王纹样应从具体支系、服饰部位和节庆语境出发，以经纬可实现的山形、菱形、人物或神话叙事符号组成密集但有边界的织带与刺绣区；彩线在深色布底上保持针法、方向和层次，银饰仅作结构性点缀，避免把不同瑶族支系图案混成一套、伪造神圣文字、随意堆人像、荧光杂色、现代印花替代手工针脚或将节庆服饰当作日常统一装束",
+      "enPrompt": "Yao Panwang-related ornament should begin from a specified subgroup garment location and festival context, organizing weaveable mountain diamonds figures or mythic narrative signs into dense yet bounded bands and embroidered zones; colored thread stays directionally and technically legible against dark cloth, with silver used only as a structural accent rather than generic sparkle; avoid merging distinct Yao subgroup vocabularies into one costume fabricated sacred writing random piles of human icons fluorescent color modern printed texture substituting for stitches or presenting ceremonial dress as a uniform everyday appearance"
+    },
+    {
+      "id": "ethnic-pattern-qiang-floral-embroidery",
+      "category": "ethnic-style",
+      "styleGroup": "pattern-craft",
+      "zhName": "羌绣羊角花纹",
+      "enName": "Qiang Floral Embroidery",
+      "image": "/assets/parameters/ethnic-pattern-qiang-floral-embroidery.png",
+      "zhPrompt": "羌绣羊角花纹以黑、深蓝或素色布为底，用彩线针脚构成对称或连续的羊角曲线、山地花卉和几何边饰，线迹在转弯、填充和轮廓处使用不同密度，背衬与布纹仍可见；图案顺应围腰、袖口、鞋面或包袋结构，避免把曲线画成印刷卷草、针脚无方向、颜色无限堆叠、混入无关民族符号、伪文字或把所有羌绣都固定为同一黑底模板",
+      "enPrompt": "Qiang ram-horn floral embroidery on black deep-blue or undyed cloth, using colored thread to form symmetrical or continuous horn curves mountain flowers and geometric borders with distinct stitch density for turns fills and contour while backing weave remains visible; place motifs according to the construction of apron cuff shoe upper or bag so seams and wear make sense, and allow documented regional variation; avoid printed scrollwork masquerading as embroidery directionless thread unlimited colors unrelated ethnic emblems pseudo-writing plastic machine-perfect surfaces or reducing all Qiang embroidery to one identical black-ground template"
+    },
+    {
+      "id": "craft-blue-calico",
+      "category": "ethnic-style",
+      "styleGroup": "traditional-craft",
+      "zhName": "蓝印花布",
+      "enName": "Blue Calico Resist Print",
+      "image": "/assets/parameters/craft-blue-calico.png",
+      "zhPrompt": "蓝印花布通过镂版将石灰豆粉等防染浆刮在棉布上，干燥后反复靛蓝浸染，再洗除浆料显出白色花鸟、植物或几何纹；白纹边缘有细小浆裂、渗蓝和布纤维，蓝色深浅来自浸染次数，重复单元清楚但不机械完美，避免普通蓝白印刷、蜡染大龟裂、水彩晕染、瓷器釉面、无纤维矢量图或把所有白处做成纯净数码镂空",
+      "enPrompt": "blue calico produced by scraping a lime-soy resist paste through a cut stencil onto cotton, drying and repeatedly dipping it in indigo before washing the paste away to reveal white botanical bird or geometric motifs; reserved edges retain tiny paste cracks blue seepage and cloth fiber, indigo depth reflects repeated immersion and the repeat remains orderly without mechanical perfection; avoid ordinary blue-and-white printing large batik wax crackle watercolor bleeding ceramic glaze textureless vectors pristine digital cutouts or a generic navy pattern with no evidence of stencil and resist process"
+    },
+    {
+      "id": "craft-shadow-puppet-leather",
+      "category": "ethnic-style",
+      "styleGroup": "traditional-craft",
+      "zhName": "皮影镂刻",
+      "enName": "Shadow Puppet Leather",
+      "image": "/assets/parameters/craft-shadow-puppet-leather.png",
+      "zhPrompt": "皮影镂刻以刮薄、鞣制的半透明兽皮分件雕刻人物，刀口形成连续镂空和细密纹样，矿物或透明染料在背光下呈清亮叠色，关节由线或铆钉连接并允许真实转动；侧面人物轮廓、服饰与戏曲身份清楚，幕布投影与实体皮影方向一致，避免普通纸剪影、三维塑料人偶、关节穿模、正面写实五官、无来源霓虹或把所有区域刻到失去结构支撑",
+      "enPrompt": "Chinese shadow-puppet craft cut from thinned cured translucent hide in articulated figure segments, with continuous knife-cut openwork and fine pattern, mineral or transparent dye glowing under backlight and joints connected by thread or rivets that permit real movement; profile silhouette costume and theatrical role remain readable while the projected shadow agrees with the physical puppet and lamp direction; avoid ordinary paper silhouettes glossy 3D plastic figures impossible intersecting joints frontal photoreal faces source-free neon excessive carving that removes structural bridges or a shadow cast in a direction inconsistent with the puppet"
+    },
+    {
+      "id": "craft-huishan-clay-figurine",
+      "category": "ethnic-style",
+      "styleGroup": "traditional-craft",
+      "zhName": "惠山泥人",
+      "enName": "Huishan Clay Figurine",
+      "image": "/assets/parameters/craft-huishan-clay-figurine.png",
+      "zhPrompt": "惠山泥人以细腻黏土塑成圆润紧凑的人物或儿童造型，体块饱满、重心稳定，衣褶和手势简练；干燥底胎上施白地与红、绿、金等民间彩绘，笔触沿面部和衣饰结构，局部保留手捏与模制痕，表情温和而不过分卡通，避免塑料潮玩高光、瓷器薄胎、身体比例极端、颜色喷涂无笔迹、复制具体名作或混同凤翔泥塑的强烈兽纹造型",
+      "enPrompt": "Huishan clay figurine formed from fine local clay into rounded compact people or children with full volumes stable balance economical folds and clear gestures, then coated after drying with a pale ground and hand-painted folk red green gold and related colors that follow face and costume structure; retain modest pinching molding and brush evidence, with a gentle expression that does not become a glossy mascot; avoid plastic collectible shine thin porcelain body extreme caricature airbrushed color without strokes copies of a known figurine or confusion with the stronger beast motifs and graphic contrast of Fengxiang clay sculpture"
+    },
+    {
+      "id": "craft-fengxiang-clay-sculpture",
+      "category": "ethnic-style",
+      "styleGroup": "traditional-craft",
+      "zhName": "凤翔泥塑",
+      "enName": "Fengxiang Clay Sculpture",
+      "image": "/assets/parameters/craft-fengxiang-clay-sculpture.png",
+      "zhPrompt": "凤翔泥塑以厚实体块和夸张但稳定的虎、兽、人物造型承载民间彩绘，白底上用黑线分区，再填入红、绿、黄等高对比色和花叶、旋涡、护佑纹样；表面保留粗陶颗粒、模印接缝和手绘偏差，气质粗朴有力量，避免惠山泥人式温软人物、塑料玩具光泽、写实动物皮毛、无限细纹、荧光混色或将图案画到看不出泥塑结构",
+      "enPrompt": "Fengxiang clay sculpture using thick stable masses and exaggerated tiger beast or human forms as the support for folk painting, dividing a white ground with black contour before filling strong red green yellow and protective floral or spiral motifs; retain coarse clay grain mold seams and small hand-painted variation so the object feels robust and vernacular; avoid the softer gentle figure language of Huishan clay figurines glossy plastic toys photoreal fur endless micro-pattern fluorescent color anatomical distortion that loses balance or ornament so dense that the underlying clay volume can no longer be read"
+    },
+    {
+      "id": "craft-silver-chasing",
+      "category": "ethnic-style",
+      "styleGroup": "traditional-craft",
+      "zhName": "银饰錾刻",
+      "enName": "Silver Chasing",
+      "image": "/assets/parameters/craft-silver-chasing.png",
+      "zhPrompt": "银饰錾刻以银片经锤揲起伏成型，再用不同錾子从正反面敲出点、线、鱼子地和高低浮雕，花鸟、涡纹或几何边饰顺应项圈、冠饰和挂件曲面；锤痕、氧化暗部和抛光凸面共同显示层次，连接件与重量可信，避免将纹样印成黑线、铸造塑料感、所有凹槽同黑、薄片无支撑、悬浮铃片、过度镜面或把不同民族银饰结构混为一套",
+      "enPrompt": "silver chasing and repousse beginning with sheet metal raised by hammering and worked from front and back with varied punches to create dots lines ring-matted ground and graduated relief, letting floral bird spiral or geometric borders follow the curvature of a collar headdress or pendant; hammer evidence dark oxidation in recesses and polished highlights on raised areas build depth, while connectors and weight remain believable; avoid printed black lines cast-plastic texture equally black grooves unsupported foil floating bells excessive mirror finish impossible thin relief or combining distinct regional and ethnic silver structures into one invented object"
+    },
+    {
+      "id": "craft-lacquer-thread-sculpture",
+      "category": "ethnic-style",
+      "styleGroup": "traditional-craft",
+      "zhName": "漆线雕",
+      "enName": "Lacquer Thread Sculpture",
+      "image": "/assets/parameters/craft-lacquer-thread-sculpture.png",
+      "zhPrompt": "漆线雕以漆料、砖粉等调成可塑细线，搓制后逐段盘、绕、堆、贴在坚实胎体上，形成有连续起伏的龙凤、卷草或吉祥浮雕，线条交接、转角和层高符合真实黏附与承重；金色表层只覆盖凸起漆线，红黑底仍可见，避免把它画成金属花丝、普通金漆描边、无限细线悬浮、注塑浮雕、无底胎结构或让金色镜面遮掉手工盘线层次",
+      "enPrompt": "lacquer-thread sculpture made by mixing lacquer and mineral filler into pliable cords, rolling them to controlled thickness and coiling looping stacking and adhering each segment onto a firm body to create continuous relief dragons phoenixes scrolls or auspicious ornament; junctions turns height and load must reflect real adhesion, with gold applied primarily to raised cord while red or black ground remains visible; avoid confusing it with metal filigree ordinary painted gold outlines infinitely thin floating lines injection-molded relief unsupported openwork or mirror gold that erases the tactile sequence of hand-laid lacquer cords"
+    }
+  ]
+}

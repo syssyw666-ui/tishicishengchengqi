@@ -90,7 +90,6 @@ export const finalSupplementParameters: PromptParameter[] = [
   param("lighting", "light-stained-glass", "interior", "彩窗投影光", "Stained Glass Light", "彩色玻璃投影光，墙面和主体上有多色斑驳光影", "stained-glass projected light, multicolor patterned shadows across walls and subject", lightingNegative),
   param("lighting", "light-rim-only-silhouette", "dramatic", "纯轮廓逆光", "Rim-Light Silhouette", "主体几乎成剪影，只保留边缘轮廓光，神秘且强视觉识别", "near-silhouette subject with only rim light outlining edges, mysterious and graphic", lightingNegative),
 
-  param("purpose", "purpose-educational-infographic", "design", "教学信息图", "Educational Infographic", "图片用途为教学信息图，用简洁图形解释流程、结构或知识点", "educational infographic, simple visual system explaining process, structure, or knowledge point"),
   param("purpose", "purpose-exhibition-display", "design", "展览陈列图", "Exhibition Display", "图片用途为展览陈列，展示墙面、展品、灯光和空间动线关系", "exhibition display image showing walls, works, lighting, and spatial flow"),
 
   param("scene", "scene-rooftop-terrace", "city", "屋顶露台", "Rooftop Terrace", "场景为屋顶露台，城市天际线、户外家具和高处开阔感", "rooftop terrace scene with city skyline, outdoor furniture, and open elevated feeling", sceneNegative),

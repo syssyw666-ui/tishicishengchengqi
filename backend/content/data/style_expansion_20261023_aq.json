@@ -1,0 +1,244 @@
+{
+  "parameters": [
+    {
+      "id": "palette-morandi-blue",
+      "category": "palette",
+      "styleGroup": "morandi",
+      "zhName": "莫兰迪雾蓝",
+      "enName": "Morandi Mist Blue",
+      "image": "/assets/parameters/palette-morandi-blue.png?v=20260827-palette-expansion",
+      "zhPrompt": "莫兰迪雾蓝配色以雾蓝和岩板灰承担约七成背景与大面积结构，燕麦色和柔白用于受光面与留白，低饱和赭黄只占约一成作为温暖焦点；整体明度中高、彩度克制，蓝灰阴影与暖中性色保持冷暖平衡，适合现代室内、静物和编辑视觉，避免五色等量铺满、纯正亮蓝、灰雾吞没层次、赭黄过量或把人物肤色染成蓝灰",
+      "enPrompt": "Morandi mist-blue palette assigning roughly seventy percent of the field to hazy blue and stone-slab gray for background and major structure, using oatmeal and soft white on lit planes and whitespace, and reserving muted ochre for about ten percent as a warm focal accent; keep value moderately high and saturation restrained, balancing cool blue-gray shadows with warm neutrals for interiors still life and editorial design; avoid equal use of all swatches pure vivid blue gray haze that collapses depth excessive ochre blue-gray skin contamination fluorescent accents or a flat overlay that ignores material and illumination"
+    },
+    {
+      "id": "palette-morandi-lavender",
+      "category": "palette",
+      "styleGroup": "morandi",
+      "zhName": "莫兰迪雾紫",
+      "enName": "Morandi Mist Lavender",
+      "image": "/assets/parameters/palette-morandi-lavender.png?v=20260827-palette-expansion",
+      "zhPrompt": "莫兰迪雾紫以灰紫和暖灰作为约六成主色，奶油白提供三成明亮空间，褪灰绿与烟梅色只在植物、织物边缘或视觉焦点小面积出现；色相彼此掺灰但仍能分辨，阴影偏暖灰而不发脏，适合静物、女性时装与安静品牌视觉，避免糖果紫、粉色滤镜、所有物体同灰度、烟梅过重、绿紫互相污染或低对比到主体与背景无法分离",
+      "enPrompt": "Morandi mist-lavender palette using gray violet and warm gray for around sixty percent of the main field, creamy white for roughly thirty percent of luminous breathing space, and faded green plus smoky plum only as small accents on foliage textile edges or focal objects; every hue is softened with gray yet remains distinguishable, with warm-neutral shadows preventing a dirty cast and supporting still life fashion or quiet branding; avoid candy purple global pink filters identical gray value on every object dominant plum green-violet contamination muddy shadows or contrast so low that subject and background merge"
+    },
+    {
+      "id": "palette-nordic-neutral",
+      "category": "palette",
+      "styleGroup": "global",
+      "zhName": "北欧中性配色",
+      "enName": "Nordic Neutral",
+      "image": "/assets/parameters/palette-nordic-neutral.png?v=20260827-palette-expansion",
+      "zhPrompt": "北欧中性配色让燕麦白、暖灰和石灰色覆盖墙面、天空或大面积留白，浅木色承担家具与触感中层，柔黑仅用于框架、文字或少量轮廓建立秩序；明度整体偏高但保留木纹、织物和石材差异，冷暖中性互相校正，适合室内、产品与生活方式摄影，避免全白过曝、米黄单色化、黑色面积过大、木色发橙或用高饱和装饰破坏安静结构",
+      "enPrompt": "Nordic neutral palette covering walls sky or broad whitespace with oat white warm gray and lime-stone tones, assigning pale natural wood to tactile middle layers and reserving soft black for frames typography or limited contour that establishes order; keep the scene high-key while preserving differences among wood textile plaster and stone, with cool and warm neutrals correcting one another for interiors products and lifestyle imagery; avoid clipped all-white exposure monochrome beige treatment excessive black orange wood synthetic saturated decor or smooth surfaces that erase the material variation essential to the restrained palette"
+    },
+    {
+      "id": "palette-morandi-terracotta",
+      "category": "palette",
+      "styleGroup": "morandi",
+      "zhName": "莫兰迪陶土",
+      "enName": "Morandi Terracotta",
+      "image": "/assets/parameters/palette-morandi-terracotta.png?v=20260827-palette-expansion",
+      "zhPrompt": "莫兰迪陶土配色以灰陶土和沙色构成约六成温暖主体，橄榄绿承担三成自然平衡，烟灰与浅粉只在阴影、织物或小物件中点到为止；陶土色应偏灰红而非亮橙，材质保持粉质、陶器与亚麻般柔和，适合室内和静物，避免全画面棕橙、橄榄绿发荧光、浅粉甜腻、阴影死黑、颜色平均分配或将所有材质染成同一种土色",
+      "enPrompt": "Morandi terracotta palette using gray-red clay and sand for roughly sixty percent of the warm foundation, olive green for about thirty percent of natural counterbalance, and smoke gray plus pale blush only in shadows textile or small objects; terracotta should remain dusty and mineral rather than bright orange, with powdery pottery and linen-like surfaces suited to interiors and still life; avoid an all-brown-orange frame fluorescent olive sugary pink crushed black shadows equal distribution of every swatch or tinting wood skin fabric and ceramic into one indistinguishable earthen color"
+    },
+    {
+      "id": "palette-morandi-olive",
+      "category": "palette",
+      "styleGroup": "morandi",
+      "zhName": "莫兰迪橄榄灰",
+      "enName": "Morandi Olive Gray",
+      "image": "/assets/parameters/palette-morandi-olive.png?v=20260827-palette-expansion",
+      "zhPrompt": "莫兰迪橄榄灰以灰橄榄和腻子灰占据约七成环境与主体基色，燕麦白用于受光和留白，烟灰加深结构，褪珊瑚仅占少量作为面部、花卉或标签焦点；绿调保持偏黄灰而不军事化，暗部有层次，适合成熟品牌、时装和安静空间，避免军绿色铺满、珊瑚色过亮、灰色发脏、人物面部泛绿、五色同面积或缺乏明度差导致画面扁平",
+      "enPrompt": "Morandi olive-gray palette placing gray olive and putty gray across roughly seventy percent of environment and base forms, using oat white for light and negative space, smoke gray to articulate structure and faded coral only as a limited focus on faces flowers or labels; keep olive yellowed and muted without turning militaristic, and maintain layered dark values for mature branding fashion and quiet interiors; avoid blanket army green vivid coral dirty neutral haze green-contaminated skin equal swatch area or insufficient value separation that flattens every material into one dull surface"
+    },
+    {
+      "id": "palette-citrus-summer",
+      "category": "palette",
+      "styleGroup": "commercial",
+      "zhName": "柑橘夏日配色",
+      "enName": "Citrus Summer",
+      "image": "/assets/parameters/palette-citrus-summer.png?v=20260827-palette-expansion",
+      "zhPrompt": "柑橘夏日配色以明亮暖白或天空蓝提供约六成清爽背景，橘子橙和柠檬黄集中在水果、标题或关键产品，珊瑚与叶绿作为次级节奏，总高饱和面积控制在三成以内；光线清透、阴影保持中性，让色彩像日晒而非荧光，适合食品、饮品和夏季活动视觉，避免五色满屏竞争、黄绿污染肤色、橙色过曝、糖果渐变、黑色重阴影或缺少大面积呼吸空间",
+      "enPrompt": "citrus-summer palette using bright warm white or open sky blue for roughly sixty percent of a fresh background, concentrating orange and lemon yellow on fruit headline or key product while coral and leaf green create secondary rhythm and total high-chroma area remains below about one third; light should feel sunlit and transparent with neutral shadows so the hues read as natural citrus rather than fluorescent ink, suitable for food beverage and seasonal event imagery; avoid all five colors competing everywhere yellow-green skin spill clipped orange candy gradients heavy black shadow or the absence of a broad quiet field"
+    },
+    {
+      "id": "palette-morandi-rose",
+      "category": "palette",
+      "styleGroup": "morandi",
+      "zhName": "莫兰迪粉绿",
+      "enName": "Morandi Rose and Sage",
+      "image": "/assets/parameters/palette-morandi-rose.png?v=20260827-palette-expansion",
+      "zhPrompt": "莫兰迪粉绿配色以鼠尾草绿、暖灰和奶油白构成约八成安静基底，灰粉用于主体柔和转折，雾蓝只在阴影或远景少量降温；粉与绿都掺入中性灰，肤色保持自然，织物和纸张呈哑光，适合家居、婚礼和生活方式视觉，避免粉绿各占一半造成甜腻、薄荷荧光、全局柔焦、肤色灰白、蓝影过重或把所有物体做成同一粉彩明度",
+      "enPrompt": "Morandi rose-and-sage palette building roughly eighty percent of the calm foundation from sage green warm gray and cream, using dusty rose for gentle subject transitions and mist blue only as a cooling note in shadow or distance; both pink and green are neutralized with gray while skin remains believable and textile or paper stays matte, suitable for home wedding and lifestyle imagery; avoid equal pink-green candy distribution fluorescent mint global soft focus ashen skin dominant blue shadow or giving every object the same pale pastel value and therefore losing focal hierarchy"
+    },
+    {
+      "id": "palette-mediterranean-coast",
+      "category": "palette",
+      "styleGroup": "global",
+      "zhName": "地中海海岸配色",
+      "enName": "Mediterranean Coast",
+      "image": "/assets/parameters/palette-mediterranean-coast.png?v=20260827-palette-expansion",
+      "zhPrompt": "地中海海岸配色以石灰白占据墙面和日照留白，蔚蓝用于天空、水体与门窗形成约三成清凉结构，陶土橙和橄榄绿分布在屋瓦、土壤与植物，日光黄只作极小高光；色彩应由强烈自然光和材质反射产生，阴影偏清凉，适合建筑与旅行视觉，避免蓝橙滤镜、所有房屋纯白过曝、黄绿色过饱和、随意摩洛哥纹样、海水与天空无明度差或城市被涂成主题乐园",
+      "enPrompt": "Mediterranean coastal palette giving lime white the broad walls and sunlit negative space, using clear azure for sky water doors and shutters as roughly a third of the cool structure, placing terracotta orange and olive green on roofs soil and vegetation and reserving sunlight yellow for tiny highlights; color should arise from strong natural light and material reflection with cooler shadows, supporting architecture and travel imagery; avoid a generic blue-orange filter clipped white buildings oversaturated yellow-green arbitrary Moroccan pattern water and sky at the same value or repainting a real town like a synthetic theme park"
+    },
+    {
+      "id": "palette-morandi-apricot",
+      "category": "palette",
+      "styleGroup": "morandi",
+      "zhName": "莫兰迪杏桃配色",
+      "enName": "Morandi Apricot",
+      "image": "/assets/parameters/palette-morandi-apricot.png?v=20260827-palette-expansion",
+      "zhPrompt": "莫兰迪杏桃以灰杏和奶油白承担约六成暖亮背景，藕紫米和鼠尾草灰构成柔和中层，烟蓝只在阴影、玻璃或远景少量出现；杏色接近被日光漂淡的果肉而非橙粉荧光，冷暖在低饱和范围内平衡，适合人像、包装和室内，避免全局杏色滤镜、紫米发脏、烟蓝污染肤色、粉甜儿童感、缺少深色锚点或每种颜色都平均分配",
+      "enPrompt": "Morandi apricot palette assigning dusty apricot and cream to roughly sixty percent of a warm luminous ground, using muted mauve-beige and sage gray for the middle layer and reserving smoke blue for limited shadow glass or distance; apricot should resemble fruit flesh faded by daylight rather than fluorescent orange-pink, with warm and cool notes balanced at low saturation for portrait packaging or interiors; avoid a global apricot filter muddy mauve blue-contaminated skin sugary juvenile styling no dark anchor or equal allocation of every swatch regardless of subject hierarchy"
+    },
+    {
+      "id": "palette-morandi-sea-salt",
+      "category": "palette",
+      "styleGroup": "morandi",
+      "zhName": "莫兰迪海盐配色",
+      "enName": "Morandi Sea Salt",
+      "image": "/assets/parameters/palette-morandi-sea-salt.png?v=20260827-palette-expansion",
+      "zhPrompt": "莫兰迪海盐配色让雾白、贝壳灰和沙米色覆盖约七成纸面、墙面与光照区域，灰水绿承担海岸或主体中层，褪珊瑚只在小物、花卉或人物局部提供温度；整体轻盈但用明度差分开水、天空、砂石和织物，材质保持粉雾哑光，避免全画面苍白、薄荷绿发亮、珊瑚色抢焦、海天融成一片、无深色结构或套用廉价海滩滤镜",
+      "enPrompt": "Morandi sea-salt palette covering roughly seventy percent of paper walls and lit areas with mist white shell gray and sandy beige, using gray water-green for coastal or subject midtones and faded coral only as a small source of warmth on an object flower or figure; keep the image airy while value differences still separate water sky sand stone and textile, with powdery matte surfaces rather than glossy resort color; avoid an entirely washed-out frame luminous mint dominant coral merged sea and sky no darker structural anchor or a cheap beach filter applied regardless of material and weather"
+    },
+    {
+      "id": "palette-alpine-lake",
+      "category": "palette",
+      "styleGroup": "nature",
+      "zhName": "高山湖泊配色",
+      "enName": "Alpine Lake",
+      "image": "/assets/parameters/palette-alpine-lake.png?v=20260827-palette-expansion",
+      "zhPrompt": "高山湖泊配色以深湖蓝和花岗岩灰构成山体、阴影与约六成空间，冰川松石集中在受光水面，雪白用于峰顶和高光，高山林绿沿岸少量压住冷色；颜色随水深、空气透视和高度自然变化，整体清澈冷冽但不荧光，适合自然风景和户外品牌，避免整湖统一青色、雪面过曝、树林发黑、松石覆盖天空、五色等量或把高海拔空气做成强 HDR",
+      "enPrompt": "alpine-lake palette using deep lake blue and granite gray for mountain shadow and roughly sixty percent of spatial structure, concentrating glacial turquoise in sunlit water, reserving snow white for peaks and highlights and placing limited alpine forest green along the shore to anchor the cool field; colors should vary naturally with depth elevation and atmospheric distance, remaining crystalline and cold without fluorescence for landscape or outdoor branding; avoid one uniform cyan lake clipped snow black forest turquoise sky equal swatch usage or aggressive HDR that destroys the soft high-altitude air"
+    },
+    {
+      "id": "palette-moroccan-tile",
+      "category": "palette",
+      "styleGroup": "global",
+      "zhName": "摩洛哥花砖配色",
+      "enName": "Moroccan Tile",
+      "image": "/assets/parameters/palette-moroccan-tile.png?v=20260827-palette-expansion",
+      "zhPrompt": "摩洛哥花砖配色以象牙白或浅灰作为约五成底色，钴蓝和松石绿建立重复几何主纹，陶土色只在边框或节点注入温度，黄铜用于极少缝线和器物高光；颜色受釉面、手绘边界和烧制差异影响而略有变化，适合瓷砖与装饰设计，避免把五色平均填格、霓虹蓝绿、无限复杂图案、金色大面积覆盖、无缝电脑复制或将任意阿拉伯纹样混为一谈",
+      "enPrompt": "Moroccan tile palette using ivory or pale gray for about half of the ground, cobalt blue and turquoise to establish the repeating geometric motif, terracotta only at borders or junctions for warmth and brass in very limited grout-adjacent or object highlights; let glaze hand-painted edges and firing variation produce slight color irregularity suitable for zellige and decorative design; avoid filling every cell equally fluorescent blue-green endlessly complex geometry broad metallic gold seamless computer repetition or treating every Arabesque tradition as one interchangeable pattern without regional and material context"
+    },
+    {
+      "id": "palette-baltic-winter",
+      "category": "palette",
+      "styleGroup": "global",
+      "zhName": "波罗的海冬日配色",
+      "enName": "Baltic Winter",
+      "image": "/assets/parameters/palette-baltic-winter.png?v=20260827-palette-expansion",
+      "zhPrompt": "波罗的海冬日配色以冰蓝、羊毛灰和雾白占据天空、积雪与室内基底，松林灰绿提供中深层次，浅木色温暖家具或建筑，浆果红严格控制在手套、门窗或小型焦点；整体冷中有暖、明度柔和，适合冬季生活方式与旅行画面，避免纯蓝滤镜、雪地死白、松绿发黑、红色面积过大形成节庆广告、木色橙黄或所有材质被统一降饱和到无差别",
+      "enPrompt": "Baltic winter palette using ice blue wool gray and fog white across sky snow and interior foundations, setting pine gray-green as the middle-dark layer, warming furniture or architecture with pale wood and strictly reserving berry red for gloves a door or another small focal cue; maintain gentle value and a cool field containing measured warmth for winter lifestyle or travel imagery; avoid a blanket blue filter blank clipped snow near-black pine excessive red turning the scene into holiday advertising orange wood or indiscriminate desaturation that makes wool ice timber skin and stone visually identical"
+    },
+    {
+      "id": "palette-mexican-folk",
+      "category": "palette",
+      "styleGroup": "global",
+      "zhName": "墨西哥民俗配色",
+      "enName": "Mexican Folk",
+      "image": "/assets/parameters/palette-mexican-folk.png?v=20260827-palette-expansion",
+      "zhPrompt": "墨西哥民俗配色以奶油白、土墙色或深色背景保留约五成承载空间，万寿菊黄与仙人掌绿建立主要节奏，热粉和钴蓝只在花饰、纸艺或局部建筑上交替强调；颜色高纯度但边界和面积有秩序，并保留手刷、织物或陶器材质，避免五色满屏同亮、泛拉美符号拼贴、霓虹渐变、肤色被染色、亡灵节元素自动出现或忽略具体地区与节庆语境",
+      "enPrompt": "Mexican folk palette retaining roughly half the field as cream adobe earth or a dark supporting ground, using marigold yellow and cactus green for the principal rhythm and alternating hot pink with cobalt blue only on flowers paper craft textile or selected architectural details; hues may be highly saturated but boundaries area and material remain ordered with brush fiber or ceramic evidence; avoid all colors equally bright everywhere generic pan-Latin symbol collage neon gradients contaminated skin automatic Day of the Dead motifs or using the palette without specifying the region object and celebration context it belongs to"
+    },
+    {
+      "id": "palette-sci-fi-amber-cyan",
+      "category": "palette",
+      "styleGroup": "cinema",
+      "zhName": "琥珀青科幻配色",
+      "enName": "Amber Cyan Sci-Fi",
+      "image": "/assets/parameters/palette-sci-fi-amber-cyan.png?v=20260827-palette-expansion",
+      "zhPrompt": "琥珀青科幻配色以石墨灰、冷黑和冷白构成约七成设备、舱体与信息背景，电光青只表示导航、扫描或安全状态，琥珀橙承担交互焦点和暖光，警示红严格限于异常或危险；每种发光色必须对应功能与光源并影响邻近材质，适合工业科幻界面和空间，避免青橙平均对半、所有边缘发光、红色装饰化、黑位堵死、无来源霓虹或把人物肤色染成双色金属感",
+      "enPrompt": "amber-cyan science-fiction palette assigning roughly seventy percent of machinery hull and interface ground to graphite gray cool black and controlled white, using electric cyan only for navigation scanning or safe-state information, amber orange for interaction focus and warm practical light, and restricting warning red to actual fault or hazard; each luminous color must have a function and physical source that affects nearby material, suitable for industrial sci-fi systems; avoid equal cyan-orange division glowing every edge decorative warning red crushed blacks source-free neon or turning human skin into a two-tone metallic surface"
+    },
+    {
+      "id": "palette-spring-rain",
+      "category": "palette",
+      "styleGroup": "nature",
+      "zhName": "春雨新绿配色",
+      "enName": "Spring Rain Green",
+      "image": "/assets/parameters/palette-spring-rain.png?v=20260827-palette-expansion",
+      "zhPrompt": "春雨新绿配色以云灰、雨水蓝和雾白形成约六成湿润空气与背景，新叶绿集中在刚萌发植物，湿土棕稳定地面，花粉黄只作细小生机点；表面受水后略加深并出现克制反光，远景因水汽降低饱和度，适合自然、城市雨景和生活方式图像，避免通篇青绿滤镜、荧光嫩绿、积水像镜子、天空纯白、黄色乱撒或雨天仍保持干燥高反差材质",
+      "enPrompt": "spring-rain palette using cloud gray rainwater blue and mist white for roughly sixty percent of moist air and background, concentrating new-leaf green on fresh growth, grounding paths and soil with wet brown and reserving pollen yellow for tiny signs of life; surfaces darken modestly when wet and carry restrained reflection while distance loses saturation through humidity, suitable for nature city rain and lifestyle imagery; avoid a global cyan-green filter fluorescent foliage mirror-like flooding blank white sky yellow scattered without purpose or dry high-contrast materials that contradict the rainy atmosphere"
+    },
+    {
+      "id": "palette-rainforest-orchid",
+      "category": "palette",
+      "styleGroup": "nature",
+      "zhName": "雨林兰花配色",
+      "enName": "Rainforest Orchid",
+      "image": "/assets/parameters/palette-rainforest-orchid.png?v=20260827-palette-expansion",
+      "zhPrompt": "雨林兰花配色以深叶绿、湿炭黑和雾白构成约七成多层植被与潮湿空气，兰花紫集中在花朵或主体焦点，黄绿仅用于透光新叶；暗部仍区分叶片、树皮与水汽，紫色不扩散到整片环境，适合热带自然与香氛美妆视觉，避免荧光森林、黑位一片死暗、紫绿等量竞争、所有叶子同色、无水汽层次或把人工霓虹照明误作自然雨林色彩",
+      "enPrompt": "rainforest-orchid palette building roughly seventy percent of layered vegetation and humid air from deep leaf green wet charcoal and mist white, concentrating orchid violet on flowers or the principal focal subject and reserving yellow-green for backlit new leaves; shadows must still distinguish foliage bark water and vapor, while violet remains localized for tropical nature fragrance or beauty imagery; avoid a fluorescent forest crushed black void equal purple-green competition identical leaves no atmospheric depth or artificial neon lighting misrepresented as the natural color behavior of a wet rainforest"
+    },
+    {
+      "id": "palette-morandi-mustard",
+      "category": "palette",
+      "styleGroup": "morandi",
+      "zhName": "莫兰迪芥末配色",
+      "enName": "Morandi Mustard",
+      "image": "/assets/parameters/palette-morandi-mustard.png?v=20260827-palette-expansion",
+      "zhPrompt": "莫兰迪芥末配色以燕麦、炭灰和灰绿承担约七成空间与结构，灰芥末黄作为主要暖色集中在家具、服装或标题，陶土色只在小面积呼应；黄色掺灰且明度适中，不像警示色，纹理偏哑光织物、陶器与纸张，适合复古现代室内和品牌视觉，避免满屏黄褐、亮柠檬黄、灰绿发脏、陶土过红、缺少深色锚点或把人物肤色也处理成芥末色",
+      "enPrompt": "Morandi mustard palette assigning roughly seventy percent of space and structure to oatmeal charcoal and gray green, concentrating muted mustard on furniture clothing or a headline and using terracotta only as a small echo; yellow stays gray-mixed and moderate in value rather than warning-bright, with matte textile ceramic and paper surfaces supporting retro-modern interiors and branding; avoid an all yellow-brown frame vivid lemon dirty green dominant red clay no dark anchor equal swatch use or tinting human skin and every natural material into the same mustard cast"
+    },
+    {
+      "id": "palette-beauty-nude-rose",
+      "category": "palette",
+      "styleGroup": "commercial",
+      "zhName": "裸粉美妆配色",
+      "enName": "Nude Rose Beauty",
+      "image": "/assets/parameters/palette-beauty-nude-rose.png?v=20260827-palette-expansion",
+      "zhPrompt": "裸粉美妆配色以裸米与柔白覆盖约六成背景和包装，灰玫瑰贴合腮红、唇色或花材，可可棕用于文字与轮廓，香槟金只在金属边缘和高光小面积出现；肤色保持多样且不被统一漂白，表面呈丝绒、粉霜与细腻金属差异，适合美妆产品和人像，避免通篇粉色滤镜、金色廉价闪粉、肤色塑料化、可可棕过重、五色平均或文字对比不足",
+      "enPrompt": "nude-rose beauty palette covering roughly sixty percent of background and packaging with nude beige and soft white, relating dusty rose to blush lip or botanical accents, using cocoa brown for type and contour and reserving champagne gold for tiny metallic edges and highlights; preserve diverse believable skin rather than whitening every complexion, and distinguish velvet powder cream and fine metal surfaces for cosmetic product or portrait imagery; avoid a blanket pink filter cheap gold glitter plastic skin dominant cocoa equal swatch allocation low text contrast or making package face and background one undifferentiated nude tone"
+    },
+    {
+      "id": "palette-celadon-garden",
+      "category": "palette",
+      "styleGroup": "chinese",
+      "zhName": "青瓷园林配色",
+      "enName": "Celadon Garden",
+      "image": "/assets/parameters/palette-celadon-garden.png?v=20260827-palette-expansion",
+      "zhPrompt": "青瓷园林配色以青瓷绿、淡青和暖象牙白占据约七成建筑、器物与留白，墨黑只勾勒木构、石景或文字层次，低饱和金色严格用于扣件与小型焦点；青色应具有釉层深浅和水汽透明感，材质区分瓷、纸、木与石，适合中式空间和产品视觉，避免整画面青绿色滤镜、金色大面积宫廷化、瓷器塑料光、墨黑堵塞、青白无明度差或随意添加古文字",
+      "enPrompt": "celadon-garden palette assigning roughly seventy percent of architecture object and whitespace to celadon green pale cyan and warm ivory, using ink black only to articulate timber stone or typographic structure and strictly reserving muted gold for hardware and a small focal accent; cyan-green should carry glaze depth and humid transparency while ceramic paper wood and stone remain materially distinct, suitable for Chinese interiors and product design; avoid a global green filter broad palace gold plastic ceramic shine crushed ink black no value difference between pale blue and white or arbitrary pseudo-classical writing"
+    },
+    {
+      "id": "palette-dunhuang-mineral",
+      "category": "palette",
+      "styleGroup": "chinese",
+      "zhName": "敦煌矿物色",
+      "enName": "Dunhuang Mineral",
+      "image": "/assets/parameters/palette-dunhuang-mineral.png?v=20260827-palette-expansion",
+      "zhPrompt": "敦煌矿物配色以沙色和赭黄构成约五成壁面与历史基底，石青、石绿分配在服饰、天空和装饰层，朱砂红只强化核心人物或边带；颜色来自矿物颗粒与胶彩叠层，亮而不荧光，磨损处露出底层而非统一褪色，适合壁画与文化视觉，避免五色同饱和铺满、金碧商业化、伪经文、石青污染肤色、随机龟裂或混入不同时代的装饰体系",
+      "enPrompt": "Dunhuang mineral palette using sand and ochre for roughly half of the wall and historical ground, distributing azurite blue and malachite green across garments sky and ornament and reserving cinnabar red to reinforce a principal figure or border; color should arise from granular mineral pigment and layered binder, vivid without fluorescence, with wear revealing underlayers rather than a uniform fade; avoid every color at equal saturation commercial gold excess pseudo-script blue-contaminated skin random crackle or mixing decorative systems from unrelated periods and regions into one generic ancient mural"
+    },
+    {
+      "id": "palette-neon-night",
+      "category": "palette",
+      "styleGroup": "cinema",
+      "zhName": "霓虹夜景配色",
+      "enName": "Neon Night",
+      "image": "/assets/parameters/palette-neon-night.png?v=20260827-palette-expansion",
+      "zhPrompt": "霓虹夜景配色以黑色、深紫和铬灰保留约七成夜间环境，青蓝与洋红分别绑定不同灯牌、车灯或室内光源，并只在湿地、玻璃和金属上产生方向一致的反射；肤色由附近主光有限染色，暗部仍有结构，适合都市电影和科幻夜景，避免青紫满屏滤镜、所有边缘发光、无来源色雾、黑位死黑、反射方向混乱、人物双色塑料皮肤或霓虹亮度完全相同",
+      "enPrompt": "neon-night palette preserving roughly seventy percent of the night environment in black deep violet and chrome gray, assigning cyan and magenta to distinct signs vehicle lamps or interior sources and allowing them to reflect consistently only on wet pavement glass and metal; nearby key light may tint skin locally while shadow structure remains readable, suitable for urban cinema and science-fiction night scenes; avoid a full-screen cyan-purple filter glowing every edge source-free colored fog crushed blacks contradictory reflection directions two-tone plastic skin or every neon source having identical intensity and no spatial falloff"
+    },
+    {
+      "id": "palette-japanese-indigo",
+      "category": "palette",
+      "styleGroup": "global",
+      "zhName": "日式靛蓝配色",
+      "enName": "Japanese Indigo",
+      "image": "/assets/parameters/palette-japanese-indigo.png?v=20260827-palette-expansion",
+      "zhPrompt": "日式靛蓝配色以靛蓝和褪蓝构成约六成织物、墙面或夜色层次，暖白承担纸张与留白，雪松棕用于木构和器物，炭黑只压住细节和轮廓；靛蓝随纤维、染色次数和磨损出现深浅，不把所有材质统一染蓝，适合服饰、包装和安静空间，避免纯电蓝、蓝白瓷化、黑色过重、木色发橙、无纤维数码平涂或随意加入红日与伪日文符号",
+      "enPrompt": "Japanese indigo palette using indigo and faded blue for roughly sixty percent of textile wall or evening depth, warm white for paper and negative space, cedar brown for timber and objects and charcoal only to anchor fine contour; indigo varies with fiber immersion count folds and wear rather than tinting every material uniformly, supporting clothing packaging and quiet interiors; avoid electric blue automatic blue-and-white porcelain styling excessive black orange wood textureless digital fill or arbitrary red suns pseudo-Japanese writing and unrelated motifs used as shortcuts for cultural identity"
+    },
+    {
+      "id": "palette-morandi-charcoal-rose",
+      "category": "palette",
+      "styleGroup": "morandi",
+      "zhName": "莫兰迪炭粉配色",
+      "enName": "Morandi Charcoal Rose",
+      "image": "/assets/parameters/palette-morandi-charcoal-rose.png?v=20260827-palette-expansion",
+      "zhPrompt": "莫兰迪炭粉配色以炭灰、灰褐和骨白建立约八成成熟中性结构，灰玫瑰用于主体或面部附近柔化，褪莓红只占极小比例引导视线；暗部保持织物、皮革与纸张细节，粉色不甜腻、红色不变酒红主调，适合时装、品牌与编辑摄影，避免全画面灰蒙、黑色压死、粉红滤镜、莓红抢焦、肤色失真、颜色同明度或无留白的沉闷商业感",
+      "enPrompt": "Morandi charcoal-rose palette establishing roughly eighty percent of a mature neutral structure with charcoal taupe and bone white, using dusty rose to soften the principal subject or area near a face and reserving faded berry red as a very small eye-leading accent; dark values retain textile leather and paper detail, pink stays unsweet and red does not become a dominant wine scheme, suitable for fashion branding and editorial photography; avoid blanket gray haze crushed black a global pink filter dominant berry distorted skin identical value across all colors or a heavy commercial frame with no breathing space"
+    }
+  ]
+}

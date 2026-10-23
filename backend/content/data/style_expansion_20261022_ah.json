@@ -1,0 +1,289 @@
+{
+  "parameters": [
+    {
+      "id": "layout-centered-hero",
+      "category": "layout",
+      "styleGroup": "subject-position",
+      "zhName": "中心主视觉",
+      "enName": "Centered Hero",
+      "image": "/assets/parameters/layout-centered-hero.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "中心主视觉版式把唯一核心主体放在画面几何中心或略高于中心的位置，主体轮廓完整、左右视觉重量稳定，背景细节从中心向外递减，并在四周保留可裁切余量与必要标题区；适合产品、人物或标志性物体，避免机械绝对对称、主体过小、中心被高光掏空、四角同样拥挤或多个对象争抢焦点",
+      "enPrompt": "centered hero layout placing one primary subject at the geometric center or slightly above it, with a complete silhouette stable left-right visual weight and background detail decreasing outward while safe crop margins and optional title space remain around the frame; suited to products people or iconic objects, avoiding rigid perfect symmetry an undersized subject a blown-out empty center equally busy corners or multiple objects competing for focus"
+    },
+    {
+      "id": "layout-left-empty",
+      "category": "layout",
+      "styleGroup": "negative-space",
+      "zhName": "左侧留空",
+      "enName": "Left Empty Space",
+      "image": "/assets/parameters/layout-left-empty.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "左侧留空版式将主体集中在右侧约三分之一至二分之一范围，动作、视线和背景线条不能逆向挤压左侧，左侧形成连续、低细节且明度稳定的标题或文案安全区，主体与留白之间有自然过渡；避免把主体贴到右边缘、留白中出现强高光或杂物、背景透视线切断文字区或仅用纯色矩形硬分割",
+      "enPrompt": "left-negative-space layout concentrating the subject within the right third to half of the frame while gaze action and background lines avoid pushing back into the left, creating one continuous low-detail stable-value safe area for copy with a natural transition into the subject zone; avoid pinning the subject to the right edge bright highlights or clutter inside the empty area perspective lines cutting through copy space or a hard flat rectangle used as separation"
+    },
+    {
+      "id": "layout-right-empty",
+      "category": "layout",
+      "styleGroup": "negative-space",
+      "zhName": "右侧留空",
+      "enName": "Right Empty Space",
+      "image": "/assets/parameters/layout-right-empty.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "右侧留空版式将主体安置在左侧约三分之一至二分之一范围，人物视线、产品朝向或环境动线可以自然指向右侧但不占满，右侧保持连续低细节和可读对比供标题或按钮使用；边缘预留裁切余量，避免主体贴左边、右侧出现树枝人群等干扰、留白被强烈纹理填满或用生硬分栏切割空间",
+      "enPrompt": "right-negative-space layout placing the subject within the left third to half of the frame, allowing gaze product orientation or environmental flow to lead naturally toward the right without filling it while the right remains a continuous low-detail readable zone for title or controls; keep crop allowance at edges, avoiding a subject stuck to the left border branches or crowds entering the open area strong texture filling the space or a rigid split panel replacing spatial continuity"
+    },
+    {
+      "id": "layout-top-empty",
+      "category": "layout",
+      "styleGroup": "negative-space",
+      "zhName": "上方留空",
+      "enName": "Top Empty Space",
+      "image": "/assets/parameters/layout-top-empty.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "上方留空版式把主要主体与地面关系稳定放在下半部或下三分之二，上方保留连续天空、墙面或低细节色彩区作为标题安全区，垂直动线从主体向上延伸但不能穿满留白，画面重心仍稳定；避免主体被压扁在底边、上方出现树冠灯具等杂物、地平线过高、纯色硬盖或留白亮度导致文字不可读",
+      "enPrompt": "top-negative-space layout grounding the main subject and support plane in the lower half or lower two thirds, preserving continuous sky wall or low-detail color above as a title-safe zone while vertical flow may rise from the subject without filling that space and the composition remains stable; avoid crushing the subject against the bottom edge branches or fixtures cluttering the top an excessively high horizon a hard color overlay or brightness that makes future type unreadable"
+    },
+    {
+      "id": "layout-bottom-empty",
+      "category": "layout",
+      "styleGroup": "negative-space",
+      "zhName": "下方留空",
+      "enName": "Bottom Empty Space",
+      "image": "/assets/parameters/layout-bottom-empty.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "下方留空版式将主体与主要叙事集中在上半部，底部保留连续纸面、地面虚化或低细节色带供说明与信息排版，主体必须有合理支撑或环境连接而非悬浮，空白高度在不同裁切下仍稳定；避免脚部被切断、底部出现强反射杂物、硬贴白色条带、留白与上方光线割裂或主体头顶贴边",
+      "enPrompt": "bottom-negative-space layout concentrating the subject and narrative in the upper half while reserving a continuous paper field defocused ground or low-detail band below for explanatory information, with the subject remaining physically supported or connected rather than floating and the open height surviving alternate crops; avoid severed feet strong reflections or clutter below a pasted white strip lighting discontinuity between zones or the subject touching the top edge"
+    },
+    {
+      "id": "layout-lower-left",
+      "category": "layout",
+      "styleGroup": "subject-position",
+      "zhName": "左下角主体",
+      "enName": "Lower-Left Subject",
+      "image": "/assets/parameters/layout-lower-left.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "左下角主体版式把主体锚定在左下三分交点附近并保留完整接触面，视觉重量由右上方的空间、光线或次要环境平衡，主体朝向和动线可指向画面内部，右侧及上方形成连续信息区；避免主体贴两条边、视线朝画外、脚或底座被裁、空白无方向感或右上角加入同等强度第二主体",
+      "enPrompt": "lower-left subject layout anchoring the figure or object near the lower-left thirds intersection with a complete support contact, balancing its weight through space light or secondary environment toward the upper right while orientation and movement lead inward and continuous information space remains above and right; avoid touching both edges looking out of frame cropped feet or base directionless emptiness or an equally strong second subject in the upper right"
+    },
+    {
+      "id": "layout-lower-right",
+      "category": "layout",
+      "styleGroup": "subject-position",
+      "zhName": "右下角主体",
+      "enName": "Lower-Right Subject",
+      "image": "/assets/parameters/layout-lower-right.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "右下角主体版式把主体锚定在右下三分交点附近并保留底座、脚部或接触阴影，左上方以开阔空间、光线或环境线条平衡，人物视线或产品正面朝向画面内部，左侧和上方可承载标题；避免主体被右下角夹住、动作朝外、接触面消失、左上角高反差杂物或留白被随机纹理破坏",
+      "enPrompt": "lower-right subject layout anchoring the subject near the lower-right thirds intersection while preserving base feet or contact shadow, balanced by open space light or environmental lines toward the upper left and with gaze or product front facing inward so title room remains above and left; avoid trapping the subject against both borders outward-facing action missing support high-contrast clutter in the upper left or random texture breaking the negative space"
+    },
+    {
+      "id": "layout-panoramic-breathing",
+      "category": "layout",
+      "styleGroup": "safe-area",
+      "zhName": "宽幅呼吸感",
+      "enName": "Panoramic Breathing",
+      "image": "/assets/parameters/layout-panoramic-breathing.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "宽幅呼吸感版式使用明显横向画幅，以一条稳定地平线或横向结构组织远近关系，主体只占适中比例并留出左右延展空间，前景、中景和远景密度递减，边缘裁切不伤核心信息；适合风景、汽车或群像，避免把普通画面横向拉伸、主体过小无焦点、两侧重复填充、地平线歪斜或上下空间被压成细条",
+      "enPrompt": "panoramic breathing layout using a distinctly wide aspect ratio and one stable horizon or horizontal structure to organize depth, with the subject at a moderate scale and room extending on both sides while foreground middle distance and background density step down and edge crops preserve core information; suited to landscapes vehicles or ensembles, avoiding stretched normal images a tiny focusless subject repeated filler at both sides a tilted horizon or vertical space compressed into unusable strips"
+    },
+    {
+      "id": "layout-square-safe-center",
+      "category": "layout",
+      "styleGroup": "safe-area",
+      "zhName": "方图安全区",
+      "enName": "Square-Safe Center",
+      "image": "/assets/parameters/layout-square-safe-center.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "方图安全区版式把核心主体、脸部、产品标志面和关键动作全部收在中央约百分之七十范围，四边背景具有可裁切延展，圆形头像裁切或平台缩略图仍能保留识别轮廓，视觉重量不依赖极侧元素；避免主体贴边、手脚跨出安全区、角落放关键信息、中心细节过密或为填满方图而拉伸比例",
+      "enPrompt": "square safe-center layout keeping the primary subject face product front and essential action within roughly the central seventy percent, with extendable crop-tolerant background on every side so circular avatars or platform thumbnails preserve recognition and visual balance does not depend on extreme edges; avoid edge-bound subjects limbs leaving the safe area critical corner information an overpacked center or distorted proportions used merely to fill a square"
+    },
+    {
+      "id": "layout-poster-safe-center",
+      "category": "layout",
+      "styleGroup": "safe-area",
+      "zhName": "竖版海报安全区",
+      "enName": "Poster-Safe Center",
+      "image": "/assets/parameters/layout-poster-safe-center.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "竖版海报安全区在纵向画幅中把核心主体放在中央偏上或中段，头顶、脚部和关键轮廓远离裁切线，上下分别为标题与说明保留连续低细节区域，主体与背景形成清楚明暗分离；适配二比三或三比四裁切，避免主体顶天立地、文字区穿过脸、底部无落脚、装饰贴边或不同竖幅一裁就丢失焦点",
+      "enPrompt": "vertical poster safe-center layout positioning the core subject in the middle or slightly above center, keeping head feet and key silhouette away from trim lines while continuous low-detail zones remain above and below for title and information and subject separates clearly by value; tolerate 2:3 or 3:4 crops, avoiding a figure touching top and bottom copy space across the face missing ground edge-bound decoration or a focal point lost by minor ratio changes"
+    },
+    {
+      "id": "layout-diagonal-balance",
+      "category": "layout",
+      "styleGroup": "subject-position",
+      "zhName": "对角平衡",
+      "enName": "Diagonal Balance",
+      "image": "/assets/parameters/layout-diagonal-balance.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "对角平衡版式沿一条主对角线安排主体、动作或光线，并在相反角用较小次要元素、色块或留白平衡重量，视觉动线从入口经过主体后自然停留，透视和重力仍可信；避免简单把画面旋转、两个角放同大主体、对角线穿脸、空角完全无作用、元素沿线机械等距或倾斜导致地平线错误",
+      "enPrompt": "diagonal-balance layout arranging subject action or light along one primary diagonal and counterbalancing it in the opposite corner with a smaller secondary element color mass or negative space, so the eye enters travels through the subject and settles while perspective and gravity remain believable; avoid merely rotating the frame equal subjects in both corners a diagonal cutting the face a purposeless empty corner mechanically spaced items or a wrongly tilted horizon"
+    },
+    {
+      "id": "layout-frame-within-frame",
+      "category": "layout",
+      "styleGroup": "safe-area",
+      "zhName": "框中框留白",
+      "enName": "Frame Within Frame",
+      "image": "/assets/parameters/layout-frame-within-frame.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "框中框留白利用门洞、窗框、拱廊、前景遮挡或图形开口形成内层取景框，主体完整位于开口内或有意跨越一处边界，外框四周仍保留呼吸空间并引导视线，内外两层透视一致；避免画出厚重装饰相框、框线穿过脸、开口与主体比例失衡、多重框套娃或外框细节比主体更抢眼",
+      "enPrompt": "frame-within-frame layout using a doorway window arch foreground occlusion or graphic opening as an inner viewing frame, keeping the subject complete inside it or intentionally crossing one boundary while outer margins breathe and guide attention and inner and outer perspective agree; avoid a heavy decorative picture frame lines cutting the face an opening mis-scaled to the subject nested frames within frames or outer detail louder than the subject"
+    },
+    {
+      "id": "layout-split-panel",
+      "category": "layout",
+      "styleGroup": "commercial",
+      "zhName": "左右分栏",
+      "enName": "Split Panel",
+      "image": "/assets/parameters/layout-split-panel.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "左右分栏版式将画面分成主次明确的两个竖向区域，一侧承载主体或主图，另一侧承担说明、细节或留白，两栏通过基线、色彩或环境连续性相关联，分界可清楚但不必像硬表格；保持各栏独立可读，避免五五开无主次、主体被分界切开、两栏透视冲突、重复同一图或在信息栏生成乱码文字",
+      "enPrompt": "left-right split-panel layout dividing the frame into two vertical regions with clear hierarchy, one carrying the main subject or image and the other explanation detail or negative space, linked through baseline color or environmental continuity while the division may be clear without becoming a rigid table; keep each panel independently readable, avoiding an equal focusless split a subject cut by the divider conflicting perspectives duplicated imagery or gibberish text generated in the information panel"
+    },
+    {
+      "id": "layout-product-copy-space",
+      "category": "layout",
+      "styleGroup": "commercial",
+      "zhName": "产品文案位",
+      "enName": "Product Copy Space",
+      "image": "/assets/parameters/layout-product-copy-space.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "产品文案位版式把产品完整放在一侧或下方稳定台面，另一侧保留连续、低纹理且明暗对比可控的文案区域，产品高光、视线和辅助道具不能侵入安全区，边缘允许不同广告尺寸裁切；图像不生成文字，避免产品过小、文案区出现杂物、背景渐变导致可读性不稳、台面倾斜或多个产品等权陈列",
+      "enPrompt": "product-with-copy-space layout placing the complete product on one side or a stable lower surface and reserving a continuous low-texture area with controlled contrast for copy on the other, while product highlights sight lines and props stay out of that safe zone and edges tolerate multiple advertising crops; generate no text, avoiding an undersized product clutter in the copy area unstable readability from gradients a tilted platform or several products with equal weight"
+    },
+    {
+      "id": "layout-cover-title-safe",
+      "category": "layout",
+      "styleGroup": "commercial",
+      "zhName": "封面标题安全区",
+      "enName": "Cover Title Safe",
+      "image": "/assets/parameters/layout-cover-title-safe.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "封面标题安全区版式在顶部、中上部或一侧预留一块连续低细节区域，长度足以容纳主标题与副标题，核心主体、脸部和强高光与该区域保持距离，背景色彩与明度确保深浅文字均有可选对比；兼容书刊与专辑封面裁切，避免预生成文字、树枝穿过标题区、标题位过窄、主体被迫缩小或留白像后贴色块",
+      "enPrompt": "cover title-safe layout reserving one continuous low-detail region at the top upper middle or one side with enough length for title and subtitle, keeping the core subject face and strong highlights away while background color and value allow either light or dark typography; support book magazine or album crops, avoiding generated text branches crossing the title zone a space too narrow for type a needlessly tiny subject or negative space that looks like a pasted rectangle"
+    },
+    {
+      "id": "clothing-slip-dress",
+      "category": "clothing",
+      "styleGroup": "skirts-dresses",
+      "zhName": "吊带裙",
+      "enName": "Slip Dress",
+      "image": "/assets/parameters/clothing-slip-dress.png",
+      "zhPrompt": "吊带裙由两条细肩带、清楚领口、贴合上身与连续垂落裙身构成，丝质或柔软面料沿胸腰和髋部形成长而少的褶皱，肩带真实连接前后衣片并承担轻微张力，内衬控制透明度；避免肩带悬空或穿肩、领口粘皮、裙身像液体、内衣化过度、下摆穿腿或身体曲线被错误压缩",
+      "enPrompt": "slip dress constructed from two fine straps a clear neckline a fitted upper section and one continuous falling skirt, with silk or soft fabric forming long sparse folds over chest waist and hips while straps connect front and back panels under slight tension and lining controls transparency; avoid floating or shoulder-intersecting straps a neckline glued to skin liquid cloth excessive lingerie styling a hem through the legs or distorted body curves",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-shirt-dress",
+      "category": "clothing",
+      "styleGroup": "skirts-dresses",
+      "zhName": "衬衫裙",
+      "enName": "Shirt Dress",
+      "image": "/assets/parameters/clothing-shirt-dress.png",
+      "zhPrompt": "衬衫裙把翻领、门襟、纽扣、肩袖和袖口等衬衫结构延伸为完整裙身，腰部可通过省道、腰带或自然松量收束，下摆随面料重量形成纵向褶皱，坐立时门襟连续；避免上衣与裙子硬拼、纽扣中途消失、腰带穿身、领片左右不同、下摆没有开衩却限制步幅或裙长改变腿部比例",
+      "enPrompt": "shirt dress extending shirt construction such as collar placket buttons shoulders sleeves and cuffs into one complete dress, with waist shaped by darts belt or natural ease and the skirt falling in vertical folds according to fabric weight while the placket remains continuous when sitting or standing; avoid a top and skirt pasted together disappearing buttons a belt through the body mismatched collar points a restrictive hem with no vent or dress length changing leg anatomy",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-evening-gown",
+      "category": "clothing",
+      "styleGroup": "skirts-dresses",
+      "zhName": "礼服长裙",
+      "enName": "Evening Gown",
+      "image": "/assets/parameters/clothing-evening-gown.png",
+      "zhPrompt": "礼服长裙以清楚胸衣或上身结构、腰线、支撑内层和长裙摆形成正式轮廓，面料可能为缎、雪纺或天鹅绒但每种光泽与重量保持一致，裙摆在地面产生受重力控制的拖尾和接触褶；避免无骨架坍塌、满身随机亮片、裙摆悬浮、脚穿过布料、不同面料混成塑料或夸张裸露破坏结构",
+      "enPrompt": "evening gown built from a readable bodice or upper construction waistline supporting inner layer and long skirt, with satin chiffon or velvet behaving consistently in sheen and weight and any train resting on the floor through gravity and contact folds; avoid structureless collapse random sequins everywhere a floating train feet through fabric mixed materials rendered as plastic or exaggerated exposure that destroys garment construction",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-bodycon-dress",
+      "category": "clothing",
+      "styleGroup": "skirts-dresses",
+      "zhName": "修身连衣裙",
+      "enName": "Bodycon Dress",
+      "image": "/assets/parameters/clothing-bodycon-dress.png",
+      "zhPrompt": "修身连衣裙通过弹性面料、纵向或曲线裁片和合理负松量贴合躯干与髋部，仍保留接缝、下摆厚度和动作所需伸展，坐姿或转身时在腰腹与髋侧产生真实拉伸褶皱；避免像皮肤涂色、身体器官轮廓过度显露、裙身穿入腿部、面料无厚度、关节处不变形或把修身误作不合身勒紧",
+      "enPrompt": "bodycon dress fitted through elastic fabric vertical or curved panels and plausible negative ease around torso and hips while retaining seams hem thickness and stretch for movement, creating real tension folds at waist abdomen and hip during sitting or turning; avoid painted-on skin excessive anatomical outlining fabric intersecting legs no material thickness no deformation at joints or confusing fitted construction with painfully undersized clothing",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-sundress",
+      "category": "clothing",
+      "styleGroup": "skirts-dresses",
+      "zhName": "夏日连衣裙",
+      "enName": "Sundress",
+      "image": "/assets/parameters/clothing-sundress.png",
+      "zhPrompt": "夏日连衣裙采用轻薄透气面料、肩带或短袖、开放领口和有活动量的裙摆，腰线可自然收束，阳光下织物略透但由内衬保持得体，微风使裙摆产生方向一致的轻柔波动；避免完全透明、肩带错接、裙摆像硬伞、浅色面料过曝成白片、风向矛盾或把夏日感只靠花朵图案表达",
+      "enPrompt": "sundress using lightweight breathable fabric straps or short sleeves an open neckline and a skirt with movement ease, optionally shaped at the waist and slightly luminous in sun while lining preserves opacity and breeze moves the hem in one coherent direction; avoid full transparency misattached straps a rigid umbrella skirt clipped white fabric conflicting wind or relying only on floral print to communicate summer",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-suit-set",
+      "category": "clothing",
+      "styleGroup": "formal-uniform",
+      "zhName": "西装套装",
+      "enName": "Suit Set",
+      "image": "/assets/parameters/clothing-suit-set.png",
+      "zhPrompt": "西装套装由同一面料和颜色的外套与西裤或半裙组成，肩线、翻领、扣位、腰头、中缝和裤脚共享一致剪裁语言，内搭层次清楚且活动时外套与下装分别受力；保持正式比例但允许个体版型，避免上下装颜色不一致、翻领错接、裤腰穿外套、纽扣随机、全身过紧或品牌标志",
+      "enPrompt": "matching suit set composed of jacket and trousers or skirt in one fabric and color, sharing a coherent tailoring language across shoulders lapels button stance waistband pressed lines and hems while the inner layer remains distinct and jacket and lower garment respond separately to movement; keep formal proportion with individualized fit, avoiding mismatched set colors crossed lapels waistband through the jacket random buttons an overly tight full outfit or brand marks",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-academy-uniform",
+      "category": "clothing",
+      "styleGroup": "formal-uniform",
+      "zhName": "学院制服",
+      "enName": "Academy Uniform",
+      "image": "/assets/parameters/clothing-academy-uniform.png",
+      "zhPrompt": "学院制服由衬衫、针织背心或西装外套、领带或领结和规整下装组成，校服配色与滚边形成有限的学校视觉体系，衣物尺码符合年龄、穿着方式整洁但保留日常褶皱，徽章区域可留空不复制真实校徽；避免不同学校元素混搭、成人化剪裁、领带悬浮、百褶数量随机、过度性化或生成可读校名",
+      "enPrompt": "academy uniform assembled from shirt knit vest or blazer tie or bow and a neat lower garment, with a limited school color and piping system, age-appropriate sizing and tidy wear that still retains everyday folds while any badge zone remains generic without copying a real crest; avoid mixed institutions adultized tailoring floating ties random pleat counts sexualized styling or generated readable school names",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-sailor-uniform",
+      "category": "clothing",
+      "styleGroup": "formal-uniform",
+      "zhName": "水手服",
+      "enName": "Sailor Uniform",
+      "image": "/assets/parameters/clothing-sailor-uniform.png",
+      "zhPrompt": "水手领制服以方形后领、前方 V 形领片、条纹滚边、领巾结和百褶或规整下装构成，领片从肩部自然覆盖背部并与上衣结构连接，领巾有真实打结和垂端；保持制服端庄与年龄适配，避免领片悬浮、条纹数量左右不一、领巾穿胸、过短下装、过度性化或复制特定学校标识",
+      "enPrompt": "sailor-style uniform built from a square back collar front V panel striped trim tied neckerchief and pleated or neat lower garment, with the collar lying naturally from shoulders over the back and connecting to the top and the scarf showing a real knot and ends; keep the uniform modest and age appropriate, avoiding a floating collar unequal stripe counts scarf through the chest excessively short lower garments sexualization or copied school insignia",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-medical-uniform",
+      "category": "clothing",
+      "styleGroup": "formal-uniform",
+      "zhName": "医护制服",
+      "enName": "Medical Uniform",
+      "image": "/assets/parameters/clothing-medical-uniform.png",
+      "zhPrompt": "医护制服根据具体岗位采用合体但便于活动的刷手服、白大衣或护理服，领口、口袋、袖口和闭合方式符合卫生与工作需求，面料耐洗并在肘腰处产生克制褶皱，身份牌和工具位置合理但不出现真实机构标志；避免所有角色都穿医生白袍、防护用品错误、衣物过紧透明、口袋无用途或血污猎奇",
+      "enPrompt": "medical workwear selected for a specific role as practical scrubs lab coat or nursing uniform, with neckline pockets cuffs and closures meeting hygiene and mobility needs, washable fabric forming restrained folds at elbows and waist and badge and tool placement remaining plausible without real institution marks; avoid putting every worker in a physician coat incorrectly worn protection tight transparent clothing purposeless pockets or sensational blood staining",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    }
+  ]
+}

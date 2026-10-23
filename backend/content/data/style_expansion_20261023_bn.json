@@ -1,0 +1,76 @@
+{
+  "parameters": [
+    {
+      "id": "ethnic-uyghur",
+      "category": "ethnic-style",
+      "styleGroup": "northwest",
+      "zhName": "维吾尔艾德莱斯服饰视觉",
+      "enName": "Uyghur Atlas Silk Dress Visual",
+      "image": "/assets/parameters/ethnic-uyghur.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "维吾尔艾德莱斯丝绸视觉以经向扎染形成边缘羽化的长条、杏核形和流动火焰状色彩，绿松石、石榴红、金黄、黑与象牙白随丝线光泽交替；纹样沿织物垂坠与褶皱延伸，可与绿洲建筑色彩呼应，不混同普通数码伊卡特或任意中亚花砖；先明确具体民族、支系、地域、年代、日常或节庆语境以及图案所依附的服饰、建筑、器物或工艺载体，只选与该场景真实相关的两到四个视觉证据。人物保持自然个体差异和实际活动，不把民族身份等同于统一服装或性格；纹样、色彩、材料和空间结构必须能追溯到具体用途与制作方式。避免跨民族拼贴、把节庆盛装当作日常制服、夸张头饰银饰、神圣符号装饰化、伪文字、泛红金滤镜、旅游舞台摆拍、环境与气候错误或用单一图腾概括整个群体；按草原、绿洲、戈壁或帕米尔等环境确定毡、毛织、木石、金属与服装保暖结构，几何和植物纹样服从真实载体及宗教边界。避免沙漠滤镜覆盖所有地区、帐篷骆驼泛用、异域化眼神、满屏金色、不同语言伪文字或把草原与绿洲服饰互换",
+      "enPrompt": "Uyghur atlas-silk visual language using warp-resist dye to create feather-edged vertical bands almond forms and flowing flame-like color in turquoise pomegranate red golden yellow black and ivory that shifts with silk luster; motifs follow drape and folds and may echo oasis architecture, without becoming generic digital ikat or an arbitrary Central Asian tile collage; specify the people community branch region period everyday or ceremonial context and the garment architecture object or craft support carrying the visual language, selecting only two to four pieces of evidence genuinely relevant to the scene. Preserve natural individual variation and real activity rather than equating identity with one uniform costume or personality, and make motif color material and spatial structure traceable to a specific use and production method. Avoid cross-ethnic collage festival dress treated as daily uniform exaggerated headdress and silver sacred signs used casually as decoration pseudo-writing generic red-gold filtering tourist-stage posing incorrect climate or environment and one emblem presented as an entire community; determine felt wool timber stone metal and thermal garment construction from a specified steppe oasis desert or Pamir environment, keeping geometric and botanical motifs tied to real supports and religious boundaries. Avoid one desert filter for every region generic tents and camels exoticized expressions gold everywhere pseudo-writing in unrelated languages or interchange of steppe and oasis clothing"
+    },
+    {
+      "id": "ethnic-bai",
+      "category": "ethnic-style",
+      "styleGroup": "southwest",
+      "zhName": "白族扎染服饰与场景",
+      "enName": "Bai Tie-Dye Dress and Setting",
+      "image": "/assets/parameters/ethnic-bai.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "白族扎染视觉以棉布折叠、缝扎和紧束后反复靛蓝浸染形成蓝白花团、放射点和连续几何，结扎处保留清晰白芯，边缘自然渗蓝并有深浅层次；可配白墙青瓦与洱海山水色彩，但不把纹样替换成数码对称滤镜；先明确具体民族、支系、地域、年代、日常或节庆语境以及图案所依附的服饰、建筑、器物或工艺载体，只选与该场景真实相关的两到四个视觉证据。人物保持自然个体差异和实际活动，不把民族身份等同于统一服装或性格；纹样、色彩、材料和空间结构必须能追溯到具体用途与制作方式。避免跨民族拼贴、把节庆盛装当作日常制服、夸张头饰银饰、神圣符号装饰化、伪文字、泛红金滤镜、旅游舞台摆拍、环境与气候错误或用单一图腾概括整个群体；依据高原、峡谷、茶山或梯田等具体地形调整建筑、道路、材料和服饰层次，纹样与银饰必须绑定支系和身体部位；人物从事耕作、织造、交易或日常出行。避免所有场景雪山化、满身银饰、彩条纹通用化、神秘化叙事或把西南不同民族混成一个节庆队伍",
+      "enPrompt": "Bai tie-dye visual language repeatedly folding stitching binding and indigo-dipping cotton to form blue-white floral clusters radial dots and continuous geometry, with clear white cores at ties and naturally feathered layered blue edges; it may pair with white walls gray tile and Erhai mountain-water color while avoiding a digitally mirrored resist pattern; specify the people community branch region period everyday or ceremonial context and the garment architecture object or craft support carrying the visual language, selecting only two to four pieces of evidence genuinely relevant to the scene. Preserve natural individual variation and real activity rather than equating identity with one uniform costume or personality, and make motif color material and spatial structure traceable to a specific use and production method. Avoid cross-ethnic collage festival dress treated as daily uniform exaggerated headdress and silver sacred signs used casually as decoration pseudo-writing generic red-gold filtering tourist-stage posing incorrect climate or environment and one emblem presented as an entire community; adapt architecture routes material and garment layers to a specified plateau gorge tea mountain or terrace landscape, binding motif and silverwork to a particular branch and body placement while people farm weave trade or travel in daily life. Avoid snow mountains everywhere silver covering every body generic rainbow stripes mystical framing or different southwestern communities merged into one festival procession"
+    },
+    {
+      "id": "ethnic-hani",
+      "category": "ethnic-style",
+      "styleGroup": "southwest",
+      "zhName": "哈尼梯田人文景观",
+      "enName": "Hani Terrace Cultural Landscape",
+      "image": "/assets/parameters/ethnic-hani.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "哈尼视觉语言以随山势层叠的水田曲线、云雾反光和紧凑山地村寨建立空间节奏，服饰或边框可使用靛黑底、红白细线与银色点饰；梯田水面按高度分层而非随意波纹，环境与织纹互相呼应但不拼贴具体图腾；先明确具体民族、支系、地域、年代、日常或节庆语境以及图案所依附的服饰、建筑、器物或工艺载体，只选与该场景真实相关的两到四个视觉证据。人物保持自然个体差异和实际活动，不把民族身份等同于统一服装或性格；纹样、色彩、材料和空间结构必须能追溯到具体用途与制作方式。避免跨民族拼贴、把节庆盛装当作日常制服、夸张头饰银饰、神圣符号装饰化、伪文字、泛红金滤镜、旅游舞台摆拍、环境与气候错误或用单一图腾概括整个群体；依据高原、峡谷、茶山或梯田等具体地形调整建筑、道路、材料和服饰层次，纹样与银饰必须绑定支系和身体部位；人物从事耕作、织造、交易或日常出行。避免所有场景雪山化、满身银饰、彩条纹通用化、神秘化叙事或把西南不同民族混成一个节庆队伍",
+      "enPrompt": "Hani-inspired visual language using contour-following rice-terrace curves mist reflections and compact mountain villages to build spatial rhythm, with optional indigo-black textile borders carrying fine red-white lines and silver points; water surfaces step coherently by elevation rather than random waves, linking landscape and weave without pasting a specific emblem; specify the people community branch region period everyday or ceremonial context and the garment architecture object or craft support carrying the visual language, selecting only two to four pieces of evidence genuinely relevant to the scene. Preserve natural individual variation and real activity rather than equating identity with one uniform costume or personality, and make motif color material and spatial structure traceable to a specific use and production method. Avoid cross-ethnic collage festival dress treated as daily uniform exaggerated headdress and silver sacred signs used casually as decoration pseudo-writing generic red-gold filtering tourist-stage posing incorrect climate or environment and one emblem presented as an entire community; adapt architecture routes material and garment layers to a specified plateau gorge tea mountain or terrace landscape, binding motif and silverwork to a particular branch and body placement while people farm weave trade or travel in daily life. Avoid snow mountains everywhere silver covering every body generic rainbow stripes mystical framing or different southwestern communities merged into one festival procession"
+    },
+    {
+      "id": "ethnic-sui",
+      "category": "ethnic-style",
+      "styleGroup": "south",
+      "zhName": "水族马尾绣服饰视觉",
+      "enName": "Sui Horsetail Embroidered Dress Visual",
+      "image": "/assets/parameters/ethnic-sui.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "水族马尾绣视觉以马尾作芯、丝线包缠形成略凸的连续轮廓，再用细密填针组织花叶、涡旋和窄边纹；靛蓝布底与蓝白色彩清雅，绣面高度和转折可见，并与河谷村落色彩呼应，避免普通平绣、机器均匀线条或虚构文字图腾；先明确具体民族、支系、地域、年代、日常或节庆语境以及图案所依附的服饰、建筑、器物或工艺载体，只选与该场景真实相关的两到四个视觉证据。人物保持自然个体差异和实际活动，不把民族身份等同于统一服装或性格；纹样、色彩、材料和空间结构必须能追溯到具体用途与制作方式。避免跨民族拼贴、把节庆盛装当作日常制服、夸张头饰银饰、神圣符号装饰化、伪文字、泛红金滤镜、旅游舞台摆拍、环境与气候错误或用单一图腾概括整个群体；让湿热气候、河海交通、木石竹建筑、染织材料与当地生活方式共同支持华南语境，并区分沿海、山地和河谷支系；高饱和颜色集中在真实织物或节庆部位。避免热带植物乱加、所有建筑吊脚楼化、孔雀铜鼓等符号跨民族复用或将岭南少数民族统一成同一蓝染村寨",
+      "enPrompt": "Sui horsetail-embroidery language using horsehair cores wrapped in silk to create slightly raised continuous contours, then dense filling stitches for leaves spirals and narrow borders; keep an indigo ground and quiet blue-white palette with visible relief and turns, echoing river-valley villages while avoiding ordinary flat embroidery machine-even lines or invented textual totems; specify the people community branch region period everyday or ceremonial context and the garment architecture object or craft support carrying the visual language, selecting only two to four pieces of evidence genuinely relevant to the scene. Preserve natural individual variation and real activity rather than equating identity with one uniform costume or personality, and make motif color material and spatial structure traceable to a specific use and production method. Avoid cross-ethnic collage festival dress treated as daily uniform exaggerated headdress and silver sacred signs used casually as decoration pseudo-writing generic red-gold filtering tourist-stage posing incorrect climate or environment and one emblem presented as an entire community; support southern context through humid climate river or maritime movement timber stone and bamboo construction textile materials and local daily practice, distinguishing coastal mountain and valley branches while concentrating vivid color on actual cloth or ceremonial areas. Avoid arbitrary tropical plants every building turned into a stilt house peacock or bronze-drum motifs reused across communities or all southern minorities reduced to one indigo village"
+    },
+    {
+      "id": "grading-beauty-retouch",
+      "category": "color-grading",
+      "styleGroup": "commercial",
+      "zhName": "商业妆面精修调色",
+      "enName": "Commercial Beauty Retouch Grade",
+      "image": "/assets/parameters/grading-beauty-retouch.jpg",
+      "zhPrompt": "商业妆面精修调色，校正肤色不均与局部泛红，同时保留毛孔、细小绒毛和真实高光；通过轻微明暗塑形强化眼眶、鼻梁与唇形，口红和眼影颜色准确，避免磨皮蜡感、过度液化或改变本人五官；先以正确曝光、白平衡和中性参考建立基础，再分别控制黑位、阴影、中间调、高光肩部、色温、色偏与局部色相，所有调整都应服从原场景光源和材质反射。人物肤色、白色物体和产品标准色作为保护锚点，局部蒙版边缘自然，颗粒、晕光、锐化或降噪只在成像机制需要时加入；同一组图片保持镜头间曝光与色彩连续。避免一键 LUT 覆盖、直方图两端剪切、HDR 光晕、阴影泛青、肤色橙红、白色染色、天空色阶断裂、边缘过锐、降噪蜡化或用全局滤镜掩盖原图光线错误；先锁定交付平台、商品标准色和目标受众，主体边缘、标签、材质光泽与背景分离均服务真实展示；美食保留食材质感，珠宝控制高光形状，家居维持木材织物中性。避免虚构包装文字、品牌色漂移、产品悬浮、白底吞边、食品过橙、珠宝爆点过多或社媒高饱和污染肤色",
+      "enPrompt": "commercial beauty-retouch grade correcting uneven skin color and localized redness while preserving pores fine facial hair and authentic specular highlights; subtle dodge-and-burn shapes eyes nose and lips while lipstick and eye-shadow hues stay accurate, avoiding waxy smoothing excessive liquify or alteration of the person's facial identity; establish a correct exposure white balance and neutral reference before shaping black point shadows midtones highlight shoulder temperature tint and local hue independently, with every adjustment following the original light sources and material reflections. Protect skin white objects and known product colors as anchors, feather local masks naturally and introduce grain halation sharpening or denoising only when the intended imaging process requires them. Maintain shot-to-shot exposure and color continuity across a set. Avoid one-click LUT coverage clipped histogram ends HDR halos cyan-contaminated shadows orange-red skin tinted whites banded skies oversharpened edges waxy denoising or a global filter used to hide incorrect original lighting; lock delivery platform known product color and audience first, making subject edges labels material sheen and background separation serve truthful presentation. Preserve ingredient texture in food, shape specular highlights on jewelry and maintain neutral timber and textile in furniture. Avoid invented packaging copy shifted brand color floating products white backgrounds swallowing edges overly orange food excessive jewelry sparkle or social-media saturation contaminating skin",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "retouch-makeup-cleanup",
+      "category": "color-grading",
+      "styleGroup": "skin-detail",
+      "zhName": "局部妆面修整",
+      "enName": "Localized Makeup Cleanup",
+      "image": "/assets/parameters/retouch-makeup-cleanup.jpg",
+      "zhPrompt": "妆面修整只清理眼线毛边、口红溢出、粉底斑驳、睫毛膏结块和局部飞粉，保留原妆容设计、色相、皮肤纹理与面部身份；边界柔和贴合毛孔和唇纹，不重新画眉眼、不改变五官比例，也不把真实皮肤磨成无纹理蜡面；采用局部、可逆和小幅度修整，先确认需要处理的是临时干扰还是人物身份特征，再保持五官比例、骨相、年龄、体型、关节位置、发际线和皮肤真实纹理。修复区域的毛孔频率、绒毛、褶皱、受光、透视和背景直线必须与周围连续，并在正常观看尺寸下自然，而不是只在放大状态下平滑。避免未经要求改变身份、过度年轻化、液化背景、左右完全对称、塑料皮肤、重复修补纹理、模糊补丁、锐利剪贴边、身体结构改变或把真实而无害的特征当作必须消除的缺陷；只处理指定的局部色差、临时瑕疵或过强反光，修复边缘沿皮肤曲率和毛孔方向过渡，并保留自然红润、细纹、痣、雀斑及年龄信息，除非用户明确要求调整。避免整脸频率分离抹平、肤色漂白、左右复制皮肤、眼周失去结构、毛孔消失或把医学状况擅自美化和消除",
+      "enPrompt": "makeup cleanup retouch limited to uneven eyeliner lipstick bleed patchy foundation mascara clumps and localized powder fallout, preserving the original makeup design hue skin texture and identity; edges follow pores and lip lines naturally without redrawing features changing facial proportions or smoothing real skin into a textureless wax surface; make local reversible low-amplitude corrections after distinguishing a temporary distraction from an identity-defining feature, preserving facial proportions bone structure age body type joint placement hairline and authentic skin texture. Match pore frequency peach fuzz folds illumination perspective and background lines across every repaired region so the result appears natural at ordinary viewing size rather than merely smooth under magnification. Avoid unsolicited identity change implausible de-aging liquified backgrounds perfect bilateral symmetry plastic skin repeated healing texture blurred patches sharp pasted edges altered anatomy or treating harmless real characteristics as defects that must be erased; address only the specified local discoloration temporary blemish or excessive reflection, blending along skin curvature and pore direction while retaining natural circulation fine lines moles freckles and age information unless the user explicitly requests change. Avoid flattening the whole face with frequency separation bleaching skin copying texture bilaterally erasing eye structure removing every pore or cosmetically altering a medical condition without instruction",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    }
+  ]
+}

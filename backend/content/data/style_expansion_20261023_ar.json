@@ -1,0 +1,244 @@
+{
+  "parameters": [
+    {
+      "id": "palette-vermilion-gold",
+      "category": "palette",
+      "styleGroup": "chinese",
+      "zhName": "朱红鎏金配色",
+      "enName": "Vermilion and Gold",
+      "image": "/assets/parameters/palette-vermilion-gold.png?v=20260827-palette-expansion",
+      "zhPrompt": "朱红鎏金配色以米白、深青或墨黑承担约六成建筑与器物基底，朱红集中在门窗、漆面和核心主体，旧金严格用于边缘、扣件与纹样高点；金属高光随光源变化而非整片发亮，深青平衡红色热度，适合东方宫殿、节庆与高端包装，避免红金各占一半、亮黄代替旧金、满屏宫廷纹样、黑位堵死、肤色染红或将任意中式设计都处理成奢华喜庆",
+      "enPrompt": "vermilion-and-aged-gold palette assigning roughly sixty percent of architectural or object ground to warm ivory deep teal or ink black, concentrating vermilion on doors lacquer and the principal subject while reserving old gold for edges hardware and raised ornament; metallic highlights follow a real light source rather than glowing everywhere and deep teal moderates the heat of red, suitable for Eastern palace festival or premium packaging imagery; avoid equal red-gold coverage bright yellow substituted for aged metal ornamental overload crushed black red-contaminated skin or turning every Chinese design into a uniformly luxurious celebration"
+    },
+    {
+      "id": "palette-ink-tea",
+      "category": "palette",
+      "styleGroup": "chinese",
+      "zhName": "水墨茶席配色",
+      "enName": "Ink Tea",
+      "image": "/assets/parameters/palette-ink-tea.png?v=20260827-palette-expansion",
+      "zhPrompt": "水墨茶席配色以旧纸色、暖灰和留白覆盖约七成桌面与背景，茶褐用于器物、茶汤和木质中层，炭黑只压住墨线与结构，苔藓绿作为植物或釉色小面积点缀；明度柔和、材质区分纸、陶、竹木与液体，适合茶文化、静物和安静空间，避免通篇棕灰、黑色墨团、绿色抢焦、仿古过脏、茶汤发黑、无留白或生成不可读书法作为装饰",
+      "enPrompt": "ink-and-tea palette covering roughly seventy percent of tabletop and background with aged paper warm gray and deliberate whitespace, using tea brown for vessels liquor and wood midtones, charcoal only to anchor ink-like contour and structure, and moss green as a small botanical or glaze accent; keep values gentle while clearly distinguishing paper ceramic bamboo timber and liquid for tea culture still life and quiet interiors; avoid a blanket brown-gray cast heavy black ink blobs dominant green excessive dirty antiquing black tea liquid no whitespace or fabricated unreadable calligraphy used as decoration"
+    },
+    {
+      "id": "palette-silver-blue-noir",
+      "category": "palette",
+      "styleGroup": "cinema",
+      "zhName": "银蓝黑色电影",
+      "enName": "Silver Blue Noir",
+      "image": "/assets/parameters/palette-silver-blue-noir.png?v=20260827-palette-expansion",
+      "zhPrompt": "银蓝黑色电影配色以黑、深海军蓝和钢蓝构成约七成夜景与阴影，银灰与冷白只在月光、金属边缘和湿地反射处出现；亮部方向统一、暗部仍保留服装与建筑结构，肤色可稍微降饱和但不变蓝，适合悬疑、侦探和工业夜景，避免黑位一片死暗、银色满屏发亮、蓝色滤镜覆盖所有材质、无来源轮廓光、肤色尸白或把黑色电影误作纯黑白",
+      "enPrompt": "silver-blue noir palette building roughly seventy percent of night and shadow from black deep navy and steel blue, reserving silver gray and cold white for moonlight metal edges and wet-surface reflection; every highlight follows one lighting direction, dark areas retain clothing and architectural structure and skin may be subdued without turning blue, suitable for mystery detective and industrial night imagery; avoid featureless crushed blacks silver shining everywhere a global blue filter across every material source-free rim light corpse-pale skin or treating noir as a merely monochrome image with no controlled cool tonal separation"
+    },
+    {
+      "id": "palette-golden-hour-film",
+      "category": "palette",
+      "styleGroup": "cinema",
+      "zhName": "金棕胶片时刻",
+      "enName": "Golden Hour Film",
+      "image": "/assets/parameters/palette-golden-hour-film.png?v=20260827-palette-expansion",
+      "zhPrompt": "金棕胶片时刻以蜂蜜金与褪桃色落在受光面和肤色，烟草棕、橄榄阴影与暖黑承担约六成环境和暗部，浅色高光保持奶油而不过曝；色温从太阳方向向阴影自然过渡，可加入细腻胶片颗粒和轻微高光溢出，适合人像与旅行叙事，避免全局黄滤镜、橙肤色、阴影发脏、日落天空过饱和、所有物体同样金黄或把白天任意改成夕阳",
+      "enPrompt": "golden-hour film palette placing honey gold and faded peach on lit planes and skin while tobacco brown olive shadow and warm black carry roughly sixty percent of environment and darkness, keeping pale highlights creamy without clipping; temperature transitions naturally away from the sun direction and may include fine film grain plus restrained halation for portrait and travel narrative; avoid a global yellow filter orange skin muddy shadow oversaturated sunset sky identical gold on every object or arbitrarily converting neutral daylight into evening without changing light direction and exposure logic"
+    },
+    {
+      "id": "palette-forest-moss",
+      "category": "palette",
+      "styleGroup": "nature",
+      "zhName": "森林苔藓配色",
+      "enName": "Forest Moss",
+      "image": "/assets/parameters/palette-forest-moss.png?v=20260827-palette-expansion",
+      "zhPrompt": "森林苔藓配色以苔藓绿、蕨叶绿和树皮棕建立约七成前中景生态层次，雾灰降低远景对比，暖奶油色只用于穿林光、菌类或小型焦点；绿色随叶龄、湿度和光照变化，树皮与土壤不被统一染绿，适合自然、户外和生态视觉，避免单一深绿滤镜、荧光叶片、黑色森林、奶油色无来源发光、所有植物同色或用均匀雾气遮掉空间结构",
+      "enPrompt": "forest-moss palette using moss green fern green and bark brown for roughly seventy percent of layered foreground and midground ecology, lowering distant contrast with fog gray and reserving warm cream for filtered light fungi or another small focal detail; greens vary with leaf age moisture and illumination while bark and soil retain their own color, suitable for nature outdoor and ecological imagery; avoid a single dark-green filter fluorescent leaves a black forest source-free cream glow identical vegetation or uniform fog that erases spatial structure and the wet-dry differences among surfaces"
+    },
+    {
+      "id": "palette-desert-sunset",
+      "category": "palette",
+      "styleGroup": "nature",
+      "zhName": "沙漠落日配色",
+      "enName": "Desert Sunset",
+      "image": "/assets/parameters/palette-desert-sunset.png?v=20260827-palette-expansion",
+      "zhPrompt": "沙漠落日配色以沙色和浅金黄覆盖约五成地貌与天空过渡，陶土橙、焦橙集中在受光沙丘和岩面，梅紫与深棕承担背光阴影；暖色之间通过明度和空气距离分层，天空高光不发白，适合自然风景与荒漠叙事，避免通篇橙色滤镜、阴影纯紫、沙丘无结构、太阳过曝成白洞、五色同饱和或将所有沙漠都处理成同一种商业旅行海报",
+      "enPrompt": "desert-sunset palette giving roughly half of terrain and sky transition to sand and pale gold, concentrating terracotta and burnt orange on lit dunes or rock and assigning plum-violet plus deep brown to backlit shadow; separate the warm hues through value atmospheric distance and surface angle while keeping sky highlights below clipping, suitable for natural landscape and desert narrative; avoid a blanket orange filter pure purple shadows structureless dunes a blown white sun equal saturation across all colors or rendering every desert as the same commercial travel poster regardless of geology and weather"
+    },
+    {
+      "id": "palette-french-vintage",
+      "category": "palette",
+      "styleGroup": "global",
+      "zhName": "法式复古配色",
+      "enName": "French Vintage",
+      "image": "/assets/parameters/palette-french-vintage.png?v=20260827-palette-expansion",
+      "zhPrompt": "法式复古配色以旧纸色、灰橄榄和低饱和海军蓝构成约七成墙面、织物与印刷基底，褪色酒红集中在标题、服装或小型焦点，黄铜仅用于五金和旧器物反光；色彩像自然褪色而非黄色滤镜，材质保留纸纤维、亚麻和木漆，适合编辑、室内与包装，避免埃菲尔铁塔等符号堆砌、酒红过量、金属亮黄、统一仿旧污渍或将“复古”变成棕色单调",
+      "enPrompt": "French vintage palette building roughly seventy percent of wall textile and print ground from aged paper gray olive and muted navy, concentrating faded wine red on title garment or a small focal element and reserving brass for hardware and old-object reflection; color should feel naturally faded rather than covered by a yellow filter, with paper fiber linen and painted wood remaining distinct for editorial interiors and packaging; avoid piles of stereotypical Paris symbols dominant burgundy bright yellow metal uniform dirty aging or reducing vintage character to a monotonous brown treatment"
+    },
+    {
+      "id": "palette-chinese-opera",
+      "category": "palette",
+      "styleGroup": "chinese",
+      "zhName": "戏曲华彩配色",
+      "enName": "Chinese Opera Brilliance",
+      "image": "/assets/parameters/palette-chinese-opera.png?v=20260827-palette-expansion",
+      "zhPrompt": "戏曲华彩配色以玉白或墨黑稳定舞台与面部基底，胭脂红、孔雀蓝和明黄分别绑定角色服饰、脸谱或道具的具体区域，三种高纯度颜色总面积受控并由黑白分隔；金属与丝绸按真实灯光反射，角色身份优先于装饰，适合舞台、海报与文化设计，避免五色均匀铺满、脸谱随意混画、肤色荧光、无来源金光、伪文字或将不同剧种服饰规则混为一套",
+      "enPrompt": "Chinese opera vivid palette using jade white or ink black to stabilize stage and facial ground, assigning rouge red peacock blue and bright yellow to specific costume makeup or prop regions according to character role while controlling their total high-chroma area and separating them with black-white structure; metal and silk respond to actual stage light and identity takes priority over decoration, suitable for performance poster and cultural design; avoid equal distribution of all colors arbitrary face-paint mixtures fluorescent skin source-free gold glow pseudo-script or combining costume rules from unrelated opera traditions"
+    },
+    {
+      "id": "palette-bamboo-scholar",
+      "category": "palette",
+      "styleGroup": "chinese",
+      "zhName": "竹林文人配色",
+      "enName": "Bamboo Scholar",
+      "image": "/assets/parameters/palette-bamboo-scholar.png?v=20260827-palette-expansion",
+      "zhPrompt": "竹林文人配色以宣纸白、墨灰和竹青覆盖约七成环境与留白，胡桃褐用于书案、框架和器物，浅赭只在旧纸、石景或暖光处少量出现；色彩低饱和但通过纸、竹、木、石的纹理与明度区分层次，适合中式空间、文具和静物，避免全局青灰滤镜、黑墨堵塞、木色发橙、竹叶荧光、堆砌卷轴印章或生成不可读书法冒充文人气质",
+      "enPrompt": "bamboo-scholar palette covering roughly seventy percent of environment and negative space with xuan-paper white ink gray and bamboo green, using walnut brown for desk frame and objects and pale ochre only on aged paper stone or warm light; saturation remains low while value and texture distinguish paper bamboo timber and rock for Chinese interiors stationery and still life; avoid a global blue-gray wash blocked ink black orange wood fluorescent bamboo piles of scrolls and seals or fabricated unreadable calligraphy used as a shortcut for cultivated atmosphere"
+    },
+    {
+      "id": "palette-pastoral-film",
+      "category": "palette",
+      "styleGroup": "cinema",
+      "zhName": "田园胶片配色",
+      "enName": "Pastoral Film",
+      "image": "/assets/parameters/palette-pastoral-film.png?v=20260827-palette-expansion",
+      "zhPrompt": "田园胶片配色以褪草绿、奶油色和灰天蓝组成约七成田野、天空与建筑，桃肤色保护人物面部，暖棕用于土地、木屋和暗部；高光柔和、黑位略抬、整体色彩像负片自然褪色，适合乡野人像与生活叙事，避免米黄滤镜覆盖全图、绿色发灰无生机、肤色粉白、暖棕过重、颗粒粗糙或把现实农村美化成无劳动痕迹的虚假田园布景",
+      "enPrompt": "pastoral-film palette forming roughly seventy percent of field sky and buildings from faded grass green cream and gray sky blue, protecting faces with peach skin color and using warm brown for soil timber and shadow; highlights stay soft, black level lifts slightly and the hues fade like negative film rather than a blanket filter, suitable for rural portrait and everyday narrative; avoid all-over beige lifeless gray vegetation pink-white skin dominant brown coarse grain or beautifying a real working countryside into a spotless stage with no material wear labor or weather evidence"
+    },
+    {
+      "id": "palette-autumn-maple",
+      "category": "palette",
+      "styleGroup": "nature",
+      "zhName": "秋枫山林配色",
+      "enName": "Autumn Maple Forest",
+      "image": "/assets/parameters/palette-autumn-maple.png?v=20260827-palette-expansion",
+      "zhPrompt": "秋枫山林配色以树皮棕、雾灰和残余深绿承担约六成林地与远景，枫叶红、焦橙和赭黄按树种、光照与季节阶段分层出现，最亮颜色只集中在受光叶簇；地面落叶比树冠更暗，空气透视压低远色，避免整幅橙红滤镜、每片叶同色、红色污染天空与肤色、绿色完全消失、黑树干或把秋景误作森林火灾",
+      "enPrompt": "autumn-maple palette assigning roughly sixty percent of woodland and distance to bark brown mist gray and remaining deep green, layering maple red burnt orange and ochre according to species illumination and seasonal stage with the brightest hue restricted to sunlit clusters; fallen leaves stay darker than canopy and atmosphere mutes distant color; avoid an all-over orange-red filter identical leaves red contamination of sky or skin complete removal of green black trunks or a palette so fiery that a normal autumn forest appears to be burning"
+    },
+    {
+      "id": "palette-tibetan-mineral",
+      "category": "palette",
+      "styleGroup": "chinese",
+      "zhName": "藏地矿物色",
+      "enName": "Tibetan Mineral",
+      "image": "/assets/parameters/palette-tibetan-mineral.png?v=20260827-palette-expansion",
+      "zhPrompt": "藏地矿物色以雪白、风化土色或深色织物提供约五成承载面，绛红与藏黄建立主要节奏，群青和松石绿用于壁画、织物或器物的有限区域；矿物色具有颗粒、磨损和日照褪变，不以霓虹表现，高纯度颜色必须匹配具体建筑、服饰或绘画语境，避免伪经文、法器装饰化、五色同亮、泛藏式拼贴或将整片自然景观强行染成宗教配色",
+      "enPrompt": "Tibetan mineral palette giving roughly half the supporting field to snow white weathered earth or dark textile, establishing primary rhythm with deep red and Tibetan yellow and reserving ultramarine plus turquoise for limited mural fabric or object regions; mineral color carries grain wear and sun fading rather than neon intensity, and every high-chroma area must fit a specified architectural garment or painting context; avoid pseudo-script ritual objects used as casual decoration all colors equally bright generic Tibetan collage or forcing an entire natural landscape into a sacred decorative palette"
+    },
+    {
+      "id": "palette-teal-orange-cinema",
+      "category": "palette",
+      "styleGroup": "cinema",
+      "zhName": "青橙电影配色",
+      "enName": "Teal Orange Film Palette",
+      "image": "/assets/parameters/palette-teal-orange-cinema.png?v=20260827-palette-expansion",
+      "zhPrompt": "青橙电影配色以深海军蓝、炭黑和青色阴影承担约七成环境，橙色只绑定主光、肤色暖区或实用灯，肤色米保留人物自然中间调；冷暖分离随光源和空间深度变化，不把所有高光染橙，也不让暗部纯青，适合动作、城市与商业电影画面，避免一键双色滤镜、橙色皮肤、青色白眼、无来源轮廓光、黑位堵塞或背景与人物完全相反的生硬抠像感",
+      "enPrompt": "teal-orange cinema palette assigning roughly seventy percent of environment to deep navy charcoal and teal shadow, binding orange only to key light warm skin regions or visible practical lamps while beige midtones preserve natural faces; cool-warm separation changes with source and depth rather than tinting every highlight orange or every shadow cyan, suitable for action urban and commercial film imagery; avoid a one-click two-color filter orange skin cyan eye whites source-free rim light crushed blacks or a hard cutout relationship where subject and background carry perfectly opposite colors without shared illumination"
+    },
+    {
+      "id": "palette-harbor-night-cinema",
+      "category": "palette",
+      "styleGroup": "cinema",
+      "zhName": "港湾雨夜电影",
+      "enName": "Harbor Night Cinema",
+      "image": "/assets/parameters/palette-harbor-night-cinema.png?v=20260827-palette-expansion",
+      "zhPrompt": "港湾雨夜电影配色以石油蓝、黑色和雾灰构成约七成海面、天空与码头阴影，琥珀灯光来自船舱、路灯或窗户，旧青绿只在潮湿金属和工业表面出现；反射方向、长度与光源一致，远景因雨雾降对比，适合港口与都市悬疑，避免青橙滤镜套用、整片水面像镜子、无来源绿光、黑位死暗、所有灯同色同亮或雨夜却缺少湿润材质变化",
+      "enPrompt": "harbor rain-night palette using petroleum blue black and fog gray for roughly seventy percent of sea sky and dock shadow, sourcing amber from cabins street lamps or windows and placing aged blue-green only on wet metal and industrial surfaces; reflection direction and length agree with each lamp while rain mist lowers distant contrast, supporting port and urban suspense imagery; avoid a generic teal-orange grade mirror-like water everywhere source-free green glow crushed darkness identical lamp color and intensity or a supposedly wet night with no change in roughness reflection and atmospheric depth"
+    },
+    {
+      "id": "palette-coastal-mist",
+      "category": "palette",
+      "styleGroup": "nature",
+      "zhName": "海岸晨雾配色",
+      "enName": "Coastal Morning Mist",
+      "image": "/assets/parameters/palette-coastal-mist.png?v=20260827-palette-expansion",
+      "zhPrompt": "海岸晨雾配色以浅雾蓝、珍珠灰和暖白占据约七成天空、雾气与远海，海沫绿用于近岸水体，漂流木米色稳定沙滩与木构，柔海军蓝只作礁石或船只焦点；远近明度逐级变化，颜色清凉但不苍白，适合海岸风景与安静品牌，避免海天完全同色、薄荷绿荧光、雾层均匀盖住主体、海军蓝过重、沙滩发黄或用低对比掩盖空间错误",
+      "enPrompt": "coastal-mist palette covering roughly seventy percent of sky fog and distant sea with pale mist blue pearl gray and warm white, using seafoam green in nearshore water, driftwood beige to stabilize sand and timber and soft navy only for rock boat or another focal anchor; values step gradually across distance so the image remains cool without becoming blank, suited to coast landscape and quiet branding; avoid sea and sky merging into one color fluorescent mint uniform fog hiding the subject dominant navy yellow sand or low contrast used to conceal incorrect depth and shoreline structure"
+    },
+    {
+      "id": "palette-pop-graphic",
+      "category": "palette",
+      "styleGroup": "commercial",
+      "zhName": "波普图形配色",
+      "enName": "Pop Graphic",
+      "image": "/assets/parameters/palette-pop-graphic.png?v=20260827-palette-expansion",
+      "zhPrompt": "波普图形配色以白色或黑色提供约五成清晰底面，樱桃红、钴蓝和柠檬黄分配给不同主体块面与信息层级，另一中性色负责轮廓和文字；原色保持平涂、边界锐利，并通过面积而非渐变建立主次，适合海报、包装和潮流图形，避免三原色等量棋盘格、所有文字彩色、渐变塑料感、黑线过密、照片直接加高饱和滤镜或使用可识别品牌标志",
+      "enPrompt": "pop-graphic palette retaining roughly half the field as a clean white or black ground, assigning cherry red cobalt blue and lemon yellow to separate subject masses and information levels while the opposite neutral carries contour and typography; primary colors remain flat and sharply bounded, with hierarchy created by area rather than gradients for posters packaging and fashion graphics; avoid an equal primary-color checkerboard multicolored text everywhere glossy gradient plastic dense black outlines an unchanged photograph with saturation boosted or recognizable brand marks used as shortcuts for pop culture"
+    },
+    {
+      "id": "palette-black-gold-luxury",
+      "category": "palette",
+      "styleGroup": "commercial",
+      "zhName": "黑金轻奢配色",
+      "enName": "Black Gold Luxury",
+      "image": "/assets/parameters/palette-black-gold-luxury.png?v=20260827-palette-expansion",
+      "zhPrompt": "黑金轻奢配色以哑光黑、炭灰和暖象牙白构成约八成背景与信息结构，古金仅用于细边、标志性部件和受光金属，深翡翠可作为单一宝石色焦点；黑色表面通过粗糙度区分皮革、纸张和金属，金色不发黄不满版，适合珠宝、包装与高端空间，避免黑底加大面积亮金、镜面塑料、翡翠荧光、文字低对比、无光源金边或把奢华等同于纹样堆砌",
+      "enPrompt": "black-and-aged-gold luxury palette building roughly eighty percent of background and information structure from matte black charcoal and warm ivory, reserving old gold for fine borders signature hardware and lit metal and allowing deep emerald as one isolated jewel-color focus; differentiate black leather paper and metal through roughness while keeping gold subdued rather than yellow or full-bleed, suitable for jewelry packaging and premium interiors; avoid broad bright-gold coverage mirror plastic fluorescent emerald low-contrast text source-free gold edges or equating luxury with dense ornamental pattern and empty visual hierarchy"
+    },
+    {
+      "id": "palette-volcanic-earth",
+      "category": "palette",
+      "styleGroup": "nature",
+      "zhName": "火山大地配色",
+      "enName": "Volcanic Earth",
+      "image": "/assets/parameters/palette-volcanic-earth.png?v=20260827-palette-expansion",
+      "zhPrompt": "火山大地配色以玄武岩黑、火山灰和铁锈棕构成约七成冷却岩层与地表，熔岩红只在裂隙和高温核心出现，硫磺黄限制在矿物沉积或最亮热区；亮度随温度衰减并真实照亮附近岩面，适合地质与灾变场景，避免整片红色地面、黄色装饰线、黑位无纹理、熔岩像霓虹塑料、冷热区域无边界或普通沙漠被误套成火山景观",
+      "enPrompt": "volcanic-earth palette using basalt black ash gray and iron-rust brown for roughly seventy percent of cooled rock and terrain, restricting lava red to fissures and hot cores and sulfur yellow to mineral deposits or the highest-temperature points; luminosity falls with temperature and genuinely lights nearby stone, suitable for geology and disaster scenes; avoid an entirely red ground decorative yellow lines textureless black lava resembling neon plastic no boundary between hot and cooled zones or an ordinary desert recolored as volcanic terrain without geological evidence"
+    },
+    {
+      "id": "palette-tang-sancai",
+      "category": "palette",
+      "styleGroup": "chinese",
+      "zhName": "唐三彩配色",
+      "enName": "Tang Sancai",
+      "image": "/assets/parameters/palette-tang-sancai.png?v=20260827-palette-expansion",
+      "zhPrompt": "唐三彩配色以乳白和陶褐呈现胎体与未覆釉区，琥珀橙、深釉绿和稻草黄在器物表面随重力流淌、交融并露出深浅，三种釉色不必平均；高光集中在釉面，断口和底足保持陶土哑光，适合陶塑与文化产品，避免普通物体套三色滤镜、荧光绿、无重力均匀渐变、金属光泽、伪古文字或把所有唐代视觉都简化为三彩釉色",
+      "enPrompt": "Tang sancai palette exposing creamy white and pottery brown at clay body or unglazed areas while amber orange deep glaze green and straw yellow flow mingle and thin under gravity across ceramic surfaces without equal allocation; highlights belong to glaze and fractures or foot rings remain matte earthen material, suitable for pottery sculpture and cultural products; avoid placing a three-color filter on unrelated objects fluorescent green gravity-free uniform gradients metallic reflections pseudo-ancient text or reducing every Tang-period visual subject to sancai glaze regardless of medium and context"
+    },
+    {
+      "id": "palette-desert-sci-fi",
+      "category": "palette",
+      "styleGroup": "cinema",
+      "zhName": "沙丘科幻配色",
+      "enName": "Desert Sci-Fi",
+      "image": "/assets/parameters/palette-desert-sci-fi.png?v=20260827-palette-expansion",
+      "zhPrompt": "荒漠科幻配色以沙金、浅砂岩和铁锈橙承担约六成地貌、尘埃与自然暖光，钢蓝灰、深黑用于机械设施、服装和阴影；冷硬材质与干燥暖地貌在接触处共享尘土和反射，少量冷白用于界面或能源点，适合星球探索与工业叙事，避免青橙滤镜生硬分割、设施无尘、黑色塑料、满屏发光线、沙色污染肤色或把普通沙漠只加飞船就称作世界观",
+      "enPrompt": "desert science-fiction palette assigning roughly sixty percent of terrain dust and natural warm light to sand gold pale sandstone and rust orange, using steel blue-gray and deep black for machinery clothing and shadow; cool engineered materials share dust reflection and contact staining with the dry landscape, while limited cold white marks interfaces or energy points, supporting planetary exploration and industrial narrative; avoid a hard teal-orange split spotless equipment black plastic glowing lines everywhere sand-contaminated skin or calling an ordinary desert a complete world merely by adding a spaceship"
+    },
+    {
+      "id": "palette-coral-reef",
+      "category": "palette",
+      "styleGroup": "nature",
+      "zhName": "珊瑚礁配色",
+      "enName": "Coral Reef",
+      "image": "/assets/parameters/palette-coral-reef.png?v=20260827-palette-expansion",
+      "zhPrompt": "珊瑚礁配色以深海青和清水蓝绿构成约七成水体与远景，珊瑚红、阳光黄和贝壳白集中在特定珊瑚、鱼类与水面光斑；颜色随水深衰减，红色在远处更快消失，近景暖色仍受蓝绿环境光影响，适合海洋生态视觉，避免水下五彩霓虹、所有珊瑚同红、鱼群颜色随机、白色过曝、深度无色偏变化或将活礁画成装饰水族箱",
+      "enPrompt": "coral-reef palette using deep ocean teal and clear blue-green for roughly seventy percent of water and distance, concentrating coral red sunlight yellow and shell white on selected coral fish and surface caustic highlights; color attenuates with depth, red disappearing sooner in distance while near warm hues still receive blue-green ambient light, supporting marine ecological imagery; avoid underwater rainbow neon every coral identical red randomly colored fish clipped white no depth-dependent spectral change or turning a living reef into a decorative aquarium with evenly distributed color"
+    },
+    {
+      "id": "palette-cherry-moss",
+      "category": "palette",
+      "styleGroup": "nature",
+      "zhName": "樱花苔庭配色",
+      "enName": "Cherry Blossom Moss",
+      "image": "/assets/parameters/palette-cherry-moss.png?v=20260827-palette-expansion",
+      "zhPrompt": "樱花苔庭配色以暖纸白、苔绿和嫩灰绿覆盖约七成庭园、石景与留白，樱粉和浅花瓣粉只集中在花冠、落瓣与局部反光；绿色按湿度和植物种类变化，粉色不扩散到天空和肤色，整体春日轻盈但有石木深色锚点，避免粉绿各占一半、糖果滤镜、荧光嫩绿、满屏花瓣、无季节层次或自动加入与场景无关的日式符号",
+      "enPrompt": "cherry-and-moss garden palette covering roughly seventy percent of garden stone and negative space with warm paper white moss green and tender gray-green, concentrating cherry pink and pale petal pink on blossom crowns fallen petals and selected reflections; greens vary by moisture and species while pink stays out of sky and skin, with darker stone or timber anchoring an airy spring image; avoid equal pink-green candy division fluorescent foliage petals filling the frame no seasonal depth or automatic addition of unrelated Japanese symbols merely because cherry color is present"
+    },
+    {
+      "id": "palette-blue-white-porcelain",
+      "category": "palette",
+      "styleGroup": "chinese",
+      "zhName": "青花瓷蓝白",
+      "enName": "Blue and White Porcelain",
+      "image": "/assets/parameters/palette-blue-white-porcelain.png?v=20260827-palette-expansion",
+      "zhPrompt": "青花瓷蓝白配色以暖白作为约六成瓷面、纸面或空间底色，钴蓝承担主要纹样和结构，墨海军蓝只加深轮廓与阴影，浅灰和少量青瓷绿用于层次过渡；蓝色浓淡来自笔触、釉下渗化与烧制，不是数码纯色，适合器物与东方设计，避免蓝白平均条纹、冷白刺眼、所有材质瓷器化、海军蓝堵塞、无来源金边或生成伪书法和乱码纹样",
+      "enPrompt": "blue-and-white porcelain palette giving warm white roughly sixty percent of ceramic paper or spatial ground, using cobalt for principal motif and structure, ink navy only to deepen contour and shadow and pale gray plus limited celadon green for transitions; blue variation should arise from brush loading underglaze feathering and firing rather than one digital solid color, supporting objects and Eastern design; avoid equal blue-white stripes glaring cold white making every material ceramic blocked navy source-free gold borders or fabricated calligraphy and gibberish ornament used to fill the surface"
+    },
+    {
+      "id": "palette-y2k-chrome",
+      "category": "palette",
+      "styleGroup": "commercial",
+      "zhName": "Y2K 铬彩配色",
+      "enName": "Y2K Chrome",
+      "image": "/assets/parameters/palette-y2k-chrome.png?v=20260827-palette-expansion",
+      "zhPrompt": "Y2K 铬彩配色以亮黑、冷灰和铬银构成约六成数码设备与背景，电光蓝承担界面主色，半透明淡紫和热粉仅在塑料、凝胶或焦点按钮中出现；金属反射必须映出环境，透明材质有厚度和折射，适合千禧潮流与数码产品，避免所有表面镜面、热粉满屏、廉价彩虹渐变、无来源发光、文字可读性差、肤色金属化或把降低分辨率当作 Y2K 设计",
+      "enPrompt": "Y2K chrome palette using glossy black cool gray and chrome silver for roughly sixty percent of digital device and background structure, assigning electric blue to the primary interface and reserving translucent lavender plus hot pink for plastic gel or a focal control; metal must reflect its environment and transparent material needs thickness and refraction, supporting millennium fashion and digital products; avoid mirror finish on every surface hot pink everywhere cheap rainbow gradients source-free glow unreadable typography metallic skin or assuming that lower resolution alone creates a coherent Y2K visual language"
+    }
+  ]
+}

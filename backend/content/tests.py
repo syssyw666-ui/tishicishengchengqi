@@ -271,6 +271,7 @@ class AdminCustomizationTests(TestCase):
                 response.close()
 
     def test_admin_reorders_only_inside_current_subcategory(self):
+        ParameterOption.objects.filter(category="camera").delete()
         first = ParameterOption.objects.create(
             source_id="order-first", category="camera", style_group="angle", order=1,
             zh_name="第一项", en_name="First", zh_prompt="第一", en_prompt="first",

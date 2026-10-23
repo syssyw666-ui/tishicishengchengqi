@@ -18,7 +18,6 @@ function param(
 const characterNegative = ["unclear identity", "inconsistent character design", "distorted body"];
 const expressionNegative = ["blank dead eyes", "asymmetric expression", "distorted face"];
 const hairNegative = ["messy unintended hair", "distorted hairline", "unclear makeup"];
-const propNegative = ["unrecognizable object", "floating object without contact", "bad hands"];
 const effectNegative = ["muddy effects", "overcrowded particles", "visual noise"];
 const storyNegative = ["unclear action", "confusing narrative", "stiff body language"];
 
@@ -88,23 +87,6 @@ export const supplementParameters: PromptParameter[] = [
   param("hair-makeup", "makeup-fantasy", "makeup-stylized", "幻想妆容", "Fantasy Makeup", "幻想妆容，面部纹样或闪粉装饰清晰", "fantasy makeup with clear facial motifs or shimmer accents", hairNegative),
   param("hair-makeup", "makeup-cyber", "makeup-stylized", "赛博妆容", "Cyber Makeup", "赛博妆容，金属线条、冷色高光和未来感", "cyber makeup with metallic lines, cool highlights, futuristic detail", hairNegative),
   param("hair-makeup", "makeup-stage", "makeup-stylized", "舞台妆", "Stage Makeup", "舞台妆容，轮廓强化，色彩醒目，适合远距离观看", "stage makeup, enhanced contours, bold colors, readable from distance", hairNegative),
-
-  param("props", "prop-book", "daily", "书本", "Book", "画面包含书本作为道具，增强阅读或知识氛围", "book prop included, enhancing reading or knowledge atmosphere", propNegative),
-  param("props", "prop-smartphone", "work-tech", "手机", "Smartphone", "画面包含手机道具，现代生活或沟通语境明确", "smartphone prop, clear modern life or communication context", propNegative),
-  param("props", "prop-laptop", "work-tech", "笔记本电脑", "Laptop", "画面包含笔记本电脑，工作、学习或科技感明确", "laptop prop, clear work, study, or technology context", propNegative),
-  param("props", "prop-camera", "art-culture", "相机", "Camera", "画面包含相机道具，摄影和记录感明确", "camera prop, clear photography and documenting feeling", propNegative),
-  param("props", "prop-umbrella", "daily", "雨伞", "Umbrella", "画面包含雨伞道具，雨天、遮挡或浪漫氛围", "umbrella prop, rainy weather, shelter, or romantic atmosphere", propNegative),
-  param("props", "prop-flowers", "daily", "花束", "Flowers", "画面包含花束道具，柔和、礼物或情感表达", "flower bouquet prop, soft gift-like emotional expression", propNegative),
-  param("props", "prop-suitcase", "travel", "行李箱", "Suitcase", "画面包含行李箱道具，旅行和迁徙感明确", "suitcase prop, clear travel or transition feeling", propNegative),
-  param("props", "prop-lantern", "art-culture", "灯笼", "Lantern", "画面包含灯笼道具，传统、夜景或节庆氛围", "lantern prop, traditional, night, or festive atmosphere", propNegative),
-  param("props", "prop-musical-instrument", "art-culture", "乐器", "Musical Instrument", "画面包含乐器道具，音乐和表演语境明确", "musical instrument prop, clear music or performance context", propNegative),
-  param("props", "prop-sword", "fantasy", "剑", "Sword", "画面包含剑类道具，角色和动作方向清楚", "sword prop, clear character role and action direction", propNegative),
-  param("props", "prop-staff", "fantasy", "法杖", "Staff", "画面包含法杖道具，幻想、仪式或能量感明确", "staff prop, fantasy, ritual, or energy feeling", propNegative),
-  param("props", "prop-map", "travel", "地图", "Map", "画面包含地图道具，探索、导航和冒险感明确", "map prop, exploration, navigation, and adventure context", propNegative),
-  param("props", "prop-cup", "daily", "杯子", "Cup", "画面包含杯子道具，日常生活和休闲氛围", "cup prop, everyday life and relaxed atmosphere", propNegative),
-  param("props", "prop-backpack", "travel", "背包", "Backpack", "画面包含背包道具，通勤、旅行或户外感", "backpack prop, commute, travel, or outdoor feeling", propNegative),
-  param("props", "prop-product-box", "commercial", "产品包装盒", "Product Box", "画面包含产品包装盒，适合电商、开箱或广告场景", "generic product packaging box prop, suitable for ecommerce, unboxing, or advertising", propNegative),
-  param("props", "prop-tool-kit", "work-tech", "工具箱", "Tool Kit", "画面包含工具箱，维修、手作和工作现场明确", "tool kit prop, clear repair, craft, or workshop context", propNegative),
 
   param("visual-effect", "effect-sparkles", "light-particle", "闪粉星点", "Sparkles", "少量细碎闪粉星点分布在焦点附近，亮度和尺寸有层次，边缘清晰但不过曝，形成轻盈梦幻的高光节奏", "fine sparkle points clustered near the focal area, varied scale and brightness, crisp without clipping, creating a light dreamy highlight rhythm", effectNegative),
   param("visual-effect", "effect-particle-trails", "light-particle", "粒子轨迹", "Particle Trails", "粒子沿主体运动方向形成由密到疏的连续轨迹，近端清晰、远端衰减，用速度曲线强化动作和能量走向", "particle trails following the subject's motion vector, dense and sharp near the source then gradually dispersing, describing speed and energy flow", effectNegative),

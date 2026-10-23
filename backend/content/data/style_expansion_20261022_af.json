@@ -1,0 +1,299 @@
+{
+  "parameters": [
+    {
+      "id": "material-glass",
+      "category": "color-material",
+      "styleGroup": "translucent",
+      "zhName": "玻璃",
+      "enName": "Glass",
+      "image": "/assets/parameters/material-glass.jpg",
+      "zhPrompt": "玻璃材质通过清楚厚度、边缘折射、内部透光和随视角变化的环境反射表现，透明区域仍会弯曲背景并在接触面产生焦散或阴影，抛光边缘高光连续但不过曝；根据制品选择实心或空心结构，避免完全不可见、塑料透明片、无厚度轮廓、反射与环境矛盾或玻璃穿过相邻物体",
+      "enPrompt": "glass material expressed through readable thickness edge refraction internal transmission and view-dependent environmental reflection, with transparent regions bending the background and producing caustics or shadows at contact while polished edge highlights remain continuous without clipping; choose solid or hollow construction appropriately, avoiding invisible glass clear plastic sheets thicknessless outlines reflections contradicting the scene or glass intersecting nearby objects"
+    },
+    {
+      "id": "material-wood",
+      "category": "color-material",
+      "styleGroup": "stone",
+      "zhName": "木质",
+      "enName": "Wood",
+      "image": "/assets/parameters/material-wood.jpg",
+      "zhPrompt": "木质材质由具体树种对应的色泽、年轮或直纹、导管、端面与顺纹方向构成，切削、打磨或涂装改变光泽但不能抹掉纤维，接缝和受力方向符合木工结构，边缘可见真实厚度；避免统一木纹贴图、纹理跨越不同零件、塑料亮漆、树结满布、端面与侧面纹理相同或把木材画成石头",
+      "enPrompt": "wood material defined by species-appropriate color growth or straight grain pores end grain and fiber direction, with cutting sanding or finish changing gloss without erasing structure and joints and load direction following believable woodworking while edges show real thickness; avoid one tiled grain across everything texture crossing separate parts plastic varnish knots everywhere identical end and side grain or wood rendered as stone"
+    },
+    {
+      "id": "lighting-studio-softbox",
+      "category": "lighting",
+      "styleGroup": "interior",
+      "zhName": "影棚柔光箱",
+      "enName": "Studio Softbox",
+      "image": "/assets/parameters/lighting-studio-softbox.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "影棚柔光箱作为面积可见或位置可推断的大光源，近距离产生宽阔柔和高光、渐进阴影边缘与自然眼神光，补光和负补光控制明暗比但不抹平体积，背景亮度独立可控；避免无方向平光、多个相同眼神光、皮肤塑料化、鼻影完全消失或高光形状与光箱位置矛盾",
+      "enPrompt": "studio softbox acting as a large-area source whose position is visible or inferable, creating broad soft highlights gradual shadow edges and natural catchlights while fill and negative fill control contrast without flattening volume and background exposure remains independently managed; avoid directionless flat light multiple identical catchlights plastic skin vanished nose shadow or highlight shape contradicting softbox placement"
+    },
+    {
+      "id": "material-liquid",
+      "category": "color-material",
+      "styleGroup": "translucent",
+      "zhName": "液体凝胶",
+      "enName": "Liquid Gel",
+      "image": "/assets/parameters/material-liquid.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "液体凝胶材质具有连续体积、弯月面、表面张力和受重力影响的流动形态，透明或半透明内部会吸收与折射色彩，边缘高光和气泡随厚度变化，接触容器或表面时形成合理润湿线；避免固体塑料块、无重力悬浮水滴、液体穿壁、所有气泡同大或高光与光源无关",
+      "enPrompt": "liquid-gel material with continuous volume meniscus surface tension and gravity-driven flow, transparent or translucent interiors absorbing and refracting color while edge highlights and bubbles vary with thickness and contact against a vessel or surface creates a plausible wetting line; avoid solid plastic blocks weightless floating droplets liquid passing through walls identical bubbles or highlights unrelated to the light source"
+    },
+    {
+      "id": "lighting-candlelight",
+      "category": "lighting",
+      "styleGroup": "interior",
+      "zhName": "烛光",
+      "enName": "Candlelight",
+      "image": "/assets/parameters/lighting-candlelight.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "烛光由画面内或近处可推断的微小火焰提供，暖色照度随距离快速衰减，在面部和物体下方形成柔中带硬的局部阴影，远处保留冷暗环境色，火焰可轻微跳动但结构可见；避免整屋均匀橙光、蜡烛照亮巨大空间、火焰过曝成白球、影子方向混乱或人物皮肤纯黄色",
+      "enPrompt": "candlelight motivated by a small visible or nearby flame, falling off rapidly with distance and producing localized warm illumination with moderately crisp shadows beneath facial features and objects while distant surroundings retain cool darkness and the flame may flicker without losing structure; avoid uniform orange room light one candle illuminating a vast hall a clipped white fireball conflicting shadows or entirely yellow skin"
+    },
+    {
+      "id": "lighting-firelight",
+      "category": "lighting",
+      "styleGroup": "dramatic",
+      "zhName": "火光",
+      "enName": "Firelight",
+      "image": "/assets/parameters/lighting-firelight.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "火光来自篝火、壁炉或燃烧物的低位不规则光源，橙红高光随火焰变化落在朝火一侧，背光面保留环境冷色，附近烟尘和材质反射响应热源，投影可轻微跳动；避免火焰无燃料、全景红色滤镜、每处高光同亮、人物离火很远仍过曝或烟雾方向与热对流冲突",
+      "enPrompt": "firelight originating from a low irregular campfire fireplace or burning material, placing fluctuating orange-red highlights on surfaces facing the flame while away sides retain cooler ambient color and nearby smoke dust and reflective materials respond to heat with subtly moving shadows; avoid flame with no fuel a global red filter equal highlights everywhere distant subjects overexposed or smoke contradicting thermal rise"
+    },
+    {
+      "id": "lighting-practical-lamp",
+      "category": "lighting",
+      "styleGroup": "interior",
+      "zhName": "实景台灯",
+      "enName": "Practical Lamp",
+      "image": "/assets/parameters/lighting-practical-lamp.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "实景台灯或壁灯作为画面内可见光源，灯罩形状决定向上、向下或侧向的照明范围，亮度随距离衰减并在桌面、墙面和人物上形成一致色温与接触阴影，环境补光只保留必要细节；避免灯具自身不亮却照亮全屋、灯罩穿光、多个影子方向、统一暖黄滤镜或电线与安装位置不合理",
+      "enPrompt": "practical table or wall lamp visible within the scene, with shade geometry controlling upward downward or lateral spread and brightness falling naturally across desk wall and figure in one color temperature with coherent contact shadows while ambient fill preserves only necessary detail; avoid an unlit fixture illuminating the room light passing through an opaque shade multiple shadow directions a blanket warm filter or implausible wiring and mounting"
+    },
+    {
+      "id": "lighting-window-light",
+      "category": "lighting",
+      "styleGroup": "natural",
+      "zhName": "窗边自然光",
+      "enName": "Window Light",
+      "image": "/assets/parameters/lighting-window-light.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "窗边自然光从可辨窗户方向进入，窗框大小与天空状态决定光斑形状和软硬，靠窗侧明亮、背窗侧由室内反射柔和填充，亮度与色温随距离逐步衰减；保留窗外不过曝的少量信息，避免左右同时来光、窗框投影方向错误、脸部一半纯黑、整幅白雾或把影棚柔光误称窗光",
+      "enPrompt": "window daylight entering from a readable window direction, with opening size and sky condition determining patch shape and softness so the near side is bright and the far side receives gentle interior bounce while intensity and color fall with distance; retain limited exterior detail without clipping, avoiding light from both sides wrong frame-shadow direction half the face pure black global white haze or studio soft light mislabeled as window light"
+    },
+    {
+      "id": "lighting-moonlight-blue",
+      "category": "lighting",
+      "styleGroup": "natural",
+      "zhName": "蓝色月光",
+      "enName": "Blue Moonlight",
+      "image": "/assets/parameters/lighting-moonlight-blue.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "蓝色月光以夜空和月亮方向为依据形成低照度冷色主光，边缘高光柔和、阴影深但保留环境结构，地面和水面反射受材质控制，室内暖光若存在则只作局部冷暖色彩对比；避免把夜景统一染成亮蓝、月亮照度像太阳、无来源轮廓光、星空过曝或人物肤色完全失真",
+      "enPrompt": "blue moonlight using the night sky and moon direction as a low-intensity cool key, with soft edge highlights and deep shadows that retain environmental structure while ground and water reflections respond to material and any indoor warmth remains a local color contrast; avoid dyeing the whole night bright blue sunlight-level lunar exposure source-free rim light blown stars or completely unnatural skin color"
+    },
+    {
+      "id": "color-pastel-palette",
+      "category": "color-material",
+      "styleGroup": "palette",
+      "zhName": "粉彩色盘",
+      "enName": "Pastel Palette",
+      "image": "/assets/parameters/color-pastel-palette.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "粉彩色盘以提高明度、降低色彩纯度的柔和粉、杏、薄荷、天蓝和薰衣草等有限颜色组成，仍通过冷暖、明度和面积比例建立主次，白色或中性色承担呼吸空间；保留主体局部对比，避免所有颜色同亮同饱和、糖果荧光、灰白发脏、色彩数量过多或肤色被统一漂白",
+      "enPrompt": "pastel palette built from a limited set of high-value reduced-chroma pink apricot mint sky blue lavender and related hues, still creating hierarchy through temperature value and area proportion while white or neutral space provides breathing room; retain selective subject contrast, avoiding every color equally light and saturated fluorescent candy tones muddy chalkiness too many hues or skin uniformly bleached"
+    },
+    {
+      "id": "color-monochrome",
+      "category": "color-material",
+      "styleGroup": "palette",
+      "zhName": "单色黑白灰",
+      "enName": "Monochrome",
+      "image": "/assets/parameters/color-monochrome.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "单色黑白灰方案依靠从深黑到高光白的完整灰阶、局部对比和材质反射区分主体与空间，色彩信息转译为明度而非简单去饱和，必要时保留一种纸色或银盐色调但不引入其他色相；避免中间调全丢、黑位堵死、白位过曝、灰雾无焦点或用蓝色滤镜冒充黑白",
+      "enPrompt": "monochrome black-white-gray palette using a full tonal scale from deep black to highlight white plus local contrast and material reflection to separate subject and space, translating color information into value rather than merely desaturating and optionally retaining one paper or silver-gelatin cast without other hues; avoid missing midtones crushed blacks clipped whites flat gray fog or a blue filter masquerading as monochrome"
+    },
+    {
+      "id": "color-duotone",
+      "category": "color-material",
+      "styleGroup": "palette",
+      "zhName": "双色调",
+      "enName": "Duotone",
+      "image": "/assets/parameters/color-duotone.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "双色调方案只选两种有明确角色的颜色，一种承担暗部、文字区或结构，另一种承担亮部、主体或强调，并通过套色叠印或明度变化扩展层次但不产生第三种主色；两色需保持可读对比，避免随机渐变、彩虹高光、黑白灰之外偷偷加入多色或面积五五开失去焦点",
+      "enPrompt": "duotone scheme selecting exactly two colors with explicit roles, one carrying shadows structural zones or typography space and the other carrying highlights subject or accents, expanding depth through overprint or value variation without introducing a third dominant hue; maintain readable contrast, avoiding random gradients rainbow highlights hidden multicolor additions beyond neutral support or an equal split that removes hierarchy"
+    },
+    {
+      "id": "color-complementary",
+      "category": "color-material",
+      "styleGroup": "palette",
+      "zhName": "互补色对比",
+      "enName": "Complementary Color",
+      "image": "/assets/parameters/color-complementary.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "互补色对比选择色相环相对的两组颜色并设定明显主次，大面积主色控制环境，小面积补色聚焦主体或关键动作，中性色缓冲边界，亮度和饱和度分别调整以避免视觉震动；避免两色等面积满饱和、混色变成脏灰、所有物体交替上色、肤色失真或加入第三个竞争强调色",
+      "enPrompt": "complementary color scheme using two opposite hue families with clear hierarchy, the dominant color controlling the environment and a smaller complement focusing the subject or key action while neutrals buffer edges and value and saturation are tuned separately to avoid vibration; avoid equal-area maximum saturation muddy mixing every object alternating colors distorted skin or a third competing accent"
+    },
+    {
+      "id": "bg-antique-parchment",
+      "category": "background",
+      "styleGroup": "paper",
+      "zhName": "古典羊皮纸背景",
+      "enName": "Antique Parchment",
+      "image": "/assets/parameters/bg-antique-parchment.png?v=20260827-bg-path-fix",
+      "zhPrompt": "古典羊皮纸背景呈暖象牙至浅赭色，纤维与胶质表面因年代产生不均匀氧化、边缘暗化和少量自然波浪，中心仍保留可书写的干净区域，厚度与透光感符合真实皮纸或历史纸张；避免咖啡泼洒式做旧、烧焦破洞、藏宝图纹样、乱码文字、重复污点或整体棕黑看不清主体",
+      "enPrompt": "antique parchment background ranging from warm ivory to pale ochre, with fibrous sized surface showing uneven oxidation edge darkening and limited natural waviness while the center remains clean enough for content and thickness and translucency feel like real vellum or historic paper; avoid coffee-spill aging burned holes treasure-map motifs gibberish text repeated stains or an overall dark brown field that obscures the subject",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-translucent-acrylic",
+      "category": "background",
+      "styleGroup": "material",
+      "zhName": "半透明亚克力背景",
+      "enName": "Translucent Acrylic Background",
+      "image": "/assets/parameters/bg-translucent-acrylic.jpg",
+      "zhPrompt": "半透明亚克力背景由有清楚厚度和抛光边缘的板材组成，光线穿过后产生柔和扩散、轻微折射与边缘亮线，板后物体只形成朦胧色块而非完全透明，接触面和支架保持简洁；适合现代产品摄影，避免玻璃裂纹、塑料浑浊、无厚度色片、过强镜像或板材悬空无支撑",
+      "enPrompt": "translucent acrylic background made from panels with readable thickness and polished edges, transmitting light as soft diffusion mild refraction and a bright edge line while objects behind become blurred color shapes rather than fully visible and contacts or supports remain clean; suited to modern product photography, avoiding glass cracks cloudy cheap plastic thicknessless color sheets strong mirror images or unsupported floating panels",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-wrinkled-rice-paper",
+      "category": "background",
+      "styleGroup": "paper",
+      "zhName": "皱褶宣纸背景",
+      "enName": "Wrinkled Rice Paper",
+      "image": "/assets/parameters/bg-wrinkled-rice-paper.jpg",
+      "zhPrompt": "皱褶宣纸背景保留米白植物纤维和薄纸透光性，非规则浅皱从受压或展开位置自然延伸，折峰捕捉柔光、凹处略暗但不形成硬折纸结构，纸面仍可承载水墨或极简主体；避免揉成团的剧烈褶皱、塑料膜高光、重复折线贴图、污渍做旧或皱纹穿过主体轮廓造成干扰",
+      "enPrompt": "wrinkled xuan-paper background retaining warm-white plant fibers and thin-paper translucency, with irregular shallow wrinkles extending naturally from compressed or unfolded areas so ridges catch soft light and valleys darken gently without becoming origami structure; remain usable for ink or minimal subjects, avoiding violently crumpled paper plastic-film shine repeated crease textures antique stains or wrinkles cutting distractingly through the subject",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-dark-walnut",
+      "category": "background",
+      "styleGroup": "material",
+      "zhName": "深胡桃木背景",
+      "enName": "Dark Walnut Background",
+      "image": "/assets/parameters/bg-dark-walnut.jpg",
+      "zhPrompt": "深胡桃木背景以深棕至巧克力色心材、流动山形与直纹、细孔和偶发小结疤构成，板材拼接宽度与纹理方向一致，哑光油蜡处理让高光温润而不镜面；适合成熟高端产品，避免黑色塑料、重复木纹块、树结过密、板缝无透视、橙红色调过强或纹理跨板连续",
+      "enPrompt": "dark walnut background formed from deep brown to chocolate heartwood with flowing cathedral and straight grain fine pores and occasional small knots, boards joined at plausible widths in consistent direction and finished with matte oil-wax for warm non-mirror highlights; suited to mature premium products, avoiding black plastic repeated grain tiles excessive knots seams without perspective overpowering orange-red color or grain continuing across separate boards",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-soft-gradient-paper",
+      "category": "background",
+      "styleGroup": "paper",
+      "zhName": "柔和渐变纸背景",
+      "enName": "Soft Gradient Paper",
+      "image": "/assets/parameters/bg-soft-gradient-paper.jpg",
+      "zhPrompt": "柔和渐变纸背景使用真实纸张或卡纸承载一到两种邻近色的缓慢过渡，纤维和细颗粒在全部色区连续可见，渐变由喷涂、染色或柔光形成且不改变纸面哑光属性，保留充足留白；避免数字色带、彩虹多色、中心发光洞、塑料高光、边缘突变或渐变污染主体轮廓",
+      "enPrompt": "soft gradient-paper background using real paper or card to carry a slow transition between one or two neighboring colors, with fibers and fine grain remaining continuous through every color region and the blend created by spray dye or soft light without losing matte paper character and ample negative space; avoid digital banding rainbow palettes a glowing central hole plastic shine abrupt edges or muddy color contamination around the subject",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-pearl-satin",
+      "category": "background",
+      "styleGroup": "fabric",
+      "zhName": "珍珠缎面背景",
+      "enName": "Pearl Satin Background",
+      "image": "/assets/parameters/bg-pearl-satin.jpg",
+      "zhPrompt": "珍珠缎面背景以珠白或淡奶油织物形成宽缓褶皱，紧密织法产生沿曲率流动的柔亮高光，暗部仍保持中性乳白层次并可见细微经纬，不应像镜面或透明丝绸；适合珠宝、婚礼或护肤视觉，避免过曝纯白、塑料膜、每条褶同宽、彩虹珠光或褶皱遮没主体",
+      "enPrompt": "pearl satin background in pearl white or pale cream forming broad relaxed folds, with a tight weave producing soft flowing highlights that follow curvature while shadows retain neutral creamy layers and subtle yarn structure rather than mirror or transparent silk; suited to jewelry bridal or skincare visuals, avoiding clipped white plastic film identical folds rainbow iridescence or drapery overwhelming the subject",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-red-lacquer",
+      "category": "background",
+      "styleGroup": "material",
+      "zhName": "朱红大漆背景",
+      "enName": "Red Lacquer Background",
+      "image": "/assets/parameters/bg-red-lacquer.jpg",
+      "zhPrompt": "朱红大漆背景由多层薄漆打磨叠加形成深浅红色内透感，表面平整温润、镜面度受控并在边缘或掠射光下显示漆层深度，细小手工波纹可见但不做破旧；强调大漆工艺而非红塑料，避免金色纹样自动出现、强烈镜面反射、橙色荧光、裂纹满布或主体倒影喧宾夺主",
+      "enPrompt": "vermilion lacquer background built from multiple thin polished coats creating optical depth across dark and bright reds, with a smooth warm surface controlled gloss and layer depth visible at edges or grazing light plus restrained handmade waviness without distressing; emphasize true lacquer rather than red plastic, avoiding automatic gold motifs harsh mirror reflections fluorescent orange crackle everywhere or a subject reflection taking over",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-museum-gray-wall",
+      "category": "background",
+      "styleGroup": "studio",
+      "zhName": "博物馆灰墙",
+      "enName": "Museum Gray Wall",
+      "image": "/assets/parameters/bg-museum-gray-wall.jpg",
+      "zhPrompt": "博物馆灰墙背景采用中性偏暖或偏冷的低彩度灰色矿物涂层，墙面大幅平整、细孔克制，柔和轨道灯或洗墙光形成有边界但不过硬的展示亮区，地面接触和墙体转角保持真实；适合艺术品或雕塑陈列，避免水泥废墟感、纯数字灰、舞台光圈、乱码标牌或墙面纹理抢过主体",
+      "enPrompt": "museum gray-wall background using a low-chroma neutral mineral coating that may lean slightly warm or cool, broad and smooth with restrained pores while soft track or wall-wash lighting creates a bounded but gentle display zone and floor contact and wall corners remain real; suited to art or sculpture presentation, avoiding ruined concrete character flat digital gray a theatrical spotlight circle gibberish labels or texture competing with the subject",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "light-fluorescent-office",
+      "category": "lighting",
+      "styleGroup": "interior",
+      "zhName": "办公室荧光灯",
+      "enName": "Fluorescent Office Light",
+      "image": "/assets/parameters/light-fluorescent-office.jpg",
+      "zhPrompt": "办公室荧光灯由天花板条形或格栅灯具提供宽而偏冷的顶光，桌面和墙面照度较均匀但眼窝、下颌与物体底部仍有轻微顶光阴影，不同灯管可有细微色差与频闪痕迹；避免绿色滤镜覆盖全景、灯具位置与高光不符、空间无阴影像渲染图或每根灯管亮度随机",
+      "enPrompt": "office fluorescent lighting from ceiling strips or troffers creating broad slightly cool overhead illumination, fairly even across desks and walls while retaining mild top-down shadows in eye sockets under jaws and beneath objects plus subtle tube-to-tube color variation or flicker traces; avoid a global green filter highlights unrelated to fixtures a shadowless rendered room or random brightness on every tube",
+      "negative": [
+        "muddy lighting",
+        "overexposed highlights",
+        "uncontrolled shadows"
+      ]
+    },
+    {
+      "id": "light-laser-scan",
+      "category": "lighting",
+      "styleGroup": "sci-fi",
+      "zhName": "激光扫描光",
+      "enName": "Laser Scan Light",
+      "image": "/assets/parameters/light-laser-scan.jpg",
+      "zhPrompt": "激光扫描光由可见扫描器发出一条细线或薄光平面，沿主体表面按深度连续弯折并在烟尘中显示有限传播路径，扫描到的区域可产生局部数据感高光但不生成界面文字；区别于多束舞台激光，避免光线穿透不透明物、无发射器、满屏交叉线、实体光墙或扫描线与表面透视无关",
+      "enPrompt": "laser scan light emitted by a visible scanner as one narrow line or thin light plane, bending continuously across subject surfaces according to depth and revealing only a limited path through haze while scanned zones may gain local data-like highlights without interface text; distinguish it from multiple stage beams, avoiding passage through opaque objects no emitter a screen full of crossing lines a solid light wall or a scan line unrelated to surface perspective",
+      "negative": [
+        "muddy lighting",
+        "overexposed highlights",
+        "uncontrolled shadows"
+      ]
+    },
+    {
+      "id": "light-rim-only-silhouette",
+      "category": "lighting",
+      "styleGroup": "dramatic",
+      "zhName": "纯轮廓逆光",
+      "enName": "Rim-Light Silhouette",
+      "image": "/assets/parameters/light-rim-only-silhouette.jpg",
+      "zhPrompt": "纯轮廓逆光把主要光源放在主体后方并略偏侧，使光只沿头发、肩膀和外轮廓形成连续窄边，正面大部分进入暗部但仍可由极弱环境光保留少量结构，背景与轮廓有足够明度分离；避免整个人白边描线、轮廓光无来源、脸部被正面照亮、两侧高光完全对称或边缘过曝断裂",
+      "enPrompt": "rim-only silhouette lighting placing the main source behind and slightly to one side so a narrow continuous edge appears only along hair shoulders and outer contour, with the front mostly dark yet retaining minimal structure from faint ambient fill and sufficient background separation; avoid a white outline drawn around the whole figure source-free rim light a front-lit face perfectly symmetric edges or clipped broken highlights",
+      "negative": [
+        "muddy lighting",
+        "overexposed highlights",
+        "uncontrolled shadows"
+      ]
+    }
+  ]
+}

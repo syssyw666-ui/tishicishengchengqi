@@ -1,0 +1,294 @@
+{
+  "parameters": [
+    {
+      "id": "layout-style-japanese-minimal",
+      "category": "layout-style",
+      "styleGroup": "minimal",
+      "zhName": "日式简约排版",
+      "enName": "Japanese Minimal Layout",
+      "image": "/assets/parameters/layout-style-japanese-minimal.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "日式简约排版，大面积留白、小尺度视觉元素和安静不对称平衡；先确认成品媒介与横竖画幅，建立可见但不僵硬的页边距、列网和基线，再分配主视觉、标题区、副信息、标识与行动区域的面积和阅读顺序。所有对齐、跨栏、叠压和留白都服务同一个视觉焦点，并预留裁切出血与多尺寸安全区；用户提供文字时保持原文与层级，未提供时只保留结构清晰的占位形态。避免乱码、伪品牌、信息同权、卡片无目的堆叠、边距忽大忽小、元素贴边、装饰压住主体或把排版误作覆盖在成图上的随机模板；以少量元素、显著尺度差和不对称平衡建立节奏，空白必须围绕主体形成呼吸与方向，细线、淡色块和小字号信息只承担辅助层级。避免把极简做成空洞居中、米白滤镜、所有元素过小、装饰性日文韩文或缺少明确阅读入口",
+      "enPrompt": "Japanese minimalist layout, abundant white space, small visual element, quiet asymmetrical balance; establish the final medium and horizontal or vertical aspect ratio first, then build deliberate margins columns and a baseline before assigning area and reading order to the principal image headline supporting information identity and action zone. Every alignment column span overlap and negative space must support one visual focus while allowing trim bleed and multi-format safe zones. Preserve user-supplied wording and hierarchy exactly; when no copy is supplied use only clean structural placeholders rather than invented language. Avoid gibberish pseudo-brands equal emphasis everywhere purposeless card stacking inconsistent margins edge collisions decoration covering the subject or a random template pasted over an otherwise finished image; create rhythm with few elements decisive scale contrast and asymmetrical balance, making whitespace form breathing room and direction around the subject while hairlines pale fields and small information remain subordinate. Avoid empty centered minimalism beige filtering everything uniformly tiny elements decorative Japanese or Korean pseudo-writing or a composition with no clear entry point"
+    },
+    {
+      "id": "layout-style-swiss-grid",
+      "category": "layout-style",
+      "styleGroup": "grid",
+      "zhName": "瑞士网格排版",
+      "enName": "Swiss Grid Layout",
+      "image": "/assets/parameters/layout-style-swiss-grid.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "瑞士国际主义网格排版，严格列网、模块秩序和清晰信息层级，无文字；先确认成品媒介与横竖画幅，建立可见但不僵硬的页边距、列网和基线，再分配主视觉、标题区、副信息、标识与行动区域的面积和阅读顺序。所有对齐、跨栏、叠压和留白都服务同一个视觉焦点，并预留裁切出血与多尺寸安全区；用户提供文字时保持原文与层级，未提供时只保留结构清晰的占位形态。避免乱码、伪品牌、信息同权、卡片无目的堆叠、边距忽大忽小、元素贴边、装饰压住主体或把排版误作覆盖在成图上的随机模板；明确列数、栏距、模块比例和主对齐轴，图像与信息跨栏必须服从同一数学关系，并用一处有意破格制造重点。避免假网格、模块尺寸随意、几何形等量铺满、对齐线互相冲突或把历史现代主义简化成红黄蓝装饰",
+      "enPrompt": "Swiss international grid layout, strict columns, modular order, clear hierarchy, no readable text; establish the final medium and horizontal or vertical aspect ratio first, then build deliberate margins columns and a baseline before assigning area and reading order to the principal image headline supporting information identity and action zone. Every alignment column span overlap and negative space must support one visual focus while allowing trim bleed and multi-format safe zones. Preserve user-supplied wording and hierarchy exactly; when no copy is supplied use only clean structural placeholders rather than invented language. Avoid gibberish pseudo-brands equal emphasis everywhere purposeless card stacking inconsistent margins edge collisions decoration covering the subject or a random template pasted over an otherwise finished image; define column count gutters module ratios and a principal alignment axis, keeping image and information spans within one mathematical system and allowing a single intentional grid break for emphasis. Avoid a fake grid arbitrary module sizing equal geometric decoration conflicting alignment lines or reducing historical modernism to red yellow and blue ornament"
+    },
+    {
+      "id": "layout-style-bauhaus-geometric",
+      "category": "layout-style",
+      "styleGroup": "grid",
+      "zhName": "包豪斯几何排版",
+      "enName": "Bauhaus Geometric Layout",
+      "image": "/assets/parameters/layout-style-bauhaus-geometric.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "包豪斯几何排版，基础几何形、红黄蓝黑配色和现代主义构成；先确认成品媒介与横竖画幅，建立可见但不僵硬的页边距、列网和基线，再分配主视觉、标题区、副信息、标识与行动区域的面积和阅读顺序。所有对齐、跨栏、叠压和留白都服务同一个视觉焦点，并预留裁切出血与多尺寸安全区；用户提供文字时保持原文与层级，未提供时只保留结构清晰的占位形态。避免乱码、伪品牌、信息同权、卡片无目的堆叠、边距忽大忽小、元素贴边、装饰压住主体或把排版误作覆盖在成图上的随机模板；明确列数、栏距、模块比例和主对齐轴，图像与信息跨栏必须服从同一数学关系，并用一处有意破格制造重点。避免假网格、模块尺寸随意、几何形等量铺满、对齐线互相冲突或把历史现代主义简化成红黄蓝装饰",
+      "enPrompt": "Bauhaus geometric layout, basic shapes, red yellow blue black palette, modernist composition; establish the final medium and horizontal or vertical aspect ratio first, then build deliberate margins columns and a baseline before assigning area and reading order to the principal image headline supporting information identity and action zone. Every alignment column span overlap and negative space must support one visual focus while allowing trim bleed and multi-format safe zones. Preserve user-supplied wording and hierarchy exactly; when no copy is supplied use only clean structural placeholders rather than invented language. Avoid gibberish pseudo-brands equal emphasis everywhere purposeless card stacking inconsistent margins edge collisions decoration covering the subject or a random template pasted over an otherwise finished image; define column count gutters module ratios and a principal alignment axis, keeping image and information spans within one mathematical system and allowing a single intentional grid break for emphasis. Avoid a fake grid arbitrary module sizing equal geometric decoration conflicting alignment lines or reducing historical modernism to red yellow and blue ornament"
+    },
+    {
+      "id": "layout-style-luxury-editorial",
+      "category": "layout-style",
+      "styleGroup": "editorial",
+      "zhName": "奢华留白排版",
+      "enName": "Luxury Whitespace Layout",
+      "image": "/assets/parameters/layout-style-luxury-editorial.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "奢华留白排版，大边距、克制构图、精致产品区域和高级杂志感；先确认成品媒介与横竖画幅，建立可见但不僵硬的页边距、列网和基线，再分配主视觉、标题区、副信息、标识与行动区域的面积和阅读顺序。所有对齐、跨栏、叠压和留白都服务同一个视觉焦点，并预留裁切出血与多尺寸安全区；用户提供文字时保持原文与层级，未提供时只保留结构清晰的占位形态。避免乱码、伪品牌、信息同权、卡片无目的堆叠、边距忽大忽小、元素贴边、装饰压住主体或把排版误作覆盖在成图上的随机模板；按开篇、主图、正文、引语、图注与页码建立出版节奏，跨页时保护装订中缝并让图片裁切、标题尺度和正文栏宽形成连续阅读。避免把社论做成电商卡片、正文栏过宽、图注脱离图片、跨页主体被中缝切断或用密度掩盖层级缺失",
+      "enPrompt": "luxury whitespace layout, large margins, restrained composition, refined product area, premium editorial feel; establish the final medium and horizontal or vertical aspect ratio first, then build deliberate margins columns and a baseline before assigning area and reading order to the principal image headline supporting information identity and action zone. Every alignment column span overlap and negative space must support one visual focus while allowing trim bleed and multi-format safe zones. Preserve user-supplied wording and hierarchy exactly; when no copy is supplied use only clean structural placeholders rather than invented language. Avoid gibberish pseudo-brands equal emphasis everywhere purposeless card stacking inconsistent margins edge collisions decoration covering the subject or a random template pasted over an otherwise finished image; establish publication pacing through opener hero image body pull quote caption and folio, protecting the binding gutter on spreads and coordinating image crop headline scale and text measure into a continuous reading path. Avoid turning editorial work into commerce cards overly wide body columns detached captions a subject severed by the gutter or density used to hide missing hierarchy"
+    },
+    {
+      "id": "layout-style-magazine-spread",
+      "category": "layout-style",
+      "styleGroup": "editorial",
+      "zhName": "杂志跨页排版",
+      "enName": "Magazine Spread Layout",
+      "image": "/assets/parameters/layout-style-magazine-spread.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "杂志跨页排版，图片与信息占位条形成节奏，适合社论内容，无可读文字；先确认成品媒介与横竖画幅，建立可见但不僵硬的页边距、列网和基线，再分配主视觉、标题区、副信息、标识与行动区域的面积和阅读顺序。所有对齐、跨栏、叠压和留白都服务同一个视觉焦点，并预留裁切出血与多尺寸安全区；用户提供文字时保持原文与层级，未提供时只保留结构清晰的占位形态。避免乱码、伪品牌、信息同权、卡片无目的堆叠、边距忽大忽小、元素贴边、装饰压住主体或把排版误作覆盖在成图上的随机模板；按开篇、主图、正文、引语、图注与页码建立出版节奏，跨页时保护装订中缝并让图片裁切、标题尺度和正文栏宽形成连续阅读。避免把社论做成电商卡片、正文栏过宽、图注脱离图片、跨页主体被中缝切断或用密度掩盖层级缺失",
+      "enPrompt": "magazine spread layout, rhythm of images and information placeholder bars, editorial structure, no readable text; establish the final medium and horizontal or vertical aspect ratio first, then build deliberate margins columns and a baseline before assigning area and reading order to the principal image headline supporting information identity and action zone. Every alignment column span overlap and negative space must support one visual focus while allowing trim bleed and multi-format safe zones. Preserve user-supplied wording and hierarchy exactly; when no copy is supplied use only clean structural placeholders rather than invented language. Avoid gibberish pseudo-brands equal emphasis everywhere purposeless card stacking inconsistent margins edge collisions decoration covering the subject or a random template pasted over an otherwise finished image; establish publication pacing through opener hero image body pull quote caption and folio, protecting the binding gutter on spreads and coordinating image crop headline scale and text measure into a continuous reading path. Avoid turning editorial work into commerce cards overly wide body columns detached captions a subject severed by the gutter or density used to hide missing hierarchy"
+    },
+    {
+      "id": "layout-style-bold-poster",
+      "category": "layout-style",
+      "styleGroup": "commercial",
+      "zhName": "强视觉海报排版",
+      "enName": "Bold Poster Layout",
+      "image": "/assets/parameters/layout-style-bold-poster.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "强视觉海报排版，巨大抽象标题块、高对比色面和醒目视觉焦点，无文字；先确认成品媒介与横竖画幅，建立可见但不僵硬的页边距、列网和基线，再分配主视觉、标题区、副信息、标识与行动区域的面积和阅读顺序。所有对齐、跨栏、叠压和留白都服务同一个视觉焦点，并预留裁切出血与多尺寸安全区；用户提供文字时保持原文与层级，未提供时只保留结构清晰的占位形态。避免乱码、伪品牌、信息同权、卡片无目的堆叠、边距忽大忽小、元素贴边、装饰压住主体或把排版误作覆盖在成图上的随机模板；先锁定产品、利益点与单一行动目标，主商品保持完整轮廓和真实材质，价格、卖点、按钮与品牌安全区按转化顺序排列，并保留平台裁切余量。避免虚构价格折扣、多个行动按钮争抢、产品被文字遮挡、促销爆炸贴满画面、假品牌或把奢华等同于黑金堆砌",
+      "enPrompt": "bold poster layout, oversized abstract headline blocks, high contrast color planes, strong focal point, no text; establish the final medium and horizontal or vertical aspect ratio first, then build deliberate margins columns and a baseline before assigning area and reading order to the principal image headline supporting information identity and action zone. Every alignment column span overlap and negative space must support one visual focus while allowing trim bleed and multi-format safe zones. Preserve user-supplied wording and hierarchy exactly; when no copy is supplied use only clean structural placeholders rather than invented language. Avoid gibberish pseudo-brands equal emphasis everywhere purposeless card stacking inconsistent margins edge collisions decoration covering the subject or a random template pasted over an otherwise finished image; lock the product benefit and one action objective first, preserve the complete silhouette and real material of the hero item, and order price value proposition control and brand safe area according to conversion priority with platform crop tolerance. Avoid invented prices or discounts competing calls to action copy covering the product promotional bursts filling the frame fake brands or treating luxury as indiscriminate black-and-gold decoration"
+    },
+    {
+      "id": "layout-style-brutalist-web",
+      "category": "layout-style",
+      "styleGroup": "digital",
+      "zhName": "粗野主义网页排版",
+      "enName": "Brutalist Web Layout",
+      "image": "/assets/parameters/layout-style-brutalist-web.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "粗野主义网页排版，粗边框、原始模块、强烈黑白对比和硬朗结构；先确认成品媒介与横竖画幅，建立可见但不僵硬的页边距、列网和基线，再分配主视觉、标题区、副信息、标识与行动区域的面积和阅读顺序。所有对齐、跨栏、叠压和留白都服务同一个视觉焦点，并预留裁切出血与多尺寸安全区；用户提供文字时保持原文与层级，未提供时只保留结构清晰的占位形态。避免乱码、伪品牌、信息同权、卡片无目的堆叠、边距忽大忽小、元素贴边、装饰压住主体或把排版误作覆盖在成图上的随机模板；按真实视口和响应式断点组织导航、内容、状态、控件与数据密度，交互目标尺寸、对比度和间距满足可读与可点击要求，装饰界面只出现在有功能的位置。避免微小不可读文字、无意义 HUD 线框、移动端沿用桌面密度、卡片无限嵌套、发光边框泛滥或控件没有状态反馈",
+      "enPrompt": "brutalist web layout, raw blocks, heavy borders, stark black-white contrast, hard structure; establish the final medium and horizontal or vertical aspect ratio first, then build deliberate margins columns and a baseline before assigning area and reading order to the principal image headline supporting information identity and action zone. Every alignment column span overlap and negative space must support one visual focus while allowing trim bleed and multi-format safe zones. Preserve user-supplied wording and hierarchy exactly; when no copy is supplied use only clean structural placeholders rather than invented language. Avoid gibberish pseudo-brands equal emphasis everywhere purposeless card stacking inconsistent margins edge collisions decoration covering the subject or a random template pasted over an otherwise finished image; organize navigation content states controls and data density for a real viewport and responsive breakpoints, keeping interaction targets contrast and spacing readable and operable while decorative interface language appears only where function supports it. Avoid microscopic text meaningless HUD linework desktop density on mobile infinitely nested cards glow around every panel or controls with no legible state feedback"
+    },
+    {
+      "id": "layout-style-bento-grid",
+      "category": "layout-style",
+      "styleGroup": "digital",
+      "zhName": "Bento 网格排版",
+      "enName": "Bento Grid Layout",
+      "image": "/assets/parameters/layout-style-bento-grid.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "Bento 网格排版，圆角模块卡片、仪表盘式信息组织和干净数字界面；先确认成品媒介与横竖画幅，建立可见但不僵硬的页边距、列网和基线，再分配主视觉、标题区、副信息、标识与行动区域的面积和阅读顺序。所有对齐、跨栏、叠压和留白都服务同一个视觉焦点，并预留裁切出血与多尺寸安全区；用户提供文字时保持原文与层级，未提供时只保留结构清晰的占位形态。避免乱码、伪品牌、信息同权、卡片无目的堆叠、边距忽大忽小、元素贴边、装饰压住主体或把排版误作覆盖在成图上的随机模板；按真实视口和响应式断点组织导航、内容、状态、控件与数据密度，交互目标尺寸、对比度和间距满足可读与可点击要求，装饰界面只出现在有功能的位置。避免微小不可读文字、无意义 HUD 线框、移动端沿用桌面密度、卡片无限嵌套、发光边框泛滥或控件没有状态反馈",
+      "enPrompt": "bento grid layout, rounded modular cards, dashboard-like organization, clean digital interface; establish the final medium and horizontal or vertical aspect ratio first, then build deliberate margins columns and a baseline before assigning area and reading order to the principal image headline supporting information identity and action zone. Every alignment column span overlap and negative space must support one visual focus while allowing trim bleed and multi-format safe zones. Preserve user-supplied wording and hierarchy exactly; when no copy is supplied use only clean structural placeholders rather than invented language. Avoid gibberish pseudo-brands equal emphasis everywhere purposeless card stacking inconsistent margins edge collisions decoration covering the subject or a random template pasted over an otherwise finished image; organize navigation content states controls and data density for a real viewport and responsive breakpoints, keeping interaction targets contrast and spacing readable and operable while decorative interface language appears only where function supports it. Avoid microscopic text meaningless HUD linework desktop density on mobile infinitely nested cards glow around every panel or controls with no legible state feedback"
+    },
+    {
+      "id": "layout-style-collage-scrapbook",
+      "category": "layout-style",
+      "styleGroup": "experimental",
+      "zhName": "拼贴手账排版",
+      "enName": "Collage Scrapbook Layout",
+      "image": "/assets/parameters/layout-style-collage-scrapbook.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "拼贴手账排版，纸张碎片、照片层叠、胶带质感和手工拼贴节奏；先确认成品媒介与横竖画幅，建立可见但不僵硬的页边距、列网和基线，再分配主视觉、标题区、副信息、标识与行动区域的面积和阅读顺序。所有对齐、跨栏、叠压和留白都服务同一个视觉焦点，并预留裁切出血与多尺寸安全区；用户提供文字时保持原文与层级，未提供时只保留结构清晰的占位形态。避免乱码、伪品牌、信息同权、卡片无目的堆叠、边距忽大忽小、元素贴边、装饰压住主体或把排版误作覆盖在成图上的随机模板；先保留一个稳定锚点和可追踪阅读路径，再有控制地打破网格，通过纸层、旋转、遮挡、错位或图形节奏形成张力；每种材料和偏移必须有前后层级。避免随机散落、所有元素同时倾斜、主体被拼贴吞没、胶带贴纸无来源、颜色和纹理过量或用混乱冒充实验性",
+      "enPrompt": "collage scrapbook layout, paper scraps, layered photos, tape textures, handmade collage rhythm; establish the final medium and horizontal or vertical aspect ratio first, then build deliberate margins columns and a baseline before assigning area and reading order to the principal image headline supporting information identity and action zone. Every alignment column span overlap and negative space must support one visual focus while allowing trim bleed and multi-format safe zones. Preserve user-supplied wording and hierarchy exactly; when no copy is supplied use only clean structural placeholders rather than invented language. Avoid gibberish pseudo-brands equal emphasis everywhere purposeless card stacking inconsistent margins edge collisions decoration covering the subject or a random template pasted over an otherwise finished image; retain one stable anchor and a traceable reading path before breaking the grid in a controlled way, creating tension through paper layers rotation occlusion displacement or graphic rhythm while every material and offset has a clear depth order. Avoid random scattering every element tilted at once the subject consumed by collage source-free tape and stickers excessive color and texture or chaos presented as experimentation"
+    },
+    {
+      "id": "layout-style-cyberpunk-hud",
+      "category": "layout-style",
+      "styleGroup": "digital",
+      "zhName": "赛博 HUD 排版",
+      "enName": "Cyberpunk HUD Layout",
+      "image": "/assets/parameters/layout-style-cyberpunk-hud.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "赛博 HUD 排版，霓虹界面框、数据面板占位和未来科技信息层，无可读文字；先确认成品媒介与横竖画幅，建立可见但不僵硬的页边距、列网和基线，再分配主视觉、标题区、副信息、标识与行动区域的面积和阅读顺序。所有对齐、跨栏、叠压和留白都服务同一个视觉焦点，并预留裁切出血与多尺寸安全区；用户提供文字时保持原文与层级，未提供时只保留结构清晰的占位形态。避免乱码、伪品牌、信息同权、卡片无目的堆叠、边距忽大忽小、元素贴边、装饰压住主体或把排版误作覆盖在成图上的随机模板；按真实视口和响应式断点组织导航、内容、状态、控件与数据密度，交互目标尺寸、对比度和间距满足可读与可点击要求，装饰界面只出现在有功能的位置。避免微小不可读文字、无意义 HUD 线框、移动端沿用桌面密度、卡片无限嵌套、发光边框泛滥或控件没有状态反馈",
+      "enPrompt": "cyberpunk HUD layout, neon interface frames, data-panel placeholders, futuristic information layers, no readable text; establish the final medium and horizontal or vertical aspect ratio first, then build deliberate margins columns and a baseline before assigning area and reading order to the principal image headline supporting information identity and action zone. Every alignment column span overlap and negative space must support one visual focus while allowing trim bleed and multi-format safe zones. Preserve user-supplied wording and hierarchy exactly; when no copy is supplied use only clean structural placeholders rather than invented language. Avoid gibberish pseudo-brands equal emphasis everywhere purposeless card stacking inconsistent margins edge collisions decoration covering the subject or a random template pasted over an otherwise finished image; organize navigation content states controls and data density for a real viewport and responsive breakpoints, keeping interaction targets contrast and spacing readable and operable while decorative interface language appears only where function supports it. Avoid microscopic text meaningless HUD linework desktop density on mobile infinitely nested cards glow around every panel or controls with no legible state feedback"
+    },
+    {
+      "id": "layout-style-ecommerce-promo",
+      "category": "layout-style",
+      "styleGroup": "commercial",
+      "zhName": "电商促销排版",
+      "enName": "E-Commerce Promo Layout",
+      "image": "/assets/parameters/layout-style-ecommerce-promo.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "电商促销排版，产品区、价格促销占位块和清晰购买动线，无文字；先确认成品媒介与横竖画幅，建立可见但不僵硬的页边距、列网和基线，再分配主视觉、标题区、副信息、标识与行动区域的面积和阅读顺序。所有对齐、跨栏、叠压和留白都服务同一个视觉焦点，并预留裁切出血与多尺寸安全区；用户提供文字时保持原文与层级，未提供时只保留结构清晰的占位形态。避免乱码、伪品牌、信息同权、卡片无目的堆叠、边距忽大忽小、元素贴边、装饰压住主体或把排版误作覆盖在成图上的随机模板；先锁定产品、利益点与单一行动目标，主商品保持完整轮廓和真实材质，价格、卖点、按钮与品牌安全区按转化顺序排列，并保留平台裁切余量。避免虚构价格折扣、多个行动按钮争抢、产品被文字遮挡、促销爆炸贴满画面、假品牌或把奢华等同于黑金堆砌",
+      "enPrompt": "e-commerce promotion layout, product zone, offer placeholder blocks, clear purchase flow, no text; establish the final medium and horizontal or vertical aspect ratio first, then build deliberate margins columns and a baseline before assigning area and reading order to the principal image headline supporting information identity and action zone. Every alignment column span overlap and negative space must support one visual focus while allowing trim bleed and multi-format safe zones. Preserve user-supplied wording and hierarchy exactly; when no copy is supplied use only clean structural placeholders rather than invented language. Avoid gibberish pseudo-brands equal emphasis everywhere purposeless card stacking inconsistent margins edge collisions decoration covering the subject or a random template pasted over an otherwise finished image; lock the product benefit and one action objective first, preserve the complete silhouette and real material of the hero item, and order price value proposition control and brand safe area according to conversion priority with platform crop tolerance. Avoid invented prices or discounts competing calls to action copy covering the product promotional bursts filling the frame fake brands or treating luxury as indiscriminate black-and-gold decoration"
+    },
+    {
+      "id": "layout-style-chinese-scroll",
+      "category": "layout-style",
+      "styleGroup": "cultural",
+      "zhName": "中式画卷排版",
+      "enName": "Chinese Scroll Layout",
+      "image": "/assets/parameters/layout-style-chinese-scroll.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "中式画卷排版，竖向构图、水墨留白、印章式空块和东方卷轴节奏，无可读文字；先确认成品媒介与横竖画幅，建立可见但不僵硬的页边距、列网和基线，再分配主视觉、标题区、副信息、标识与行动区域的面积和阅读顺序。所有对齐、跨栏、叠压和留白都服务同一个视觉焦点，并预留裁切出血与多尺寸安全区；用户提供文字时保持原文与层级，未提供时只保留结构清晰的占位形态。避免乱码、伪品牌、信息同权、卡片无目的堆叠、边距忽大忽小、元素贴边、装饰压住主体或把排版误作覆盖在成图上的随机模板；先指定地域、年代、阅读方向和真实载体，再把卷轴、装帧、印刷或水墨的结构原则转化为当代层级；文化元素只在有材料与语境依据的位置出现。避免伪书法、乱码印章、不同东亚体系混用、符号堆砌、泛红金配色或以竹子灯笼替代完整设计逻辑",
+      "enPrompt": "Chinese scroll layout, vertical composition, ink-wash negative space, seal-like blank blocks, East Asian scroll rhythm, no text; establish the final medium and horizontal or vertical aspect ratio first, then build deliberate margins columns and a baseline before assigning area and reading order to the principal image headline supporting information identity and action zone. Every alignment column span overlap and negative space must support one visual focus while allowing trim bleed and multi-format safe zones. Preserve user-supplied wording and hierarchy exactly; when no copy is supplied use only clean structural placeholders rather than invented language. Avoid gibberish pseudo-brands equal emphasis everywhere purposeless card stacking inconsistent margins edge collisions decoration covering the subject or a random template pasted over an otherwise finished image; specify region period reading direction and physical support before translating scroll binding print or ink principles into a contemporary hierarchy, placing cultural elements only where material and context justify them. Avoid pseudo-calligraphy gibberish seals mixtures of unrelated East Asian systems piles of symbols generic red-and-gold color or bamboo and lanterns used in place of a complete design logic"
+    },
+    {
+      "id": "layout-style-korean-clean",
+      "category": "layout-style",
+      "styleGroup": "minimal",
+      "zhName": "韩式清爽排版",
+      "enName": "Korean Clean Layout",
+      "image": "/assets/parameters/layout-style-korean-clean.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "韩式清爽排版，粉彩模块、轻盈留白和生活方式杂志感；先确认成品媒介与横竖画幅，建立可见但不僵硬的页边距、列网和基线，再分配主视觉、标题区、副信息、标识与行动区域的面积和阅读顺序。所有对齐、跨栏、叠压和留白都服务同一个视觉焦点，并预留裁切出血与多尺寸安全区；用户提供文字时保持原文与层级，未提供时只保留结构清晰的占位形态。避免乱码、伪品牌、信息同权、卡片无目的堆叠、边距忽大忽小、元素贴边、装饰压住主体或把排版误作覆盖在成图上的随机模板；以少量元素、显著尺度差和不对称平衡建立节奏，空白必须围绕主体形成呼吸与方向，细线、淡色块和小字号信息只承担辅助层级。避免把极简做成空洞居中、米白滤镜、所有元素过小、装饰性日文韩文或缺少明确阅读入口",
+      "enPrompt": "Korean clean editorial layout, pastel modules, airy whitespace, lifestyle magazine feeling; establish the final medium and horizontal or vertical aspect ratio first, then build deliberate margins columns and a baseline before assigning area and reading order to the principal image headline supporting information identity and action zone. Every alignment column span overlap and negative space must support one visual focus while allowing trim bleed and multi-format safe zones. Preserve user-supplied wording and hierarchy exactly; when no copy is supplied use only clean structural placeholders rather than invented language. Avoid gibberish pseudo-brands equal emphasis everywhere purposeless card stacking inconsistent margins edge collisions decoration covering the subject or a random template pasted over an otherwise finished image; create rhythm with few elements decisive scale contrast and asymmetrical balance, making whitespace form breathing room and direction around the subject while hairlines pale fields and small information remain subordinate. Avoid empty centered minimalism beige filtering everything uniformly tiny elements decorative Japanese or Korean pseudo-writing or a composition with no clear entry point"
+    },
+    {
+      "id": "layout-style-japanese-zine",
+      "category": "layout-style",
+      "styleGroup": "cultural",
+      "zhName": "日式 Zine 排版",
+      "enName": "Japanese Zine Layout",
+      "image": "/assets/parameters/layout-style-japanese-zine.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "日式 Zine 排版，小块面、克制黑白点线、随性但有秩序的青年杂志感；先确认成品媒介与横竖画幅，建立可见但不僵硬的页边距、列网和基线，再分配主视觉、标题区、副信息、标识与行动区域的面积和阅读顺序。所有对齐、跨栏、叠压和留白都服务同一个视觉焦点，并预留裁切出血与多尺寸安全区；用户提供文字时保持原文与层级，未提供时只保留结构清晰的占位形态。避免乱码、伪品牌、信息同权、卡片无目的堆叠、边距忽大忽小、元素贴边、装饰压住主体或把排版误作覆盖在成图上的随机模板；先指定地域、年代、阅读方向和真实载体，再把卷轴、装帧、印刷或水墨的结构原则转化为当代层级；文化元素只在有材料与语境依据的位置出现。避免伪书法、乱码印章、不同东亚体系混用、符号堆砌、泛红金配色或以竹子灯笼替代完整设计逻辑",
+      "enPrompt": "Japanese zine layout, small blocks, restrained black-white marks, casual but ordered youth-magazine feel; establish the final medium and horizontal or vertical aspect ratio first, then build deliberate margins columns and a baseline before assigning area and reading order to the principal image headline supporting information identity and action zone. Every alignment column span overlap and negative space must support one visual focus while allowing trim bleed and multi-format safe zones. Preserve user-supplied wording and hierarchy exactly; when no copy is supplied use only clean structural placeholders rather than invented language. Avoid gibberish pseudo-brands equal emphasis everywhere purposeless card stacking inconsistent margins edge collisions decoration covering the subject or a random template pasted over an otherwise finished image; specify region period reading direction and physical support before translating scroll binding print or ink principles into a contemporary hierarchy, placing cultural elements only where material and context justify them. Avoid pseudo-calligraphy gibberish seals mixtures of unrelated East Asian systems piles of symbols generic red-and-gold color or bamboo and lanterns used in place of a complete design logic"
+    },
+    {
+      "id": "layout-style-asym-artbook",
+      "category": "layout-style",
+      "styleGroup": "experimental",
+      "zhName": "不对称艺术书排版",
+      "enName": "Asymmetrical Artbook Layout",
+      "image": "/assets/parameters/layout-style-asym-artbook.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "不对称艺术书排版，非网格图片摆放、大留白和艺术出版物气质；先确认成品媒介与横竖画幅，建立可见但不僵硬的页边距、列网和基线，再分配主视觉、标题区、副信息、标识与行动区域的面积和阅读顺序。所有对齐、跨栏、叠压和留白都服务同一个视觉焦点，并预留裁切出血与多尺寸安全区；用户提供文字时保持原文与层级，未提供时只保留结构清晰的占位形态。避免乱码、伪品牌、信息同权、卡片无目的堆叠、边距忽大忽小、元素贴边、装饰压住主体或把排版误作覆盖在成图上的随机模板；先保留一个稳定锚点和可追踪阅读路径，再有控制地打破网格，通过纸层、旋转、遮挡、错位或图形节奏形成张力；每种材料和偏移必须有前后层级。避免随机散落、所有元素同时倾斜、主体被拼贴吞没、胶带贴纸无来源、颜色和纹理过量或用混乱冒充实验性",
+      "enPrompt": "asymmetrical art-book layout, off-grid image placement, large margins, art publication mood; establish the final medium and horizontal or vertical aspect ratio first, then build deliberate margins columns and a baseline before assigning area and reading order to the principal image headline supporting information identity and action zone. Every alignment column span overlap and negative space must support one visual focus while allowing trim bleed and multi-format safe zones. Preserve user-supplied wording and hierarchy exactly; when no copy is supplied use only clean structural placeholders rather than invented language. Avoid gibberish pseudo-brands equal emphasis everywhere purposeless card stacking inconsistent margins edge collisions decoration covering the subject or a random template pasted over an otherwise finished image; retain one stable anchor and a traceable reading path before breaking the grid in a controlled way, creating tension through paper layers rotation occlusion displacement or graphic rhythm while every material and offset has a clear depth order. Avoid random scattering every element tilted at once the subject consumed by collage source-free tape and stickers excessive color and texture or chaos presented as experimentation"
+    },
+    {
+      "id": "layout-style-mobile-story",
+      "category": "layout-style",
+      "styleGroup": "digital",
+      "zhName": "移动端 Story 排版",
+      "enName": "Mobile Story Layout",
+      "image": "/assets/parameters/layout-style-mobile-story.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "移动端 Story 排版，竖屏安全区、移动界面层级和社交媒体视觉节奏，无文字；先确认成品媒介与横竖画幅，建立可见但不僵硬的页边距、列网和基线，再分配主视觉、标题区、副信息、标识与行动区域的面积和阅读顺序。所有对齐、跨栏、叠压和留白都服务同一个视觉焦点，并预留裁切出血与多尺寸安全区；用户提供文字时保持原文与层级，未提供时只保留结构清晰的占位形态。避免乱码、伪品牌、信息同权、卡片无目的堆叠、边距忽大忽小、元素贴边、装饰压住主体或把排版误作覆盖在成图上的随机模板；按真实视口和响应式断点组织导航、内容、状态、控件与数据密度，交互目标尺寸、对比度和间距满足可读与可点击要求，装饰界面只出现在有功能的位置。避免微小不可读文字、无意义 HUD 线框、移动端沿用桌面密度、卡片无限嵌套、发光边框泛滥或控件没有状态反馈",
+      "enPrompt": "mobile social story layout, vertical-safe composition, mobile interface hierarchy, social-media rhythm, no readable text; establish the final medium and horizontal or vertical aspect ratio first, then build deliberate margins columns and a baseline before assigning area and reading order to the principal image headline supporting information identity and action zone. Every alignment column span overlap and negative space must support one visual focus while allowing trim bleed and multi-format safe zones. Preserve user-supplied wording and hierarchy exactly; when no copy is supplied use only clean structural placeholders rather than invented language. Avoid gibberish pseudo-brands equal emphasis everywhere purposeless card stacking inconsistent margins edge collisions decoration covering the subject or a random template pasted over an otherwise finished image; organize navigation content states controls and data density for a real viewport and responsive breakpoints, keeping interaction targets contrast and spacing readable and operable while decorative interface language appears only where function supports it. Avoid microscopic text meaningless HUD linework desktop density on mobile infinitely nested cards glow around every panel or controls with no legible state feedback"
+    },
+    {
+      "id": "layout-style-constructivist-diagonal",
+      "category": "layout-style",
+      "styleGroup": "print",
+      "zhName": "构成主义斜线排版",
+      "enName": "Constructivist Diagonal",
+      "image": "/assets/parameters/layout-style-constructivist-diagonal.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "构成主义斜线排版，红黑米色强对比、斜向动势和复古政治海报结构，无文字；先确认成品媒介与横竖画幅，建立可见但不僵硬的页边距、列网和基线，再分配主视觉、标题区、副信息、标识与行动区域的面积和阅读顺序。所有对齐、跨栏、叠压和留白都服务同一个视觉焦点，并预留裁切出血与多尺寸安全区；用户提供文字时保持原文与层级，未提供时只保留结构清晰的占位形态。避免乱码、伪品牌、信息同权、卡片无目的堆叠、边距忽大忽小、元素贴边、装饰压住主体或把排版误作覆盖在成图上的随机模板；明确纸张、印刷方式、色版数量、裁切线和出血，套色偏移、压痕、网点与油墨不均必须来自真实工艺并保持关键轮廓清楚。避免数码噪点冒充印刷、所有边缘同样磨损、套印完全错位、纸张纹理覆盖主体、不可印刷的发光渐变或将政治海报结构无语境复刻",
+      "enPrompt": "constructivist diagonal layout, red black cream contrast, diagonal energy and vintage poster structure, no readable text; establish the final medium and horizontal or vertical aspect ratio first, then build deliberate margins columns and a baseline before assigning area and reading order to the principal image headline supporting information identity and action zone. Every alignment column span overlap and negative space must support one visual focus while allowing trim bleed and multi-format safe zones. Preserve user-supplied wording and hierarchy exactly; when no copy is supplied use only clean structural placeholders rather than invented language. Avoid gibberish pseudo-brands equal emphasis everywhere purposeless card stacking inconsistent margins edge collisions decoration covering the subject or a random template pasted over an otherwise finished image; define paper printing method plate count trim and bleed, making registration shift impression halftone and ink variation arise from a plausible process while important contours remain clear. Avoid digital noise standing in for print every edge equally distressed unusable misregistration paper texture covering the subject unprintable luminous gradients or copying political-poster structure without historical context"
+    },
+    {
+      "id": "layout-style-y2k-chrome",
+      "category": "layout-style",
+      "styleGroup": "youth",
+      "zhName": "Y2K 铬感排版",
+      "enName": "Y2K Chrome Layout",
+      "image": "/assets/parameters/layout-style-y2k-chrome.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "Y2K 铬感排版，银色泡泡、透明塑料、粉紫渐变和千禧潮流质感；先确认成品媒介与横竖画幅，建立可见但不僵硬的页边距、列网和基线，再分配主视觉、标题区、副信息、标识与行动区域的面积和阅读顺序。所有对齐、跨栏、叠压和留白都服务同一个视觉焦点，并预留裁切出血与多尺寸安全区；用户提供文字时保持原文与层级，未提供时只保留结构清晰的占位形态。避免乱码、伪品牌、信息同权、卡片无目的堆叠、边距忽大忽小、元素贴边、装饰压住主体或把排版误作覆盖在成图上的随机模板；用活泼比例、圆润形状和有限亮色建立年轻节奏，同时保留清楚标题入口、主体边界和可读信息区；材质效果服从层级而不是铺满。避免糖果色无主次、透明塑料遮挡内容、儿童版式幼儿化、铬面反射无环境、贴纸泛滥或把低分辨率当作潮流",
+      "enPrompt": "Y2K chrome layout, silver bubbles, translucent plastic, pink-purple gradient and early-2000s trend feeling; establish the final medium and horizontal or vertical aspect ratio first, then build deliberate margins columns and a baseline before assigning area and reading order to the principal image headline supporting information identity and action zone. Every alignment column span overlap and negative space must support one visual focus while allowing trim bleed and multi-format safe zones. Preserve user-supplied wording and hierarchy exactly; when no copy is supplied use only clean structural placeholders rather than invented language. Avoid gibberish pseudo-brands equal emphasis everywhere purposeless card stacking inconsistent margins edge collisions decoration covering the subject or a random template pasted over an otherwise finished image; build youthful rhythm through lively proportion rounded forms and a limited bright palette while retaining a clear headline entry subject boundary and readable information zone, keeping material effects subordinate to hierarchy rather than covering the page. Avoid candy colors with no priority transparent plastic obscuring content infantilizing children's layouts environment-free chrome sticker overload or treating low resolution as fashion"
+    },
+    {
+      "id": "layout-style-glassmorphism",
+      "category": "layout-style",
+      "styleGroup": "soft-ui",
+      "zhName": "玻璃拟态排版",
+      "enName": "Glassmorphism Layout",
+      "image": "/assets/parameters/layout-style-glassmorphism.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "玻璃拟态排版，半透明卡片、模糊背景、柔和描边和轻盈数字界面；先确认成品媒介与横竖画幅，建立可见但不僵硬的页边距、列网和基线，再分配主视觉、标题区、副信息、标识与行动区域的面积和阅读顺序。所有对齐、跨栏、叠压和留白都服务同一个视觉焦点，并预留裁切出血与多尺寸安全区；用户提供文字时保持原文与层级，未提供时只保留结构清晰的占位形态。避免乱码、伪品牌、信息同权、卡片无目的堆叠、边距忽大忽小、元素贴边、装饰压住主体或把排版误作覆盖在成图上的随机模板；透明度、模糊、内外阴影和高光必须共同说明层级与可交互状态，卡片边界在浅深背景上都保持足够对比，文字与图标不依赖阴影才能识别。避免玻璃层彼此穿透、背景过花、按钮与底面同色、新拟物控件看不出凹凸状态、无光源柔影或牺牲可访问性换取柔和感",
+      "enPrompt": "glassmorphism layout, translucent panels, blurred background, soft borders and airy digital interface; establish the final medium and horizontal or vertical aspect ratio first, then build deliberate margins columns and a baseline before assigning area and reading order to the principal image headline supporting information identity and action zone. Every alignment column span overlap and negative space must support one visual focus while allowing trim bleed and multi-format safe zones. Preserve user-supplied wording and hierarchy exactly; when no copy is supplied use only clean structural placeholders rather than invented language. Avoid gibberish pseudo-brands equal emphasis everywhere purposeless card stacking inconsistent margins edge collisions decoration covering the subject or a random template pasted over an otherwise finished image; make transparency blur inner and outer shadow and highlight jointly explain depth and interaction state, keeping card boundaries sufficiently contrasted on both light and dark grounds and ensuring text and icons remain identifiable without shadow. Avoid glass layers visually passing through one another busy backgrounds controls matching the surface indiscernible raised and pressed states source-free soft shadow or softness achieved by sacrificing accessibility"
+    },
+    {
+      "id": "layout-style-neumorphism",
+      "category": "layout-style",
+      "styleGroup": "soft-ui",
+      "zhName": "新拟物柔影排版",
+      "enName": "Neumorphism Layout",
+      "image": "/assets/parameters/layout-style-neumorphism.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "新拟物柔影排版，浅色模块、内外柔影和低对比触感界面；先确认成品媒介与横竖画幅，建立可见但不僵硬的页边距、列网和基线，再分配主视觉、标题区、副信息、标识与行动区域的面积和阅读顺序。所有对齐、跨栏、叠压和留白都服务同一个视觉焦点，并预留裁切出血与多尺寸安全区；用户提供文字时保持原文与层级，未提供时只保留结构清晰的占位形态。避免乱码、伪品牌、信息同权、卡片无目的堆叠、边距忽大忽小、元素贴边、装饰压住主体或把排版误作覆盖在成图上的随机模板；透明度、模糊、内外阴影和高光必须共同说明层级与可交互状态，卡片边界在浅深背景上都保持足够对比，文字与图标不依赖阴影才能识别。避免玻璃层彼此穿透、背景过花、按钮与底面同色、新拟物控件看不出凹凸状态、无光源柔影或牺牲可访问性换取柔和感",
+      "enPrompt": "neumorphism layout, pale modules, soft inner and outer shadows, tactile low-contrast interface; establish the final medium and horizontal or vertical aspect ratio first, then build deliberate margins columns and a baseline before assigning area and reading order to the principal image headline supporting information identity and action zone. Every alignment column span overlap and negative space must support one visual focus while allowing trim bleed and multi-format safe zones. Preserve user-supplied wording and hierarchy exactly; when no copy is supplied use only clean structural placeholders rather than invented language. Avoid gibberish pseudo-brands equal emphasis everywhere purposeless card stacking inconsistent margins edge collisions decoration covering the subject or a random template pasted over an otherwise finished image; make transparency blur inner and outer shadow and highlight jointly explain depth and interaction state, keeping card boundaries sufficiently contrasted on both light and dark grounds and ensuring text and icons remain identifiable without shadow. Avoid glass layers visually passing through one another busy backgrounds controls matching the surface indiscernible raised and pressed states source-free soft shadow or softness achieved by sacrificing accessibility"
+    },
+    {
+      "id": "layout-style-newspaper-dense",
+      "category": "layout-style",
+      "styleGroup": "editorial",
+      "zhName": "报纸密集排版",
+      "enName": "Dense Newspaper Layout",
+      "image": "/assets/parameters/layout-style-newspaper-dense.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "报纸密集排版，多栏结构、图片块和密集信息节奏，不生成可读文字；先确认成品媒介与横竖画幅，建立可见但不僵硬的页边距、列网和基线，再分配主视觉、标题区、副信息、标识与行动区域的面积和阅读顺序。所有对齐、跨栏、叠压和留白都服务同一个视觉焦点，并预留裁切出血与多尺寸安全区；用户提供文字时保持原文与层级，未提供时只保留结构清晰的占位形态。避免乱码、伪品牌、信息同权、卡片无目的堆叠、边距忽大忽小、元素贴边、装饰压住主体或把排版误作覆盖在成图上的随机模板；按开篇、主图、正文、引语、图注与页码建立出版节奏，跨页时保护装订中缝并让图片裁切、标题尺度和正文栏宽形成连续阅读。避免把社论做成电商卡片、正文栏过宽、图注脱离图片、跨页主体被中缝切断或用密度掩盖层级缺失",
+      "enPrompt": "dense newspaper layout, multi-column structure, image blocks and intensive information rhythm, no readable text; establish the final medium and horizontal or vertical aspect ratio first, then build deliberate margins columns and a baseline before assigning area and reading order to the principal image headline supporting information identity and action zone. Every alignment column span overlap and negative space must support one visual focus while allowing trim bleed and multi-format safe zones. Preserve user-supplied wording and hierarchy exactly; when no copy is supplied use only clean structural placeholders rather than invented language. Avoid gibberish pseudo-brands equal emphasis everywhere purposeless card stacking inconsistent margins edge collisions decoration covering the subject or a random template pasted over an otherwise finished image; establish publication pacing through opener hero image body pull quote caption and folio, protecting the binding gutter on spreads and coordinating image crop headline scale and text measure into a continuous reading path. Avoid turning editorial work into commerce cards overly wide body columns detached captions a subject severed by the gutter or density used to hide missing hierarchy"
+    },
+    {
+      "id": "layout-style-museum-catalog",
+      "category": "layout-style",
+      "styleGroup": "catalog",
+      "zhName": "美术馆图录排版",
+      "enName": "Museum Catalog Layout",
+      "image": "/assets/parameters/layout-style-museum-catalog.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "美术馆图录排版，大边距、作品展示区、克制说明区和高雅出版物气质；先确认成品媒介与横竖画幅，建立可见但不僵硬的页边距、列网和基线，再分配主视觉、标题区、副信息、标识与行动区域的面积和阅读顺序。所有对齐、跨栏、叠压和留白都服务同一个视觉焦点，并预留裁切出血与多尺寸安全区；用户提供文字时保持原文与层级，未提供时只保留结构清晰的占位形态。避免乱码、伪品牌、信息同权、卡片无目的堆叠、边距忽大忽小、元素贴边、装饰压住主体或把排版误作覆盖在成图上的随机模板；按作品或造型编号建立可复查序列，主图、局部、信息说明与页码位置保持跨页一致；同组图片采用统一裁切基准、人物尺度和色彩管理，并给每件内容足够独立空间。避免杂志式随意拼贴、不同产品比例跳变、图注错配、人物头脚被切、背景风格不统一或装饰抢过作品本身",
+      "enPrompt": "museum catalog layout, large margins, artwork display area, restrained caption zones and refined publication mood; establish the final medium and horizontal or vertical aspect ratio first, then build deliberate margins columns and a baseline before assigning area and reading order to the principal image headline supporting information identity and action zone. Every alignment column span overlap and negative space must support one visual focus while allowing trim bleed and multi-format safe zones. Preserve user-supplied wording and hierarchy exactly; when no copy is supplied use only clean structural placeholders rather than invented language. Avoid gibberish pseudo-brands equal emphasis everywhere purposeless card stacking inconsistent margins edge collisions decoration covering the subject or a random template pasted over an otherwise finished image; create an auditable sequence through artwork or look numbering, keeping hero detail information and folio positions consistent across pages. Use one crop baseline subject scale and color-management approach for a series while giving each item sufficient independent space. Avoid casual magazine collage jumping product proportions mismatched captions cropped heads or feet inconsistent backgrounds or decoration competing with the work being cataloged"
+    },
+    {
+      "id": "layout-style-fashion-lookbook",
+      "category": "layout-style",
+      "styleGroup": "catalog",
+      "zhName": "时装 Lookbook 排版",
+      "enName": "Fashion Lookbook Layout",
+      "image": "/assets/parameters/layout-style-fashion-lookbook.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "时装 Lookbook 排版，多张人物造型图、留白和高级服装画册节奏；先确认成品媒介与横竖画幅，建立可见但不僵硬的页边距、列网和基线，再分配主视觉、标题区、副信息、标识与行动区域的面积和阅读顺序。所有对齐、跨栏、叠压和留白都服务同一个视觉焦点，并预留裁切出血与多尺寸安全区；用户提供文字时保持原文与层级，未提供时只保留结构清晰的占位形态。避免乱码、伪品牌、信息同权、卡片无目的堆叠、边距忽大忽小、元素贴边、装饰压住主体或把排版误作覆盖在成图上的随机模板；按作品或造型编号建立可复查序列，主图、局部、信息说明与页码位置保持跨页一致；同组图片采用统一裁切基准、人物尺度和色彩管理，并给每件内容足够独立空间。避免杂志式随意拼贴、不同产品比例跳变、图注错配、人物头脚被切、背景风格不统一或装饰抢过作品本身",
+      "enPrompt": "fashion lookbook layout, multiple model image zones, generous whitespace and premium apparel catalog rhythm; establish the final medium and horizontal or vertical aspect ratio first, then build deliberate margins columns and a baseline before assigning area and reading order to the principal image headline supporting information identity and action zone. Every alignment column span overlap and negative space must support one visual focus while allowing trim bleed and multi-format safe zones. Preserve user-supplied wording and hierarchy exactly; when no copy is supplied use only clean structural placeholders rather than invented language. Avoid gibberish pseudo-brands equal emphasis everywhere purposeless card stacking inconsistent margins edge collisions decoration covering the subject or a random template pasted over an otherwise finished image; create an auditable sequence through artwork or look numbering, keeping hero detail information and folio positions consistent across pages. Use one crop baseline subject scale and color-management approach for a series while giving each item sufficient independent space. Avoid casual magazine collage jumping product proportions mismatched captions cropped heads or feet inconsistent backgrounds or decoration competing with the work being cataloged"
+    },
+    {
+      "id": "layout-style-luxury-campaign",
+      "category": "layout-style",
+      "styleGroup": "commercial",
+      "zhName": "奢侈品广告排版",
+      "enName": "Luxury Campaign Layout",
+      "image": "/assets/parameters/layout-style-luxury-campaign.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "奢侈品广告排版，深色留白、金色细节、高级产品位和克制品牌感，无文字；先确认成品媒介与横竖画幅，建立可见但不僵硬的页边距、列网和基线，再分配主视觉、标题区、副信息、标识与行动区域的面积和阅读顺序。所有对齐、跨栏、叠压和留白都服务同一个视觉焦点，并预留裁切出血与多尺寸安全区；用户提供文字时保持原文与层级，未提供时只保留结构清晰的占位形态。避免乱码、伪品牌、信息同权、卡片无目的堆叠、边距忽大忽小、元素贴边、装饰压住主体或把排版误作覆盖在成图上的随机模板；先锁定产品、利益点与单一行动目标，主商品保持完整轮廓和真实材质，价格、卖点、按钮与品牌安全区按转化顺序排列，并保留平台裁切余量。避免虚构价格折扣、多个行动按钮争抢、产品被文字遮挡、促销爆炸贴满画面、假品牌或把奢华等同于黑金堆砌",
+      "enPrompt": "luxury campaign layout, dark whitespace, gold accents, premium product zone and restrained brand feeling, no readable text; establish the final medium and horizontal or vertical aspect ratio first, then build deliberate margins columns and a baseline before assigning area and reading order to the principal image headline supporting information identity and action zone. Every alignment column span overlap and negative space must support one visual focus while allowing trim bleed and multi-format safe zones. Preserve user-supplied wording and hierarchy exactly; when no copy is supplied use only clean structural placeholders rather than invented language. Avoid gibberish pseudo-brands equal emphasis everywhere purposeless card stacking inconsistent margins edge collisions decoration covering the subject or a random template pasted over an otherwise finished image; lock the product benefit and one action objective first, preserve the complete silhouette and real material of the hero item, and order price value proposition control and brand safe area according to conversion priority with platform crop tolerance. Avoid invented prices or discounts competing calls to action copy covering the product promotional bursts filling the frame fake brands or treating luxury as indiscriminate black-and-gold decoration"
+    },
+    {
+      "id": "layout-style-childrens-book",
+      "category": "layout-style",
+      "styleGroup": "youth",
+      "zhName": "儿童绘本排版",
+      "enName": "Children's Book Layout",
+      "image": "/assets/parameters/layout-style-childrens-book.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "儿童绘本排版，圆润插画区域、轻松色块和适合故事页的亲和节奏；先确认成品媒介与横竖画幅，建立可见但不僵硬的页边距、列网和基线，再分配主视觉、标题区、副信息、标识与行动区域的面积和阅读顺序。所有对齐、跨栏、叠压和留白都服务同一个视觉焦点，并预留裁切出血与多尺寸安全区；用户提供文字时保持原文与层级，未提供时只保留结构清晰的占位形态。避免乱码、伪品牌、信息同权、卡片无目的堆叠、边距忽大忽小、元素贴边、装饰压住主体或把排版误作覆盖在成图上的随机模板；用活泼比例、圆润形状和有限亮色建立年轻节奏，同时保留清楚标题入口、主体边界和可读信息区；材质效果服从层级而不是铺满。避免糖果色无主次、透明塑料遮挡内容、儿童版式幼儿化、铬面反射无环境、贴纸泛滥或把低分辨率当作潮流",
+      "enPrompt": "children's picture-book layout, rounded illustration zones, friendly color blocks and story-page rhythm; establish the final medium and horizontal or vertical aspect ratio first, then build deliberate margins columns and a baseline before assigning area and reading order to the principal image headline supporting information identity and action zone. Every alignment column span overlap and negative space must support one visual focus while allowing trim bleed and multi-format safe zones. Preserve user-supplied wording and hierarchy exactly; when no copy is supplied use only clean structural placeholders rather than invented language. Avoid gibberish pseudo-brands equal emphasis everywhere purposeless card stacking inconsistent margins edge collisions decoration covering the subject or a random template pasted over an otherwise finished image; build youthful rhythm through lively proportion rounded forms and a limited bright palette while retaining a clear headline entry subject boundary and readable information zone, keeping material effects subordinate to hierarchy rather than covering the page. Avoid candy colors with no priority transparent plastic obscuring content infantilizing children's layouts environment-free chrome sticker overload or treating low resolution as fashion"
+    },
+    {
+      "id": "layout-style-modern-chinese-ink",
+      "category": "layout-style",
+      "styleGroup": "cultural",
+      "zhName": "现代水墨排版",
+      "enName": "Modern Chinese Ink Layout",
+      "image": "/assets/parameters/layout-style-modern-chinese-ink.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "现代水墨排版，山水墨痕、印章空位、留白和当代东方设计秩序；先确认成品媒介与横竖画幅，建立可见但不僵硬的页边距、列网和基线，再分配主视觉、标题区、副信息、标识与行动区域的面积和阅读顺序。所有对齐、跨栏、叠压和留白都服务同一个视觉焦点，并预留裁切出血与多尺寸安全区；用户提供文字时保持原文与层级，未提供时只保留结构清晰的占位形态。避免乱码、伪品牌、信息同权、卡片无目的堆叠、边距忽大忽小、元素贴边、装饰压住主体或把排版误作覆盖在成图上的随机模板；先指定地域、年代、阅读方向和真实载体，再把卷轴、装帧、印刷或水墨的结构原则转化为当代层级；文化元素只在有材料与语境依据的位置出现。避免伪书法、乱码印章、不同东亚体系混用、符号堆砌、泛红金配色或以竹子灯笼替代完整设计逻辑",
+      "enPrompt": "modern Chinese ink layout, landscape ink marks, seal-like blank zones, negative space and contemporary East Asian order; establish the final medium and horizontal or vertical aspect ratio first, then build deliberate margins columns and a baseline before assigning area and reading order to the principal image headline supporting information identity and action zone. Every alignment column span overlap and negative space must support one visual focus while allowing trim bleed and multi-format safe zones. Preserve user-supplied wording and hierarchy exactly; when no copy is supplied use only clean structural placeholders rather than invented language. Avoid gibberish pseudo-brands equal emphasis everywhere purposeless card stacking inconsistent margins edge collisions decoration covering the subject or a random template pasted over an otherwise finished image; specify region period reading direction and physical support before translating scroll binding print or ink principles into a contemporary hierarchy, placing cultural elements only where material and context justify them. Avoid pseudo-calligraphy gibberish seals mixtures of unrelated East Asian systems piles of symbols generic red-and-gold color or bamboo and lanterns used in place of a complete design logic"
+    },
+    {
+      "id": "layout-style-memphis-pattern",
+      "category": "layout-style",
+      "styleGroup": "experimental",
+      "zhName": "孟菲斯图形排版",
+      "enName": "Memphis Pattern Layout",
+      "image": "/assets/parameters/layout-style-memphis-pattern.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "孟菲斯图形排版，活泼几何、点线图案、高饱和色块和复古玩味；先确认成品媒介与横竖画幅，建立可见但不僵硬的页边距、列网和基线，再分配主视觉、标题区、副信息、标识与行动区域的面积和阅读顺序。所有对齐、跨栏、叠压和留白都服务同一个视觉焦点，并预留裁切出血与多尺寸安全区；用户提供文字时保持原文与层级，未提供时只保留结构清晰的占位形态。避免乱码、伪品牌、信息同权、卡片无目的堆叠、边距忽大忽小、元素贴边、装饰压住主体或把排版误作覆盖在成图上的随机模板；先保留一个稳定锚点和可追踪阅读路径，再有控制地打破网格，通过纸层、旋转、遮挡、错位或图形节奏形成张力；每种材料和偏移必须有前后层级。避免随机散落、所有元素同时倾斜、主体被拼贴吞没、胶带贴纸无来源、颜色和纹理过量或用混乱冒充实验性",
+      "enPrompt": "Memphis pattern layout, playful geometry, dots and squiggles, saturated blocks and retro fun; establish the final medium and horizontal or vertical aspect ratio first, then build deliberate margins columns and a baseline before assigning area and reading order to the principal image headline supporting information identity and action zone. Every alignment column span overlap and negative space must support one visual focus while allowing trim bleed and multi-format safe zones. Preserve user-supplied wording and hierarchy exactly; when no copy is supplied use only clean structural placeholders rather than invented language. Avoid gibberish pseudo-brands equal emphasis everywhere purposeless card stacking inconsistent margins edge collisions decoration covering the subject or a random template pasted over an otherwise finished image; retain one stable anchor and a traceable reading path before breaking the grid in a controlled way, creating tension through paper layers rotation occlusion displacement or graphic rhythm while every material and offset has a clear depth order. Avoid random scattering every element tilted at once the subject consumed by collage source-free tape and stickers excessive color and texture or chaos presented as experimentation"
+    },
+    {
+      "id": "layout-style-sci-fi-terminal",
+      "category": "layout-style",
+      "styleGroup": "digital",
+      "zhName": "科幻终端排版",
+      "enName": "Sci-Fi Terminal Layout",
+      "image": "/assets/parameters/layout-style-sci-fi-terminal.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "科幻终端排版，深色模块、发光边框、数据面板空位和硬核未来界面，无文字；先确认成品媒介与横竖画幅，建立可见但不僵硬的页边距、列网和基线，再分配主视觉、标题区、副信息、标识与行动区域的面积和阅读顺序。所有对齐、跨栏、叠压和留白都服务同一个视觉焦点，并预留裁切出血与多尺寸安全区；用户提供文字时保持原文与层级，未提供时只保留结构清晰的占位形态。避免乱码、伪品牌、信息同权、卡片无目的堆叠、边距忽大忽小、元素贴边、装饰压住主体或把排版误作覆盖在成图上的随机模板；按真实视口和响应式断点组织导航、内容、状态、控件与数据密度，交互目标尺寸、对比度和间距满足可读与可点击要求，装饰界面只出现在有功能的位置。避免微小不可读文字、无意义 HUD 线框、移动端沿用桌面密度、卡片无限嵌套、发光边框泛滥或控件没有状态反馈",
+      "enPrompt": "sci-fi terminal layout, dark modules, glowing borders, blank data panels and hard-edged future interface, no readable text; establish the final medium and horizontal or vertical aspect ratio first, then build deliberate margins columns and a baseline before assigning area and reading order to the principal image headline supporting information identity and action zone. Every alignment column span overlap and negative space must support one visual focus while allowing trim bleed and multi-format safe zones. Preserve user-supplied wording and hierarchy exactly; when no copy is supplied use only clean structural placeholders rather than invented language. Avoid gibberish pseudo-brands equal emphasis everywhere purposeless card stacking inconsistent margins edge collisions decoration covering the subject or a random template pasted over an otherwise finished image; organize navigation content states controls and data density for a real viewport and responsive breakpoints, keeping interaction targets contrast and spacing readable and operable while decorative interface language appears only where function supports it. Avoid microscopic text meaningless HUD linework desktop density on mobile infinitely nested cards glow around every panel or controls with no legible state feedback"
+    },
+    {
+      "id": "layout-style-letterpress-print",
+      "category": "layout-style",
+      "styleGroup": "print",
+      "zhName": "活版印刷版式",
+      "enName": "Letterpress Layout",
+      "image": "/assets/parameters/layout-style-letterpress-print.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "活版印刷版式，凹凸纸面、压印块面、油墨肌理和克制海报结构；先确认成品媒介与横竖画幅，建立可见但不僵硬的页边距、列网和基线，再分配主视觉、标题区、副信息、标识与行动区域的面积和阅读顺序。所有对齐、跨栏、叠压和留白都服务同一个视觉焦点，并预留裁切出血与多尺寸安全区；用户提供文字时保持原文与层级，未提供时只保留结构清晰的占位形态。避免乱码、伪品牌、信息同权、卡片无目的堆叠、边距忽大忽小、元素贴边、装饰压住主体或把排版误作覆盖在成图上的随机模板；明确纸张、印刷方式、色版数量、裁切线和出血，套色偏移、压痕、网点与油墨不均必须来自真实工艺并保持关键轮廓清楚。避免数码噪点冒充印刷、所有边缘同样磨损、套印完全错位、纸张纹理覆盖主体、不可印刷的发光渐变或将政治海报结构无语境复刻",
+      "enPrompt": "letterpress layout style, embossed paper surface, impressed blocks, ink texture, restrained poster structure; establish the final medium and horizontal or vertical aspect ratio first, then build deliberate margins columns and a baseline before assigning area and reading order to the principal image headline supporting information identity and action zone. Every alignment column span overlap and negative space must support one visual focus while allowing trim bleed and multi-format safe zones. Preserve user-supplied wording and hierarchy exactly; when no copy is supplied use only clean structural placeholders rather than invented language. Avoid gibberish pseudo-brands equal emphasis everywhere purposeless card stacking inconsistent margins edge collisions decoration covering the subject or a random template pasted over an otherwise finished image; define paper printing method plate count trim and bleed, making registration shift impression halftone and ink variation arise from a plausible process while important contours remain clear. Avoid digital noise standing in for print every edge equally distressed unusable misregistration paper texture covering the subject unprintable luminous gradients or copying political-poster structure without historical context"
+    }
+  ]
+}

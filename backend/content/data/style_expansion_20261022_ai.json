@@ -1,0 +1,360 @@
+{
+  "parameters": [
+    {
+      "id": "skin-warm-fair",
+      "category": "ethnicity",
+      "styleGroup": "skin-tone",
+      "zhName": "暖白肤色",
+      "enName": "Warm Fair Skin",
+      "image": "/assets/parameters/skin-warm-fair.png?v=20260827-character-crop-fix",
+      "zhPrompt": "暖白肤色呈偏暖的浅肤色基底，面颊、耳廓、指节和关节处保留自然血色，额头与鼻梁高光柔和，阴影仍含少量暖色而不是灰黑；不同光源下维持真实色温与毛孔、细纹和绒毛，避免漂白过曝、通体橙黄、塑料磨皮、脸颈色差或用肤色推断族群身份",
+      "enPrompt": "warm fair skin with a light warm undertone, natural circulation visible in cheeks ears knuckles and joints, soft highlights across forehead and nose and shadows retaining a trace of warmth rather than turning gray-black; preserve believable color adaptation plus pores fine lines and facial hair under different lighting, avoiding bleached clipping uniform orange cast plastic smoothing face-neck mismatch or inferring ethnicity from skin tone",
+      "negative": [
+        "stereotype",
+        "caricature",
+        "offensive depiction",
+        "exaggerated ethnic features"
+      ]
+    },
+    {
+      "id": "skin-medium-brown",
+      "category": "ethnicity",
+      "styleGroup": "skin-tone",
+      "zhName": "中棕肤色",
+      "enName": "Medium Brown Skin",
+      "image": "/assets/parameters/skin-medium-brown.png?v=20260827-character-crop-fix",
+      "zhPrompt": "中棕肤色以均衡棕色素为基底，在额头、颧骨、鼻梁和肩部形成宽而柔和的高光，暗部仍保留棕红或金色底调与皮肤细节，手掌、嘴唇和关节存在自然但不过度的色差；曝光优先保护高光与面部层次，避免提亮成浅肤色、阴影压成纯黑、油亮塑料感或用单一色板刻画所有人物",
+      "enPrompt": "medium brown skin with a balanced melanin-rich base, broad soft highlights over forehead cheekbones nose and shoulders, shadows retaining brown-red or golden undertones and skin detail, and restrained natural variation across palms lips and joints; expose to protect highlights and facial volume, avoiding lightening into fair skin crushing shadows to black oily plastic sheen or rendering every person from one flat color swatch",
+      "negative": [
+        "stereotype",
+        "caricature",
+        "offensive depiction",
+        "exaggerated ethnic features"
+      ]
+    },
+    {
+      "id": "skin-tan-wheat",
+      "category": "ethnicity",
+      "styleGroup": "skin-tone",
+      "zhName": "小麦肤色",
+      "enName": "Tan Wheat Skin",
+      "image": "/assets/parameters/skin-tan-wheat.png?v=20260827-character-crop-fix",
+      "zhPrompt": "小麦肤色呈阳光感的中浅暖棕底色，脸、颈、手臂与衣物遮挡处可有轻微合理晒痕，颧骨和肩部高光偏金而不过曝，阴影保留真实肤质和血色；户外感由光照与色素分布共同形成，避免全身统一橙色滤镜、夸张晒伤、脸手颜色断裂、过度磨皮或把健康状态等同于某种体型",
+      "enPrompt": "wheat-tan complexion using a sun-touched light-to-medium warm brown base, with subtle plausible tan variation between face neck arms and covered areas, golden but controlled highlights on cheekbones and shoulders and shadows retaining texture and circulation; communicate outdoor exposure through light and pigmentation together, avoiding a uniform orange filter exaggerated sunburn disconnected face and hands excessive smoothing or equating health with one body type",
+      "negative": [
+        "stereotype",
+        "caricature",
+        "offensive depiction",
+        "exaggerated ethnic features"
+      ]
+    },
+    {
+      "id": "skin-light-medium",
+      "category": "ethnicity",
+      "styleGroup": "skin-tone",
+      "zhName": "浅中性肤色",
+      "enName": "Light Medium Skin",
+      "image": "/assets/parameters/skin-light-medium.png?v=20260827-character-crop-fix",
+      "zhPrompt": "浅中性肤色位于浅色与中等肤色之间，底调不过分偏冷或偏暖，面颊、鼻翼、眼周和下颌具有细微肤色差异与真实血流变化，柔光下保持清楚体积，硬光下高光不过曝；保留毛孔、细纹和局部色素，避免灰白无生气、粉底面具、脸颈手三段色差或自动改变人物原有身份特征",
+      "enPrompt": "light-medium neutral complexion positioned between fair and medium values without a strong cool or warm cast, with subtle natural color variation and circulation around cheeks nostrils eyes and jaw, readable volume in soft light and protected highlights in hard light; retain pores fine lines and localized pigmentation, avoiding lifeless gray-white skin a foundation mask three-way mismatch among face neck and hands or automatic alteration of identity features",
+      "negative": [
+        "stereotype",
+        "caricature",
+        "offensive depiction",
+        "exaggerated ethnic features"
+      ]
+    },
+    {
+      "id": "skin-freckled",
+      "category": "ethnicity",
+      "styleGroup": "skin-tone",
+      "zhName": "雀斑皮肤",
+      "enName": "Freckled Skin",
+      "image": "/assets/parameters/skin-freckled.png?v=20260827-character-crop-fix",
+      "zhPrompt": "自然雀斑由大小、浓淡和边缘各异的浅褐色素点组成，主要分布在鼻梁、面颊和日晒区域并随面部曲率、毛孔和光影连续变化，局部可稀疏延伸到肩臂；雀斑位于皮肤层而非表面贴纸，避免均匀网点、左右镜像、每颗同大、覆盖嘴唇眼白、与阴影无关或把雀斑误作污渍和严重皮损",
+      "enPrompt": "natural freckles formed by light-brown pigment marks with varied size density softness and edges, concentrated across nose cheeks and sun-exposed areas while following facial curvature pores and illumination and optionally thinning across shoulders or arms; keep freckles within the skin rather than pasted on top, avoiding uniform dot grids bilateral mirroring identical spots marks over lips or sclera lighting-independent placement or confusion with dirt and severe lesions",
+      "negative": [
+        "stereotype",
+        "caricature",
+        "offensive depiction",
+        "exaggerated ethnic features"
+      ]
+    },
+    {
+      "id": "skin-porcelain-fair",
+      "category": "ethnicity",
+      "styleGroup": "skin-tone",
+      "zhName": "冷白肤色",
+      "enName": "Porcelain Fair Skin",
+      "image": "/assets/parameters/skin-porcelain-fair.png?v=20260827-character-crop-fix",
+      "zhPrompt": "冷白肤色具有偏冷或中性的浅色基底与轻微半透明感，眼周、耳廓和薄皮区域可见克制的粉红或蓝紫血管色，亮部保持细节而非纯白，阴影柔和转为冷灰但仍有肤色；保留毛孔和细小色素差异，避免瓷器硬壳、全脸蓝紫、过曝发光、无血色蜡像或把“冷白”写成不真实漂白",
+      "enPrompt": "cool porcelain-fair skin with a light neutral-to-cool base and restrained translucency, allowing subtle pink circulation or blue-violet vascular hints near eyes ears and thin-skin areas while highlights retain detail and shadows turn softly cool without losing skin color; preserve pores and minute pigment variation, avoiding a ceramic shell an all-over blue cast clipped glow bloodless wax or interpreting cool fairness as artificial bleaching",
+      "negative": [
+        "stereotype",
+        "caricature",
+        "offensive depiction",
+        "exaggerated ethnic features"
+      ]
+    },
+    {
+      "id": "skin-vitiligo-pattern",
+      "category": "ethnicity",
+      "styleGroup": "skin-tone",
+      "zhName": "白癜风皮肤特征",
+      "enName": "Vitiligo Skin Pattern",
+      "image": "/assets/parameters/skin-vitiligo-pattern.png?v=20260827-character-crop-fix",
+      "zhPrompt": "白癜风皮肤特征以边界自然、形状不规则的脱色斑呈现，斑块可跨越脸、手或身体并顺应皮肤曲率，区域内部仍保留相同毛孔、细纹、毛发与光泽，只改变色素而不改变厚度；尊重个体差异，避免对称装饰花纹、纯白油漆边、发光、鳞片、伤口化、污渍化或把特征夸张成奇幻符号",
+      "enPrompt": "vitiligo represented as naturally bounded irregular depigmented patches that may cross face hands or body while following skin curvature, with the same pores fine lines hair and surface sheen inside each area so only pigmentation changes rather than thickness; respect individual variation, avoiding symmetrical decorative motifs painted-white edges glow scales wounds dirt treatment or exaggeration into a fantasy symbol",
+      "negative": [
+        "stereotype",
+        "caricature",
+        "offensive depiction",
+        "exaggerated ethnic features"
+      ]
+    },
+    {
+      "id": "feature-almond-eyes",
+      "category": "ethnicity",
+      "styleGroup": "facial-feature",
+      "zhName": "杏仁眼",
+      "enName": "Almond Eyes",
+      "image": "/assets/parameters/feature-almond-eyes.png?v=20260827-character-crop-fix",
+      "zhPrompt": "杏仁眼具有两端渐收、中段适度开阔的眼裂轮廓，内外眼角、上下眼睑厚度、虹膜遮挡和眨眼褶皱符合真实解剖，左右可有轻微自然差异；眼型通过轮廓与眼睑结构表达而非夸张眼线，保留视线方向和高光一致，避免动漫放大、尖锐拉长、虹膜悬浮、双眼完全复制或据此推断族群",
+      "enPrompt": "almond-shaped eyes with a gently widened center and tapered inner and outer corners, anatomically coherent lid thickness iris occlusion canthi and blink folds plus subtle natural asymmetry; express the shape through eyelid structure rather than exaggerated liner while gaze direction and catchlights remain consistent, avoiding anime enlargement razor-sharp elongation floating irises perfectly duplicated eyes or ethnic inference from one feature",
+      "negative": [
+        "stereotype",
+        "caricature",
+        "offensive depiction",
+        "exaggerated ethnic features"
+      ]
+    },
+    {
+      "id": "expression-tired",
+      "category": "expression",
+      "styleGroup": "negative",
+      "zhName": "疲惫",
+      "enName": "Tired",
+      "image": "/assets/parameters/expression-tired.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "疲惫神态通过略下垂但不闭合的眼睑、减弱的聚焦、轻微眼下阴影、放松嘴角和较低头位表现，肩颈与呼吸节奏也显得沉重，但人物仍保持可辨认意识与自然肌肉张力；避免用夸张黑眼圈、病态惨白、双眼方向不一、面部融化或昏迷姿势代替日常疲劳",
+      "enPrompt": "tired expression conveyed through slightly lowered yet open lids softened focus restrained under-eye shadow relaxed mouth corners and a modestly lowered head, with heavier shoulder-neck posture and breathing while the person remains alert and facial muscles anatomically coherent; avoid replacing ordinary fatigue with exaggerated black circles sickly pallor divergent gaze melting features or an unconscious pose",
+      "negative": [
+        "blank dead eyes",
+        "asymmetric expression",
+        "distorted face"
+      ]
+    },
+    {
+      "id": "expression-mysterious",
+      "category": "expression",
+      "styleGroup": "personality",
+      "zhName": "神秘",
+      "enName": "Enigmatic Expression",
+      "image": "/assets/parameters/expression-mysterious.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "神秘神态以部分隐藏的信息建立：视线略偏离镜头或停留在画外，嘴角只有细微未定变化，眉眼被克制侧光、前景或姿态轻度遮挡，但五官仍清楚且情绪不可被简单归为喜怒；避免固定邪笑、整脸藏黑、遮住全部眼睛、夸张挑眉、恐怖化或用烟雾面具等道具直接替代表情",
+      "enPrompt": "mysterious expression built from partial information: gaze resting just off camera or beyond the frame, mouth corners carrying an unresolved micro-change and eyes or brows lightly screened by restrained side light foreground or pose while features remain legible and emotion resists a simple happy-angry reading; avoid a stock villain smirk a fully blacked-out face both eyes hidden exaggerated brows horror coding or props such as smoke and masks replacing expression",
+      "negative": [
+        "blank dead eyes",
+        "asymmetric expression",
+        "distorted face"
+      ]
+    },
+    {
+      "id": "expression-confident",
+      "category": "expression",
+      "styleGroup": "personality",
+      "zhName": "自信",
+      "enName": "Confident",
+      "image": "/assets/parameters/expression-confident.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "自信神态由稳定直接或有明确目标的视线、放松眉间、自然闭合或轻扬的嘴角、抬起但不过仰的下巴和开放肩颈共同形成，面部肌肉没有紧张防御，姿势重心可靠；允许安静或外向两种表达，避免把自信等同于怒视、夸张叉腰、下巴过高、僵硬假笑或压迫他人的傲慢表情",
+      "enPrompt": "confident expression formed by steady direct or purposefully aimed gaze a relaxed brow naturally closed or slightly lifted mouth corners a raised but not overtilted chin and open shoulders and neck, with no defensive facial tension and a reliable body center; allow quiet or outgoing confidence, avoiding angry staring exaggerated hands-on-hips posture an excessively high chin a rigid promotional smile or contempt toward others",
+      "negative": [
+        "blank dead eyes",
+        "asymmetric expression",
+        "distorted face"
+      ]
+    },
+    {
+      "id": "hair-bangs",
+      "category": "hair-makeup",
+      "styleGroup": "hair-shape",
+      "zhName": "刘海",
+      "enName": "Bangs",
+      "image": "/assets/parameters/hair-bangs.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "刘海从可辨认的前额发际与分区自然生长，依据直刘海、空气刘海或侧刘海形成不同束宽与间隙，发梢落在额头并受重力、风向和头部转动影响，仍露出合理眉眼区域；避免整片塑料帘、无发根悬浮、每根等距、左右机械镜像、穿过眼球或刘海与后发完全不同材质",
+      "enPrompt": "bangs growing naturally from a readable frontal hairline and sectioning, using strand-group width and gaps appropriate to blunt airy or side-swept fringe, tips resting against the forehead and responding to gravity wind and head turn while preserving a plausible view of brows and eyes; avoid a solid plastic curtain rootless floating hair equally spaced strands mechanical symmetry intersections through eyeballs or fringe rendered as a different material from the rest of the hair",
+      "negative": [
+        "messy unintended hair",
+        "distorted hairline",
+        "unclear makeup"
+      ]
+    },
+    {
+      "id": "hair-braided",
+      "category": "hair-makeup",
+      "styleGroup": "hair-styling",
+      "zhName": "编发",
+      "enName": "Braided Hair",
+      "image": "/assets/parameters/hair-braided.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "编发由连续分区的发束按明确交叉顺序编织，辫节从发根到末端逐渐收窄，松紧、毛躁和发量保持一致，固定带或发簪位于真实受力点，动作中辫子作为有重量的整体延迟摆动；避免辫股数量中途改变、无限复制纹理、辫子穿过肩背、发根无分区、末端突然消失或每节像金属链条",
+      "enPrompt": "braided hair constructed from continuously sectioned locks crossing in a readable sequence, braid units narrowing from root toward the end with coherent tension volume and flyaways, ties or pins placed at real load points and the braid moving as a weighted form with delayed swing; avoid strand counts changing mid-braid endlessly tiled texture intersections through shoulders or back unsectioned roots vanishing ends or every segment appearing like a metal chain",
+      "negative": [
+        "messy unintended hair",
+        "distorted hairline",
+        "unclear makeup"
+      ]
+    },
+    {
+      "id": "hair-buzz-cut",
+      "category": "hair-makeup",
+      "styleGroup": "hair-shape",
+      "zhName": "寸头",
+      "enName": "Buzz Cut",
+      "image": "/assets/parameters/hair-buzz-cut.png?v=20260827-character-crop-fix",
+      "zhPrompt": "寸头沿头骨曲面呈均匀但非贴图化的短发长度，头顶、鬓角与后颈可按理发渐变自然过渡，发旋、生长方向和发际线清楚，掠射光显示细小发茬而不暴露成光滑头皮；避免黑色帽壳、毛绒球、随机秃斑、发际线画笔描边、每根直立同长或把短发错误渲染为皮肤纹理",
+      "enPrompt": "buzz cut following skull curvature with short even yet non-textured hair, optionally transitioning through a believable clipper fade across crown temples and nape while whorl growth direction and hairline remain readable and grazing light reveals fine stubble without turning the scalp smooth; avoid a black cap shell fuzzy sphere random bald patches painted hairline every strand equally upright or short hair mistaken for skin texture",
+      "negative": []
+    },
+    {
+      "id": "hair-silver-gray",
+      "category": "hair-makeup",
+      "styleGroup": "hair-styling",
+      "zhName": "银灰发色",
+      "enName": "Silver Gray Hair",
+      "image": "/assets/parameters/hair-silver-gray.png?v=20260827-character-crop-fix",
+      "zhPrompt": "银灰发色由冷灰、柔和银白和少量原生深色发根组成，颜色沿真实发束与光线变化而非整片金属涂层，高光偏冷但保持角蛋白柔光，暗部仍可区分层次；年轻染发与自然白发可按主体设定区分，避免纯白过曝、蓝紫金属丝、脸部同步变灰、发根发梢随机换色或把银灰误作发光材质",
+      "enPrompt": "silver-gray hair color built from cool gray soft silver-white and optionally a restrained darker natural root, changing along real strand groups and illumination rather than becoming a metallic coating, with cool highlights retaining keratin softness and shadows preserving depth; distinguish intentional dye from natural graying according to the subject, avoiding clipped pure white blue-violet wire a face turned gray random root-tip swaps or luminous hair material",
+      "negative": []
+    },
+    {
+      "id": "makeup-smoky-eye",
+      "category": "hair-makeup",
+      "styleGroup": "makeup-stylized",
+      "zhName": "烟熏眼妆",
+      "enName": "Smoky Eye Makeup",
+      "image": "/assets/parameters/makeup-smoky-eye.png?v=20260827-character-crop-fix",
+      "zhPrompt": "烟熏眼妆以眼睑、睫毛根部和外眼角为中心分层晕染深色眼影，边缘向眉骨和下眼睑逐渐减淡，左右形状适配真实眼型，内眼角与眼球高光保持干净；整体色彩可为黑灰、棕或低饱和色但不遮盖皮肤结构，避免熊猫眼硬圈、整片纯黑、眼影越过鼻梁、双眼不对称失控或把疲惫黑眼圈当妆容",
+      "enPrompt": "smoky eye makeup layered around lids lash lines and outer corners with dark pigment diffusing gradually toward brow bone and lower lid, each side adapted to real eye shape while inner corners and ocular highlights stay clean; use charcoal brown or restrained color without hiding skin structure, avoiding hard panda-eye rings solid black blocks shadow crossing the nose uncontrolled bilateral mismatch or ordinary fatigue circles mistaken for makeup",
+      "negative": []
+    },
+    {
+      "id": "story-reading",
+      "category": "story-action",
+      "styleGroup": "daily",
+      "zhName": "阅读",
+      "enName": "Reading",
+      "image": "/assets/parameters/story-reading.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "阅读事件让人物以视线、手指和姿势真实回应书页或阅读设备，双手分别承担托持、翻页或标记动作，文本内容无需可读但页面方向、厚度和装订连续，环境光适合阅读并与情绪一致；可表现专注、休闲或共同阅读，避免书本倒置、手穿页面、视线离开读物、文字乱码占满画面或只把书当静态摆件",
+      "enPrompt": "reading event in which gaze fingers and posture genuinely respond to a book or reading device, hands taking distinct roles such as supporting turning or marking while text need not be legible but page orientation thickness and binding remain continuous and available light suits reading and mood; allow focused casual or shared reading, avoiding upside-down books hands through pages gaze unrelated to the material prominent gibberish text or a book used only as a static prop",
+      "negative": [
+        "unclear action",
+        "confusing narrative",
+        "stiff body language"
+      ]
+    },
+    {
+      "id": "story-cooking",
+      "category": "story-action",
+      "styleGroup": "daily",
+      "zhName": "烹饪",
+      "enName": "Cooking",
+      "image": "/assets/parameters/story-cooking.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "烹饪事件围绕一道明确工序组织人物、食材、厨具与热源，手部抓握和工具角度符合切配、翻炒、揉制或装盘动作，原料从未处理到成品保持阶段一致，蒸汽、油光和火焰有可信来源；工作台留出安全空间，避免刀具反握、手穿锅具、生熟食混乱、无热源冒烟、食材悬浮或把厨房堆成无关物件展台",
+      "enPrompt": "cooking event organized around one clear process with person ingredients tools and heat source, hand grip and utensil angle matching chopping stirring kneading or plating while ingredients remain consistent with the chosen stage and steam oil sheen and flame have credible causes; preserve safe workspace, avoiding reversed knife grip hands through cookware mixed raw and finished states smoke without heat floating food or a kitchen turned into an unrelated prop display",
+      "negative": [
+        "unclear action",
+        "confusing narrative",
+        "stiff body language"
+      ]
+    },
+    {
+      "id": "story-waiting",
+      "category": "story-action",
+      "styleGroup": "daily",
+      "zhName": "等待",
+      "enName": "Waiting",
+      "image": "/assets/parameters/story-waiting.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "等待事件通过暂时停止的动作、反复查看方向或时间、身体重心停驻和环境中持续流动的人车建立时间差，人物与座椅、站台、门口或约定地点有明确空间关系，表情可期待、焦虑或平静；避免人物无缘由僵站、所有背景都静止、夸张看表、缺少等待对象线索或把等待直接画成睡眠和绝望",
+      "enPrompt": "waiting event communicated by paused action repeated attention toward a direction or time a settled center of weight and continuing movement of people or traffic around the subject, with a clear spatial relation to a seat platform doorway or meeting point and emotion ranging from anticipation to anxiety or calm; avoid unexplained rigid standing a fully frozen background theatrical watch-checking no clue to what is awaited or reducing waiting to sleep and despair",
+      "negative": [
+        "unclear action",
+        "confusing narrative",
+        "stiff body language"
+      ]
+    },
+    {
+      "id": "story-discovering",
+      "category": "story-action",
+      "styleGroup": "adventure",
+      "zhName": "发现",
+      "enName": "Discovering",
+      "image": "/assets/parameters/story-discovering.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "发现事件需要一个刚被揭示的对象、入口、线索或现象，人物视线、手势和身体前倾共同指向它，遮挡被移开或光线变化解释“刚发现”的瞬间，周围同伴可产生不同强度的次级反应；信息层级先显示发现者再引导至目标，避免角色看向空处、目标无视觉区别、所有人同一夸张表情、凭空宝箱或用发光轮廓代替叙事因果",
+      "enPrompt": "discovery event requiring a newly revealed object entrance clue or phenomenon, with gaze gesture and body lean converging on it and removed occlusion or changing light explaining the instant of recognition while companions may show secondary reactions of varied intensity; hierarchy reveals the discoverer then guides the eye to the target, avoiding characters staring at nothing an indistinct target identical exaggerated reactions a generic treasure chest or glowing outlines replacing narrative cause",
+      "negative": [
+        "unclear action",
+        "confusing narrative",
+        "stiff body language"
+      ]
+    },
+    {
+      "id": "character-engineer",
+      "category": "character",
+      "styleGroup": "profession",
+      "zhName": "工程师",
+      "enName": "Engineer",
+      "image": "/assets/parameters/character-engineer.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "工程师角色应先明确机械、土木、电气、软件或其他具体方向，再用与任务相关的图纸、仪器、样机、控制台或安全装备体现专业，动作集中在测量、调试、检查或协作而非摆拍；服装和工作环境符合场所风险，避免用安全帽概括所有工程师、屏幕乱码、工具用途错误、实验室与工地混搭或把理性气质写成冷漠刻板印象",
+      "enPrompt": "engineer character defined first by a specific field such as mechanical civil electrical software or another discipline, then supported by task-relevant drawings instruments prototypes consoles or safety equipment and shown measuring testing inspecting or collaborating rather than posing; clothing and environment match workplace hazards, avoiding a hard hat as shorthand for every engineer gibberish screens misused tools mixed laboratory and construction settings or treating analytical ability as emotional coldness",
+      "negative": [
+        "unclear identity",
+        "inconsistent character design",
+        "distorted body"
+      ]
+    },
+    {
+      "id": "character-detective",
+      "category": "character",
+      "styleGroup": "social-role",
+      "zhName": "侦探",
+      "enName": "Detective",
+      "image": "/assets/parameters/character-detective.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "侦探角色通过观察现场、记录细节、比较证据或与人物交谈建立调查职责，服装与时代和地点一致，随身物件数量克制且用途清楚，视线和站位回应真实线索；可为官方或私人调查者但不直接复制著名角色，避免固定风衣放大镜模板、证据污染、武器抢占主体、无缘由阴暗滤镜或把推理能力表现成超自然发光效果",
+      "enPrompt": "detective character established through observing a scene recording details comparing evidence or interviewing someone, with clothing appropriate to period and place restrained purposeful carried objects and gaze and placement responding to real clues; allow official or private investigators without copying famous characters, avoiding the stock trench-coat magnifier template contaminated evidence a weapon dominating the role arbitrary dark grading or supernatural glow used to represent reasoning",
+      "negative": [
+        "unclear identity",
+        "inconsistent character design",
+        "distorted body"
+      ]
+    },
+    {
+      "id": "character-scholar",
+      "category": "character",
+      "styleGroup": "social-role",
+      "zhName": "学者",
+      "enName": "Scholar",
+      "image": "/assets/parameters/character-scholar.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "学者角色由具体研究领域、材料和工作方法体现，可在档案、实地、实验或书桌环境中阅读原始资料、比较样本、注释或讨论，服装符合时代和场所而非统一古板造型；书籍与器具数量服务研究主题，避免堆满无关卷轴、无法阅读的巨量文字、把学者等同于年长男性、无功能眼镜或用沉默孤僻取代专业活动",
+      "enPrompt": "scholar character communicated through a specific field source material and working method, reading primary documents comparing specimens annotating or discussing in an archive field laboratory or desk setting with clothing suited to era and place rather than one dusty stereotype; books and instruments serve the research topic, avoiding unrelated scroll piles vast illegible text assumptions of an older male scholar purposeless glasses or replacing professional activity with silent isolation",
+      "negative": [
+        "unclear identity",
+        "inconsistent character design",
+        "distorted body"
+      ]
+    },
+    {
+      "id": "character-astronaut",
+      "category": "character",
+      "styleGroup": "sci-fi",
+      "zhName": "宇航员",
+      "enName": "Astronaut",
+      "image": "/assets/parameters/character-astronaut.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "宇航员角色根据舱内、舱外或行星表面任务选择压力服、舱内服和生命保障组件，头盔密封、手套关节、软管接口与工具固定方式符合环境，身体姿态回应微重力、低重力或地面重力；面罩反射来自真实舱体或地景，避免鱼缸头盔、松脱管线、无气环境裸露皮肤、国旗品牌乱用、漂浮方向矛盾或仅靠星空背景表示职业",
+      "enPrompt": "astronaut character equipped according to an intravehicular extravehicular or planetary-surface task, with pressure suit or cabin garment life-support components sealed helmet articulated gloves hose interfaces and tethered tools appropriate to the environment and posture responding to microgravity low gravity or ground gravity; visor reflections derive from real cabin or terrain, avoiding fishbowl helmets loose hoses exposed skin in vacuum random flags or brands contradictory floating direction or relying on a star background alone to signal the profession",
+      "negative": [
+        "unclear identity",
+        "inconsistent character design",
+        "distorted body"
+      ]
+    }
+  ]
+}

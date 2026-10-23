@@ -1,0 +1,373 @@
+{
+  "parameters": [
+    {
+      "id": "color-high-saturation",
+      "category": "color-material",
+      "styleGroup": "palette",
+      "zhName": "高饱和",
+      "enName": "High Saturation",
+      "image": "/assets/parameters/color-high-saturation.jpg",
+      "zhPrompt": "高饱和配色使用少量纯度高的主色和明确配色关系制造冲击，依靠中性色、面积比例与明度差让各色互不争抢；肤色和白色物体保持准确，避免所有颜色同时拉满、荧光溢色、暗部染脏或失去视觉主次",
+      "enPrompt": "high-saturation palette using a limited set of intense primary hues and clear color relationships for impact, controlled by neutral zones area ratios and value separation so colors do not compete equally; protect accurate skin and white objects, avoiding every hue pushed to maximum fluorescent bleeding contaminated shadows or loss of hierarchy"
+    },
+    {
+      "id": "color-low-saturation",
+      "category": "color-material",
+      "styleGroup": "palette",
+      "zhName": "低饱和",
+      "enName": "Low Saturation",
+      "image": "/assets/parameters/color-low-saturation.jpg",
+      "zhPrompt": "低饱和配色将主色压入含灰但仍可区分的色阶，以明度、冷暖和材质差异维持层次，少量较纯颜色可作为视觉焦点；中性色保持干净，肤色不发灰，避免全局灰雾、颜色互相混脏、对比消失或简单降低透明度",
+      "enPrompt": "low-saturation palette moving primary hues into muted yet distinguishable ranges, preserving hierarchy through value temperature and material differences while allowing one restrained purer accent; keep neutrals clean and skin alive, avoiding a global gray veil muddy color mixing vanished contrast or the appearance of merely lowering opacity"
+    },
+    {
+      "id": "material-metal",
+      "category": "color-material",
+      "styleGroup": "industrial",
+      "zhName": "金属",
+      "enName": "Metal",
+      "image": "/assets/parameters/material-metal.jpg",
+      "zhPrompt": "金属材质依据粗糙度、加工方向和环境形成可信反射，拉丝纹沿单一方向延伸，抛光面保留清楚但不过曝的高光，边缘与接缝有合理厚度；区分钢、铝、铜等固有色，避免镜面复制场景、塑料银漆、随机划痕或无来源彩虹反光",
+      "enPrompt": "metal material producing believable reflections from roughness machining direction and surroundings, with brushed grain following one orientation polished areas holding crisp controlled highlights and edges and seams showing real thickness; distinguish steel aluminum and copper color, avoiding mirror-copy environments plastic silver paint random scratches or source-free rainbow reflections"
+    },
+    {
+      "id": "material-leather",
+      "category": "color-material",
+      "styleGroup": "fabric",
+      "zhName": "皮革",
+      "enName": "Leather",
+      "image": "/assets/parameters/material-leather.jpg",
+      "zhPrompt": "皮革材质呈现自然毛孔、细微皱褶、边缘厚度与使用磨损，拉伸区变亮、折弯处形成密集纹理，缝线和裁片结构符合制作方式；区分哑光、油蜡或漆皮光泽，避免塑料反光、重复压纹、无厚度表面或随机破损",
+      "enPrompt": "leather material showing natural pores fine creases edge thickness and use wear, with stretched zones becoming smoother and bends gathering denser texture while stitching and pattern pieces follow plausible construction; distinguish matte waxed or patent finishes, avoiding plastic glare tiled embossing thickness-free surfaces or random damage"
+    },
+    {
+      "id": "style-sanguine-chalk",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "红粉笔素描",
+      "enName": "Sanguine Chalk Drawing",
+      "image": "/assets/parameters/style-sanguine-chalk.jpg?v=20261022-style-expansion-s",
+      "zhPrompt": "红粉笔素描使用铁氧化物色调的赭红或砖红粉笔，在暖纸上以侧锋铺色、尖端勾结构并用手指轻擦过渡；色阶从淡粉到深棕红保持统一，纸纹穿过透明阴影，适合人体与肖像研究，避免彩色铅笔、多色粉彩或数字棕红滤镜",
+      "enPrompt": "sanguine chalk drawing using iron-oxide red or brick-red chalk on warm paper, laying broad tone with the side of the stick, defining structure with the point and lightly blending selected transitions; keep a unified range from pale blush to deep reddish brown with paper tooth visible through transparent shadows, avoiding colored pencil multicolor pastel or a digital sepia-red filter",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable character",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-conte-crayon",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "孔泰蜡笔素描",
+      "enName": "Conte Crayon Drawing",
+      "image": "/assets/parameters/style-conte-crayon.jpg?v=20261022-style-expansion-s",
+      "zhPrompt": "孔泰蜡笔素描以黑、白、赭红和棕色四种硬质方条在中性色纸上塑造形体，硬边线、侧锋块面和白色提亮共同建立明暗层次；质地比炭笔更紧实、比粉彩更克制，保留颗粒和方条转角，避免油画棒蜡亮表面、彩虹配色或完全揉匀",
+      "enPrompt": "Conte crayon drawing using hard square sticks in black white sanguine and brown on mid-tone paper, combining crisp edged lines broad side planes and selective white heightening to model form; texture is denser than charcoal and more restrained than pastel with visible grain and squared turns, avoiding waxy oil-pastel shine rainbow color or fully blended surfaces",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable character",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-blind-emboss-relief",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "无墨盲压浮雕",
+      "enName": "Blind-Embossed Paper Relief",
+      "image": "/assets/parameters/style-blind-emboss-relief.jpg?v=20261022-style-expansion-s",
+      "zhPrompt": "无墨盲压浮雕仅靠凹凸模具把图形压入厚实棉纸，不使用油墨或颜料；浅浮雕边缘在低角度侧光下产生细窄高光和阴影，纸纤维受压区域更平滑，图形克制且可触摸，避免白色 3D 塑料、雕塑厚浮雕、灰色印刷轮廓或数字法线贴图",
+      "enPrompt": "blind-embossed paper relief formed solely by pressing a shaped die into heavy cotton stock without ink or color, so shallow raised and recessed edges create narrow highlights and shadows under raking light while compressed fibers become smoother; keep the image restrained and tactile, avoiding white plastic 3D deep sculptural relief printed gray outlines or a digital normal-map look",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable character"
+      ]
+    },
+    {
+      "id": "style-kraft-paper-drawing",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "牛皮纸黑白素描",
+      "enName": "Kraft-Paper Dark-and-White Drawing",
+      "image": "/assets/parameters/style-kraft-paper-drawing.jpg?v=20261022-style-expansion-s",
+      "zhPrompt": "牛皮纸黑白素描把纸张本身作为中间调，用深色铅笔、炭精或墨线压暗结构，再用白色粉笔只提取受光边缘和最高光；暖棕纤维始终可见，黑白标记不过度覆盖底色，体积依靠三值关系建立，避免先涂棕色背景、白色满涂或普通单色滤镜",
+      "enPrompt": "kraft-paper drawing treating the brown fibrous sheet itself as the middle value, using dark graphite charcoal pencil or ink to establish structure and reserving white chalk for lit edges and highest highlights; warm fibers remain visible and neither black nor white overwhelms the ground, with volume built through a clear three-value system, avoiding a digitally painted brown background opaque white fill or a generic monochrome filter",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable character"
+      ]
+    },
+    {
+      "id": "style-sand-animation",
+      "category": "style",
+      "styleGroup": "anime",
+      "zhName": "灯台沙画动画",
+      "enName": "Light-Table Sand Animation",
+      "image": "/assets/parameters/style-sand-animation.jpg?v=20261022-style-expansion-s",
+      "zhPrompt": "灯台沙画动画以散沙在均匀背光玻璃上推、撒、刮、扫形成连续明暗形体，轮廓由颗粒密度而非实线决定，手势移动会留下柔软拖痕和局部露光；画面保持单色透光、可随帧重塑的临时性，避免静态沙雕、海滩写字、数字粒子爆炸或硬边矢量剪影",
+      "enPrompt": "light-table sand animation shaping loose grains by pushing sprinkling scraping and sweeping across evenly backlit glass, with contours defined by particle density rather than solid outlines and hand movement leaving soft trails and exposed light; retain a monochrome translucent and continuously reshapeable frame, avoiding static sand sculpture beach writing digital particle explosions or hard vector silhouettes",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable character"
+      ]
+    },
+    {
+      "id": "clothing-sleeveless-top",
+      "category": "clothing",
+      "styleGroup": "tops-sleeves",
+      "zhName": "无袖上衣",
+      "enName": "Sleeveless Top",
+      "image": "/assets/parameters/clothing-sleeveless-top.png",
+      "zhPrompt": "无袖上衣清楚呈现领口、肩线、袖窿和侧缝结构，布料围绕胸背与腋下形成合理张力，肩臂活动不被虚构布片遮挡；款式可贴身或宽松但边缘厚度一致，避免袖窿穿模、肩带凭空消失、腋下褶皱混乱或误生成短袖",
+      "enPrompt": "sleeveless top with clearly constructed neckline shoulder edge armholes and side seams, fabric tension responding plausibly around chest back and underarm while shoulder movement remains unobstructed; fitted or loose forms keep consistent edge thickness, avoiding intersecting armholes disappearing straps chaotic underarm folds or accidental short sleeves",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-off-shoulder",
+      "category": "clothing",
+      "styleGroup": "tops-sleeves",
+      "zhName": "露肩上衣",
+      "enName": "Off-Shoulder Top",
+      "image": "/assets/parameters/clothing-off-shoulder.png",
+      "zhPrompt": "露肩上衣的领缘横跨胸背并稳定停留在上臂或锁骨下方，弹性、褶裥或结构支撑解释其固定方式，肩颈轮廓完整清楚；衣片随抬臂产生合理位移，避免领口悬空、两侧高度矛盾、布料穿过手臂或误生成普通吊带",
+      "enPrompt": "off-shoulder top with a neckline spanning chest and back and resting plausibly on the upper arms or below the collarbones, supported by elastic gathering or internal structure that explains how it stays in place; fabric shifts credibly with raised arms, avoiding a floating neckline contradictory side heights cloth intersecting limbs or conversion into a camisole",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "pose-lying-supine",
+      "category": "pose",
+      "styleGroup": "lying",
+      "zhName": "仰躺",
+      "enName": "Lying Supine",
+      "image": "/assets/parameters/pose-lying-supine.jpg",
+      "zhPrompt": "仰躺姿势让后脑、肩胛、背部、骨盆和脚跟按表面软硬程度形成合理接触与受力，四肢自然展开或弯曲，胸腹透视服从镜头高度；衣物与头发受重力铺开，避免身体悬空、脊柱反折、手脚穿透地面或平躺却保持站立轮廓",
+      "enPrompt": "supine lying pose with the back of the head shoulder blades spine pelvis and heels making plausible contact according to surface softness, limbs naturally extended or bent and torso perspective matching camera height; clothing and hair spread under gravity, avoiding a floating body reversed spine hands or feet intersecting the ground or a standing silhouette pasted flat",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "character-elegant-slender",
+      "category": "character",
+      "styleGroup": "body-type",
+      "zhName": "修长优雅",
+      "enName": "Elegant Slender",
+      "image": "/assets/parameters/character-elegant-slender.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "修长优雅体态通过较长四肢、舒展颈肩、清楚腰胯转折和稳定重心呈现，比例纤细但关节、肌肉与骨骼结构仍符合真实人体；姿态线流畅且衣物随体型垂落，避免过度拉长、纸片腰、病态消瘦或头身比例失真",
+      "enPrompt": "elegant slender build expressed through relatively long limbs an open neck and shoulder line clear waist-to-hip transition and stable center of gravity, while joints musculature and skeletal structure remain anatomically credible; keep the gesture fluid and clothing draping with the body, avoiding extreme elongation a paper-thin waist unhealthy emaciation or distorted head-to-body proportion",
+      "negative": [
+        "unclear identity",
+        "inconsistent character design",
+        "distorted body"
+      ]
+    },
+    {
+      "id": "character-musician",
+      "category": "character",
+      "styleGroup": "profession",
+      "zhName": "音乐人",
+      "enName": "Musician",
+      "image": "/assets/parameters/character-musician.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "音乐人形象通过与乐器或演出设备的正确接触、符合演奏动作的手型、稳定节拍姿态和真实舞台或排练环境建立身份，服装服务音乐类型但不依赖品牌；保留专注听觉反应，避免手指错位、乐器比例错误、道具悬空或用音符装饰代替职业表现",
+      "enPrompt": "musician identity established through correct contact with an instrument or performance equipment hand shapes suited to playing rhythmic posture and a credible stage or rehearsal setting, with wardrobe supporting the genre without brand dependence; retain attentive listening behavior, avoiding misplaced fingers wrong instrument scale floating props or music-note decoration standing in for the profession",
+      "negative": [
+        "unclear identity",
+        "inconsistent character design",
+        "distorted body"
+      ]
+    },
+    {
+      "id": "expression-laughing",
+      "category": "expression",
+      "styleGroup": "positive",
+      "zhName": "大笑",
+      "enName": "Laughing",
+      "image": "/assets/parameters/expression-laughing.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "自然大笑由张开的嘴形、抬起的面颊、眼周收紧和呼吸带动的头肩动作共同构成，牙齿、舌头与口腔暗部结构正确；笑容强烈但仍保留人物身份，避免复制牙齿、嘴角撕裂、双眼完全消失或只张嘴而面部其他区域静止",
+      "enPrompt": "natural laughter combining an open mouth raised cheeks eye crinkles and head-shoulder movement driven by breath, with correct teeth tongue and oral cavity structure; keep the expression strong while preserving identity, avoiding duplicated teeth torn mouth corners vanished eyes or an open mouth with the rest of the face frozen",
+      "negative": [
+        "blank dead eyes",
+        "asymmetric expression",
+        "distorted face"
+      ]
+    },
+    {
+      "id": "expression-calm",
+      "category": "expression",
+      "styleGroup": "calm",
+      "zhName": "平静",
+      "enName": "Calm",
+      "image": "/assets/parameters/expression-calm.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "平静神态保持眉眼舒展、呼吸均匀和嘴唇自然闭合，视线有落点但没有紧张追踪，头颈与肩部处于稳定放松状态；以细微眼神和姿态传达安定感，避免空洞无表情、困倦垂头、僵硬凝视或强行添加微笑",
+      "enPrompt": "calm expression with open relaxed brows even breathing naturally closed lips and a gaze that has a clear resting point without tense tracking, supported by stable relaxed neck and shoulders; communicate composure through subtle eyes and posture, avoiding a vacant neutral face drooping sleepiness rigid staring or an imposed smile",
+      "negative": [
+        "blank dead eyes",
+        "asymmetric expression",
+        "distorted face"
+      ]
+    },
+    {
+      "id": "expression-scared",
+      "category": "expression",
+      "styleGroup": "dramatic",
+      "zhName": "害怕",
+      "enName": "Scared",
+      "image": "/assets/parameters/expression-scared.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "害怕神态由内眉抬起、眼睑紧张、瞳孔聚焦威胁方向和嘴唇轻张共同形成，呼吸、颈肩收缩与身体退让相互呼应；保留人物身份与五官比例，避免夸张凸眼、无缘由尖叫、整脸扭曲或仅用黑暗滤镜代替恐惧",
+      "enPrompt": "fearful expression built from raised inner brows tense eyelids pupils focused toward the threat and slightly parted lips, with breathing contracted shoulders and a subtle backward body response working together; preserve identity and facial proportions, avoiding bulging eyes an unmotivated scream full-face distortion or darkness used as a substitute for fear",
+      "negative": [
+        "blank dead eyes",
+        "asymmetric expression",
+        "distorted face"
+      ]
+    },
+    {
+      "id": "expression-shy",
+      "category": "expression",
+      "styleGroup": "personality",
+      "zhName": "害羞",
+      "enName": "Shy",
+      "image": "/assets/parameters/expression-shy.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "害羞神态通过短暂移开的视线、轻收下巴、克制浅笑和略向内的肩臂姿态表达，面颊可有自然轻微泛红但不覆盖整脸；动作细小且符合情境，避免低头到看不见脸、夸张双手捂脸、动漫腮红条或把害羞误成恐惧",
+      "enPrompt": "shy expression communicated through a briefly averted gaze slightly tucked chin restrained smile and subtly inward shoulder or arm posture, with only a faint natural cheek flush; keep gestures small and contextually believable, avoiding a face hidden completely downward exaggerated hands covering the face anime blush marks or confusion with fear",
+      "negative": [
+        "blank dead eyes",
+        "asymmetric expression",
+        "distorted face"
+      ]
+    },
+    {
+      "id": "hair-short",
+      "category": "hair-makeup",
+      "styleGroup": "hair-length",
+      "zhName": "短发",
+      "enName": "Short Hair",
+      "image": "/assets/parameters/hair-short.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "短发贴合头骨并通过顶部、侧区和后颈的长度差塑造轮廓，发旋、分缝与生长方向连续，耳际和鬓角边缘干净但保留自然碎发；避免头皮贴图感、每根发丝直立、左右完全复制或短发变成无结构毛球",
+      "enPrompt": "short hair following the skull with controlled length differences across crown sides and nape, continuous whorl parting and growth direction and clean ear and temple edges retaining a few natural flyaways; avoid a painted scalp every strand standing upright perfect bilateral duplication or an unstructured fuzzy sphere",
+      "negative": [
+        "messy unintended hair",
+        "distorted hairline",
+        "unclear makeup"
+      ]
+    },
+    {
+      "id": "hair-long",
+      "category": "hair-makeup",
+      "styleGroup": "hair-length",
+      "zhName": "长发",
+      "enName": "Long Hair",
+      "image": "/assets/parameters/hair-long.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "长发从头皮分区连续生长，主发束沿肩背和重力方向垂落，前后层次、长度变化和与衣物的接触关系清楚；高光顺着发束而非整片涂亮，保留少量碎发，避免发量无限增殖、穿透身体、瀑布般平板或每根发丝同样清晰",
+      "enPrompt": "long hair growing continuously from readable scalp sections, primary masses falling along shoulders back and gravity with clear front-back layering length variation and contact with clothing; highlights follow strand groups rather than coating one sheet, with a few flyaways, avoiding infinite volume body intersections waterfall-flat slabs or every strand rendered equally sharp",
+      "negative": [
+        "messy unintended hair",
+        "distorted hairline",
+        "unclear makeup"
+      ]
+    },
+    {
+      "id": "hair-bob",
+      "category": "hair-makeup",
+      "styleGroup": "hair-shape",
+      "zhName": "波波头",
+      "enName": "Bob Cut",
+      "image": "/assets/parameters/hair-bob.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "波波头以颌线至肩上的整齐长度包裹头骨，内外层次、后颈收束和发尾弧度清楚，左右可有轻微自然差异；发丝高光随曲面连续变化并保留少量碎发，避免头盔般硬壳、完全镜像、发尾齐切成平板或穿过脸颊",
+      "enPrompt": "bob haircut wrapping the skull at jaw-to-shoulder length with readable inner and outer layers a shaped nape and coherent curved ends, allowing slight natural asymmetry; strand highlights follow the rounded mass with a few flyaways, avoiding a helmet shell perfect mirroring ends cut into a flat board or hair intersecting the cheeks",
+      "negative": [
+        "messy unintended hair",
+        "distorted hairline",
+        "unclear makeup"
+      ]
+    },
+    {
+      "id": "hair-ponytail",
+      "category": "hair-makeup",
+      "styleGroup": "hair-styling",
+      "zhName": "马尾",
+      "enName": "Ponytail",
+      "image": "/assets/parameters/hair-ponytail.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "马尾由发根向真实扎点汇聚，皮筋附近具有收束张力，尾部重量、弧线和摆动方向随动作与重力变化，头顶仍保留头骨体积；碎发适量且不遮挡五官，避免马尾悬空、扎点缺失、发束穿透背部或形状像固定塑料管",
+      "enPrompt": "ponytail gathering hair roots toward a believable tie point with visible tension near the band, while tail weight curvature and swing respond to movement and gravity and the crown retains skull volume; keep flyaways restrained and facial features clear, avoiding a floating tail missing anchor hair intersecting the back or a rigid plastic-tube shape",
+      "negative": [
+        "messy unintended hair",
+        "distorted hairline",
+        "unclear makeup"
+      ]
+    },
+    {
+      "id": "makeup-red-lip",
+      "category": "hair-makeup",
+      "styleGroup": "makeup-stylized",
+      "zhName": "红唇妆",
+      "enName": "Red Lip Makeup",
+      "image": "/assets/parameters/makeup-red-lip.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "红唇妆沿真实唇形精确上色，唇峰、嘴角与上下唇厚度保持自然，唇色可在正红、砖红或莓红中选择并与肤色协调；质地可哑光或缎光但不越界，避免荧光红、牙齿染色、嘴唇膨胀变形或整张脸同步泛红",
+      "enPrompt": "red-lip makeup applied precisely to the natural lip contour with believable cupid's bow corners and upper-lower volume, choosing true red brick red or berry red to harmonize with skin; finish may be matte or satin but stays within the lip edge, avoiding fluorescent red stained teeth inflated distorted lips or red contamination across the entire face",
+      "negative": [
+        "messy unintended hair",
+        "distorted hairline",
+        "unclear makeup"
+      ]
+    },
+    {
+      "id": "makeup-fantasy",
+      "category": "hair-makeup",
+      "styleGroup": "makeup-stylized",
+      "zhName": "幻想妆容",
+      "enName": "Fantasy Makeup",
+      "image": "/assets/parameters/makeup-fantasy.jpg?v=20260826-character-crop-2",
+      "zhPrompt": "幻想妆容围绕一个明确主题设计眼部、颧骨或额头的彩色图形，并让珠光、金属、鳞片或发光效果服从面部起伏和真实光源；保留眼口可读性与皮肤纹理，控制装饰数量，避免随机彩绘铺满整脸、左右结构冲突、贴片悬浮或遮盖人物身份",
+      "enPrompt": "fantasy makeup organized around one clear concept across eyes cheekbones or forehead, with color graphics pearlescence metallic accents scales or glow conforming to facial relief and the real light source; preserve readable eyes mouth and skin texture while limiting ornament count, avoiding random full-face paint conflicting bilateral structure floating appliques or loss of character identity",
+      "negative": [
+        "messy unintended hair",
+        "distorted hairline",
+        "unclear makeup"
+      ]
+    },
+    {
+      "id": "feature-soft-round-face",
+      "category": "ethnicity",
+      "styleGroup": "facial-feature",
+      "zhName": "柔和圆脸",
+      "enName": "Soft Round Face",
+      "image": "/assets/parameters/feature-soft-round-face.png?v=20260827-character-crop-fix",
+      "zhPrompt": "柔和圆脸具有饱满但有骨骼支撑的面颊、较短下庭和圆润下颌线，颧骨、鼻唇与下巴转折自然连续；保留年龄与个体差异，避免把脸做成完美圆形、婴儿化五官、过度膨胀双颊或消除全部骨点",
+      "enPrompt": "soft round face with full but structurally supported cheeks a relatively short lower face and a rounded jawline, while cheekbone nasolabial and chin transitions remain natural and continuous; preserve age and individuality, avoiding a perfect circular head infantilized features overinflated cheeks or removal of every bony landmark",
+      "negative": [
+        "stereotype",
+        "caricature",
+        "offensive depiction",
+        "exaggerated ethnic features"
+      ]
+    }
+  ]
+}

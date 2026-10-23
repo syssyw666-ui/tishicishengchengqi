@@ -1,0 +1,259 @@
+{
+  "parameters": [
+    {
+      "id": "camera-three-quarter-view",
+      "category": "camera",
+      "styleGroup": "camera-angle",
+      "zhName": "三分之三视角",
+      "enName": "Three-Quarter View",
+      "image": "/assets/parameters/camera-three-quarter-view.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "三分之三视角让主体相对镜头转动约三十至四十五度，同时展示正面识别信息与一侧体积，近侧轮廓稍大、远侧自然缩短，脸部只完整显示近侧耳或边缘，身体肩髋方向保持一致或有意形成自然扭转；适合人物、产品和角色设定，避免误成纯正面、严格侧面、双侧完全对称、远侧肢体消失或透视方向互相矛盾",
+      "enPrompt": "three-quarter view rotating the subject roughly thirty to forty-five degrees from camera to reveal frontal identity and one side's volume, with the near contour slightly larger the far side naturally foreshortened and only the near ear or edge fully visible while shoulder and hip orientation agree or twist intentionally; suitable for portraits products and character design, avoiding pure frontal or strict profile view bilateral symmetry missing far limbs or contradictory perspective directions"
+    },
+    {
+      "id": "camera-person-background",
+      "category": "camera",
+      "styleGroup": "person-position",
+      "zhName": "人物背景位置",
+      "enName": "Background Person",
+      "image": "/assets/parameters/camera-person-background.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "人物背景位置把角色放在远景、地平线或空间深处，使其占画面较小比例但通过色彩明度对比、光线、道路或建筑轴线保持可辨，前中景承担环境叙事并提供到人物的视觉路径，人物脚下与场景透视、雾化程度一致；避免小人像贴纸悬浮、远景却比前景更锐、人物比例错误、地平线穿身体或靠荧光描边强行抢焦点",
+      "enPrompt": "background-positioned person placed in the distance near the horizon or deep within space at a small scale yet kept recognizable through value-color contrast light roads or architectural axes, with foreground and midground carrying environmental narrative and a visual path toward the figure while footing perspective and atmospheric softness match depth; avoid a tiny sticker-like floating person sharper than foreground wrong scale horizon cutting the body or forced fluorescent outline"
+    },
+    {
+      "id": "camera-person-lower-left",
+      "category": "camera",
+      "styleGroup": "person-position",
+      "zhName": "人物左下角",
+      "enName": "Person Lower Left",
+      "image": "/assets/parameters/camera-person-lower-left.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "人物左下角位置将角色完整锚定在左下三分交点附近，保留脚部、座面或接触阴影，人物视线和动作朝向画面内部，右侧与上方环境承担目的地、叙事或文案空间；人物大小由具体景别决定而非固定缩小，避免同时贴住左边和底边、朝画外看、脚被裁断、右上出现同强度人物或把这项误作所有主体通用的版式留白",
+      "enPrompt": "lower-left person placement anchoring the complete figure near the lower-left thirds point with feet seat or contact shadow retained and gaze and action directed inward while environment to the right and above carries destination narrative or copy space; determine figure scale from the chosen shot rather than always making it tiny, avoiding contact with both borders looking out of frame cropped feet an equally strong person upper right or treating this as a generic layout rule for every subject"
+    },
+    {
+      "id": "camera-person-lower-right",
+      "category": "camera",
+      "styleGroup": "person-position",
+      "zhName": "人物右下角",
+      "enName": "Person Lower Right",
+      "image": "/assets/parameters/camera-person-lower-right.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "人物右下角位置将角色完整锚定在右下三分交点附近，保留脚部、座面或接触阴影，人物朝左侧或画面内部建立视线与运动方向，左侧和上方环境可展开道路、事件或文案；人物比例由景别和距离控制，避免被两条边夹住、朝画外移动、肢体被裁、左上角出现竞争焦点或把人物位置与普通右下角图形版式混为一谈",
+      "enPrompt": "lower-right person placement anchoring the complete figure near the lower-right thirds point with feet seat or contact shadow retained and gaze or motion leading leftward or inward while the environment opens across the left and upper frame for a path event or copy; control figure scale through shot and distance, avoiding entrapment against two borders outward movement cropped limbs a competing upper-left focus or confusion with a generic lower-right graphic layout"
+    },
+    {
+      "id": "camera-group-back-to-back",
+      "category": "camera",
+      "styleGroup": "group-relationship",
+      "zhName": "双人背靠背",
+      "enName": "Back-to-Back Pair",
+      "image": "/assets/parameters/camera-group-back-to-back.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "双人背靠背站位让两人的肩胛或上背在一个真实接触区域相靠，脚位分别支撑自身重心，躯干和头部可朝相反方向观察不同威胁或表达分歧，人物身高差与接触点自然，手臂和道具位于各自活动空间；避免脊柱完全重叠、身体互穿、两人像镜像复制、脚离地、头朝同一方向却无叙事或武器穿过对方",
+      "enPrompt": "back-to-back pair placing shoulder blades or upper backs in one plausible contact area while each person keeps an independent grounded stance and torso and head may watch opposite directions or express disagreement, with natural height difference and contact point and arms and props staying in separate working space; avoid merged spines intersecting bodies mirrored clones floating feet both heads facing identically without purpose or weapons passing through the partner"
+    },
+    {
+      "id": "camera-depth-layering",
+      "category": "camera",
+      "styleGroup": "depth",
+      "zhName": "前中后景层次",
+      "enName": "Depth Layering",
+      "image": "/assets/parameters/camera-depth-layering.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "前中后景层次用至少三个可辨空间平面组织画面：前景提供尺度、遮挡或入口，中景承载核心主体与动作，远景交代地点和天气，各层通过尺寸递减、重叠、对比和空气透视建立连续深度，焦点策略可全清晰或选择性清晰；避免三层像独立贴图、前景遮住主体、远景比例过大、所有层同对比或用单纯上下分栏冒充空间纵深",
+      "enPrompt": "foreground-midground-background layering organizing at least three readable spatial planes: foreground supplies scale occlusion or entry, midground carries the core subject and action and distance establishes place and weather, connected through diminishing size overlap contrast and atmosphere with either deep or selective focus; avoid three pasted images foreground blocking the subject oversized distance equal contrast across every plane or simple horizontal bands mistaken for spatial depth"
+    },
+    {
+      "id": "camera-scale-contrast",
+      "category": "camera",
+      "styleGroup": "depth",
+      "zhName": "尺度对比",
+      "enName": "Scale Contrast",
+      "image": "/assets/parameters/camera-scale-contrast.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "尺度对比构图将小人物、车辆或已知尺寸物体放在巨大建筑、地貌或生物旁作为参照，二者处于可比较的空间深度并共享地面、光线和透视，巨大主体的局部细节与空气透视进一步说明体量；保持小主体仍可辨，避免远近错位造成假比例、巨物像背景贴纸、人物悬浮、尺度参照被裁掉或只靠夸张广角畸变制造大小差",
+      "enPrompt": "scale-contrast composition placing a small person vehicle or known-size object beside monumental architecture terrain or creature as a reference, with both in comparable depth sharing ground light and perspective while detail and atmosphere reinforce the large form's volume; keep the small subject recognizable, avoiding false scale from unrelated depth a giant pasted as background floating people cropped reference objects or size difference created only by extreme wide-angle distortion"
+    },
+    {
+      "id": "camera-rack-focus",
+      "category": "camera",
+      "styleGroup": "lens-effect",
+      "zhName": "焦点转移",
+      "enName": "Rack Focus",
+      "image": "/assets/parameters/camera-rack-focus.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "焦点转移镜头设置前后两个有叙事关系的主体，并明确当前瞬间焦点落在其中之一，另一主体按距离和光圈产生连续自然虚化，构图与视线暗示焦点刚转入或即将转走，焦平面厚度符合镜头参数；单帧只能表现一个清晰阶段，避免前后主体同时锐利却声称转焦、虚化边缘像抠图、焦点落在空处或用径向模糊代替景深变化",
+      "enPrompt": "rack-focus shot staging two narratively related subjects at different depths and specifying which one is sharp at the current instant while the other falls into continuous optical blur according to distance and aperture, with framing and gaze implying focus has just shifted or will shift and focal-plane thickness matching lens settings; a still shows one focus phase, avoiding both subjects equally sharp cutout blur edges focus on empty space or radial blur substituting for depth transition"
+    },
+    {
+      "id": "camera-85mm-portrait",
+      "category": "camera",
+      "styleGroup": "focal-length",
+      "zhName": "85mm 人像焦距",
+      "enName": "85mm Portrait Lens",
+      "image": "/assets/parameters/camera-85mm-portrait.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "85mm 人像焦距采用适当后退机位获得轻度空间压缩和自然面部比例，头肩或半身主体与背景分离，鼻耳距离不过度夸张，浅景深由光圈、拍摄距离和背景距离共同形成，眼睛焦点准确；适合安静肖像而非自动磨皮，避免把数码裁切当长焦、背景完全消失、耳朵压平、双眼焦点不一或在狭小空间强行使用导致构图拥挤",
+      "enPrompt": "85mm portrait lens from an appropriately increased camera distance creating gentle spatial compression and natural facial proportion, separating a head-and-shoulders or half-length subject from background without exaggerating nose-to-ear distance and deriving shallow depth from aperture subject distance and background distance with accurate eye focus; suited to calm portraits without automatic smoothing, avoiding digital crop masquerading as telephoto a vanished background flattened ears mismatched eye focus or forced use in an impossibly tight room"
+    },
+    {
+      "id": "camera-shoulder-level",
+      "category": "camera",
+      "styleGroup": "camera-angle",
+      "zhName": "肩平视角",
+      "enName": "Shoulder-Level Angle",
+      "image": "/assets/parameters/camera-shoulder-level.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "肩平视角将镜头高度放在主体肩线附近，可从人物身旁、背后或同行位置观察，使头部略高于镜头并保留身体与环境的跟随关系，地平线和垂直线仍符合真实机位；若出现前景肩部，应只作为有限遮挡并与主角距离可信，避免误成越肩对话镜头、无来源巨大肩膀、镜头歪斜、头部被切断或把低机位英雄感混入",
+      "enPrompt": "shoulder-level camera placing lens near the subject's shoulder line from beside behind or alongside movement so the head sits modestly above camera while body and environment retain a following relationship and horizon and verticals remain consistent with the position; if a foreground shoulder appears keep it limited and spatially credible, avoiding accidental over-the-shoulder dialogue framing a source-free giant shoulder camera roll a severed head or heroic low-angle exaggeration"
+    },
+    {
+      "id": "camera-person-large-full-body",
+      "category": "camera",
+      "styleGroup": "person-position",
+      "zhName": "大人物全身",
+      "enName": "Large Full-Body Person",
+      "image": "/assets/parameters/camera-person-large-full-body.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "大人物全身构图让单个角色从头顶到脚底完整可见并占据画面约六成至八成高度，头顶和脚下保留稳定安全边距，姿势、服装和表情仍清楚，少量环境只用于落脚、地点和光线说明；机位与焦距控制近端肢体比例，避免裁脚裁头、人物贴满四边、广角手脚膨胀、环境完全消失或把全身图误生成半身肖像",
+      "enPrompt": "large full-body person framing keeping one figure visible from head to feet at roughly sixty to eighty percent of image height with stable headroom and ground margin while pose clothing and expression remain readable and limited environment explains footing place and light; use camera distance and focal length to control near-limb proportion, avoiding cropped head or feet contact with all borders enlarged wide-angle hands and shoes no environmental context or conversion into a half portrait"
+    },
+    {
+      "id": "camera-person-left-third",
+      "category": "camera",
+      "styleGroup": "person-position",
+      "zhName": "人物左三分线",
+      "enName": "Person on Left Third",
+      "image": "/assets/parameters/camera-person-left-third.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "人物左三分线位置把角色视觉中心放在左侧三分交点或竖线上，保留完整轮廓与落脚，人物视线、动作或身体朝向引导至右侧环境、对话对象或信息区，左右重量可由光线和景物平衡；人物大小由选定景别决定，避免机械贴线、朝左画外看、右侧无内容却空洞、脚部被裁或与左侧留白版式产生相反功能",
+      "enPrompt": "left-thirds person placement setting the figure's visual center near the left thirds intersection or vertical line with complete silhouette and footing while gaze action or torso leads toward environment partner or information space on the right and light and scenery balance weight; let shot scale determine figure size, avoiding mechanical line placement outward left gaze empty purposeless right space cropped feet or conflict with a layout intended to leave the left side empty"
+    },
+    {
+      "id": "scene-dry-season-grassland",
+      "category": "scene",
+      "styleGroup": "weather",
+      "zhName": "旱季草原",
+      "enName": "Dry Season Grassland",
+      "image": "/assets/parameters/scene-dry-season-grassland.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "旱季草原以金黄至灰褐的低矮草层、裸露土壤、季节性水源收缩和稀疏耐旱灌木表现，地平线开阔，远处空气因干燥与热量略有分层，动物或人物行动围绕剩余水源和路径；仍保留草原生态而非沙漠，避免满地绿色新草、无依据沙丘、每株草同高、天空灰尘过重或把旱季直接等同于灾难性荒芜",
+      "enPrompt": "dry-season grassland using low golden-to-gray-brown grasses exposed soil reduced seasonal water and sparse drought-tolerant shrubs beneath an open horizon, with distant air lightly stratified by dryness and heat and people or animals moving around remaining water and paths; retain grassland ecology rather than desert, avoiding lush new green growth unjustified dunes identical grass height excessive dust sky or equating a normal dry season with total ecological collapse"
+    },
+    {
+      "id": "scene-greenhouse",
+      "category": "scene",
+      "styleGroup": "interior",
+      "zhName": "温室花房",
+      "enName": "Greenhouse",
+      "image": "/assets/parameters/scene-greenhouse.png?v=20260827-character-crop-fix",
+      "zhPrompt": "温室花房由透明玻璃或聚碳板屋面、承重框架、种植床、灌溉与通风系统构成，植物按高度、湿度和光照需求分区，凝结水珠、叶片透光和地面湿度回应真实微气候，通道保持可行走；阳光经结构形成有规律投影，避免热带植物随机塞满、玻璃无反射厚度、雾气遮死空间、藤蔓穿墙或把温室画成普通室内花店",
+      "enPrompt": "greenhouse built from transparent glass or polycarbonate roof structural framing beds irrigation and ventilation, with plants zoned by height humidity and light needs while condensation leaf transmission and damp flooring respond to a real microclimate and paths remain usable; sunlight casts patterned shadows through the structure, avoiding random tropical overcrowding thicknessless reflection-free glazing opaque fog vines through walls or an ordinary indoor flower shop",
+      "negative": []
+    },
+    {
+      "id": "scene-library-archive",
+      "category": "scene",
+      "styleGroup": "interior",
+      "zhName": "图书档案馆",
+      "enName": "Library Archive",
+      "image": "/assets/parameters/scene-library-archive.png?v=20260827-character-crop-fix",
+      "zhPrompt": "图书档案馆以恒温恒湿的封闭书库、移动密集架、档案盒、目录工作台和受控阅读区构成，照明低紫外且均匀，纸张、标签位和储存容器呈现秩序但不生成可读隐私文字，工作人员操作符合取档与保护流程；区别于开放公共图书馆，避免华丽大厅取代储藏功能、阳光直晒档案、书架无限迷宫、盒子尺寸混乱或无防护饮食",
+      "enPrompt": "library archive organized around climate-controlled closed stacks compact shelving archival boxes catalog workstations and a supervised reading area, with even low-UV light and orderly paper label zones and storage containers without readable private text while staff follow retrieval and conservation procedures; distinguish it from an open public library, avoiding a grand hall replacing storage direct sun on records infinite maze shelves chaotic box sizes or food and drink near unprotected material",
+      "negative": []
+    },
+    {
+      "id": "scene-red-rock-canyon",
+      "category": "scene",
+      "styleGroup": "nature",
+      "zhName": "红岩峡谷",
+      "enName": "Red-Rock Canyon",
+      "image": "/assets/parameters/scene-red-rock-canyon.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "红岩峡谷由层状砂岩或沉积岩、侵蚀形成的陡壁、冲沟与狭窄通道构成，岩层走向和裂隙在两侧保持地质连续，日光在壁面形成暖红高光与深色反射阴影，人物、植被或水迹提供尺度与气候线索；避免岩壁像塑料布景、每层等距条纹、通道无出口、随机巨石悬浮或将所有红岩峡谷复制成同一著名景点",
+      "enPrompt": "red-rock canyon formed by layered sandstone or sedimentary walls erosional gullies and narrow passages, with strata and fractures remaining geologically continuous across sides while sun creates warm red highlights and deep reflected shadow and people vegetation or water marks provide scale and climate clues; avoid plastic stage walls equally spaced stripe textures a passage with no outlet floating boulders or copying every canyon from one famous landmark"
+    },
+    {
+      "id": "scene-hospital-corridor",
+      "category": "scene",
+      "styleGroup": "interior",
+      "zhName": "医院走廊",
+      "enName": "Hospital Corridor",
+      "image": "/assets/parameters/scene-hospital-corridor.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "现代医院走廊具有清楚分区、易清洁墙地面、连续扶手、病房或诊室入口、导向节点和不阻塞的运输宽度，顶灯与窗光均匀控制眩光，医护、病床或访客只按实际流程出现，画面不暴露患者隐私；保持临床秩序但非恐怖空院，避免设备堵塞逃生通道、乱码标牌、血污猎奇、所有表面过曝纯白或门窗比例不符合建筑规范",
+      "enPrompt": "modern hospital corridor with clear zoning cleanable wall and floor surfaces continuous handrails room entrances navigation nodes and unobstructed transport width, using ceiling and window light to control glare while staff beds or visitors appear only according to workflow and patient privacy remains protected; keep clinical order without horror emptiness, avoiding equipment blocking egress gibberish signs sensational blood clipped-white surfaces or doors and windows at implausible scale",
+      "negative": [
+        "blood",
+        "injury",
+        "gore"
+      ]
+    },
+    {
+      "id": "scene-school-campus",
+      "category": "scene",
+      "styleGroup": "city",
+      "zhName": "校园庭院",
+      "enName": "School Campus",
+      "image": "/assets/parameters/scene-school-campus.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "校园庭院围绕教学楼、树荫、步道、操场或公共座椅形成真实日常动线，不同年龄学生的尺度、服装和活动符合具体学校类型，午后光线穿过树冠在地面形成自然斑驳，建筑入口和安全边界清楚；强调学习与社交生活而非广告摆拍，避免校徽校名乱码、所有学生同姿势、成人化造型、空旷豪宅校园或设施年代混乱",
+      "enPrompt": "school campus courtyard organized by classroom buildings shade trees paths play or sports areas and shared seating into believable daily circulation, with student age scale clothing and activity matching the school type and afternoon light filtering through foliage while entrances and safety boundaries remain clear; emphasize learning and social life rather than advertising poses, avoiding gibberish school marks cloned students adultized styling a luxury-estate campus or facilities from conflicting eras"
+    },
+    {
+      "id": "scene-restaurant-open-kitchen",
+      "category": "scene",
+      "styleGroup": "interior",
+      "zhName": "餐厅开放厨房",
+      "enName": "Open Kitchen",
+      "image": "/assets/parameters/scene-restaurant-open-kitchen.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "餐厅开放厨房通过顾客区与烹饪区之间的玻璃、吧台或传菜口建立可见但卫生分隔，炉灶、备餐台、排烟、冷藏与洗涤按工作流程布置，厨师动作、蒸汽和暖色实用灯均有明确来源，地面保持防滑与通道畅通；避免顾客进入火线、油烟无排风、食材与清洁区混放、蒸汽遮满画面、品牌文字或把家庭厨房直接放大",
+      "enPrompt": "restaurant open kitchen using glazing counter or pass to create visible yet hygienic separation from diners, arranging ranges prep exhaust refrigeration and washing along a real workflow while chef action steam and warm practical light have clear sources and non-slip circulation stays open; avoid diners inside the hot line fumes without ventilation mixed food and cleaning zones steam obscuring everything brand text or a household kitchen simply enlarged"
+    },
+    {
+      "id": "scene-rooftop-terrace",
+      "category": "scene",
+      "styleGroup": "city",
+      "zhName": "屋顶露台",
+      "enName": "Rooftop Terrace",
+      "image": "/assets/parameters/scene-rooftop-terrace.jpg",
+      "zhPrompt": "屋顶露台以可承重铺装、安全护栏、户外座椅、遮阳或照明和少量盆栽组成面向城市天际线的休憩空间，屋面排水、门口和机电设施位置合理，高处风影响织物与人物但不把家具吹起；区别于以种植为主的屋顶花园，避免无护栏边缘、室内家具直接搬出、巨树无根基、露台跨越屋檐或天际线比例错误",
+      "enPrompt": "rooftop terrace formed by load-bearing paving safety rails outdoor seating shade or lighting and limited planters as a resting space facing the skyline, with plausible drainage access door and mechanical equipment and elevated wind affecting fabric and people without lifting furniture; distinguish it from a planting-led roof garden, avoiding unguarded edges indoor furniture simply moved outside unsupported giant trees a terrace extending beyond the roof or wrong skyline scale",
+      "negative": [
+        "crowded distracting scene",
+        "unrecognizable environment"
+      ]
+    },
+    {
+      "id": "scene-modern-classroom",
+      "category": "scene",
+      "styleGroup": "interior",
+      "zhName": "现代教室",
+      "enName": "Modern Classroom",
+      "image": "/assets/parameters/scene-modern-classroom.jpg",
+      "zhPrompt": "现代教室按教学方式布置可移动课桌椅、教师或展示区、白板或抽象屏幕、储物与自然采光，通道、视线和声学表面支持小组或面向前方学习，学生物品有日常使用痕迹但不杂乱；屏幕和板面不生成乱码文字，避免桌椅比例错误、所有人同姿势、投影无设备来源、豪华办公室化或不同年龄教学设施混用",
+      "enPrompt": "modern classroom arranged for its teaching method with movable desks and chairs instructor or presentation zone whiteboard or abstract screen storage and daylight, preserving circulation sightlines and acoustic surfaces for group or front-facing learning and everyday student traces without clutter; generate no gibberish on boards or screens, avoiding mis-scaled furniture cloned poses source-free projection a luxury-office look or facilities for conflicting age groups",
+      "negative": [
+        "crowded distracting scene",
+        "unrecognizable environment"
+      ]
+    },
+    {
+      "id": "scene-coral-reef-underwater",
+      "category": "scene",
+      "styleGroup": "nature",
+      "zhName": "珊瑚海底",
+      "enName": "Coral Reef Underwater",
+      "image": "/assets/parameters/scene-coral-reef-underwater.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "珊瑚礁海底包含附着在岩基上的不同珊瑚形态、沙地与缝隙生态、按水深变化的蓝绿色光谱和从水面下射的柔和光束，鱼群尺度、方向与礁体通道相适应，悬浮颗粒随距离降低清晰度；表现活体生态而非装饰水族箱，避免珊瑚悬浮、所有鱼同向复制、阳光像舞台聚光、过饱和荧光或深海生物与浅礁无依据混居",
+      "enPrompt": "underwater coral reef containing varied coral forms attached to rock substrate plus sand and crevice habitats, blue-green spectral shift by depth and soft downwelling shafts from the surface while fish scale and direction fit reef channels and suspended particles reduce distance clarity; depict a living ecosystem rather than decorative aquarium, avoiding floating coral cloned fish source-free spotlights oversaturated fluorescence or unjustified mixing of deep-sea species with shallow reef life"
+    },
+    {
+      "id": "scene-cloud-sea-summit",
+      "category": "scene",
+      "styleGroup": "nature",
+      "zhName": "云海山巅",
+      "enName": "Cloud Sea Summit",
+      "image": "/assets/parameters/scene-cloud-sea-summit.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "云海山巅让低层云或雾填满山谷，较高峰脊、岩石与植被从云层上方穿出，近峰细节清楚、远峰受空气透视和云雾遮挡递减，日出或侧光沿云面与山脊形成方向一致的亮边，人物提供宏大尺度；云海受地形约束并有层次，避免棉花平铺、山峰悬浮、所有远峰同清晰、光源多向或把普通高空云层画在人物脚边无支撑",
+      "enPrompt": "mountain summit above a sea of clouds with low cloud or fog filling valleys while higher ridges rock and vegetation emerge above it, near peaks detailed and distant ones fading through atmosphere and occlusion as sunrise or side light creates consistent edges across cloud tops and ridges and a figure supplies scale; terrain controls layered cloud, avoiding flat cotton sheets floating mountains equal clarity at all distance multidirectional light or unsupported high clouds placed at a person's feet"
+    },
+    {
+      "id": "scene-subway-platform-night",
+      "category": "scene",
+      "styleGroup": "city",
+      "zhName": "夜间地铁站台",
+      "enName": "Night Subway Platform",
+      "image": "/assets/parameters/scene-subway-platform-night.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "夜间地铁站台由轨道、站台安全边缘、结构柱、候车区和连续人工照明建立纵深，末班车或进站列车可产生方向明确的反光与有限速度拖影，湿润鞋印或雨具说明外部天气但室内不应积水成镜；乘客分布符合候车动线，避免站在轨道上、乱码站名、列车穿柱、整站霓虹化、无来源浓雾或把地下站台画成露天街道",
+      "enPrompt": "night subway platform using tracks safety edge structural columns waiting zones and continuous artificial light to establish depth, with a late or arriving train producing directional reflection and limited speed blur and damp footprints or umbrellas referencing weather without mirror-deep indoor flooding; passenger distribution follows waiting flow, avoiding people on tracks gibberish station names trains through columns neon everywhere source-free heavy fog or an underground platform rendered as an open street"
+    }
+  ]
+}

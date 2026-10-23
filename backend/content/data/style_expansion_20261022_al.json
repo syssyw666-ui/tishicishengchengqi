@@ -1,0 +1,250 @@
+{
+  "parameters": [
+    {
+      "id": "camera-group-diagonal-line",
+      "category": "camera",
+      "styleGroup": "group-relationship",
+      "zhName": "对角线队列",
+      "enName": "Diagonal Line Group",
+      "image": "/assets/parameters/camera-group-diagonal-line.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "多人对角线队列沿一个清楚的前后轴线递进，最近者、核心人物和远端成员在大小、遮挡与间距上共同建立透视，所有人的行进方向或站姿关系一致但动作不机械复制，队列两侧保留可读环境；对角线应服务叙事与纵深，避免人物等大贴图、间距完全相同、身体互穿、队列越过不可通行区域或仅把画面整体倾斜",
+      "enPrompt": "group diagonal-line composition advancing along one clear near-to-far axis, with nearest figure principal subject and distant members using scale occlusion and spacing to establish perspective while travel or stance remains coherent without cloned poses and readable environment stays on both sides; let the diagonal serve narrative and depth, avoiding equal-size cutout people mechanical intervals body intersections a line crossing impassable space or merely tilting the whole frame"
+    },
+    {
+      "id": "camera-back-silhouette",
+      "category": "camera",
+      "styleGroup": "composition",
+      "zhName": "背影镜头",
+      "enName": "Back Silhouette",
+      "image": "/assets/parameters/camera-back-silhouette.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "背影镜头把人物背部、肩线、头部和面向目标的方向作为主要叙事信息，机位与人物视线共同指向远景、门口或事件，轮廓由环境亮度分离但衣物、头发和姿态仍保留适量细节；可表达观察、离开或探索而非固定孤独，避免全黑纸片、头颈粘连、脚部无落点、远景与朝向无关或误生成正脸回头",
+      "enPrompt": "back-view shot using the subject's back shoulder line head and facing direction as narrative information, with camera axis and implied gaze leading toward a landscape doorway or event and silhouette separated by environmental value while retaining measured garment hair and posture detail; allow observation departure or exploration rather than automatic loneliness, avoiding a pure black cutout fused head and neck unsupported feet an unrelated background or an unintended frontal face"
+    },
+    {
+      "id": "camera-reflection-shot",
+      "category": "camera",
+      "styleGroup": "composition",
+      "zhName": "倒影镜头",
+      "enName": "Reflection Shot",
+      "image": "/assets/parameters/camera-reflection-shot.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "倒影镜头先明确水面、镜子、金属或玻璃的反射平面，再按入射与观察角度生成方向正确的倒影，反射受表面粗糙度、波纹、污迹和透光率影响，主体与倒影之间保持可追溯几何关系；可用倒影补充信息或制造双层叙事，避免复制粘贴式第二主体、左右方向错误、水面倒影比实物更清晰、玻璃无透射或反射穿越边框",
+      "enPrompt": "reflection shot first defining water mirror metal or glass as the reflecting plane, then constructing directionally correct reflection from incident and viewing angles with roughness ripples marks and transmission affecting clarity while subject and image retain traceable geometry; use reflection to reveal extra information or layered narrative, avoiding a copied second subject reversed orientation water reflection sharper than reality glass without transmission or reflection continuing through a frame"
+    },
+    {
+      "id": "camera-deep-focus",
+      "category": "camera",
+      "styleGroup": "depth",
+      "zhName": "全景深",
+      "enName": "Deep Focus",
+      "image": "/assets/parameters/camera-deep-focus.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "全景深镜头让前景、中景和远景的重要信息同时达到可用清晰度，通过较小光圈、合适焦距、充足光线与超焦距位置建立真实光学结果，空间层次主要依靠尺度、遮挡、空气透视和明暗区分而非虚化；焦点仍有叙事优先级，避免所有像素同样锐利、边缘过度锐化、远景无空气衰减或把平面拼贴误作深焦摄影",
+      "enPrompt": "deep-focus shot keeping essential foreground midground and distance detail simultaneously usable through a smaller aperture suitable focal length adequate light and hyperfocal placement, with depth separated by scale occlusion atmosphere and value rather than blur; narrative priority still guides attention, avoiding every pixel equally sharpened halos from oversharpening distant objects without atmospheric loss or flat collage mistaken for optical deep focus"
+    },
+    {
+      "id": "camera-panning-shot",
+      "category": "camera",
+      "styleGroup": "motion",
+      "zhName": "摇摄追随",
+      "enName": "Panning Shot",
+      "image": "/assets/parameters/camera-panning-shot.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "摇摄追随在较慢快门下让镜头沿移动主体方向同步转动，主体关键轮廓和面部或载具标志面相对清楚，背景沿运动轴形成连续水平或弧形拖影，脚轮和肢体可保留适量动作模糊；地面接触与速度方向一致，避免主体与背景都糊、径向爆炸模糊、拖影方向相反、重复肢体或静止人物被强行套速度效果",
+      "enPrompt": "panning shot using a slower shutter while the camera rotates with a moving subject, keeping the key silhouette and face or vehicle identity relatively clear as the background streaks continuously along a horizontal or curved motion axis and wheels feet or limbs retain measured motion blur; ground contact and speed direction agree, avoiding both subject and background blurred radial zoom streaks opposite motion direction duplicated limbs or a stationary subject given an artificial speed effect"
+    },
+    {
+      "id": "camera-group-facing-each-other",
+      "category": "camera",
+      "styleGroup": "group-relationship",
+      "zhName": "双人对视",
+      "enName": "Facing Each Other",
+      "image": "/assets/parameters/camera-group-facing-each-other.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "双人对视构图让两人的眼线在同一空间高度或合理高差上相交，身体朝向、脚位和距离支持交流、冲突、谈判或亲密关系，中间负空间可容纳共同对象或情绪张力，近远关系保持视线轴一致；避免两人都看向镜头、眼线错开、身体距离与臂长冲突、面部比例不一、完全镜像僵站或中间被无关物体阻断",
+      "enPrompt": "two-person face-to-face composition aligning eyelines at one spatial height or a plausible height difference, with torso orientation foot placement and distance supporting conversation conflict negotiation or intimacy and central negative space holding a shared object or tension while near-far staging respects the eyeline axis; avoid both people looking at camera missed gaze unreachable spacing mismatched facial scale rigid mirror poses or irrelevant obstruction between them"
+    },
+    {
+      "id": "camera-group-triangle",
+      "category": "camera",
+      "styleGroup": "group-relationship",
+      "zhName": "三角人物站位",
+      "enName": "Triangular Group",
+      "image": "/assets/parameters/camera-group-triangle.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "三角人物站位让三名角色分别占据三角形顶点，通过前后高低、身体朝向和视线形成清楚主次，可由前方一人配后方两人或反向结构建立稳定关系，遮挡只发生在非关键轮廓；三角形不必几何等边但重心需稳定，避免三人同高同动作排排站、头部重叠、关系轴互相矛盾或为了凑形状扭曲空间",
+      "enPrompt": "three-person triangular blocking placing each figure near one vertex and using depth height torso direction and gaze to establish hierarchy, whether one forward with two behind or the inverse while occlusion avoids key silhouettes; the triangle need not be equilateral but visual weight stays stable, avoiding three identical people in a row overlapping heads contradictory relationship axes or distorted space used merely to force a geometric shape"
+    },
+    {
+      "id": "camera-silhouette-doorway",
+      "category": "camera",
+      "styleGroup": "visual-guide",
+      "zhName": "门框剪影构图",
+      "enName": "Doorway Silhouette Framing",
+      "image": "/assets/parameters/camera-silhouette-doorway.jpg",
+      "zhPrompt": "门框剪影构图利用真实门洞、拱口或通道形成内层取景框，主体位于开口内或跨越门槛，前景框体曝光更暗但保留厚度和透视，门后环境光解释轮廓并引导进入或离开的动线；框与主体尺度符合建筑，避免画成装饰相框、门框穿脸、主体悬浮、内外透视冲突、暗部纯黑堵死或重复多层门框抢焦点",
+      "enPrompt": "doorway silhouette composition using a real door arch or passage as an inner frame, placing the subject within the opening or crossing the threshold while the foreground structure exposes darker yet retains thickness and perspective and light beyond explains the contour and path of entry or exit; keep frame scale architectural, avoiding a decorative picture frame edges through the face a floating subject conflicting inside-outside perspective crushed blacks or repeated nested doorways stealing focus",
+      "negative": [
+        "unclear framing",
+        "distorted perspective",
+        "accidental crop"
+      ]
+    },
+    {
+      "id": "camera-dolly-zoom",
+      "category": "camera",
+      "styleGroup": "motion",
+      "zhName": "滑动变焦感",
+      "enName": "Dolly Zoom",
+      "image": "/assets/parameters/camera-dolly-zoom.png?v=20260827-character-crop-fix",
+      "zhPrompt": "滑动变焦镜头通过相机前后移动并反向调整焦距，使主体在画面中的尺寸近似稳定而背景视角、物体间距和透视压缩明显变化，效果集中在纵深结构而不是主体变形；在单帧中以异常拉伸或压缩的背景关系暗示运动，避免径向模糊、普通数码缩放、主体大小变化、广角脸部畸变或背景物体凭空移动",
+      "enPrompt": "dolly-zoom shot moving the camera forward or backward while changing focal length in the opposite direction so subject size remains nearly stable as background angle spacing and perspective compression shift visibly, concentrating the effect in depth rather than deforming the subject; imply motion in a still through unusual background expansion or compression, avoiding radial blur ordinary digital zoom changing subject scale wide-angle facial distortion or background objects physically relocating",
+      "negative": []
+    },
+    {
+      "id": "camera-side-profile",
+      "category": "camera",
+      "styleGroup": "composition",
+      "zhName": "侧面轮廓",
+      "enName": "Side Profile",
+      "image": "/assets/parameters/camera-side-profile.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "侧面轮廓镜头让主体头部或身体轴线接近九十度侧向，鼻唇颏、额头后脑和肩髋轮廓保持清楚，近远侧肢体按透视适当重叠，视线与动作方向在前方保留空间；光线可用轮廓或侧光塑形但不抹去面部体积，避免误成四分之三视角、双眼同时完整可见、鼻部变形、耳朵错位或人物面对画框边缘无空间",
+      "enPrompt": "side-profile shot turning head or body axis close to ninety degrees so forehead nose lips chin back of head and shoulder-hip silhouette remain readable while near and far limbs overlap by perspective and room remains ahead of gaze or motion; rim or side light may shape the outline without erasing facial volume, avoiding accidental three-quarter view both eyes fully visible distorted nose displaced ear or a subject facing directly into the frame edge"
+    },
+    {
+      "id": "camera-s-curve",
+      "category": "camera",
+      "styleGroup": "visual-guide",
+      "zhName": "S 曲线构图",
+      "enName": "S-Curve Composition",
+      "image": "/assets/parameters/camera-s-curve.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "S 曲线构图让道路、河流、栏杆、队列或光带从前景入口以两次方向变化引向主体和远景，曲线宽度、透视收缩与地形连续，主体可位于转折点而不堵塞流线，周围元素简化以保持引导作用；避免生硬绘制字母 S、曲线无起止、道路突然变窄或爬墙、多个竞争曲线以及只靠后期光带覆盖真实空间",
+      "enPrompt": "S-curve composition using a road river railing procession or light path that enters from the foreground and changes direction twice toward subject and distance, with width perspective taper and terrain continuity intact and the subject optionally placed at a bend without blocking flow while surrounding detail stays subordinate; avoid literally drawing the letter S a curve without entry or destination roads narrowing abruptly or climbing walls competing curves or a postproduction light streak laid over unrelated space"
+    },
+    {
+      "id": "camera-ultra-wide-angle",
+      "category": "camera",
+      "styleGroup": "focal-length",
+      "zhName": "超广角镜头",
+      "enName": "Ultra-Wide Angle",
+      "image": "/assets/parameters/camera-ultra-wide-angle.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "超广角镜头使用约 12–20mm 全画幅等效焦段和近距离机位，显著放大前景、拉开近远尺度并容纳广阔空间，中央主体比例相对稳定而边缘透视逐渐增强，垂直线是否汇聚取决于机位俯仰；利用畸变服务空间叙事，避免数字横向拉伸、边缘人物肢体异常、弯曲地平线无依据、近景遮满画面或与长焦压缩同时出现",
+      "enPrompt": "ultra-wide-angle lens around 12–20mm full-frame equivalent from a close camera position, strongly enlarging foreground separating near and far scale and encompassing broad space while central proportions stay relatively stable and edge perspective increases gradually and vertical convergence follows camera tilt; use distortion for spatial narrative, avoiding digital horizontal stretching malformed edge limbs an unjustified curved horizon foreground covering everything or simultaneous telephoto compression"
+    },
+    {
+      "id": "scene-desert-oasis",
+      "category": "scene",
+      "styleGroup": "nature",
+      "zhName": "沙漠绿洲",
+      "enName": "Desert Oasis",
+      "image": "/assets/parameters/scene-desert-oasis.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "沙漠绿洲位于低洼含水层或泉眼周围，有限水面、湿润岸缘、棕榈或耐旱植被由水源向外逐渐稀疏，外围沙丘仍服从主风向，水面反射、蒸发雾气和足迹提供真实尺度；绿洲应稀有且生态集中，避免在沙海中铺满热带雨林、无来源瀑布、沙丘像海浪、植被根部无湿土或把场景画成豪华度假村",
+      "enPrompt": "desert oasis located around a low aquifer spring or seep, with limited water damp shore palms or drought-tolerant plants thinning outward from the source while surrounding dunes follow prevailing wind and reflections evaporation haze and tracks provide scale; keep the oasis scarce and ecologically concentrated, avoiding rainforest filling the desert source-free waterfalls ocean-like dunes plants rooted in dry sand or an automatic luxury resort"
+    },
+    {
+      "id": "scene-moonlit-beach",
+      "category": "scene",
+      "styleGroup": "nature",
+      "zhName": "月光海滩",
+      "enName": "Moonlit Beach",
+      "image": "/assets/parameters/scene-moonlit-beach.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "月光海滩由低亮度天空、月光在海面形成的方向性银色反光带、潮湿沙面和潮池的局部倒影共同建立，浪线按海岸透视递减，远处地平线清楚但不过亮，人物与岩石获得柔和侧逆光；夜色保留蓝灰层次，避免白昼海滩套蓝滤镜、整片海面发光、月亮与反光方向不一致、星空过密或阴影全黑",
+      "enPrompt": "moonlit beach built from a low-luminance sky a directional silver path of moonlight across water localized reflections on wet sand and tide pools and wave lines tapering by coastal perspective, with a readable but restrained horizon and soft side-backlight on people or rocks; retain blue-gray night detail, avoiding a daylight beach under a blue filter a uniformly glowing sea moon and reflection misalignment overcrowded stars or crushed black shadows"
+    },
+    {
+      "id": "scene-rooftop-garden",
+      "category": "scene",
+      "styleGroup": "city",
+      "zhName": "城市屋顶花园",
+      "enName": "Rooftop Garden",
+      "image": "/assets/parameters/scene-rooftop-garden.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "城市屋顶花园设置在可承重、防水并有安全护栏的屋面上，种植槽、耐风植物、步道、座椅和排水组织成可使用空间，远处楼群与屋顶机电设施保持合理关系，风向与高处日照影响植物形态；强调城市生态而非地面公园，避免巨树无根基、花园跨越屋檐、护栏缺失、植被遮满天际线或与普通露台完全同质",
+      "enPrompt": "urban rooftop garden placed on a load-bearing waterproof roof with safety parapets, organizing planters wind-tolerant vegetation paths seating and drainage into usable space while distant buildings and rooftop mechanical equipment remain plausible and exposure and wind affect plant form; emphasize elevated urban ecology rather than a ground park, avoiding unsupported giant trees gardens spilling over edges missing rails vegetation hiding the skyline or no distinction from an ordinary terrace"
+    },
+    {
+      "id": "scene-summer-heat-haze",
+      "category": "scene",
+      "styleGroup": "weather",
+      "zhName": "盛夏热浪",
+      "enName": "Summer Heat Haze",
+      "image": "/assets/parameters/scene-summer-heat-haze.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "盛夏热浪场景以高太阳角、短而硬的阴影、被晒白的高光、远处地表上升热空气造成的轻微折射扭曲和稀薄空气层表现，高温还会影响人物姿态、植物叶片与路面状态；近景主体保持清楚，热扰动主要位于远处地平线，避免全画面液化、火焰特效、橙色滤镜、潮湿蒸汽与干热混淆或无强光却出现热浪",
+      "enPrompt": "summer heat-haze scene using a high sun angle short hard shadows sun-bleached highlights subtle refractive shimmer rising above distant ground and thin dry air, with heat also affecting posture foliage and road surfaces; keep near subjects clear and confine strongest turbulence near the distant horizon, avoiding the whole image melting flame effects an orange filter confusion between humid steam and dry heat or mirage without strong heating"
+    },
+    {
+      "id": "scene-winter-blizzard",
+      "category": "scene",
+      "styleGroup": "weather",
+      "zhName": "冬季暴雪",
+      "enName": "Winter Blizzard",
+      "image": "/assets/parameters/scene-winter-blizzard.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "冬季暴雪由强风驱动的密集斜向雪粒、近地吹雪、被削弱的远景和迅速积雪的迎风背风差异构成，树木、建筑和人物姿态共同响应单一风向，脚印与道路会被逐渐覆盖，冷光中仍保留可导航的轮廓；强调危险天气但不猎奇，避免纸屑般大雪片、每层同密度、人物衣着单薄、地面无积雪或风雪方向互相矛盾",
+      "enPrompt": "winter blizzard built from dense wind-driven diagonal snow ground drift reduced distant visibility and different accumulation on windward and leeward surfaces, with trees architecture and posture responding to one wind direction while tracks and roads gradually disappear and navigable silhouettes remain in cold light; convey hazardous weather without spectacle, avoiding paper-like giant flakes equal density at every depth inadequate clothing bare ground or contradictory snow directions"
+    },
+    {
+      "id": "scene-foggy-morning-valley",
+      "category": "scene",
+      "styleGroup": "weather",
+      "zhName": "晨雾山谷",
+      "enName": "Foggy Morning",
+      "image": "/assets/parameters/scene-foggy-morning-valley.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "晨雾山谷让低温雾气沿谷底、河道和低洼地层叠聚集，较高山脊与树梢逐层穿出雾面，初晨侧逆光产生柔和亮边和有限光束，近景对比高于远景并可见露水；雾厚度受地形控制而非均匀白幕，避免山体悬浮、所有层同清晰、无来源丁达尔光、天空过曝或把云海和地面雾混成一层",
+      "enPrompt": "foggy morning valley with cool mist pooling in the valley floor river course and depressions while higher ridges and treetops emerge in layers, early side-backlight creating soft edges and limited shafts and foreground contrast exceeding distance with optional dew; let terrain control fog thickness rather than a uniform white screen, avoiding floating mountains equal clarity at all depths source-free light rays clipped sky or cloud sea and ground fog merged into one flat layer"
+    },
+    {
+      "id": "scene-rainbow-after-rain",
+      "category": "scene",
+      "styleGroup": "weather",
+      "zhName": "雨后彩虹",
+      "enName": "Rainbow After Rain",
+      "image": "/assets/parameters/scene-rainbow-after-rain.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "雨后彩虹场景同时保留远处仍有雨幕或湿润空气、观察者背后的低角度阳光、与太阳相反方向出现的主虹以及地面水迹和清晰度逐渐恢复的天空，彩虹色序与弧线自然且半透明；可有极淡副虹但不过分，避免彩虹任意方向、饱和实体彩带、晴空无水汽、多个同亮彩虹、彩虹落到前景物体前方或地面完全干燥",
+      "enPrompt": "post-rain rainbow scene retaining distant rain or moist air low-angle sunlight behind the viewer a primary bow opposite the sun wet-ground evidence and a sky clearing in stages, with natural color order curvature and translucent intensity; allow a very faint secondary bow when appropriate, avoiding arbitrary orientation a solid saturated ribbon a dry clear sky multiple equally bright bows a rainbow appearing in front of nearby objects or completely dry ground"
+    },
+    {
+      "id": "scene-sandstorm-desert",
+      "category": "scene",
+      "styleGroup": "weather",
+      "zhName": "沙尘暴",
+      "enName": "Sandstorm",
+      "image": "/assets/parameters/scene-sandstorm-desert.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "沙尘暴以强风卷起近地沙流并形成逐层加厚的黄褐色沙幕，远景轮廓、太阳和地平线被颗粒逐渐削弱，沙粒沿地形和障碍物绕流，人物、车辆与植被朝同一风向防护或倾斜；近处仍保留少量尺度信息，避免纯色棕雾、烟雾般向上飘、每层同清晰、无风姿态、巨大石块飞舞或把普通薄尘误作灾害级沙暴",
+      "enPrompt": "desert sandstorm using strong wind to drive low ground streams of sand into progressively thick ochre-brown curtains, reducing distant silhouettes sun and horizon while particles flow around terrain and obstacles and people vehicles and vegetation protect or lean against one direction; retain limited near-scale cues, avoiding a flat brown fog smoke rising vertically equal visibility at all depths windless posture flying boulders or ordinary light dust mislabeled as a severe storm"
+    },
+    {
+      "id": "scene-snowy-pine-forest",
+      "category": "scene",
+      "styleGroup": "weather",
+      "zhName": "雪松森林",
+      "enName": "Snowy Pine Forest",
+      "image": "/assets/parameters/scene-snowy-pine-forest.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "雪松森林由针叶树高低密度、枝条承雪量、林间通道和被积雪覆盖的地面起伏建立纵深，近树可见树皮与雪团，远树因冷空气和微雾逐渐简化，散射天光在雪面形成蓝灰阴影与柔亮高光；脚印或人物提供尺度，避免每棵树复制、雪均匀涂白、枝条无承重下垂、地面平板或把常绿针叶误画成阔叶树",
+      "enPrompt": "snowy conifer forest using varied tree height density branch snow load paths and covered ground relief to build depth, with near trunks showing bark and clumps while distant trees simplify through cold air and slight mist and diffuse sky light creates blue-gray snow shadows and soft highlights; tracks or figures may provide scale, avoiding cloned trees uniform white coating branches ignoring load flat ground or evergreen needles rendered as broad leaves"
+    },
+    {
+      "id": "scene-crystal-cave-sanctuary",
+      "category": "scene",
+      "styleGroup": "fantasy",
+      "zhName": "水晶洞圣所",
+      "enName": "Crystal Cave Sanctuary",
+      "image": "/assets/parameters/scene-crystal-cave-sanctuary.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "水晶洞圣所建立在可信岩洞结构中，晶体从矿脉和裂隙成簇生长，透明度、颜色和发光强度按矿物与厚度变化，光线在湿岩、浅水与切面间产生克制反射，步道、祭台或休憩点说明圣所用途与尺度；神秘感来自空间与材质，避免水晶随机铺满、无能源全洞自发光、彩虹过饱和、晶体穿人或把洞穴变成玻璃宫殿",
+      "enPrompt": "crystal-cave sanctuary grounded in believable geology, with crystal clusters growing from veins and fractures and transparency color and luminosity varying by mineral and thickness while restrained light reflects among damp rock shallow water and facets and a path altar or refuge explains sacred use and scale; derive mystery from space and material, avoiding crystals carpeting everything source-free glow throughout saturated rainbow color crystals intersecting people or a cave turned into a glass palace"
+    },
+    {
+      "id": "scene-autumn-maple-road",
+      "category": "scene",
+      "styleGroup": "weather",
+      "zhName": "秋叶飞舞",
+      "enName": "Autumn Leaves",
+      "image": "/assets/parameters/scene-autumn-maple-road.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "秋叶道路以进入秋季不同阶段的树冠、枝头残叶、地面落叶层和清楚可行走的道路共同构成，红橙黄叶色保留品种和光照差异，少量叶片按风向移动，远景通过暖冷变化与空气透视展开；避免每片叶同色同形、道路被叶子完全埋没、满屏悬浮叶片、红色滤镜覆盖天空和肤色或把秋景误作森林火灾",
+      "enPrompt": "autumn maple road built from canopies at varied seasonal stages remaining leaves on branches a fallen-leaf layer and a clearly traversable road, with red orange and yellow retaining species and lighting variation and a limited number of leaves moving with one wind while distance opens through warm-cool shift and atmosphere; avoid identical leaves a road completely buried leaves floating everywhere a red filter over sky and skin or autumn mistaken for wildfire"
+    },
+    {
+      "id": "scene-first-snow-town",
+      "category": "scene",
+      "styleGroup": "weather",
+      "zhName": "小镇初雪",
+      "enName": "First Snow Town",
+      "image": "/assets/parameters/scene-first-snow-town.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "小镇初雪表现刚开始覆盖的薄雪、仍露出的屋瓦与道路、屋檐融水和零散脚印，街灯或窗内暖光与阴天冷环境形成克制对比，雪花数量适中并在不同景深中变化，居民与车辆保持日常尺度；强调季节初转而非深冬，避免半米积雪、暴风雪能见度、所有屋顶纯白无结构、圣诞装饰自动出现或街面完全干燥",
+      "enPrompt": "small-town first snow showing a thin new covering with roof tiles and roads still partly visible eave melt and scattered tracks, restrained warm street or window light against cool overcast surroundings and moderate flakes varying across depth while residents and vehicles keep everyday scale; emphasize seasonal transition rather than deep winter, avoiding half-meter drifts blizzard visibility blank white roofs automatic Christmas decoration or a completely dry street"
+    }
+  ]
+}

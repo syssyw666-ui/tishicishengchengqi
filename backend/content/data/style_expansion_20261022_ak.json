@@ -1,0 +1,376 @@
+{
+  "parameters": [
+    {
+      "id": "clothing-tang-suit",
+      "category": "clothing",
+      "styleGroup": "traditional",
+      "zhName": "唐装",
+      "enName": "Tang Suit",
+      "image": "/assets/parameters/clothing-tang-suit.png",
+      "zhPrompt": "中式盘扣唐装采用立领、对襟或偏襟、布袢盘扣和有适度松量的直身剪裁，面料、滚边与纹样服从同一现代中式设计语境，袖口、侧缝和下摆结构完整，坐立时衣襟仍连续；明确这是近现代中式服装而非唐代服饰，避免朝代混穿、盘扣随机增殖、纹样贴图、衣襟左右错接或复制真实品牌与团体制服",
+      "enPrompt": "modern Chinese Tang-style jacket using a stand collar symmetrical or offset front cloth frog closures and a straight cut with usable ease, with fabric piping and motifs belonging to one coherent contemporary Chinese design context and complete cuffs side seams and hem that remain continuous when sitting or standing; distinguish it from Tang-dynasty dress, avoiding mixed historical periods multiplied closures pasted patterns crossed front panels or copied brands and organization uniforms",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-bow",
+      "category": "clothing",
+      "styleGroup": "accessories-shoes",
+      "zhName": "蝴蝶结配饰",
+      "enName": "Bow Accessory",
+      "image": "/assets/parameters/clothing-bow.png",
+      "zhPrompt": "蝴蝶结配饰先明确位于领口、发间、腰部或鞋面，再由中心结、左右环片和两端垂带构成完整受力关系，材质厚度决定挺括或垂软程度，固定点与服装、头发或鞋面真实连接；尺寸服从佩戴位置，避免悬浮蝴蝶结、左右复制却无中心结、带尾穿身体、无限叠加、误生成弓箭或把儿童化作为唯一气质",
+      "enPrompt": "bow accessory with placement specified at collar hair waist or shoe, built from a central knot two looped wings and optional tails under a coherent tension relationship, material thickness controlling crispness or drape and the attachment point connecting physically to garment hair or footwear; scale it to its location, avoiding floating bows mirrored loops without a knot tails through the body endless duplication confusion with an archery bow or treating childishness as its only character",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-hat",
+      "category": "clothing",
+      "styleGroup": "accessories-shoes",
+      "zhName": "帽子",
+      "enName": "Hat",
+      "image": "/assets/parameters/clothing-hat.png",
+      "zhPrompt": "帽子应先指定礼帽、棒球帽、遮阳帽或其他具体类型，并以帽冠、帽檐、帽带和内围尺寸贴合头骨，头发在帽缘下受到合理压缩，透视和阴影随头部方向一致，风中需要可见固定方式；避免万能无结构帽形、帽子悬浮、帽檐穿脸、头发穿冠、尺寸大于头部失控或不同帽型部件随机混合",
+      "enPrompt": "hat specified as a concrete type such as fedora baseball cap sun hat or another form, with crown brim band and inner circumference fitting the skull while hair compresses plausibly beneath the edge and perspective and shadow follow head orientation with visible fastening when wind requires it; avoid a generic structureless hat floating placement a brim through the face hair piercing the crown uncontrolled oversizing or randomly mixed parts from unrelated hat types",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-lace-detail",
+      "category": "clothing",
+      "styleGroup": "fit-material",
+      "zhName": "蕾丝细节",
+      "enName": "Lace Detail",
+      "image": "/assets/parameters/clothing-lace-detail.png",
+      "zhPrompt": "蕾丝细节由底网、重复花叶或几何单元、连接桥和收边共同构成，可作为领口、袖口、嵌片或局部覆层，孔隙密度、线粗和透明度符合织造或刺绣工艺，并随衣片褶皱连续变形；内衬与皮肤边界清楚，避免随机洞孔、每处纹样同尺寸贴图、蕾丝穿过身体、整件服装无结构透明或把纸剪花误作织物",
+      "enPrompt": "lace detail constructed from ground mesh repeating floral or geometric units connecting bars and finished edges, used at collar cuffs inserts or a localized overlay with opening density thread weight and transparency plausible for woven or embroidered construction and pattern deforming continuously over garment folds; keep lining and skin boundaries clear, avoiding random holes same-scale texture everywhere lace through the body a fully structureless transparent garment or paper-cut motifs mistaken for textile",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-satin-fabric",
+      "category": "clothing",
+      "styleGroup": "fit-material",
+      "zhName": "缎面质感",
+      "enName": "Satin Fabric",
+      "image": "/assets/parameters/clothing-satin-fabric.png",
+      "zhPrompt": "缎面服装材质以长浮线织法产生沿曲面流动的宽柔高光，底色在折叠处加深但不变成金属反射，面料具有适中重量和滑顺垂坠，缝线、卷边与受力褶皱仍可读；根据真丝或合成缎选择光泽强度，避免液态塑料、镜面白斑、所有区域同亮、布料无厚度、褶皱方向与身体动作矛盾或误作乳胶",
+      "enPrompt": "satin garment material using long-float weave to create broad soft highlights flowing across curvature, with base color deepening in folds without becoming metallic and fabric carrying moderate weight smooth drape readable seams rolled edges and tension folds; tune sheen for silk or synthetic satin, avoiding liquid plastic mirror-white spots uniform brightness thicknessless cloth folds contradicting body movement or confusion with latex",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-chef-uniform",
+      "category": "clothing",
+      "styleGroup": "formal-uniform",
+      "zhName": "厨师服",
+      "enName": "Chef Uniform",
+      "image": "/assets/parameters/clothing-chef-uniform.png",
+      "zhPrompt": "厨师制服由耐洗透气的双排扣或单排厨师上衣、便于活动的裤装、围裙和按岗位需要选择的帽子组成，翻领、袖口、扣位和口袋远离火源与食材污染区，面料在肘腰处有工作褶皱但保持整洁；根据厨房类型与职位调整，不强制高帽，避免夸张白袍、围裙穿身、袖口靠近明火、品牌标志、血污猎奇或把服务员制服混入",
+      "enPrompt": "chef uniform built from a washable breathable single- or double-breasted jacket movement-friendly trousers apron and role-appropriate headwear, with collar cuffs closures and pockets positioned for food and heat safety while working folds appear at elbows and waist without losing cleanliness; adapt to kitchen and rank without forcing a tall toque, avoiding theatrical white robes an apron through the body sleeves near flame brand marks sensational stains or confusion with waiter attire",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-belt",
+      "category": "clothing",
+      "styleGroup": "accessories-shoes",
+      "zhName": "腰带",
+      "enName": "Belt",
+      "image": "/assets/parameters/clothing-belt.png",
+      "zhPrompt": "腰带围绕真实腰线或髋位形成连续环路，通过针扣、插扣、系结或束封等一种明确结构固定，带身穿过正确腰袢并在扣件处承受张力，尾端长度和垂向服从材质与动作；腰带可收束或装饰但不改变人体，避免穿过躯干、腰袢错位、无孔扣合、无限尾带、扣头悬浮或把腰带误生成独立漂浮圆环",
+      "enPrompt": "belt forming a continuous loop around a real waist or hip line and fastening through one explicit mechanism such as prong buckle side-release buckle tie or sash closure, passing through correct loops and carrying tension at the fastener while tail length and direction follow material and movement; allow shaping or decoration without altering anatomy, avoiding torso intersections displaced loops impossible fastening endless tails floating buckles or a detached hovering ring",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-gloves",
+      "category": "clothing",
+      "styleGroup": "accessories-shoes",
+      "zhName": "手套",
+      "enName": "Gloves",
+      "image": "/assets/parameters/clothing-gloves.png",
+      "zhPrompt": "手套依据用途选择贴合礼服手套、保暖手套、工作手套或防护手套，掌片、手背、拇指叉、指缝和腕口结构包覆真实手部体积，弯曲时在指关节与掌心形成受力褶皱，抓握物体仍显示各指位置；左右成对但保留姿态差异，避免多余手指、指套融合、手套穿物、腕口悬浮或防护等级与场景不符",
+      "enPrompt": "gloves selected by use as fitted formal warm work or protective equipment, with palm back thumb gusset finger webs and cuff enclosing real hand volume and tension folds forming at knuckles and palm during flexion while object grip still reveals finger placement; pair left and right while preserving pose differences, avoiding extra fingers fused stalls objects passing through the glove floating cuffs or protection level mismatched to the scene",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-beret",
+      "category": "clothing",
+      "styleGroup": "accessories-shoes",
+      "zhName": "贝雷帽",
+      "enName": "Beret",
+      "image": "/assets/parameters/clothing-beret.png",
+      "zhPrompt": "贝雷帽由柔软圆形帽身、贴合头围的窄帽边和略偏一侧的自然塌落构成，羊毛或毡料保留细微纤维与厚度，帽体随头部倾斜但不会脱离发际，头发在帽边下合理压缩；可调整佩戴角度而不依赖刻板职业形象，避免硬盘状帽冠、悬浮、左右镜像折痕、帽边穿耳或自动添加无关徽章",
+      "enPrompt": "beret formed by a soft circular crown a narrow fitted headband and a natural slouch toward one side, with wool or felt retaining fine fiber and thickness while the cap follows head tilt without leaving the hairline and hair compresses plausibly beneath the band; vary wearing angle without relying on occupational stereotypes, avoiding a rigid disk crown floating placement mirrored folds a band through ears or automatically added unrelated badges",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-sneakers",
+      "category": "clothing",
+      "styleGroup": "accessories-shoes",
+      "zhName": "运动鞋",
+      "enName": "Sneakers",
+      "image": "/assets/parameters/clothing-sneakers.png",
+      "zhPrompt": "运动鞋由鞋面、鞋舌、鞋带系统、后跟支撑、中底与外底组成，左右鞋与脚型对应，鞋带穿过真实孔位并有合理系结，脚掌落地或弯曲时鞋面折线、鞋底压缩和接触阴影符合动作；先确定跑鞋、板鞋或训练鞋用途，避免鞋底融入地面、鞋带乱码、左右同脚、鞋头穿脚或复制品牌标识",
+      "enPrompt": "sneakers built from upper tongue lacing system heel support midsole and outsole, with left and right shoes matching foot anatomy and laces routed through real eyelets into a plausible knot while forefoot flex sole compression and contact shadow respond to stance or motion; specify running skate or training function first, avoiding soles melted into ground gibberish laces two same-side shoes toes intersecting feet or copied brand marks",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-hanfu",
+      "category": "clothing",
+      "styleGroup": "traditional",
+      "zhName": "汉服",
+      "enName": "Hanfu",
+      "image": "/assets/parameters/clothing-hanfu.png",
+      "zhPrompt": "汉服应先指定大致历史时期与形制，再使用交领右衽、对襟、圆领、襦裙或袍服等相互兼容的衣片系统，系带、腰线、袖型和下摆层次符合穿着顺序，面料与纹样参考可靠资料并随动作受力；人物仍可自然生活而非只摆古装照，避免不同朝代混搭、左衽误用、腰带穿身、袖长失控、现代拉链暴露或影视仙侠模板取代历史服饰",
+      "enPrompt": "hanfu specified by an approximate historical period and garment system, using mutually compatible crossed right-over-left fronts parallel fronts round collars ruqun layers or robes with ties waist placement sleeve form and hems following real dressing order and researched fabric and motifs responding to movement; allow ordinary lived activity rather than only costume posing, avoiding mixed dynasties accidental left-over-right closure belts through the body uncontrolled sleeves exposed modern zippers or fantasy-drama templates replacing historical dress",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-qipao",
+      "category": "clothing",
+      "styleGroup": "traditional",
+      "zhName": "旗袍",
+      "enName": "Qipao",
+      "image": "/assets/parameters/clothing-qipao.png",
+      "zhPrompt": "旗袍采用立领、斜襟或连肩式上身、盘扣、合体但可活动的省道与一处或两处合理开衩，肩胸腰髋之间由连续衣片和接缝塑造，坐立行走时下摆与开衩产生真实张力；根据年代选择宽松民国形制或现代剪裁，避免全身涂层般紧贴、开衩过高、盘扣漂移、左右襟错接、身体穿布或把所有中式纹样堆满衣身",
+      "enPrompt": "qipao constructed with a stand collar diagonal or continuous-shoulder front frog closures fitted yet mobile darts and one or two plausible slits, using continuous panels and seams to shape shoulder bust waist and hip while hem and slit carry real tension during sitting standing and walking; choose a looser Republican-era or modern cut, avoiding painted-on tightness excessive slit height drifting closures crossed fronts body-cloth intersections or every Chinese motif crowded onto the garment",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "pose-holding-object",
+      "category": "pose",
+      "styleGroup": "emotion",
+      "zhName": "手持物品",
+      "enName": "Holding Object",
+      "image": "/assets/parameters/pose-holding-object.jpg",
+      "zhPrompt": "手持物品姿势先依据物体重量、尺寸、温度和易碎性决定单手、双手、托底或夹持方式，手掌与手指在真实接触点弯曲，腕肘肩形成连续受力链，人物视线和躯干可回应物品用途；物体重心应落在支撑范围内，避免手指穿透、掌心无接触、单手托举超重物、左右手混接、物品悬浮或用模糊隐藏坏手",
+      "enPrompt": "object-holding pose choosing one hand two hands bottom support or pinch according to the object's weight size temperature and fragility, with palm and fingers bending at real contact points and wrist elbow and shoulder forming a continuous load chain while gaze and torso may respond to use; keep the object's center of mass over its support, avoiding fingers through surfaces contactless palms one-handed impossible loads crossed hands floating objects or blur hiding malformed hands",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-yoga-stretch",
+      "category": "pose",
+      "styleGroup": "action",
+      "zhName": "瑜伽伸展",
+      "enName": "Yoga Stretch",
+      "image": "/assets/parameters/pose-yoga-stretch.jpg",
+      "zhPrompt": "瑜伽伸展姿势应指定具体体式或伸展目标，让支撑点、重心、脊柱延展、髋肩方向和呼吸空间符合人体活动范围，手掌、脚底或坐骨与垫面真实接触，左右侧受力可不对称但保持稳定；服装随关节拉伸且不遮盖关键姿态，避免极限反折、膝肘方向错误、悬浮肢体、无支撑平衡或把普通体操随意命名为瑜伽",
+      "enPrompt": "yoga stretch specifying a pose or mobility goal so support points center of mass spinal extension hip and shoulder orientation and breathing space remain within human range, with palms soles or sitting bones contacting the mat and asymmetric loading still stable; clothing stretches with joints without hiding the form, avoiding extreme backfolding reversed knees or elbows floating limbs unsupported balance or casually labeling generic gymnastics as yoga",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-waving",
+      "category": "pose",
+      "styleGroup": "emotion",
+      "zhName": "挥手",
+      "enName": "Waving",
+      "image": "/assets/parameters/pose-waving.jpg",
+      "zhPrompt": "挥手动作让一侧手臂从肩部自然抬起，肘部保持轻微弯曲，手掌朝向被问候者，五指分开或小幅摆动，腕部与前臂方向连续，人物视线和表情回应同一对象；另一手与身体保持自然平衡，避免手掌反向、拇指位置错误、额外手指、手腕断折、整臂贴脸或把挥手误生成敬礼",
+      "enPrompt": "waving gesture raising one arm naturally from the shoulder with a lightly bent elbow palm facing the greeted person fingers separated or moving through a small arc and wrist aligned with forearm while gaze and expression address the same target; the other hand and body remain balanced, avoiding a reversed palm misplaced thumb extra fingers broken wrist an arm pasted to the face or confusion with a salute",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-contemporary-dance",
+      "category": "pose",
+      "styleGroup": "dance",
+      "zhName": "现代舞姿",
+      "enName": "Contemporary Dance",
+      "image": "/assets/parameters/pose-contemporary-dance.jpg",
+      "zhPrompt": "现代舞姿以收缩、释放、落地、悬停或失衡恢复中的一个明确动作阶段组织身体，脊柱、骨盆、肩带和四肢形成连续动力链，支撑脚或接触面承担真实重量，自由肢体与衣物具有延迟；情绪来自动作质量而非随机扭曲，避免无重力悬浮、关节反折、四肢互穿、每个方向同时发力或用夸张拖影掩盖人体结构",
+      "enPrompt": "contemporary dance pose organized around one clear phase of contraction release floor work suspension or recovery from imbalance, with spine pelvis shoulder girdle and limbs forming a continuous kinetic chain and the supporting foot or surface bearing real weight while free limbs and clothing lag naturally; derive emotion from movement quality rather than random distortion, avoiding weightless levitation reversed joints intersecting limbs force in every direction or exaggerated blur hiding anatomy",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-archery-stance",
+      "category": "pose",
+      "styleGroup": "action",
+      "zhName": "拉弓姿势",
+      "enName": "Archery Stance",
+      "image": "/assets/parameters/pose-archery-stance.jpg",
+      "zhPrompt": "拉弓姿势让持弓手臂向目标延伸但肘部不过度锁死，拉弦手沿箭尾向后到达稳定锚点，肩胛下沉并共同承担张力，弓弦、箭杆、箭台和视线位于一致射击平面，前后脚形成可靠站姿；根据弓型调整细节，避免弦穿脸或手臂、箭不搭弦、弓向错误、双肩耸起、手指数量异常或在无防护情况下夸张满弓",
+      "enPrompt": "archery stance extending the bow arm toward target without hyperlocking the elbow while the string hand draws the nock to a stable anchor and lowered shoulder blades share tension, with string arrow shaft rest and gaze aligned on one shooting plane and staggered feet creating a reliable base; adapt details to bow type, avoiding string through face or arm an unnocked arrow reversed bow raised shoulders malformed fingers or exaggerated full draw without appropriate protection",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-handshake",
+      "category": "pose",
+      "styleGroup": "interaction",
+      "zhName": "握手",
+      "enName": "Handshake",
+      "image": "/assets/parameters/pose-handshake.jpg",
+      "zhPrompt": "握手互动让两人的对应右手或指定手在身体之间相遇，拇指交叉位、掌面和四指真实贴合，腕部保持中立，肘肩根据身高和距离形成自然角度，双方站位允许正常臂长并通过视线与躯干朝向建立关系；避免两只同侧手、手掌融合、多余手指、手臂过长、身体距离无法触及或把握手画成互相抓腕",
+      "enPrompt": "handshake interaction bringing corresponding right hands or explicitly chosen hands together between two people with crossed thumb webs palms and four fingers making real contact, wrists neutral and elbows and shoulders adapting to height and distance while stance permits normal arm length and gaze and torso orientation establish relationship; avoid two same-side hands fused palms extra fingers elongated arms unreachable body spacing or a wrist grab mistaken for a handshake",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-pointing",
+      "category": "pose",
+      "styleGroup": "emotion",
+      "zhName": "指向",
+      "enName": "Pointing",
+      "image": "/assets/parameters/pose-pointing.jpg",
+      "zhPrompt": "指向动作由肩、肘、腕和食指形成清楚但不僵直的引导线，指尖准确落向画面内可辨目标或画外方向，人物视线、头部转向和躯干轻微旋转与指向一致，其余手指自然收拢；避免指向空处却无叙事目的、食指数量异常、手腕折断、手臂穿过身体、视线反向或把指向误成持枪姿势",
+      "enPrompt": "pointing gesture forming a clear but relaxed guide line through shoulder elbow wrist and index finger, with fingertip aimed at a recognizable in-frame target or purposeful off-screen direction and gaze head turn and slight torso rotation aligned while remaining fingers curl naturally; avoid aimless pointing extra index fingers broken wrist an arm through the torso gaze in the opposite direction or confusion with a firearm pose",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-thinking",
+      "category": "pose",
+      "styleGroup": "emotion",
+      "zhName": "托腮思考",
+      "enName": "Thinking Pose",
+      "image": "/assets/parameters/pose-thinking.jpg",
+      "zhPrompt": "托腮思考姿势让手掌侧缘、指节或一两根手指轻触下巴或面颊，前臂由桌面、另一只手或身体结构合理支撑，头部重量只造成轻微皮肤压痕，视线可偏离焦点并与安静呼吸、眉眼微表情配合；避免整只手穿脸、手指覆盖五官、无支撑肘部悬空、头颈折断、夸张皱眉或把思考固定为单一刻板动作",
+      "enPrompt": "thinking pose using the side of the palm knuckles or one or two fingers to touch chin or cheek lightly while the forearm is plausibly supported by a table opposite hand or body structure and head weight causes only slight skin compression, with defocused gaze quiet breathing and subtle brow-eye expression; avoid a hand through the face fingers covering all features an unsupported floating elbow broken neck theatrical frowning or treating one stock gesture as the only sign of thought",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-covering-face",
+      "category": "pose",
+      "styleGroup": "emotion",
+      "zhName": "遮脸",
+      "enName": "Covering Face",
+      "image": "/assets/parameters/pose-covering-face.jpg",
+      "zhPrompt": "遮脸姿势先明确用手掌、前臂、衣袖或道具遮挡的范围和原因，只覆盖部分五官并保留可读轮廓，手指与面部曲率真实接触，腕肘肩提供自然路径，剩余眼神和身体姿态承担情绪；遮挡可表达害羞、防护或神秘但不自动恐怖化，避免手掌融脸、多余手指、双臂交叉穿透、全部信息消失或道具悬浮",
+      "enPrompt": "face-covering pose specifying whether palm forearm sleeve or prop conceals a limited area and why, preserving a readable silhouette while fingers contact facial curvature and wrist elbow and shoulder provide a natural path and the remaining gaze and body carry emotion; allow shyness protection or mystery without automatic horror, avoiding a palm fused into the face extra fingers crossed intersecting arms all information erased or a floating prop",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-fashion-runway",
+      "category": "pose",
+      "styleGroup": "camera-ready",
+      "zhName": "走秀台步",
+      "enName": "Runway Walk",
+      "image": "/assets/parameters/pose-fashion-runway.jpg",
+      "zhPrompt": "走秀台步捕捉一步落地与下一步摆动的明确瞬间，支撑脚沿台步轴线承重，另一腿从髋部自然前送并产生视觉交叉但不扭曲膝踝，骨盆、肩线和手臂以克制摆动平衡，目光沿前进方向；服装与饰物延迟响应步伐，避免双腿融合、脚踩同一点、极端扭胯、手臂僵直、鞋跟离脚或用拉长人体代替修长姿态",
+      "enPrompt": "fashion runway walk captured at a clear instant between one grounded step and the next swing, with the support foot carrying weight along the runway axis and the free leg advancing from the hip into visual crossover without twisting knees or ankles while pelvis shoulders and restrained arm swing balance and gaze follows travel; garments and accessories lag behind the step, avoiding fused legs both feet on one point extreme hip distortion rigid arms heels detached from shoes or elongated anatomy used to fake elegance",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-fighting-stance",
+      "category": "pose",
+      "styleGroup": "action",
+      "zhName": "战斗架势",
+      "enName": "Fighting Stance",
+      "image": "/assets/parameters/pose-fighting-stance.jpg",
+      "zhPrompt": "战斗架势应先指定拳击、格斗、武术或虚构体系，再让双脚错开建立重心、膝髋保留移动余量、核心稳定、双手按防守与攻击距离布置，头部受到肩与前臂保护，视线锁定对手或威胁；服装和装备允许动作，避免随机英雄姿势、双脚平行僵站、拳头贴脸、关节反折、武器与空手体系混乱或无目标怒吼",
+      "enPrompt": "fighting stance specified as boxing combat sport martial art or a fictional system, then built from staggered feet a mobile knee-hip base stable core hands placed for guard and range and head protected by shoulders and forearms with gaze fixed on opponent or threat; clothing and gear permit movement, avoiding a random heroic pose parallel rigid feet fists glued to the face reversed joints mixed weapon and empty-hand systems or shouting without a target",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-sword-ready",
+      "category": "pose",
+      "styleGroup": "action",
+      "zhName": "持剑准备",
+      "enName": "Sword Ready",
+      "image": "/assets/parameters/pose-sword-ready.jpg",
+      "zhPrompt": "持剑准备姿势先确定单手或双手剑及其重量，主手和辅手在剑柄上形成正确握距，腕肘肩对齐并让剑尖指向安全而明确的威胁线，双脚、髋部和躯干共同承担武器惯性，剑鞘与服装不干扰动作；避免握住剑刃、手指穿柄、巨剑无重量、剑尖穿身体、双手位置互换、无支撑漂浮或混用不相容时代装备",
+      "enPrompt": "sword-ready pose first specifying one- or two-handed weapon and weight, with lead and support hands spaced correctly on the grip wrists elbows and shoulders aligned and blade aimed along a clear safe threat line while feet hips and torso absorb weapon inertia and scabbard and clothing stay out of the motion; avoid gripping the blade fingers through the hilt weightless oversized swords blade through the body swapped hands unsupported floating or incompatible historical equipment mixed together",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    }
+  ]
+}

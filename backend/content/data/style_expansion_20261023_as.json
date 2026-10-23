@@ -1,0 +1,304 @@
+{
+  "parameters": [
+    {
+      "id": "palette-indian-spice",
+      "category": "palette",
+      "styleGroup": "global",
+      "zhName": "印度香料配色",
+      "enName": "Indian Spice",
+      "image": "/assets/parameters/palette-indian-spice.png?v=20260827-palette-expansion",
+      "zhPrompt": "姜黄、辣椒红、靛蓝、豆蔻绿与砂岩色组成浓郁手作感配色，适合民俗、餐饮和织物视觉；先指定具体地域、年代和应用载体，让两种主色承担约六成基底，次要颜色服从织造、印刷、建筑或器物结构，最鲜艳颜色只作有限节奏。保留手工误差和材料边界，不要把多个地区符号拼成泛异域风、五色同亮、文化刻板化、伪文字或脱离载体的装饰色块",
+      "enPrompt": "turmeric yellow, chili red, indigo, cardamom green, and sandstone in a rich handcrafted palette for folk, food, and textile visuals; specify the region period and physical support before use, assign two principal colors to roughly sixty percent of the ground, make secondary hues follow weaving printing architecture or object construction and reserve the most vivid color for limited rhythm. Preserve handmade variation and material boundaries, avoiding a generic exotic collage of multiple regions every swatch equally bright cultural stereotyping pseudo-script or decorative color blocks detached from their support"
+    },
+    {
+      "id": "palette-food-appetite",
+      "category": "palette",
+      "styleGroup": "commercial",
+      "zhName": "食欲暖调配色",
+      "enName": "Appetite Warm",
+      "image": "/assets/parameters/palette-food-appetite.png?v=20260827-palette-expansion",
+      "zhPrompt": "番茄红、藏红花黄、香草绿、奶油色与烘烤棕组成自然诱人的餐饮配色，强调食材真实感；以前两种颜色承担约六成背景与主体结构，中间色建立约三成产品或信息层级，最亮或最深色只作一成以内的按钮、标签和焦点。颜色必须服从材质、文字对比与真实肤色，不要五色平均铺满、全局滤镜、荧光污染、文字低对比或用颜色掩盖产品结构",
+      "enPrompt": "tomato red, saffron, herb green, cream, and roasted brown in a naturally appetizing food palette emphasizing ingredient realism; assign the first two colors to roughly sixty percent of background and principal structure, use the middle tones for about thirty percent of product and information hierarchy, and reserve the brightest or darkest hue for less than ten percent of controls labels and focal accents. Make color obey material response typographic contrast and believable skin, avoiding equal coverage of every swatch global filtering fluorescent contamination unreadable text or color used to conceal product form"
+    },
+    {
+      "id": "palette-eco-kraft",
+      "category": "palette",
+      "styleGroup": "commercial",
+      "zhName": "环保牛皮纸配色",
+      "enName": "Eco Kraft",
+      "image": "/assets/parameters/palette-eco-kraft.png?v=20260827-palette-expansion",
+      "zhPrompt": "牛皮纸棕、再生纸米、叶绿、炭灰与低饱和橙组成可信赖的环保包装配色，保留材料本色；以前两种颜色承担约六成背景与主体结构，中间色建立约三成产品或信息层级，最亮或最深色只作一成以内的按钮、标签和焦点。颜色必须服从材质、文字对比与真实肤色，不要五色平均铺满、全局滤镜、荧光污染、文字低对比或用颜色掩盖产品结构",
+      "enPrompt": "kraft brown, recycled cream, leaf green, charcoal, and muted orange in a trustworthy sustainable-packaging palette preserving natural material color; assign the first two colors to roughly sixty percent of background and principal structure, use the middle tones for about thirty percent of product and information hierarchy, and reserve the brightest or darkest hue for less than ten percent of controls labels and focal accents. Make color obey material response typographic contrast and believable skin, avoiding equal coverage of every swatch global filtering fluorescent contamination unreadable text or color used to conceal product form"
+    },
+    {
+      "id": "palette-lacquer-mother-pearl",
+      "category": "palette",
+      "styleGroup": "chinese",
+      "zhName": "黑漆螺钿配色",
+      "enName": "Lacquer and Mother-of-Pearl",
+      "image": "/assets/parameters/palette-lacquer-mother-pearl.png?v=20260827-palette-expansion",
+      "zhPrompt": "漆黑、贝壳青、虹彩紫、珠母米白与古金组成黑漆螺钿配色，在深底上呈现克制虹彩反光；先明确色彩应用于建筑、陶瓷、漆器、织物、纸张或绘画中的哪一种载体，再以两种基色覆盖约六至七成，其他颜色按纹样、釉层、光线和结构小面积展开。保留材料工艺与年代语境，不要五色平均、金色满版、伪文字、不同历史体系混用或仅凭全局偏色冒充东方审美",
+      "enPrompt": "lacquer black, shell teal, iridescent violet, pearl cream, and antique gold in a mother-of-pearl inlay palette with restrained color shifts on a dark ground; first specify whether the palette belongs to architecture ceramic lacquer textile paper or painting, then give two base colors roughly sixty to seventy percent of the field and distribute the others through motif glaze light and structure in smaller areas. Preserve material process and period context, avoiding equal use of five colors full-bleed gold pseudo-writing mixtures of unrelated historical systems or a global color cast used as a shortcut for Chinese aesthetics"
+    },
+    {
+      "id": "palette-rose-twilight-cinema",
+      "category": "palette",
+      "styleGroup": "cinema",
+      "zhName": "玫瑰暮光电影配色",
+      "enName": "Rose Twilight Cinema",
+      "image": "/assets/parameters/palette-rose-twilight-cinema.png?v=20260827-palette-expansion",
+      "zhPrompt": "灰玫瑰、柔紫褐、板岩蓝、桃肤光与午夜蓝组成情感电影暮色配色，浪漫但保留暗部深度；以最深两色承担约七成环境、阴影与空间层次，暖色或高亮色必须绑定可见主光、实用灯或叙事焦点，并随距离衰减和影响邻近材质。保留自然肤色与暗部细节，不要把色卡做成一键双色滤镜、无来源霓虹、黑位堵塞、反射方向矛盾或所有灯光同色同亮",
+      "enPrompt": "dusty rose, muted mauve, slate blue, peach skin light, and midnight blue in an emotional twilight cinema palette with romantic warmth and deep shadows; let the two deepest hues carry roughly seventy percent of environment shadow and spatial depth, while warm or bright colors must belong to a visible key light practical lamp or narrative focus and fall off with distance while affecting nearby material. Preserve believable skin and readable dark detail, avoiding a one-click two-color filter source-free neon crushed blacks contradictory reflection direction or every light rendered with the same hue and intensity"
+    },
+    {
+      "id": "palette-polar-dawn",
+      "category": "palette",
+      "styleGroup": "nature",
+      "zhName": "极地黎明配色",
+      "enName": "Polar Dawn",
+      "image": "/assets/parameters/palette-polar-dawn.png?v=20260827-palette-expansion",
+      "zhPrompt": "冰蓝、雪雾白、薰衣草灰、黎明粉与深极地蓝组成极地日出配色，清冷基底中带轻柔暖光；让地貌、水体、植被和天空按真实深度分配主色，前景保留材质差异，远景通过空气、水汽或水深自然降低对比，最鲜艳颜色只集中在受光或生态焦点。不要五色同饱和、全景统一染色、荧光植物、天空水面同明度、忽略季节与天气或把自然环境处理成装饰性渐变背景",
+      "enPrompt": "icy blue, snow mist, lavender gray, dawn blush, and deep polar blue in a polar-sunrise palette with a cool base and delicate warmth; distribute the principal hues across terrain water vegetation and sky according to real depth, preserving material differences in the foreground and reducing distant contrast through atmosphere moisture or water depth, with the most saturated color restricted to light or an ecological focal point. Avoid equal saturation across all swatches blanket tinting fluorescent plants sky and water at one value ignored season or weather and a natural environment reduced to a decorative gradient backdrop"
+    },
+    {
+      "id": "palette-lavender-dusk",
+      "category": "palette",
+      "styleGroup": "nature",
+      "zhName": "薰衣草暮色配色",
+      "enName": "Lavender Dusk",
+      "image": "/assets/parameters/palette-lavender-dusk.png?v=20260827-palette-expansion",
+      "zhPrompt": "深薰衣草紫、雾紫、暮光粉、灰鼠尾草绿与暖米白组成柔和暮色配色，浪漫但不过度甜腻；让地貌、水体、植被和天空按真实深度分配主色，前景保留材质差异，远景通过空气、水汽或水深自然降低对比，最鲜艳颜色只集中在受光或生态焦点。不要五色同饱和、全景统一染色、荧光植物、天空水面同明度、忽略季节与天气或把自然环境处理成装饰性渐变背景",
+      "enPrompt": "deep lavender, mist violet, dusk blush, gray sage, and warm ivory in a soft twilight palette that feels romantic without becoming sugary; distribute the principal hues across terrain water vegetation and sky according to real depth, preserving material differences in the foreground and reducing distant contrast through atmosphere moisture or water depth, with the most saturated color restricted to light or an ecological focal point. Avoid equal saturation across all swatches blanket tinting fluorescent plants sky and water at one value ignored season or weather and a natural environment reduced to a decorative gradient backdrop"
+    },
+    {
+      "id": "palette-day-for-night",
+      "category": "palette",
+      "styleGroup": "cinema",
+      "zhName": "日拍夜蓝调配色",
+      "enName": "Day for Night Blue",
+      "image": "/assets/parameters/palette-day-for-night.png?v=20260827-palette-expansion",
+      "zhPrompt": "深钴蓝、月光灰、低饱和青、窗灯琥珀与黑色组成日拍夜电影配色，保持夜色层次而不死黑；以最深两色承担约七成环境、阴影与空间层次，暖色或高亮色必须绑定可见主光、实用灯或叙事焦点，并随距离衰减和影响邻近材质。保留自然肤色与暗部细节，不要把色卡做成一键双色滤镜、无来源霓虹、黑位堵塞、反射方向矛盾或所有灯光同色同亮",
+      "enPrompt": "deep cobalt, moon gray, desaturated cyan, warm window amber, and black in a day-for-night cinematic palette with readable nocturnal depth; let the two deepest hues carry roughly seventy percent of environment shadow and spatial depth, while warm or bright colors must belong to a visible key light practical lamp or narrative focus and fall off with distance while affecting nearby material. Preserve believable skin and readable dark detail, avoiding a one-click two-color filter source-free neon crushed blacks contradictory reflection direction or every light rendered with the same hue and intensity"
+    },
+    {
+      "id": "palette-jiangnan-mist",
+      "category": "palette",
+      "styleGroup": "chinese",
+      "zhName": "江南烟雨配色",
+      "enName": "Jiangnan Mist",
+      "image": "/assets/parameters/palette-jiangnan-mist.png?v=20260827-palette-expansion",
+      "zhPrompt": "烟青、浅蓝灰、暖墙白、苔灰绿与墨灰组成江南雨巷配色，低饱和、湿润、安静且层次清楚；先明确色彩应用于建筑、陶瓷、漆器、织物、纸张或绘画中的哪一种载体，再以两种基色覆盖约六至七成，其他颜色按纹样、釉层、光线和结构小面积展开。保留材料工艺与年代语境，不要五色平均、金色满版、伪文字、不同历史体系混用或仅凭全局偏色冒充东方审美",
+      "enPrompt": "mist teal, pale blue-gray, warm plaster white, moss gray-green, and ink gray in a low-saturation humid Jiangnan rain palette; first specify whether the palette belongs to architecture ceramic lacquer textile paper or painting, then give two base colors roughly sixty to seventy percent of the field and distribute the others through motif glaze light and structure in smaller areas. Preserve material process and period context, avoiding equal use of five colors full-bleed gold pseudo-writing mixtures of unrelated historical systems or a global color cast used as a shortcut for Chinese aesthetics"
+    },
+    {
+      "id": "palette-persian-miniature",
+      "category": "palette",
+      "styleGroup": "global",
+      "zhName": "波斯细密画配色",
+      "enName": "Persian Miniature Palette",
+      "image": "/assets/parameters/palette-persian-miniature.png?v=20260827-palette-expansion",
+      "zhPrompt": "青金蓝、孔雀绿、石榴红、藏红花金与羊皮纸米组成波斯细密画配色，华丽但主次秩序明确；先指定具体地域、年代和应用载体，让两种主色承担约六成基底，次要颜色服从织造、印刷、建筑或器物结构，最鲜艳颜色只作有限节奏。保留手工误差和材料边界，不要把多个地区符号拼成泛异域风、五色同亮、文化刻板化、伪文字或脱离载体的装饰色块",
+      "enPrompt": "lapis blue, peacock teal, pomegranate red, saffron gold, and parchment cream in an ornate Persian-miniature palette with clear hierarchy; specify the region period and physical support before use, assign two principal colors to roughly sixty percent of the ground, make secondary hues follow weaving printing architecture or object construction and reserve the most vivid color for limited rhythm. Preserve handmade variation and material boundaries, avoiding a generic exotic collage of multiple regions every swatch equally bright cultural stereotyping pseudo-script or decorative color blocks detached from their support"
+    },
+    {
+      "id": "palette-mangrove-tide",
+      "category": "palette",
+      "styleGroup": "nature",
+      "zhName": "红树林潮汐配色",
+      "enName": "Mangrove Tide",
+      "image": "/assets/parameters/palette-mangrove-tide.png?v=20260827-palette-expansion",
+      "zhPrompt": "深潮汐绿、湿叶绿、根系褐、浅苔绿与雾灰绿组成湿润生态配色，适合自然保护与环境主题；让地貌、水体、植被和天空按真实深度分配主色，前景保留材质差异，远景通过空气、水汽或水深自然降低对比，最鲜艳颜色只集中在受光或生态焦点。不要五色同饱和、全景统一染色、荧光植物、天空水面同明度、忽略季节与天气或把自然环境处理成装饰性渐变背景",
+      "enPrompt": "deep tidal green, wet foliage, root brown, pale moss, and fog gray-green in a humid ecological palette for conservation and environmental themes; distribute the principal hues across terrain water vegetation and sky according to real depth, preserving material differences in the foreground and reducing distant contrast through atmosphere moisture or water depth, with the most saturated color restricted to light or an ecological focal point. Avoid equal saturation across all swatches blanket tinting fluorescent plants sky and water at one value ignored season or weather and a natural environment reduced to a decorative gradient backdrop"
+    },
+    {
+      "id": "palette-andean-textile",
+      "category": "palette",
+      "styleGroup": "global",
+      "zhName": "安第斯织物配色",
+      "enName": "Andean Textile",
+      "image": "/assets/parameters/palette-andean-textile.png?v=20260827-palette-expansion",
+      "zhPrompt": "深胭脂红、陶土橙、织物金黄、山湖青绿与靛蓝组成高原织物配色，几何色块热烈而有秩序；先指定具体地域、年代和应用载体，让两种主色承担约六成基底，次要颜色服从织造、印刷、建筑或器物结构，最鲜艳颜色只作有限节奏。保留手工误差和材料边界，不要把多个地区符号拼成泛异域风、五色同亮、文化刻板化、伪文字或脱离载体的装饰色块",
+      "enPrompt": "deep crimson, terracotta orange, woven gold, highland teal, and indigo in an ordered vibrant Andean textile palette; specify the region period and physical support before use, assign two principal colors to roughly sixty percent of the ground, make secondary hues follow weaving printing architecture or object construction and reserve the most vivid color for limited rhythm. Preserve handmade variation and material boundaries, avoiding a generic exotic collage of multiple regions every swatch equally bright cultural stereotyping pseudo-script or decorative color blocks detached from their support"
+    },
+    {
+      "id": "palette-west-african-indigo",
+      "category": "palette",
+      "styleGroup": "global",
+      "zhName": "西非靛染配色",
+      "enName": "West African Indigo",
+      "image": "/assets/parameters/palette-west-african-indigo.png?v=20260827-palette-expansion",
+      "zhPrompt": "深靛蓝、染布蓝、褪蓝灰、天然棉褐与米白组成手工防染配色，强调染色深浅和天然纤维感；先指定具体地域、年代和应用载体，让两种主色承担约六成基底，次要颜色服从织造、印刷、建筑或器物结构，最鲜艳颜色只作有限节奏。保留手工误差和材料边界，不要把多个地区符号拼成泛异域风、五色同亮、文化刻板化、伪文字或脱离载体的装饰色块",
+      "enPrompt": "deep indigo, dyed blue, faded blue-gray, natural cotton tan, and cream in a handcrafted resist-dye palette emphasizing tonal dye variation; specify the region period and physical support before use, assign two principal colors to roughly sixty percent of the ground, make secondary hues follow weaving printing architecture or object construction and reserve the most vivid color for limited rhythm. Preserve handmade variation and material boundaries, avoiding a generic exotic collage of multiple regions every swatch equally bright cultural stereotyping pseudo-script or decorative color blocks detached from their support"
+    },
+    {
+      "id": "palette-byzantine-mosaic",
+      "category": "palette",
+      "styleGroup": "global",
+      "zhName": "拜占庭马赛克配色",
+      "enName": "Byzantine Mosaic",
+      "image": "/assets/parameters/palette-byzantine-mosaic.png?v=20260827-palette-expansion",
+      "zhPrompt": "深蓝、孔雀青、石榴红、古金与石灰米白组成拜占庭马赛克配色，庄重华丽且色彩层级明确；先指定具体地域、年代和应用载体，让两种主色承担约六成基底，次要颜色服从织造、印刷、建筑或器物结构，最鲜艳颜色只作有限节奏。保留手工误差和材料边界，不要把多个地区符号拼成泛异域风、五色同亮、文化刻板化、伪文字或脱离载体的装饰色块",
+      "enPrompt": "deep blue, peacock teal, pomegranate red, antique gold, and limestone cream in a stately Byzantine mosaic palette with clear hierarchy; specify the region period and physical support before use, assign two principal colors to roughly sixty percent of the ground, make secondary hues follow weaving printing architecture or object construction and reserve the most vivid color for limited rhythm. Preserve handmade variation and material boundaries, avoiding a generic exotic collage of multiple regions every swatch equally bright cultural stereotyping pseudo-script or decorative color blocks detached from their support"
+    },
+    {
+      "id": "palette-pet-care",
+      "category": "palette",
+      "styleGroup": "commercial",
+      "zhName": "宠物友好配色",
+      "enName": "Pet Care Friendly",
+      "image": "/assets/parameters/palette-pet-care.png?v=20260827-palette-expansion",
+      "zhPrompt": "珊瑚橙、柔黄、清新青绿、安定蓝与暖奶油白组成亲切活跃的宠物用品配色，明亮但不幼稚；以前两种颜色承担约六成背景与主体结构，中间色建立约三成产品或信息层级，最亮或最深色只作一成以内的按钮、标签和焦点。颜色必须服从材质、文字对比与真实肤色，不要五色平均铺满、全局滤镜、荧光污染、文字低对比或用颜色掩盖产品结构",
+      "enPrompt": "coral orange, soft yellow, fresh teal, steady blue, and warm cream in a friendly active pet-care palette that stays polished; assign the first two colors to roughly sixty percent of background and principal structure, use the middle tones for about thirty percent of product and information hierarchy, and reserve the brightest or darkest hue for less than ten percent of controls labels and focal accents. Make color obey material response typographic contrast and believable skin, avoiding equal coverage of every swatch global filtering fluorescent contamination unreadable text or color used to conceal product form"
+    },
+    {
+      "id": "palette-coffee-roastery",
+      "category": "palette",
+      "styleGroup": "commercial",
+      "zhName": "精品咖啡配色",
+      "enName": "Specialty Coffee Roastery",
+      "image": "/assets/parameters/palette-coffee-roastery.png?v=20260827-palette-expansion",
+      "zhPrompt": "深烘焙褐、可可棕、焦糖铜、奶咖色与滤纸米组成精品咖啡配色，温暖浓郁且保留烘焙层次；以前两种颜色承担约六成背景与主体结构，中间色建立约三成产品或信息层级，最亮或最深色只作一成以内的按钮、标签和焦点。颜色必须服从材质、文字对比与真实肤色，不要五色平均铺满、全局滤镜、荧光污染、文字低对比或用颜色掩盖产品结构",
+      "enPrompt": "dark roast brown, cocoa, caramel copper, milk-coffee tan, and filter-paper cream in a warm layered specialty-coffee palette; assign the first two colors to roughly sixty percent of background and principal structure, use the middle tones for about thirty percent of product and information hierarchy, and reserve the brightest or darkest hue for less than ten percent of controls labels and focal accents. Make color obey material response typographic contrast and believable skin, avoiding equal coverage of every swatch global filtering fluorescent contamination unreadable text or color used to conceal product form"
+    },
+    {
+      "id": "palette-baby-care",
+      "category": "palette",
+      "styleGroup": "commercial",
+      "zhName": "母婴柔护配色",
+      "enName": "Gentle Baby Care",
+      "image": "/assets/parameters/palette-baby-care.png?v=20260827-palette-expansion",
+      "zhPrompt": "浅雾蓝、柔粉、奶油黄、嫩灰绿与暖白组成温和洁净的母婴配色，柔软亲切且避免过度甜腻；以前两种颜色承担约六成背景与主体结构，中间色建立约三成产品或信息层级，最亮或最深色只作一成以内的按钮、标签和焦点。颜色必须服从材质、文字对比与真实肤色，不要五色平均铺满、全局滤镜、荧光污染、文字低对比或用颜色掩盖产品结构",
+      "enPrompt": "pale mist blue, soft pink, butter cream, tender gray-green, and warm white in a gentle clean baby-care palette without excessive sweetness; assign the first two colors to roughly sixty percent of background and principal structure, use the middle tones for about thirty percent of product and information hierarchy, and reserve the brightest or darkest hue for less than ten percent of controls labels and focal accents. Make color obey material response typographic contrast and believable skin, avoiding equal coverage of every swatch global filtering fluorescent contamination unreadable text or color used to conceal product form"
+    },
+    {
+      "id": "palette-forbidden-city-winter",
+      "category": "palette",
+      "styleGroup": "chinese",
+      "zhName": "故宫冬雪配色",
+      "enName": "Forbidden City Winter",
+      "image": "/assets/parameters/palette-forbidden-city-winter.png?v=20260827-palette-expansion",
+      "zhPrompt": "宫墙红、雪白、琉璃金、石灰与松柏绿组成庄重清冷的宫廷冬日配色，红色作为稳定视觉核心；先明确色彩应用于建筑、陶瓷、漆器、织物、纸张或绘画中的哪一种载体，再以两种基色覆盖约六至七成，其他颜色按纹样、釉层、光线和结构小面积展开。保留材料工艺与年代语境，不要五色平均、金色满版、伪文字、不同历史体系混用或仅凭全局偏色冒充东方审美",
+      "enPrompt": "palace red, snow white, glazed-tile gold, stone gray, and pine green in a stately cool imperial-winter palette with red as the visual anchor; first specify whether the palette belongs to architecture ceramic lacquer textile paper or painting, then give two base colors roughly sixty to seventy percent of the field and distribute the others through motif glaze light and structure in smaller areas. Preserve material process and period context, avoiding equal use of five colors full-bleed gold pseudo-writing mixtures of unrelated historical systems or a global color cast used as a shortcut for Chinese aesthetics"
+    },
+    {
+      "id": "palette-finance-trust",
+      "category": "palette",
+      "styleGroup": "commercial",
+      "zhName": "金融信赖配色",
+      "enName": "Finance Trust",
+      "image": "/assets/parameters/palette-finance-trust.png?v=20260827-palette-expansion",
+      "zhPrompt": "深海军蓝、钢蓝、稳健绿、低饱和金与暖象牙白组成专业可信的金融商业配色，避免浮夸奢华；以前两种颜色承担约六成背景与主体结构，中间色建立约三成产品或信息层级，最亮或最深色只作一成以内的按钮、标签和焦点。颜色必须服从材质、文字对比与真实肤色，不要五色平均铺满、全局滤镜、荧光污染、文字低对比或用颜色掩盖产品结构",
+      "enPrompt": "deep navy, steel blue, stable green, muted gold, and warm ivory in a professional trustworthy finance palette without flashy luxury; assign the first two colors to roughly sixty percent of background and principal structure, use the middle tones for about thirty percent of product and information hierarchy, and reserve the brightest or darkest hue for less than ten percent of controls labels and focal accents. Make color obey material response typographic contrast and believable skin, avoiding equal coverage of every swatch global filtering fluorescent contamination unreadable text or color used to conceal product form"
+    },
+    {
+      "id": "palette-kids-learning",
+      "category": "palette",
+      "styleGroup": "commercial",
+      "zhName": "儿童教育配色",
+      "enName": "Kids Learning",
+      "image": "/assets/parameters/palette-kids-learning.png?v=20260827-palette-expansion",
+      "zhPrompt": "珊瑚红、阳光黄、清新青绿、明快蓝与暖奶油色组成友好活跃的儿童教育配色，明亮但不刺眼；以前两种颜色承担约六成背景与主体结构，中间色建立约三成产品或信息层级，最亮或最深色只作一成以内的按钮、标签和焦点。颜色必须服从材质、文字对比与真实肤色，不要五色平均铺满、全局滤镜、荧光污染、文字低对比或用颜色掩盖产品结构",
+      "enPrompt": "coral red, sunny yellow, fresh teal, cheerful blue, and warm cream in a friendly active children's learning palette that stays bright without harshness; assign the first two colors to roughly sixty percent of background and principal structure, use the middle tones for about thirty percent of product and information hierarchy, and reserve the brightest or darkest hue for less than ten percent of controls labels and focal accents. Make color obey material response typographic contrast and believable skin, avoiding equal coverage of every swatch global filtering fluorescent contamination unreadable text or color used to conceal product form"
+    },
+    {
+      "id": "palette-mineral-salt-lake",
+      "category": "palette",
+      "styleGroup": "nature",
+      "zhName": "矿物盐湖配色",
+      "enName": "Mineral Salt Lake",
+      "image": "/assets/parameters/palette-mineral-salt-lake.png?v=20260827-palette-expansion",
+      "zhPrompt": "矿物青绿、浅水蓝、盐沙米、玫瑰盐粉与深湖蓝组成盐湖地貌配色，表现透明水层与矿物沉积；让地貌、水体、植被和天空按真实深度分配主色，前景保留材质差异，远景通过空气、水汽或水深自然降低对比，最鲜艳颜色只集中在受光或生态焦点。不要五色同饱和、全景统一染色、荧光植物、天空水面同明度、忽略季节与天气或把自然环境处理成装饰性渐变背景",
+      "enPrompt": "mineral turquoise, pale aqua, salt sand, rose-salt pink, and deep lake blue in a salt-lake landscape palette showing translucent water and mineral deposits; distribute the principal hues across terrain water vegetation and sky according to real depth, preserving material differences in the foreground and reducing distant contrast through atmosphere moisture or water depth, with the most saturated color restricted to light or an ecological focal point. Avoid equal saturation across all swatches blanket tinting fluorescent plants sky and water at one value ignored season or weather and a natural environment reduced to a decorative gradient backdrop"
+    },
+    {
+      "id": "palette-song-porcelain",
+      "category": "palette",
+      "styleGroup": "chinese",
+      "zhName": "宋瓷月白配色",
+      "enName": "Song Porcelain Moon White",
+      "image": "/assets/parameters/palette-song-porcelain.png?v=20260827-palette-expansion",
+      "zhPrompt": "月白、淡青瓷绿、藕粉、暖灰与墨色组成温润含蓄的宋瓷配色，适合东方静物、建筑和雅致设计；先明确色彩应用于建筑、陶瓷、漆器、织物、纸张或绘画中的哪一种载体，再以两种基色覆盖约六至七成，其他颜色按纹样、釉层、光线和结构小面积展开。保留材料工艺与年代语境，不要五色平均、金色满版、伪文字、不同历史体系混用或仅凭全局偏色冒充东方审美",
+      "enPrompt": "moon white, pale celadon, lotus-root pink, warm gray, and ink in a subtle Song porcelain palette for East Asian still life, architecture, and refined design; first specify whether the palette belongs to architecture ceramic lacquer textile paper or painting, then give two base colors roughly sixty to seventy percent of the field and distribute the others through motif glaze light and structure in smaller areas. Preserve material process and period context, avoiding equal use of five colors full-bleed gold pseudo-writing mixtures of unrelated historical systems or a global color cast used as a shortcut for Chinese aesthetics"
+    },
+    {
+      "id": "palette-crime-thriller-green",
+      "category": "palette",
+      "styleGroup": "cinema",
+      "zhName": "犯罪惊悚绿调",
+      "enName": "Crime Thriller Green",
+      "image": "/assets/parameters/palette-crime-thriller-green.png?v=20260827-palette-expansion",
+      "zhPrompt": "病态灰绿、钠灯琥珀、水泥灰、暗酒红与黑色组成压迫感犯罪惊悚配色，局部暖光用于线索强调；以最深两色承担约七成环境、阴影与空间层次，暖色或高亮色必须绑定可见主光、实用灯或叙事焦点，并随距离衰减和影响邻近材质。保留自然肤色与暗部细节，不要把色卡做成一键双色滤镜、无来源霓虹、黑位堵塞、反射方向矛盾或所有灯光同色同亮",
+      "enPrompt": "sickly gray-green, sodium amber, concrete gray, dark burgundy, and black in a tense crime-thriller palette with warm clues as accents; let the two deepest hues carry roughly seventy percent of environment shadow and spatial depth, while warm or bright colors must belong to a visible key light practical lamp or narrative focus and fall off with distance while affecting nearby material. Preserve believable skin and readable dark detail, avoiding a one-click two-color filter source-free neon crushed blacks contradictory reflection direction or every light rendered with the same hue and intensity"
+    },
+    {
+      "id": "palette-african-earth",
+      "category": "palette",
+      "styleGroup": "global",
+      "zhName": "非洲大地配色",
+      "enName": "African Earth",
+      "image": "/assets/parameters/palette-african-earth.png?v=20260827-palette-expansion",
+      "zhPrompt": "赤陶棕、赭黄、乌木黑、草原绿与日光米组成温暖有重量的非洲大地配色，适合自然和织物设计；先指定具体地域、年代和应用载体，让两种主色承担约六成基底，次要颜色服从织造、印刷、建筑或器物结构，最鲜艳颜色只作有限节奏。保留手工误差和材料边界，不要把多个地区符号拼成泛异域风、五色同亮、文化刻板化、伪文字或脱离载体的装饰色块",
+      "enPrompt": "burnt sienna, ochre, ebony, savanna green, and sun cream in a warm grounded African-earth palette for nature and textile design; specify the region period and physical support before use, assign two principal colors to roughly sixty percent of the ground, make secondary hues follow weaving printing architecture or object construction and reserve the most vivid color for limited rhythm. Preserve handmade variation and material boundaries, avoiding a generic exotic collage of multiple regions every swatch equally bright cultural stereotyping pseudo-script or decorative color blocks detached from their support"
+    },
+    {
+      "id": "palette-tech-cyan-lime",
+      "category": "palette",
+      "styleGroup": "commercial",
+      "zhName": "科技青柠配色",
+      "enName": "Tech Cyan Lime",
+      "image": "/assets/parameters/palette-tech-cyan-lime.png?v=20260827-palette-expansion",
+      "zhPrompt": "电光青、酸性青柠、石墨、洁白与信号紫组成高辨识度科技商业配色，适合数码产品和运动品牌；以前两种颜色承担约六成背景与主体结构，中间色建立约三成产品或信息层级，最亮或最深色只作一成以内的按钮、标签和焦点。颜色必须服从材质、文字对比与真实肤色，不要五色平均铺满、全局滤镜、荧光污染、文字低对比或用颜色掩盖产品结构",
+      "enPrompt": "electric cyan, acid lime, graphite, clean white, and signal purple in a high-recognition technology palette for digital products and sports brands; assign the first two colors to roughly sixty percent of background and principal structure, use the middle tones for about thirty percent of product and information hierarchy, and reserve the brightest or darkest hue for less than ten percent of controls labels and focal accents. Make color obey material response typographic contrast and believable skin, avoiding equal coverage of every swatch global filtering fluorescent contamination unreadable text or color used to conceal product form"
+    },
+    {
+      "id": "palette-storm-coast",
+      "category": "palette",
+      "styleGroup": "nature",
+      "zhName": "风暴海岸配色",
+      "enName": "Storm Coast",
+      "image": "/assets/parameters/palette-storm-coast.png?v=20260827-palette-expansion",
+      "zhPrompt": "深风暴蓝、海岩蓝灰、浪雾灰、云层浅灰与湿岩褐组成冷峻海岸配色，强调天气张力和地貌层次；让地貌、水体、植被和天空按真实深度分配主色，前景保留材质差异，远景通过空气、水汽或水深自然降低对比，最鲜艳颜色只集中在受光或生态焦点。不要五色同饱和、全景统一染色、荧光植物、天空水面同明度、忽略季节与天气或把自然环境处理成装饰性渐变背景",
+      "enPrompt": "deep storm blue, rock blue-gray, sea-mist gray, pale cloud gray, and wet-stone brown in a severe coastal palette with strong weather tension; distribute the principal hues across terrain water vegetation and sky according to real depth, preserving material differences in the foreground and reducing distant contrast through atmosphere moisture or water depth, with the most saturated color restricted to light or an ecological focal point. Avoid equal saturation across all swatches blanket tinting fluorescent plants sky and water at one value ignored season or weather and a natural environment reduced to a decorative gradient backdrop"
+    },
+    {
+      "id": "palette-organic-skincare",
+      "category": "palette",
+      "styleGroup": "commercial",
+      "zhName": "有机护肤配色",
+      "enName": "Organic Skincare",
+      "image": "/assets/parameters/palette-organic-skincare.png?v=20260827-palette-expansion",
+      "zhPrompt": "鼠尾草绿、亚麻米、柔乳白、树皮褐与纸白组成天然护肤配色，传达温和、纯净和可持续材质感；以前两种颜色承担约六成背景与主体结构，中间色建立约三成产品或信息层级，最亮或最深色只作一成以内的按钮、标签和焦点。颜色必须服从材质、文字对比与真实肤色，不要五色平均铺满、全局滤镜、荧光污染、文字低对比或用颜色掩盖产品结构",
+      "enPrompt": "sage green, linen beige, soft cream, bark brown, and paper white in a natural skincare palette conveying gentleness, purity, and sustainable materiality; assign the first two colors to roughly sixty percent of background and principal structure, use the middle tones for about thirty percent of product and information hierarchy, and reserve the brightest or darkest hue for less than ten percent of controls labels and focal accents. Make color obey material response typographic contrast and believable skin, avoiding equal coverage of every swatch global filtering fluorescent contamination unreadable text or color used to conceal product form"
+    },
+    {
+      "id": "palette-sports-energy",
+      "category": "palette",
+      "styleGroup": "commercial",
+      "zhName": "运动能量配色",
+      "enName": "Sports Energy",
+      "image": "/assets/parameters/palette-sports-energy.png?v=20260827-palette-expansion",
+      "zhPrompt": "深夜黑、电光蓝、活力绿、荧光黄与冷白组成高对比运动配色，适合速度、训练与科技装备视觉；以前两种颜色承担约六成背景与主体结构，中间色建立约三成产品或信息层级，最亮或最深色只作一成以内的按钮、标签和焦点。颜色必须服从材质、文字对比与真实肤色，不要五色平均铺满、全局滤镜、荧光污染、文字低对比或用颜色掩盖产品结构",
+      "enPrompt": "midnight black, electric blue, active green, fluorescent yellow, and cool white in a high-contrast sports palette for speed, training, and technical gear; assign the first two colors to roughly sixty percent of background and principal structure, use the middle tones for about thirty percent of product and information hierarchy, and reserve the brightest or darkest hue for less than ten percent of controls labels and focal accents. Make color obey material response typographic contrast and believable skin, avoiding equal coverage of every swatch global filtering fluorescent contamination unreadable text or color used to conceal product form"
+    },
+    {
+      "id": "palette-medical-clean",
+      "category": "palette",
+      "styleGroup": "commercial",
+      "zhName": "医疗洁净配色",
+      "enName": "Medical Clean",
+      "image": "/assets/parameters/palette-medical-clean.png?v=20260827-palette-expansion",
+      "zhPrompt": "医疗蓝、柔和水绿、冰薄荷、纯白与理性灰组成洁净可信的医疗配色，适合诊疗、健康与科技视觉；以前两种颜色承担约六成背景与主体结构，中间色建立约三成产品或信息层级，最亮或最深色只作一成以内的按钮、标签和焦点。颜色必须服从材质、文字对比与真实肤色，不要五色平均铺满、全局滤镜、荧光污染、文字低对比或用颜色掩盖产品结构",
+      "enPrompt": "medical blue, soft aqua, ice mint, pure white, and rational slate in a clean trustworthy healthcare palette; assign the first two colors to roughly sixty percent of background and principal structure, use the middle tones for about thirty percent of product and information hierarchy, and reserve the brightest or darkest hue for less than ten percent of controls labels and focal accents. Make color obey material response typographic contrast and believable skin, avoiding equal coverage of every swatch global filtering fluorescent contamination unreadable text or color used to conceal product form"
+    },
+    {
+      "id": "palette-pastel-macaron",
+      "category": "palette",
+      "styleGroup": "commercial",
+      "zhName": "马卡龙甜品配色",
+      "enName": "Pastel Macaron",
+      "image": "/assets/parameters/palette-pastel-macaron.png?v=20260827-palette-expansion",
+      "zhPrompt": "浅粉、奶油黄、薄荷绿、淡紫与奶油白组成甜美但干净的马卡龙商业配色，适合礼盒与生活方式视觉；以前两种颜色承担约六成背景与主体结构，中间色建立约三成产品或信息层级，最亮或最深色只作一成以内的按钮、标签和焦点。颜色必须服从材质、文字对比与真实肤色，不要五色平均铺满、全局滤镜、荧光污染、文字低对比或用颜色掩盖产品结构",
+      "enPrompt": "blush pink, butter yellow, mint, pale lilac, and cream in a sweet but clean macaron palette for gift and lifestyle visuals; assign the first two colors to roughly sixty percent of background and principal structure, use the middle tones for about thirty percent of product and information hierarchy, and reserve the brightest or darkest hue for less than ten percent of controls labels and focal accents. Make color obey material response typographic contrast and believable skin, avoiding equal coverage of every swatch global filtering fluorescent contamination unreadable text or color used to conceal product form"
+    }
+  ]
+}

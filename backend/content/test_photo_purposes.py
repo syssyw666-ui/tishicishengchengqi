@@ -12,6 +12,9 @@ from .models import ParameterOption
 
 
 class PhotoPurposeMigrationTests(TestCase):
+    def setUp(self):
+        ParameterOption.objects.filter(category="purpose").delete()
+
     def apply_additions(self):
         migration = importlib.import_module("content.migrations.0011_photo_purposes")
         migration.add_photo_purposes(apps, SimpleNamespace(connection=connection))
@@ -67,7 +70,11 @@ class PhotoPurposeMigrationTests(TestCase):
         self.assertEqual(len(snapshot), 24)
         self.assertEqual(len({row["image"] for row in snapshot}), 24)
         for row in snapshot:
-            self.assertEqual(indexed[row["id"]], row)
+            current = indexed[row["id"]]
+            for field in ("id", "category", "styleGroup", "zhName", "enName", "image", "negative"):
+                self.assertEqual(current[field], row[field])
+            self.assertTrue(current["zhPrompt"].startswith(row["zhPrompt"]), row["id"])
+            self.assertTrue(current["enPrompt"].startswith(row["enPrompt"]), row["id"])
             self.assertEqual(row["styleGroup"], "photography")
-            self.assertNotIn("defaultWeight", row)
+            self.assertNotIn("defaultWeight", current)
         self.assertIn(("photography", "照片摄影"), group_choices("purpose"))

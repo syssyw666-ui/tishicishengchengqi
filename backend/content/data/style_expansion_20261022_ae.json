@@ -1,0 +1,254 @@
+{
+  "parameters": [
+    {
+      "id": "layout-bg-vermilion-paper",
+      "category": "background",
+      "styleGroup": "color",
+      "zhName": "朱红色背景",
+      "enName": "Vermilion Background",
+      "image": "/assets/parameters/layout-bg-vermilion-paper.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "朱红色哑光纸背景采用均匀但不过度纯平的传统暖红，近看可见细小纸纤维、轻微吸墨斑与压平痕迹，漫射光下几乎无镜面高光，适合节庆、国风或产品衬底并保留清楚主体分离；避免塑料红、渐变霓虹、金箔花纹、可读文字、折痕抢眼或整面无纹理色块",
+      "enPrompt": "vermilion matte paper background using a warm traditional red that is even without becoming digitally flat, with fine fibers subtle absorbent mottling and pressed traces visible at close range and almost no specular glare under diffuse light; suitable for festive East Asian or product presentation while separating the subject, avoiding plastic red neon gradients gold motifs readable text distracting creases or a textureless color fill"
+    },
+    {
+      "id": "layout-bg-chinese-red-silk",
+      "category": "background",
+      "styleGroup": "fabric",
+      "zhName": "中国红丝绸背景",
+      "enName": "Chinese Red Silk",
+      "image": "/assets/parameters/layout-bg-chinese-red-silk.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "中国红丝绸背景由连续织物铺陈，细密经纬与柔亮丝光随褶皱曲率移动，宽缓垂褶从固定点自然下落，亮部呈温润红而暗部保留深红层次；光源方向与高光带一致，避免塑料缎面、每条褶皱同宽、无支撑悬浮、色彩溢出主体或擅自加入龙凤文字图案",
+      "enPrompt": "Chinese red silk background made from one continuous textile with fine weave and soft luster moving across fold curvature, broad relaxed drapes falling naturally from visible support points and highlights remaining warm red while shadows deepen without turning black; align sheen with the light direction, avoiding plastic satin identical fold widths unsupported floating cloth color spill overwhelming the subject or invented dragons phoenixes and text"
+    },
+    {
+      "id": "layout-bg-xuan-paper",
+      "category": "background",
+      "styleGroup": "paper",
+      "zhName": "宣纸背景",
+      "enName": "Xuan Paper Background",
+      "image": "/assets/parameters/layout-bg-xuan-paper.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "宣纸背景呈温和米白或淡灰白，长短植物纤维随机交织，纸面薄而哑光，对墨或水有轻微吸收扩散但本身保持干净平整，边缘和厚度只在需要时可见；适合作为水墨、书画或极简设计底材，避免普通打印纸、强烈皱纹、陈旧污渍、规则网格纤维或把纸面画成云雾",
+      "enPrompt": "xuan paper background in a gentle warm white or pale gray-white with randomly interwoven long and short plant fibers, a thin matte clean surface that allows restrained ink or water absorption when used while remaining mostly flat and showing edge thickness only where needed; suited to ink painting calligraphy or minimal design, avoiding printer paper heavy wrinkles antique stains regular fiber grids or paper rendered as atmospheric fog"
+    },
+    {
+      "id": "layout-bg-warm-ivory-studio",
+      "category": "background",
+      "styleGroup": "studio",
+      "zhName": "暖象牙影棚背景",
+      "enName": "Warm Ivory Studio",
+      "image": "/assets/parameters/layout-bg-warm-ivory-studio.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "暖象牙无缝影棚背景由垂直背板平滑过渡到地面形成无折角弧面，象牙白在主光和补光下产生轻柔明度渐变，主体脚下保留可信接触阴影但背景没有可见接缝；色温保持中性偏暖，避免纯白过曝、明显地平线、脏黄滤镜、中心光斑过强或渐变出现条带",
+      "enPrompt": "warm ivory seamless studio sweep curving smoothly from vertical backdrop into floor without a hard corner, with ivory white receiving a gentle value gradient from key and fill lights and retaining a believable contact shadow beneath the subject while no seam is visible; keep the tone neutral-warm, avoiding clipped pure white a hard horizon dirty yellow filtering an overpowering central hotspot or banded gradients"
+    },
+    {
+      "id": "layout-bg-black-velvet",
+      "category": "background",
+      "styleGroup": "fabric",
+      "zhName": "黑色天鹅绒背景",
+      "enName": "Black Velvet Background",
+      "image": "/assets/parameters/layout-bg-black-velvet.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "黑色天鹅绒背景利用密集短绒吸收大部分入射光，只在掠射角和褶皱边缘出现极细柔光，黑位深但仍能分辨绒向与少量层次，布料从固定点平稳垂落；适合珠宝或低调肖像，避免纯数字黑洞、闪亮缎面、灰尘满布、褶皱压过主体或背景边缘露出支架",
+      "enPrompt": "black velvet background using dense short pile to absorb most incident light, revealing only a fine soft sheen at grazing angles and fold edges so blacks remain deep yet retain nap direction and limited depth while cloth hangs from a stable support; suited to jewelry or low-key portraits, avoiding a digital black void shiny satin dust everywhere folds overpowering the subject or exposed stands at the edges"
+    },
+    {
+      "id": "layout-bg-brushed-dark-metal",
+      "category": "background",
+      "styleGroup": "material",
+      "zhName": "深色拉丝金属背景",
+      "enName": "Brushed Dark Metal",
+      "image": "/assets/parameters/layout-bg-brushed-dark-metal.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "深色拉丝金属背景具有同一加工方向的细密线纹、冷灰基底和随视角移动的窄幅反射，高光被拉丝打散而非镜面复制环境，板材接缝与厚度克制可见；保持纹理尺度一致，避免随机交叉划痕、塑料灰渐变、满屏强反射、锈蚀污染或拉丝方向在各区域突然旋转",
+      "enPrompt": "dark brushed-metal background with fine linear grain following one machining direction on a cool gray base and narrow view-dependent reflections, the brushing diffusing highlights rather than mirroring the environment while panel seams and thickness remain restrained; keep grain scale coherent, avoiding random cross scratches plastic gray gradients overwhelming reflections rust contamination or brushing direction rotating unpredictably across regions"
+    },
+    {
+      "id": "layout-bg-terrazzo",
+      "category": "background",
+      "styleGroup": "material",
+      "zhName": "水磨石背景",
+      "enName": "Terrazzo Background",
+      "image": "/assets/parameters/layout-bg-terrazzo.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "水磨石背景由浅色或中性色胶结基体包裹不同尺寸、形状和矿物色彩的石粒，切磨后的表面平整并带克制哑光或半光反射，颗粒在透视中尺度稳定且随机分布；适合现代产品和室内视觉，避免彩纸屑感、颗粒规则重复、所有石粒同色同形、镜面过亮或接缝穿过主体",
+      "enPrompt": "terrazzo background made from a light or neutral cementitious matrix containing stone chips of varied size shape and mineral color, ground to a flat surface with restrained matte or semi-polished reflection while aggregate scale remains stable in perspective and distribution feels random; suited to modern product and interior visuals, avoiding confetti appearance tiled repetition identical chips mirror glare or seams cutting through the subject"
+    },
+    {
+      "id": "layout-bg-bamboo-fiber",
+      "category": "background",
+      "styleGroup": "material",
+      "zhName": "竹纤维背景",
+      "enName": "Bamboo Fiber Background",
+      "image": "/assets/parameters/layout-bg-bamboo-fiber.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "竹纤维背景呈淡麦黄或自然浅棕，压制植物纤维沿大致纵向交错分布，可见细长丝束、微小节点与哑光多孔表面，整体平整但保留轻微手工不均；强调环保自然材料而非竹竿图案，避免木纹年轮、草席编织、规则竖条贴图、强亮清漆或绿色滤镜",
+      "enPrompt": "bamboo-fiber background in pale straw yellow or natural light brown, with pressed plant fibers crossing in a mostly vertical flow and showing slender bundles tiny nodes and a matte porous surface that stays flat with slight handmade variation; emphasize the sustainable material rather than bamboo-stalk imagery, avoiding wood growth rings woven mat patterns regular striped texture glossy varnish or a green filter"
+    },
+    {
+      "id": "layout-bg-cloud-sky",
+      "category": "background",
+      "styleGroup": "nature",
+      "zhName": "云朵天空背景",
+      "enName": "Cloud Sky Background",
+      "image": "/assets/parameters/layout-bg-cloud-sky.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "云朵天空背景采用具有明确光源和高度层次的真实天空，近云体积、远云尺度和蓝色空气透视自然递减，主体周围预留干净负空间并避免云边切入轮廓；可明朗但保留高光细节，避免重复棉花云、纯蓝色块、无方向白光、过度 HDR、地平线歪斜或幻想建筑混入",
+      "enPrompt": "cloud-sky background using a believable atmosphere with a clear light source and altitude layers, cloud volume nearby and scale and blue aerial perspective diminishing into distance while clean negative space surrounds the subject and cloud edges avoid tangencies; keep it bright without clipping detail, avoiding cloned cotton clouds a flat blue fill directionless white light excessive HDR a tilted horizon or unrelated fantasy architecture"
+    },
+    {
+      "id": "layout-bg-ink-wash",
+      "category": "background",
+      "styleGroup": "nature",
+      "zhName": "水墨烟云背景",
+      "enName": "Ink-Wash Mist Background",
+      "image": "/assets/parameters/layout-bg-ink-wash.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "水墨烟云背景以吸水纸上的淡墨层、边缘回渗、水痕和少量干笔建立远近，墨色从留白到灰黑逐层过渡并在主体区域主动减弱，形态像山岚或云气但不描成完整景物；保持大面积呼吸感，避免数字烟雾滤镜、满屏黑墨、重复云纹、硬边矢量渐变或文字印章",
+      "enPrompt": "ink-wash mist background built from pale ink layers capillary backruns water edges and limited dry-brush marks on absorbent paper, transitioning from open white through gray to deep ink while deliberately fading around the subject and suggesting mountain haze or cloud without becoming a complete landscape; preserve broad breathing space, avoiding a digital smoke filter black ink everywhere repeating cloud motifs hard vector gradients or text and seals"
+    },
+    {
+      "id": "bg-misty-blue-studio-sweep",
+      "category": "background",
+      "styleGroup": "studio",
+      "zhName": "雾蓝无缝影棚",
+      "enName": "Misty Blue Studio Sweep",
+      "image": "/assets/parameters/bg-misty-blue-studio-sweep.png?v=20260827-bg-path-fix",
+      "zhPrompt": "雾蓝无缝影棚由蓝灰背板向地面连续弯曲，蓝灰色调低饱和并随柔光从中心到边缘缓慢变化，主体下方接触阴影和轻微地面反射说明空间但不出现墙地接缝；适合冷静科技或护肤产品，避免赛博霓虹、纯蓝抠图布、渐变条带、地面镜像过强或雾气遮住轮廓",
+      "enPrompt": "misty blue seamless studio sweep curving continuously from a blue-gray backdrop to the floor, with low saturation and a slow soft-light transition from center to edge plus a contact shadow and faint floor reflection establishing space without a wall-floor seam; suitable for calm technology or skincare products, avoiding cyber neon chroma-key blue gradient banding strong mirror reflection or haze obscuring the silhouette",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-natural-linen",
+      "category": "background",
+      "styleGroup": "fabric",
+      "zhName": "天然亚麻背景",
+      "enName": "Natural Linen",
+      "image": "/assets/parameters/bg-natural-linen.png?v=20260827-bg-path-fix",
+      "zhPrompt": "天然亚麻背景展示不完全均匀的经纬纱、细小纱结和温暖原麻色，布面哑光、透气且略有粗糙感，宽缓褶皱随悬挂或铺放方向自然形成，光线只产生柔和明暗；避免黄麻麻袋般过粗、规则网格、丝绸高光、污渍破洞、褶皱随机翻转或主体被织纹干扰",
+      "enPrompt": "natural linen background showing slightly irregular warp and weft tiny slubs and a warm flax tone, with a matte breathable mildly coarse surface and broad relaxed folds following the hanging or laid direction under soft tonal light; avoid burlap-level coarseness a perfect grid silk sheen stains and holes folds reversing randomly or weave contrast competing with the subject",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-deep-navy-velvet",
+      "category": "background",
+      "styleGroup": "fabric",
+      "zhName": "深海军蓝天鹅绒",
+      "enName": "Deep Navy Velvet",
+      "image": "/assets/parameters/bg-deep-navy-velvet.png?v=20260827-bg-path-fix",
+      "zhPrompt": "深海军蓝天鹅绒背景保留接近黑色的蓝色底调，绒毛方向使掠射光形成窄而柔的深蓝高光，褶皱层次比纯黑天鹅绒更易分辨但仍保持吸光和庄重；适合金属、珠宝或正式人像，避免亮蓝缎面、紫色偏色、黑位堵死、褶皱过密或绒面像毛皮",
+      "enPrompt": "deep navy velvet background retaining a blue undertone close to black, with pile direction creating narrow soft dark-blue highlights under grazing light so folds remain more legible than pure black velvet while preserving absorption and formality; suited to metal jewelry or formal portraits, avoiding bright blue satin purple color cast crushed blacks overly dense folds or velvet rendered as fur",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-recycled-kraft-paper",
+      "category": "background",
+      "styleGroup": "paper",
+      "zhName": "再生牛皮纸背景",
+      "enName": "Recycled Kraft Paper",
+      "image": "/assets/parameters/bg-recycled-kraft-paper.png?v=20260827-bg-path-fix",
+      "zhPrompt": "再生牛皮纸背景呈自然棕灰色，短纤维、回收纸屑和轻微色差随机嵌在哑光纸浆中，表面平整但不精制，边缘可见适度厚度和毛边；适合环保包装或手作设计，避免木板纹理、咖啡污渍做旧、规则彩点、瓦楞沟槽、印刷文字或纤维大到像草杆",
+      "enPrompt": "recycled kraft-paper background in a natural brown-gray tone with short fibers reclaimed flecks and slight color variation embedded randomly in matte pulp, flat yet unrefined and showing modest edge thickness or deckle when visible; suited to sustainable packaging and handmade design, avoiding wood grain coffee-stain aging regular colored dots corrugation readable print or fibers enlarged into straw",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-white-marble",
+      "category": "background",
+      "styleGroup": "material",
+      "zhName": "白色大理石背景",
+      "enName": "White Marble",
+      "image": "/assets/parameters/bg-white-marble.png?v=20260827-bg-path-fix",
+      "zhPrompt": "白色大理石背景以乳白石基、少量连续灰色矿脉和半透明晶体深度构成，抛光程度决定柔和反射但仍可看到石材内部层次，纹脉跨越画面时方向连贯且不过密；适合高端产品衬底，避免随机闪电裂纹、纯白塑料、每块区域不同石种、镜面倒影或金色矿脉喧宾夺主",
+      "enPrompt": "white marble background formed by a milky stone base a limited number of continuous gray mineral veins and subtle crystalline depth, with polish controlling gentle reflection while internal stone layers remain visible and veins travel coherently without crowding the frame; suited to premium product presentation, avoiding random lightning cracks plain white plastic mixed stone species across patches mirror reflections or dominant gold veining",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-natural-corkboard",
+      "category": "background",
+      "styleGroup": "material",
+      "zhName": "天然软木板背景",
+      "enName": "Natural Corkboard",
+      "image": "/assets/parameters/bg-natural-corkboard.png?v=20260827-bg-path-fix",
+      "zhPrompt": "天然软木板背景由压制树皮颗粒形成暖棕色多孔表面，颗粒大小、孔隙和深浅随机但密度均衡，哑光质地吸光并保留轻微厚度，适合便签、手作或自然产品；避免碎石墙感、重复贴图接缝、木纹年轮、过度锐利孔洞、满板图钉纸张或主体边缘被颗粒吞没",
+      "enPrompt": "natural corkboard background made from compressed bark granules in a warm brown porous surface, with varied particle size cavities and tone distributed evenly and a matte light-absorbing finish plus slight visible thickness; useful for notes crafts or natural products, avoiding a stone-wall appearance repeating texture seams wood growth rings overly sharp holes a board already crowded with pins and papers or grain swallowing subject edges",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-glazed-ceramic-tile",
+      "category": "background",
+      "styleGroup": "material",
+      "zhName": "釉面陶瓷砖背景",
+      "enName": "Glazed Ceramic Tile",
+      "image": "/assets/parameters/bg-glazed-ceramic-tile.png?v=20260827-bg-path-fix",
+      "zhPrompt": "釉面陶瓷砖背景由尺寸一致的砖片、窄而连续的填缝和轻微烧成色差组成，釉面反射随光源和砖面曲率变化，边缘可有细微手工不齐但整体铺贴平整；明确透视与接缝比例，避免无限镜面、塑料方格、每块砖随机花色、填缝断裂或高光跨越多块砖不变化",
+      "enPrompt": "glazed ceramic-tile background composed of consistently sized tiles narrow continuous grout and slight firing variation, with glaze reflections responding to light source and tile curvature and tiny handmade edge irregularity within an overall flat installation; preserve perspective and joint scale, avoiding an endless mirror plastic checkerboard random motifs on every tile broken grout or one highlight crossing many tiles unchanged",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-leafy-shadow-plaster",
+      "category": "background",
+      "styleGroup": "nature",
+      "zhName": "树影石膏墙背景",
+      "enName": "Leafy Shadow Plaster",
+      "image": "/assets/parameters/bg-leafy-shadow-plaster.png?v=20260827-bg-path-fix",
+      "zhPrompt": "树影石膏墙背景以温和浅色矿物墙面承接真实枝叶投影，投影方向、软硬和尺度由窗外距离与阳光角度决定，叶影局部重叠并随墙面细孔和轻微抹痕变化，主体区域保持可读；避免直接贴上叶片图案、无来源多方向影子、纯黑硬边、墙面像纸张或叶影覆盖全部画面",
+      "enPrompt": "leaf-shadow plaster wall background using a pale mineral surface to receive real branch and foliage shadows whose direction softness and scale follow sunlight angle and distance outside the frame, with overlapping silhouettes responding subtly to pores and trowel marks while the subject zone remains readable; avoid pasted leaf graphics multiple source-free shadow directions pure black cutout edges a paper-like wall or foliage shadow covering the entire image",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-pale-oak-grain",
+      "category": "background",
+      "styleGroup": "material",
+      "zhName": "浅橡木纹背景",
+      "enName": "Pale Oak Grain",
+      "image": "/assets/parameters/bg-pale-oak-grain.png?v=20260827-bg-path-fix",
+      "zhPrompt": "浅橡木纹背景呈淡蜂蜜或米金色，长直纹理间穿插少量山形纹和细密导管，木板拼接方向一致、宽度合理，哑光透明涂层保留触感并产生柔和反射；适合北欧或自然产品，避免深胡桃色调、重复木纹贴图、板缝无透视、树结过多、亮漆镜面或木纹穿过接缝",
+      "enPrompt": "pale oak-grain background in light honey or beige-gold, with mostly long straight grain plus limited cathedral patterns and fine pores, boards joined in one direction at plausible widths and protected by a matte clear finish that preserves touch with soft reflection; suited to Nordic or natural products, avoiding dark walnut color repeated grain tiles seams without perspective excessive knots mirror varnish or grain continuing through board joints",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    },
+    {
+      "id": "bg-raw-concrete",
+      "category": "background",
+      "styleGroup": "material",
+      "zhName": "清水混凝土墙",
+      "enName": "Raw Concrete Wall",
+      "image": "/assets/parameters/bg-raw-concrete.jpg",
+      "zhPrompt": "清水混凝土墙背景呈中性灰色，细小气孔、模板接缝、拉杆孔和轻微色差依据真实浇筑工艺分布，表面哑光坚实且大面积保持克制，侧光可揭示浅微起伏；适合工业极简视觉，避免破败裂墙、均匀噪点滤镜、砖纹、夸张水渍、重复孔洞或把混凝土画成粗糙岩石",
+      "enPrompt": "raw architectural-concrete wall background in neutral gray with fine air pores formwork joints tie holes and slight tonal variation distributed according to real casting, the surface matte solid and restrained across broad areas while side light reveals shallow relief; suited to industrial minimal visuals, avoiding a ruined cracked wall uniform noise filter brick pattern exaggerated leaks repeating holes or concrete rendered as rough natural rock",
+      "negative": [
+        "busy background",
+        "readable text",
+        "watermark"
+      ]
+    }
+  ]
+}

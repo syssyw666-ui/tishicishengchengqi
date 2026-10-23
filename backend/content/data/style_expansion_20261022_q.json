@@ -1,0 +1,615 @@
+{
+  "parameters": [
+    {
+      "id": "style-infrared-night-vision-feed",
+      "category": "style",
+      "styleGroup": "photo-film-3d",
+      "zhName": "红外夜视监控成像",
+      "enName": "Infrared Night-Vision Security Feed",
+      "image": "/assets/parameters/style-infrared-night-vision-feed.jpg?v=20261022-style-expansion-q",
+      "zhPrompt": "红外夜视监控成像以单色绿或灰绿亮度记录黑暗空间，近红外照明让皮肤、织物和反光表面异常发亮，远处迅速沉入噪点；画面保留 CCD 拖影、增益颗粒、局部高光溢出和低清压缩，但主体轮廓仍可辨，避免电影式月光、彩色霓虹或干净高清夜景",
+      "enPrompt": "infrared night-vision security-feed imaging in monochrome green or gray-green luminance, with near-IR illumination making skin fabric and reflective surfaces unnaturally bright before distance falls into noise; retain CCD smear gain grain localized highlight bloom and low-resolution compression while silhouettes stay legible, avoiding cinematic moonlight colored neon or clean high-definition night photography",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable franchise"
+      ]
+    },
+    {
+      "id": "style-lobby-cctv-fisheye",
+      "category": "style",
+      "styleGroup": "photo-film-3d",
+      "zhName": "大厅低清鱼眼监控",
+      "enName": "Low-Resolution Lobby CCTV",
+      "image": "/assets/parameters/style-lobby-cctv-fisheye.jpg?v=20261022-style-expansion-q",
+      "zhPrompt": "大厅低清鱼眼监控从天花角落俯视完整入口，强桶形畸变把墙线压成弧形，人物尺寸较小且不摆拍；综合色偏灰、白平衡轻微失准，画面带软焦、方块压缩和有限动态范围，避免高清电影监控、精致布光或夸张犯罪剧情",
+      "enPrompt": "low-resolution lobby CCTV viewed from a ceiling corner, with strong barrel distortion curving walls and keeping unposed people small within the full entrance; use washed color slight white-balance error soft focus macroblocking and limited dynamic range, avoiding polished cinematic surveillance elaborate lighting or exaggerated crime staging",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable franchise"
+      ]
+    },
+    {
+      "id": "style-sodium-street-surveillance",
+      "category": "style",
+      "styleGroup": "photo-film-3d",
+      "zhName": "钠灯街区监控",
+      "enName": "Sodium-Lit Street Surveillance",
+      "image": "/assets/parameters/style-sodium-street-surveillance.jpg?v=20261022-style-expansion-q",
+      "zhPrompt": "钠灯街区监控以固定高位广角记录空旷夜街，橙黄路灯形成间隔明显的光池，灯间区域落入深色，车辆和行人只是环境尺度线索；传感器综合色偏暖、暗部噪声明显但构图平直实用，避免赛博朋克霓虹、电影追逐光效或过度戏剧化雾气",
+      "enPrompt": "sodium-lit street surveillance using a fixed elevated wide view of a sparse night street, amber lamps creating separated pools of light with deep gaps while vehicles and pedestrians remain scale cues; keep sensor color warm and shadow noise visible in flat utilitarian framing, avoiding cyberpunk neon cinematic chase lighting or theatrical fog",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable franchise"
+      ]
+    },
+    {
+      "id": "style-traffic-camera-compression",
+      "category": "style",
+      "styleGroup": "photo-film-3d",
+      "zhName": "交通摄像压缩画面",
+      "enName": "Compressed Traffic-Camera Feed",
+      "image": "/assets/parameters/style-traffic-camera-compression.jpg?v=20261022-style-expansion-q",
+      "zhPrompt": "交通摄像压缩画面从固定高杆视点记录路口或高速路，取景只服务车流、车道和天气状态；低码率造成方块、边缘振铃和综合色变脏，雨夜车灯局部过曝而路面仍扁平可读，避免无人机大片、锐利车牌、景深虚化或商业汽车广告感",
+      "enPrompt": "compressed traffic-camera feed from a fixed high pole documenting lanes flow and weather with purely functional framing; low bitrate creates macroblocks ringing and muddy color while wet-night headlights clip locally and the roadway stays flat and readable, avoiding cinematic drone imagery sharp license plates shallow depth or commercial car-ad polish",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable franchise"
+      ]
+    },
+    {
+      "id": "style-body-worn-camera",
+      "category": "style",
+      "styleGroup": "photo-film-3d",
+      "zhName": "胸前执法记录仪",
+      "enName": "Body-Worn Camera View",
+      "image": "/assets/parameters/style-body-worn-camera.jpg?v=20261022-style-expansion-q",
+      "zhPrompt": "胸前记录仪成像以胸口高度的超广角呈现第一人称行动，佩戴者手臂、衣缘或装备从画面边缘自然切入，转身与步行带轻微倾斜和滚动快门；小型补光在暗处迅速衰减，噪点和压缩真实，避免漂浮视角、稳定电影运镜、武器特写或煽情英雄构图",
+      "enPrompt": "body-worn camera imagery from chest height with an ultra-wide first-person view, the wearer's sleeve garment edge or equipment entering naturally while turns and walking introduce slight tilt and rolling shutter; a small illuminator falls off quickly into grain and compression, avoiding a floating viewpoint stabilized cinema movement weapon glamour or heroic staging",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable franchise"
+      ]
+    },
+    {
+      "id": "style-night-dashcam",
+      "category": "style",
+      "styleGroup": "photo-film-3d",
+      "zhName": "雨夜行车记录仪",
+      "enName": "Rainy Night Dashcam",
+      "image": "/assets/parameters/style-night-dashcam.jpg?v=20261022-style-expansion-q",
+      "zhPrompt": "雨夜行车记录仪从挡风玻璃后固定向前取景，车头下沿、雨刷痕和玻璃水滴提供真实载体，近处被车灯照亮而远处迅速变暗；路牌和车灯产生拖影、鬼影与低照度压缩，透视随道路运动可信，避免外置跟车镜头、赛车广告、过度清晰夜景或伪造碰撞戏剧",
+      "enPrompt": "rainy-night dashcam footage fixed behind the windshield, with hood edge wiper traces and droplets revealing the carrier as headlights illuminate the near road before rapid falloff; signs and lamps show smear ghosting and low-light compression with believable road motion, avoiding external tracking shots racing-ad polish impossibly clear darkness or staged collision drama",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable franchise"
+      ]
+    },
+    {
+      "id": "style-reversing-camera-feed",
+      "category": "style",
+      "styleGroup": "photo-film-3d",
+      "zhName": "倒车影像鱼眼",
+      "enName": "Reversing-Camera Feed",
+      "image": "/assets/parameters/style-reversing-camera-feed.jpg?v=20261022-style-expansion-q",
+      "zhPrompt": "倒车影像鱼眼从车辆尾部低位展示宽广停车区域，近地面和保险杠边缘明显弯曲，综合色低饱和且日夜自动曝光痕迹可见；只加入简洁绿、黄、红距离引导线，线条作为清楚界面层覆盖画面，不出现可读文字、复杂仪表盘或普通广角摄影效果",
+      "enPrompt": "reversing-camera feed from a low rear-mounted extreme fisheye, bending nearby ground and bumper edge across a wide parking area with muted color and visible day-night auto-exposure behavior; overlay only simple green amber and red distance guides as a crisp interface layer, without readable text complex dashboards or ordinary wide-angle photography",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable franchise"
+      ]
+    },
+    {
+      "id": "style-aerial-surveillance-feed",
+      "category": "style",
+      "styleGroup": "photo-film-3d",
+      "zhName": "单色航拍监视成像",
+      "enName": "Monochrome Aerial Surveillance Feed",
+      "image": "/assets/parameters/style-aerial-surveillance-feed.jpg?v=20261022-style-expansion-q",
+      "zhPrompt": "单色航拍监视成像以近乎垂直俯视观察车辆、道路或地形，主体在大尺度环境中较小，灰阶受传感器动态范围限制；细线准星、跟踪框和刻度只提供功能暗示且无可读文字，画面带轻微抖动、电子锐化与压缩，避免电影无人机风光、爆炸奇观或复杂军事标识",
+      "enPrompt": "monochrome aerial-surveillance imaging from a near-vertical view of vehicles roads or terrain, keeping the subject small within large-scale context and grayscale limited by sensor range; sparse reticle tracking brackets and ticks imply function without readable text, with slight jitter electronic sharpening and compression, avoiding cinematic drone landscapes explosion spectacle or detailed military insignia",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable franchise"
+      ]
+    },
+    {
+      "id": "style-practical-miniature-film",
+      "category": "style",
+      "styleGroup": "photo-film-3d",
+      "zhName": "实拍微缩特摄模型",
+      "enName": "Practical Miniature Film Photography",
+      "image": "/assets/parameters/style-practical-miniature-film.jpg?v=20261022-style-expansion-q",
+      "zhPrompt": "实拍微缩特摄模型用真实缩尺建筑、车辆、烟雾和微型灯泡搭建场景，材料边缘、手工旧化和尺寸细节经运动控制摄影统一在镜头中；近距离景深、光学雾化与曝光让模型获得宏大尺度，同时保留轻微可辨的手作证据，避免光滑 CG、玩具塑料感或随意移轴滤镜",
+      "enPrompt": "practical miniature film photography using real scale buildings vehicles smoke and tiny bulbs unified through motion-control optics, with material edges hand weathering and scale detail visible; close-focus depth optical haze and exposure suggest monumental size while preserving subtle handcrafted evidence, avoiding smooth CGI toy-plastic surfaces or a casual tilt-shift filter",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable franchise"
+      ]
+    },
+    {
+      "id": "style-crt-phosphor-screen",
+      "category": "style",
+      "styleGroup": "design-retro",
+      "zhName": "显像管屏摄质感",
+      "enName": "CRT Phosphor Screen Photography",
+      "image": "/assets/parameters/style-crt-phosphor-screen.jpg?v=20261022-style-expansion-q",
+      "zhPrompt": "显像管屏摄质感把场景呈现在弧面厚玻璃电视上，RGB 荧光点阵、水平扫描线、综合色偏移和亮部泛光随屏幕结构出现，暗部带电子噪声；玻璃反射、屏幕边缘与轻微几何弯曲证明真实载体，避免简单叠加条纹、现代平板边框或干净数字像素",
+      "enPrompt": "CRT phosphor-screen photography presenting the scene through curved thick television glass, with RGB phosphor structure horizontal scanlines color drift and bright bloom tied to the display plus electronic shadow noise; reflections bezel and slight geometric bowing prove the physical carrier, avoiding a simple stripe overlay modern flat-panel framing or clean digital pixels",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable franchise"
+      ]
+    },
+    {
+      "id": "render-retro-psx",
+      "category": "render",
+      "styleGroup": "stylized",
+      "zhName": "九十年代低模主机渲染",
+      "enName": "Late-1990s Low-Poly Console Render",
+      "image": "/assets/parameters/render-retro-psx.jpg?v=20261022-style-expansion-q",
+      "zhPrompt": "九十年代低模主机渲染以明显多边形轮廓、低分辨率贴图、仿射纹理扭曲和顶点抖动构成场景，有限综合色通过有序抖色补足层次；短距离雾遮蔽远景，硬边角色动画保持时代感，避免现代 PBR、高清法线、电影景深或仅做像素滤镜",
+      "enPrompt": "late-1990s low-poly console rendering built from visible polygon silhouettes low-resolution textures affine warping and vertex jitter, with ordered dithering extending a limited palette; short draw-distance fog hides the distance and hard-edged character motion preserves the era, avoiding modern PBR high-resolution normals cinematic depth or a superficial pixel filter",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable franchise"
+      ]
+    },
+    {
+      "id": "render-early-dx9-hard-shadow",
+      "category": "render",
+      "styleGroup": "technical",
+      "zhName": "早期DX9硬阴影渲染",
+      "enName": "Early DX9 Hard-Shadow Rendering",
+      "image": "/assets/parameters/render-early-dx9-hard-shadow.jpg?v=20261022-style-expansion-q",
+      "zhPrompt": "早期 DX9 实时渲染以中等面数模型、低清重复贴图、各向异性过滤和模板体硬阴影塑造空间，局部法线与高光简单直接；暗部边界锋利、早期 HDR 泛光略显积极但受控，避免现代光追、柔和全局光、超高清材质或刻意做成更早期低模",
+      "enPrompt": "early DX9 real-time rendering using medium-poly geometry low-resolution tiling textures anisotropic filtering and hard stencil-volume shadows, with simple localized normal and specular response; shadow edges stay sharp and early-HDR bloom slightly assertive but controlled, avoiding modern ray tracing soft global illumination ultra-high-resolution materials or an earlier low-poly-console look",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable franchise"
+      ]
+    },
+    {
+      "id": "render-baked-lightmap-aaa",
+      "category": "render",
+      "styleGroup": "technical",
+      "zhName": "中期主机烘焙光照渲染",
+      "enName": "Mid-2000s Baked-Lightmap Game Render",
+      "image": "/assets/parameters/render-baked-lightmap-aaa.jpg?v=20261022-style-expansion-q",
+      "zhPrompt": "中期主机烘焙光照渲染用预计算光照贴图、模块化场景件和重复材质建立密集环境，静态阴影稳定贴合建筑，动态角色只受有限实时光影响；纹理保留块压缩和轻微锐化，整体清楚但具有年代限制，避免现代实时全局光、无限细节或空洞低模场景",
+      "enPrompt": "mid-2000s baked-lightmap game rendering using precomputed lighting modular set pieces and repeated materials to build dense environments, with stable static shadows embedded in architecture and dynamic characters receiving limited real-time light; retain block-compressed texture and mild sharpening in a clear period-bounded image, avoiding modern dynamic global illumination unlimited detail or sparse primitive scenes",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable franchise"
+      ]
+    },
+    {
+      "id": "style-amiga-indexed-adventure",
+      "category": "style",
+      "styleGroup": "design-retro",
+      "zhName": "九十年代索引色冒险游戏",
+      "enName": "1990s Indexed-Color Adventure Game",
+      "image": "/assets/parameters/style-amiga-indexed-adventure.jpg?v=20261022-style-expansion-q",
+      "zhPrompt": "九十年代索引色冒险游戏画面以 16 至 64 色有限色板、清楚像素网格和有序抖色绘制可探索场景，角色由少量关键色和夸张轮廓保证辨识；背景物件沿点击逻辑分层但不加界面文字，避免现代像素插画的无限色、柔光、高分辨率渐变或体素 3D",
+      "enPrompt": "1990s indexed-color adventure-game imagery built from a 16-to-64-color palette visible pixel grid and ordered dithering across an explorable scene, with characters readable through few key colors and exaggerated silhouettes; layer background props by interaction logic without interface text, avoiding unlimited-color modern pixel illustration soft light high-resolution gradients or voxel 3D",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable franchise"
+      ]
+    },
+    {
+      "id": "style-point-click-cel-adventure",
+      "category": "style",
+      "styleGroup": "design-retro",
+      "zhName": "千禧年手绘点击冒险",
+      "enName": "Early-2000s Hand-Painted Adventure Game",
+      "image": "/assets/parameters/style-point-click-cel-adventure.jpg?v=20261022-style-expansion-q",
+      "zhPrompt": "千禧年手绘点击冒险以完整手绘背景、简化赛璐璐人物和轮廓清楚的可交互道具构成横向舞台，综合色统一且空间层级服务解谜阅读；人物阴影层数有限、动作像逐帧动画，避免现代厚涂概念图、照片写实、过多界面或低分辨率像素块",
+      "enPrompt": "early-2000s hand-painted point-and-click adventure imagery using a complete painted background simplified cel character and clearly outlined interactive props in a lateral stage, with a unified palette and depth serving puzzle readability; keep character shading limited and movement frame-animated, avoiding modern painterly concept art photorealism excessive interface or low-resolution pixel blocks",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable franchise"
+      ]
+    },
+    {
+      "id": "render-premium-cel-shaded-game",
+      "category": "render",
+      "styleGroup": "stylized",
+      "zhName": "高规格赛璐璐游戏渲染",
+      "enName": "Premium Cel-Shaded Game Rendering",
+      "image": "/assets/parameters/render-premium-cel-shaded-game.jpg?v=20261022-style-expansion-q",
+      "zhPrompt": "高规格赛璐璐游戏渲染以稳定墨线、两至三层硬边明暗带和经过简化的材质综合色塑造清晰角色，背景可更细腻但必须服从主体轮廓；实时光照只改变综合色与阴影分区，不产生写实皮肤和复杂反射，避免普通动漫平涂、光滑 3D 塑料或轮廓线忽粗忽细",
+      "enPrompt": "premium cel-shaded game rendering shaping readable characters with stable ink contours two or three hard-edged value bands and simplified material color, allowing a richer environment that remains subordinate to silhouette; real-time light changes palette and shadow regions without realistic skin or complex reflection, avoiding plain anime flats smooth 3D plastic or inconsistent outline weight",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable franchise"
+      ]
+    },
+    {
+      "id": "style-multiplane-cel-animation",
+      "category": "style",
+      "styleGroup": "anime",
+      "zhName": "多平面赛璐璐动画",
+      "enName": "Multiplane Cel Animation",
+      "image": "/assets/parameters/style-multiplane-cel-animation.jpg?v=20261022-style-expansion-q",
+      "zhPrompt": "多平面赛璐璐动画把前景遮挡、角色、中景与手绘远景组织在独立透明画层上，深度来自图层间距、视差和空气综合色而非三维建模；角色使用平整色面与少量硬阴影，背景笔触可见，避免所有层同等锐利、数字 3D 景深或现代矢量扁平感",
+      "enPrompt": "multiplane cel animation arranging foreground occlusion characters midground and painted distance on distinct transparent layers, deriving depth from spacing parallax and atmospheric color rather than 3D modeling; characters use flat fills and sparse hard shadow while background brushwork remains visible, avoiding equally sharp layers digital 3D depth or modern vector-flat polish",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable franchise"
+      ]
+    },
+    {
+      "id": "render-hero-shooter",
+      "category": "render",
+      "styleGroup": "stylized",
+      "zhName": "英雄竞技风格化渲染",
+      "enName": "Hero-Arena Stylized Rendering",
+      "image": "/assets/parameters/render-hero-shooter.jpg?v=20261022-style-expansion-q",
+      "zhPrompt": "英雄竞技风格化渲染以原创角色的清楚大轮廓、功能明确的服装分区和有限团队综合色保证远距离识别，材质在皮革、布料、金属与能量之间简化区分；竞技场照明明亮、环境不抢人物，避免复制现有游戏角色、过密小配件、写实军事灰或特效遮挡动作",
+      "enPrompt": "hero-arena stylized rendering prioritizing an original character's broad readable silhouette functional costume zones and limited team palette for distance recognition, simplifying leather cloth metal and energy into distinct material families; keep arena light bright and the environment subordinate, avoiding copied game characters dense micro-accessories realistic military gray or effects obscuring action",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable franchise"
+      ]
+    },
+    {
+      "id": "render-jrpg-cinematic",
+      "category": "render",
+      "styleGroup": "stylized",
+      "zhName": "日式幻想RPG过场渲染",
+      "enName": "Japanese Fantasy RPG Cinematic",
+      "image": "/assets/parameters/render-jrpg-cinematic.jpg?v=20261022-style-expansion-q",
+      "zhPrompt": "日式幻想 RPG 过场渲染以原创精致角色、夸张但结构合理的服饰和宏大环境建立旅程尺度，柔和面部塑形与高光发丝保持动画化身份；体积光、粒子和远景奇观只围绕叙事焦点出现，避免复刻知名角色、无功能饰品堆积、塑料皮肤或全画面发光",
+      "enPrompt": "Japanese fantasy RPG cinematic rendering combining original refined characters structurally plausible expressive wardrobe and monumental environments to establish journey scale, with softly shaped animated faces and luminous hair detail; volumetric light particles and distant spectacle support one narrative focus, avoiding recognizable characters purposeless accessory overload plastic skin or glow across the entire frame",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable franchise"
+      ]
+    },
+    {
+      "id": "render-grounded-open-world-rpg",
+      "category": "render",
+      "styleGroup": "realism",
+      "zhName": "写实开放世界游戏截图",
+      "enName": "Grounded Open-World RPG Rendering",
+      "image": "/assets/parameters/render-grounded-open-world-rpg.jpg?v=20261022-style-expansion-q",
+      "zhPrompt": "写实开放世界游戏截图以可信村镇、磨损道路、功能服装和自然天气构成可游览环境，PBR 材质与日光响应准确但保留实时渲染的适度简化；第三人称机位清楚交代角色与路径，景深克制，避免电影概念图、超现实光追炫技、界面堆叠或复制特定游戏世界",
+      "enPrompt": "grounded open-world RPG rendering building an explorable environment from believable settlements worn roads functional clothing and natural weather, with accurate PBR daylight response balanced by sensible real-time simplification; a clear third-person camera explains character and route with restrained depth, avoiding cinematic concept-art treatment ray-tracing spectacle interface clutter or a copied game world",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable franchise"
+      ]
+    },
+    {
+      "id": "ethnic-gelao",
+      "category": "ethnic-style",
+      "styleGroup": "southwest",
+      "zhName": "仡佬族竹编",
+      "enName": "Gelao Bamboo Craft",
+      "image": "/assets/parameters/ethnic-gelao.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "仡佬族竹编视觉以劈篾宽窄、经纬压挑和篮筐转角形成棕金几何节奏，竹皮光泽、毛边、节点与手工张力清楚可见；器物置于真实山地村寨生活中，纹样服从编织结构，避免塑料藤条、无缝数字图案或把竹纹覆盖人物与建筑",
+      "enPrompt": "Gelao bamboo-craft language using varied split-strip width over-under weaving and basket turns to create brown-gold geometry, with skin sheen fibers nodes and hand tension visible; place objects in believable mountain-village life and let pattern follow construction, avoiding plastic rattan seamless digital motifs or bamboo texture covering people and buildings"
+    },
+    {
+      "id": "ethnic-dong",
+      "category": "ethnic-style",
+      "styleGroup": "south",
+      "zhName": "侗族鼓楼",
+      "enName": "Dong Drum Tower",
+      "image": "/assets/parameters/ethnic-dong.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "侗族木构建筑视觉以鼓楼层叠檐口、风雨桥长廊、榫卯梁架和临水木寨建立连续空间，木材综合色随雨湿与使用痕迹自然变化；织纹只作为服饰或窄边装饰，保持结构真实，避免把鼓楼做成塔庙、夸张飞檐或在建筑表面铺满图案",
+      "enPrompt": "Dong timber-architecture visual language built from layered drum-tower eaves covered wind-rain bridges mortise-and-tenon frames and waterside wooden villages, with wood color changing naturally through rain and use; keep textile motifs on clothing or narrow borders and preserve structural truth, avoiding pagoda-like towers exaggerated eaves or patterns pasted across buildings"
+    },
+    {
+      "id": "ethnic-sui",
+      "category": "ethnic-style",
+      "styleGroup": "south",
+      "zhName": "水族马尾绣",
+      "enName": "Sui Horsetail Embroidery",
+      "image": "/assets/parameters/ethnic-sui.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "水族马尾绣视觉以马尾作芯、丝线包缠形成略凸的连续轮廓，再用细密填针组织花叶、涡旋和窄边纹；靛蓝布底与蓝白综合色清雅，绣面高度和转折可见，并与河谷村落综合色呼应，避免普通平绣、机器均匀线条或虚构文字图腾",
+      "enPrompt": "Sui horsetail-embroidery language using horsehair cores wrapped in silk to create slightly raised continuous contours, then dense filling stitches for leaves spirals and narrow borders; keep an indigo ground and quiet blue-white palette with visible relief and turns, echoing river-valley villages while avoiding ordinary flat embroidery machine-even lines or invented textual totems"
+    },
+    {
+      "id": "ethnic-russian",
+      "category": "ethnic-style",
+      "styleGroup": "northeast",
+      "zhName": "俄罗斯族花布木屋",
+      "enName": "Russian-Chinese Folk",
+      "image": "/assets/parameters/ethnic-russian.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "中国俄罗斯族乡村视觉以小型花卉棉布、针织披巾、彩绘木窗框和寒地木屋构成温暖生活层次，花纹随头巾和桌布褶皱自然变化；综合色来自原木、雪地、低饱和蓝绿与少量红色，避免宫廷民俗套装、套娃堆砌或把东北村落误作欧洲童话",
+      "enPrompt": "Chinese Russian ethnic village language layering small floral cotton knitted shawls painted window trim and cold-climate timber homes, with patterns following scarf and tablecloth folds; draw color from wood snow muted blue-green and sparse red, avoiding courtly folk costume nesting-doll clutter or turning a northeastern village into a European fairy tale"
+    },
+    {
+      "id": "ethnic-wa",
+      "category": "ethnic-style",
+      "styleGroup": "southwest",
+      "zhName": "佤族红黑织纹",
+      "enName": "Wa Red-Black Textile",
+      "image": "/assets/parameters/ethnic-wa.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "佤族织物视觉以深黑或靛黑粗布承托朱红横带、细白线和节奏明确的几何分区，纱线粗细、经纬密度与服装拼接真实；综合色与木寨、火塘和山林环境呼应，避免把红黑简化为现代运动条纹、随意添加神圣符号或使全景图案化",
+      "enPrompt": "Wa textile language using coarse deep-black or indigo-black cloth to support vermilion bands fine white lines and rhythmically divided geometry, with believable yarn gauge weave density and garment joins; relate color to timber villages hearths and forest without reducing it to modern sport stripes inventing sacred symbols or patterning the entire scene"
+    },
+    {
+      "id": "ethnic-tu",
+      "category": "ethnic-style",
+      "styleGroup": "northwest",
+      "zhName": "土族彩袖",
+      "enName": "Tu Rainbow Sleeve",
+      "image": "/assets/parameters/ethnic-tu.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "土族彩袖视觉把红、橙、黄、绿、蓝等色带按袖管结构分段排列，综合色鲜明却由深色衣身和真实褶皱稳定，织物边缘、缝合和厚度可辨；背景可采用青海高原村寨自然色，避免泛彩虹渐变、色条跨越人体或把传统服饰变成舞台礼服",
+      "enPrompt": "Tu rainbow-sleeve visual language segmenting red orange yellow green and blue bands according to sleeve construction, vivid yet stabilized by a dark garment body and real folds with visible seams and thickness; use natural Qinghai plateau village color behind, avoiding generic rainbow gradients bands crossing anatomy or traditional dress turned into stage costume"
+    },
+    {
+      "id": "retouch-makeup-cleanup",
+      "category": "color-grading",
+      "styleGroup": "skin-detail",
+      "zhName": "妆面修整",
+      "enName": "Makeup Cleanup",
+      "image": "/assets/parameters/retouch-makeup-cleanup.jpg",
+      "zhPrompt": "妆面修整只清理眼线毛边、口红溢出、粉底斑驳、睫毛膏结块和局部飞粉，保留原妆容设计、色相、皮肤纹理与面部身份；边界柔和贴合毛孔和唇纹，不重新画眉眼、不改变五官比例，也不把真实皮肤磨成无纹理蜡面",
+      "enPrompt": "makeup cleanup retouch limited to uneven eyeliner lipstick bleed patchy foundation mascara clumps and localized powder fallout, preserving the original makeup design hue skin texture and identity; edges follow pores and lip lines naturally without redrawing features changing facial proportions or smoothing real skin into a textureless wax surface",
+      "negative": [
+        "color banding",
+        "muddy colors",
+        "overexposed highlights",
+        "crushed blacks"
+      ]
+    },
+    {
+      "id": "craft-song-brocade",
+      "category": "ethnic-style",
+      "styleGroup": "traditional-craft",
+      "zhName": "宋锦",
+      "enName": "Song Brocade",
+      "image": "/assets/parameters/craft-song-brocade.png",
+      "zhPrompt": "宋锦以多重经纬组织细密几何骨架、折枝花和连续回纹，纹样尺度精巧、重复严谨但保留手织张力；综合色偏赭、茶褐、黛蓝、米白与暗金，丝线光泽克制温雅，避免高饱和宫廷金红、廉价印花或将纹样放大成现代壁纸",
+      "enPrompt": "Song brocade uses layered warp-weft structures for fine geometric frameworks branch florals and continuous key patterns, with precise small-scale repeats that retain handloom tension; favor ochre tea brown ink blue cream and subdued gold with restrained silk sheen, avoiding saturated courtly red-gold cheap printing or motifs enlarged into modern wallpaper",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "wrong cultural symbol"
+      ]
+    },
+    {
+      "id": "craft-gold-leaf-gilding",
+      "category": "ethnic-style",
+      "styleGroup": "traditional-craft",
+      "zhName": "贴金箔",
+      "enName": "Gold Leaf Gilding",
+      "image": "/assets/parameters/craft-gold-leaf-gilding.png",
+      "zhPrompt": "贴金箔工艺在施胶底层上逐片铺贴极薄金叶，方片搭接、轻微皱褶、细小裂隙和局部露底共同证明手工过程；金面随角度产生温暖不均匀反射，凸起雕纹边缘更亮，避免金色喷漆、镜面金属、均匀贴图或满画面廉价闪光",
+      "enPrompt": "gold-leaf gilding lays ultrathin leaves one by one over a prepared adhesive ground, with square overlaps slight wrinkles hairline gaps and occasional exposed underlayer proving the hand process; the surface gives warm uneven angle-dependent reflection and brighter relief edges, avoiding gold spray paint mirror metal uniform texture maps or cheap glitter across the frame",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "wrong cultural symbol"
+      ]
+    },
+    {
+      "id": "artist-vietnamese-lacquer",
+      "category": "artist-style",
+      "styleGroup": "folk-global",
+      "zhName": "越南漆画",
+      "enName": "Vietnamese Lacquer Painting",
+      "image": "/assets/parameters/artist-vietnamese-lacquer.png",
+      "zhPrompt": "越南漆画以黑、朱红、金褐天然漆层反复髹涂、打磨和显露下层，蛋壳碎片形成不规则浅色镶嵌，金属箔与人物剪影在温润暗面中若隐若现；表面深亮但非镜面，层间擦痕真实，避免普通油画、塑料亮光或把蛋壳处理成均匀马赛克",
+      "enPrompt": "Vietnamese lacquer painting built through repeated black vermilion and golden-brown natural lacquer layers that are polished back to reveal what lies beneath, with irregular eggshell fragments as pale inlay and metal leaf or figure silhouettes emerging from a warm dark surface; keep the depth lustrous but not mirror-like with authentic abrasion between layers, avoiding ordinary oil paint plastic gloss or evenly tiled eggshell mosaic",
+      "negative": [
+        "artist signature",
+        "exact copy of existing artwork",
+        "readable text"
+      ]
+    },
+    {
+      "id": "artist-bande-dessinee",
+      "category": "artist-style",
+      "styleGroup": "comic-sequential",
+      "zhName": "法比漫画冒险风",
+      "enName": "Bande Dessinee Adventure",
+      "image": "/assets/parameters/artist-bande-dessinee.png",
+      "zhPrompt": "法比漫画冒险风以均匀清楚的墨线、准确建筑透视和明亮平涂色表现城市、车辆与旅途动作，人物比例写实略简化，表情易读；分镜依靠环境细节推进轻快冒险，阴影克制且颜色印刷感统一，避免美式肌肉英雄、日漫速度线或复制既有漫画角色",
+      "enPrompt": "Franco-Belgian adventure-comic language using even lucid ink lines accurate architectural perspective and bright flat color for cities vehicles and travel action, with slightly simplified realistic figures and readable expression; panels advance light adventure through environmental detail with restrained shadow and coherent print color, avoiding American muscle heroes manga speed lines or copied comic characters",
+      "negative": [
+        "artist signature",
+        "exact copy of existing artwork",
+        "readable text"
+      ]
+    },
+    {
+      "id": "artist-turner",
+      "category": "artist-style",
+      "styleGroup": "impression-post",
+      "zhName": "透纳式光雾风景",
+      "enName": "J. M. W. Turner",
+      "image": "/assets/parameters/artist-turner.png",
+      "zhPrompt": "透纳式光雾风景以旋转云层、海雾、雨幕与逆光把实体轮廓逐渐溶解，暖金、赭黄与冷灰蓝在薄涂和擦拭中互相渗透；船只或建筑只保留少量结构锚点，光本身成为主角，避免普通柔焦照片、均匀黄色滤镜或完全失去空间方向的抽象综合色",
+      "enPrompt": "Turner-inspired luminous landscape dissolving solid contours through rotating cloud sea mist rain and backlight, with warm gold ochre and cool gray-blue interpenetrating through thin washes and rubbed paint; boats or architecture remain as sparse structural anchors while light becomes the subject, avoiding generic soft-focus photography uniform yellow filters or abstraction with no spatial direction",
+      "negative": [
+        "artist signature",
+        "exact copy of existing artwork",
+        "readable text"
+      ]
+    },
+    {
+      "id": "artist-rembrandt",
+      "category": "artist-style",
+      "styleGroup": "renaissance-baroque",
+      "zhName": "伦勃朗式暖暗肖像",
+      "enName": "Rembrandt",
+      "image": "/assets/parameters/artist-rembrandt.png",
+      "zhPrompt": "伦勃朗式暖暗肖像以单一高侧光从深褐背景中逐步显露额头、颧骨、鼻梁与手部，亮面用暖赭和铅白厚涂，暗部保留透明棕黑釉层；衣料和背景边缘融入阴影，眼神与微表情承担心理重量，避免黑位全堵、橙色滤镜或现代棚拍三点布光",
+      "enPrompt": "Rembrandt-inspired warm-dark portraiture using one high side light to reveal forehead cheek nose and hands gradually from a deep brown ground, with warm ochre and lead-white impasto in light and transparent brown-black glazing in shadow; garment and backdrop edges dissolve selectively while gaze and micro-expression carry psychological weight, avoiding crushed blacks orange filters or modern three-point studio lighting",
+      "negative": [
+        "artist signature",
+        "exact copy of existing artwork",
+        "readable text"
+      ]
+    },
+    {
+      "id": "effect-prism-refraction",
+      "category": "visual-effect",
+      "styleGroup": "light-particle",
+      "zhName": "棱镜折射",
+      "enName": "Prism Refraction",
+      "image": "/assets/parameters/effect-prism-refraction.png?v=20260827-purpose-crop-fix",
+      "zhPrompt": "棱镜折射让一束方向明确的白光穿过玻璃棱面，在符合入射角的位置分离为连续红橙黄绿蓝紫光谱，并在附近表面形成锐利几何综合色；透明介质保留厚度、焦散和双重边缘，效果局部克制，避免整屏彩虹滤镜、无光源色带或霓虹烟雾",
+      "enPrompt": "prism refraction sends one directionally coherent white beam through faceted glass, separating a continuous red-to-violet spectrum at a physically plausible angle and casting sharp geometric color onto nearby surfaces; preserve medium thickness caustics and doubled edges in a localized effect, avoiding a frame-wide rainbow filter source-less bands or neon fog",
+      "negative": [
+        "messy motion blur",
+        "visual noise",
+        "overcrowded effects"
+      ]
+    },
+    {
+      "id": "render-path-traced-gi",
+      "category": "render",
+      "styleGroup": "realism",
+      "zhName": "路径追踪全局光",
+      "enName": "Path-Traced GI",
+      "image": "/assets/parameters/render-path-traced-gi.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "路径追踪全局光以多次漫反射和镜面反弹传播综合色，让窗光、墙面综合色和邻近材质自然互相染色，遮挡角落形成柔和接触暗部；玻璃、金属和粗糙面遵循能量守恒，高光与暗部噪声收敛干净，避免无方向环境亮光、过度降噪蜡感或不可能的综合色泄漏",
+      "enPrompt": "path-traced global illumination propagating color through multiple diffuse and specular bounces so window light wall color and neighboring materials bleed naturally, with soft contact darkness in occluded corners; glass metal and rough surfaces conserve energy while highlight and shadow noise converge cleanly, avoiding directionless ambient brightness waxy over-denoising or impossible color leakage"
+    },
+    {
+      "id": "artist-mucha",
+      "category": "artist-style",
+      "styleGroup": "decorative-illustration",
+      "zhName": "慕夏式新艺术海报",
+      "enName": "Alphonse Mucha",
+      "image": "/assets/parameters/artist-mucha.png",
+      "zhPrompt": "慕夏式新艺术海报以修长人物、流动发丝和植物茎叶形成连续曲线，圆形光环、马赛克般色块与竖向装饰边框建立平面秩序；综合色使用旧金、鼠尾草绿、柔粉和象牙白，轮廓细密而不过度写实，避免复制现成海报、文字乱码或把所有空隙塞满花朵",
+      "enPrompt": "Mucha-inspired Art Nouveau poster language using an elongated figure flowing hair and botanical stems as continuous curves, with circular halo mosaic-like color fields and vertical ornamental borders organizing the flat plane; use aged gold sage green soft rose and ivory with fine non-photoreal contours, avoiding copies of existing posters gibberish typography or flowers filling every gap",
+      "negative": [
+        "artist signature",
+        "exact copy of existing artwork",
+        "readable text"
+      ]
+    },
+    {
+      "id": "artist-miro",
+      "category": "artist-style",
+      "styleGroup": "surreal-symbolic",
+      "zhName": "米罗式童趣符号",
+      "enName": "Joan Miro",
+      "image": "/assets/parameters/artist-miro.png",
+      "zhPrompt": "米罗式童趣抽象以黑色自动性曲线连接星点、眼形、月牙和生物般符号，红黄蓝小色块在大面积米白或深色空间中保持悬浮平衡；线条有手绘停顿和墨迹浓淡，综合色稀疏而富节奏，避免儿童贴纸拼盘、规则几何网格或复制具体作品布局",
+      "enPrompt": "Miro-inspired playful abstraction connecting stars eyes crescents and biomorphic signs through black automatic lines, with small red yellow and blue shapes floating in broad off-white or dark space; preserve hand-drawn pauses and ink variation in a sparse rhythmic field, avoiding a children's sticker assortment rigid geometric grids or copied compositions from existing works",
+      "negative": [
+        "artist signature",
+        "exact copy of existing artwork",
+        "readable text"
+      ]
+    },
+    {
+      "id": "craft-yunjin-brocade",
+      "category": "ethnic-style",
+      "styleGroup": "traditional-craft",
+      "zhName": "南京云锦",
+      "enName": "Nanjing Yunjin Brocade",
+      "image": "/assets/parameters/craft-yunjin-brocade.png",
+      "zhPrompt": "南京云锦以挑花结本控制大尺度多色纹样，金线、片金和综合色纬线在厚实丝地上形成层层浮起的华丽表面；综合色有明确主次，金属线随织向闪烁而非整片发亮，只借鉴云气、花叶与几何组织，不复制等级专属龙凤章纹",
+      "enPrompt": "Nanjing Yunjin brocade uses drawloom pattern programming for large multicolor motifs, with gold thread flat-gold strips and colored wefts rising in layers over a dense silk ground; maintain a clear color hierarchy and directional metallic glints rather than a uniformly shiny sheet, borrowing cloud floral and geometric organization without copying rank-specific dragon-phoenix insignia",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "wrong cultural symbol"
+      ]
+    },
+    {
+      "id": "craft-sichuan-brocade",
+      "category": "ethnic-style",
+      "styleGroup": "traditional-craft",
+      "zhName": "蜀锦",
+      "enName": "Sichuan Brocade",
+      "image": "/assets/parameters/craft-sichuan-brocade.png",
+      "zhPrompt": "蜀锦以经纬显花和多色换纬形成清楚的几何框架、云气、花卉与动物综合色，朱红、石青、金黄和墨绿层次鲜明但由织造结构约束；纱线浮长、边缘锯齿与厚实锦面可见，避免普通缎面印花、图案贴图或无依据复制身份专属瑞兽",
+      "enPrompt": "Sichuan brocade uses warp-and-weft figuring and multicolor weft changes to build clear geometric frameworks clouds florals and animal forms, with vermilion mineral blue gold and deep green controlled by woven structure; show yarn floats serrated edges and a substantial brocade face, avoiding ordinary satin print pasted patterns or unsupported copying of status-specific auspicious creatures",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "wrong cultural symbol"
+      ]
+    },
+    {
+      "id": "craft-kesi-silk-tapestry",
+      "category": "ethnic-style",
+      "styleGroup": "traditional-craft",
+      "zhName": "缂丝",
+      "enName": "Kesi Silk Tapestry",
+      "image": "/assets/parameters/craft-kesi-silk-tapestry.png",
+      "zhPrompt": "缂丝以连续经线和按色区往返的断纬梭织形成近似雕镂的边界，色块交界保留细小通经断纬缝隙，正反面综合色相近；丝线光泽随方向轻微变化，花鸟或山水由织造边缘塑形，避免印花质感、刺绣针脚或数字无缝渐变",
+      "enPrompt": "Kesi silk tapestry uses continuous warps and discontinuous color wefts turned within each area to create carved-looking boundaries, leaving minute slit-like joins where colors meet and near-matching imagery on both faces; silk sheen shifts subtly with direction while birds flowers or landscape are shaped by woven edges, avoiding printed surfaces embroidery stitches or seamless digital gradients",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "wrong cultural symbol"
+      ]
+    }
+  ]
+}

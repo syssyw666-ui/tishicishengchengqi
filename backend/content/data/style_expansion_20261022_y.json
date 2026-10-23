@@ -1,0 +1,296 @@
+{
+  "parameters": [
+    {
+      "id": "pose-arms-crossed",
+      "category": "pose",
+      "styleGroup": "standing",
+      "zhName": "双臂抱胸",
+      "enName": "Arms Crossed",
+      "image": "/assets/parameters/pose-arms-crossed.jpg",
+      "zhPrompt": "双臂抱胸时左右前臂在胸前自然交叠，手掌分别收于对侧上臂附近，肩部略向内但颈部放松，肘部高度符合人物情绪与体型；保持手指数目和遮挡关系清楚，避免手臂穿胸、双手消失、肘关节反折或姿态僵硬如捆绑",
+      "enPrompt": "arms-crossed pose with forearms naturally overlapping across the chest and each hand resting near the opposite upper arm, shoulders slightly inward but neck relaxed and elbow height matching mood and build; preserve finger count and occlusion, avoiding arms intersecting the torso vanished hands reversed elbows or a rigid pose that looks bound",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-looking-back",
+      "category": "pose",
+      "styleGroup": "standing",
+      "zhName": "回眸站姿",
+      "enName": "Looking Back",
+      "image": "/assets/parameters/pose-looking-back.jpg",
+      "zhPrompt": "回眸站姿以身体主要朝前、头颈和上躯干适度旋转向后形成，视线准确指向后方目标，肩线与骨盆仍保留可承受的扭转范围；头发和衣领响应转身方向，避免颈部旋转过度、面部与后脑混合、双肩完全翻转或脚位与身体朝向冲突",
+      "enPrompt": "looking-back standing pose with the body continuing forward while head neck and upper torso rotate moderately toward a rear target, gaze accurately aligned and shoulder-pelvis twist remaining anatomically possible; hair and collar respond to the turn, avoiding an overrotated neck blended face and back of head fully reversed shoulders or feet contradicting body direction",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-side-sitting",
+      "category": "pose",
+      "styleGroup": "sitting",
+      "zhName": "侧坐",
+      "enName": "Side Sitting",
+      "image": "/assets/parameters/pose-side-sitting.jpg",
+      "zhPrompt": "侧坐姿势让骨盆稳定落在座面，双腿转向同一侧或前后错开，躯干通过腰背轻微反向调整保持平衡，靠近镜头的肢体遮挡关系清楚；衣物随髋膝弯曲产生褶皱，避免骨盆悬空、双腿融合、膝关节方向错误或坐面穿过身体",
+      "enPrompt": "side-sitting pose with the pelvis grounded on the seat, both legs directed to one side or staggered and the torso counterbalancing subtly through waist and back, with clear near-far limb occlusion; clothing folds around bent hips and knees, avoiding a floating pelvis fused legs misoriented knee joints or the seat intersecting the body",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-spinning",
+      "category": "pose",
+      "styleGroup": "motion",
+      "zhName": "旋转",
+      "enName": "Spinning",
+      "image": "/assets/parameters/pose-spinning.jpg",
+      "zhPrompt": "旋转动作围绕清楚的身体轴线展开，支撑脚或腾空中心提供转动来源，肩、髋、手臂与衣摆沿同一旋向依次滞后，头部可短暂定点保持视线；运动模糊只出现在快速边缘，避免上下身反向无受力、双脚同时固定、裙摆随机炸开或主体整体糊掉",
+      "enPrompt": "spinning pose organized around a clear body axis with a supporting foot or airborne center generating rotation, shoulders hips arms and garments trailing sequentially in one direction and the head optionally spotting a target; motion blur appears only at fast edges, avoiding unsupported opposite torso rotation both feet fixed random skirt explosion or the entire subject blurred away",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-skateboard-pose",
+      "category": "pose",
+      "styleGroup": "action",
+      "zhName": "滑板动作",
+      "enName": "Skateboard Pose",
+      "image": "/assets/parameters/pose-skateboard-pose.jpg",
+      "zhPrompt": "滑板动作让前后脚明确踩在板面与轮轴附近，膝髋弯曲吸收冲击，躯干和手臂围绕运动方向保持动态平衡，板身倾角与轮子接地关系可信；可表现滑行或腾跃但必须有受力逻辑，避免脚底离板却无跳跃、轮子穿地、板体弯折或人物静止摆拍",
+      "enPrompt": "skateboard pose with front and rear feet clearly planted near appropriate deck and truck zones, knees and hips bent to absorb force and torso and arms balancing around travel direction, with credible deck tilt and wheel-ground contact; cruising or airborne action must retain force logic, avoiding feet detached without a jump wheels intersecting ground a bent board or a static fashion pose",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-hugging",
+      "category": "pose",
+      "styleGroup": "interaction",
+      "zhName": "拥抱",
+      "enName": "Hugging",
+      "image": "/assets/parameters/pose-hugging.jpg",
+      "zhPrompt": "拥抱动作让双方胸肩距离、手臂环绕路径和手掌落点符合身高与关系，接触区域产生轻微衣物压缩，头部自然错开避免碰撞；重心可以共享但双脚仍有支撑，避免手臂穿透身体、手掌凭空消失、脸部融合、人物比例变化或只有靠近而没有真实接触",
+      "enPrompt": "hugging interaction with chest and shoulder distance arm paths and hand placement matching height and relationship, slight garment compression at contact and heads naturally offset to avoid collision; weight may be shared while feet remain supported, avoiding arms through bodies disappearing hands fused faces changing scale or figures merely standing close without contact",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-holding-hands",
+      "category": "pose",
+      "styleGroup": "interaction",
+      "zhName": "牵手",
+      "enName": "Holding Hands",
+      "image": "/assets/parameters/pose-holding-hands.jpg",
+      "zhPrompt": "牵手动作让两人的对应手掌或手指在合理高度真实接触，手腕、肘部和肩线沿同一受力链自然延伸，距离与步伐允许手臂放松；明确哪只手相连并保留指间结构，避免多余手指、左右手错接、手掌融合、手臂过长或身体距离与臂长矛盾",
+      "enPrompt": "holding-hands interaction with corresponding palms or fingers meeting at a plausible height, wrists elbows and shoulders forming one relaxed kinetic chain and spacing and stride allowing natural arm length; make the connected hands unambiguous, avoiding extra fingers mismatched left-right hands fused palms elongated arms or body distance contradicting reach",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-back-to-back",
+      "category": "pose",
+      "styleGroup": "interaction",
+      "zhName": "背靠背",
+      "enName": "Back To Back",
+      "image": "/assets/parameters/pose-back-to-back.jpg",
+      "zhPrompt": "背靠背互动让两个人的肩胛或上背在同一接触点承重，身体朝相反方向但脚下各自保持稳定重心，身高差和服装厚度影响接触位置；可通过视线与姿态表达关系，避免背部留出不合理空隙、身体互相穿透、双脚悬空或比例突然变化",
+      "enPrompt": "back-to-back interaction with two people sharing weight at one believable shoulder-blade or upper-back contact point, facing opposite directions while each maintains a stable stance and height and clothing thickness affect the contact level; use gaze and posture to express relationship, avoiding an impossible gap body intersections floating feet or sudden scale changes",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "scene-cozy-bedroom",
+      "category": "scene",
+      "styleGroup": "interior",
+      "zhName": "温馨卧室",
+      "enName": "Cozy Bedroom",
+      "image": "/assets/parameters/scene-cozy-bedroom.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "温馨卧室以床、床头柜、衣柜或书桌建立可使用的动线，床品褶皱、织物、木材和个人小物体现真实生活痕迹，窗光与局部暖灯形成柔和层次；保持空间整洁但不样板化，避免家具互相穿透、床铺比例错误、满屋装饰堆积或统一橙色滤镜",
+      "enPrompt": "cozy bedroom with a usable circulation path organized by bed bedside storage wardrobe or desk, believable bedding folds textiles wood and restrained personal traces, and layered window light with local warm lamps; keep the room tidy but lived in, avoiding intersecting furniture wrong bed scale decorative clutter covering every surface or a uniform orange filter"
+    },
+    {
+      "id": "scene-volcanic-lava-field",
+      "category": "scene",
+      "styleGroup": "nature",
+      "zhName": "火山熔岩地",
+      "enName": "Volcanic Lava Field",
+      "image": "/assets/parameters/scene-volcanic-lava-field.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "火山熔岩地包含冷却形成的黑色绳状或块状熔岩、仍在发红的裂隙、热空气扰动和远处火山地貌，亮度与温度由裂隙向外衰减；地表崎岖且尺度明确，避免整片像橙色河流、人物直接站在熔岩上、无烟热却满屏火焰或岩石重复贴图",
+      "enPrompt": "volcanic lava field combining cooled black ropy or blocky lava with red-hot fissures heat distortion and distant volcanic terrain, brightness and temperature falling away from cracks; keep the ground rugged with readable scale, avoiding an entire orange river people standing directly on molten rock screen-filling flames with no heat or smoke or tiled stone texture"
+    },
+    {
+      "id": "scene-temple-courtyard",
+      "category": "scene",
+      "styleGroup": "culture",
+      "zhName": "古寺庭院",
+      "enName": "Temple Courtyard",
+      "image": "/assets/parameters/scene-temple-courtyard.jpg?v=20260827-scene-crop-fix",
+      "zhPrompt": "古寺庭院以院墙、石阶、廊柱、屋檐和主殿轴线形成清楚层级，柏树、苔痕与磨损石材说明年代和气候，空间安静但保持真实通行尺度；光线服从建筑遮挡，避免混搭不同时代构件、虚构神像、旅游人群堆积、屋檐悬空或庭院比例失真",
+      "enPrompt": "historic temple courtyard structured by enclosing walls stone steps colonnades eaves and a readable hall axis, with cypress moss and worn stone conveying age and climate while circulation remains realistically scaled; light follows architectural occlusion, avoiding mixed-period components invented sacred figures tourist crowds floating roofs or distorted courtyard proportions"
+    },
+    {
+      "id": "scene-thunderstorm-distance",
+      "category": "scene",
+      "styleGroup": "weather",
+      "zhName": "远处雷暴",
+      "enName": "Distant Thunderstorm",
+      "image": "/assets/parameters/scene-thunderstorm-distance.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "远处雷暴让厚重积雨云在地平线上形成清楚云体和雨幕，闪电局限于远方云层内部或云地之间，前景仍处于较稳定环境光中；空气透视与风向连接远近，避免闪电贴脸、每处同时暴雨、云层像黑墙、无地平线尺度或把雷暴误作灾难爆炸",
+      "enPrompt": "distant thunderstorm with a structured cumulonimbus tower and rain shaft on the horizon, lightning confined to the far cloud interior or cloud-to-ground path while the foreground remains under steadier ambient light; aerial perspective and wind connect depth, avoiding foreground lightning rain everywhere at once a flat black cloud wall missing horizon scale or an explosive disaster look"
+    },
+    {
+      "id": "scene-overcast-rooftops",
+      "category": "scene",
+      "styleGroup": "weather",
+      "zhName": "阴天柔光",
+      "enName": "Overcast Soft Light",
+      "image": "/assets/parameters/scene-overcast-rooftops.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "阴天屋顶场景由连续灰白云层提供大面积柔和漫射光，屋瓦、金属顶与远处建筑的反差随距离逐渐降低，潮湿空气可让材质略暗但不必下雨；色温中性偏冷且阴影仍有方向，避免把阴天做成浓雾、天空纯白无层次、全景灰脏或地面出现无来源强硬投影",
+      "enPrompt": "overcast rooftop scene lit by broad diffuse light from layered gray-white cloud cover, with tiled metal and distant roofs losing contrast progressively through moist air while surfaces may darken slightly without active rain; keep a neutral-cool temperature and faint directional shadow, avoiding dense fog a blank white sky muddy global gray or hard shadows with no source"
+    },
+    {
+      "id": "scene-light-drizzle-alley",
+      "category": "scene",
+      "styleGroup": "weather",
+      "zhName": "小巷微雨",
+      "enName": "Light Drizzle Alley",
+      "image": "/assets/parameters/scene-light-drizzle-alley.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "小巷微雨场景以窄巷透视、连续檐口、墙面湿痕和浅薄路面反光建立空间，细雨方向统一，排水沟与零散水滴说明降水正在发生；店面或住宅细节保持克制，避免暴雨水幕、镜面街道、乱码招牌、雨丝穿过屋檐或巷道没有出口",
+      "enPrompt": "light-drizzle alley built from narrow perspective continuous eaves wet wall marks and a thin pavement sheen, with one rain direction plus gutters and scattered droplets confirming active precipitation; keep shop or residential detail restrained, avoiding a torrential curtain mirror-like street gibberish signs rain passing through roofs or an alley with no exit"
+    },
+    {
+      "id": "purpose-album-cover",
+      "category": "purpose",
+      "styleGroup": "cover",
+      "zhName": "专辑封面",
+      "enName": "Album Cover",
+      "image": "/assets/parameters/purpose-album-cover.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "专辑封面以一个能承载音乐气质的主视觉、清楚轮廓和可缩小识别的构图为核心，为艺人名与专辑名预留连续负空间但不直接生成文字；画面适应方形裁切并保持边缘安全，避免普通人像摆拍、装饰堆砌、焦点分散或关键主体被未来排版覆盖",
+      "enPrompt": "album-cover image centered on one visual idea that communicates musical character through a strong silhouette and composition recognizable at small size, reserving continuous negative space for artist and title without generating text; survive square cropping with safe edges, avoiding a generic portrait decorative overload scattered focus or key subject areas blocked by future typography"
+    },
+    {
+      "id": "purpose-profile-avatar",
+      "category": "purpose",
+      "styleGroup": "social",
+      "zhName": "头像裁切",
+      "enName": "Profile Avatar",
+      "image": "/assets/parameters/purpose-profile-avatar.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "头像裁切让面部或核心标志在圆形与方形小尺寸中都保持清楚，主体置于中心安全区，眼睛、发型或识别轮廓不被边缘切断，背景简洁且明度分离；避免全身远景、侧边留白过多、头顶贴边、复杂文字或缩略后五官模糊",
+      "enPrompt": "profile-avatar composition keeping a face or identifying mark clear in both circular and square small crops, placing the subject within a central safe zone so eyes hair and key silhouette survive the edge while the background remains simple and value-separated; avoid distant full-body framing excessive side space a head touching the crop complex text or facial detail disappearing at thumbnail size"
+    },
+    {
+      "id": "purpose-wallpaper",
+      "category": "purpose",
+      "styleGroup": "social",
+      "zhName": "壁纸背景",
+      "enName": "Wallpaper",
+      "image": "/assets/parameters/purpose-wallpaper.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "壁纸背景用途以连续、耐看且不过度抢眼的视觉节奏覆盖完整画幅，依据桌面或手机比例把主要装饰避开图标与文字区域，边缘允许安全裁切；色彩层次稳定且大面积区域不过曝，避免中央密集焦点、可读文字、明显拼接缝、四角杂乱或缩放后纹理过密",
+      "enPrompt": "wallpaper-background image filling the frame with a continuous restrained visual rhythm, placing major accents away from icon and text zones according to desktop or phone ratio and allowing safe edge crops; maintain stable color hierarchy and unclipped broad areas, avoiding a dense central focal point readable text visible seams cluttered corners or texture too fine after scaling"
+    },
+    {
+      "id": "purpose-educational-diagram",
+      "category": "purpose",
+      "styleGroup": "design",
+      "zhName": "教学示意图",
+      "enName": "Educational Diagram",
+      "image": "/assets/parameters/purpose-educational-diagram.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "教学示意图将一个过程、结构或因果关系拆成有限步骤，以一致视角、清楚箭头、颜色编码和充足间距呈现，主体轮廓优先于装饰细节；标签区可留空但不生成乱码，避免步骤顺序矛盾、箭头无起止点、比例误导、图标风格混杂或信息堆叠",
+      "enPrompt": "educational diagram breaking one process structure or causal relationship into a limited sequence with consistent viewpoint clear arrows restrained color coding and ample spacing, prioritizing readable silhouettes over decoration; reserve blank label zones without gibberish, avoiding contradictory order arrows with no origin or destination misleading scale mixed icon styles or information overload"
+    },
+    {
+      "id": "purpose-interior-design-render",
+      "category": "purpose",
+      "styleGroup": "design",
+      "zhName": "室内设计效果图",
+      "enName": "Interior Design Render",
+      "image": "/assets/parameters/purpose-interior-design-render.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "室内设计效果图准确表达墙体、门窗、家具尺度、通行距离和材料连接，垂直线保持稳定，主光与实景灯共同说明时间和功能；画面可精致但不能牺牲可建造性，避免家具穿墙、过宽广角拉伸、无门空间、材质重复、窗外过曝或只追求氛围而看不清布局",
+      "enPrompt": "interior-design visualization accurately communicating walls openings furniture scale circulation clearance and material junctions, with stable verticals and daylight plus practical fixtures explaining time and function; polish must not sacrifice buildability, avoiding furniture through walls extreme wide-angle stretching rooms with no doors tiled materials blown windows or atmosphere that hides the plan"
+    },
+    {
+      "id": "purpose-jewelry-macro",
+      "category": "purpose",
+      "styleGroup": "commercial",
+      "zhName": "珠宝微距",
+      "enName": "Jewelry Macro",
+      "image": "/assets/parameters/purpose-jewelry-macro.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "珠宝微距用途精确呈现金属镶爪、宝石刻面、抛光与磨砂差异，焦点落在主石或关键工艺，浅景深仍保证产品识别轮廓完整；布光控制高光与火彩并清理杂反射，避免宝石塑料化、爪位错乱、反射中出现设备、过度星芒或产品边缘糊掉",
+      "enPrompt": "jewelry macro image resolving prongs metal finish gemstone facets and polished-versus-matte differences, with focus on the hero stone or craft detail while shallow depth preserves the recognizable product silhouette; lighting controls highlights and dispersion while removing stray reflections, avoiding plastic gems misplaced settings visible equipment excessive starbursts or lost product edges"
+    },
+    {
+      "id": "scene-rooftop",
+      "category": "scene",
+      "styleGroup": "city",
+      "zhName": "城市天台",
+      "enName": "City Rooftop",
+      "image": "/assets/parameters/scene-rooftop.png?v=20260827-character-crop-fix",
+      "zhPrompt": "城市天台场景包含女儿墙、设备机组、通风管、出入口和可辨认的楼顶材质，远处天际线与所在建筑高度形成真实视差；人物活动区保留安全落脚面，风与光线符合高处环境，避免没有护栏的随机平台、设备比例失真、城市背景贴图化或边缘无故悬空",
+      "enPrompt": "urban rooftop scene including parapets service units vents access structures and readable roof materials, with distant skyline parallax consistent with the building height; preserve safe walkable areas and high-altitude wind and light cues, avoiding a random platform with no protection incorrectly scaled equipment a pasted city backdrop or unsupported floating edges",
+      "negative": []
+    },
+    {
+      "id": "scene-night-market",
+      "category": "scene",
+      "styleGroup": "culture",
+      "zhName": "夜市街景",
+      "enName": "Night Market",
+      "image": "/assets/parameters/scene-night-market.png?v=20260827-character-crop-fix",
+      "zhPrompt": "夜市街景以连续摊位、遮雨棚、食物蒸汽、局部灯箱和行人动线形成生活密度，暖灯照亮商品与面部，环境暗部保留街道结构和湿润反射；招牌只作色块不生成乱码，避免摊位复制、所有区域同样明亮、人群肢体融合或霓虹取代真实市井光源",
+      "enPrompt": "night-market street organized by continuous stalls awnings food steam local light boxes and pedestrian flow, with warm practicals revealing goods and faces while darker areas retain street structure and selective wet reflection; treat signage as graphic color rather than gibberish, avoiding cloned stalls uniform brightness fused crowd limbs or neon replacing believable market sources",
+      "negative": []
+    },
+    {
+      "id": "purpose-ui-mockup",
+      "category": "purpose",
+      "styleGroup": "design",
+      "zhName": "界面样机",
+      "enName": "UI Mockup",
+      "image": "/assets/parameters/purpose-ui-mockup.png?v=20260827-character-crop-fix",
+      "zhPrompt": "界面样机将设计放入比例正确的屏幕或设备框架，透视、圆角、边框厚度和环境反射一致，界面层级清楚但正文使用不可读占位而非乱码；设备与桌面有真实接触阴影，避免屏幕内容倾斜错位、界面溢出边框、品牌复制、手指穿屏或多个设备争抢焦点",
+      "enPrompt": "UI mockup placing a design inside a correctly proportioned screen or device frame with consistent perspective corner radius bezel thickness and environmental reflection, clear hierarchy but unreadable placeholder copy rather than gibberish; device has believable contact shadow, avoiding skewed content overflow beyond the frame copied brands fingers intersecting screens or multiple devices competing for focus",
+      "negative": []
+    },
+    {
+      "id": "purpose-video-thumbnail",
+      "category": "purpose",
+      "styleGroup": "cover",
+      "zhName": "视频缩略图",
+      "enName": "Video Thumbnail",
+      "image": "/assets/parameters/purpose-video-thumbnail.png?v=20260827-character-crop-fix",
+      "zhPrompt": "视频缩略图以单一强焦点、夸张但真实可读的动作或表情和明确前后景对比吸引点击，同时在平台安全区预留短标题位置但不生成文字；主体在手机小尺寸仍清晰，避免多个同等人物、细节过密、边缘信息被裁、假按钮元素或低俗误导性表情",
+      "enPrompt": "video-thumbnail image using one strong focal point an amplified yet believable action or expression and clear foreground-background contrast, with space inside platform-safe zones for a short headline but no generated text; remain legible on a phone, avoiding multiple equal subjects dense microdetail edge content lost to crops fake interface buttons or misleading grotesque expressions",
+      "negative": []
+    }
+  ]
+}

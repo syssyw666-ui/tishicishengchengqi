@@ -1,0 +1,551 @@
+{
+  "parameters": [
+    {
+      "id": "framing-extreme-wide",
+      "category": "framing",
+      "styleGroup": "shot-size",
+      "zhName": "远景",
+      "enName": "Extreme Wide",
+      "image": "/assets/parameters/framing-extreme-wide.jpg",
+      "zhPrompt": "远景让主体只占画面很小比例，完整交代地貌、建筑或群体所在的大环境，并用前中后景和明确地平线建立尺度；主体仍保留可辨轮廓和落脚关系，避免缩成无意义黑点或被环境完全吞没",
+      "enPrompt": "extreme wide shot keeping the subject small while clearly establishing the surrounding terrain architecture or crowd context, using foreground midground background and a legible horizon to communicate scale; retain a recognizable silhouette and grounded placement instead of reducing the subject to a meaningless speck or losing it entirely"
+    },
+    {
+      "id": "framing-wide",
+      "category": "framing",
+      "styleGroup": "shot-size",
+      "zhName": "全景",
+      "enName": "Wide Shot",
+      "image": "/assets/parameters/framing-wide.jpg",
+      "zhPrompt": "全景完整呈现人物或物体从顶部到落脚点，并保留足够环境说明位置、行动方向和空间关系；主体比例适中、边缘不被切断，避免只剩半身、脚部出框或背景空泛无信息",
+      "enPrompt": "wide full-body shot showing the complete subject from top to point of contact while retaining enough environment to explain location movement direction and spatial relationships; keep a moderate subject scale and intact edges, avoiding accidental half-body framing cropped feet or an empty contextless background"
+    },
+    {
+      "id": "framing-medium",
+      "category": "framing",
+      "styleGroup": "shot-size",
+      "zhName": "中景",
+      "enName": "Medium Shot",
+      "image": "/assets/parameters/framing-medium.jpg",
+      "zhPrompt": "中景通常从腰部或膝部以上取景，使表情、手势与上半身动作同时清楚，并保留少量环境交代情境；裁切位置避开关节，主体与背景层级明确，避免误切手腕膝盖或变成拥挤近景",
+      "enPrompt": "medium shot generally framing from the waist or knees upward so facial expression hand gesture and upper-body action remain readable together with a small amount of situational context; crop between joints and separate subject from background, avoiding cuts through wrists or knees and avoiding an unintentionally crowded close-up"
+    },
+    {
+      "id": "framing-close-up",
+      "category": "framing",
+      "styleGroup": "shot-size",
+      "zhName": "近景",
+      "enName": "Close-Up",
+      "image": "/assets/parameters/framing-close-up.jpg",
+      "zhPrompt": "近景让面部、手部或关键物件占据主要画面，集中展示表情、材质与细节，同时留下少量方向空间；焦点准确落在最重要部位，边缘裁切有意且稳定，避免鼻尖耳朵或功能结构被随意切断",
+      "enPrompt": "close-up framing letting a face hands or key object occupy most of the image to reveal expression material and fine detail while preserving a little directional space; place focus precisely on the essential area and make edge crops deliberate, avoiding arbitrary cuts through the nose ears or functional structure"
+    },
+    {
+      "id": "framing-extreme-close-up",
+      "category": "framing",
+      "styleGroup": "shot-size",
+      "zhName": "特写",
+      "enName": "Extreme Close-Up",
+      "image": "/assets/parameters/framing-extreme-close-up.jpg",
+      "zhPrompt": "极近特写只选取眼睛、嘴唇、指尖、纹理或机械节点等一个关键局部，以极浅景深和精确焦点强调微小变化；构图必须让局部身份仍可判断，避免无依据裁切、焦点漂移或把细节放大成不可识别的抽象噪声",
+      "enPrompt": "extreme close-up isolating one decisive detail such as an eye lips fingertips surface texture or mechanical joint, with precise focus and very shallow depth emphasizing minute variation; preserve enough context to identify the detail, avoiding arbitrary cropping focus drift or magnification into unrecognizable visual noise"
+    },
+    {
+      "id": "framing-panoramic",
+      "category": "framing",
+      "styleGroup": "shot-size",
+      "zhName": "极远景",
+      "enName": "Panoramic",
+      "image": "/assets/parameters/framing-panoramic.jpg",
+      "zhPrompt": "极远景以宽阔横向视野展示大尺度地貌、城市或事件全貌，主体作为空间中的尺度参照而非唯一焦点；通过多层远近、连续地平线和清楚路线组织视线，避免把多个不连续视点硬拼接或产生弯曲断裂建筑",
+      "enPrompt": "panoramic establishing view spanning a broad landscape city or event, with the subject functioning as a scale reference rather than the sole focal point; organize attention through layered distance a continuous horizon and readable routes, avoiding stitched incompatible viewpoints or warped broken architecture"
+    },
+    {
+      "id": "camera-fisheye",
+      "category": "camera",
+      "styleGroup": "lens-effect",
+      "zhName": "鱼眼镜头",
+      "enName": "Fisheye",
+      "image": "/assets/parameters/camera-fisheye.jpg",
+      "zhPrompt": "鱼眼镜头使用接近或超过一百八十度视场，中心区域放大、边缘强烈拉伸，直线向画框外侧弯曲并形成明显桶形透视；主体尽量靠近光轴保持可辨，避免把鱼眼误写成普通超广角或让面部在边缘无控制变形",
+      "enPrompt": "fisheye lens with a near or beyond 180-degree field of view, enlarged center strong peripheral stretching and straight lines bowing toward the frame edge in pronounced barrel projection; keep the main subject near the optical axis for readability, avoiding an ordinary ultra-wide look or uncontrolled facial distortion at the perimeter"
+    },
+    {
+      "id": "camera-top-down",
+      "category": "camera",
+      "styleGroup": "angle",
+      "zhName": "俯拍",
+      "enName": "Top Down",
+      "image": "/assets/parameters/camera-top-down.jpg",
+      "zhPrompt": "垂直俯拍让镜头光轴近似垂直地面，从正上方清楚展示物件分布、人物路线和图形关系；透视压缩、遮挡减少、边缘方向统一，避免混入斜视地平线或让桌面物件出现互相矛盾的投影方向",
+      "enPrompt": "true top-down view with the optical axis nearly perpendicular to the ground, clearly revealing object arrangement movement paths and graphic relationships; compress perspective reduce occlusion and keep edge directions coherent, avoiding a tilted horizon or contradictory projection directions across tabletop objects"
+    },
+    {
+      "id": "camera-low-angle",
+      "category": "camera",
+      "styleGroup": "angle",
+      "zhName": "低机位",
+      "enName": "Low Angle",
+      "image": "/assets/parameters/camera-low-angle.jpg",
+      "zhPrompt": "低机位将相机置于主体视线或腰线以下向上观察，使近处基座、腿部或前景形成透视引导，主体在天空或高处背景前更具体量；垂直线和落脚点保持可信，避免无限拉长肢体或把仰拍等同于广角畸变",
+      "enPrompt": "low-angle camera placed below the subject's eye or waist level and looking upward, using the near base legs or foreground as perspective leads so the subject gains mass against sky or elevated background; preserve credible verticals and contact points, avoiding endlessly stretched limbs or confusing an upward view with arbitrary wide-angle distortion"
+    },
+    {
+      "id": "camera-high-angle",
+      "category": "camera",
+      "styleGroup": "angle",
+      "zhName": "高机位",
+      "enName": "High Angle",
+      "image": "/assets/parameters/camera-high-angle.jpg",
+      "zhPrompt": "高机位从主体视线以上斜向下观察，在保留侧面体积的同时交代人物、家具或道路之间的位置关系；近远尺度按透视自然递减，主体头顶与地面均可读，避免误成完全垂直俯拍或把人物压扁成无体积图标",
+      "enPrompt": "high-angle camera looking diagonally downward from above eye level, preserving side volume while clarifying relationships among people furniture or routes; let scale recede naturally and keep both subject crown and ground readable, avoiding a true vertical overhead view or flattening figures into volume-free icons"
+    },
+    {
+      "id": "camera-aerial",
+      "category": "camera",
+      "styleGroup": "angle",
+      "zhName": "航拍",
+      "enName": "Aerial",
+      "image": "/assets/parameters/camera-aerial.jpg",
+      "zhPrompt": "航拍从高空展示连续地貌、城市纹理、交通路线或群体分布，镜头可轻度倾斜以同时保留地平线和地表纵深；道路、河流与建筑尺度保持一致，天气层次自然，避免卫星贴图般完全扁平或复制粘贴重复楼群",
+      "enPrompt": "aerial view from substantial altitude revealing continuous terrain urban texture transport routes or crowd distribution, optionally with a slight oblique tilt that preserves both horizon and ground depth; maintain consistent scale across roads rivers and buildings with natural atmospheric layering, avoiding a completely flat satellite texture or copy-pasted repeated blocks"
+    },
+    {
+      "id": "camera-centered",
+      "category": "camera",
+      "styleGroup": "composition",
+      "zhName": "中心构图",
+      "enName": "Centered",
+      "image": "/assets/parameters/camera-centered.jpg",
+      "zhPrompt": "中心构图把唯一主视觉稳定放在画面几何中心，周围留白、透视线或环境结构共同向中心汇聚；主体边界完整且重心明确，可非完全对称但不能出现竞争焦点，避免仅机械居中却忽略头顶空间和视觉重量",
+      "enPrompt": "centered composition placing the single primary visual anchor at the geometric center while negative space perspective lines or environmental structure converge toward it; preserve complete boundaries and a clear center of gravity, allowing asymmetry without competing focal points and avoiding mechanical centering that ignores headroom or visual weight"
+    },
+    {
+      "id": "lighting-backlight",
+      "category": "lighting",
+      "styleGroup": "dramatic",
+      "zhName": "逆光",
+      "enName": "Backlight",
+      "image": "/assets/parameters/lighting-backlight.jpg",
+      "zhPrompt": "逆光将主光源放在主体后方，使头发、肩线和透明材质出现连续轮廓光，面向镜头的一侧自然压暗但仍保留必要细节；控制高光溢出和镜头雾化，避免背景整片纯白、主体完全死黑或轮廓光无方向地包围全身",
+      "enPrompt": "backlight placing the key source behind the subject so hair shoulders and translucent materials gain a continuous rim while the camera-facing side falls darker yet retains necessary detail; control highlight bloom and lens haze, avoiding a blank white background a completely crushed silhouette or directionless outline glow around the entire body"
+    },
+    {
+      "id": "lighting-soft",
+      "category": "lighting",
+      "styleGroup": "natural",
+      "zhName": "柔光",
+      "enName": "Soft Light",
+      "image": "/assets/parameters/lighting-soft.jpg",
+      "zhPrompt": "柔光来自大面积窗光、阴天或扩散布，阴影边缘宽而渐变，皮肤与材质保留细节但反差温和；光线方向仍可辨并塑造体积，避免把柔光做成没有明暗关系的扁平补光、塑料磨皮或全局灰雾",
+      "enPrompt": "soft light from a broad window overcast sky or diffusion surface, producing wide graduated shadow edges and gentle contrast while retaining skin and material detail; keep a readable direction that still models volume, avoiding flat fill with no light relationship plastic skin smoothing or a global gray haze"
+    },
+    {
+      "id": "lighting-hard",
+      "category": "lighting",
+      "styleGroup": "dramatic",
+      "zhName": "硬光",
+      "enName": "Hard Light",
+      "image": "/assets/parameters/lighting-hard.jpg",
+      "zhPrompt": "硬光由较小且距离较远的直射光源形成，投影边缘清晰、亮暗分区明确，并以高光和阴影切面强化结构；保持单一可信光向和适度暗部细节，避免多组互相冲突的影子、无依据黑块或全局过曝",
+      "enPrompt": "hard light produced by a relatively small direct source, creating crisp cast-shadow edges decisive light-dark separation and highlights that carve structural planes; maintain one credible direction with controlled shadow detail, avoiding multiple conflicting shadows arbitrary black patches or global clipping"
+    },
+    {
+      "id": "lighting-neon",
+      "category": "lighting",
+      "styleGroup": "sci-fi",
+      "zhName": "霓虹光",
+      "enName": "Neon Light",
+      "image": "/assets/parameters/lighting-neon.jpg",
+      "zhPrompt": "霓虹光由画面内真实管灯、招牌或发光装置提供蓝青与洋红等局部综合色，综合色在皮肤、金属和湿地面上产生方向一致的反射；保留深色中性区分隔综合色，避免整幅无来源紫蓝覆盖、荧光溢出或赛博元素无差别堆叠",
+      "enPrompt": "neon lighting motivated by visible tubes signs or luminous fixtures, casting localized cyan blue and magenta color onto skin metal and wet ground with directionally consistent reflections; retain dark neutral zones between colors, avoiding a source-free purple wash uncontrolled fluorescence or indiscriminate cyber decoration"
+    },
+    {
+      "id": "lighting-low-key",
+      "category": "lighting",
+      "styleGroup": "dramatic",
+      "zhName": "低调光",
+      "enName": "Low Key",
+      "image": "/assets/parameters/lighting-low-key.jpg",
+      "zhPrompt": "低调光让大部分画面处于深色，仅用窄侧光、顶光或实景小光源刻画面部与关键轮廓，黑位深但保留层次；亮部面积小且位置有叙事目的，避免简单压暗曝光、阴影堵死或多个随机亮斑破坏焦点",
+      "enPrompt": "low-key lighting keeping most of the frame dark while a narrow side key top light or small practical source reveals the face and essential contour, with deep but separated blacks; highlights remain limited and narratively placed, avoiding mere underexposure crushed shadow detail or random bright spots that break focus"
+    },
+    {
+      "id": "lighting-high-key",
+      "category": "lighting",
+      "styleGroup": "natural",
+      "zhName": "高调光",
+      "enName": "High Key",
+      "image": "/assets/parameters/lighting-high-key.jpg",
+      "zhPrompt": "高调光以大面积明亮背景和充分柔和补光把综合色集中在中高亮区，阴影很浅但仍保留五官、白色材质和边缘分离；整体通透干净，避免所有白色融成一片、肤色过曝或完全失去体积",
+      "enPrompt": "high-key lighting using a broad bright background and ample soft fill to concentrate tones in the middle and upper range, with shallow shadows that still separate facial features white materials and edges; keep the result airy and clean without merging every pale surface clipping skin or eliminating volume"
+    },
+    {
+      "id": "lighting-fog",
+      "category": "lighting",
+      "styleGroup": "dramatic",
+      "zhName": "体积雾",
+      "enName": "Atmospheric Fog",
+      "image": "/assets/parameters/lighting-fog.jpg",
+      "zhPrompt": "体积雾让空气中的细小水滴随距离逐层降低综合色与对比，近景保持清楚、中景柔化、远景缓慢消失，并在侧逆光下显出有限光路；雾密度服从空间深度，避免均匀白膜覆盖、主体边缘全部糊掉或没有光源却出现光柱",
+      "enPrompt": "atmospheric fog using suspended droplets to reduce saturation and contrast progressively with distance, keeping foreground clear softening midground and letting the background recede while limited light paths appear under side or backlight; density must follow depth, avoiding a uniform white veil erased subject edges or beams with no source"
+    },
+    {
+      "id": "lighting-rainy-night",
+      "category": "lighting",
+      "styleGroup": "natural",
+      "zhName": "雨夜",
+      "enName": "Rainy Night",
+      "image": "/assets/parameters/lighting-rainy-night.jpg",
+      "zhPrompt": "雨夜光线由路灯、窗光或车辆灯照亮真实雨丝、水滴和积水反射，湿表面高光沿地面透视延伸，暗部保持冷静层次；控制综合色来源和反射方向，避免把雨做成白色噪点、路面镜像过强或全画面统一蓝滤镜",
+      "enPrompt": "rainy-night lighting motivated by street lamps windows or vehicle lights that reveal actual rain streaks droplets and puddle reflections, with wet highlights extending along ground perspective and cool layered shadows; control color sources and reflection direction, avoiding rain as white noise mirror-like pavement or a uniform blue filter over the entire scene"
+    },
+    {
+      "id": "style-silverpoint-drawing",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "银尖笔素描",
+      "enName": "Silverpoint Drawing",
+      "image": "/assets/parameters/style-silverpoint-drawing.jpg?v=20261022-style-expansion-s",
+      "zhPrompt": "银尖笔素描在涂有白垩底的浅色纸面上以金属尖端留下极细、不可擦除的冷灰线条，通过密集平行排线缓慢建立综合色与体积；线迹始终克制锐利，随氧化略转暖，保留底层纸面光洁感，避免铅笔黑度、炭粉涂抹或柔软擦笔阴影",
+      "enPrompt": "silverpoint drawing on pale paper prepared with a chalk ground, using an unforgiving metal stylus to leave extremely fine cool-gray lines and slowly build tone through dense parallel hatching; marks stay restrained and precise with a slight warm tarnish over time and the smooth ground remains visible, avoiding graphite darkness charcoal smudge or soft blended shading",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable character",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-sanguine-chalk",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "红粉笔素描",
+      "enName": "Sanguine Chalk Drawing",
+      "image": "/assets/parameters/style-sanguine-chalk.jpg?v=20261022-style-expansion-s",
+      "zhPrompt": "红粉笔素描使用铁氧化物综合色的赭红或砖红粉笔，在暖纸上以侧锋铺综合色、尖端勾结构并用手指轻擦过渡；综合色从淡粉到深棕红保持统一，纸纹穿过透明阴影，适合人体与肖像研究，避免彩色铅笔、多色粉彩或数字棕红滤镜",
+      "enPrompt": "sanguine chalk drawing using iron-oxide red or brick-red chalk on warm paper, laying broad tone with the side of the stick, defining structure with the point and lightly blending selected transitions; keep a unified range from pale blush to deep reddish brown with paper tooth visible through transparent shadows, avoiding colored pencil multicolor pastel or a digital sepia-red filter",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable character",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-conte-crayon",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "孔泰蜡笔素描",
+      "enName": "Conte Crayon Drawing",
+      "image": "/assets/parameters/style-conte-crayon.jpg?v=20261022-style-expansion-s",
+      "zhPrompt": "孔泰蜡笔素描以黑、白、赭红和综合色棕四种硬质方条在中性色纸上塑造形体，硬边线、侧锋块面和白色提亮共同建立综合色；综合色比炭笔更紧实、比粉彩更克制，保留颗粒和方条转角，避免油画棒蜡亮表面、彩虹综合色或完全揉匀",
+      "enPrompt": "Conte crayon drawing using hard square sticks in black white sanguine and brown on mid-tone paper, combining crisp edged lines broad side planes and selective white heightening to model form; texture is denser than charcoal and more restrained than pastel with visible grain and squared turns, avoiding waxy oil-pastel shine rainbow color or fully blended surfaces",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable character",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-chine-colle-print",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "薄纸拼贴凹版画",
+      "enName": "Chine-Colle Intaglio Print",
+      "image": "/assets/parameters/style-chine-colle-print.jpg?v=20261022-style-expansion-s",
+      "zhPrompt": "薄纸拼贴凹版画在压印蚀刻或干刻线条的同时，把一片极薄综合色纸准确粘合到厚棉纸上；薄纸边缘、纤维差异、压版凹痕和线墨共同成为构图，综合色只来自少量纸片而非后期填色，避免普通剪贴画、数字综合色块或边缘浮起的贴纸效果",
+      "enPrompt": "chine-colle intaglio printing bonding a precisely cut sheet of very thin colored paper onto heavier cotton stock during the same press pass that transfers etched or drypoint lines; the tissue edge fiber contrast plate impression and line ink all participate in the composition, with color coming from a few papers rather than later fill, avoiding ordinary collage digital color blocks or raised sticker edges",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable character",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-blind-emboss-relief",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "无墨盲压浮雕",
+      "enName": "Blind-Embossed Paper Relief",
+      "image": "/assets/parameters/style-blind-emboss-relief.jpg?v=20261022-style-expansion-s",
+      "zhPrompt": "无墨盲压浮雕仅靠凹凸模具把图形压入厚实棉纸，不使用油墨或综合色；浅浮雕边缘在低角度侧光下产生细窄高光和阴影，纸纤维受压区域更平滑，图形克制且可触摸，避免白色 3D 塑料、雕塑厚浮雕、灰色印刷轮廓或数字法线贴图",
+      "enPrompt": "blind-embossed paper relief formed solely by pressing a shaped die into heavy cotton stock without ink or color, so shallow raised and recessed edges create narrow highlights and shadows under raking light while compressed fibers become smoother; keep the image restrained and tactile, avoiding white plastic 3D deep sculptural relief printed gray outlines or a digital normal-map look",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable character"
+      ]
+    },
+    {
+      "id": "style-kraft-paper-drawing",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "牛皮纸黑白综合色素描",
+      "enName": "Kraft-Paper Dark-and-White Drawing",
+      "image": "/assets/parameters/style-kraft-paper-drawing.jpg?v=20261022-style-expansion-s",
+      "zhPrompt": "牛皮纸综合色素描把纸张本身作为中间调，用深综合色铅笔、炭精或墨线压暗结构，再用白色粉笔只提取受光边缘和最高光；暖棕纤维始终可见，黑白标记不过度覆盖底色，体积依靠三值关系建立，避免先涂棕色背景、白色满涂或普通单色滤镜",
+      "enPrompt": "kraft-paper drawing treating the brown fibrous sheet itself as the middle value, using dark graphite charcoal pencil or ink to establish structure and reserving white chalk for lit edges and highest highlights; warm fibers remain visible and neither black nor white overwhelms the ground, with volume built through a clear three-value system, avoiding a digitally painted brown background opaque white fill or a generic monochrome filter",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable character"
+      ]
+    },
+    {
+      "id": "style-sand-animation",
+      "category": "style",
+      "styleGroup": "anime",
+      "zhName": "灯台沙画动画",
+      "enName": "Light-Table Sand Animation",
+      "image": "/assets/parameters/style-sand-animation.jpg?v=20261022-style-expansion-s",
+      "zhPrompt": "灯台沙画动画以散沙在均匀背光玻璃上推、撒、刮、扫形成连续综合色，轮廓由颗粒密度而非实线决定，手势移动会留下柔软拖痕和局部露光；画面保持单色透光、可随帧重塑的临时性，避免静态沙雕、海滩写字、数字粒子爆炸或硬边矢量剪影",
+      "enPrompt": "light-table sand animation shaping loose grains by pushing sprinkling scraping and sweeping across evenly backlit glass, with contours defined by particle density rather than solid outlines and hand movement leaving soft trails and exposed light; retain a monochrome translucent and continuously reshapeable frame, avoiding static sand sculpture beach writing digital particle explosions or hard vector silhouettes",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable character"
+      ]
+    },
+    {
+      "id": "style-paint-on-glass-animation",
+      "category": "style",
+      "styleGroup": "anime",
+      "zhName": "玻璃油彩逐帧动画",
+      "enName": "Paint-on-Glass Animation",
+      "image": "/assets/parameters/style-paint-on-glass-animation.jpg?v=20261022-style-expansion-s",
+      "zhPrompt": "玻璃油彩逐帧动画在同一块玻璃上不断擦除和重绘湿性油彩，每一帧保留前一动作的综合色残影、刮痕与柔软综合色混合；轮廓随运动流动，笔触厚薄和透光变化清楚，画面像正在变化的湿画，避免干净赛璐璐边线、固定画布油画或数字运动模糊",
+      "enPrompt": "paint-on-glass animation repeatedly wiping and repainting wet oil color on one glass plate, so each frame preserves chromatic ghosts scrape marks and soft mixing from the previous movement; contours flow with action and changing brush thickness and transmitted light remain visible, producing a living wet painting rather than clean cel outlines a fixed canvas oil painting or digital motion blur",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable character",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-pinscreen-animation",
+      "category": "style",
+      "styleGroup": "anime",
+      "zhName": "针幕浮雕动画",
+      "enName": "Pinscreen Relief Animation",
+      "image": "/assets/parameters/style-pinscreen-animation.jpg?v=20261022-style-expansion-s",
+      "zhPrompt": "针幕浮雕动画通过推动成千上万根可滑动细针形成浅浮雕，再用单向侧光把针尖高度转换为密集点状明暗；形体从黑白颗粒中浮现，边缘柔和抖动并带机械针阵纹理，避免普通半调照片、钉板玩具彩色塑料或平滑 3D 高度图",
+      "enPrompt": "pinscreen relief animation displacing thousands of sliding pins into a shallow relief and using one raking light to translate pin depth into dense stippled light and shadow; forms emerge from monochrome grain with softly vibrating edges and a mechanical pin-array texture, avoiding an ordinary halftone photo colorful pin-toy plastic or a smooth 3D height map",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable character"
+      ]
+    },
+    {
+      "id": "style-silhouette-cutout-animation",
+      "category": "style",
+      "styleGroup": "anime",
+      "zhName": "剪影纸偶动画",
+      "enName": "Silhouette Cutout Animation",
+      "image": "/assets/parameters/style-silhouette-cutout-animation.jpg?v=20261022-style-expansion-s",
+      "zhPrompt": "剪影纸偶动画以侧视黑色剪纸角色、可见铰接点和分件肢体在透亮综合色背景前逐帧运动，动作依靠清楚外轮廓和关节弧线表达；前后景可用多层透明纸形成景深，避免实体皮影彩绘、无关节纯图标、三维角色或复制经典童话剪影",
+      "enPrompt": "silhouette cutout animation using side-view black paper figures with visible pivots and separately jointed limbs moving frame by frame against a luminous colored backdrop, with action communicated through readable outer contour and joint arcs; layered translucent scenery may create depth, avoiding colored leather shadow puppets jointless icons three-dimensional characters or copied classic fairy-tale silhouettes",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable character",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-rotoscope-animation",
+      "category": "style",
+      "styleGroup": "anime",
+      "zhName": "真人转描动画",
+      "enName": "Rotoscope Animation",
+      "image": "/assets/parameters/style-rotoscope-animation.jpg?v=20261022-style-expansion-s",
+      "zhPrompt": "真人转描动画以实拍动作作为时序基础，保留真实步态、重量转移和衣褶节奏，再用稳定手绘轮廓与有限平涂综合色逐帧概括；线条会轻微呼吸但身份连续，避免把单帧照片直接描边、僵硬矢量骨骼、过度写实皮肤或与动作无关的赛璐璐夸张",
+      "enPrompt": "rotoscope animation using filmed performance as the temporal foundation, retaining natural gait weight transfer and fabric rhythm while reducing each frame to stable hand-drawn contours and a limited flat palette; lines may breathe subtly but identity remains continuous, avoiding a single photo with an outline filter rigid vector rigging photoreal skin or cel exaggeration unrelated to the captured motion",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable character",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-pixilation-stop-motion",
+      "category": "style",
+      "styleGroup": "anime",
+      "zhName": "真人逐格定格",
+      "enName": "Pixilation Stop-Motion",
+      "image": "/assets/parameters/style-pixilation-stop-motion.jpg?v=20261022-style-expansion-s",
+      "zhPrompt": "真人逐格定格把真实演员当作可摆拍对象，每次微调姿势、道具与位置后拍摄一帧，形成有意跳步、悬停和不连续位移；现场光与真实材质保持摄影质感，动作节奏带机械幽默，避免普通连拍定格、数字删帧、黏土角色或无落脚点的随意漂浮",
+      "enPrompt": "pixilation stop-motion treating a live actor as a poseable frame-by-frame subject, adjusting posture props and position between exposures to create deliberate stepped motion hovering and discontinuous travel; preserve photographic location light and real materials with a mechanically playful rhythm, avoiding a simple freeze frame digitally dropped frames clay characters or arbitrary floating without staged support",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable character"
+      ]
+    },
+    {
+      "id": "style-whiteboard-explainer",
+      "category": "style",
+      "styleGroup": "design-retro",
+      "zhName": "白板讲解插画",
+      "enName": "Whiteboard Explainer Illustration",
+      "image": "/assets/parameters/style-whiteboard-explainer.jpg?v=20261022-style-expansion-s",
+      "zhPrompt": "白板讲解插画用粗细一致的黑色记号笔画出少量人物、物件与箭头关系，关键概念只用两三种综合色强调，图形按讲解顺序逐步展开；板面保留轻微擦痕和手绘不齐但信息层级清楚，避免复杂信息图、满版文字、精细商业矢量或黑板粉笔质感",
+      "enPrompt": "whiteboard explainer illustration using consistent black marker lines for a small set of figures objects and directional relationships, with only two or three accent colors and a sequence that appears progressively drawn; retain faint erasure residue and hand irregularity while keeping hierarchy clear, avoiding dense infographics text-filled layouts polished commercial vectors or chalkboard texture",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable character"
+      ]
+    },
+    {
+      "id": "style-dry-erase-glass-board",
+      "category": "style",
+      "styleGroup": "design-retro",
+      "zhName": "透明玻璃板标记图",
+      "enName": "Dry-Erase Glass-Board Diagram",
+      "image": "/assets/parameters/style-dry-erase-glass-board.jpg?v=20261022-style-expansion-s",
+      "zhPrompt": "透明玻璃板标记图以高饱和荧光笔在透明板面绘制框线、箭头和简化图标，背后人物与空间透过线条可见，综合色笔迹在玻璃上有轻微反射和擦除残影；线图与真实空间对齐，避免悬浮全息界面、霓虹灯管、可读密集文字或把人物完全遮住",
+      "enPrompt": "dry-erase glass-board diagram drawn in saturated fluorescent marker boxes arrows and simplified icons on a transparent pane, with the person and room visible through the marks and subtle reflections and erased residue on the glass; align the drawing to real space, avoiding a floating holographic interface neon tubing dense readable text or strokes that completely obscure the person",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable character"
+      ]
+    },
+    {
+      "id": "style-ux-wireframe-sketch",
+      "category": "style",
+      "styleGroup": "design-retro",
+      "zhName": "UX线框草图",
+      "enName": "UX Wireframe Sketch",
+      "image": "/assets/parameters/style-ux-wireframe-sketch.jpg?v=20261022-style-expansion-s",
+      "zhPrompt": "UX 线框草图用铅笔或灰色细笔把界面拆成页眉、导航、综合色占位框、按钮和内容层级，交互关系通过少量连线与状态变化表达；所有元素保持低保真、网格清楚且可修改，不生成真实品牌界面、精美成品视觉、可读长文或无逻辑装饰组件",
+      "enPrompt": "UX wireframe sketch decomposing an interface into header navigation image placeholders buttons and content hierarchy with pencil or fine gray pen, showing interaction through a few connectors and state variants; keep every element low fidelity gridded and revisable, without reproducing a real branded product polished final UI readable long copy or decorative components with no functional logic",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable character"
+      ]
+    },
+    {
+      "id": "style-sticky-note-doodle",
+      "category": "style",
+      "styleGroup": "design-retro",
+      "zhName": "便利贴涂鸦策划墙",
+      "enName": "Sticky-Note Doodle Planning Wall",
+      "image": "/assets/parameters/style-sticky-note-doodle.jpg?v=20261022-style-expansion-s",
+      "zhPrompt": "便利贴涂鸦策划墙由少量综合色方形纸片、粗记号笔图标、箭头和分组关系构成，纸片轻微翘角并投下真实浅影，排列像正在整理的思路而非完成海报；控制数量与综合色分区，避免密集可读文字、完美数字网格、无意义满墙贴纸或企业流程图模板",
+      "enPrompt": "sticky-note doodle planning wall built from a limited set of colored square papers simple marker icons arrows and grouped relationships, with lightly curled corners and real shallow shadows so the arrangement feels actively organized rather than finished; control note count and color zones, avoiding dense readable writing a perfect digital grid meaningless wall-to-wall notes or a corporate flowchart template",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable character"
+      ]
+    },
+    {
+      "id": "style-rough-animatic-pencil",
+      "category": "style",
+      "styleGroup": "anime",
+      "zhName": "粗略动态分镜铅笔稿",
+      "enName": "Rough Animatic Pencil Frame",
+      "image": "/assets/parameters/style-rough-animatic-pencil.jpg?v=20261022-style-expansion-s",
+      "zhPrompt": "粗略动态分镜铅笔稿保留构造线、重复动作轮廓、运动弧线和画框边界，以深浅不同的石墨快速说明姿势、镜头方向和节奏；只有关键表情与受力点稍作明确，其余区域允许未完成，避免精修漫画线稿、综合色成片、单纯静态素描或无法判断动作方向的杂线",
+      "enPrompt": "rough animatic pencil frame retaining construction lines repeated action silhouettes motion arcs and frame boundaries, using varied graphite pressure to communicate pose camera direction and timing quickly; only key expressions and force points receive clarification while other areas remain unfinished, avoiding polished comic inks colored final animation a purely static drawing or random lines that obscure motion direction",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable character"
+      ]
+    },
+    {
+      "id": "style-studyblr-notes",
+      "category": "style",
+      "styleGroup": "design-retro",
+      "zhName": "学习手账笔记美学",
+      "enName": "Study-Notes Journal Aesthetic",
+      "image": "/assets/parameters/style-studyblr-notes.jpg?v=20261022-style-expansion-s",
+      "zhPrompt": "学习手账笔记美学在暖白方格或点阵纸上组合整齐层级、少量柔和荧光笔、简洁图示、边栏小素描和留白，综合色按主题分区而非随意装饰；纸笔痕迹真实、信息密度适中，避免生成可读长文、过度贴纸拼贴、商业模板或荧光综合色覆盖整页",
+      "enPrompt": "study-notes journal aesthetic on warm white grid or dot paper, combining tidy hierarchy restrained pastel highlighting simple diagrams margin sketches and deliberate whitespace with color assigned by topic rather than decoration; keep physical pen-and-paper traces and moderate density, avoiding readable long prose excessive sticker collage commercial templates or fluorescent color covering the entire page",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable character"
+      ]
+    },
+    {
+      "id": "style-ms-paint-doodle",
+      "category": "style",
+      "styleGroup": "design-retro",
+      "zhName": "早期位图画板涂鸦",
+      "enName": "Early Bitmap Paint Doodle",
+      "image": "/assets/parameters/style-ms-paint-doodle.jpg?v=20261022-style-expansion-s",
+      "zhPrompt": "早期位图画板涂鸦使用低分辨率铅笔线、锯齿曲线、纯色油漆桶填充和有限基础综合色，边缘保留逐像素修补与偶发漏填；构图稚拙直接但主体可读，避免现代像素游戏精灵、矢量抗锯齿、渐变笔刷、界面截图或仿真纸张纹理",
+      "enPrompt": "early bitmap paint-program doodle using low-resolution pencil lines jagged curves solid bucket fills and a limited basic palette, with pixel-by-pixel repairs and occasional small fill gaps at edges; keep the composition clumsy direct yet readable, avoiding polished game sprites vector antialiasing gradient brushes software-interface screenshots or simulated paper texture",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable character"
+      ]
+    },
+    {
+      "id": "style-storyboard-marker-sketch",
+      "category": "style",
+      "styleGroup": "design-retro",
+      "zhName": "马克笔电影分镜草图",
+      "enName": "Storyboard Marker Sketch",
+      "image": "/assets/parameters/style-storyboard-marker-sketch.jpg?v=20261022-style-expansion-s",
+      "zhPrompt": "马克笔电影分镜草图以灰阶宽头笔快速铺出前中后景、综合色明暗和人物站位，再用黑色细笔强化镜头边框、视线和运动箭头；笔触概括、画面关系优先于细节，避免完成度过高的概念艺术、可读剧本文字、全彩插画或相互矛盾的镜头方向",
+      "enPrompt": "storyboard marker sketch using broad gray markers to block foreground middle distance background tonal masses and character placement, then a fine black pen to clarify frame edge eyeline and motion arrows; prioritize shot relationships over detail, avoiding highly finished concept art readable script text full-color illustration or contradictory camera directions",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable character"
+      ]
+    }
+  ]
+}

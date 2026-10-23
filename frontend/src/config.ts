@@ -122,6 +122,7 @@ export const groupNameEn: Record<string, string> = {
   "camera-angle": "Camera Angle", motion: "Motion", natural: "Natural", interior: "Interior", dramatic: "Dramatic", realism: "Realism",
   stylized: "Stylized", elemental: "Elemental", atmosphere: "Atmosphere", social: "Social", design: "Design", cover: "Cover",
   commercial: "Commercial", photography: "Photography", industrial: "Industrial", translucent: "Translucent",
+  stone: "Wood / Stone / Ceramic / Jade", palette: "Basic Color Relationships",
 };
 
 export const uiText = {

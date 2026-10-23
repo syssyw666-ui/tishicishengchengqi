@@ -1,0 +1,250 @@
+{
+  "parameters": [
+    {
+      "id": "purpose-book-cover",
+      "category": "purpose",
+      "styleGroup": "cover",
+      "zhName": "书籍封面",
+      "enName": "Book Cover",
+      "image": "/assets/parameters/purpose-book-cover.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "书籍封面主视觉依据开本比例安排单一清楚焦点，并为书名、作者名、系列标识和书脊裁切保留连续安全区，缩略图尺寸仍能辨认题材与主色，四周出血允许适度裁切；图像本身不生成文字，避免主体贴边、细节密度均匀、标题区被高反差元素占据或正反封无法延展",
+      "enPrompt": "book-cover key visual composed for a defined trim ratio with one clear focal idea and continuous safe areas for title author series mark and spine crop, remaining recognizable at thumbnail size while bleed permits moderate edge trimming and subject color communicates genre; generate no text in the image, avoiding edge-hugging subjects uniform detail density high-contrast clutter in the title zone or imagery that cannot extend across a full cover"
+    },
+    {
+      "id": "purpose-movie-poster",
+      "category": "purpose",
+      "styleGroup": "cover",
+      "zhName": "电影海报",
+      "enName": "Movie Poster",
+      "image": "/assets/parameters/purpose-movie-poster.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "电影海报主视觉用一个核心人物、冲突或象征建立类型与叙事层级，面部、动作和环境尺度清楚，并为片名、演职员表与发行信息预留不干扰主体的区域，竖版裁切后仍有强轮廓；不生成文字或品牌，避免角色头像堆叠、所有元素同大、无故事光线、标题压脸或过度模仿现有电影海报",
+      "enPrompt": "movie-poster key art using one central character conflict or symbol to establish genre and narrative hierarchy, with readable face action and environmental scale plus zones for title credits and release information that do not interfere with the subject and a strong silhouette after vertical cropping; generate no text or brands, avoiding stacked floating heads every element equally large storyless lighting typography over faces or imitation of an existing film poster"
+    },
+    {
+      "id": "purpose-game-splash-art",
+      "category": "purpose",
+      "styleGroup": "cover",
+      "zhName": "游戏启动图",
+      "enName": "Game Splash Art",
+      "image": "/assets/parameters/purpose-game-splash-art.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "游戏启动图以主角或主要事件为唯一第一焦点，通过动作方向、环境地标和前中后景引导玩家进入世界观，同时为启动按钮、加载状态或 Logo 安全区留出低干扰空间但不生成界面文字；横竖适配时核心轮廓不能被裁，避免多人等权站队、特效遮脸、界面元素伪造或复制现成游戏角色",
+      "enPrompt": "game splash art centered on one hero or primary event, using action direction environmental landmarks and foreground-middle-background depth to introduce the world while reserving a low-interference safe area for start control loading state or logo without generating interface text; preserve the core silhouette across wide and vertical crops, avoiding equal-weight character lineups effects hiding faces fake UI elements or copied existing game characters"
+    },
+    {
+      "id": "purpose-social-thumbnail",
+      "category": "purpose",
+      "styleGroup": "social",
+      "zhName": "社媒缩略图",
+      "enName": "Social Thumbnail",
+      "image": "/assets/parameters/purpose-social-thumbnail.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "社媒缩略图以手机小尺寸可辨的单一主体、清楚表情或动作和强烈明暗分离建立点击焦点，主体置于平台裁切安全区并为短标题预留连续低细节色块但不生成文字，边缘允许不同画幅裁切；避免多人物争抢、细节过密、虚假按钮、主体贴边、背景与脸同明度或夸张失真的诱导表情",
+      "enPrompt": "social-media thumbnail using one subject legible at phone size a clear expression or action and strong value separation to create a click focal point, placing the subject within platform crop-safe zones and reserving one continuous low-detail color area for a short headline without generating text while edges tolerate ratio changes; avoid competing figures dense microdetail fake buttons edge-bound subjects face and background at the same value or distorted clickbait expressions"
+    },
+    {
+      "id": "purpose-isometric-map",
+      "category": "purpose",
+      "styleGroup": "design",
+      "zhName": "等距地图",
+      "enName": "Isometric Map",
+      "image": "/assets/parameters/purpose-isometric-map.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "等距地图以统一轴测角度、无透视缩短的模块化地块、道路、水体和建筑建立可导航空间，地标通过色彩、体量和位置区分但保持同一尺度系统，路径连接连续并留出图例或标签区但不生成文字；避免混入鸟瞰透视、道路断头、建筑比例随机、阴影方向不一、重复模块或装饰遮住路线",
+      "enPrompt": "isometric map using one consistent axonometric angle and modular terrain roads water and buildings without perspective convergence to create a navigable space, with landmarks distinguished by color mass and position within one scale system and paths connecting continuously while room remains for legend or labels without generated text; avoid perspective aerial views dead-end roads random building scale conflicting shadows repeated modules or decoration obscuring routes"
+    },
+    {
+      "id": "purpose-food-photography",
+      "category": "purpose",
+      "styleGroup": "commercial",
+      "zhName": "美食摄影",
+      "enName": "Food Photography",
+      "image": "/assets/parameters/purpose-food-photography.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "美食摄影以菜品温度、湿润度、脆度或细腻度等可感质地为核心，摆盘结构清楚且食材形态真实，主光、补光和彩色反射控制油亮与蒸汽，餐具和桌面只辅助叙事；保持可食用色彩与份量，避免塑料食物、过度饱和、无来源蒸汽、油光覆盖全部表面、餐具穿过食物或堆料失去主次",
+      "enPrompt": "food photography centered on tactile cues of temperature moisture crispness or delicacy, with readable plating and truthful ingredient form while key fill and colored reflection control sheen and steam and tableware supports rather than competes; preserve appetizing natural color and believable portion size, avoiding plastic food oversaturation source-free steam oil coating every surface utensils intersecting food or piled ingredients with no hierarchy"
+    },
+    {
+      "id": "purpose-collectible-toy-render",
+      "category": "purpose",
+      "styleGroup": "commercial",
+      "zhName": "潮玩手办渲染",
+      "enName": "Collectible Toy Render",
+      "image": "/assets/parameters/purpose-collectible-toy-render.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "潮玩手办渲染以完整可生产造型、稳定底座或站立受力和可辨材质分件为核心，头身比例、关节、涂装边界与配件连接在不同角度保持一致，影棚光展示轮廓并保留接触阴影；背景简洁且无品牌文字，避免角色悬浮、树脂像皮肤、接缝消失、配件穿模、比例漂移或复制知名 IP",
+      "enPrompt": "collectible-toy render centered on a complete manufacturable form stable base or grounded stance and readable material part separation, with head-body proportion joints paint boundaries and accessory connections remaining consistent across the visible design while studio light reveals silhouette and contact shadow; keep the background clean with no brands or text, avoiding floating figures resin rendered as skin vanished seams intersecting accessories drifting proportions or copied famous IP"
+    },
+    {
+      "id": "material-iridescent",
+      "category": "color-material",
+      "styleGroup": "translucent",
+      "zhName": "虹彩珠光",
+      "enName": "Iridescent",
+      "image": "/assets/parameters/material-iridescent.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "虹彩珠光材质通过薄膜干涉在曲面和掠射角产生随视角缓慢变化的粉、青、紫或金色偏光，基底颜色仍可辨，亮部呈柔和珍珠光而非金属镜面，阴影保留材质体积；避免整物彩虹条纹、荧光渐变贴图、无视角变化、色彩发脏、过曝白边或与镭射衍射箔混同",
+      "enPrompt": "iridescent pearlescent material using thin-film interference to shift gradually among pink cyan violet or gold over curvature and grazing angles while the base color remains visible, highlights stay softly nacreous rather than mirror-metallic and shadows retain volume; avoid rainbow stripes across the whole object fluorescent gradient textures no view dependence muddy color clipped white edges or confusion with diffractive holographic foil"
+    },
+    {
+      "id": "material-holographic-foil",
+      "category": "color-material",
+      "styleGroup": "translucent",
+      "zhName": "镭射箔膜",
+      "enName": "Holographic Foil Material",
+      "image": "/assets/parameters/material-holographic-foil.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "镭射箔膜材质由薄金属化基底和细密衍射光栅构成，强点光源下出现方向明确的光谱条带或碎片，高光随视角快速移动，未受光区域保持银灰或彩色基底；表面可有轻微折痕但仍薄而贴合，避免柔和珠光、满屏彩虹、厚塑料体积、无光源发亮或衍射纹跨越不同面不转向",
+      "enPrompt": "holographic foil material built from a thin metallized base and fine diffraction grating, producing directional spectral bands or fragments under a strong point source with highlights moving rapidly by view angle while unlit areas remain silver-gray or retain a colored base; allow restrained creasing while staying thin and conformal, avoiding soft pearlescence rainbow everywhere thick plastic volume source-free glow or diffraction continuing unchanged across differently oriented faces"
+    },
+    {
+      "id": "material-velvet",
+      "category": "color-material",
+      "styleGroup": "fabric",
+      "zhName": "丝绒",
+      "enName": "Velvet",
+      "image": "/assets/parameters/material-velvet.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "丝绒材质由密集短绒形成随触摸和方向改变的深浅色块，正面吸光、掠射处出现柔和窄高光，折叠时绒向和压痕连续覆盖服装或物体曲面，暗部仍有层次；适用于主体材质而非背景布景，避免缎面镜光、毛皮长毛、塑料黑、全表面同亮或绒向在相邻区域随机翻转",
+      "enPrompt": "velvet material formed by dense short pile whose direction creates shifting dark and light patches, absorbing frontal light and revealing a soft narrow sheen at grazing angles while nap and pressure marks follow folds and object curvature with layered shadows; use as a subject material rather than a backdrop instruction, avoiding satin mirror shine long fur plastic black uniform brightness or pile direction changing randomly across adjacent areas"
+    },
+    {
+      "id": "material-marble",
+      "category": "color-material",
+      "styleGroup": "stone",
+      "zhName": "大理石",
+      "enName": "Marble",
+      "image": "/assets/parameters/material-marble.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "大理石材质具有晶体质感石基、连续矿脉和深浅不同的内部层次，切割后的不同面共享同一块石料逻辑但纹脉方向随面转折，抛光面产生柔和环境反射，断面更哑光；明确重量和边缘厚度，避免随机闪电纹、塑料白、纹理平铺重复、每个面使用不同石种或薄得像纸",
+      "enPrompt": "marble material with a crystalline stone body continuous mineral veining and internal tonal depth, where different cut faces remain logically from one block while veins change orientation across edges, polished faces give soft environmental reflection and broken faces are more matte; communicate weight and edge thickness, avoiding random lightning veins white plastic tiled repetition a different stone on every face or paper-thin slabs"
+    },
+    {
+      "id": "material-concrete",
+      "category": "color-material",
+      "styleGroup": "industrial",
+      "zhName": "清水混凝土",
+      "enName": "Raw Concrete",
+      "image": "/assets/parameters/material-concrete.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "清水混凝土材质由水泥浆、细骨料、微小气孔和真实模板痕迹构成，中性灰色调有轻微不均，边缘厚重、断面颗粒更粗，表面哑光且只在潮湿处略深；用于主体或建筑构件时强调重量和浇筑逻辑，避免泡沫板、均匀噪点、石材裂纹、满面水渍或每个孔洞完全相同",
+      "enPrompt": "architectural concrete material made from cement paste fine aggregate small air pores and plausible formwork traces, with slightly uneven neutral gray color heavy edges coarser broken sections and a matte surface darkening only where damp; when applied to objects or structure communicate mass and casting logic, avoiding foam board uniform noise natural-stone cracks water stains everywhere or identical repeated pores"
+    },
+    {
+      "id": "material-matte-rubber",
+      "category": "color-material",
+      "styleGroup": "industrial",
+      "zhName": "哑光软触橡胶",
+      "enName": "Matte Soft-Touch Rubber",
+      "image": "/assets/parameters/material-matte-rubber.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "哑光软触橡胶材质用于握柄、保护壳或包胶表面，细微均匀颗粒打散高光，边缘圆润、触感柔和但形体保持稳定，受压处仅有轻微形变并迅速回弹，接缝和包胶边界清楚；避免轮胎胎纹、湿亮乳胶、绒面粉末、塑料硬壳、指纹油污过多或整件物体像融化",
+      "enPrompt": "matte soft-touch rubber material for grips protective housings or overmolded surfaces, using fine even microtexture to diffuse highlights with rounded edges and a soft tactile impression while form remains stable and compression deforms only slightly before recovery and overmold boundaries stay clear; avoid tire tread wet latex suede powder hard plastic excessive oily fingerprints or an object that appears melted"
+    },
+    {
+      "id": "material-pearl-nacre",
+      "category": "color-material",
+      "styleGroup": "stone",
+      "zhName": "珍珠母贝",
+      "enName": "Pearl Nacre",
+      "image": "/assets/parameters/material-pearl-nacre.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "珍珠母贝材质由层状文石结构产生乳白基底、细腻虹彩和随曲率移动的柔光，内部可见云状或生长层纹理但不透明如玻璃，切片边缘显示薄层厚度和自然不规则；避免塑料珠光漆、彩虹饱和条纹、金属镜面、完全透明、所有区域同一纹理或把母贝误画成圆形珍珠串",
+      "enPrompt": "mother-of-pearl nacre material using layered aragonite structure to create a milky base fine iridescence and soft moving luster across curvature, with cloudy growth layers inside yet remaining opaque rather than glass and cut edges revealing thin natural lamination and irregularity; avoid pearlescent plastic paint saturated rainbow stripes metallic mirror transparency identical texture everywhere or turning nacre into a string of round pearls"
+    },
+    {
+      "id": "material-jade",
+      "category": "color-material",
+      "styleGroup": "stone",
+      "zhName": "玉石",
+      "enName": "Jade",
+      "image": "/assets/parameters/material-jade.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "玉石材质呈半透明至微透的致密矿物体，颜色在白、青、绿或暖黄之间有细微云絮、色根和内部漫散射，抛光面高光清晰但不玻璃化，厚处更深、薄边透光；雕刻边缘圆润且有重量，避免塑料荧光绿、满布裂纹、完全透明、玻璃焦散、金属反射或把不同玉种特征随机混合",
+      "enPrompt": "jade material appearing as a dense translucent-to-subtranslucent mineral body in white celadon green or related hues with restrained cloudy inclusions color roots and internal scattering, a polished highlight that remains softer than glass and deeper color in thick sections with luminous thin edges; carving edges feel rounded and weighty, avoiding fluorescent green plastic cracks everywhere full transparency glass caustics metallic reflection or random mixing of unrelated jade varieties"
+    },
+    {
+      "id": "material-brushed-metal",
+      "category": "color-material",
+      "styleGroup": "industrial",
+      "zhName": "拉丝金属",
+      "enName": "Brushed Metal",
+      "image": "/assets/parameters/material-brushed-metal.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "拉丝金属材质具有沿加工方向连续的细纹和各向异性高光，高光被拉成长带并随物体曲率转向，底色与反射符合不锈钢、铝或有色合金种类，切边、倒角和接缝保留真实厚度；避免随机交叉刮痕、镜面铬、灰色塑料、纹理跨面不转折、所有零件同一拉丝方向或边缘无高光",
+      "enPrompt": "brushed metal material with continuous machining grain and anisotropic highlights stretched along the brushing direction and turning with object curvature, while base tone and reflection fit a chosen metal such as stainless steel aluminum or tinted alloy and cut edges bevels and joints retain real thickness; avoid random cross scratches mirror chrome gray plastic grain ignoring face orientation every part brushed identically or edges without highlights"
+    },
+    {
+      "id": "material-frosted-glass",
+      "category": "color-material",
+      "styleGroup": "translucent",
+      "zhName": "磨砂玻璃",
+      "enName": "Frosted Glass Material",
+      "image": "/assets/parameters/material-frosted-glass.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "磨砂玻璃材质通过喷砂或酸蚀形成均匀微粗糙表面，透光但将后方物体扩散成柔和轮廓，边缘和未磨砂切面仍显示玻璃厚度、折射与窄高光，指纹或接触痕迹克制可见；避免乳白塑料、完全不透明、普通透明玻璃、噪点贴图、内部发光或背景轮廓清晰得像未处理玻璃",
+      "enPrompt": "frosted glass material using sandblasted or acid-etched micro-roughness to transmit light while diffusing objects behind into soft shapes, with edges and untreated cut faces still revealing glass thickness refraction and narrow highlights plus restrained fingerprints or contact traces; avoid milky plastic complete opacity ordinary clear glass a noise texture internal glow or background details remaining as sharp as untreated glass"
+    },
+    {
+      "id": "material-translucent-resin",
+      "category": "color-material",
+      "styleGroup": "translucent",
+      "zhName": "透明树脂",
+      "enName": "Translucent Resin",
+      "image": "/assets/parameters/material-translucent-resin.jpg?v=20260827-purpose-crop-fix",
+      "zhPrompt": "透明树脂材质具有浇注形成的实体厚度、圆润边缘和较玻璃更柔和的折射，内部可包含少量气泡、着色层或嵌入物但分布受工艺控制，抛光面高光连续并在厚处增强吸收；避免水状无定形、玻璃般锐利焦散、廉价塑料浑浊、气泡均匀铺满、嵌入物穿出表面或主体没有接触阴影",
+      "enPrompt": "translucent cast-resin material with solid poured thickness rounded edges and softer refraction than glass, optionally containing limited bubbles colored layers or inclusions distributed by a believable process, with continuous polished highlights and stronger absorption through thick sections; avoid shapeless water sharp glass caustics cheap cloudy plastic uniformly spread bubbles inclusions protruding through the surface or an object with no contact shadow"
+    },
+    {
+      "id": "purpose-exhibition-display",
+      "category": "purpose",
+      "styleGroup": "design",
+      "zhName": "展览陈列图",
+      "enName": "Exhibition Display",
+      "image": "/assets/parameters/purpose-exhibition-display.jpg",
+      "zhPrompt": "展览陈列图同时说明展墙、展柜、作品、灯光、参观动线和人与空间尺度，主入口、焦点展项与休息或转折区域层级清楚，材质和安全距离符合真实布展，画面可采用透视或轴测但必须一致；标签区留空不生成乱码，避免作品贴满墙、灯光无灯具、观众堵塞通道或展柜穿墙",
+      "enPrompt": "exhibition-display visualization communicating walls cases artworks lighting visitor circulation and human scale together, with a clear entrance focal exhibit and rest or transition zones plus buildable materials and safety clearances in one consistent perspective or axonometric system; reserve blank label areas without gibberish, avoiding every wall crowded with works lighting without fixtures visitors blocking paths or cases intersecting architecture",
+      "negative": []
+    },
+    {
+      "id": "purpose-sticker-sheet",
+      "category": "purpose",
+      "styleGroup": "social",
+      "zhName": "贴纸套组",
+      "enName": "Sticker Sheet",
+      "image": "/assets/parameters/purpose-sticker-sheet.png?v=20260827-character-crop-fix",
+      "zhPrompt": "贴纸套组在统一主题、线条粗细和色彩体系下提供若干彼此独立的图形，每枚贴纸有完整轮廓、适度白边或切割边界和足够间距，可单独裁切且不相互遮挡，大小有主次但视觉语言一致；背景保持简洁，不生成文字，避免元素粘连、白边宽度随机、重复同一图形、细节过密或把整张做成一幅连续插画",
+      "enPrompt": "sticker sheet presenting several independent graphics within one theme line weight and color system, each with a complete silhouette controlled white or die-cut border and enough spacing for separate cutting, with varied scale hierarchy but one visual language; keep the background clean and generate no text, avoiding merged elements random border widths repeated identical graphics excessive detail or turning the sheet into one continuous illustration",
+      "negative": []
+    },
+    {
+      "id": "purpose-packaging-render",
+      "category": "purpose",
+      "styleGroup": "commercial",
+      "zhName": "包装展示",
+      "enName": "Packaging Render",
+      "image": "/assets/parameters/purpose-packaging-render.png?v=20260827-character-crop-fix",
+      "zhPrompt": "包装展示渲染准确呈现盒、袋、瓶或罐的结构比例、折线、封口、标签区域和材质连接，正面与侧面透视一致，印刷区可保留干净占位但不生成乱码，产品在台面上有真实接触阴影并可展示一到两个辅助角度；避免包装悬浮、封口不可能、图案跨折线错位、标签弯曲错误或品牌复制",
+      "enPrompt": "packaging presentation render accurately showing the structural proportion folds closure label area and material junctions of a box pouch bottle or jar, with coherent front-side perspective clean placeholder print zones without gibberish and a real contact shadow on the surface plus at most one or two supporting views; avoid floating packs impossible closures artwork misregistered across folds incorrectly warped labels or copied branding",
+      "negative": []
+    },
+    {
+      "id": "material-rubber",
+      "category": "color-material",
+      "styleGroup": "industrial",
+      "zhName": "弹性橡胶",
+      "enName": "Elastic Rubber",
+      "image": "/assets/parameters/material-rubber.png?v=20260827-character-crop-fix",
+      "zhPrompt": "弹性橡胶材质用于轮胎、密封圈、软管或功能部件，具有可压缩回弹、弯曲处外侧拉伸内侧起皱和略带抓地力的表面，黑色或有色配方保留低至中等高光，模压接缝和胎纹只在功能需要处出现；避免软触涂层感、硬塑料、液态融化、无受力变形或所有橡胶都自动生成轮胎花纹",
+      "enPrompt": "elastic rubber material for tires seals hoses or functional components, showing compressive recovery outer-surface stretch and inner wrinkling at bends plus a mildly grippy surface with low-to-medium highlights in black or a colored compound and molding seams or tread only where function requires; avoid soft-touch coating character hard plastic liquid melting deformation without force or tire patterns appearing on every rubber object",
+      "negative": []
+    },
+    {
+      "id": "material-acrylic",
+      "category": "color-material",
+      "styleGroup": "translucent",
+      "zhName": "亚克力",
+      "enName": "Acrylic",
+      "image": "/assets/parameters/material-acrylic.png?v=20260827-character-crop-fix",
+      "zhPrompt": "亚克力材质由切割或浇注聚合物形成清楚板厚、抛光边缘和干净折射，透明度高但反射较玻璃柔和，彩色板会在边缘聚光，粘接处可见极细接缝而不出现气泡泛白；适合展示架或现代产品，避免玻璃裂纹、廉价塑料浑浊、无厚度轮廓、边缘过曝、弯折无热塑痕迹或不同板件互相穿透",
+      "enPrompt": "acrylic material formed by cut or cast polymer with readable sheet thickness polished edges and clean refraction, high clarity but softer reflection than glass and colored sheets concentrating light at their edges while bonded joints show only fine seams without cloudy bubbles; suited to displays or modern products, avoiding glass cracks cheap haze thicknessless outlines clipped edges bends with no thermoplastic logic or intersecting panels",
+      "negative": []
+    },
+    {
+      "id": "color-analogous",
+      "category": "color-material",
+      "styleGroup": "palette",
+      "zhName": "邻近色",
+      "enName": "Analogous Palette",
+      "image": "/assets/parameters/color-analogous.png?v=20260827-character-crop-fix",
+      "zhPrompt": "邻近色方案选择色相环上相邻的两到四个颜色建立和谐过渡，由一个主色、一个辅助色和少量强调组成，并通过明度和色彩纯度区分层级，中性色负责停顿与文字安全区；保持主体与背景可分，避免渐变成无焦点彩虹、所有颜色同等面积、色相过近导致糊成一片或偷偷加入互补色抢焦点",
+      "enPrompt": "analogous color scheme selecting two to four neighboring hue families for a coherent transition, organized as one dominant one supporting and limited accents with value and chroma differences creating hierarchy while neutrals provide pauses and typography-safe space; keep subject and background separable, avoiding a focusless rainbow every hue at equal area values so close they merge or an unplanned complementary accent stealing focus",
+      "negative": []
+    }
+  ]
+}

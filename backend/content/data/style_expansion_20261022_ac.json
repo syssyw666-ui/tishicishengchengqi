@@ -1,0 +1,376 @@
+{
+  "parameters": [
+    {
+      "id": "clothing-leather-jacket",
+      "category": "clothing",
+      "styleGroup": "outerwear",
+      "zhName": "皮夹克",
+      "enName": "Leather Jacket",
+      "image": "/assets/parameters/clothing-leather-jacket.png",
+      "zhPrompt": "皮夹克以分片皮革、肩袖接缝、拉链或按扣、口袋和衬里形成可穿结构，皮面高光随曲率连续变化，肘部与腰侧出现使用褶皱和轻微磨损，厚度让衣身保持一定挺度；避免塑料镜面、拉链无终点、皮片穿入身体、左右口袋失配或所有区域反射同一高光",
+      "enPrompt": "leather jacket constructed from joined leather panels shoulder and sleeve seams zipper or snaps pockets and lining, with highlights flowing continuously over curvature and believable wear creases at elbows and waist while material thickness preserves some structure; avoid plastic mirror shine zippers with no endpoint panels intersecting the body mismatched pockets or one identical highlight pasted across every surface",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-denim-jacket",
+      "category": "clothing",
+      "styleGroup": "outerwear",
+      "zhName": "牛仔夹克",
+      "enName": "Denim Jacket",
+      "image": "/assets/parameters/clothing-denim-jacket.png",
+      "zhPrompt": "牛仔夹克展示粗斜纹丹宁、金属扣、胸袋、门襟、领片和双线车缝，水洗褪色集中在肩部、肘部和凸起接缝，面料在动作处形成硬挺折痕而非柔软丝褶；保持缝线沿衣片连续，避免全身均匀做旧、口袋悬浮、纽扣随机增殖或丹宁像光滑皮革",
+      "enPrompt": "denim jacket showing coarse twill metal buttons chest pockets placket collar and double topstitching, with washed fading concentrated on shoulders elbows and raised seams and movement producing firm angular creases rather than silky folds; keep stitching continuous across pattern pieces, avoiding uniform distress everywhere floating pockets multiplying buttons or denim rendered as smooth leather",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-bomber-jacket",
+      "category": "clothing",
+      "styleGroup": "outerwear",
+      "zhName": "飞行夹克",
+      "enName": "Bomber Jacket",
+      "image": "/assets/parameters/clothing-bomber-jacket.png",
+      "zhPrompt": "飞行夹克以短款鼓形衣身、罗纹领口袖口与下摆、前中拉链和略宽袖管构成，轻质外壳与内衬形成适度蓬松，弯臂时袖部压缩而腰部罗纹稳定贴合；避免整体像羽绒球、袖口消失、拉链错位、衣摆悬空或把军用徽章和品牌标识随意加入",
+      "enPrompt": "bomber jacket built from a short rounded body rib-knit collar cuffs and waistband centered front zipper and roomy sleeves, with a light shell and lining creating restrained volume while bent arms compress the sleeves and the waistband remains grounded; avoid turning the garment into a puffer ball vanished cuffs displaced zippers a floating hem or arbitrary military patches and brand marks",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-cardigan",
+      "category": "clothing",
+      "styleGroup": "outerwear",
+      "zhName": "开衫",
+      "enName": "Cardigan",
+      "image": "/assets/parameters/clothing-cardigan.png",
+      "zhPrompt": "针织开衫保留前开襟、纽扣或无扣边、V 形或圆形领线、袖口与下摆罗纹，柔软织物从肩部自然下垂并在腰侧形成纵向褶皱，打开时左右前片受重力分开；避免前片粘合成套头衫、纽扣孔不对应、织纹方向混乱、衣摆穿腿或布料无厚度",
+      "enPrompt": "knit cardigan retaining an open front buttoned or plain bands a V or rounded neckline and ribbed cuffs and hem, with soft knit hanging from the shoulders and forming vertical folds at the waist while open fronts separate under gravity; avoid fusing it into a pullover mismatched buttons and holes incoherent knit direction a hem through the legs or fabric with no thickness",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-cloak",
+      "category": "clothing",
+      "styleGroup": "outerwear",
+      "zhName": "斗篷",
+      "enName": "Cloak",
+      "image": "/assets/parameters/clothing-cloak.png",
+      "zhPrompt": "长斗篷从颈部扣件或肩部结构悬垂，以完整大布片包围背部并留出前开口，厚重面料形成宽大纵褶，转身或风吹时下摆沿同一方向展开且仍受重力控制；避免没有固定点的悬浮布幕、斗篷穿过手臂、下摆无限延长、风向冲突或误画成带袖大衣",
+      "enPrompt": "long cloak suspended from a visible neck fastening or shoulder structure, using a broad continuous fabric panel around the back with a clear front opening, heavy cloth forming wide vertical folds and the hem opening in one direction during turning or wind while remaining gravity-bound; avoid a floating curtain with no attachment cloth intersecting arms an endless hem conflicting wind or conversion into a sleeved coat",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-wide-leg-pants",
+      "category": "clothing",
+      "styleGroup": "pants",
+      "zhName": "阔腿裤",
+      "enName": "Wide-Leg Pants",
+      "image": "/assets/parameters/clothing-wide-leg-pants.png",
+      "zhPrompt": "阔腿裤从腰臀处合体后以宽直或轻微外扩裤管垂落，前后裆、侧缝、腰头和裤脚结构清楚，面料重量决定纵向褶线，行走时两条裤管分别摆动并保留腿间负形；避免裤腿融合成裙子、裆部消失、裤脚穿地、双腿比例被夸大或宽松度从膝下突然改变",
+      "enPrompt": "wide-leg trousers fitted through waist and hip before falling in broad straight or gently flared legs, with readable front and back rise side seams waistband and hems and fabric weight controlling long vertical folds; during walking each leg moves separately with negative space between them, avoiding fusion into a skirt missing crotch hems through the floor distorted leg proportions or width changing abruptly below the knee",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-jeans",
+      "category": "clothing",
+      "styleGroup": "pants",
+      "zhName": "牛仔裤",
+      "enName": "Jeans",
+      "image": "/assets/parameters/clothing-jeans.png",
+      "zhPrompt": "牛仔裤具有腰头、门襟、铆钉、前后袋、侧缝和清楚裤脚，丹宁粗斜纹与水洗在膝、髋和接缝处按使用规律变化，坐立时裆部与膝弯形成硬挺放射褶；避免口袋位置漂移、拉链无门襟、全腿同样破洞、布料像紧身乳胶或双腿被一块纹理粘连",
+      "enPrompt": "jeans with waistband fly rivets front and back pockets side seams and defined hems, where coarse denim twill and wash vary plausibly around knees hips and raised seams and sitting or standing produces firm radiating folds at crotch and knee; avoid drifting pockets a zipper without fly identical tears along both legs latex-like cling or one texture sheet fusing the legs",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-tailored-trousers",
+      "category": "clothing",
+      "styleGroup": "pants",
+      "zhName": "西装裤",
+      "enName": "Tailored Trousers",
+      "image": "/assets/parameters/clothing-tailored-trousers.png",
+      "zhPrompt": "西装裤通过腰头、前中门襟、斜插袋、中缝线和精确裤脚建立正式剪裁，臀裆留量保证站坐活动，垂坠面料让裤线纵向稳定并只在髋膝处出现克制褶皱；避免中缝弯曲断裂、裤腰悬空、裤裆过低、袋口贴图化或裤管像紧身打底裤",
+      "enPrompt": "tailored trousers defined by waistband centered fly slanted pockets pressed creases and precise hems, with enough seat and rise ease for standing and sitting and draping suiting cloth keeping vertical lines stable while folds remain restrained at hip and knee; avoid broken wandering creases a floating waistband dropped crotch printed-on pockets or legs rendered like tight leggings",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-overalls",
+      "category": "clothing",
+      "styleGroup": "pants",
+      "zhName": "背带裤",
+      "enName": "Overalls",
+      "image": "/assets/parameters/clothing-overalls.png",
+      "zhPrompt": "背带裤由胸前围片、可调肩带、金属扣、腰臀连接、侧缝和裤管构成，肩带从背部越过肩膀后真实扣在胸片，内搭上衣与背带层次清楚，坐立时胸片和裤腰共同受力；避免肩带凭空结束、左右扣件不一致、胸袋穿身体、裤装变连衣裙或带子与头发手臂粘连",
+      "enPrompt": "overalls constructed from a front bib adjustable shoulder straps metal fasteners waist and seat joining side seams and trouser legs, with straps crossing from the back over shoulders to attach visibly at the bib and the underlayer remaining distinct while bib and waist share tension during movement; avoid straps ending in midair mismatched hardware a bib pocket through the torso conversion into a dress or straps fused with hair and arms",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-joggers",
+      "category": "clothing",
+      "styleGroup": "pants",
+      "zhName": "运动裤",
+      "enName": "Joggers",
+      "image": "/assets/parameters/clothing-joggers.png",
+      "zhPrompt": "运动束脚裤以弹力腰头、抽绳、宽松臀腿、侧袋和脚踝罗纹收口形成舒适轮廓，针织或轻梭织面料在膝弯与裤脚上方堆出柔软褶皱，动作时裤腰稳定不滑移；避免抽绳无孔悬浮、裤脚收口消失、膝盖位置错误、两条裤腿融合或运动裤被误画成紧身裤",
+      "enPrompt": "joggers shaped by an elastic waistband drawcord relaxed seat and thigh side pockets and ribbed ankle cuffs, with knit or light woven fabric gathering softly behind knees and above cuffs while the waist stays secure during movement; avoid drawstrings floating without eyelets vanished cuffs misplaced knees fused trouser legs or joggers turning into compression tights",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-a-line-skirt",
+      "category": "clothing",
+      "styleGroup": "skirts-dresses",
+      "zhName": "A字裙",
+      "enName": "A-Line Skirt",
+      "image": "/assets/parameters/clothing-a-line-skirt.png",
+      "zhPrompt": "A 字裙从腰部贴合并向下摆连续外扩，前后片、省道或褶量和侧缝共同维持清楚梯形轮廓，面料厚度决定下摆张度，行走或坐下时褶皱从腰髋向外展开；避免裙摆两侧角度不一致、腰线悬空、裙内腿部穿模、轮廓突然变伞裙或布料无重力贴腿",
+      "enPrompt": "A-line skirt fitted at the waist and widening continuously toward the hem, with front and back panels darts or controlled ease and side seams maintaining a clear trapezoid silhouette while fabric weight controls flare and movement sends folds outward from waist and hip; avoid uneven side angles a floating waistband legs intersecting the skirt sudden conversion into a full circle skirt or gravity-free cloth stuck to the legs",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "clothing-tulle-skirt",
+      "category": "clothing",
+      "styleGroup": "skirts-dresses",
+      "zhName": "纱裙",
+      "enName": "Tulle Skirt",
+      "image": "/assets/parameters/clothing-tulle-skirt.png",
+      "zhPrompt": "纱裙由多层半透明薄纱、可见腰头和不透明内衬建立体积，每层边缘、长度和透明叠加略有差异，空气感来自轻质材料和层间空间而非实心膨胀；运动时外层延迟摆动，避免薄纱像烟雾消失、腿部无内衬暴露、所有层边缘完全重合或裙体像硬塑料罩",
+      "enPrompt": "tulle skirt built from multiple translucent mesh layers a visible waistband and an opaque lining, with slight variation in layer edge length and accumulated transparency so airiness comes from light material and spacing rather than solid inflation; outer layers trail during movement, avoiding tulle dissolving like smoke exposed legs without lining every edge perfectly coincident or a rigid plastic dome",
+      "negative": [
+        "visible brand logo",
+        "readable text on clothing",
+        "wrong garment structure"
+      ]
+    },
+    {
+      "id": "pose-neutral-standing",
+      "category": "pose",
+      "styleGroup": "standing",
+      "zhName": "站立正面",
+      "enName": "Front Standing",
+      "image": "/assets/parameters/pose-neutral-standing.jpg",
+      "zhPrompt": "正面自然站立时头、胸廓、骨盆与双脚沿稳定垂直轴排列，双脚约与髋同宽并完整接触地面，膝盖放松不过伸，双臂自然垂落且左右略有真实差异；视线平直、呼吸感自然，避免军姿僵硬、双脚粘连、肩髋完全镜像、手掌贴腿或身体悬浮",
+      "enPrompt": "neutral front standing pose aligning head rib cage pelvis and feet around a stable vertical axis, feet about hip-width and fully grounded knees relaxed without hyperextension and arms hanging naturally with slight believable asymmetry; keep gaze level and breathing relaxed, avoiding rigid military posture fused feet perfectly mirrored shoulders and hips palms glued to thighs or a floating body",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-three-quarter-standing",
+      "category": "pose",
+      "styleGroup": "standing",
+      "zhName": "三分之二侧身站立",
+      "enName": "Three-Quarter Standing",
+      "image": "/assets/parameters/pose-three-quarter-standing.jpg",
+      "zhPrompt": "三分之二侧身站立让骨盆与躯干相对镜头转约三十至六十度，近侧肩髋略大并形成清楚前后遮挡，头部可回看镜头但颈部旋转在自然范围，双脚方向支持身体朝向；避免把侧面与正面五官拼接、远侧肢体消失、肩髋扭向相反极端或双脚仍平行正对镜头",
+      "enPrompt": "three-quarter standing pose rotating pelvis and torso roughly thirty to sixty degrees from camera, with near shoulder and hip slightly larger and clear near-far occlusion while the head may return toward camera within natural neck range and foot direction supports body orientation; avoid combining frontal and profile facial features vanished far limbs shoulders and pelvis twisted to opposite extremes or feet still parallel and square to camera",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-contrapposto",
+      "category": "pose",
+      "styleGroup": "standing",
+      "zhName": "重心偏移站姿",
+      "enName": "Contrapposto",
+      "image": "/assets/parameters/pose-contrapposto.jpg",
+      "zhPrompt": "重心偏移站姿把大部分体重落在一条支撑腿上，使该侧髋部抬高、膝盖稳定，另一条腿放松或轻触地面，骨盆与肩线形成自然反向倾斜并由脊柱柔和衔接；避免双腿同时承重却强扭骨盆、支撑脚悬空、腰部折断、肩线过度倾斜或姿势像即将跌倒",
+      "enPrompt": "contrapposto placing most body weight over one supporting leg so that hip rises and knee remains stable while the other leg relaxes or touches lightly, with pelvis and shoulder lines counter-tilting naturally through a gentle spinal curve; avoid forcing pelvic twist while both legs bear equal weight a floating support foot a broken waist excessive shoulder slope or a pose that appears to fall",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-hands-in-pockets",
+      "category": "pose",
+      "styleGroup": "standing",
+      "zhName": "双手插袋",
+      "enName": "Hands In Pockets",
+      "image": "/assets/parameters/pose-hands-in-pockets.jpg",
+      "zhPrompt": "双手插袋姿势要明确口袋位置和开口方向，手掌部分进入袋内而手腕、前臂和肘部沿真实路径连接肩部，衣物在袋口周围产生轻微拉力，双手可采用不同深度增加自然感；避免手掌完全消失、手臂穿过衣服、口袋凭空生成、肘关节反折或双肩被强行抬高",
+      "enPrompt": "hands-in-pockets pose with pocket locations and opening directions clearly established, palms entering partially while wrists forearms elbows and shoulders follow plausible paths and garment fabric pulls subtly around each opening, with slightly different insertion depth allowed for natural asymmetry; avoid vanished hands arms passing through clothing invented pockets reversed elbows or shoulders forced unnaturally high",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-leaning-wall",
+      "category": "pose",
+      "styleGroup": "standing",
+      "zhName": "倚墙站姿",
+      "enName": "Leaning Against Wall",
+      "image": "/assets/parameters/pose-leaning-wall.jpg",
+      "zhPrompt": "倚墙站姿由肩背、手掌或一侧髋部与墙面形成明确接触点，身体重心向墙移动并由靠墙侧与双脚共同支撑，接触处衣料轻微压平且投影贴合；保持墙面透视与身体距离一致，避免身体悬在墙前、手掌穿墙、双脚离地、脊柱折角或影子方向与接触关系矛盾",
+      "enPrompt": "wall-leaning pose using a clear contact point at shoulder back palm or one hip, with center of mass shifting toward the wall and support shared by that contact and grounded feet, plus slight garment compression and attached shadow; keep wall perspective and body distance consistent, avoiding a figure hovering before the wall a hand passing through it feet off the ground a kinked spine or shadow contradicting contact",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-hero-low-angle",
+      "category": "pose",
+      "styleGroup": "standing",
+      "zhName": "英雄式站姿",
+      "enName": "Hero Stance",
+      "image": "/assets/parameters/pose-hero-low-angle.jpg",
+      "zhPrompt": "英雄式站姿以双脚稳定分开、胸廓打开、骨盆中立和下颌适度抬起形成自信轮廓，低机位透视可以增强高度但手脚尺寸仍受焦距控制，披风或道具围绕主轴辅助而不遮挡身体；避免夸张叉腰僵直、脚部无限放大、头部过小、武器无支撑或把自信表现成攻击性咆哮",
+      "enPrompt": "heroic low-angle stance using grounded separated feet an open rib cage neutral pelvis and moderately raised chin to create a confident silhouette, with low-camera perspective increasing stature while focal length controls hand and foot scale and cape or prop supports the main axis without hiding anatomy; avoid rigid exaggerated akimbo posing infinitely enlarged feet a tiny head unsupported weapons or replacing confidence with aggressive shouting",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-sitting-chair",
+      "category": "pose",
+      "styleGroup": "sitting",
+      "zhName": "端坐椅子",
+      "enName": "Seated On Chair",
+      "image": "/assets/parameters/pose-sitting-chair.jpg",
+      "zhPrompt": "端坐椅子时骨盆完整落在座面，坐骨承担重量，背部可直立但保持自然曲线，双脚稳定着地或按椅高合理悬垂，膝髋弯曲角度与座高一致，双手有明确落点；避免骨盆悬空、椅面穿身、膝盖高低无因、双脚穿地、手指粘在扶手或椅子比例无法承重",
+      "enPrompt": "upright chair sitting pose with pelvis fully resting on the seat and sit bones bearing weight, the back erect yet naturally curved, feet grounded or hanging plausibly for chair height, hip and knee angles matching the seat and hands placed deliberately; avoid a floating pelvis seat through the body unexplained knee heights feet through the floor fingers fused to armrests or a chair too small to support the figure",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-cross-legged-sitting",
+      "category": "pose",
+      "styleGroup": "sitting",
+      "zhName": "盘腿坐",
+      "enName": "Cross-Legged Sitting",
+      "image": "/assets/parameters/pose-cross-legged-sitting.jpg",
+      "zhPrompt": "盘腿坐姿让骨盆稳定接触地面或坐垫，两条小腿在身体前方交叉并保持膝、踝方向符合关节活动范围，躯干从骨盆向上延伸，双手可落在膝部或腿前；明确左右腿遮挡关系，避免脚掌穿过大腿、膝盖反折、双腿融合成环或身体没有接触阴影",
+      "enPrompt": "cross-legged sitting pose with pelvis grounded on floor or cushion, lower legs crossing in front within natural knee and ankle ranges and torso rising from the pelvis while hands may rest on knees or before the legs; make left-right occlusion explicit, avoiding feet through thighs reversed knees legs fused into a loop or a body with no contact shadow",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-floor-sitting",
+      "category": "pose",
+      "styleGroup": "sitting",
+      "zhName": "席地而坐",
+      "enName": "Floor Sitting",
+      "image": "/assets/parameters/pose-floor-sitting.jpg",
+      "zhPrompt": "席地而坐姿势根据选择的腿位让骨盆、腿部和一只支撑手形成稳定三点关系，躯干可放松倾斜但重心投影仍落在支撑范围内，衣物在臀部、膝弯和地面接触处产生压褶；避免臀部离地、手掌无承重却扭曲、腿部互穿、脚踝方向错误或地面穿过身体",
+      "enPrompt": "casual floor-sitting pose arranging pelvis legs and an optional supporting hand into a stable support relationship, allowing a relaxed torso lean while the projected center of mass remains inside the base and clothing compresses at seat bent knees and floor contact; avoid hips off the ground a distorted non-weight-bearing palm intersecting legs reversed ankles or the floor passing through the body",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-kneeling",
+      "category": "pose",
+      "styleGroup": "sitting",
+      "zhName": "单膝跪姿",
+      "enName": "One-Knee Kneeling",
+      "image": "/assets/parameters/pose-kneeling.jpg",
+      "zhPrompt": "单膝跪姿让一侧膝盖与小腿接触地面，另一只脚完整踩地并让膝盖位于脚踝上方，骨盆落在两处支撑之间，躯干可直立或前倾但受力链连续；地面接触处有衣料压缩，避免跪地膝盖悬空、前脚脚跟抬起无因、腿部穿插或骨盆扭断",
+      "enPrompt": "one-knee kneeling pose placing one knee and shin on the ground while the opposite foot plants fully with knee aligned over ankle, pelvis balanced between the supports and torso upright or leaning through a continuous force chain; show garment compression at contact, avoiding a hovering grounded knee an unexplained lifted front heel intersecting legs or a twisted broken pelvis",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-sitting-steps",
+      "category": "pose",
+      "styleGroup": "sitting",
+      "zhName": "台阶坐姿",
+      "enName": "Sitting On Steps",
+      "image": "/assets/parameters/pose-sitting-steps.jpg",
+      "zhPrompt": "台阶坐姿让骨盆落在某一级台阶，双脚位于更低踏步并保持不同高度或自然错开，膝髋角度由台阶尺寸决定，手可支撑在身侧但掌根真实受力；台阶透视和人物比例一致，避免腿穿踏步、骨盆坐在边缘外、双脚悬空、手掌粘墙或阶梯高度随机变化",
+      "enPrompt": "sitting-on-steps pose placing the pelvis on one tread and feet on lower levels at plausible staggered heights, with hip and knee angles determined by step dimensions and any supporting hand carrying weight through the palm heel; keep stair perspective and body scale coherent, avoiding legs through steps pelvis beyond the edge floating feet a hand glued to a wall or randomly changing riser heights",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    },
+    {
+      "id": "pose-lying-prone",
+      "category": "pose",
+      "styleGroup": "lying",
+      "zhName": "趴着",
+      "enName": "Lying Prone",
+      "image": "/assets/parameters/pose-lying-prone.jpg",
+      "zhPrompt": "俯卧姿势让胸腹与骨盆沿地面或床面形成连续接触，头部由颈部轻微抬起或侧转，前臂可支撑上身但肘部位于肩下，双腿向后自然延伸并产生真实压痕；避免面部埋入平面、腰部反折、肘腕错位、脚部漂浮或身体与支撑面之间出现无理由空隙",
+      "enPrompt": "prone lying pose with chest abdomen and pelvis forming continuous contact along floor or bed, head lifted slightly through the neck or turned to one side, forearms optionally supporting the torso with elbows beneath shoulders and legs extending naturally behind with believable compression; avoid the face buried through the plane a broken lower back misaligned elbows and wrists floating feet or unexplained gaps beneath the body",
+      "negative": [
+        "awkward pose",
+        "broken anatomy",
+        "extra limbs",
+        "twisted hands"
+      ]
+    }
+  ]
+}
