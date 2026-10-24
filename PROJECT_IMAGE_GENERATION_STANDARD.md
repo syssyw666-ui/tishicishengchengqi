@@ -22,10 +22,12 @@
 ## 3. PHOTO_PLTB 批量生成规则
 
 - 同类参数优先按联系表批量生成，以减少调用消耗；视觉语言差异过大的项目应拆分批次。
-- 联系表提示词必须写明：实际网格、固定阅读顺序、粗分隔、安全边距、无文字、无标签、无 Logo、无水印、内容不得跨格。
+- 联系表提示词必须写明：固定阅读顺序、连续可见的白色分隔框、安全边距、无文字、无标签、无 Logo、无水印、内容不得跨格。请求网格仅代表期望值，不能作为裁切依据。
 - 生成后先检查模型实际输出的行列数，不能只相信提示词要求的行列数。
+- 裁切脚本默认自动识别贯穿整张联系表的白色分隔框；`--cols` 和 `--rows` 只用于校验检测结果，不再驱动理论均分。实际网格与期望网格不一致时必须在写文件前失败。
 - 裁切必须依据实际可见边界，并在分隔线内侧保留安全内缩。项目脚本默认内缩 `12 px`，禁止使用 `0 px`。
-- 若分隔线、外边距或单元格尺寸不均匀，应手动记录真实边界；禁止用理论均分结果直接覆盖正式资源。
+- 历史黑色分隔框可自动兼容；无连续分隔框、分隔不完整或单元格尺寸不均匀时，必须用 `--bounds-file` 提供人工复核过的真实边界。
+- `--grid-mode equal` 只允许用于已经人工确认的历史无框资源，必须显式传入，禁止作为自动回退或直接覆盖正式资源。
 - 原始联系表保留在生成目录，正式项目只接入经过裁切和验收的独立资源。
 
 ## 4. 新增精选提示词固定流程
@@ -73,6 +75,7 @@
 - 图片内只能有该参数需要展示的主体和环境。
 - 先生成带文件名的审计拼图，再逐张检查高风险项目。
 - 在网页中使用 `contain` 模式复查；`cover` 会掩盖边缘污染，不能作为验收依据。
+- 数据库全量验收执行 `backend\.venv\Scripts\python.exe scripts\audit_image_assets.py --render-all`，报告必须满足缺失文件与解码错误均为 `0`，并逐页查看 `tmp/full-image-audit/overview-*.jpg`。
 
 ## 6. 不同类型图片的特殊规范
 
@@ -109,43 +112,61 @@
 - 覆盖已发布的同名资源后，必须更新图片 URL 的缓存版本，避免浏览器继续显示旧图。
 - 所有数据引用的图片必须存在，不能以通用占位图代替缺失资源。
 
-## 8. GitHub 同步与发版流程
+## 8. GitHub 双仓库同步与发版流程
 
 本项目已经迁移到 `D:\图片提示词生成器`。C 盘旧位置只保留跳转路径或兼容入口，不应再作为真实工作副本使用。所有开发、图片生成、构建、提交和推送都应在 D 盘仓库完成。
+
+本项目实际有两个发布仓库，不能只推一个仓库就宣称前后端都已发版：
+
+- 前端公开仓库：`https://github.com/syssyw666-ui/tishicishengchengqi.git`，Cloudflare 监听其 `main`。
+- 后端私有仓库：`https://github.com/syssyw666-ui/tishicishengchengqi_ADMIN.git`，Railway 监听其 `main`。
 
 每次同步 GitHub 和触发发版时，按以下顺序一次性完成：
 
 1. 进入真实仓库：`D:\图片提示词生成器`。
 2. 运行 `git status --short`，确认只提交正式源码、迁移、种子数据和正式资源图。
 3. 不提交临时检查图、生成联系表、缓存、`.env`、数据库备份、未使用 Logo 草图或本地运行目录。
-4. 若远端可能有更新，先执行 `git pull --rebase origin main`，解决冲突后继续 rebase。
-5. 若 Git 报 `dubious ownership`，先执行一次 `git config --global --add safe.directory D:/图片提示词生成器`。
-6. 若第一次 push 因网络、认证或远端更新失败，不要改代码；先确认是否需要 rebase，然后重试同一个 `git push origin main`。本项目近期多次出现第一次网络请求失败、重试后成功的情况。
-7. 推送前固定验证：
+4. 先执行只读远端检查：`git -c credential.helper= -c http.sslBackend=openssl ls-remote origin refs/heads/main`。确认远端 SHA 后再 `fetch`/`rebase`，避免凭据组件故障被误判成网络故障。
+5. 前端仓库先同步远端并验证本地提交是快进更新；禁止在未读取最新远端 SHA 时强推。
+6. 后端有变化时，不要使用长期滞后的旧克隆。应从私有仓库最新 `origin/main` 建立干净临时工作树，把规范仓库中的 `backend/` 正式文件机械同步进去，再测试、提交和推送。
+7. 若 Git 报 `dubious ownership`，只把当前确认过的仓库绝对路径加入 `safe.directory`，不要加入宽泛目录。
+8. 若出现 `SEC_E_NO_CREDENTIALS`，这是 Windows Schannel/GCM 问题，不是代码或普通断网。读取公开远端时使用 `-c credential.helper= -c http.sslBackend=openssl`；写入时修复 GitHub 登录，或在 Codex 已连接 GitHub 时使用 Git Data API 创建 blob/tree/commit，并以 `expected_sha` 更新 `main`，禁止无租约覆盖分支。
+9. 若出现连接重置或 443 超时，保持提交不变，等待约 30 秒后重试完全相同的 fetch/push；不要生成空提交触发部署。
+10. 推送前固定验证：
    - 前端类型检查。
    - 前端生产构建。
    - 后端迁移检查或本地迁移验证。
    - 后端测试。
    - 涉及图片时检查正式图片路径、尺寸、哈希和裁切边缘。
-8. 推送成功后记录提交 hash。Cloudflare Pages 和 Railway 会根据 `main` 分支自动部署；若线上未更新，先查看平台部署日志，不要重复提交无意义空提交。
+11. 分别记录公开前端和私有后端提交 hash，并重新读取两个远端 `main` 验证 SHA。
+12. Cloudflare 与 Railway 未必立即回传 GitHub 状态。分别检查平台最新部署和线上健康地址；若前端源码未变化，构建后的 JS 文件名保持不变是正常现象。线上未更新时先查看平台部署日志，不要重复提交无意义空提交。
 
 推荐命令顺序：
 
 ```powershell
 Set-Location D:\图片提示词生成器
 git status --short
-git pull --rebase origin main
-$env:Path='C:\Users\Administrator\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin;'+$env:Path
-.\node_modules\.bin\vue-tsc.cmd --noEmit -p frontend\tsconfig.json
-.\node_modules\.bin\vite.cmd build --config frontend\vite.config.ts
+git -c credential.helper= -c http.sslBackend=openssl ls-remote origin refs/heads/main
+git -c credential.helper= -c http.sslBackend=openssl fetch origin main
+git rebase origin/main
+& 'D:\C_Data\Users\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe' '.\node_modules\vue-tsc\bin\vue-tsc.js' --noEmit -p frontend\tsconfig.json
+& 'D:\C_Data\Users\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe' '.\node_modules\vite\bin\vite.js' build --config frontend\vite.config.ts
 Set-Location D:\图片提示词生成器\backend
 $env:DJANGO_USE_SQLITE='1'
 .\.venv\Scripts\python.exe manage.py test content.tests content.test_photo_purposes
 Set-Location D:\图片提示词生成器
 git add <正式变更文件>
 git commit -m "<清晰提交说明>"
-git push origin main
+git -c http.sslBackend=openssl push origin main
 ```
+
+后端私有仓库固定流程：
+
+1. 获取私有仓库最新 `main`，从该提交创建全新的临时工作树，例如 `D:\tishicishengchengqi_ADMIN_release_YYYYMMDD`。
+2. 只同步规范仓库 `backend/` 下应发布的源码、迁移、模板、静态文件、`requirements.txt`、部署文件和 `catalog_seed.json`。
+3. 不同步 `.env`、虚拟环境、上传媒体、本地数据库、日志、缓存和 SMTP/数据库明文密码。
+4. 在临时工作树运行迁移检查和后端测试，确认通过后提交并推送私有仓库 `main`。
+5. 读取私有远端最新 SHA，确认 Railway 监听的仓库确实收到该提交，再检查 `/api/health/`。
 
 若本机 MySQL 用户没有创建测试库权限，可使用 `DJANGO_USE_SQLITE=1` 验证后端代码逻辑；正式本地数据库仍使用 MySQL，并在需要时执行 `backend\.venv\Scripts\python.exe manage.py migrate`。
 
@@ -169,3 +190,6 @@ git push origin main
 - 对于竖版编辑页、海报、速写页等特殊比例，正式 16:9 展示图应使用“完整缩放 + 自身模糊背景填充”，不能裁掉主体，也不能混入其他面板。
 - 新增数据后如果前端看不到后台变化，优先检查后端 API 是否返回最新数据、浏览器缓存、`catalog_seed.json` 是否已导出、线上数据库迁移是否已执行。
 - 后端已有数据库不会自动读取前端 TypeScript 文件；需要通过种子导出、管理命令或 Django 数据迁移把新增内置项目写入数据库。
+- 2026-10-24 全库修复使用可见白/黑分隔框重新识别历史联系表，只对来源和目标都能高置信度唯一匹配的 207 张参数图自动替换，其中 200 张属于当前数据库，7 张是仍保留在资源目录中的历史下线卡片；无法可靠匹配的资源不猜测覆盖，而是进入全库总览人工核验。
+- 全库审计覆盖数据库实际引用的 1,975 个唯一图片文件，要求缺失与解码错误均为零，并逐页检查所有总览图是否含无关邻图。
+- Windows 当前默认 Node/pnpm 可能仍解析到迁移前的 C 盘缓存并触发 `EPERM` 或再次下载 pnpm；固定使用 D 盘运行时中的 `node.exe` 直接调用项目 `node_modules` 下的 `vue-tsc.js` 和 `vite.js`。

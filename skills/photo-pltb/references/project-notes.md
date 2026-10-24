@@ -14,6 +14,8 @@ The prompt-generator project needs many small visual reference cards. Generating
 - Artist-style cards were first fixed by generating independent `artist-*.png` images because the previous implementation reused unrelated style images.
 - Clothing cards were generated efficiently as contact sheets by subgroup, then cropped into 85 individual `clothing-*.png` assets.
 - Some generated contact sheets may ignore the requested grid. Example: a requested `4x3` skirt/dress sheet came back as `5x2`; crop using the actual grid, not the requested grid.
+- The historical equal-grid cropper caused neighbor bleed whenever imagegen changed the row or column count. The canonical cropper now detects continuous white or legacy dark separator bands, validates optional expected dimensions, and refuses to write on mismatch.
+- A generated sheet without a continuous divider frame is not safe for automatic cropping. Record reviewed cell bounds and use `--bounds-file`; never make theoretical equal splitting the fallback.
 - UI labels should remain overlay text in the application. Do not bake Chinese labels into generated images.
 - For cards with sliders or overlays, keep the raw image clean and visually centered so UI elements do not cover the key feature.
 - Keep originals in the generated-images folder, and copy/crop into the project asset directory.
@@ -21,6 +23,8 @@ The prompt-generator project needs many small visual reference cards. Generating
 - For portrait or vertical poster results shown in a fixed 16:9 card, preserve the full generated composition and fill the remaining area with a blurred copy of the same image. Never crop away the key content and never use neighboring contact-sheet content as fill.
 - Before adding featured prompts, search for exact and semantic duplicates in `featuredPrompts.ts`, `catalog_seed.json`, the database, and the parameter libraries. Add a prompt-generator parameter only when the style or use case is missing, and keep that parameter concise.
 - The canonical repository path is `D:\图片提示词生成器`; old C drive paths are compatibility jump paths only.
+- The repository-wide audit command is `backend\.venv\Scripts\python.exe scripts\audit_image_assets.py --render-all`. Inspect every generated `overview-*.jpg`; automated seam flags are only a triage aid because deliberate before/after dividers, color cards, and blurred portrait padding can look like seams.
+- On 2026-10-24, retained contact sheets were matched to parameter assets using strict perceptual distance and uniqueness margins. Only 207 one-to-one high-confidence matches were recropped and replaced (200 active catalog assets plus 7 retained historical assets); all 1,975 unique catalog-referenced images were then checked for existence, decoding, and full-frame visual contamination.
 
 ## Batch Grouping Heuristics
 
@@ -68,6 +72,7 @@ Before final response:
 - Production build passes when feasible.
 - Every crop is inspected with its full frame visible (`contain`), not only in a center-cropped preview.
 - No top, bottom, left, or right strip may contain another panel, divider, label, or unrelated subject.
+- Optional `--cols` and `--rows` must agree with the detected divider frame. A mismatch must leave the output directory untouched.
 - Use the repository-wide rules in `PROJECT_IMAGE_GENERATION_STANDARD.md` before every image batch.
 
 ## Example: Clothing Batch

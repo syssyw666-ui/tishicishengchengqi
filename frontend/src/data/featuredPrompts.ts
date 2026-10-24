@@ -1563,9 +1563,9 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     enTitle: "Architecture Infographic Vector",
     zhDescription: "把建筑照片转成测绘感二维矢量百科海报。",
     enDescription: "Convert a building photo into a clean vector infographic poster.",
-    originalImage: "/assets/featured/text-architecture-infographic-vector.jpg",
+    originalImage: "/assets/featured/img2img-architecture-infographic-vector-original.jpg?v=20261024-source-fix",
     resultImage: "/assets/featured/text-architecture-infographic-vector.jpg",
-    prompt: "实验提示词：参考上传的建筑照片，将建筑主体转化为建筑信息图风格的二维矢量插画。保留建筑的主体轮廓、结构比例、屋顶形态、立面层级、门窗分布、装饰细节、材质特征和代表性色彩，去除天空、人群、街景、车辆、树木遮挡和复杂背景。画面为白色或浅色背景，建筑正面居中展示，构图对称，类似建筑立面图、建筑测绘图、建筑百科海报或城市地标信息图。使用清晰深色描边、平面色块、简洁阴影和少量高光，呈现干净、现代、专业的建筑插画效果。左上角添加英文标题，标题根据建筑类型生成，例如Tower、Temple、Museum、Cathedral、Palace、Bridge、House、Pavilion、Skyscraper。建筑背后加入超大浅灰色文字作为背景装饰，文字为建筑名称、地点或建筑类别，透明度较低，不遮挡主体。根据建筑的真实尺寸和建筑类型添加测量标注，禁止编造数据。整体风格参考建筑科普信息图、城市地标档案海报、现代建筑测绘插画，高清、规整、线条清晰、色彩统一、留白充足、具有专业设计感。"
+    prompt: "参考上传的建筑照片，将建筑主体转化为建筑信息图风格的二维矢量插画。保留建筑的主体轮廓、结构比例、屋顶形态、立面层级、门窗分布、装饰细节、材质特征和代表性色彩，去除天空、人群、街景、车辆、树木遮挡和复杂背景。画面为白色或浅色背景，建筑正面居中展示，构图对称，类似建筑立面图、建筑测绘图、建筑百科海报或城市地标信息图。使用清晰深色描边、平面色块、简洁阴影和少量高光，呈现干净、现代、专业的建筑插画效果。左上角添加英文标题，标题根据建筑类型生成，例如Tower、Temple、Museum、Cathedral、Palace、Bridge、House、Pavilion、Skyscraper。建筑背后加入超大浅灰色文字作为背景装饰，文字为建筑名称、地点或建筑类别，透明度较低，不遮挡主体。根据建筑的真实尺寸和建筑类型添加测量标注，禁止编造数据。整体风格参考建筑科普信息图、城市地标档案海报、现代建筑测绘插画，高清、规整、线条清晰、色彩统一、留白充足、具有专业设计感。"
   },
   {
     id: "text-nostalgic-countryside-screenprint",

@@ -15,8 +15,8 @@ Use this skill to generate many reference-card images with fewer imagegen calls 
 
 2. Write one imagegen prompt per batch.
    - Ask for a clean contact sheet with fixed reading order: left to right, top to bottom.
-   - Specify grid size, item list, no text, no labels, no logos, no watermark.
-   - Request clear visual separation between panels and consistent lighting/crop.
+   - Specify the expected grid size, item list, no text, no labels, no logos, no watermark.
+   - Require a continuous visible white frame between every panel. Generated grid dimensions remain untrusted until inspected.
    - Keep labels in the app UI, not baked into the image.
 
 3. Generate the contact sheet with `imagegen`.
@@ -26,8 +26,11 @@ Use this skill to generate many reference-card images with fewer imagegen calls 
 
 4. Crop the sheet into asset files.
    - Use `scripts/crop_contact_sheet.py` from this skill.
-   - If imagegen ignores the requested grid, inspect the actual grid and crop using the actual `cols` and `rows`.
+   - The cropper detects the actual grid from continuous visible divider bands. Optional `--cols` and `--rows` validate the result; they do not drive equal splitting.
+   - If imagegen ignores the requested grid, keep the actual detected grid and update the ID sequence. A mismatch must fail before any asset is written.
    - Always crop inside the visible divider with a positive safety inset. The project tool defaults to 12 px and rejects zero inset.
+   - If there is no continuous divider frame, measure every cell and pass a reviewed `--bounds-file`. Never silently fall back to equal-size cells.
+   - `--grid-mode equal` is a manual legacy escape hatch only. It must never be the automatic path for generated sheets.
    - Never rely on CSS `object-fit: cover` to hide grid contamination; final files must contain no pixels from neighboring panels.
    - Save output names exactly as parameter IDs, for example `clothing-long-sleeve.png`.
 
@@ -48,8 +51,11 @@ Crop a sheet:
   --output-dir "public\assets\parameters" `
   --cols 4 `
   --rows 3 `
-  --ids "item-a,item-b,item-c"
+  --ids "item-a,item-b,item-c" `
+  --write-bounds "tmp\reviewed-bounds.json"
 ```
+
+The command above aborts if the visible frame is not actually `4x3`. Omit `--cols` and `--rows` when the model changed the grid and you have already prepared an ID list matching the detected reading order.
 
 Check expected assets:
 
@@ -66,13 +72,13 @@ Check expected assets:
 Use this contact-sheet pattern and adapt the item list:
 
 ```text
-Create a {cols} by {rows} reference contact sheet for an AI prompt generator, no text, no labels, no logos, no watermark. Each panel is a clean reference card clearly demonstrating one parameter. Reading order left to right, top to bottom: {item list}. Consistent lighting, clear silhouette/material/style, simple background, visible separation between panels, horizontal overall image.
+Create a {cols} by {rows} reference contact sheet for an AI prompt generator, no text, no labels, no logos, no watermark. Each panel is a clean reference card clearly demonstrating one parameter. Reading order left to right, top to bottom: {item list}. Consistent lighting, clear silhouette/material/style, simple background. Use a continuous, clearly visible white frame around and between every panel; no subject, shadow, texture, or color may cross that frame. Horizontal overall image.
 ```
 
 For fashion/clothing:
 
 ```text
-Create a {cols} by {rows} fashion reference contact sheet for an AI prompt generator, no text, no labels, no logos, no watermark. Each panel is a clean studio fashion card with a neutral fully clothed model or mannequin clearly showing one garment. Reading order left to right, top to bottom: {garment list}. Consistent soft studio lighting, simple muted backgrounds, clear clothing silhouette and fabric texture, horizontal overall image.
+Create a {cols} by {rows} fashion reference contact sheet for an AI prompt generator, no text, no labels, no logos, no watermark. Each panel is a clean studio fashion card with a neutral fully clothed model or mannequin clearly showing one garment. Reading order left to right, top to bottom: {garment list}. Consistent soft studio lighting, simple muted backgrounds, clear clothing silhouette and fabric texture. Use a continuous, clearly visible white frame around and between every panel; no garment, person, shadow, or background may cross that frame. Horizontal overall image.
 ```
 
 ## Project Notes

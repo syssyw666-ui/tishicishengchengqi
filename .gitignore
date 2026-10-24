@@ -11,3 +11,7 @@ backend/.venv/
 frontend/.env
 *.pyc
 __pycache__/
+/tmp/
+/tmp-*.jpg
+/public/assets/turing-cizao-logo.png
+/云南错峰特惠周海报.png
