@@ -57,7 +57,7 @@ const psdLayerPrompt = "帮我生成PS可以打开的分成PSD文件，然后把
 
 // 精选提示词项目规范：
 // 1. 调色修图：必须强调“严格基于原图”，只改色彩、曝光、对比、光影、质感，不改变主体、构图和位置。
-// 2. 图生图：必须使用“实验提示词”开头，涉及可替换的风格、动作、场景、镜头、背景等，用中文引号标注，例如“目标风格”。
+// 2. 图生图：复制内容不得自动添加“实验提示词”前缀；涉及可替换的风格、动作、场景、镜头、背景等，用中文引号标注，例如“目标风格”。
 // 3. 文生图：必须给用户可替换模板，主体、场景、风格、构图、材质、用途等关键变量用中文引号标注。
 // 4. 常用图片处理提示词：不要求图片，但必须说明输出目标和拆解维度，保持可直接复制使用。
 // 5. 所有精选提示词避免直接要求版权角色、品牌词或不可控作者姓名，优先使用通用视觉语言。
@@ -1847,6 +1847,222 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     originalImage: "/assets/featured/color-dappled-warm-cool-portrait-original.jpg",
     resultImage: "/assets/featured/color-dappled-warm-cool-portrait-result.jpg",
     prompt: "请保持原图画面构图和人物不变，将照片处理为电影感人像摄影。画面采用浅景深和大光圈定焦镜头质感，主体面部和局部轮廓相对清晰，背景大幅虚化，形成柔和圆形光斑与模糊色块。暖色斜射光从右前侧照在脸部、头发、肩颈和衣物上，形成大块叶影斑驳；阴影不能遮挡脸部关键表情。亮部呈金黄色、琥珀色和蜂蜜色，阴影呈深蓝、青灰和墨黑色，形成强烈冷暖对比。环境色调加入青蓝、灰蓝、深青色，暖光局部点亮画面。亮部柔和且略微过曝，暗部深沉但保留细节；加入柔焦光晕、轻微镜头炫光、细腻胶片颗粒和自然曝光波动。整体氛围安静、孤独、浪漫、感伤、朦胧，具有电影静帧质感，重点强调斑驳光影与冷暖色彩。避免改变人物身份、五官、姿势和构图，避免过度磨皮、塑料质感、强 HDR、乱码、水印和夸张特效。"
+  },
+  {
+    id: "img2img-mono-ink-editorial",
+    category: "image-to-image",
+    group: "poster-layout",
+    zhTitle: "单双色社论印刷",
+    enTitle: "One-Two Ink Editorial Print",
+    zhDescription: "把照片压缩为一至两种专色、网点影像与主动留白组成的编辑海报。",
+    enDescription: "Reduce a photo into a one- or two-ink editorial print with halftones and active negative space.",
+    originalImage: "/assets/featured/img2img-mono-ink-editorial-original.jpg",
+    resultImage: "/assets/featured/img2img-mono-ink-editorial-result.jpg",
+    prompt: "请严格基于上传照片制作一张“单双色社论印刷海报”。保留原图主体身份、动作、构图方向和关键轮廓，删除次要杂物与零碎颜色。使用“主墨色”和可选的“第二强调墨色”完成分色，纸张本色承担高光与大面积留白；照片暗部转为粗细有序的网点或颗粒，中间调通过网点密度而非数字渐变表达。让主体、标题占位和信息线形成明确阅读顺序，并保留约 25% 至 55% 的主动负空间。允许轻微套色偏移、油墨吸收和纸纤维，但重要面部、轮廓和识别细节必须清楚。若需要文字，仅生成少量短标题占位，不生成长段乱码。避免全彩照片滤镜、平滑数字渐变、每处同样粗糙、过度做旧、复杂拼贴、品牌标志和水印。"
+  },
+  {
+    id: "img2img-retro-crt-interface",
+    category: "image-to-image",
+    group: "style-transfer",
+    zhTitle: "复古CRT位图界面",
+    enTitle: "Retro CRT Bitmap Interface",
+    zhDescription: "把照片重构为八十年代单色电脑窗口、点阵图像与弧面荧光屏。",
+    enDescription: "Rebuild a photo as an early monochrome computer interface on a curved glowing CRT.",
+    originalImage: "/assets/featured/img2img-retro-crt-interface-original.jpg",
+    resultImage: "/assets/featured/img2img-retro-crt-interface-result.jpg",
+    prompt: "请将上传照片重构为“复古 CRT 位图电脑界面”。保留原图主体、姿势、视线、主要物件和空间关系，把照片转译为“薄荷绿黑 / 琥珀黑 / 黑白”之一的有限单色点阵图像。画面由早期桌面系统式重叠窗口、像素图标、菜单条、状态框和低分辨率图形共同组织，所有界面元素遵循同一像素网格；屏幕边缘带轻微桶形弯曲、扫描线、荧光余辉和玻璃反射。人物或主体仍需一眼可辨，不要被界面遮住关键部位。只使用无语义占位符和短横线，避免乱码。不要现代手机 UI、霓虹赛博朋克、高清矢量图标、彩色渐变、品牌系统、Logo 或水印。"
+  },
+  {
+    id: "img2img-roughcast-early-3d",
+    category: "image-to-image",
+    group: "style-transfer",
+    zhTitle: "粗模早期3D重铸",
+    enTitle: "Roughcast Early 3D",
+    zhDescription: "保留场景锚点，故意重构为几何粗糙、贴图有限的早期三维画面。",
+    enDescription: "Preserve scene anchors while rebuilding the photo as deliberately limited early 3D.",
+    originalImage: "/assets/featured/img2img-roughcast-early-3d-original.jpg",
+    resultImage: "/assets/featured/img2img-roughcast-early-3d-result.jpg",
+    prompt: "请把上传照片重构为“粗模早期 3D”画面。锁定原图相机位置、主体数量、人物姿态、建筑或道路等主要空间锚点，再将其转化为低面数但非现代精致低多边形的三维场景：几何体略显笨拙，轮廓有可见折面，贴图分辨率有限并重复使用，人物动作略僵硬，灯光朴素，阴影短而简单，材质缺少复杂反射。画面应像早期实时三维项目的真实制作限制，而不是故意加马赛克滤镜。保留主体辨识度与原图叙事，不额外增加对象。避免现代 PBR、电影级光追、精致建模、玩具塑料感、纯像素画、严重透视错位、Logo 和水印。"
+  },
+  {
+    id: "img2img-boarding-pass-memory",
+    category: "image-to-image",
+    group: "poster-layout",
+    zhTitle: "登机牌旅行记忆",
+    enTitle: "Boarding Pass Travel Memory",
+    zhDescription: "把旅行照片编排为带路线、票券分区和打孔细节的登机牌纪念海报。",
+    enDescription: "Arrange a travel photo as a boarding-pass keepsake with routes, ticket zones, and perforation details.",
+    originalImage: "/assets/featured/img2img-boarding-pass-memory-original.jpg",
+    resultImage: "/assets/featured/img2img-boarding-pass-memory-result.jpg",
+    prompt: "请基于上传的“旅行照片”制作一张 3:4 竖版“登机牌旅行记忆海报”。保留原图人物身份、行李、动作、地点特征和真实摄影质感，将主体照片作为最大视觉区域；其余空间重构为票券分区、打孔边、路线弧线、起终点圆点、日期编号、条码节奏和行程信息网格。配色从原图提取一种深色、一种纸色和一种强调色，版式应清楚像设计纪念票，而非真实可使用票证。需要地点时使用“出发地”“目的地”“日期”等可替换信息，避免自动编造航班号。文字只占辅助层级，不能覆盖人物。避免护照或证件仿造、密集乱码、多个无关照片、商业航空品牌、Logo、水印和过度做旧。"
+  },
+  {
+    id: "img2img-jrpg-npc-profile",
+    category: "image-to-image",
+    group: "style-transfer",
+    zhTitle: "原创JRPG NPC档案",
+    enTitle: "Original JRPG NPC Profile",
+    zhDescription: "把照片人物转成原创日式角色扮演游戏中的人物档案与对话界面。",
+    enDescription: "Turn the photographed person into an original role-playing-game NPC profile and dialogue interface.",
+    originalImage: "/assets/featured/img2img-jrpg-npc-profile-original.jpg",
+    resultImage: "/assets/featured/img2img-jrpg-npc-profile-result.jpg",
+    prompt: "请把上传照片中的人物转化为“原创日式角色扮演游戏 NPC 档案”。保留人物年龄感、脸型特征、发型、服装轮廓、姿势、手持物和原场景身份线索，不照搬任何现有游戏角色。以手绘角色肖像为核心，周围加入与人物职业相符的对话框、物品格、地点小地图、状态图标和少量纹章，所有元素共享统一的旧纸、像素或绘制语言。自动为人物提炼“职业”“性格”“一件关键道具”和“一句简短对话”，但界面示例中以短占位线表示，避免乱码。画面具有冒险感但不堆满信息。避免版权角色、现成游戏 UI、夸张换脸、现代手机界面、无关武器、品牌标志和水印。"
+  },
+  {
+    id: "img2img-live-photo-nine-grid",
+    category: "image-to-image",
+    group: "poster-layout",
+    zhTitle: "实况动作九宫格",
+    enTitle: "Live-Action Nine-Frame Grid",
+    zhDescription: "从一张动作照片推演同一事件的连续九帧，形成干净的实况序列。",
+    enDescription: "Expand one action photo into a clean nine-frame sequence of the same event.",
+    originalImage: "/assets/featured/img2img-live-photo-nine-grid-original.jpg",
+    resultImage: "/assets/featured/img2img-live-photo-nine-grid-result.jpg",
+    prompt: "请以上传的“动作照片”为唯一场景与人物参考，生成同一事件的 3×3 实况动作九宫格。先识别动作的起点、最高点、转折和结束，再推演前后连续瞬间；九格必须保持同一人物身份、服装、道具、天气、镜头位置和场景方向，只改变符合运动规律的姿态、衣物摆动、头发、影子或道具轨迹。每格保持相同画幅与曝光，时间间隔自然，阅读顺序从左到右、从上到下。不要把九格做成九个不同人物、不同地点或随机姿势，不要手机外壳、App UI、重复完全相同帧、肢体错位、Logo、水印或文字。"
+  },
+  {
+    id: "img2img-home-screen-memory",
+    category: "image-to-image",
+    group: "poster-layout",
+    zhTitle: "主屏回忆拼贴",
+    enTitle: "Home-Screen Memory Collage",
+    zhDescription: "从一张照片提取细节，编排成克制的组件式回忆主屏。",
+    enDescription: "Extract details from one photo and arrange them as a restrained widget-like memory screen.",
+    originalImage: "/assets/featured/img2img-home-screen-memory-original.jpg",
+    resultImage: "/assets/featured/img2img-home-screen-memory-result.jpg",
+    prompt: "请将上传照片制作成“主屏回忆拼贴”。严格只使用原图中的主体、环境和细节，从原照片提取一个主画面以及“4 至 8 个”局部特写，例如食物、花朵、窗景、手部、材质或光影，并编排为大小不同但对齐统一网格的圆角组件。加入极少量日期、天气、播放进度或日历节奏的抽象占位元素，但不要生成真实 App、品牌图标或可点击界面。所有小图保持同一时间、地点和色调，主次清楚、留白舒适，像私人数字记忆板而不是社交媒体截图。避免新增原图不存在的对象、重复同一裁片、密集贴纸、手机边框、乱码、Logo 和水印。"
+  },
+  {
+    id: "img2img-ui-doodle-overlay",
+    category: "image-to-image",
+    group: "poster-layout",
+    zhTitle: "手绘界面涂鸦",
+    enTitle: "Hand-Drawn UI Doodle Overlay",
+    zhDescription: "保留真实照片，用手绘按钮、箭头与选择框解释画面里的动作关系。",
+    enDescription: "Keep the real photo and explain its action with hand-drawn buttons, arrows, and selection marks.",
+    originalImage: "/assets/featured/img2img-ui-doodle-overlay-original.jpg",
+    resultImage: "/assets/featured/img2img-ui-doodle-overlay-result.jpg",
+    prompt: "请保持上传照片的主体、构图、光影、颜色和真实摄影内容不变，只在照片表面加入“手绘界面涂鸦层”。先分析人物正在做什么、视线指向哪里、哪些物件可被解释，再用一套统一的手绘线条添加按钮轮廓、选择框、滑杆、光标、箭头、连接线和注释气泡；每个图形必须指向真实对象或动作，遵循画面透视与遮挡，不得随机漂浮。线条颜色使用“白色 / 黑色 / 从原图提取的一种强调色”，粗细统一，覆盖面积克制。不要改变人物身份和物体，不要真实软件截图、复杂仪表盘、长文字、乱码、品牌界面、Logo 或水印。"
+  },
+  {
+    id: "img2img-thermal-receipt-memory",
+    category: "image-to-image",
+    group: "poster-layout",
+    zhTitle: "热敏小票记忆",
+    enTitle: "Thermal Receipt Memory",
+    zhDescription: "把街景或日常照片转译为长条热敏纸上的点阵记忆记录。",
+    enDescription: "Translate a street or daily-life photo into a dot-matrix memory printed on thermal receipt paper.",
+    originalImage: "/assets/featured/img2img-thermal-receipt-memory-original.jpg",
+    resultImage: "/assets/featured/img2img-thermal-receipt-memory-result.jpg",
+    prompt: "请把上传的“街景或日常照片”转化为一张“热敏小票记忆海报”。保留原图主体轮廓、建筑结构、视角和最关键光影，将照片压缩为单色热敏点阵或抖动图像，印在一张垂直长条、略有卷曲和撕口的薄纸上。图像下方使用日期、地点、事件、天气和清单式短句的排版节奏，具体内容使用“地点”“日期”“一句记忆”等可替换占位，不编造消费金额。允许轻微打印缺行、热敏褪色和纸张折痕，但主体必须清晰。背景简洁，突出纸张。避免伪造真实票据、二维码、支付信息、品牌商户、长段乱码、复古羊皮纸、彩色印刷、Logo 和水印。"
+  },
+  {
+    id: "img2img-crayon-motion-overlay",
+    category: "image-to-image",
+    group: "style-transfer",
+    zhTitle: "蜡笔动态叠画",
+    enTitle: "Crayon Motion Overlay",
+    zhDescription: "不重画照片，只让彩色蜡笔线沿动作、风与速度在画面上生长。",
+    enDescription: "Keep the photograph intact and let wax-crayon strokes grow along motion, wind, and speed.",
+    originalImage: "/assets/featured/img2img-crayon-motion-overlay-original.jpg",
+    resultImage: "/assets/featured/img2img-crayon-motion-overlay-result.jpg",
+    prompt: "请保留上传照片中的人物、主体、背景、真实光影和摄影质感，不把整张照片重画；只添加一层“蜡笔动态叠画”。根据人物动作、车轮、风向、视线或物体轨迹，用“3 至 5 种从原图提取的明亮颜色”绘制粗糙油画棒线、断续弧线、速度笔触和少量涂出边界的色块。蜡笔线必须沿真实运动方向生长，并在主体关键轮廓附近形成节奏，不能遮住脸、手和重要物件。局部可出现纸纤维和蜡屑，但照片仍是主层。避免整图儿童画重绘、随机彩虹乱线、每个边缘都描边、无关太阳云朵、数字光效、文字、Logo 和水印。"
+  },
+  {
+    id: "img2img-silhouette-editorial",
+    category: "image-to-image",
+    group: "poster-layout",
+    zhTitle: "剪影社论海报",
+    enTitle: "Silhouette Editorial Poster",
+    zhDescription: "把照片最强轮廓压缩成剪影、单一色场与大留白的编辑海报。",
+    enDescription: "Compress a photo's strongest contour into silhouette, one color field, and editorial negative space.",
+    originalImage: "/assets/featured/img2img-silhouette-editorial-original.jpg",
+    resultImage: "/assets/featured/img2img-silhouette-editorial-result.jpg",
+    prompt: "请分析上传照片中最有辨识度的“主体轮廓”和“环境结构”，将其重构为一张 3:4 竖版剪影社论海报。保持人物姿势、物件方向和主体之间的距离，把复杂纹理压缩为一个深色剪影、一块主要背景色和最多一种强调色；允许保留一个关键光源、倒影或建筑边缘作为叙事线索。使用尺度对比、偏置构图和大面积负空间建立视觉张力，底部或边缘只放少量短标题占位线。剪影边界必须干净但保留必要身份特征，不能变成随意黑块。避免复杂写实细节、多个无关图标、彩虹渐变、普通抠图白边、励志语录、乱码、Logo 和水印。"
+  },
+  {
+    id: "img2img-pocket-picturebook",
+    category: "image-to-image",
+    group: "style-transfer",
+    zhTitle: "口袋绘本折页",
+    enTitle: "Pocket Picturebook Page",
+    zhDescription: "从一张生活照片提炼四至六个连续小场景，组成温暖克制的口袋绘本页。",
+    enDescription: "Extract four to six sequential moments from one life photo and compose a warm pocket picturebook page.",
+    originalImage: "/assets/featured/img2img-pocket-picturebook-original.jpg",
+    resultImage: "/assets/featured/img2img-pocket-picturebook-result.jpg",
+    prompt: "请以上传的“生活照片”为唯一人物和场景来源，制作一页“口袋绘本折页”。保留人物身份、服装、地点和主要动作，从照片中提炼一个核心事件，再扩展为“4 至 6 个”连续小场景：建立环境、开始动作、局部细节、轻微变化和安静结尾。使用温暖纸张、手绘水粉或彩铅、柔和轮廓和有限色盘，人物比例与服装在每格保持一致；小场景可大小错落，但阅读顺序清楚，并保留足够页边留白。只使用极短页码或占位线，不生成长文字。避免把同一图机械重复、无关新角色、儿童卡通夸张五官、满版拥挤、商业漫画分镜、乱码、品牌、Logo 和水印。"
+  },
+  {
+    id: "img2img-photo-perler-charm",
+    category: "image-to-image",
+    group: "style-transfer",
+    zhTitle: "照片拼豆挂件",
+    enTitle: "Photo Perler Charm",
+    zhDescription: "把人物、宠物或物件照片转成可实际拼装的彩色熔合珠挂件。",
+    enDescription: "Turn a person, pet, or object photo into a buildable fused-bead charm.",
+    originalImage: "/assets/featured/img2img-photo-perler-charm-original.jpg",
+    resultImage: "/assets/featured/img2img-photo-perler-charm-result.jpg",
+    prompt: "请把上传照片中的“人物 / 宠物 / 物件”转换为“照片拼豆挂件”。保留最有辨识度的轮廓、脸部或花纹、主色和姿态，把连续曲线归纳为规则方格上的圆柱形熔合珠；每颗珠子尺寸一致、孔洞方向统一、彼此紧密接触，并形成能够真实连接、不含孤立珠子的结构。使用“8 至 16 种”有限颜色，通过相邻色块而非渐变表现明暗。挂件顶部加入一个合理的连接孔和简洁金属环，背景干净。不要把结果画成像素贴图、马赛克滤镜、刺绣或塑料平面印刷；避免过多颜色、悬空珠粒、结构断裂、品牌标识和水印。"
+  },
+  {
+    id: "img2img-textile-toy-portrait",
+    category: "image-to-image",
+    group: "style-transfer",
+    zhTitle: "织物玩偶肖像",
+    enTitle: "Textile Toy Portrait",
+    zhDescription: "把照片人物重构为带布片、缝线和刺绣五官的手作织物玩偶。",
+    enDescription: "Rebuild a photographed person as a handcrafted textile toy with fabric layers, seams, and embroidery.",
+    originalImage: "/assets/featured/img2img-textile-toy-portrait-original.jpg",
+    resultImage: "/assets/featured/img2img-textile-toy-portrait-result.jpg",
+    prompt: "请将上传的人物或宠物照片转化为“织物玩偶肖像”。保留主体脸型比例、发型轮廓、表情、服装配色、配饰和姿势，把皮肤、头发和衣物分别重构为棉布、毛毡、针织、绒布或线绳等合适材质。五官使用克制的刺绣线和布片叠层表达，接缝、包边、填充厚度和少量手工不齐必须真实可见；四肢与服装需要符合可缝制结构。背景简洁，柔和工作室光突出纤维。不要塑料 3D、公仔树脂、针织滤镜覆盖真人照片、过度可爱化、身份丢失、散落线头、品牌标识或水印。"
+  },
+  {
+    id: "img2img-iridescent-long-exposure",
+    category: "image-to-image",
+    group: "style-transfer",
+    zhTitle: "虹彩长曝光肖像",
+    enTitle: "Iridescent Long-Exposure Portrait",
+    zhDescription: "保持清晰面部锚点，让虹彩光迹沿真实动作方向环绕人物。",
+    enDescription: "Keep a sharp facial anchor while iridescent light trails follow the subject's real movement.",
+    originalImage: "/assets/featured/img2img-iridescent-long-exposure-original.jpg",
+    resultImage: "/assets/featured/img2img-iridescent-long-exposure-result.jpg",
+    prompt: "请基于上传的人像或动作照片制作“虹彩长曝光肖像”。保留人物身份、脸部、服装、主要姿势和镜头位置，让脸部或一只眼睛成为清晰静止锚点；根据手臂、身体、布料或道具的真实运动方向生成连续长曝光光迹。光迹使用“青、品红、紫、金”中不超过三种主色，具有透明叠加、亮度衰减和前后遮挡，不得像实体彩带复制。背景压暗但保留环境轮廓，局部加入轻微镜头雾化。不要全画面同样模糊、多个实体分身、随机霓虹圆环、与动作相反的残影、过曝面部、赛博城市替换、文字、Logo 或水印。"
+  },
+  {
+    id: "img2img-pixel-slice-stretch",
+    category: "image-to-image",
+    group: "poster-layout",
+    zhTitle: "像素切片拉伸",
+    enTitle: "Pixel Slice Stretch",
+    zhDescription: "保留主体清晰锚点，把局部像素切片沿构图方向延伸成有秩序的色带。",
+    enDescription: "Preserve a sharp subject anchor while selected pixel slices extend into structured color trails.",
+    originalImage: "/assets/featured/img2img-pixel-slice-stretch-original.jpg",
+    resultImage: "/assets/featured/img2img-pixel-slice-stretch-result.jpg",
+    prompt: "请保持上传照片的主体身份、场景、镜头和整体色调，在不重绘整张照片的前提下制作“像素切片拉伸”效果。先选择一个必须完整清晰的锚点，例如“脸部”“产品标识区”或“建筑入口”；再从主体和背景提取若干宽窄不一的水平或垂直像素切片，沿“运动方向 / 视线方向 / 版式方向”拉伸为连续色带。切片颜色必须来自原图，边缘保持硬像素或短阶梯，密度从主体向外逐渐减少，并保留至少一侧原始轮廓。避免整图故障噪声、随机 RGB 分离、脸部被切碎、所有切片同宽、复制多个主体、低清马赛克、乱码、Logo 和水印。"
+  },
+  {
+    id: "img2img-paper-portrait-cd",
+    category: "image-to-image",
+    group: "poster-layout",
+    zhTitle: "纸艺唱片肖像",
+    enTitle: "Paper Portrait Disc Edition",
+    zhDescription: "把人物照片转成围绕圆形唱片窗口组织的分层纸艺收藏封面。",
+    enDescription: "Turn a portrait into a layered paper collectible cover organized around a circular disc window.",
+    originalImage: "/assets/featured/img2img-paper-portrait-cd-original.jpg",
+    resultImage: "/assets/featured/img2img-paper-portrait-cd-result.jpg",
+    prompt: "请将上传的人物照片制作成“纸艺唱片肖像收藏封面”。保留人物脸型、眼镜或配饰、发型和手势，把肖像归纳为多层暖白、牛皮纸、深灰纸和一至两种原图强调色的裁切纸片。以一个圆形唱片或唱片窗口作为构图骨架，让人物局部自然跨越圆形边界；纸层必须有真实厚度、切边、轻微纤维和克制投影。版式像独立音乐收藏品，可加入少量曲目线与编号占位，但不生成可读品牌或虚构艺名。避免真实塑料 CD 反光主导、普通圆形相框、平面矢量头像、复杂拼贴、厚重阴影、乱码、Logo 和水印。"
+  },
+  {
+    id: "img2img-visual-identity-expander",
+    category: "image-to-image",
+    group: "product-structure",
+    zhTitle: "视觉身份成套延展",
+    enTitle: "Visual Identity Expander",
+    zhDescription: "从一个已有标志、产品或角色提炼规则，生成统一而不重复的应用套件。",
+    enDescription: "Derive a coherent application system from one existing mark, product, or character.",
+    originalImage: "/assets/featured/img2img-visual-identity-expander-original.jpg",
+    resultImage: "/assets/featured/img2img-visual-identity-expander-result.jpg",
+    prompt: "请以我上传的“Logo / 产品 / 角色 / 标志性物件”为唯一视觉身份来源，制作一张“视觉身份成套延展板”。先拆解其中不可改变的核心特征：主轮廓、比例、主辅色、线条粗细、材质和识别符号；再建立一套统一规则，延展到“包装、手提袋、卡片、社媒图块、小型周边和图标”中的 4 至 7 项。每个应用必须使用同一识别系统但根据载体调整尺度、留白和材质，不能简单把原图原样贴在所有物品上。主视觉居中，周围按网格展示应用与色卡；文字使用短占位，不编造品牌名。避免改变核心标志、引入无关配色、风格混杂、过度模型样机、重复贴图、乱码、第三方品牌和水印。"
   }
 ];
 
