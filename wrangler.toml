@@ -1,6 +1,7 @@
 name = "tishicishengchengqi"
 compatibility_date = "2026-08-16"
 pages_build_output_dir = "./dist"
+# Production releases are built from the GitHub main branch.
 
 [assets]
 directory = "./dist"
