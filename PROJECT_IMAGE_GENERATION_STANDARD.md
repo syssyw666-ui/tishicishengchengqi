@@ -130,7 +130,7 @@
 5. 前端仓库先同步远端并验证本地提交是快进更新；禁止在未读取最新远端 SHA 时强推。
 6. 后端有变化时，不要使用长期滞后的旧克隆。应从私有仓库最新 `origin/main` 建立干净临时工作树，把规范仓库中的 `backend/` 正式文件机械同步进去，再测试、提交和推送。
 7. 若 Git 报 `dubious ownership`，只把当前确认过的仓库绝对路径加入 `safe.directory`，不要加入宽泛目录。
-8. 若出现 `SEC_E_NO_CREDENTIALS`，这是 Windows Schannel/GCM 问题，不是代码或普通断网。读取公开远端时使用 `-c credential.helper= -c http.sslBackend=openssl`；写入时修复 GitHub 登录，或在 Codex 已连接 GitHub 时使用 Git Data API 创建 blob/tree/commit，并以 `expected_sha` 更新 `main`，禁止无租约覆盖分支。
+8. 若出现 `SEC_E_NO_CREDENTIALS`，这是 Windows Schannel/GCM 问题，不是代码或普通断网。读取公开远端时使用 `-c credential.helper= -c http.sslBackend=openssl`；写入时优先修复 GitHub 登录。若改用 Codex 已连接的 Git Data API，必须创建 blob/tree/commit，并以 `expected_sha` 更新 `main`，禁止无租约覆盖分支。
 9. 若出现连接重置或 443 超时，保持提交不变，等待约 30 秒后重试完全相同的 fetch/push；不要生成空提交触发部署。
 10. 推送前固定验证：
    - 前端类型检查。
@@ -138,8 +138,15 @@
    - 后端迁移检查或本地迁移验证。
    - 后端测试。
    - 涉及图片时检查正式图片路径、尺寸、哈希和裁切边缘。
-11. 分别记录公开前端和私有后端提交 hash，并重新读取两个远端 `main` 验证 SHA。
+11. 分别记录公开前端和私有后端提交 hash，并重新读取两个远端 `main` 验证 SHA。继续比较本地提交树与远端提交树：`git show -s --format=%T HEAD` 必须与远端 commit 的 `tree.sha` 完全一致。接口返回成功、网页返回 `200` 或文件数量相同都不能替代 Tree SHA 校验。
 12. Cloudflare 与 Railway 未必立即回传 GitHub 状态。分别检查平台最新部署和线上健康地址；若前端源码未变化，构建后的 JS 文件名保持不变是正常现象。线上未更新时先查看平台部署日志，不要重复提交无意义空提交。
+
+Git Data API 仅作为本机凭据不可用时的后备通道：
+
+- 上传内容必须来自已提交的 Git blob，而不是可能受换行转换影响的工作区文件。
+- 大型 JSON、TypeScript 或二进制文件不能经过会截断输出的单次命令转交；应优先恢复 Git 凭据后正常 push，或按三字节对齐的块读取完整 blob，再创建单个 GitHub blob。
+- 每个远端 blob 的 SHA 必须等于本地 `git rev-parse HEAD:<path>`；全部文件完成后再创建树和提交。
+- 远端 Tree SHA 不一致时，先用 `git diff HEAD origin/main` 找出截断或换行差异，修复后再触发部署，绝不能把“接口已完成”当成发布成功。
 
 推荐命令顺序：
 
@@ -162,11 +169,13 @@ git -c http.sslBackend=openssl push origin main
 
 后端私有仓库固定流程：
 
-1. 获取私有仓库最新 `main`，从该提交创建全新的临时工作树，例如 `D:\tishicishengchengqi_ADMIN_release_YYYYMMDD`。
+1. 获取私有仓库最新 `main`，从该提交创建全新的临时克隆或工作树，例如 `D:\tishicishengchengqi_ADMIN_release_YYYYMMDD`；开始同步前确认其中的 `.git` 元数据有效。
 2. 只同步规范仓库 `backend/` 下应发布的源码、迁移、模板、静态文件、`requirements.txt`、部署文件和 `catalog_seed.json`。
 3. 不同步 `.env`、虚拟环境、上传媒体、本地数据库、日志、缓存和 SMTP/数据库明文密码。
 4. 在临时工作树运行迁移检查和后端测试，确认通过后提交并推送私有仓库 `main`。
 5. 读取私有远端最新 SHA，确认 Railway 监听的仓库确实收到该提交，再检查 `/api/health/`。
+
+不要对私有仓库根目录直接执行可能删除“源目录中不存在文件”的镜像同步；工作树的 `.git` 可能是文件而不是目录，普通的目录排除规则仍可能误删它。只同步明确的正式目录和文件，或先在独立临时目录准备发布内容，再由 Git 计算差异。
 
 若本机 MySQL 用户没有创建测试库权限，可使用 `DJANGO_USE_SQLITE=1` 验证后端代码逻辑；正式本地数据库仍使用 MySQL，并在需要时执行 `backend\.venv\Scripts\python.exe manage.py migrate`。
 
