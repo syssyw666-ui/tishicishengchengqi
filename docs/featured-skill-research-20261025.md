@@ -68,3 +68,26 @@
 - 按实际白色分隔带逐半测量边界；上下行不共享理论切分坐标。
 - 每张最终资源固定为 960×540，竖图完整 `contain`，空余区域使用该图片自身的模糊背景填充。
 - 原图与效果图共 24 张，另生成 4 张参数卡图；不引用旧精选项目图片。
+
+## 第四轮：照片编辑、人物转绘与系列内容
+
+本轮从近期公开的图片技能仓库中筛选出 12 个与现有库作用不同的方向：照片音乐记忆卡、照片借形转译、碎片混合媒介海报、无描边丙烯色块转绘、穿搭时装插画、街拍人物插画化、复古卡纸静物重构、磨砂半透明物件海报、照片图章档案、社媒信息封面、日常平涂线描转绘和系列社交卡图。
+
+主要研究来源：
+
+- https://github.com/carolinaaafy/photo-now-playing
+- https://github.com/MickeyWzt/photo-form-transposition
+- https://github.com/Eursolarmark/photo-fragmented-mixed-media-poster
+- https://github.com/mengfanfreyachan/vivid-acrylic-marker-photo-skill
+- https://github.com/xiaozhoustefanie227/outfit-to-fashion-illustration-skill
+- https://github.com/dacnay816y62-hub/street-photo-illustration-skill
+- https://github.com/qianyuning/retro-stilllife-photography
+- https://github.com/Luna-QingYuFan/frosted-object-poster
+- https://github.com/Dlcccc71913/skill-make-photo-stamp-archive
+- https://github.com/Vivixiao980/xhs-cover-skill
+- https://github.com/miso-zm/photo-doodle
+- https://github.com/kostja94/social-cards-skills
+
+语义去重时跳过了拾景纸刊、照片抽象社论、旅行贴纸卡、复古旅行手账、双色孔版印刷、水墨重构、月刊明信片、纸面解构拼贴、照片复兴和建筑编辑海报等已有等价方案。完整工作流只进入精选提示词；仅为确实缺失的视觉语言补充 6 张纯风格卡：碎片混合媒介、无描边丙烯色块、时装编辑速写、日常平涂线描、复古卡纸静物摄影和磨砂物件编辑插画。
+
+图片使用两张 4×3 原图/效果图联系表和一张 3×2 纯风格联系表生成。纯风格表第三列因白色画面与白色分隔带相连，自动白边检测误把起点识别到画面内部；本轮在使用前通过审查拼图发现并废弃错误裁片，改用等分网格坐标向内收 3 像素重新裁切。最终 30 张新资源均固定为 960×540，逐张拼图复核无串图、旧图复用、白边或主体截断。

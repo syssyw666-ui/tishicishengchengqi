@@ -2208,6 +2208,150 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     resultImage: "/assets/featured/img2img-ecommerce-campaign-lock-result.jpg",
     prompt: "请以上传的产品照片为唯一产品参考，制作一张包含“主图、功能微距、使用场景、机制示意”四个模块的电商图组预览。生成前先建立并严格执行同一套风格锁：产品瓶身或外壳几何、比例、颜色、标签位置和开合结构完全不变；固定“背景主色”“文字占位色”“一种强调色”、冷暖倾向、主光方向、阴影软硬、镜头高度、产品尺度和信息图线宽。四个模块可以改变环境与取景，但必须像同一广告系列，不得出现四种不同包装或光线。所有功效、成分、认证和数据仅使用空白占位，不能编造。避免标签乱码、产品变形、颜色漂移、重复粘贴同一角度、场景抢主体、无依据功效对比、第三方品牌、Logo 和水印。"
   }
+  {
+    id: "img2img-photo-now-playing",
+    category: "image-to-image",
+    group: "poster-layout",
+    zhTitle: "照片音乐记忆卡",
+    enTitle: "Photo Now-Playing Memory Card",
+    zhDescription: "根据照片的光线与情绪建立磨砂播放器层，让歌曲信息成为一段克制的视觉记忆。",
+    enDescription: "Build a restrained frosted player layer from a photo's light and mood, turning music metadata into a visual memory.",
+    originalImage: "/assets/featured/img2img-photo-now-playing-original.jpg",
+    resultImage: "/assets/featured/img2img-photo-now-playing-result.jpg",
+    prompt: "请把上传照片制作成一张“正在播放的音乐记忆卡”。锁定原照片中的人物身份、主体位置、场景透视、真实光影和主色，只做适度电影调色；根据照片情绪选择播放器面板的冷暖、透明度和位置。加入一块克制的磨砂玻璃播放界面，包含“用户提供的歌曲名”“用户提供的歌手名”、小型专辑图、进度条和播放控制符号；若用户没有提供歌曲信息，使用不可读占位线，不得擅自引用真实歌词或唱片封面。播放器与前景遮挡关系必须自然，不能盖住脸和关键主体。可从照片裁取局部制作抽象专辑图，但不得添加第三方品牌。避免手机系统截图感、整页 UI、版权歌词、乱码、过强玻璃反光、陌生人物、Logo 和水印。"
+  },
+  {
+    id: "img2img-photo-form-transposition",
+    category: "image-to-image",
+    group: "style-transfer",
+    zhTitle: "照片借形转译",
+    enTitle: "Photo Form Transposition",
+    zhDescription: "让道路、水流、山脊或光影承担新形象的结构角色，而原场景仍在新形态中连续存在。",
+    enDescription: "Let roads, water, ridges, or light perform a new form while the original scene remains continuous within it.",
+    originalImage: "/assets/featured/img2img-photo-form-transposition-original.jpg",
+    resultImage: "/assets/featured/img2img-photo-form-transposition-result.jpg",
+    prompt: "请分析上传照片真正组织画面的结构，判断它主要由“体块 / 流动 / 路径拓扑 / 混合结构”中的哪一种主导，并选出一个关键载体，例如道路、水流、山脊、云层、枝条、阴影或光束。将这个载体自然转译成“目标形象”；若用户未指定目标，请提出一个与源结构高度匹配、无需解释也能成立的形象。原照片必须是唯一视觉来源，让不同源区域分别承担目标的轴线、轮廓、体积或运动方向；只允许少量补全，不得先画一个完整剪影再把照片填进去。根据原图选择封闭、渗透或手势式边界，让环境在新形态内外连续。避免普通双重曝光、剪影蒙版、动物云朵滤镜、硬拼轮廓、发明大量新结构、可读文字、Logo 和水印。"
+  },
+  {
+    id: "img2img-photo-fragmented-mixed-media",
+    category: "image-to-image",
+    group: "poster-layout",
+    zhTitle: "碎片混合媒介海报",
+    enTitle: "Fragmented Mixed-Media Poster",
+    zhDescription: "保留一个清晰摄影主角，其余碎片分别解释运动、结构、材质与情绪，而不是套固定拼贴模板。",
+    enDescription: "Keep one clear photographic hero while supporting fragments interpret motion, structure, texture, and emotion without a fixed collage template.",
+    originalImage: "/assets/featured/img2img-photo-fragmented-mixed-media-original.jpg",
+    resultImage: "/assets/featured/img2img-photo-fragmented-mixed-media-result.jpg",
+    prompt: "请把上传照片制作成一张“碎片混合媒介编辑海报”。先确定一个不可替代的摄影主角，保留身份、动作、关键物件和最清晰细节，使其始终比其他层更锐利、更占主导。再从原图中提取“3 至 7 个”功能不同的不规则碎片：运动轨迹、环境纹理、结构线、局部光影或情绪色场；每个碎片只能承担一种信息，不得重复完整主体。根据原照片选择石墨、木炭、油彩、水彩、粉彩、蓝晒、版画、压纹、缝线、网点或半透明纸中的少量媒介，建立可信的前中后景和局部照片到手工媒介的过渡。总可辨摄影面积保持约 55% 至 75%。文字只用极少档案占位。避免固定两窗撕纸模板、同一人重复出现、无关花草胶带、满版溶解、商业广告、乱码、Logo 和水印。"
+  },
+  {
+    id: "img2img-vivid-acrylic-marker",
+    category: "image-to-image",
+    group: "style-transfer",
+    zhTitle: "无描边丙烯色块转绘",
+    enTitle: "Outline-Free Acrylic Marker Redraw",
+    zhDescription: "保留照片空间与主色，把细节合并为不透明丙烯块面，并用相邻颜色而非轮廓线塑形。",
+    enDescription: "Preserve spatial structure and palette while merging detail into opaque acrylic blocks shaped by adjacent color rather than outlines.",
+    originalImage: "/assets/featured/img2img-vivid-acrylic-marker-original.jpg",
+    resultImage: "/assets/featured/img2img-vivid-acrylic-marker-result.jpg",
+    prompt: "请将上传的“风景 / 建筑 / 静物 / 食物照片”转绘为 3:4“无描边丙烯马克笔色块插画”。严格保留主体数量、轮廓比例、透视、地平线、前后关系和原图主色；把树叶、草地、岩石、云层、桌面纹理等细节合并为节奏明确的大型不透明色块。所有边界必须由相邻色面的色相、冷暖和明度差自然形成，不使用黑色、深蓝或白色描边。允许轻微手绘边缘、局部干刷和纸张纹理，但不使用柔和渐变。避免水彩晕染、油画厚涂、矢量勾线、贴纸白边、写实滤镜、凭空新增人物建筑、文字、Logo 和水印。"
+  },
+  {
+    id: "img2img-outfit-fashion-illustration",
+    category: "image-to-image",
+    group: "style-transfer",
+    zhTitle: "穿搭时装插画",
+    enTitle: "Outfit to Fashion Illustration",
+    zhDescription: "忠实保留整套服装的版型、面料与配饰，把人物简化为留白充足的时装编辑速写。",
+    enDescription: "Faithfully preserve garment construction, fabric, and accessories while simplifying the wearer into an airy fashion editorial sketch.",
+    originalImage: "/assets/featured/img2img-outfit-fashion-illustration-original.jpg",
+    resultImage: "/assets/featured/img2img-outfit-fashion-illustration-result.jpg",
+    prompt: "请把上传的全身穿搭照片转化为“极简时装编辑插画”。锁定人物数量、姿势、身体比例、发型和整套穿搭，准确保留领型、肩线、袖长、腰线、衣长、褶皱方向、图案、鞋履、包袋与首饰；背景只保留支撑姿势所必需的椅子、桌面或一条地面线。使用暖白纸张、松弛黑色墨线或石墨线和少量从服装提取的水粉色块，面部高度简化但不改变年龄感。默认输出 3:4 全身单人图，也可把“多个造型 / 细节研究”作为可替换模式。避免更换服装设计、擅自瘦身拉腿、卡通大眼、写实皮肤、水彩满涂、复杂场景、品牌文字、Logo 和水印。"
+  },
+  {
+    id: "img2img-street-photo-illustration",
+    category: "image-to-image",
+    group: "style-transfer",
+    zhTitle: "街拍人物插画化",
+    enTitle: "Street-Photo Character Illustration",
+    zhDescription: "只把真实环境中的人物变成线稿或彩色插画，环境、透视和现场光继续保持摄影质感。",
+    enDescription: "Illustrate only the people inside a real scene while preserving photographic environment, perspective, and location light.",
+    originalImage: "/assets/featured/img2img-street-photo-illustration-original.jpg",
+    resultImage: "/assets/featured/img2img-street-photo-illustration-result.jpg",
+    prompt: "请处理上传的街拍、旅行或生活方式照片，只把画面中的人物转换成“BLACK INK 黑白线稿 / COLOR EDITORIAL 彩色编辑插画”中的目标模式，真实环境保持摄影质感。锁定每个人的身份线索、数量、姿势、视线、服装轮廓、配饰、手持物、人与人之间的距离以及脚下透视；插画人物必须与地面、家具和前景产生正确遮挡，不能像悬浮贴纸。环境的建筑、灯光、招牌、食物和景深不重画，只允许轻微统一色调。可选加入极少量环境感涂鸦，但不得遮挡主体。避免整张照片卡通化、人物换脸换衣、白边贴纸、错误落脚点、陌生角色、密集文字、Logo 和水印。"
+  },
+  {
+    id: "img2img-retro-cardstock-stilllife",
+    category: "image-to-image",
+    group: "product-commercial",
+    zhTitle: "复古卡纸静物重构",
+    enTitle: "Retro Cardstock Still-Life Reconstruction",
+    zhDescription: "保留产品身份与材质，重新建立堆叠、平衡和接触关系，形成触感真实的复古棚拍静物。",
+    enDescription: "Preserve product identity and material while rebuilding stacking, balance, and contact into a tactile retro studio still life.",
+    originalImage: "/assets/featured/img2img-retro-cardstock-stilllife-original.jpg",
+    resultImage: "/assets/featured/img2img-retro-cardstock-stilllife-result.jpg",
+    prompt: "请以参考图中的“目标物件 / 产品”作为绝对主主体，制作一张 3:4“复古卡纸静物摄影”。保留产品形状、比例、颜色、材质、开口、按钮和必要标签位置，但重新设计相机视角、构图与布光。加入约“2 至 4 个与用途相关的辅助物件”，通过堆叠、包裹、连接、重复、斜靠或平衡形成一条清楚阅读路径；各物件必须有可信接触关系，不能随意散摆。布景使用具有纤维、纸齿、吸色不均和轻微起伏的单色卡纸，真实棚拍光突出陶土、金属、木材、织物或食物触感。避免白底电商主图、生活方式房间、光滑 CGI、渐变塑料背景、人物表演、大量文字、Logo 和水印。"
+  },
+  {
+    id: "img2img-frosted-object-poster",
+    category: "image-to-image",
+    group: "product-commercial",
+    zhTitle: "磨砂半透明物件海报",
+    enTitle: "Frosted Translucent Object Poster",
+    zhDescription: "从物件照片提取轮廓与色场，重新绘制成纯白背景上的乳白半透明柔雾主视觉。",
+    enDescription: "Extract silhouette and color fields from an object photo, then redraw it as a milky translucent hero on pure white.",
+    originalImage: "/assets/featured/img2img-frosted-object-poster-original.jpg",
+    resultImage: "/assets/featured/img2img-frosted-object-poster-result.jpg",
+    prompt: "请分析上传物件照片中的中文/英文名称、核心轮廓、原材质、主色和“3 至 5 个”识别特征，再从头绘制一张 3:4“磨砂半透明物件编辑海报”。不要在原照片上直接模糊或覆盖玻璃滤镜。背景必须为纯白，物件居中并占画面高度约 52% 至 68%；把外壳重构为乳白半透明柔雾平面，内部使用从原物提取的“3 至 6 个”模糊色场，通过重叠显色、远侧轮廓柔化、轻微边缘光和接触雾表现通透层次，几乎不产生硬投影。顶部使用“物件中英文名称”，底部使用“创作者名 / 情绪短句”；若未提供文字则使用空白占位。避免原图模糊复制、平面不透明图标、闪亮玻璃反射、硬塑料 3D、复杂道具、深色背景、乱码、品牌 Logo 和水印。"
+  },
+  {
+    id: "img2img-photo-stamp-archive",
+    category: "image-to-image",
+    group: "poster-layout",
+    zhTitle: "照片图章档案",
+    enTitle: "Photo Stamp Archive",
+    zhDescription: "一侧忠实保留照片，另一侧用大留白与从主体提炼的手压图章保存这段记忆。",
+    enDescription: "Preserve the photograph on one side and archive the memory with generous paper space and a source-derived hand stamp on the other.",
+    originalImage: "/assets/featured/img2img-photo-stamp-archive-original.jpg",
+    resultImage: "/assets/featured/img2img-photo-stamp-archive-result.jpg",
+    prompt: "请把上传照片制作成“照片图章档案直拼作品”。默认横向左右直拼：照片区约占 55%，必须忠实保留人物、面孔、物件、建筑、真实文字、色彩和场景逻辑；纸张区约占 45%，使用干净暖白档案纸与约 70% 安静留白。根据主体设计一个小型“圆章 / 方章 / 横向全景章 / 拱形章 / 自定义轮廓章”，图章内容提炼自原图最有辨识度的建筑、人物动作或物件轮廓，呈现干墨、缺墨、磨损网点、压力不均和轻微套色偏差。图章附近只放“地点 / 日期 / 极短标题”占位，边界保持笔直清楚。避免书本样机、剪贴簿、多照片拼图、邮票齿孔、图章过大、商业海报、乱码、Logo 和水印。"
+  },
+  {
+    id: "img2img-xhs-information-cover",
+    category: "image-to-image",
+    group: "poster-layout",
+    zhTitle: "社媒信息封面",
+    enTitle: "Social Information Cover",
+    zhDescription: "围绕一个主视觉建立缩略图可读的标题、副标题和标签层级，适合知识、生活与经验分享。",
+    enDescription: "Build a thumbnail-readable hierarchy of title, subtitle, and tags around one hero visual for knowledge, lifestyle, and experience posts.",
+    originalImage: "/assets/featured/img2img-xhs-information-cover-original.jpg",
+    resultImage: "/assets/featured/img2img-xhs-information-cover-result.jpg",
+    prompt: "请基于上传照片制作一张 3:4“社媒信息封面”。保留人物身份、产品形状或场景核心，不改变主要动作和真实空间；只建立一个明确视觉中心。主标题使用“用户提供的标题”，控制在 6 至 14 个中文字符，可分 1 至 2 行；副标题使用“补充信息”，标签使用“1 至 3 个关键词”。主标题必须在手机缩略图中清晰可读，副标题和标签依次减弱；根据照片留白选择人物抠图穿插、背景大字、上图下色块、手绘边框或分屏标签中的一种版式，不混用全部装饰。配色从原图提取并增加一种高对比强调色。避免遮挡脸部和产品、信息层级混乱、长段文字、低俗堆料、虚构事实、乱码、第三方品牌、Logo 和水印。"
+  },
+  {
+    id: "img2img-daily-line-illustration",
+    category: "image-to-image",
+    group: "style-transfer",
+    zhTitle: "日常平涂线描转绘",
+    enTitle: "Daily Flat-Line Illustration",
+    zhDescription: "保留人物、宠物与服装关系，删掉大部分环境，用轻微抖动线和一两种平涂色记录日常。",
+    enDescription: "Preserve people, pets, and wardrobe relationships while removing most surroundings and recording daily life with gently irregular line and sparse flat color.",
+    originalImage: "/assets/featured/img2img-daily-line-illustration-original.jpg",
+    resultImage: "/assets/featured/img2img-daily-line-illustration-result.jpg",
+    prompt: "请将上传的人像、穿搭、人与宠物或日常生活照片重构为“日常平涂线描插画”。锁定真实人物和宠物的身份线索、数量、动作、视线、接触关系、发型、挑染位置、服装轮廓、主色和重要物件；删除背景纹理与杂物，只保留“1 至 3 个”解释空间的锚点。线条使用中等偏轻的黑色手绘线，略有压力变化、自然弯折和不完美接头；面部以少量成熟五官标记表达，不使用大眼 Q 版。黑色块保持纯实，一至两种原图强调色使用平静、均匀的平涂。背景近白并保留大量空白。避免固定 IP 替换、矢量光滑线、重复草稿线、水彩晕染、彩铅颗粒、写实阴影、陌生人物、文字、Logo 和水印。"
+  },
+  {
+    id: "img2img-social-card-series",
+    category: "image-to-image",
+    group: "poster-layout",
+    zhTitle: "系列社交卡图",
+    enTitle: "Coordinated Social Card Series",
+    zhDescription: "从一张照片或一段内容拆出三至六张同系统卡图，每张只承担一个重点。",
+    enDescription: "Turn one photograph or content source into three to six coordinated cards, each carrying one clear point.",
+    originalImage: "/assets/featured/img2img-social-card-series-original.jpg",
+    resultImage: "/assets/featured/img2img-social-card-series-result.jpg",
+    prompt: "请以我上传的“照片 / 文章 / 产品笔记 / 截图内容”为唯一信息来源，设计一组“3 至 6 张系列社交卡图”。先提炼一个总主题和每张卡唯一承担的重点，再建立固定视觉系统：画幅比例、网格、边距、标题字号关系、主色、辅助色、图片处理方式、图标线宽和页码位置必须统一；每张卡可使用不同照片裁切或信息结构，但不能像不同模板拼在一起。第一张负责主题识别，中间卡负责分点、步骤或对比，最后一张负责总结；所有事实和数字必须来自用户输入，缺失内容使用“标题 / 要点 / 数据”占位。根据内容选择编辑、瑞士、杂志或拼贴中的一种系统。避免机械搬运整篇文章、每张塞满文字、重复同一裁图、风格漂移、虚构数据、乱码、第三方品牌、Logo 和水印。"
+  }
 ];
 
 
