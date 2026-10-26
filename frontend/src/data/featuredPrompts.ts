@@ -1,6 +1,7 @@
 import { featuredPromptsExpansion6 } from "./featuredPromptsExpansion6";
 import { featuredPromptsExpansion7 } from "./featuredPromptsExpansion7";
 import { featuredPromptsExpansion8 } from "./featuredPromptsExpansion8";
+import { featuredPromptsExpansion9 } from "./featuredPromptsExpansion9";
 export type FeaturedPromptCategory = "color-edit" | "image-to-image" | "utility" | "text-to-image";
 
 export interface FeaturedPromptItem {
@@ -37,6 +38,8 @@ export const featuredPromptGroups: Partial<Record<FeaturedPromptCategory, Array<
     { id: "all", zhName: "全部图生图", enName: "All" },
     { id: "style-transfer", zhName: "风格转绘", enName: "Style Transfer" },
     { id: "poster-layout", zhName: "海报与版式重构", enName: "Poster & Layout" },
+    { id: "scene-compositing", zhName: "场景与合成", enName: "Scene & Compositing" },
+    { id: "product-commercial", zhName: "产品商业场景", enName: "Product Commercial" },
     { id: "product-structure", zhName: "产品与结构优化", enName: "Product & Structure" }
   ],
   "utility": [
@@ -2501,5 +2504,6 @@ export const featuredPrompts: FeaturedPromptItem[] = [
   },
   ...featuredPromptsExpansion6,
   ...featuredPromptsExpansion7,
-  ...featuredPromptsExpansion8
+  ...featuredPromptsExpansion8,
+  ...featuredPromptsExpansion9
 ];
