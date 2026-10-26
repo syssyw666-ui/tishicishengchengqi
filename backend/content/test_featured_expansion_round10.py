@@ -6,8 +6,9 @@ from django.test import SimpleTestCase
 from PIL import Image
 
 
-ROOT = Path(__file__).resolve().parents[2]
-CATALOG_PATH = ROOT / "backend" / "catalog_seed.json"
+BACKEND_ROOT = Path(__file__).resolve().parents[1]
+CATALOG_PATH = BACKEND_ROOT / "catalog_seed.json"
+ASSET_ROOT = BACKEND_ROOT.parent / "public"
 PARAMETER_IDS = {
     "style-portrait-structural-surrealism",
     "style-ghost-line-zine",
@@ -52,12 +53,14 @@ class FeaturedExpansionRound10Tests(SimpleTestCase):
             self.assertGreaterEqual(len(row["prompt"]), 300, row["id"])
 
     def test_all_new_assets_are_unique_fixed_size_images(self):
+        if not ASSET_ROOT.is_dir():
+            self.skipTest("Frontend assets are not included in the standalone backend repository.")
         parameter_rows = {row["id"]: row for row in self.catalog["parameters"] if row["id"] in PARAMETER_IDS}
         featured_rows = {row["id"]: row for row in self.catalog["featuredPrompts"] if row["id"] in FEATURED_IDS}
-        asset_paths = [ROOT / "public" / row["image"].split("?", 1)[0].removeprefix("/") for row in parameter_rows.values()]
+        asset_paths = [ASSET_ROOT / row["image"].split("?", 1)[0].removeprefix("/") for row in parameter_rows.values()]
         for row in featured_rows.values():
             asset_paths.extend(
-                ROOT / "public" / row[field].removeprefix("/")
+                ASSET_ROOT / row[field].removeprefix("/")
                 for field in ("originalImage", "resultImage")
             )
         hashes = []

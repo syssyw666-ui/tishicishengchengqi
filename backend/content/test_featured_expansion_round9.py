@@ -6,8 +6,9 @@ from django.test import SimpleTestCase
 from PIL import Image
 
 
-ROOT = Path(__file__).resolve().parents[2]
-CATALOG_PATH = ROOT / "backend" / "catalog_seed.json"
+BACKEND_ROOT = Path(__file__).resolve().parents[1]
+CATALOG_PATH = BACKEND_ROOT / "catalog_seed.json"
+ASSET_ROOT = BACKEND_ROOT.parent / "public"
 FEATURED_IDS = {
     "img2img-interior-style-redesign",
     "img2img-empty-room-virtual-staging",
@@ -41,11 +42,13 @@ class FeaturedExpansionRound9Tests(SimpleTestCase):
             self.assertGreaterEqual(len(row["prompt"]), 300, row["id"])
 
     def test_workflow_assets_are_unique_fixed_size_images(self):
+        if not ASSET_ROOT.is_dir():
+            self.skipTest("Frontend assets are not included in the standalone backend repository.")
         hashes = []
         for row in self.rows.values():
             for field, suffix in (("originalImage", "-original.jpg"), ("resultImage", "-result.jpg")):
                 self.assertTrue(row[field].endswith(suffix), row["id"])
-                path = ROOT / "public" / row[field].removeprefix("/")
+                path = ASSET_ROOT / row[field].removeprefix("/")
                 self.assertTrue(path.is_file(), path)
                 with Image.open(path) as image:
                     self.assertEqual(image.size, (960, 540), path.name)
