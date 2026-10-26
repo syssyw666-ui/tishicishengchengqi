@@ -1389,7 +1389,8 @@ class StyleExpansionTests(SimpleTestCase):
 
     def test_every_visual_style_has_actionable_medium_and_failure_rules(self):
         styles = [row for row in self.parameters if row["category"] == "style"]
-        self.assertEqual(len(styles), 217)
+        self.assertGreaterEqual(len(styles), 217)
+        self.assertEqual(len({row["id"] for row in styles}), len(styles))
         for row in styles:
             self.assertTrue(row.get("styleGroup"), row["id"])
             self.assertGreaterEqual(len(row["zhPrompt"]), 390, row["id"])

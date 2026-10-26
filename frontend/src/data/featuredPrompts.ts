@@ -2351,7 +2351,149 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     originalImage: "/assets/featured/img2img-social-card-series-original.jpg",
     resultImage: "/assets/featured/img2img-social-card-series-result.jpg",
     prompt: "请以我上传的“照片 / 文章 / 产品笔记 / 截图内容”为唯一信息来源，设计一组“3 至 6 张系列社交卡图”。先提炼一个总主题和每张卡唯一承担的重点，再建立固定视觉系统：画幅比例、网格、边距、标题字号关系、主色、辅助色、图片处理方式、图标线宽和页码位置必须统一；每张卡可使用不同照片裁切或信息结构，但不能像不同模板拼在一起。第一张负责主题识别，中间卡负责分点、步骤或对比，最后一张负责总结；所有事实和数字必须来自用户输入，缺失内容使用“标题 / 要点 / 数据”占位。根据内容选择编辑、瑞士、杂志或拼贴中的一种系统。避免机械搬运整篇文章、每张塞满文字、重复同一裁图、风格漂移、虚构数据、乱码、第三方品牌、Logo 和水印。"
+  },
+  {
+    id: "img2img-scene-score-translation",
+    category: "image-to-image",
+    group: "poster-layout",
+    zhTitle: "场景节奏转译",
+    enTitle: "Scene-Score Translation",
+    zhDescription: "从照片的锚点、重复、路径与停顿提炼结构谱，把场景变成仍可追溯原图的当代艺术版画。",
+    enDescription: "Translate anchors, repetition, paths, and pauses into a contemporary print still traceable to the source scene.",
+    originalImage: "/assets/featured/img2img-scene-score-translation-original.jpg",
+    resultImage: "/assets/featured/img2img-scene-score-translation-result.jpg",
+    prompt: "请先分析上传照片的视觉节奏，而不是只识别题材：找出一个必须保留的“摄影锚点”、一组重复元素、一条主要路径或轴线、一个视觉重音和一片真正安静的留白。将摄影锚点控制在画面约 25% 至 45%，保持主体、色彩和空间来源可辨；其余区域依据原图的重复频率、方向、间隔和遮挡，转译为克制的几何色场、细线、比例标记和纸面负空间。图形必须解释原场景的结构，不得使用与照片无关的装饰。色盘提取原图 3 至 5 种颜色并适度归纳，呈现当代画廊版画和编辑设计质感。可加入“1 至 5 个英文单词”的极小标题占位。避免普通照片拼贴、随机几何、音乐符号、满版抽象、摄影主体重复、商业广告、乱码、Logo 和水印。"
+  },
+  {
+    id: "img2img-abstract-pixel-redraw",
+    category: "image-to-image",
+    group: "style-transfer",
+    zhTitle: "抽象像素重绘",
+    enTitle: "Abstract Pixel Redraw",
+    zhDescription: "以有限色盘和主动设计的像素簇重画照片，保留主体与负形，不是缩小或马赛克滤镜。",
+    enDescription: "Redraw a photo with deliberate pixel clusters and a limited palette while preserving subject and negative space.",
+    originalImage: "/assets/featured/img2img-abstract-pixel-redraw-original.jpg",
+    resultImage: "/assets/featured/img2img-abstract-pixel-redraw-result.jpg",
+    prompt: "请把上传照片语义重绘为“抽象像素艺术”。锁定主体数量、姿势、主要轮廓、相机角度、地平线和关键负形；先把原图归纳为“6 至 14 种”有限颜色，再用统一尺寸体系的方形像素簇逐块建立体积、光影和前后关系。大轮廓使用清晰阶梯边，关键特征用少量高对比像素点提示，背景细节主动合并而非平均降低分辨率。像素密度应在焦点处较高、留白处较低，但全画面遵循同一网格。避免直接下采样、照片马赛克、故障 RGB 偏移、体素 3D、Q 版大头、抗锯齿柔边、渐变模糊、额外对象、文字、Logo 和水印。"
+  },
+  {
+    id: "img2img-dark-woven-canvas",
+    category: "image-to-image",
+    group: "style-transfer",
+    zhTitle: "暗幕织纹画布",
+    enTitle: "Dark Woven Canvas",
+    zhDescription: "保持原照片的光线和空间，把风景转成连续暗色层与统一细织纹构成的安静画布。",
+    enDescription: "Preserve source light and space while rebuilding the scene with continuous dark fields and a unified fine weave.",
+    originalImage: "/assets/featured/img2img-dark-woven-canvas-original.jpg",
+    resultImage: "/assets/featured/img2img-dark-woven-canvas-result.jpg",
+    prompt: "请将上传的自然、建筑或静物照片转绘为“暗幕织纹画布”。严格保留主体轮廓、地平线、前中后景、原始光源方向和最重要的色彩关系；把细碎纹理合并为连续而薄的“深青 / 炭黑 / 雾灰 / 一种低饱和暖色”色层，边缘只在非焦点处选择性柔化。让统一、细密、尺度可信的经纬织纹贯穿全部色区，颜料像被画布吸收而不是贴在照片上，亮部从织物内部缓慢浮现。主体必须仍可辨，暗部保留层次。避免简单加布纹滤镜、粗麻袋质感、所有边缘模糊、纯黑死区、高饱和霓虹、油画厚涂、额外景物、文字、Logo 和水印。"
+  },
+  {
+    id: "img2img-paper-pulp-relief-poster",
+    category: "image-to-image",
+    group: "poster-layout",
+    zhTitle: "纸浆浅浮雕海报",
+    enTitle: "Paper-Pulp Relief Poster",
+    zhDescription: "把照片主体压入暖白手工纸浆，以纤维、毫米级起伏和侧光形成克制浮雕。",
+    enDescription: "Embed the source subject in warm handmade pulp using fibers, millimeter relief, and restrained grazing light.",
+    originalImage: "/assets/featured/img2img-paper-pulp-relief-poster-original.jpg",
+    resultImage: "/assets/featured/img2img-paper-pulp-relief-poster-result.jpg",
+    prompt: "请将上传照片制作成 3:4“纸浆浅浮雕海报”。提取主体最有辨识度的轮廓、姿态、结构分区和 2 至 4 个关键细节，删除背景杂物，把主体像在湿纸浆中压制成形一样嵌入暖象牙色手工纸。浮雕高度保持毫米级，使用受压纤维、毛边、窄侧光和很短的接触阴影表现层次；从原图提取一至三种矿物色，让色料渗入纤维而不是覆盖为光滑油漆。主体占画面约 35% 至 60%，四周保留宽阔纸面留白。可加入极小档案编号占位。避免白色塑料 3D、厚泡沫雕塑、金属浮雕、数字法线贴图、灰色描边、复杂节庆装饰、长文字、Logo 和水印。"
+  },
+  {
+    id: "img2img-rainbow-ink-diptych",
+    category: "image-to-image",
+    group: "poster-layout",
+    zhTitle: "七彩水墨双联",
+    enTitle: "Rainbow-Ink Diptych",
+    zhDescription: "上方忠实保留照片，下方用来源于原图的克制彩墨重构同一场景并留出纸面呼吸。",
+    enDescription: "Keep the photograph above and reconstruct the same scene below in restrained source-derived rainbow ink.",
+    originalImage: "/assets/featured/img2img-rainbow-ink-diptych-original.jpg",
+    resultImage: "/assets/featured/img2img-rainbow-ink-diptych-result.jpg",
+    prompt: "请基于上传照片制作 3:4“七彩水墨双联编辑页”。上方约 48% 至 52% 保留原照片，锁定主体、人物动作、真实光影、色彩和空间关系，只做必要等比裁切与轻微统一调色。下方为连续暖白纹理纸张，从照片中提取同一场景的结构、道路、建筑、人物或植物，使用透明彩墨、水彩边缘和少量墨线重新概括；颜色必须来自原图并归纳为 4 至 7 种，避免任意彩虹。下方插画占纸面约 55% 至 70%，四周保留明显留白，照片与纸张边界干净。可放一行“地点 / 日期 / 极短旁白”占位。避免渐变融化过渡、撕纸边、全页插画、高饱和彩虹滤镜、另一个场景、文字乱码、Logo 和水印。"
+  },
+  {
+    id: "img2img-soft-gradient-diptych",
+    category: "image-to-image",
+    group: "poster-layout",
+    zhTitle: "柔光渐变双联",
+    enTitle: "Soft-Gradient Diptych",
+    zhDescription: "保留真实照片，再把同一场景压缩成三至五片自由渐变色场与消融轮廓。",
+    enDescription: "Preserve the photograph, then reduce the same scene to three to five freeform gradient fields and dissolving contours.",
+    originalImage: "/assets/featured/img2img-soft-gradient-diptych-original.jpg",
+    resultImage: "/assets/featured/img2img-soft-gradient-diptych-result.jpg",
+    prompt: "请把上传照片制作成 3:4“柔光渐变双联海报”。上半部分约占 50%，忠实保留原照片的主体、构图、透视和自然色彩；下半部分在暖白纸张上提取原图的天空、地面、主体与一条关键路径，把它们归纳为 3 至 5 片边界自由但相互有空间关系的柔和渐变色场。每个色场只能使用相邻的源图颜色，轮廓在局部自然消融，在关键转折处保持清楚；留白必须多于色场，不能把下半页填满。可加入一条极细轴线和极小标题占位。避免彩虹渐变、中心发光洞、普通模糊照片、液态金属、写实复制、复杂插画、撕纸边、乱码、Logo 和水印。"
+  },
+  {
+    id: "img2img-electric-blue-halftone",
+    category: "image-to-image",
+    group: "poster-layout",
+    zhTitle: "电蓝粗网点头像",
+    enTitle: "Electric-Blue Halftone Portrait",
+    zhDescription: "把人物照片压缩成电蓝底上的黑白粗网点头像，以少量红黄几何建立强烈编辑层级。",
+    enDescription: "Compress a portrait into coarse monochrome halftone on electric blue with sparse red-yellow editorial accents.",
+    originalImage: "/assets/featured/img2img-electric-blue-halftone-original.jpg",
+    resultImage: "/assets/featured/img2img-electric-blue-halftone-result.jpg",
+    prompt: "请把上传的单人头像或半身照片制作成“电蓝粗网点头像海报”。锁定人物脸型、五官间距、发型、视线、肩线和服装轮廓，将人物明暗压缩为黑、白两级与粗颗粒圆点网屏，网点大小随原照片明暗连续变化但边界保持清楚。背景使用纯电蓝色，只加入少量“珊瑚红圆形 / 暖黄矩形 / 细黑线”作为可替换强调元素，所有装饰服从人物视线和负形，不遮挡五官。默认 3:4 竖版并保留标题安全区，但不生成真实文字。避免普通蓝色滤镜、细腻报纸网点、全彩照片、波普多格漫画、肤色漂移、陌生人物、乱码、品牌 Logo 和水印。"
+  },
+  {
+    id: "img2img-serpent-line-ink",
+    category: "image-to-image",
+    group: "style-transfer",
+    zhTitle: "蛇发游线墨绘",
+    enTitle: "Serpent-Line Ink Portrait",
+    zhDescription: "用极少长线与实墨块保留人物姿态，让一两条蛇首曲线自然融入发丝或衣褶。",
+    enDescription: "Preserve the portrait with very few long lines and ink masses while subtle serpent contours merge into hair or folds.",
+    originalImage: "/assets/featured/img2img-serpent-line-ink-original.jpg",
+    resultImage: "/assets/featured/img2img-serpent-line-ink-result.jpg",
+    prompt: "请将上传的人物或半身照片转绘为“蛇发游线墨绘”。保留人物脸型、视线、发型总体走向、肩颈姿态、服装覆盖和关键配饰；使用极少、极长、粗细有呼吸变化的黑色自由线完成主要轮廓，以 2 至 5 个实墨块稳定重心。仅让一至两条线在原本的发丝、衣褶或植物曲线中自然形成含蓄蛇首，再顺势回到主体轮廓，不能把所有头发都改成蛇。背景为暖象牙纸并保留至少 60% 空白。整体优雅、神秘、克制，不走恐怖方向。避免血腥、怪物化、密集纹样、全脸黑墨、动漫大眼、无关装饰、长文字、Logo 和水印。"
+  },
+  {
+    id: "img2img-primary-hardlight-city",
+    category: "image-to-image",
+    group: "style-transfer",
+    zhTitle: "原色硬光都市",
+    enTitle: "Primary Hardlight City",
+    zhDescription: "以蓝、珊瑚红、近黑和纸白四种颜色重构城市硬光，保留真实透视与街道秩序。",
+    enDescription: "Rebuild urban hard light with blue, coral, near-black, and paper white while preserving real perspective.",
+    originalImage: "/assets/featured/img2img-primary-hardlight-city-original.jpg",
+    resultImage: "/assets/featured/img2img-primary-hardlight-city-result.jpg",
+    prompt: "请将上传的城市街景或建筑照片转绘为“原色硬光都市”。严格保留道路消失点、建筑比例、窗门节奏、车辆或人物位置与主要轮廓，只使用“天空蓝、珊瑚红、近黑、纸白”四种平涂色重建画面。根据原照片的日光方向，把受光面、背光面和投影切成边缘清楚的高反差形块；细节集中在地标和视觉中心，远处合并为更大色面。颜色承担真实光影和空间分层，不是平均覆盖。避免柔和渐变、第五种颜色、赛博霓虹、建筑变形、随机拼贴、矢量图标感、伪文字、Logo 和水印。"
+  },
+  {
+    id: "img2img-cream-hollow-home-sketch",
+    category: "image-to-image",
+    group: "style-transfer",
+    zhTitle: "奶油纸空心家居速写",
+    enTitle: "Cream-Paper Hollow Home Sketch",
+    zhDescription: "保留室内物件关系，以断续轮廓和极少平涂色重画，主体内部大多留出纸白。",
+    enDescription: "Preserve interior relationships with broken contours and sparse flat accents, leaving forms mostly open to the paper.",
+    originalImage: "/assets/featured/img2img-cream-hollow-home-sketch-original.jpg",
+    resultImage: "/assets/featured/img2img-cream-hollow-home-sketch-result.jpg",
+    prompt: "请把上传的室内、家居静物或生活角落照片转绘为“奶油纸空心家居速写”。锁定房间视角、家具数量、桌椅位置、灯具、植物和主要遮挡关系，删除杂物与复杂材质；用断续、略有压力变化的黑色手绘轮廓概括物件，主要形体内部保留暖奶油纸本色，只在 3 至 6 个识别关键处加入从原图提取的“锈红 / 橄榄绿 / 灰蓝 / 木色”中的一至三种平涂色。线条允许缺口和不完美接头，大面积负空间保持轻盈。避免完整上色、铅笔明暗排线、水彩满涂、矢量光滑边、儿童涂色书、改变家具设计、文字、Logo 和水印。"
+  },
+  {
+    id: "img2img-childhood-giant-head-card",
+    category: "image-to-image",
+    group: "style-transfer",
+    zhTitle: "童年大头卡",
+    enTitle: "Childhood Giant-Head Card",
+    zhDescription: "依据成人肖像生成同一人物约七岁的悬浮大头棚拍卡，保留可辨的家族式五官线索。",
+    enDescription: "Reimagine an adult portrait as the same person around age seven in a clean floating-head studio card.",
+    originalImage: "/assets/featured/img2img-childhood-giant-head-card-original.jpg",
+    resultImage: "/assets/featured/img2img-childhood-giant-head-card-result.jpg",
+    prompt: "请基于上传的正面或三分之二侧人像制作“童年大头卡”。把人物年龄自然调整为约“5 至 8 岁”，保留可辨识的眼型、眉形、鼻部、嘴角、发色、卷直特征和整体神态，使结果像同一人的真实童年而不是随机儿童。画面只保留完整悬浮头部和少量发丝，不出现脖颈、肩膀或身体；使用简洁“浅蓝 / 米黄 / 淡粉 / 雾绿”单色棚拍背景、柔和正面光和自然皮肤质感。表情安静或轻微微笑，不增加夸张饰品。避免成人妆容、畸形大脑袋比例、牙齿装饰、婴儿化滤镜、塑料 3D、公仔、文字、Logo 和水印。"
+  },
+  {
+    id: "img2img-teal-amber-fog-field",
+    category: "image-to-image",
+    group: "style-transfer",
+    zhTitle: "青橙浓雾光场",
+    enTitle: "Teal-Amber Fog Light Field",
+    zhDescription: "保持人物和场景结构，以深青雾层与琥珀背光建立有深度的电影光场，而非简单调色。",
+    enDescription: "Preserve subject and scene while building a deep teal fog volume cut by controlled amber backlight.",
+    originalImage: "/assets/featured/img2img-teal-amber-fog-field-original.jpg",
+    resultImage: "/assets/featured/img2img-teal-amber-fog-field-result.jpg",
+    prompt: "请将上传的街道、树林、工业空间或人物环境照片重构为“青橙浓雾光场”。锁定主体身份、姿势、相机位置、道路或地面、建筑和大型环境轮廓；依据原图空间深度布置多层深青色雾气，近景较薄、中远景逐渐加厚，并让“琥珀色暖背光”从合理灯源或远处入口穿透雾层形成可见光束和轮廓光。地面保持干燥或遵循原图真实状态，不自动增加雨水反射。人物脸部和关键结构仍可辨，冷暖对比集中在视觉中心。避免全图橙青滤镜、无来源发光、满地湿反射、雾墙遮死主体、赛博招牌、额外人物、文字、Logo 和水印。"
   }
 ];
-
-
