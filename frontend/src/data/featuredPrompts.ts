@@ -2207,7 +2207,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     originalImage: "/assets/featured/img2img-ecommerce-campaign-lock-original.jpg",
     resultImage: "/assets/featured/img2img-ecommerce-campaign-lock-result.jpg",
     prompt: "请以上传的产品照片为唯一产品参考，制作一张包含“主图、功能微距、使用场景、机制示意”四个模块的电商图组预览。生成前先建立并严格执行同一套风格锁：产品瓶身或外壳几何、比例、颜色、标签位置和开合结构完全不变；固定“背景主色”“文字占位色”“一种强调色”、冷暖倾向、主光方向、阴影软硬、镜头高度、产品尺度和信息图线宽。四个模块可以改变环境与取景，但必须像同一广告系列，不得出现四种不同包装或光线。所有功效、成分、认证和数据仅使用空白占位，不能编造。避免标签乱码、产品变形、颜色漂移、重复粘贴同一角度、场景抢主体、无依据功效对比、第三方品牌、Logo 和水印。"
-  }
+  },
   {
     id: "img2img-photo-now-playing",
     category: "image-to-image",
