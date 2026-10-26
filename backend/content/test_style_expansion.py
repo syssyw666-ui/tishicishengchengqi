@@ -1577,7 +1577,7 @@ class StyleExpansionTests(SimpleTestCase):
 
     def test_every_render_and_effect_has_actionable_physical_rules(self):
         rows = [row for row in self.parameters if row["category"] in {"render", "visual-effect"}]
-        self.assertEqual(len(rows), 60)
+        self.assertEqual(len(rows), 61)
         for row in rows:
             self.assertTrue(row.get("styleGroup"), row["id"])
             self.assertGreaterEqual(len(row["zhPrompt"]), 330, row["id"])

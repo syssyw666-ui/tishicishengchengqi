@@ -35,6 +35,7 @@ import { styleExpansionParameters20 } from "./styleExpansionParameters20";
 import { styleExpansionParameters21 } from "./styleExpansionParameters21";
 import { styleExpansionParameters22 } from "./styleExpansionParameters22";
 import { styleExpansionParameters23 } from "./styleExpansionParameters23";
+import { styleExpansionParameters24 } from "./styleExpansionParameters24";
 import { recroppedParameterAssets } from "./recroppedParameterAssets";
 
 export const categories: Category[] = [
@@ -497,6 +498,7 @@ parameters.push(
   ...styleExpansionParameters21,
   ...styleExpansionParameters22,
   ...styleExpansionParameters23,
+  ...styleExpansionParameters24,
   ...clothingParameters,
   ...poseParameters,
   ...expandedParameters,

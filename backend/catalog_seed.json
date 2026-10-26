@@ -10440,6 +10440,114 @@
       ]
     },
     {
+      "id": "effect-pixel-dissolve-paper",
+      "category": "visual-effect",
+      "styleGroup": "digital",
+      "zhName": "纸面像素消散",
+      "enName": "Paper Pixel Dissolve",
+      "image": "/assets/parameters/effect-pixel-dissolve-paper.jpg?v=20261026-featured-skill-g",
+      "zhPrompt": "纸面像素消散把主体重构为有限色方形块，识别中心和关键结构保持较高像素密度，轮廓、道路、水面、植被或远景则沿真实透视、流向和运动方向逐步减少方块数量、扩大块间距离并回到暖白纸面；消散来自独立实体块的密度递减，不使用透明渐变、羽化、模糊或随机噪声。主体内部仍有完整质量和源图颜色层级，纸白始终是最大色域。避免全图降采样、照片马赛克、RGB 故障、像素切片拉伸、体素 3D、游戏界面、十字绣、满版方块和均匀四向爆散。；先定义特效的物理或图形来源、发生时刻、运动方向、持续时间、遮挡关系和与主体的接触点，再决定亮度、透明度、粒子尺寸、衰减和景深；效果必须响应场景光、风、重力、表面碰撞与相机曝光，并只占据叙事需要的区域。人物面部、动作轮廓、产品结构和文字安全区始终可读。多种特效同时使用时只保留一个主效应，其余作为低强度辅助。避免无来源发光、粒子平均铺满、贴纸式烟火、轮廓穿透、透明层排序错误、特效遮脸、反射与环境不响应、所有颜色同时高饱和、随机镜头污渍、伪文字、水印或以特效数量替代画面重点；色差只在镜头边缘或特定高反差区域产生不同色通道位移，数字故障则指定扫描线、块压缩、数据丢失、帧撕裂或同步错误中的一种主要机制，并尊重屏幕与编码结构。避免整幅 RGB 描边、随机彩条、五种故障叠加、人物五官错位不可读、真实物体无屏幕媒介却发生数字破损或把任何低清画面称作故障艺术",
+      "enPrompt": "paper-based pixel dissolution reconstructing the subject with a compressed source-derived palette of discrete square or near-square blocks. The recognizable center, defining silhouette turns and identity details retain higher block density and coherent mass, while peripheral architecture, road, water, vegetation, reflection or distance progressively loses blocks and increases spacing along the source perspective, flow or motion direction until untouched warm paper becomes dominant. Dissolution is caused only by fewer independent physical-looking blocks, never opacity gradients, feathering, blur or random noise. Interior value steps and identifying colors remain legible and paper white is the largest field. Avoid global downsampling, photo mosaic, RGB glitch, stretched pixel slices, voxel 3D, game UI, cross-stitch, a full-bleed block background, uniform four-direction explosions or loss of the subject anchor.; define the physical or graphic source event timing motion direction duration occlusion and contact point of the effect before setting luminance opacity particle scale falloff and depth of field. The effect must respond to scene light wind gravity surface collision and camera exposure and occupy only the region required by the narrative, while face action silhouette product structure and copy-safe zones remain readable. When several effects coexist retain one primary event and use the rest only as low-intensity support. Avoid source-free glow particles spread uniformly sticker-like smoke or fire contour penetration incorrect transparency order effects covering faces reflections and environment that do not react every hue at maximum saturation random lens dirt pseudo-writing watermarks or quantity of effects substituted for a focal idea; chromatic aberration displaces color channels only near lens edges or selected high-contrast boundaries, while digital glitch selects one principal mechanism such as scanline block compression data loss frame tearing or synchronization error and respects screen and codec structure. Avoid RGB outlines over the whole frame random color bars five glitch modes stacked together unreadable displaced facial features digital corruption on a physical scene with no display medium or any low-resolution image labeled glitch art",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable character",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-sculptural-impasto-miniature",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "立体厚涂微景观",
+      "enName": "Sculptural Impasto Miniature",
+      "image": "/assets/parameters/style-sculptural-impasto-miniature.jpg?v=20261026-featured-skill-g",
+      "zhPrompt": "立体厚涂微景观以真实油画颜料的堆积高度塑造小型地景，主体轮廓由刮刀压痕、颜料脊线、抬高边缘、混色断面和半手塑体积组成，水面、道路、山脊或光带被整理为狭长而轻巧的厚涂基座，让主体获得可信落点；重颜料只集中在结构、浪花、云层和高光，周围保留大量白色纹理纸。色彩从场景最明亮的几种色相提炼，既有油画材料重量又有微距模型的清晰尺度。避免普通平面油画滤镜、满版颜料、软陶、公仔、塑料 CGI、糖果玩具感、无落点悬浮和所有表面具有相同厚度。；先把该风格落实为可观察的制作或成像机制，再依次说明主体轮廓、形体概括、边缘语言、空间深度、光线、色层、材质响应和最终表面，不以风格名称本身代替画面描述。若与其他风格混用，必须指定一个主风格和一个只负责局部的辅风格，并保持人物、建筑和道具在同一视觉规则内；主体身份、动作和功能结构优先于装饰。避免复制知名作品、角色、签名或品牌，避免伪文字、媒介互相矛盾、随机滤镜、纹理覆盖主体、局部精细度不一致、只靠配色冒充风格以及把多个年代和地域符号无依据拼在一起；明确基底材料、工具、制作顺序、颜料或纤维如何附着，以及压印、刻痕、针脚、接缝、烧制或干燥留下的边界；工艺细节随实际尺度变化并尊重重力、厚度和受力。避免把工艺做成平面滤镜、重复贴图、无材料来源的纹理、所有边缘同样粗糙、金属织物纸张反射一致、针脚不闭合、版画出现连续数码渐变或手工误差大到破坏主体识别",
+      "enPrompt": "sculptural impasto miniature language using genuine oil-paint buildup as physical volume rather than a flat painterly filter. The subject and its small landscape are formed by palette-knife compression, raised pigment ridges, lifted edges, broken color cross-sections and partly hand-shaped masses; water, path, ridge or light becomes a narrow lightweight impasto base that gives the subject a credible point of support. Heavy paint concentrates on structural accents, waves, clouds and selected highlights while broad white textured paper remains untouched. A compact palette comes from the scene's brightest identifying hues, balancing the material weight of oil paint with the readable scale of a macro-photographed miniature. Avoid ordinary flat oil-paint filters, full-canvas paint coverage, polymer clay, figurines, plastic CGI, candy-toy color, unsupported floating subjects, equal paint thickness everywhere or a decorative base unrelated to the scene.; translate the style into an observable production or imaging mechanism, then define subject silhouette form simplification edge language spatial depth illumination color layers material response and final surface rather than relying on the style name itself. When combining styles, establish one primary language and one secondary language limited to a specific region or function, keeping figures architecture and props within the same visual rules while subject identity action and functional structure take priority over decoration. Avoid copies of famous works characters signatures or brands pseudo-writing contradictory media random filtering texture covering the subject inconsistent local detail color alone used as proof of style or unsupported mixtures of periods and regions; specify substrate tool sequence and how pigment fiber or material is attached, including boundaries left by impression carving stitch seam firing or drying. Craft detail must scale with the object and obey gravity thickness and structural load. Avoid reducing a process to a flat filter repeated texture marks with no material source equally rough edges identical reflection on metal textile and paper unclosed stitches continuous digital gradients in relief print or handmade variation so extreme that subject identity is lost",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable character",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-rounded-modular-isometric",
+      "category": "style",
+      "styleGroup": "design-retro",
+      "zhName": "圆角等距模块雕塑",
+      "enName": "Rounded Isometric Modules",
+      "image": "/assets/parameters/style-rounded-modular-isometric.jpg?v=20261026-featured-skill-g",
+      "zhPrompt": "圆角等距模块雕塑先分析主体的重心、轴线、曲线、孔洞、层级、遮挡与关键负形，再用不同尺度的圆角几何体通过堆叠、嵌套、穿插、悬接和前后互锁重建同一结构；大模块承担质量，小模块只服务识别细节，体块节奏来自高度差、密度变化和留白。表面呈细哑光纸浆、粉蜡、软木或柔性复合材料，阴影柔和，配色从对象本身提炼并清理脏灰。避免乐高凸点、规则体素、像素化、机械爆炸图、儿童积木、塑料高光、金属科幻、每块等大或仅把照片切成方块。；先把该风格落实为可观察的制作或成像机制，再依次说明主体轮廓、形体概括、边缘语言、空间深度、光线、色层、材质响应和最终表面，不以风格名称本身代替画面描述。若与其他风格混用，必须指定一个主风格和一个只负责局部的辅风格，并保持人物、建筑和道具在同一视觉规则内；主体身份、动作和功能结构优先于装饰。避免复制知名作品、角色、签名或品牌，避免伪文字、媒介互相矛盾、随机滤镜、纹理覆盖主体、局部精细度不一致、只靠配色冒充风格以及把多个年代和地域符号无依据拼在一起；先锁定设计年代、传播媒介与使用场景，用网格、几何、图像裁切、有限色盘和信息占位建立层级；复古效果来自当时真实印刷、屏幕或软件限制，实验性破格仍保留阅读入口。避免年代元素混杂、随机拼贴、假品牌和乱码、所有元素同权、装饰覆盖主体、数字噪点冒充印刷、霓虹渐变泛滥或仅降低分辨率制造复古感",
+      "enPrompt": "rounded isometric modular-sculpture language beginning with the subject's center of gravity, axes, curves, openings, layers, occlusions and defining negative spaces, then rebuilding the same structure through modules of varied scale that stack, nest, interlock, pass through one another or bridge selectively. Large rounded volumes carry mass while smaller units appear only at identity-critical details; stepped height, front-back overlap, density variation and generous empty space create rhythm. Surfaces resemble finely matte pulp, powder wax, soft cork or flexible composite with gentle shadows, and the palette is extracted from the subject then cleaned of muddy mixtures. Avoid LEGO studs, regular voxelization, pixel art, mechanical exploded diagrams, children's blocks, plastic highlights, metallic sci-fi parts, equal-size modules or merely chopping a photograph into cubes.; translate the style into an observable production or imaging mechanism, then define subject silhouette form simplification edge language spatial depth illumination color layers material response and final surface rather than relying on the style name itself. When combining styles, establish one primary language and one secondary language limited to a specific region or function, keeping figures architecture and props within the same visual rules while subject identity action and functional structure take priority over decoration. Avoid copies of famous works characters signatures or brands pseudo-writing contradictory media random filtering texture covering the subject inconsistent local detail color alone used as proof of style or unsupported mixtures of periods and regions; lock the design period distribution medium and use case first, building hierarchy through grid geometry image crop limited palette and information placeholders. Retro character must arise from authentic print screen or software constraints of that period, and experimental rule-breaking must retain a reading entry. Avoid mixed-period motifs random collage fake brands and gibberish equal emphasis everywhere decoration covering the subject digital noise pretending to be print uncontrolled neon gradients or reduced resolution used as the sole evidence of retro design",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable character",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-kraft-stencil-print",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "牛皮纸双色镂印",
+      "enName": "Kraft Two-Color Stencil",
+      "image": "/assets/parameters/style-kraft-stencil-print.jpg?v=20261026-featured-skill-g",
+      "zhPrompt": "牛皮纸双色镂印使用一张连续深棕天然纤维纸与一种高覆盖浅色油墨，以大面积连续浅色负形和少量深色内孔建立主体识别；轮廓顶部与关键开口保持坚实，下缘或次要边缘通过模板切口、局部漏墨、纸纤维露底和不规则压力逐渐回到深色纸面。明暗不依赖摄影渐变或排线，而依靠正负形比例、连桥与孔洞设计。避免普通黑剪影、矢量图标、自动阈值、细密蚀刻、多色套印、规则网点、数字透明度、立体纸雕、伪旧污渍铺满和无结构的破损边。；先把该风格落实为可观察的制作或成像机制，再依次说明主体轮廓、形体概括、边缘语言、空间深度、光线、色层、材质响应和最终表面，不以风格名称本身代替画面描述。若与其他风格混用，必须指定一个主风格和一个只负责局部的辅风格，并保持人物、建筑和道具在同一视觉规则内；主体身份、动作和功能结构优先于装饰。避免复制知名作品、角色、签名或品牌，避免伪文字、媒介互相矛盾、随机滤镜、纹理覆盖主体、局部精细度不一致、只靠配色冒充风格以及把多个年代和地域符号无依据拼在一起；明确基底材料、工具、制作顺序、颜料或纤维如何附着，以及压印、刻痕、针脚、接缝、烧制或干燥留下的边界；工艺细节随实际尺度变化并尊重重力、厚度和受力。避免把工艺做成平面滤镜、重复贴图、无材料来源的纹理、所有边缘同样粗糙、金属织物纸张反射一致、针脚不闭合、版画出现连续数码渐变或手工误差大到破坏主体识别",
+      "enPrompt": "two-color kraft stencil printing using one continuous dark natural-fiber paper and a single opaque light ink. Recognition is built from one large connected light negative form plus a few dark internal openings; the top silhouette and identity-critical apertures remain firm while the lower or secondary edge recedes through real stencil gaps, incomplete ink transfer, exposed fibers and irregular pressure into the dark paper ground. Tone comes from positive-negative proportion, bridges and cutout logic rather than photographic gradients or hatching. Avoid ordinary black silhouettes, vector icons, automatic threshold filters, fine etching, multicolor registration, regular halftones, digital opacity, dimensional papercraft, all-over fake grime or damaged edges with no structural purpose.; translate the style into an observable production or imaging mechanism, then define subject silhouette form simplification edge language spatial depth illumination color layers material response and final surface rather than relying on the style name itself. When combining styles, establish one primary language and one secondary language limited to a specific region or function, keeping figures architecture and props within the same visual rules while subject identity action and functional structure take priority over decoration. Avoid copies of famous works characters signatures or brands pseudo-writing contradictory media random filtering texture covering the subject inconsistent local detail color alone used as proof of style or unsupported mixtures of periods and regions; specify substrate tool sequence and how pigment fiber or material is attached, including boundaries left by impression carving stitch seam firing or drying. Craft detail must scale with the object and obey gravity thickness and structural load. Avoid reducing a process to a flat filter repeated texture marks with no material source equally rough edges identical reflection on metal textile and paper unclosed stitches continuous digital gradients in relief print or handmade variation so extreme that subject identity is lost",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable character",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-charcoal-fading-memory",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "炭笔物理渐隐",
+      "enName": "Physical Charcoal Fade",
+      "image": "/assets/parameters/style-charcoal-fading-memory.jpg?v=20261026-featured-skill-g",
+      "zhPrompt": "炭笔物理渐隐使用柳条炭、压缩炭、炭笔和极少石墨在干净暖白纸上建立“清楚结构—断裂轮廓—有限擦抹—橡皮提亮—稀疏粉尘—未触碰纸白”的真实材料序列；焦点以短而有方向的宽笔触和深黑质量保持清楚，渐隐只发生在指定边缘，炭粉、碎屑和擦痕局限在主体附近。明度由炭量、纸齿与提亮共同产生，不用透明度。避免数字模糊、羽化、空气笔、雾层、满页脏灰、均匀粉尘、完整学术素描、密排线、黑白照片滤镜和主体四周同样消失。；先把该风格落实为可观察的制作或成像机制，再依次说明主体轮廓、形体概括、边缘语言、空间深度、光线、色层、材质响应和最终表面，不以风格名称本身代替画面描述。若与其他风格混用，必须指定一个主风格和一个只负责局部的辅风格，并保持人物、建筑和道具在同一视觉规则内；主体身份、动作和功能结构优先于装饰。避免复制知名作品、角色、签名或品牌，避免伪文字、媒介互相矛盾、随机滤镜、纹理覆盖主体、局部精细度不一致、只靠配色冒充风格以及把多个年代和地域符号无依据拼在一起；明确基底材料、工具、制作顺序、颜料或纤维如何附着，以及压印、刻痕、针脚、接缝、烧制或干燥留下的边界；工艺细节随实际尺度变化并尊重重力、厚度和受力。避免把工艺做成平面滤镜、重复贴图、无材料来源的纹理、所有边缘同样粗糙、金属织物纸张反射一致、针脚不闭合、版画出现连续数码渐变或手工误差大到破坏主体识别",
+      "enPrompt": "physical charcoal fading made with willow charcoal, compressed charcoal, charcoal pencil and a trace of graphite on pristine warm drawing paper. The material sequence remains observable: clear structure, broken contour, limited smudge, kneaded-eraser lift, sparse powder residue and finally untouched paper. Short directional broad marks and deep black mass keep the focal structure legible; fading occurs only along a chosen edge, and dust, crumbs and rubbing stay close to the subject. Value comes from charcoal quantity, paper tooth and lifted material rather than opacity. Avoid digital blur, feathering, airbrush, fog layers, dirty paper everywhere, evenly distributed powder, a complete academic drawing, dense hatching, monochrome photo filters or making every edge disappear equally.; translate the style into an observable production or imaging mechanism, then define subject silhouette form simplification edge language spatial depth illumination color layers material response and final surface rather than relying on the style name itself. When combining styles, establish one primary language and one secondary language limited to a specific region or function, keeping figures architecture and props within the same visual rules while subject identity action and functional structure take priority over decoration. Avoid copies of famous works characters signatures or brands pseudo-writing contradictory media random filtering texture covering the subject inconsistent local detail color alone used as proof of style or unsupported mixtures of periods and regions; specify substrate tool sequence and how pigment fiber or material is attached, including boundaries left by impression carving stitch seam firing or drying. Craft detail must scale with the object and obey gravity thickness and structural load. Avoid reducing a process to a flat filter repeated texture marks with no material source equally rough edges identical reflection on metal textile and paper unclosed stitches continuous digital gradients in relief print or handmade variation so extreme that subject identity is lost",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable character",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-clean-ink-stipple-memory",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "纯墨受控点描",
+      "enName": "Clean Ink Stipple Memory",
+      "image": "/assets/parameters/style-clean-ink-stipple-memory.jpg?v=20261026-featured-skill-g",
+      "zhPrompt": "纯墨受控点描以饱和纯黑液体墨块建立主体核心，用少量粗细变化的经济线条说明结构，再以边缘清楚、大小克制、人工布置的圆点承担中间明度和边缘后退，形成“实黑—点描—洁净象牙白纸”的明确顺序；所有点只位于主体及必要延伸，不平均覆盖背景，纸面无灰雾、污迹或随机喷溅。避免炭粉、铅笔排线、水墨晕染、干刷飞白、均匀印刷网点、照片半调滤镜、像素马赛克、全页颗粒、自动描边和装饰性泼墨。；先把该风格落实为可观察的制作或成像机制，再依次说明主体轮廓、形体概括、边缘语言、空间深度、光线、色层、材质响应和最终表面，不以风格名称本身代替画面描述。若与其他风格混用，必须指定一个主风格和一个只负责局部的辅风格，并保持人物、建筑和道具在同一视觉规则内；主体身份、动作和功能结构优先于装饰。避免复制知名作品、角色、签名或品牌，避免伪文字、媒介互相矛盾、随机滤镜、纹理覆盖主体、局部精细度不一致、只靠配色冒充风格以及把多个年代和地域符号无依据拼在一起；明确基底材料、工具、制作顺序、颜料或纤维如何附着，以及压印、刻痕、针脚、接缝、烧制或干燥留下的边界；工艺细节随实际尺度变化并尊重重力、厚度和受力。避免把工艺做成平面滤镜、重复贴图、无材料来源的纹理、所有边缘同样粗糙、金属织物纸张反射一致、针脚不闭合、版画出现连续数码渐变或手工误差大到破坏主体识别",
+      "enPrompt": "clean ink-and-stipple language establishing the subject core with saturated pure-black liquid-ink masses, explaining structure with only a few economical variable lines, then carrying intermediate tone and edge recession through deliberately placed crisp round dots of restrained size. The visual order is explicit: solid black form, controlled stippling, pristine ivory paper. Every dot belongs to the subject or a necessary extension and never spreads evenly across the background; the sheet remains free of gray fog, stains and random spray. Avoid charcoal powder, pencil hatching, ink wash blooms, dry-brush scuffing, uniform printed halftone screens, photographic halftone filters, pixel mosaics, all-over grain, automatic outlines or decorative splatter.; translate the style into an observable production or imaging mechanism, then define subject silhouette form simplification edge language spatial depth illumination color layers material response and final surface rather than relying on the style name itself. When combining styles, establish one primary language and one secondary language limited to a specific region or function, keeping figures architecture and props within the same visual rules while subject identity action and functional structure take priority over decoration. Avoid copies of famous works characters signatures or brands pseudo-writing contradictory media random filtering texture covering the subject inconsistent local detail color alone used as proof of style or unsupported mixtures of periods and regions; specify substrate tool sequence and how pigment fiber or material is attached, including boundaries left by impression carving stitch seam firing or drying. Craft detail must scale with the object and obey gravity thickness and structural load. Avoid reducing a process to a flat filter repeated texture marks with no material source equally rough edges identical reflection on metal textile and paper unclosed stitches continuous digital gradients in relief print or handmade variation so extreme that subject identity is lost",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable character",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
       "id": "clothing-long-sleeve",
       "category": "clothing",
       "styleGroup": "tops-sleeves",
@@ -28254,6 +28362,102 @@
       "originalImage": "/assets/featured/color-ai-artifact-naturalization-original.jpg",
       "resultImage": "/assets/featured/color-ai-artifact-naturalization-result.jpg",
       "prompt": "请严格基于原图进行“AI 痕迹自然化修复”，不重新设计画面。先检查并列出最影响真实感的一组问题，再只修复这些区域：塑料磨皮恢复与周围一致的毛孔、细纹和自然肤色起伏；异常手指、五官或边缘恢复合理结构与接触关系；重复背景纹理改为有变化但同类的真实细节；过强光晕、假轮廓光和冲突阴影统一到原有主光方向；产品材质恢复正确粗糙度与反射。必须保持人物身份、五官比例、表情、发型、服装、产品形状、包装文字位置、构图、裁切和未指定区域不变。每次优先修复一个问题簇，正常观看尺寸自然即可。避免全图重绘、换脸、美颜年轻化、过度锐化、模糊补丁、背景液化、品牌文字漂移、增加物件、Logo 和水印。"
+    },
+    {
+      "id": "img2img-pixel-dissolve-memory",
+      "category": "image-to-image",
+      "group": "style-transfer",
+      "zhTitle": "像素消散记忆",
+      "enTitle": "Pixel-Dissolve Memory",
+      "zhDescription": "把可辨主体重构为有限色像素块，并让环境沿真实方向逐块减少直至融入纸白。",
+      "enDescription": "Rebuild a recognizable subject with a limited pixel palette and let its surroundings disperse block by block into paper white.",
+      "originalImage": "/assets/featured/img2img-pixel-dissolve-memory-original.jpg",
+      "resultImage": "/assets/featured/img2img-pixel-dissolve-memory-result.jpg",
+      "prompt": "请将上传照片重构为 3:4 竖版“像素消散记忆海报”。锁定主体身份、数量、姿态、建筑比例、道路或水面方向、遮挡关系、相机视角和透视，不改变最具辨识度的结构。把原图压缩为“6 至 12 种源图颜色”，使用清晰独立的方形或近方形像素块重建主体：中心和识别细节保持较完整，轮廓、植被、道路、水面、倒影与远景沿原有透视、流向或运动方向逐步减少像素数量、拉开间距并消失到暖象牙白纸面；留白占画面约 50% 至 65%。消散只能来自块的密度递减，不使用透明渐变、模糊或随机故障。可在完整留白处加入一行不超过“5 个英文单词”的小标题，地点未知时不要猜测。避免照片马赛克、整图降采样、像素切片拉伸、RGB 故障、体素 3D、游戏界面、十字绣、满版像素背景、额外主体、乱码、Logo 和水印。"
+    },
+    {
+      "id": "img2img-sculptural-impasto-miniature",
+      "category": "image-to-image",
+      "group": "style-transfer",
+      "zhTitle": "立体厚涂微景观",
+      "enTitle": "Sculptural Impasto Miniature",
+      "zhDescription": "把照片的核心景物塑造成带真实颜料高度、刮刀痕和窄幅地景基座的厚涂微景观。",
+      "enDescription": "Translate the source into a miniature landscape with real impasto height, palette-knife ridges, and a narrow painted terrain base.",
+      "originalImage": "/assets/featured/img2img-sculptural-impasto-miniature-original.jpg",
+      "resultImage": "/assets/featured/img2img-sculptural-impasto-miniature-result.jpg",
+      "prompt": "请把上传照片制作成 3:4 竖版“立体厚涂微景观”。保留主体数量、轮廓、朝向、建筑或地形比例、人物动作、前后遮挡和叙事关系，只选取最能代表原图的一个主体与少量必要环境。将整个场景重构为白色纹理纸上的微型油画地景：主体具有真实厚颜料体积，刮刀堆叠、颜料脊线、抬高边缘、混色断面和半手塑痕迹清楚可见；道路、水面、山脊或光带整理成一条轻巧狭长的“厚涂地景基座”，为主体提供可信落点。配色从原图最明亮的 4 至 7 种颜色提炼，重颜料集中在水、云、地面和局部高光，其余区域保留大量干净纸白。画面应像真实微距拍摄的厚涂小景，而不是普通油画滤镜。避免展示原照片、上下对比版式、塑料 CGI、软陶玩具、廉价卡通、满版油画背景、固定糖果配色、无关景物、长文字、Logo 和水印。"
+    },
+    {
+      "id": "img2img-rounded-isometric-blocks",
+      "category": "image-to-image",
+      "group": "style-transfer",
+      "zhTitle": "圆角模块雕塑",
+      "enTitle": "Rounded Isometric Modules",
+      "zhDescription": "把原图的结构、重心和配色转译为圆角模块互锁的等距纸浆雕塑。",
+      "enDescription": "Translate source structure, center of gravity, and palette into an interlocking rounded isometric pulp sculpture.",
+      "originalImage": "/assets/featured/img2img-rounded-isometric-blocks-original.jpg",
+      "resultImage": "/assets/featured/img2img-rounded-isometric-blocks-result.jpg",
+      "prompt": "请把上传照片重构为 3:4 竖版“圆角等距模块雕塑”。先锁定主体数量、质量分布、中心轴、曲线、孔洞、层级、遮挡和关键负形，再将其拆解为少量圆角几何模块，并通过堆叠、嵌套、穿插、错位高度和前后互锁恢复同一主体，而不是机械爆炸分解。模块大小要有主次，识别部位使用更小体块，大片结构使用稳定大体块；主体的朝向、重心和空间关系必须与原图一致。色盘完全来自原图，整理为一个主色、两至四个辅助层级和少量强调色，可提高明度并降低脏灰，但不加入原图没有的固定配色。材质为细哑光纸浆、粉蜡、软木或柔性复合材料，边角圆润，光线柔和，背景极浅并保留大量负空间。避免乐高颗粒、体素像素、机械零件爆炸、塑料高光、金属科幻、儿童积木玩具、电商展示台、额外物件、文字、Logo 和水印。"
+    },
+    {
+      "id": "img2img-kraft-stencil-landmark",
+      "category": "image-to-image",
+      "group": "style-transfer",
+      "zhTitle": "牛皮纸双色镂印",
+      "enTitle": "Kraft Two-Color Stencil",
+      "zhDescription": "从单一地标提取连续负形，以深色天然纤维纸和一种浅色油墨形成严格双色镂印。",
+      "enDescription": "Reduce one isolated landmark to a continuous negative form printed with one light ink on dark fibrous kraft paper.",
+      "originalImage": "/assets/featured/img2img-kraft-stencil-landmark-original.jpg",
+      "resultImage": "/assets/featured/img2img-kraft-stencil-landmark-result.jpg",
+      "prompt": "请将上传的单一地标或轮廓明确物件制作成 3:4 竖版“牛皮纸双色镂印海报”。仅适用于灯塔、塔楼、牌楼、纪念碑、风车、亭阁、桥塔或孤舟等可由单一强轮廓识别的主体。保留主体数量、朝向、高宽比、视角、顶部、基座，以及“2 至 6 个”决定身份的内部孔洞；只保留维持落点所需的最少地面、岸线、岩石或水面。使用一整张深棕或源图暗部对应的天然纤维纸作为底色，只用一种不透明浅色油墨印刷主体；识别主要依靠连续的大面积浅色负形与少量深色孔洞，不画摄影明暗。上部轮廓清晰，下缘通过真实模板漏印、纸纤维露底和不规则墨量逐渐融入纸面，禁止数字透明度和模糊。可加入一个与画面事实对应的英文单词，小而克制。避免普通黑剪影、自动阈值滤镜、细密蚀刻、多色套印、渐变、立体纸艺、虚构地域符号、额外树鸟人物、长文字、Logo 和水印。"
+    },
+    {
+      "id": "img2img-paper-cutout-travel-people",
+      "category": "image-to-image",
+      "group": "style-transfer",
+      "zhTitle": "实景纸片人物",
+      "enTitle": "Paper Figures in Real Space",
+      "zhDescription": "完整保留真实环境，只把照片中的人物替换为与原姿势一致、正确落地的暖白纸片线稿。",
+      "enDescription": "Keep the real environment intact and replace only its people with grounded warm-white paper sketch figures.",
+      "originalImage": "/assets/featured/img2img-paper-cutout-travel-people-original.jpg",
+      "resultImage": "/assets/featured/img2img-paper-cutout-travel-people-result.jpg",
+      "prompt": "请严格以上传照片为唯一来源制作“实景纸片人物”。完整保留原照片中的建筑、道路、自然环境、透视、材质、色彩和真实光线，只把所有可辨识人物转换为暖白色薄纸剪影。每个人物必须保留原身份线索、数量、姿势、朝向、手势、服装外轮廓、随身物件、彼此间距、接触动作和前后遮挡；纸片使用略不齐的模切边、细微纸纤维、松弛的黑色手绘轮廓和极少内部线条。根据环境主光，在脚底和遮挡接触处加入短而浅、方向正确的纸层阴影，使人物真实站立在原地；相机、雨伞、自行车或包只在动作不可缺少时随人物纸艺化。不要重绘环境，不要改变人物数量和关系。避免透明人物加白线、彩色漫画、可爱贴纸白边、厚泡沫板、漂浮、脚下无落点、牵手分离、重复人物、改姿势、气泡文字、Logo 和水印。"
+    },
+    {
+      "id": "img2img-gouache-object-archive",
+      "category": "image-to-image",
+      "group": "poster-layout",
+      "zhTitle": "水粉物件档案",
+      "enTitle": "Gouache Object Archive",
+      "zhDescription": "从原图提取三至七件真实物品，以不透明水粉重新编排为有呼吸感的旅行静物档案。",
+      "enDescription": "Extract three to seven real source objects and recompose them as an airy opaque-gouache travel archive.",
+      "originalImage": "/assets/featured/img2img-gouache-object-archive-original.jpg",
+      "resultImage": "/assets/featured/img2img-gouache-object-archive-result.jpg",
+      "prompt": "请把上传照片制作成 3:4 竖版“水粉物件档案”。从原图中选择“3 至 7 件”最能代表场景的真实物品，如器皿、食物、花叶、衣物、工具、票据或小型建筑局部；保持每件物品的数量、比例特征、颜色、材质线索和相互关系，不虚构品牌、文字或新道具。将物品从杂乱背景中提炼出来，重新编排为暖白粗纹纸上的安静静物组合：一件主物占据视觉中心，其余物件以大小、遮挡和间距形成节奏，四周保留连续大留白。使用真正不透明、哑光、高覆盖水粉，保留刷毛方向、颜料厚薄、干刷缺口、略粗手工边缘和纸白高光；色盘完全取自原图并压缩为 4 至 8 色。可加入极小编号或短标题，但地点和日期未知时不得编造。避免透明水彩、原图同构滤镜、油画厚涂、塑料 3D、儿童涂色、物件数量漂移、凭空添加商品、复杂背景、乱码、Logo 和水印。"
+    },
+    {
+      "id": "img2img-charcoal-fading-memory",
+      "category": "image-to-image",
+      "group": "style-transfer",
+      "zhTitle": "炭笔渐隐记忆",
+      "enTitle": "Charcoal Fading Memory",
+      "zhDescription": "用真实炭粉、断线、橡皮提亮和逐渐稀疏的残屑完成物理渐隐，而非数字模糊。",
+      "enDescription": "Create a physical fade through charcoal powder, broken contours, eraser lifts, and increasingly sparse residue rather than digital blur.",
+      "originalImage": "/assets/featured/img2img-charcoal-fading-memory-original.jpg",
+      "resultImage": "/assets/featured/img2img-charcoal-fading-memory-result.jpg",
+      "prompt": "请将上传照片制作成 3:4 竖版“炭笔渐隐记忆研究”。锁定主体身份、数量、姿态、方向、比例、视角、建筑或地形关键结构，只选择“1 至 2 个”最强记忆锚点，删除无关杂物但不替换主体。使用柳条炭、压缩炭、炭笔和极少石墨在干净暖白哑光素描纸上作画：焦点区域结构清楚，短而有方向的宽笔触、粗细不均的轮廓和局部深黑建立体积；向指定的“消散方向”依次经过断裂轮廓、少量擦抹、可见橡皮提亮、稀疏炭粉和极少残屑，最终回到完全未触碰的纸白。粉尘只能出现在主体和渐隐边缘附近，不能弄脏全页。保持单色暖灰、冷灰、炭黑和少量石墨银。避免黑白照片滤镜、整幅炭笔风景、数字透明度、羽化、模糊、雾化、喷枪渐变、学术密排线、全纸脏灰、文字、Logo 和水印。"
+    },
+    {
+      "id": "img2img-clean-ink-stipple-memory",
+      "category": "image-to-image",
+      "group": "style-transfer",
+      "zhTitle": "纯墨点描记忆",
+      "enTitle": "Clean Ink Stipple Memory",
+      "zhDescription": "用纯黑墨块、少量变线和受控圆点从实体过渡到洁净纸白，保持纸面清透。",
+      "enDescription": "Move from pure black ink masses through controlled round stippling into pristine paper white.",
+      "originalImage": "/assets/featured/img2img-clean-ink-stipple-memory-original.jpg",
+      "resultImage": "/assets/featured/img2img-clean-ink-stipple-memory-result.jpg",
+      "prompt": "请将上传照片制作成 3:4 竖版“纯墨点描记忆”。以原图为唯一内容来源，保留主体身份、数量、朝向、比例、遮挡和核心空间关系，选取最强视觉锚点并删除非必要杂物。使用饱和纯黑液体墨块建立主体核心，以少量粗细变化、略有停顿的经济线条说明结构，再用大小克制、边缘清楚、人工分布的圆形墨点承担中间明度和边缘后退；标记必须依次形成“实黑形体 → 受控点描 → 完整洁净纸白”的过渡。墨点只落在主体及其必要延伸范围，不平均铺满背景；象牙白纸保持平整、明亮、无污迹。避免水墨晕染、灰雾、炭粉、铅笔排线、干刷飞白、随机泼墨、印刷网点滤镜、像素马赛克、整页颗粒、自动描边、大标题、乱码、Logo 和水印。"
     }
   ]
 }

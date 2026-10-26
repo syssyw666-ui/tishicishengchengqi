@@ -1,5 +1,6 @@
 import { featuredPromptsExpansion6 } from "./featuredPromptsExpansion6";
 import { featuredPromptsExpansion7 } from "./featuredPromptsExpansion7";
+import { featuredPromptsExpansion8 } from "./featuredPromptsExpansion8";
 export type FeaturedPromptCategory = "color-edit" | "image-to-image" | "utility" | "text-to-image";
 
 export interface FeaturedPromptItem {
@@ -2499,5 +2500,6 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     prompt: "请将上传的街道、树林、工业空间或人物环境照片重构为“青橙浓雾光场”。锁定主体身份、姿势、相机位置、道路或地面、建筑和大型环境轮廓；依据原图空间深度布置多层深青色雾气，近景较薄、中远景逐渐加厚，并让“琥珀色暖背光”从合理灯源或远处入口穿透雾层形成可见光束和轮廓光。地面保持干燥或遵循原图真实状态，不自动增加雨水反射。人物脸部和关键结构仍可辨，冷暖对比集中在视觉中心。避免全图橙青滤镜、无来源发光、满地湿反射、雾墙遮死主体、赛博招牌、额外人物、文字、Logo 和水印。"
   },
   ...featuredPromptsExpansion6,
-  ...featuredPromptsExpansion7
+  ...featuredPromptsExpansion7,
+  ...featuredPromptsExpansion8
 ];
