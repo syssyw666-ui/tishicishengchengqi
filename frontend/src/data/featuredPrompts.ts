@@ -1,4 +1,5 @@
 import { featuredPromptsExpansion6 } from "./featuredPromptsExpansion6";
+import { featuredPromptsExpansion7 } from "./featuredPromptsExpansion7";
 export type FeaturedPromptCategory = "color-edit" | "image-to-image" | "utility" | "text-to-image";
 
 export interface FeaturedPromptItem {
@@ -973,7 +974,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     enDescription: "Keep composition and subject while changing style.",
     originalImage: "/assets/featured/img2img-style-transfer-original.jpg",
     resultImage: "/assets/featured/img2img-style-transfer-result.jpg",
-    prompt: "实验提示词：参考原图的主体、姿态、构图、空间关系和主要色块，不改变主体身份、主体数量和画面位置，将画面转换为“目标风格”，例如“水彩插画风格 / 电影写实风格 / 3D动画电影感 / 国风工笔风格”。保留核心轮廓和透视关系，重绘光影、材质、氛围与细节。不要新增无关元素，不要扭曲脸部、手部和文字。"
+    prompt: "参考原图的主体、姿态、构图、空间关系和主要色块，不改变主体身份、主体数量和画面位置，将画面转换为“目标风格”，例如“水彩插画风格 / 电影写实风格 / 3D动画电影感 / 国风工笔风格”。保留核心轮廓和透视关系，重绘光影、材质、氛围与细节。不要新增无关元素，不要扭曲脸部、手部和文字。"
   },
   {
     id: "img2img-ink-reconstruction",
@@ -984,7 +985,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     enDescription: "Rebuild a source image as a quiet ink illustration on matte specialty paper.",
     originalImage: "/assets/featured/img2img-ink-reconstruction-original.png",
     resultImage: "/assets/featured/img2img-ink-reconstruction-result.png",
-    prompt: "实验提示词：参考原图，根据原图画面比例，生成“米白哑光特种纸质感的水墨扁平重构插画”。保留原图整体色彩调性、主体结构、主体数量、空间关系与主要构图位置。景物简化为松弛柔和的块面造型，使用分层平涂搭配随性淡墨晕染笔触，轮廓自然松散，摒弃生硬轮廓线。剔除细碎纹理、杂物与厚重光影，只留存景物原生结构神韵。画面大面积留白，主体放置居中偏上位置。底部居中排布文字：首行“优雅衬线手写英文标题”，第二行“小号无衬线英文短句”。依托米白哑光纸张底色，形成兼具随性水墨气韵与干净克制学术质感的画面。不要添加多余装饰元素，不要改变主体结构，不要新增人物或景物，不要使用硬边描线。"
+    prompt: "参考原图，根据原图画面比例，生成“米白哑光特种纸质感的水墨扁平重构插画”。保留原图整体色彩调性、主体结构、主体数量、空间关系与主要构图位置。景物简化为松弛柔和的块面造型，使用分层平涂搭配随性淡墨晕染笔触，轮廓自然松散，摒弃生硬轮廓线。剔除细碎纹理、杂物与厚重光影，只留存景物原生结构神韵。画面大面积留白，主体放置居中偏上位置。底部居中排布文字：首行“优雅衬线手写英文标题”，第二行“小号无衬线英文短句”。依托米白哑光纸张底色，形成兼具随性水墨气韵与干净克制学术质感的画面。不要添加多余装饰元素，不要改变主体结构，不要新增人物或景物，不要使用硬边描线。"
   },
   {
     id: "img2img-product-cleanup",
@@ -995,7 +996,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     enDescription: "Clean product photos for ecommerce use.",
     originalImage: "/assets/featured/img2img-product-cleanup-original.jpg",
     resultImage: "/assets/featured/img2img-product-cleanup-result.jpg",
-    prompt: "实验提示词：请基于原图保留产品真实形状、比例、颜色、材质和关键细节，将背景处理为“目标背景”，例如“纯白电商背景 / 浅灰摄影棚背景 / 高级品牌广告背景”。清理背景杂物与噪点，修正曝光和白平衡，增强边缘清晰度、材质反光和电商产品图质感。不要改变产品结构，不要新增文字，不要生成不存在的配件。"
+    prompt: "请基于原图保留产品真实形状、比例、颜色、材质和关键细节，将背景处理为“目标背景”，例如“纯白电商背景 / 浅灰摄影棚背景 / 高级品牌广告背景”。清理背景杂物与噪点，修正曝光和白平衡，增强边缘清晰度、材质反光和电商产品图质感。不要改变产品结构，不要新增文字，不要生成不存在的配件。"
   },
   {
     id: "img2img-character-consistency",
@@ -1006,7 +1007,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     enDescription: "Keep character identity while changing pose or scene.",
     originalImage: "/assets/featured/img2img-character-consistency-original.jpg",
     resultImage: "/assets/featured/img2img-character-consistency-result.jpg",
-    prompt: "实验提示词：以原图角色为身份参考，保持五官比例、发型、服装关键特征、配色和整体气质一致，将角色改为“目标动作”，并放入“目标场景”，镜头为“目标镜头”。例如“奔跑 / 跳舞 / 坐着 / 回头看”，“城市街巷 / 摄影棚 / 森林 / 未来街区”，“全身中景 / 低机位 / 侧面视角”。不要改变角色年龄、脸型、发色、服装核心元素，不要产生多余人物。"
+    prompt: "以原图角色为身份参考，保持五官比例、发型、服装关键特征、配色和整体气质一致，将角色改为“目标动作”，并放入“目标场景”，镜头为“目标镜头”。例如“奔跑 / 跳舞 / 坐着 / 回头看”，“城市街巷 / 摄影棚 / 森林 / 未来街区”，“全身中景 / 低机位 / 侧面视角”。不要改变角色年龄、脸型、发色、服装核心元素，不要产生多余人物。"
   },
   {
     id: "img2img-vintage-collage",
@@ -1017,7 +1018,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     enDescription: "Keep the source composition and create a vintage torn-paper collage.",
     originalImage: "/assets/featured/img2img-vintage-collage-original.jpg",
     resultImage: "/assets/featured/img2img-vintage-collage-result.jpg",
-    prompt: "实验提示词：以原图为基础，保留原图所有元素、画面构图和物体形态不变，将画面转换为“复古拼贴插画”。画面仅保留约“10%原始实景区域”，其余约“90%区域”以原图为基础转为“丝网版画 / 水墨拓印 / 复古网点插画”。加入手工撕纸撕裂效果、不规则自然毛边，撕裂走向跟随原图构图自然延展并贴合视觉重心。增加“手绘叙事线条”“复古肌理底色”“粗纹做旧纸张肌理”“细腻胶片颗粒”“柔和复古色调”。画质要求：8K，文艺商业海报质感，层次丰富，高级简约。不要过度扭曲原图景物，不要改变主体识别度。"
+    prompt: "以原图为基础，保留原图所有元素、画面构图和物体形态不变，将画面转换为“复古拼贴插画”。画面仅保留约“10%原始实景区域”，其余约“90%区域”以原图为基础转为“丝网版画 / 水墨拓印 / 复古网点插画”。加入手工撕纸撕裂效果、不规则自然毛边，撕裂走向跟随原图构图自然延展并贴合视觉重心。增加“手绘叙事线条”“复古肌理底色”“粗纹做旧纸张肌理”“细腻胶片颗粒”“柔和复古色调”。画质要求：8K，文艺商业海报质感，层次丰富，高级简约。不要过度扭曲原图景物，不要改变主体识别度。"
   },
   {
     id: "img2img-postcard-poster",
@@ -1028,7 +1029,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     enDescription: "A two-section poster combining real photography and minimal illustration.",
     originalImage: "/assets/featured/img2img-postcard-poster-original.jpg",
     resultImage: "/assets/featured/img2img-postcard-poster-result.jpg",
-    prompt: "实验提示词：将我提供的“真实城市/风景照片”转换为上下分区的高级艺术海报。上半部分严格保留原照片的主体、建筑、天空、灯光、云层、月亮及整体构图，仅进行轻微电影感调色，降低饱和度，保留自然光影与真实摄影质感，色调为“蓝灰 / 暖黄 / 米白”等低饱和色。下半部分重新提炼上方照片中最具辨识度的“天际线 / 建筑 / 云层 / 灯光 / 月亮”等元素，转换为“极简艺术插画”，保持明显对应关系但不要机械临摹。风格：minimal editorial poster, poetic city illustration, contemporary art book aesthetic, Scandinavian minimalism, Japanese editorial design, soft gouache illustration, quiet luxury。质感：soft gouache, dry brush texture, subtle paper grain, matte printed texture。底部加入极简杂志式英文排版：“Where City Sleeps between light and quiet”。不要 HDR、过度锐化、卡通、赛博朋克、3D、矢量图标感、复杂装饰和商业广告感。比例：“2:3竖版海报”。"
+    prompt: "将我提供的“真实城市/风景照片”转换为上下分区的高级艺术海报。上半部分严格保留原照片的主体、建筑、天空、灯光、云层、月亮及整体构图，仅进行轻微电影感调色，降低饱和度，保留自然光影与真实摄影质感，色调为“蓝灰 / 暖黄 / 米白”等低饱和色。下半部分重新提炼上方照片中最具辨识度的“天际线 / 建筑 / 云层 / 灯光 / 月亮”等元素，转换为“极简艺术插画”，保持明显对应关系但不要机械临摹。风格：minimal editorial poster, poetic city illustration, contemporary art book aesthetic, Scandinavian minimalism, Japanese editorial design, soft gouache illustration, quiet luxury。质感：soft gouache, dry brush texture, subtle paper grain, matte printed texture。底部加入极简杂志式英文排版：“Where City Sleeps between light and quiet”。不要 HDR、过度锐化、卡通、赛博朋克、3D、矢量图标感、复杂装饰和商业广告感。比例：“2:3竖版海报”。"
   },
   {
     id: "img2img-color-walk-magnet",
@@ -1039,7 +1040,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     enDescription: "Turn a travel photo into a minimal postcard or magnet cover.",
     originalImage: "/assets/featured/img2img-color-walk-magnet-original.jpg",
     resultImage: "/assets/featured/img2img-color-walk-magnet-result.jpg",
-    prompt: "实验提示词：基于我上传的“旅行照片”，生成竖版“3:4极简旅行封面”。上方“40%纯色标题区”从照片提取主色做背景，中央放一个“扁平插画风贴纸图标”，图标使用白色粗描边和轻微投影；下方一行英文标题：“PLACE NAME - SEASON/YEAR”。下方“60%区域”保留原照片片区，保持真实摄影质感，只做裁切和轻微调色。风格：MINIMAL TRAVEL POSTCARD, CLEAN LAYOUT, SINGLE STICKER ICON, ELEGANT TYPOGRAPHY, REALISTIC PHOTO。禁止：手账拼贴、虚线框、纸张纹理、多个图标、中文大字、水印、LOGO、乱码。"
+    prompt: "基于我上传的“旅行照片”，生成竖版“3:4极简旅行封面”。上方“40%纯色标题区”从照片提取主色做背景，中央放一个“扁平插画风贴纸图标”，图标使用白色粗描边和轻微投影；下方一行英文标题：“PLACE NAME - SEASON/YEAR”。下方“60%区域”保留原照片片区，保持真实摄影质感，只做裁切和轻微调色。风格：MINIMAL TRAVEL POSTCARD, CLEAN LAYOUT, SINGLE STICKER ICON, ELEGANT TYPOGRAPHY, REALISTIC PHOTO。禁止：手账拼贴、虚线框、纸张纹理、多个图标、中文大字、水印、LOGO、乱码。"
   },
   {
     id: "img2img-paper-cut-architecture",
@@ -1050,7 +1051,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     enDescription: "Convert a building reference into layered paper-cut art.",
     originalImage: "/assets/featured/img2img-paper-cut-architecture-original.jpg",
     resultImage: "/assets/featured/img2img-paper-cut-architecture-result.jpg",
-    prompt: "实验提示词：使用提供的“建筑参考图像”，将画面中的主体建筑转换为“手工分层剪纸插画风格”。保留原建筑的主体轮廓、建筑比例、透视角度、门窗位置、屋顶结构、立面分区、阳台、柱廊、拱门、栏杆、装饰线脚等主要建筑特征，保持原始构图和建筑识别度。表现高度分层纸艺：可见纸张纤维质感、层间柔和阴影、圆润裁切边缘、精细纸艺镂空、手工剪贴薄纸质感。画面只保留主体建筑，其他非建筑元素尽量简化或移除。不要新增人物、车辆、树木、花草、小鸟、云朵、路灯、街景道具或装饰元素。背景为“浅色纸张质感背景”。"
+    prompt: "使用提供的“建筑参考图像”，将画面中的主体建筑转换为“手工分层剪纸插画风格”。保留原建筑的主体轮廓、建筑比例、透视角度、门窗位置、屋顶结构、立面分区、阳台、柱廊、拱门、栏杆、装饰线脚等主要建筑特征，保持原始构图和建筑识别度。表现高度分层纸艺：可见纸张纤维质感、层间柔和阴影、圆润裁切边缘、精细纸艺镂空、手工剪贴薄纸质感。画面只保留主体建筑，其他非建筑元素尽量简化或移除。不要新增人物、车辆、树木、花草、小鸟、云朵、路灯、街景道具或装饰元素。背景为“浅色纸张质感背景”。"
   },
   {
     id: "img2img-dopamine-illustration",
@@ -1061,7 +1062,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     enDescription: "Turn a building or subject into a bright dopamine-style vector illustration.",
     originalImage: "/assets/featured/img2img-dopamine-illustration-original.jpg",
     resultImage: "/assets/featured/img2img-dopamine-illustration-result.jpg",
-    prompt: "实验提示词：依据原图主体，生成“多巴胺潮流插画”。保留主体的整体轮廓、比例、视角和主要结构，去除全部写实纹路与繁杂细节。使用“流畅曲线”“简约线条”“柔和治愈色块”“随性不规则圆弧色块”组合成型，适配“活泼亮眼多巴胺配色”。整体纯白纯色背景，风格新潮前卫、简约清新、自然柔和、有创意。可替换项：“目标主体”“目标配色”“目标背景”。不要写实摄影质感，不要复杂阴影，不要新增无关元素。"
+    prompt: "依据原图主体，生成“多巴胺潮流插画”。保留主体的整体轮廓、比例、视角和主要结构，去除全部写实纹路与繁杂细节。使用“流畅曲线”“简约线条”“柔和治愈色块”“随性不规则圆弧色块”组合成型，适配“活泼亮眼多巴胺配色”。整体纯白纯色背景，风格新潮前卫、简约清新、自然柔和、有创意。可替换项：“目标主体”“目标配色”“目标背景”。不要写实摄影质感，不要复杂阴影，不要新增无关元素。"
   },
   {
     id: "img2img-embossed-relief",
@@ -1072,7 +1073,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     enDescription: "Convert architecture into subtle embossed relief art.",
     originalImage: "/assets/featured/img2img-embossed-relief-original.jpg",
     resultImage: "/assets/featured/img2img-embossed-relief-result.jpg",
-    prompt: "实验提示词：依据“实景建筑素材”，将参考图转化为“印压凹凸效果立体画 / 极简印压线描画”。精准复刻建筑整体轮廓、整体比例、屋顶样式、立面层次与门窗布局特色，清空画面内天空、路人、街道、绿植等多余杂物。融入“诗意节日元素”，例如“金色牡丹 / 展翅和平鸽 / 飘逸彩带”，元素与主体图案自然融合。采用浅浮雕技法，立体效果含蓄内敛，淡雅乳白色背景，柔和红色和金色点缀。线条飘逸洒脱，富有书法韵味，适合艺术壁纸和文化产品。"
+    prompt: "依据“实景建筑素材”，将参考图转化为“印压凹凸效果立体画 / 极简印压线描画”。精准复刻建筑整体轮廓、整体比例、屋顶样式、立面层次与门窗布局特色，清空画面内天空、路人、街道、绿植等多余杂物。融入“诗意节日元素”，例如“金色牡丹 / 展翅和平鸽 / 飘逸彩带”，元素与主体图案自然融合。采用浅浮雕技法，立体效果含蓄内敛，淡雅乳白色背景，柔和红色和金色点缀。线条飘逸洒脱，富有书法韵味，适合艺术壁纸和文化产品。"
   },
   {
     id: "img2img-woodcut-print",
@@ -1083,7 +1084,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     enDescription: "Convert a photo into high-contrast woodcut print style.",
     originalImage: "/assets/featured/img2img-woodcut-print-original.jpg",
     resultImage: "/assets/featured/img2img-woodcut-print-result.jpg",
-    prompt: "实验提示词：把这张图片转绘为“木刻版画印刷效果”。保留原图主体轮廓和构图，使用“P5版画阈值处理效果”“单色黑白墨水版画”“浅米色纹理旧纸张”。高对比度无中间调，锥形线，强烈三角刀具刻出的木刻版画线条感，黑白对比鲜明，刻痕肌理明显，锐利清晰的刻线线条，强烈颗粒感肌理。仅通过线条疏密和粗细表现细节，完全像木刻版画印刷效果。可替换项：“目标配色”，例如“黑白 / 深蓝白 / 赭黑米白”。不要渐变，不要彩色写实，不要柔焦。"
+    prompt: "把这张图片转绘为“木刻版画印刷效果”。保留原图主体轮廓和构图，使用“P5版画阈值处理效果”“单色黑白墨水版画”“浅米色纹理旧纸张”。高对比度无中间调，锥形线，强烈三角刀具刻出的木刻版画线条感，黑白对比鲜明，刻痕肌理明显，锐利清晰的刻线线条，强烈颗粒感肌理。仅通过线条疏密和粗细表现细节，完全像木刻版画印刷效果。可替换项：“目标配色”，例如“黑白 / 深蓝白 / 赭黑米白”。不要渐变，不要彩色写实，不要柔焦。"
   },
   {
     id: "img2img-vector-architecture",
@@ -1094,7 +1095,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     enDescription: "Convert real architecture into a flat vector infographic poster.",
     originalImage: "/assets/featured/img2img-vector-architecture-original.jpg",
     resultImage: "/assets/featured/img2img-vector-architecture-result.jpg",
-    prompt: "实验提示词：依据“实景建筑素材”，打造兼具数据图表美感的“扁平化建筑矢量图”。精准复刻建筑整体轮廓、比例、屋顶样式、立面层次与门窗布局特色，清空天空、路人、街道、绿植等多余杂物。选用“纯白与浅素色”作为基底，建筑正面居中放置，遵循建筑图纸对称设计思路，使用利落深色线条勾勒外形，搭配平整色块填充，辅以淡色明暗与细腻高光。画面左上角搭配“对应风格英文名称”，建筑后方叠加浅灰大号半透明文字做氛围底纹。增添尺寸标注线、比例刻度、侧边竖排红色文字标注“建筑名称 / 所在地 / 建造时间”。未知数值统一标注近似标识。线条工整干净，色调统一素雅，留白舒适高级。"
+    prompt: "依据“实景建筑素材”，打造兼具数据图表美感的“扁平化建筑矢量图”。精准复刻建筑整体轮廓、比例、屋顶样式、立面层次与门窗布局特色，清空天空、路人、街道、绿植等多余杂物。选用“纯白与浅素色”作为基底，建筑正面居中放置，遵循建筑图纸对称设计思路，使用利落深色线条勾勒外形，搭配平整色块填充，辅以淡色明暗与细腻高光。画面左上角搭配“对应风格英文名称”，建筑后方叠加浅灰大号半透明文字做氛围底纹。增添尺寸标注线、比例刻度、侧边竖排红色文字标注“建筑名称 / 所在地 / 建造时间”。未知数值统一标注近似标识。线条工整干净，色调统一素雅，留白舒适高级。"
   },
   {
     id: "utility-psd-layer",
@@ -1185,7 +1186,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     zhDescription: "适合人物主视觉。",
     enDescription: "For character key visuals.",
     image: "/assets/featured/text-cinematic-character.jpg",
-    prompt: "实验提示词：生成“主体角色”的电影人物海报，角色为“原创角色设定”，站在“目标场景”中，画面情绪为“目标氛围”。使用电影海报构图，主体清晰，背景有纵深，戏剧化光影，精致服装与材质细节，高级电影调色，真实空间透视，高清细节，画面完整。可替换项示例：“未来战士 / 东方侠客 / 科幻考古学家”，“沙漠遗迹 / 雨夜城市 / 巨型机械空间”，“史诗感 / 孤独感 / 神秘感”。不要使用版权角色，不要出现文字、水印、logo。"
+    prompt: "生成“主体角色”的电影人物海报，角色为“原创角色设定”，站在“目标场景”中，画面情绪为“目标氛围”。使用电影海报构图，主体清晰，背景有纵深，戏剧化光影，精致服装与材质细节，高级电影调色，真实空间透视，高清细节，画面完整。可替换项示例：“未来战士 / 东方侠客 / 科幻考古学家”，“沙漠遗迹 / 雨夜城市 / 巨型机械空间”，“史诗感 / 孤独感 / 神秘感”。不要使用版权角色，不要出现文字、水印、logo。"
   },
   {
     id: "text-food-exploded-layers",
@@ -1195,7 +1196,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     zhDescription: "科技可视化美食爆炸分解示意图。",
     enDescription: "A futuristic exploded-layer food visualization.",
     image: "/assets/featured/text-food-exploded-layers.jpg",
-    prompt: "实验提示词：生成“目标美食”的科技可视化爆炸分解示意图，倾斜“45度”悬空，沿“垂直中心轴”分层排列，所有食材与容器中的原始位置精准对齐。从上到下依次悬浮：“食材层级列表”，例如“腐竹、酸豆角、炸花生、木耳丝、青菜、葱花、螺蛳、粉条、红汤、白瓷碗”。汤汁或酱汁呈油亮飞溅效果并连接各层。背景为“纯黑”，专业棚拍侧逆光 + 柔光布光，突出食材真实纹理和油润光泽，色彩自然高级，拒绝过度饱和。每个食材旁配有白色细线 + 中文标注，例如“葱花”“酸豆角”，字体清晰工整，不遮挡主体。8K 超写实美食摄影，未来科技感悬空分解效果。"
+    prompt: "生成“目标美食”的科技可视化爆炸分解示意图，倾斜“45度”悬空，沿“垂直中心轴”分层排列，所有食材与容器中的原始位置精准对齐。从上到下依次悬浮：“食材层级列表”，例如“腐竹、酸豆角、炸花生、木耳丝、青菜、葱花、螺蛳、粉条、红汤、白瓷碗”。汤汁或酱汁呈油亮飞溅效果并连接各层。背景为“纯黑”，专业棚拍侧逆光 + 柔光布光，突出食材真实纹理和油润光泽，色彩自然高级，拒绝过度饱和。每个食材旁配有白色细线 + 中文标注，例如“葱花”“酸豆角”，字体清晰工整，不遮挡主体。8K 超写实美食摄影，未来科技感悬空分解效果。"
   },
   {
     id: "text-product-hero",
@@ -1205,7 +1206,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     zhDescription: "适合电商、广告、品牌物料。",
     enDescription: "For ecommerce, ads, and brand visuals.",
     image: "/assets/featured/text-product-hero.jpg",
-    prompt: "实验提示词：生成“目标产品”的高级产品主图，产品材质为“目标材质”，背景为“目标背景”，用途为“目标用途”。产品置于精致展示台上，主体居中，充足留白，柔和商业布光，材质反光真实，边缘清晰，适合广告主视觉和电商详情页，高清产品摄影质感。可替换项示例：“香水瓶 / 护肤品瓶 / 咖啡杯 / 科技设备”，“陶瓷 / 玻璃 / 金属 / 磨砂塑料”，“暖灰摄影棚 / 纯白电商背景 / 深色高级广告背景”。不要出现文字、水印、logo，不要改变产品结构逻辑。"
+    prompt: "生成“目标产品”的高级产品主图，产品材质为“目标材质”，背景为“目标背景”，用途为“目标用途”。产品置于精致展示台上，主体居中，充足留白，柔和商业布光，材质反光真实，边缘清晰，适合广告主视觉和电商详情页，高清产品摄影质感。可替换项示例：“香水瓶 / 护肤品瓶 / 咖啡杯 / 科技设备”，“陶瓷 / 玻璃 / 金属 / 磨砂塑料”，“暖灰摄影棚 / 纯白电商背景 / 深色高级广告背景”。不要出现文字、水印、logo，不要改变产品结构逻辑。"
   },
   {
     id: "text-chinese-folk-illustration",
@@ -1215,7 +1216,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     zhDescription: "适合节日、文创、包装视觉。",
     enDescription: "For festival, cultural, and packaging visuals.",
     image: "/assets/featured/text-chinese-folk-illustration.jpg",
-    prompt: "实验提示词：生成“目标主题”的中国民艺风原创插画，融合“目标民艺技法”，使用“目标配色”，用于“目标用途”。参考剪纸、刺绣、木刻版画的装饰语言，平面化构图，传统纹样与现代设计结合，画面喜庆、精致、有手工肌理。可替换项示例：“醒狮 / 花鸟 / 节日礼盒 / 生肖主题”，“剪纸 / 刺绣 / 木刻版画 / 年画”，“朱红金色 / 青绿金色 / 黑金红色”，“文创包装 / 节日海报 / 社媒封面”。不要使用版权形象，不要出现乱码文字、水印、logo。"
+    prompt: "生成“目标主题”的中国民艺风原创插画，融合“目标民艺技法”，使用“目标配色”，用于“目标用途”。参考剪纸、刺绣、木刻版画的装饰语言，平面化构图，传统纹样与现代设计结合，画面喜庆、精致、有手工肌理。可替换项示例：“醒狮 / 花鸟 / 节日礼盒 / 生肖主题”，“剪纸 / 刺绣 / 木刻版画 / 年画”，“朱红金色 / 青绿金色 / 黑金红色”，“文创包装 / 节日海报 / 社媒封面”。不要使用版权形象，不要出现乱码文字、水印、logo。"
   },
   {
     id: "text-lingnan-maximalist-vector",
@@ -1667,7 +1668,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     enDescription: "Turn a photo into a vertical zine poster mixing aged paper, torn edges, abstraction, and partial realism.",
     originalImage: "/assets/featured/img2img-gathered-scenes-zine-original.jpg",
     resultImage: "/assets/featured/img2img-gathered-scenes-zine-result.jpg",
-    prompt: "请先检查当前环境是否安装 gathered-scenes-zine-skill；若已安装，请用该 skill 处理我上传的图片；若未安装，请根据以下规则直接完成图生图处理。实验提示词：将参考照片制作成竖版 3:5“拾景纸刊”海报。保留核心主体、真实色彩和关键空间关系，让原照片占画面约“30%至50%”；其余部分延展为温暖旧纸上的抽象插画场域。插画只提炼原图中的“1至2个核心轮廓、路径或动作”，删除 60%至80% 细节。树叶、人群和复杂纹理合并成少量大色块、断裂线条或剪纸形状，并保留大量空白。左上角 25% 留白区生成水彩写意极简图标，使用原图占比最高的 3 种颜色。照片与纸张交界处必须有清晰、不规则的手撕纤维边缘。加入一种源自原图的高饱和颜色，让它沿真实轮廓跨越照片和插画，引导视线或平衡构图。加入一行很小的打字机或活版印刷英文短句，默认不超过 5 个单词；若我提供“拍摄地/短句”，则原样使用。整体安静、克制、触感真实，带有纸纤维、网点、复印磨损和扫描噪点。避免完整描摹、细密树叶、数字矩形裁切、贴纸白边、规则撕纸框、厚重阴影、多种鲜艳颜色、商业广告、3D、电影光影、动漫、密集拼贴、长文字、错别字和水印。"
+    prompt: "请先检查当前环境是否安装 gathered-scenes-zine-skill；若已安装，请用该 skill 处理我上传的图片；若未安装，请根据以下规则直接完成图生图处理。将参考照片制作成竖版 3:5“拾景纸刊”海报。保留核心主体、真实色彩和关键空间关系，让原照片占画面约“30%至50%”；其余部分延展为温暖旧纸上的抽象插画场域。插画只提炼原图中的“1至2个核心轮廓、路径或动作”，删除 60%至80% 细节。树叶、人群和复杂纹理合并成少量大色块、断裂线条或剪纸形状，并保留大量空白。左上角 25% 留白区生成水彩写意极简图标，使用原图占比最高的 3 种颜色。照片与纸张交界处必须有清晰、不规则的手撕纤维边缘。加入一种源自原图的高饱和颜色，让它沿真实轮廓跨越照片和插画，引导视线或平衡构图。加入一行很小的打字机或活版印刷英文短句，默认不超过 5 个单词；若我提供“拍摄地/短句”，则原样使用。整体安静、克制、触感真实，带有纸纤维、网点、复印磨损和扫描噪点。避免完整描摹、细密树叶、数字矩形裁切、贴纸白边、规则撕纸框、厚重阴影、多种鲜艳颜色、商业广告、3D、电影光影、动漫、密集拼贴、长文字、错别字和水印。"
   },
   {
     id: "img2img-photo-abstract-editorial",
@@ -1679,7 +1680,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     enDescription: "Rebuild a photo into an abstract editorial composition while preserving core subject relationships.",
     originalImage: "/assets/featured/img2img-photo-abstract-editorial-original.jpg",
     resultImage: "/assets/featured/img2img-photo-abstract-editorial-result.jpg",
-    prompt: "请先检查当前环境是否安装 photo-abstract-editorial；若已安装，请调用该 skill 处理我上传的图片；若未安装，请根据以下规则直接完成图生图处理。实验提示词：将上传照片转化为“照片抽象社论海报”。保留原图核心主体、空间比例、视角关系和最有辨识度的轮廓，不改变主体位置。删除大量真实细节，把建筑、人物、植物、天空、道路或器物概括成大胆的几何块面、柔和剪影、局部真实照片纹理和少量抽象线条。画面具有高端杂志社论、当代艺术书籍和独立出版物气质，大面积留白，构图克制但有视觉张力。配色从原图提取“3至5个主色”，降低饱和度并保持高级统一，可加入轻微纸张纹理、扫描噪点、复印颗粒和局部半透明叠印。不要完整临摹照片，不要过度拼贴，不要商业广告感，不要 3D、动漫、厚重电影光、可读大字、乱码、水印或无关新主体。"
+    prompt: "请先检查当前环境是否安装 photo-abstract-editorial；若已安装，请调用该 skill 处理我上传的图片；若未安装，请根据以下规则直接完成图生图处理。将上传照片转化为“照片抽象社论海报”。保留原图核心主体、空间比例、视角关系和最有辨识度的轮廓，不改变主体位置。删除大量真实细节，把建筑、人物、植物、天空、道路或器物概括成大胆的几何块面、柔和剪影、局部真实照片纹理和少量抽象线条。画面具有高端杂志社论、当代艺术书籍和独立出版物气质，大面积留白，构图克制但有视觉张力。配色从原图提取“3至5个主色”，降低饱和度并保持高级统一，可加入轻微纸张纹理、扫描噪点、复印颗粒和局部半透明叠印。不要完整临摹照片，不要过度拼贴，不要商业广告感，不要 3D、动漫、厚重电影光、可读大字、乱码、水印或无关新主体。"
   },
   {
     id: "img2img-starryear-monet-stamp",
@@ -1691,7 +1692,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     enDescription: "Turn a photo into a Monet-inspired impressionist art stamp with soft garden light.",
     originalImage: "/assets/featured/img2img-starryear-monet-stamp-original.jpg",
     resultImage: "/assets/featured/img2img-starryear-monet-stamp-result.jpg",
-    prompt: "实验提示词：请先检查当前环境是否安装 Starryear-Monet-Stamp；若已安装，请调用该 SKILL 处理我上传的图片；若未安装，请根据以下规则直接完成图生图处理。将上传照片转化为“星年莫奈邮票”风格图像，保留原图核心主体、构图关系、空间透视和主色调，将真实细节转译为莫奈印象派碎笔触、柔和蓝绿花园光、空气感色块和轻盈水面/花影般的笔触层次。画面整体像一枚精致艺术邮票或收藏级印刷小画，边缘可带克制的邮票齿孔感与旧纸纤维质感，但不要生成可读文字、面值、真实邮政标识或品牌 logo。色彩柔和、通透、带夏日花园与星年纪念感，可根据照片内容把“场景主体”“季节气氛”“主色调”替换为更具体描述。不要改变主体身份，不要新增无关物体，不要厚重油画堆叠，不要商业广告，不要水印，不要乱码文字。"
+    prompt: "请先检查当前环境是否安装 Starryear-Monet-Stamp；若已安装，请调用该 SKILL 处理我上传的图片；若未安装，请根据以下规则直接完成图生图处理。将上传照片转化为“星年莫奈邮票”风格图像，保留原图核心主体、构图关系、空间透视和主色调，将真实细节转译为莫奈印象派碎笔触、柔和蓝绿花园光、空气感色块和轻盈水面/花影般的笔触层次。画面整体像一枚精致艺术邮票或收藏级印刷小画，边缘可带克制的邮票齿孔感与旧纸纤维质感，但不要生成可读文字、面值、真实邮政标识或品牌 logo。色彩柔和、通透、带夏日花园与星年纪念感，可根据照片内容把“场景主体”“季节气氛”“主色调”替换为更具体描述。不要改变主体身份，不要新增无关物体，不要厚重油画堆叠，不要商业广告，不要水印，不要乱码文字。"
   },
   {
     id: "img2img-photo-sketch-editorial",
@@ -1703,7 +1704,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     enDescription: "Keep the real photo on top and place a small colored-pencil travel sketch below on generous white paper.",
     originalImage: "/assets/featured/img2img-photo-sketch-editorial-original.jpg",
     resultImage: "/assets/featured/img2img-photo-sketch-editorial-result.jpg",
-    prompt: "实验提示词：以用户上传的真实摄影照片为唯一场景来源，生成一张 3:4 竖版“摄影与手绘旅行速写编辑页”。固定页面比例：上方真实摄影照片占画面总高度“48%至52%”，照片下方衔接纯暖白纸张留白区域，插画画面内容仅占画面总高度“22%至27%”，插画下方保留至少“7%至10%”纯暖白纸张空白。上方真实照片必须从画面顶部开始横向满宽铺满，无边框、无纸白边、无投影；保留原照片摄影质感、真实光影、人物、景物、色彩和空间关系；照片底部以干净笔直的水平边缘结束，不向下渐变、融化、晕染或延伸。照片下方立刻衔接连续暖白绘画纸，一直延伸至画面底部，保持安静、干净、大面积留白。下方插画使用彩色铅笔、urban sketch、旅行写生手账、纸上速写风格，插画宽度约占纸张“76%至82%”，左右保留明显纸张留白，插画高度较矮、横向舒展，像嵌在大片白纸中的一幅小旅行速写。以真实照片为参考，忠实还原“建筑、树木、草地或景观构图”等核心关系，线条轻盈，带排线、轻微纹理和不规则手绘感，边缘笔触可轻微淡入纸张，但不可形成大面积满版绘画。整体参考旅行摄影作品集、艺术家速写本、极简编辑页，结构是“写实真照片 + 大面积暖白留白 + 小尺寸横向旅行速写”，高级、克制、干净，留白比插画更重要。负面约束：no dashed dotted line, no separation line, no watercolor transition, no fading transition between photo and paper, no torn paper edge, no large illustration, no full-page illustration, no illustration filling the lower half, no illustration touching page edges, no white border around the top photograph, no postcard frame, no shadow, no floating card, no turnaround, no logo, no watermark, no vector art, no cartoon。"
+    prompt: "以用户上传的真实摄影照片为唯一场景来源，生成一张 3:4 竖版“摄影与手绘旅行速写编辑页”。固定页面比例：上方真实摄影照片占画面总高度“48%至52%”，照片下方衔接纯暖白纸张留白区域，插画画面内容仅占画面总高度“22%至27%”，插画下方保留至少“7%至10%”纯暖白纸张空白。上方真实照片必须从画面顶部开始横向满宽铺满，无边框、无纸白边、无投影；保留原照片摄影质感、真实光影、人物、景物、色彩和空间关系；照片底部以干净笔直的水平边缘结束，不向下渐变、融化、晕染或延伸。照片下方立刻衔接连续暖白绘画纸，一直延伸至画面底部，保持安静、干净、大面积留白。下方插画使用彩色铅笔、urban sketch、旅行写生手账、纸上速写风格，插画宽度约占纸张“76%至82%”，左右保留明显纸张留白，插画高度较矮、横向舒展，像嵌在大片白纸中的一幅小旅行速写。以真实照片为参考，忠实还原“建筑、树木、草地或景观构图”等核心关系，线条轻盈，带排线、轻微纹理和不规则手绘感，边缘笔触可轻微淡入纸张，但不可形成大面积满版绘画。整体参考旅行摄影作品集、艺术家速写本、极简编辑页，结构是“写实真照片 + 大面积暖白留白 + 小尺寸横向旅行速写”，高级、克制、干净，留白比插画更重要。负面约束：no dashed dotted line, no separation line, no watercolor transition, no fading transition between photo and paper, no torn paper edge, no large illustration, no full-page illustration, no illustration filling the lower half, no illustration touching page edges, no white border around the top photograph, no postcard frame, no shadow, no floating card, no turnaround, no logo, no watermark, no vector art, no cartoon。"
   },
   {
     id: "img2img-fresh-watercolor-whitespace",
@@ -1715,7 +1716,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     enDescription: "Convert a photo into an airy watercolor postcard with generous white space.",
     originalImage: "/assets/featured/img2img-fresh-watercolor-whitespace-original.jpg",
     resultImage: "/assets/featured/img2img-fresh-watercolor-whitespace-result.jpg",
-    prompt: "实验提示词：请将上传的照片转化为“清新留白感”的彩色水彩插画。保留原照片的主体、基本构图、空间关系、主要色块和景物层次。将建筑、植物、海岸、道路、花朵、天空等概括成简洁透明的水彩块面与少量细节。整体采用透明水彩质感，颜色明快清爽，纸面略带温暖米白色。插画主体集中在画面中间偏下位置，尺寸不要过大，四周保留大量留白，可在角落加入少量小色块作为配色标记。整体版式像文艺明信片或轻杂志封面，气质干净、轻松、治愈、通透。不要写实摄影、厚重数码笔触、复杂背景、过度描线、商业海报感、乱码、水印或多余文字。"
+    prompt: "请将上传的照片转化为“清新留白感”的彩色水彩插画。保留原照片的主体、基本构图、空间关系、主要色块和景物层次。将建筑、植物、海岸、道路、花朵、天空等概括成简洁透明的水彩块面与少量细节。整体采用透明水彩质感，颜色明快清爽，纸面略带温暖米白色。插画主体集中在画面中间偏下位置，尺寸不要过大，四周保留大量留白，可在角落加入少量小色块作为配色标记。整体版式像文艺明信片或轻杂志封面，气质干净、轻松、治愈、通透。不要写实摄影、厚重数码笔触、复杂背景、过度描线、商业海报感、乱码、水印或多余文字。"
   },
   {
     id: "img2img-vintage-travel-journal",
@@ -1727,7 +1728,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     enDescription: "Turn a photo into a travel journal page with a main scene and matching sticker elements.",
     originalImage: "/assets/featured/img2img-vintage-travel-journal-original.jpg",
     resultImage: "/assets/featured/img2img-vintage-travel-journal-result.jpg",
-    prompt: "实验提示词：请将上传的任意照片转化为“复古旅行手账插画”。保留原图最核心的主体、场景关系与辨识特征，大幅删减真实细节，用简洁平涂色块、轻微颗粒笔触和柔和轮廓重新概括。色彩提取自原图并适度降低饱和度，呈现温暖、清新、略带旧纸印刷感的手绘效果。画面使用米白色粗纹理手账纸背景，左侧或主体区域放置一张近似方形的完整场景插画，四周留白；右侧将照片中的“3至6个代表性元素”单独提取，制作成带白色描边与轻微投影的手账贴纸，大小错落、疏密自然。主体插画与贴纸元素需一一呼应，造型简单可爱，不追求写实。底部可加入一行极小的“地点、天气或场景关键词”。整体像旅行途中亲手制作的拼贴手账页，生活感强、轻松自然、干净克制。禁止复杂装饰、过度精细、商业感海报、乱码、水印和无关新元素。"
+    prompt: "请将上传的任意照片转化为“复古旅行手账插画”。保留原图最核心的主体、场景关系与辨识特征，大幅删减真实细节，用简洁平涂色块、轻微颗粒笔触和柔和轮廓重新概括。色彩提取自原图并适度降低饱和度，呈现温暖、清新、略带旧纸印刷感的手绘效果。画面使用米白色粗纹理手账纸背景，左侧或主体区域放置一张近似方形的完整场景插画，四周留白；右侧将照片中的“3至6个代表性元素”单独提取，制作成带白色描边与轻微投影的手账贴纸，大小错落、疏密自然。主体插画与贴纸元素需一一呼应，造型简单可爱，不追求写实。底部可加入一行极小的“地点、天气或场景关键词”。整体像旅行途中亲手制作的拼贴手账页，生活感强、轻松自然、干净克制。禁止复杂装饰、过度精细、商业感海报、乱码、水印和无关新元素。"
   },
   {
     id: "img2img-modern-minimal-logo",
@@ -1739,7 +1740,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     enDescription: "Extract a photo subject into a geometric logo poster with color swatches.",
     originalImage: "/assets/featured/img2img-modern-minimal-logo-original.jpg",
     resultImage: "/assets/featured/img2img-modern-minimal-logo-result.jpg",
-    prompt: "实验提示词：将上传的照片转化为“极简现代 logo 风格海报”。保留原照片的核心主体、最有辨识度的轮廓与构图关系，删除写实细节、纹理、复杂光影和杂乱背景，把真实场景提炼为简洁的几何图形、流畅色块与清晰剪影。主体可概括成“1至3个主要视觉元素”，强调图形识别度、符号感与品牌感，避免插画化叙事，整体更像干净、克制、现代的标志设计。配色从原照片中提取“4至6个代表性色彩”，形成下方小色板，颜色纯净、对比明确，可略微提升统一度与高级感。中间居中放置简化后的 logo 图形，下方搭配一行大写英文标题，可加一行较小副标题或地点说明，左下角可放一个极简小标签文字，右下角整齐排列配色方块。整体气质简洁、理性、现代，像品牌视觉提案。避免复杂插画、写实照片残留、可读乱码、商业水印和版权品牌标识。"
+    prompt: "将上传的照片转化为“极简现代 logo 风格海报”。保留原照片的核心主体、最有辨识度的轮廓与构图关系，删除写实细节、纹理、复杂光影和杂乱背景，把真实场景提炼为简洁的几何图形、流畅色块与清晰剪影。主体可概括成“1至3个主要视觉元素”，强调图形识别度、符号感与品牌感，避免插画化叙事，整体更像干净、克制、现代的标志设计。配色从原照片中提取“4至6个代表性色彩”，形成下方小色板，颜色纯净、对比明确，可略微提升统一度与高级感。中间居中放置简化后的 logo 图形，下方搭配一行大写英文标题，可加一行较小副标题或地点说明，左下角可放一个极简小标签文字，右下角整齐排列配色方块。整体气质简洁、理性、现代，像品牌视觉提案。避免复杂插画、写实照片残留、可读乱码、商业水印和版权品牌标识。"
   },
   {
     id: "img2img-rough-charcoal",
@@ -1751,7 +1752,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     enDescription: "Convert a photo into a rough black-and-white charcoal/crayon illustration with broad paper margins.",
     originalImage: "/assets/featured/img2img-rough-charcoal-original.jpg",
     resultImage: "/assets/featured/img2img-rough-charcoal-result.jpg",
-    prompt: "实验提示词：请将上传照片转化为极简粗蜡笔/粗碳笔黑白插画。不逐像素临摹原图，只提取最核心主体、动作关系和少量关键环境轮廓，删除背景杂物与次要细节。使用粗黑蜡笔、炭条、干性粉笔般的颗粒笔触，线条粗粝、断续、边缘毛躁，允许涂抹、缺口、重叠和不均匀块面，保持明显手绘感与稚拙感。主体黑色面积相对充实，但不要把背景涂黑；整体始终为大面积暖白或米白纸张背景，四周充分留白。构图像独立编辑海报，主体占画面约“50%至65%”，位置可略偏中心，不必完全对称；局部用极少量地面线、道具或植物辅助交代场景。避免写实素描、精细明暗、光滑数字笔刷和复杂纹理。可加入一个极小红点或短线作为视觉强调，文字尽量不生成；若必须出现，只保留极少、细小、克制的排版元素。"
+    prompt: "请将上传照片转化为极简粗蜡笔/粗碳笔黑白插画。不逐像素临摹原图，只提取最核心主体、动作关系和少量关键环境轮廓，删除背景杂物与次要细节。使用粗黑蜡笔、炭条、干性粉笔般的颗粒笔触，线条粗粝、断续、边缘毛躁，允许涂抹、缺口、重叠和不均匀块面，保持明显手绘感与稚拙感。主体黑色面积相对充实，但不要把背景涂黑；整体始终为大面积暖白或米白纸张背景，四周充分留白。构图像独立编辑海报，主体占画面约“50%至65%”，位置可略偏中心，不必完全对称；局部用极少量地面线、道具或植物辅助交代场景。避免写实素描、精细明暗、光滑数字笔刷和复杂纹理。可加入一个极小红点或短线作为视觉强调，文字尽量不生成；若必须出现，只保留极少、细小、克制的排版元素。"
   },
   {
     id: "img2img-child-crayon-drawing",
@@ -1763,7 +1764,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     enDescription: "Redraw a photo as a bright, naive children's crayon illustration.",
     originalImage: "/assets/featured/img2img-child-crayon-drawing-original.jpg",
     resultImage: "/assets/featured/img2img-child-crayon-drawing-result.jpg",
-    prompt: "实验提示词：将上传的照片重新概括为一幅“儿童蜡笔手绘风格插画”。保留照片中最有辨识度的主体、轮廓、前后关系和核心空间关系。使用油画棒、蜡笔随手画出的质感，线条稚拙、不规整，轮廓略有歪斜，笔触粗糙可见，局部允许涂出边界和颜色叠擦，避免精致、写实、商业插画感。适当删减复杂背景和琐碎元素，只保留主体及少量具有代表性的环境元素。配色明亮、鲜艳、童趣，以蓝、绿、黄、橙等高明度色彩为主。插画统一放在米白色纸张背景中央偏下位置，可加入少量蜡笔画的小太阳、云朵等装饰，但不要文字、边框、复杂色块或过度装饰。"
+    prompt: "将上传的照片重新概括为一幅“儿童蜡笔手绘风格插画”。保留照片中最有辨识度的主体、轮廓、前后关系和核心空间关系。使用油画棒、蜡笔随手画出的质感，线条稚拙、不规整，轮廓略有歪斜，笔触粗糙可见，局部允许涂出边界和颜色叠擦，避免精致、写实、商业插画感。适当删减复杂背景和琐碎元素，只保留主体及少量具有代表性的环境元素。配色明亮、鲜艳、童趣，以蓝、绿、黄、橙等高明度色彩为主。插画统一放在米白色纸张背景中央偏下位置，可加入少量蜡笔画的小太阳、云朵等装饰，但不要文字、边框、复杂色块或过度装饰。"
   },
   {
     id: "img2img-vintage-screenprint-postcard",
@@ -1775,7 +1776,7 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     enDescription: "Convert a photo into a muted vintage screenprint postcard with simplified shapes.",
     originalImage: "/assets/featured/img2img-vintage-screenprint-postcard-original.jpg",
     resultImage: "/assets/featured/img2img-vintage-screenprint-postcard-result.jpg",
-    prompt: "实验提示词：将上传的任意照片转化为“复古丝网版画明信片插画”。保留原照片主体、基本构图与辨识特征，大幅删减真实细节，把光影、材质和背景概括成简洁色块、剪影与手绘轮廓线。使用“2至4种低饱和复古色”，如灰绿、砖红、赭黄、雾蓝、米黄，并根据原照片灵活配色。画面采用米白色粗纤维旧纸作为背景，插画只占中间一块横向矩形区域，尺寸明显小于纸张，四周尤其上下保留大面积干净留白。可在纸张下方自然写一行极短英文句子，约“2至4个单词”，根据照片内容自动生成，字体纤细、自然、略潦草。整体呈现上世纪旅行明信片、独立出版物与手工孔版印刷的安静复古质感。避免写实摄影、复杂渐变、过度细节、鲜艳荧光色、乱码、水印和无关新主体。"
+    prompt: "将上传的任意照片转化为“复古丝网版画明信片插画”。保留原照片主体、基本构图与辨识特征，大幅删减真实细节，把光影、材质和背景概括成简洁色块、剪影与手绘轮廓线。使用“2至4种低饱和复古色”，如灰绿、砖红、赭黄、雾蓝、米黄，并根据原照片灵活配色。画面采用米白色粗纤维旧纸作为背景，插画只占中间一块横向矩形区域，尺寸明显小于纸张，四周尤其上下保留大面积干净留白。可在纸张下方自然写一行极短英文句子，约“2至4个单词”，根据照片内容自动生成，字体纤细、自然、略潦草。整体呈现上世纪旅行明信片、独立出版物与手工孔版印刷的安静复古质感。避免写实摄影、复杂渐变、过度细节、鲜艳荧光色、乱码、水印和无关新主体。"
   },
   {
     id: "img2img-photo-slice-whitespace-poster",
@@ -2497,5 +2498,6 @@ export const featuredPrompts: FeaturedPromptItem[] = [
     resultImage: "/assets/featured/img2img-teal-amber-fog-field-result.jpg",
     prompt: "请将上传的街道、树林、工业空间或人物环境照片重构为“青橙浓雾光场”。锁定主体身份、姿势、相机位置、道路或地面、建筑和大型环境轮廓；依据原图空间深度布置多层深青色雾气，近景较薄、中远景逐渐加厚，并让“琥珀色暖背光”从合理灯源或远处入口穿透雾层形成可见光束和轮廓光。地面保持干燥或遵循原图真实状态，不自动增加雨水反射。人物脸部和关键结构仍可辨，冷暖对比集中在视觉中心。避免全图橙青滤镜、无来源发光、满地湿反射、雾墙遮死主体、赛博招牌、额外人物、文字、Logo 和水印。"
   },
-  ...featuredPromptsExpansion6
+  ...featuredPromptsExpansion6,
+  ...featuredPromptsExpansion7
 ];
