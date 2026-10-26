@@ -10350,6 +10350,60 @@
       ]
     },
     {
+      "id": "style-porcelain-shard-reconstruction",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "瓷片寓意重构",
+      "enName": "Porcelain-Shard Reconstruction",
+      "image": "/assets/parameters/style-porcelain-shard-reconstruction.jpg?v=20261026-featured-skill-e",
+      "zhPrompt": "瓷片寓意重构以暖白瓷胎、钴蓝釉线和真实断瓷边缘构成主体，不直接复制完整照片；先识别最重要的轮廓、姿态、结构转折与负形，再拆成疏密有节奏的大小瓷片。每块碎片内部只承载必要的青花笔触、留白与浓淡变化，裂隙参与解释形体和运动方向，局部可用极少金缮连接关键受力点。整体轻盈、克制、具有东方器物档案与当代编辑艺术气质，大面积纸面留白围绕主体。避免满版传统纹样、随机碎玻璃、光滑陶瓷玩偶、青花装饰堆砌、金线滥用、灰脏旧化和模板拼贴。；先把该风格落实为可观察的制作或成像机制，再依次说明主体轮廓、形体概括、边缘语言、空间深度、光线、色层、材质响应和最终表面，不以风格名称本身代替画面描述。若与其他风格混用，必须指定一个主风格和一个只负责局部的辅风格，并保持人物、建筑和道具在同一视觉规则内；主体身份、动作和功能结构优先于装饰。避免复制知名作品、角色、签名或品牌，避免伪文字、媒介互相矛盾、随机滤镜、纹理覆盖主体、局部精细度不一致、只靠配色冒充风格以及把多个年代和地域符号无依据拼在一起；明确基底材料、工具、制作顺序、颜料或纤维如何附着，以及压印、刻痕、针脚、接缝、烧制或干燥留下的边界；工艺细节随实际尺度变化并尊重重力、厚度和受力。避免把工艺做成平面滤镜、重复贴图、无材料来源的纹理、所有边缘同样粗糙、金属织物纸张反射一致、针脚不闭合、版画出现连续数码渐变或手工误差大到破坏主体识别",
+      "enPrompt": "porcelain-shard reconstruction built from warm white ceramic body cobalt-blue glaze lines and believable broken porcelain edges; identify the essential silhouette gesture structural turns and negative shapes, then divide them into rhythmically varied fragments rather than copying a full photograph. Each shard carries only necessary blue-and-white brushwork, reserved white and tonal pooling, while gaps explain form and motion; sparse kintsugi may connect critical stress points. The result is light restrained and archival with contemporary editorial clarity and generous paper space, avoiding all-over traditional ornament random broken glass glossy ceramic figurines excessive gold seams dirty aging or template collage.; translate the style into an observable production or imaging mechanism, then define subject silhouette form simplification edge language spatial depth illumination color layers material response and final surface rather than relying on the style name itself. When combining styles, establish one primary language and one secondary language limited to a specific region or function, keeping figures architecture and props within the same visual rules while subject identity action and functional structure take priority over decoration. Avoid copies of famous works characters signatures or brands pseudo-writing contradictory media random filtering texture covering the subject inconsistent local detail color alone used as proof of style or unsupported mixtures of periods and regions; specify substrate tool sequence and how pigment fiber or material is attached, including boundaries left by impression carving stitch seam firing or drying. Craft detail must scale with the object and obey gravity thickness and structural load. Avoid reducing a process to a flat filter repeated texture marks with no material source equally rough edges identical reflection on metal textile and paper unclosed stitches continuous digital gradients in relief print or handmade variation so extreme that subject identity is lost",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable character",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-miniature-doodle-photography",
+      "category": "style",
+      "styleGroup": "design-retro",
+      "zhName": "微型涂鸦摄影",
+      "enName": "Miniature Doodle Photography",
+      "image": "/assets/parameters/style-miniature-doodle-photography.jpg?v=20261026-featured-skill-e",
+      "zhPrompt": "微型涂鸦摄影保留真实主体的摄影材质、体积、颜色和自然光，只用三至五个尺寸极小的黑色手绘线稿人物建立第二叙事层。小人线条纤细、略有抖动、五官极简，动作依据物件的边缘、孔洞、把手、纹理和受力关系设计，必须有可信的站立、攀爬、抓握、搬运或修补接触点；透视、地面和遮挡与照片一致。背景保持浅净，涂鸦不能替换主体或变成密集漫画。避免白边贴纸、悬浮人物、粗黑卡通、重复动作、无意义箭头、满版装饰、现成角色和商业吉祥物。；先把该风格落实为可观察的制作或成像机制，再依次说明主体轮廓、形体概括、边缘语言、空间深度、光线、色层、材质响应和最终表面，不以风格名称本身代替画面描述。若与其他风格混用，必须指定一个主风格和一个只负责局部的辅风格，并保持人物、建筑和道具在同一视觉规则内；主体身份、动作和功能结构优先于装饰。避免复制知名作品、角色、签名或品牌，避免伪文字、媒介互相矛盾、随机滤镜、纹理覆盖主体、局部精细度不一致、只靠配色冒充风格以及把多个年代和地域符号无依据拼在一起；先锁定设计年代、传播媒介与使用场景，用网格、几何、图像裁切、有限色盘和信息占位建立层级；复古效果来自当时真实印刷、屏幕或软件限制，实验性破格仍保留阅读入口。避免年代元素混杂、随机拼贴、假品牌和乱码、所有元素同权、装饰覆盖主体、数字噪点冒充印刷、霓虹渐变泛滥或仅降低分辨率制造复古感",
+      "enPrompt": "miniature-doodle photography preserving the real subject's photographic material volume color and natural light while adding only three to five tiny black hand-drawn figures as a second narrative layer. Lines are fine slightly irregular and facial details minimal; actions derive from actual edges openings handles textures and load-bearing points, with credible standing climbing gripping carrying or repairing contact. Perspective grounding and occlusion remain consistent with the photograph, on a clean pale field. The doodles never replace the subject or become a dense comic, avoiding sticker outlines floating figures heavy cartoon strokes repeated gestures meaningless arrows all-over decoration existing characters or mascots.; translate the style into an observable production or imaging mechanism, then define subject silhouette form simplification edge language spatial depth illumination color layers material response and final surface rather than relying on the style name itself. When combining styles, establish one primary language and one secondary language limited to a specific region or function, keeping figures architecture and props within the same visual rules while subject identity action and functional structure take priority over decoration. Avoid copies of famous works characters signatures or brands pseudo-writing contradictory media random filtering texture covering the subject inconsistent local detail color alone used as proof of style or unsupported mixtures of periods and regions; lock the design period distribution medium and use case first, building hierarchy through grid geometry image crop limited palette and information placeholders. Retro character must arise from authentic print screen or software constraints of that period, and experimental rule-breaking must retain a reading entry. Avoid mixed-period motifs random collage fake brands and gibberish equal emphasis everywhere decoration covering the subject digital noise pretending to be print uncontrolled neon gradients or reduced resolution used as the sole evidence of retro design",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable character",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
+      "id": "style-organic-knit-scene",
+      "category": "style",
+      "styleGroup": "craft-print",
+      "zhName": "有机针织场景",
+      "enName": "Organic Knitted Scene",
+      "image": "/assets/parameters/style-organic-knit-scene.jpg?v=20261026-featured-skill-e",
+      "zhPrompt": "有机针织场景把人物、建筑、地形、植物、水面与天空统一转化为一个连续纱线世界，同时保留原有构图、空间比例和前中后景。针目尺寸稳定但方向服从体块：山脊通过增针与收针起伏，树冠使用更蓬松的圈绒，建筑边缘由紧密罗纹支撑，水面和天空使用平缓横向织纹；接缝只出现在合理结构边界，柔和遮蔽光进入纤维间隙。颜色保持来源场景的有限色盘，触感温暖而不幼稚。避免单个针织玩偶、简单毛线滤镜、粗大重复贴图、塑料 3D、绒线覆盖五官、错误接缝与场景结构漂移。；先把该风格落实为可观察的制作或成像机制，再依次说明主体轮廓、形体概括、边缘语言、空间深度、光线、色层、材质响应和最终表面，不以风格名称本身代替画面描述。若与其他风格混用，必须指定一个主风格和一个只负责局部的辅风格，并保持人物、建筑和道具在同一视觉规则内；主体身份、动作和功能结构优先于装饰。避免复制知名作品、角色、签名或品牌，避免伪文字、媒介互相矛盾、随机滤镜、纹理覆盖主体、局部精细度不一致、只靠配色冒充风格以及把多个年代和地域符号无依据拼在一起；明确基底材料、工具、制作顺序、颜料或纤维如何附着，以及压印、刻痕、针脚、接缝、烧制或干燥留下的边界；工艺细节随实际尺度变化并尊重重力、厚度和受力。避免把工艺做成平面滤镜、重复贴图、无材料来源的纹理、所有边缘同样粗糙、金属织物纸张反射一致、针脚不闭合、版画出现连续数码渐变或手工误差大到破坏主体识别",
+      "enPrompt": "organic knitted-scene language transforming figures architecture terrain vegetation water and sky into one continuous yarn world while preserving composition scale and depth. Stitch size stays coherent but follows form: ridges rise through increases and decreases, foliage uses softer looped pile, architecture is supported by tighter ribbing, and water or sky uses calmer horizontal knitting; seams appear only at plausible structural boundaries and soft occlusion settles between fibers. A limited palette remains derived from the source environment, tactile and warm without becoming childish, avoiding isolated knitted dolls generic yarn filters oversized repeating textures plastic 3D fibers obscuring faces arbitrary seams or spatial drift.; translate the style into an observable production or imaging mechanism, then define subject silhouette form simplification edge language spatial depth illumination color layers material response and final surface rather than relying on the style name itself. When combining styles, establish one primary language and one secondary language limited to a specific region or function, keeping figures architecture and props within the same visual rules while subject identity action and functional structure take priority over decoration. Avoid copies of famous works characters signatures or brands pseudo-writing contradictory media random filtering texture covering the subject inconsistent local detail color alone used as proof of style or unsupported mixtures of periods and regions; specify substrate tool sequence and how pigment fiber or material is attached, including boundaries left by impression carving stitch seam firing or drying. Craft detail must scale with the object and obey gravity thickness and structural load. Avoid reducing a process to a flat filter repeated texture marks with no material source equally rough edges identical reflection on metal textile and paper unclosed stitches continuous digital gradients in relief print or handmade variation so extreme that subject identity is lost",
+      "negative": [
+        "readable text",
+        "logo",
+        "watermark",
+        "brand mark",
+        "recognizable character",
+        "exact copy of existing artwork"
+      ]
+    },
+    {
       "id": "clothing-long-sleeve",
       "category": "clothing",
       "styleGroup": "tops-sleeves",
@@ -27912,6 +27966,150 @@
       "originalImage": "/assets/featured/img2img-teal-amber-fog-field-original.jpg",
       "resultImage": "/assets/featured/img2img-teal-amber-fog-field-result.jpg",
       "prompt": "请将上传的街道、树林、工业空间或人物环境照片重构为“青橙浓雾光场”。锁定主体身份、姿势、相机位置、道路或地面、建筑和大型环境轮廓；依据原图空间深度布置多层深青色雾气，近景较薄、中远景逐渐加厚，并让“琥珀色暖背光”从合理灯源或远处入口穿透雾层形成可见光束和轮廓光。地面保持干燥或遵循原图真实状态，不自动增加雨水反射。人物脸部和关键结构仍可辨，冷暖对比集中在视觉中心。避免全图橙青滤镜、无来源发光、满地湿反射、雾墙遮死主体、赛博招牌、额外人物、文字、Logo 和水印。"
+    },
+    {
+      "id": "img2img-travel-enamel-pin-poster",
+      "category": "image-to-image",
+      "group": "poster-layout",
+      "zhTitle": "旅行珐琅纪念",
+      "enTitle": "Travel Enamel Keepsake",
+      "zhDescription": "保留旅行照片并提炼同一场景的珐琅纪念章，让实景与实体纪念物形成克制对照。",
+      "enDescription": "Pair a preserved travel photograph with a cloisonne keepsake distilled from the same scene.",
+      "originalImage": "/assets/featured/img2img-travel-enamel-pin-poster-original.jpg",
+      "resultImage": "/assets/featured/img2img-travel-enamel-pin-poster-result.jpg",
+      "prompt": "请将上传的旅行照片制作成 3:4“旅行珐琅纪念海报”。保留照片中的地点、主体、真实光线和空间关系；从最有辨识度的建筑、交通工具或自然轮廓中提炼一个小型金属珐琅纪念章，使用闭合金属线、有限釉色、统一边高和轻微烧制起伏。版面采用“真实照片与暖灰织物陈列区”清楚分区，纪念章必须来自原图而不是任意旅游符号，并配一行“地点 / 日期”小字占位。避免品牌徽章、现成 Logo、复杂纪念品组合、塑料贴纸、错误地点文字、乱码和水印。"
+    },
+    {
+      "id": "img2img-porcelain-shard-poetry",
+      "category": "image-to-image",
+      "group": "style-transfer",
+      "zhTitle": "瓷片寓意重构",
+      "enTitle": "Porcelain-Shard Poetic Reconstruction",
+      "zhDescription": "从实景主体提取姿态与轮廓，以青花瓷片的裂隙、留白和拼合关系重新讲述。",
+      "enDescription": "Rebuild a source subject through blue-and-white porcelain fragments, seams, and quiet negative space.",
+      "originalImage": "/assets/featured/img2img-porcelain-shard-poetry-original.jpg",
+      "resultImage": "/assets/featured/img2img-porcelain-shard-poetry-result.jpg",
+      "prompt": "请基于上传照片制作“瓷片寓意重构”。锁定主体数量、动作、主要轮廓和最关键的身份特征，删除环境杂物；把主体拆解为大小有节奏的白瓷片，瓷片内部使用来自原图结构的青花线描与少量钴蓝浓淡，裂隙和缺口共同解释形体，不得只是叠加碎玻璃滤镜。主体占画面约 35% 至 55%，放在暖白纸面并保留大量留白，可用极少金缮线连接关键受力点。避免满版青花纹、随机碎片、陶瓷玩偶、写实照片残留、传统图案堆砌、文字、Logo 和水印。"
+    },
+    {
+      "id": "img2img-mini-doodle-story",
+      "category": "image-to-image",
+      "group": "style-transfer",
+      "zhTitle": "微型涂鸦故事",
+      "enTitle": "Miniature Doodle Story",
+      "zhDescription": "保持真实主体不变，让少量极小黑线人物围绕它产生可信、有趣的互动。",
+      "enDescription": "Keep the real subject intact while tiny black-line figures create a credible playful interaction around it.",
+      "originalImage": "/assets/featured/img2img-mini-doodle-story-original.jpg",
+      "resultImage": "/assets/featured/img2img-mini-doodle-story-result.jpg",
+      "prompt": "请保留上传照片中“主体物件 / 食物 / 建筑局部”的真实摄影质感、比例、颜色和材质，把背景整理为干净浅色场；加入 3 至 5 个极小黑色手绘线稿人物，让他们依据主体真实结构进行攀爬、测量、修补、搬运或观察。每个小人必须有落脚点、抓握点和一致透视，动作共同形成一个简短故事，不能站在旁边充当装饰。可加入一个极小箭头或“1 至 4 个单词”旁白占位。避免改变主体、白边贴纸、密集小人、复杂五官、卡通背景、现成角色、Logo 和水印。"
+    },
+    {
+      "id": "img2img-organic-knit-scene",
+      "category": "image-to-image",
+      "group": "style-transfer",
+      "zhTitle": "有机针织场景",
+      "enTitle": "Organic Knitted Scene",
+      "zhDescription": "把完整照片重构为连续针织世界，让山水、建筑与人物共享可信纱线结构。",
+      "enDescription": "Rebuild the entire photograph as one continuous knitted world with coherent yarn structure.",
+      "originalImage": "/assets/featured/img2img-organic-knit-scene-original.jpg",
+      "resultImage": "/assets/featured/img2img-organic-knit-scene-result.jpg",
+      "prompt": "请将上传照片整体重构为“有机针织场景”。严格保留主体、地形、建筑、道路、人物位置、远近层次与原图主色；所有表面都由尺度一致且方向服从形体的毛线针目构成，山脊使用收针和增针形成起伏，树木和草地通过不同纱线密度区分，水面或天空保持更平缓的织纹。接缝只出现在合理结构边界，光线在纤维间形成柔和遮蔽。避免简单毛线滤镜、单个针织玩偶、粗大重复贴图、塑料 3D、改变场景、文字、Logo 和水印。"
+    },
+    {
+      "id": "img2img-deconstructed-lockscreen-wallpaper",
+      "category": "image-to-image",
+      "group": "poster-layout",
+      "zhTitle": "照片解构锁屏壁纸",
+      "enTitle": "Deconstructed Photo Lockscreen",
+      "zhDescription": "从照片提取主轮廓与色块，建立兼顾时间安全区和主体识别的手机锁屏版式。",
+      "enDescription": "Extract source silhouettes and color fields into a phone lockscreen with a protected clock area.",
+      "originalImage": "/assets/featured/img2img-deconstructed-lockscreen-wallpaper-original.jpg",
+      "resultImage": "/assets/featured/img2img-deconstructed-lockscreen-wallpaper-result.jpg",
+      "prompt": "请把上传照片制作成“手机锁屏解构壁纸”，画幅使用“目标手机比例”。锁定主体与地平线，从原图提取 3 至 5 个主要色块、一个核心轮廓和一条视觉路径，用克制的纸面切片、负形与局部摄影锚点重新组织；顶部约 20% 至 28% 必须保持低对比、干净，作为系统时间和通知安全区，底部手势区也不得放关键细节。颜色只来自原图，主体仍能一眼辨认。不要模拟系统时间、图标或通知，不要密集拼贴、广告标题、过度撕纸、Logo 和水印。"
+    },
+    {
+      "id": "img2img-garment-model-tryon",
+      "category": "image-to-image",
+      "group": "product-commercial",
+      "zhTitle": "服装模特上身",
+      "enTitle": "Garment Model Try-On",
+      "zhDescription": "把平铺或人台服装自然穿到指定模特身上，保留版型、面料和所有商品细节。",
+      "enDescription": "Place a flat-lay or mannequin garment on a target model while preserving fit, fabric, and product details.",
+      "originalImage": "/assets/featured/img2img-garment-model-tryon-original.jpg",
+      "resultImage": "/assets/featured/img2img-garment-model-tryon-result.jpg",
+      "prompt": "请将参考服装自然穿着到“目标模特 / 用户上传的人像”身上。服装的颜色、领型、袖长、门襟、口袋、缝线、图案位置、面料光泽和宽松程度必须与商品图一致；依据人体姿势生成可信褶皱、拉力、遮挡与重力，不得改变模特身份、体型和肤色。保持商品完整可见，使用“纯色棚拍 / 生活方式场景”中的目标背景与真实布光。避免凭空增加配饰、修改品牌细节、衣物穿模、重复肢体、错误纽扣、塑料布料、文字和水印。"
+    },
+    {
+      "id": "img2img-selling-point-infographic",
+      "category": "image-to-image",
+      "group": "product-structure",
+      "zhTitle": "产品卖点信息图",
+      "enTitle": "Product Feature Infographic",
+      "zhDescription": "围绕真实产品照片建立三至五个可验证卖点的指示线、局部特写与清晰层级。",
+      "enDescription": "Build a clear hierarchy of three to five verified features around an authentic product image.",
+      "originalImage": "/assets/featured/img2img-selling-point-infographic-original.jpg",
+      "resultImage": "/assets/featured/img2img-selling-point-infographic-result.jpg",
+      "prompt": "请以上传产品图和用户提供的真实资料制作“产品卖点信息图”。锁定产品外观、颜色、比例、接口和标签，居中展示完整产品；从资料中选择 3 至 5 个互不重复的卖点，每个卖点使用短标题、细指示线和必要局部放大图连接到准确部位，建立“产品 > 卖点标题 > 简短说明”的层级。所有数据、认证和性能描述必须来自用户输入，缺失时使用“卖点 / 参数”占位，禁止编造。背景和强调色从产品提取。避免指示线交叉、遮挡商品、长段文字、虚构数字、第三方 Logo、乱码和水印。"
+    },
+    {
+      "id": "img2img-product-size-chart",
+      "category": "image-to-image",
+      "group": "product-structure",
+      "zhTitle": "商品尺寸规格图",
+      "enTitle": "Product Size Specification Chart",
+      "zhDescription": "按产品真实方向标注长宽高与关键部件尺寸，未知数据保留占位而不编造。",
+      "enDescription": "Annotate length, width, height, and key parts in true product directions without inventing measurements.",
+      "originalImage": "/assets/featured/img2img-product-size-chart-original.jpg",
+      "resultImage": "/assets/featured/img2img-product-size-chart-result.jpg",
+      "prompt": "请把上传产品制作成清楚的“尺寸规格图”。保留产品形状、颜色、比例与关键结构，选择最能解释尺寸的正面、侧面或三分之二视角；用统一细线、端点和箭头标注长、宽、高、直径、容量或关键部件尺寸，标线必须沿真实测量方向且不穿过产品。数值只能使用用户提供的数据，未提供时显示“长度 / 高度 / 直径”占位，不能估算。可加入 2 至 4 个局部结构小图。避免伪造尺寸、透视不一致、标线交叉、文字过密、改变产品、Logo 和水印。"
+    },
+    {
+      "id": "img2img-product-multi-angle-set",
+      "category": "image-to-image",
+      "group": "product-structure",
+      "zhTitle": "产品多角度套图",
+      "enTitle": "Product Multi-Angle Set",
+      "zhDescription": "以同一产品、统一比例与灯光输出正侧背面及关键细节，方便电商完整展示。",
+      "enDescription": "Show one consistent product across front, side, rear, and detail views under unified lighting.",
+      "originalImage": "/assets/featured/img2img-product-multi-angle-set-original.jpg",
+      "resultImage": "/assets/featured/img2img-product-multi-angle-set-result.jpg",
+      "prompt": "请以参考产品为唯一对象制作“产品多角度套图”。输出“正面 / 侧面 / 背面 / 三分之二视角 / 关键细节”中的 4 至 6 个视图，所有视图必须保持同一产品的颜色、比例、部件数量、接口位置、材料和磨损状态；相机高度、焦距、背景、光源方向和缩放基准统一，各视图之间留出清楚间距。无法从参考图确认的背面结构不要虚构，应使用中性遮挡或请求补图。避免不同型号混入、视图重复、零件漂移、比例不一、拼图串图、文字、Logo 和水印。"
+    },
+    {
+      "id": "img2img-ecommerce-a-plus-modules",
+      "category": "image-to-image",
+      "group": "product-commercial",
+      "zhTitle": "电商 A+ 模块",
+      "enTitle": "E-commerce A+ Modules",
+      "zhDescription": "将产品资料拆成可组合的品牌横幅、卖点、场景与对比模块，保持统一视觉系统。",
+      "enDescription": "Split product materials into coordinated brand, feature, lifestyle, and comparison modules.",
+      "originalImage": "/assets/featured/img2img-ecommerce-a-plus-modules-original.jpg",
+      "resultImage": "/assets/featured/img2img-ecommerce-a-plus-modules-result.jpg",
+      "prompt": "请根据上传的产品图、品牌色和真实文案制作一组“电商 A+ 内容模块”。规划 4 至 6 个可独立裁切的横向模块：品牌主视觉、核心卖点、使用场景、材质细节、结构说明和真实参数对比；每个模块只承担一个信息重点，但产品颜色、比例、布光、字体层级、边距和强调色保持统一。文案与数据只能来自用户输入，缺失处使用“标题 / 卖点 / 参数”占位。避免把所有内容塞进一张长图、重复同一裁图、虚构认证、竞品贬低、乱码、第三方 Logo 和水印。"
+    },
+    {
+      "id": "img2img-ecommerce-detail-long-page",
+      "category": "image-to-image",
+      "group": "product-commercial",
+      "zhTitle": "电商详情长图",
+      "enTitle": "E-commerce Detail Long Page",
+      "zhDescription": "按购买决策顺序组织主视觉、痛点、卖点、细节、参数与保障，形成统一详情长页。",
+      "enDescription": "Organize hero, need, benefits, details, specifications, and assurance into one coherent product page.",
+      "originalImage": "/assets/featured/img2img-ecommerce-detail-long-page-original.jpg",
+      "resultImage": "/assets/featured/img2img-ecommerce-detail-long-page-result.jpg",
+      "prompt": "请把上传产品资料设计成“电商详情长图”，按用户决策顺序组织：首屏产品主视觉、使用痛点、3 至 5 个核心卖点、场景演示、材质与工艺细节、尺寸参数、包装清单和售后信息。每一屏有独立标题和视觉焦点，产品外观、颜色、型号、配件和摄影风格全程一致；长图节奏应有疏有密，重要信息靠前，参数必须来自用户资料，缺失处保留占位。避免无限重复商品、文字墙、虚构效果前后对比、虚假认证、乱码、第三方 Logo 和水印。"
+    },
+    {
+      "id": "img2img-sku-variant-grid",
+      "category": "image-to-image",
+      "group": "product-structure",
+      "zhTitle": "SKU 变体矩阵",
+      "enTitle": "SKU Variant Matrix",
+      "zhDescription": "用统一角度、尺度和背景并列展示真实颜色或规格变体，差异清楚且产品结构不漂移。",
+      "enDescription": "Compare authentic color or specification variants with locked angle, scale, background, and structure.",
+      "originalImage": "/assets/featured/img2img-sku-variant-grid-original.jpg",
+      "resultImage": "/assets/featured/img2img-sku-variant-grid-result.jpg",
+      "prompt": "请根据上传的各 SKU 产品图制作“SKU 变体矩阵”。使用统一视角、焦距、产品占比、基线、背景和布光，把“颜色 / 尺寸 / 容量 / 套装”变体排成整齐但不过度拥挤的网格；每格只展示一个真实 SKU，并在固定位置保留“规格名称 / 色号”文字占位。除用户提供的差异外，产品结构、按钮、接口、材质和配件必须保持一致；不得从一张图自行臆造不存在的颜色或型号。避免角度漂移、色差失真、重复 SKU、格子尺寸不一、错误文字、Logo 和水印。"
     }
   ]
 }
