@@ -181,3 +181,22 @@
 - `SamurAIGPT/open-ai-image-agent` 的 `portrait-photo-pack` 与 `SamurAIGPT/Generative-Media-Skills` 的 `photo-pack-generator`：合并为一个“身份锁定主题写真”工作流，不重复增加 LinkedIn、旅行、复古等仅换主题的子卡。
 - `natan-webs/visual-commands`：在 322 项命令中仅采用当前精选库缺失且视觉结果可独立验证的 `xray/cutaway/day2night/facelift` 四类机制。普通换背景、风格迁移、360 视图、爆炸图、虚拟布置、外扩、物件替换、虚拟试衣等均因已有同义项目而跳过。
 - `oldred-byte/ec-visual-skill`、`pocket-postcard-skill`、`portrait-clone`、`motu-skills`：分别与现有电商图组、旅行明信片、角色一致性及人像精修/证件照功能高度重合，本轮不新增。
+
+## 第十一轮：局部高分辨率、跨媒介转场与解释型视觉
+
+本轮继续检索 2026-10-26 前后活跃的 GitHub 图片 Skill 与提示词库，重点阅读：
+
+- https://github.com/Fluxonius/photocraft-generative-editing
+- https://github.com/AKRTR465/GPT-upscale-skills
+- https://github.com/imagineVid/Awesome-gpt-image-2-prompts-and-skills
+- https://github.com/chiyolyn/bold-contour-ink-portrait
+- https://github.com/op7418/guizang-material-illustration
+- https://github.com/s1dashu/ip-as-logo-skill
+- https://github.com/jiahuiqu17/paper-signal
+- https://github.com/Shirehuhu/photo-poster-skills
+
+新增 7 项精选提示词：分块超分重点精修、写实主体马克笔环境、水墨生长黏土微景、波纹玻璃折射肖像、粗轮廓纯墨肖像、材质化概念解释图和三色角落品牌 IP。同步新增 5 张纯视觉语言参数卡；分块超分属于编辑工作流，不伪装成风格，波纹玻璃则直接复用已有“波纹玻璃背景”和“棱镜折射”参数，避免建立作用重叠的新卡。
+
+去重时跳过 Paper Signal 与照片海报库中的纸刊、旅行手账、水彩社论、纸浆浮雕和双色印刷方案，因为现有“拾景纸刊”“复古旅行手账”“清新留白水彩”“纸浆浅浮雕海报”和“单双色社论印刷”已经覆盖。企业架构图、科研图、普通图表和常规产品图组也未重复加入；它们与现有建筑信息图、产品卖点信息图、场景地图、教学示意图及电商图组的用途重叠，或主要交付为可编辑文件而非可直接复制的生图提示词。
+
+本轮展示图使用 PHOTO_PLTB 生成一张 3×2 和一张 2×2 严格前后配对联系表，再生成一张 4×2 精选成片与参数联系表。17 张正式资源统一为 960×540，主体完整缩放，空余区域仅由自身模糊副本填充；完成逐图目视、尺寸、哈希唯一性、历史资源哈希碰撞和相邻格污染检查。

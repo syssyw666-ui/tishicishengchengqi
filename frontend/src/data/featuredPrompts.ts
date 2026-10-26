@@ -3,6 +3,7 @@ import { featuredPromptsExpansion7 } from "./featuredPromptsExpansion7";
 import { featuredPromptsExpansion8 } from "./featuredPromptsExpansion8";
 import { featuredPromptsExpansion9 } from "./featuredPromptsExpansion9";
 import { featuredPromptsExpansion10 } from "./featuredPromptsExpansion10";
+import { featuredPromptsExpansion11 } from "./featuredPromptsExpansion11";
 export type FeaturedPromptCategory = "color-edit" | "image-to-image" | "utility" | "text-to-image";
 
 export interface FeaturedPromptItem {
@@ -2507,5 +2508,6 @@ export const featuredPrompts: FeaturedPromptItem[] = [
   ...featuredPromptsExpansion7,
   ...featuredPromptsExpansion8,
   ...featuredPromptsExpansion9,
-  ...featuredPromptsExpansion10
+  ...featuredPromptsExpansion10,
+  ...featuredPromptsExpansion11
 ];
